@@ -145,7 +145,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Kesin test zorluk dağılımı gerçek kullanım verisiyle kalibre edilebilir.
    - Soru bankasının mimari düzeyde açık sorusu kalmamıştır; ayrıntılı kalite operasyonları Admin Paneli ve İçerik Kalite Kontrolü başlıklarında ele alınacaktır.
 
-6. 🟨 **Konu Öğrenme Sistemi**
+6. ✅ **Konu Öğrenme Sistemi**
    - Ana akış: **konuya giriş → öğrenilecekler çerçevesi → öğretmen/video seçimi → konu anlatımı → kısa destek materyalleri → kısa anlayış kontrolü → 10 soruluk pekiştirme/adaptif test**.
    - Kullanıcı konuyu bilmiyorsa öğrenme aşaması soru çözümünden önce gelecektir.
    - Kullanıcı konuyu zaten biliyorsa video zorunlu olmayacak; “Bu konuyu biliyorum” benzeri bir seçenekle doğrudan kalibrasyon/test aşamasına geçebilecektir.
@@ -158,19 +158,23 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Kullanıcı video sırasında not alabilecek; uygun olduğunda not video zaman damgasına bağlanarak ilgili ana geri dönüş sağlayacaktır.
    - Konu ekranında AI öğretmene soru sorabilmek için entegrasyon noktası bulunacaktır; ayrıntılar 12. başlıkta tartışılacaktır.
    - Ana 10 soruluk testten önce çok kısa ve düşük sürtünmeli bir anlayış kontrolü olacaktır; bu mini kontrol ana adaptif testin yerine geçmeyecek ve gizli seviyeyi ana test kadar etkilemeyecektir.
-   - Anlayış kontrolü zayıfsa ilgili özet veya video bölümüne geri yönlendirme yapılabilecektir.
+   - Anlayış kontrolü zayıfsa ilgili özet veya video bölümüne geri yönlendirme yapılabilecektir; ancak ana teste geçiş zorla engellenmeyecektir.
    - Konu özeti daha sonra tekrar sistemi içinde hızlı hatırlatma materyali olarak da kullanılabilecektir.
    - Öğrenme içeriği dersin doğasına göre farklı bloklar kullanabilecektir; bütün derslere tek tip içerik şablonu zorlanmayacaktır.
    - Öğrenme durumu **başlanmadı / öğreniliyor / öğrenme aşaması tamamlandı** gibi durumlarla akademik gizli seviyeden ayrı tutulacaktır.
    - “Öğrenme aşaması tamamlandı” ifadesi “konuda ustalaşıldı” anlamına gelmeyecektir; akademik yeterlilik soru performansıyla doğrulanacaktır.
    - Kullanıcı öğrenmeyi yarıda bırakırsa sistem kaldığı yerden devam etmeyi önerecek; ancak kullanıcı başka çalışma seçmekte özgür olacaktır.
    - **Kullanıcı tek bir öğretmen/hoca ile sınırlandırılmayacaktır.** Aynı konuyu anlatan mümkün olduğunca çok uygun KPSS öğretmeni ve video seçeneği sunulacaktır.
-   - Kullanıcı istediği öğretmenin anlatımını seçebilecektir; bir videonun önerilen/varsayılan gösterilmesi diğer öğretmenleri erişilemez hale getirmeyecektir.
-   - Video seçeneklerinde KPSS kapsamına uygunluk, güncellik, anlatım kalitesi, konu kapsamı ve erişilebilirlik gibi kalite sinyalleri tutulabilir.
-   - **AÇIK:** Çok sayıdaki öğretmen/video seçeneğinin kullanıcıyı boğmadan nasıl sıralanacağı, filtreleneceği veya gruplanacağı netleştirilecek.
-   - **AÇIK:** “Öğrenme aşaması tamamlandı” durumunu kullanıcının manuel eylemi mi, video/mini kontrol sinyalleri mi yoksa birleşik bir kural mı belirleyecek?
+   - Kullanıcı bir derste ilk kez seçtiği öğretmen/hocayı **o dersin varsayılan öğretmeni** olarak belirlemiş olur. Sonraki konularda o öğretmenin uygun içeriği varsa sistem öncelikle onu açar/öne çıkarır.
+   - Kullanıcı varsayılan öğretmeni daha sonra ayarlardan değiştirebilir; diğer uygun öğretmen/video seçeneklerine erişim devam eder.
+   - “Bu konuyu biliyorum” seçeneği öğrenme aşamasını tamamlanmış kabul eder; gerçek akademik seviye 10 soruluk kalibrasyon/test ile ölçülür.
+   - Konuyu öğrenen kullanıcı **“Konu anlatımını tamamladım”** benzeri açık bir eylemle öğrenme aşamasını tamamlar. Video izleme yüzdesi tek başına zorunlu tamamlama kapısı değildir.
+   - Bu eylem sonrasında kısa anlayış kontrolü gelir. Zayıf sonuçta özet/video bölümüne dönme önerilebilir fakat kullanıcı ana 10 soruluk teste geçmekten zorla alıkonulmaz.
+   - Video %100 izlenmedi diye öğrenme tamamlanamaz gibi sert bir kural kullanılmayacaktır.
+   - Akademik ustalık ve sonraki konuya hazır oluş; video yüzdesinden veya öğrenmeyi tamamla düğmesinden değil, gerçek soru performansı ve adaptif/önkoşul kurallarından türetilecektir.
+   - Mimari düzeyde açık soru kalmamıştır; öğretmen kartlarının/filtrelerin tam görsel düzeni geliştirme aşamasında netleştirilebilir.
 
-7. ⬜ **Tekrar ve Unutma Sistemi**
+7. 🟨 **Tekrar ve Unutma Sistemi**
    - Öğrenilmiş konuların unutulmasını tespit etme
    - Tekrar zamanlaması
    - Tekrar testleri
@@ -298,4 +302,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **6. Konu Öğrenme Sistemi**.
+Şu anda aktif tartışma konusu: **7. Tekrar ve Unutma Sistemi**.
