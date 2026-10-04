@@ -119,11 +119,28 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Mimari düzeyde açık soru kalmamıştır; boş soru uyarısının biçimi, not/karalama panelinin konumu ve benzeri küçük UX ayrıntıları geliştirme aşamasında netleştirilebilir.
 
 5. 🟨 **Soru Bankasının Yapısı**
-   - Soruların kaynağı
-   - Ders / konu / alt konu / kazanım etiketleri
-   - Soru tipi
-   - Zorluk değeri
-   - Jev ile sınıflandırma
+   - Soru bankası adaptif sistemin akademik veri kaynağı olacaktır; yalnızca soru metni ve cevap depolamayacaktır.
+   - Her soruda ders, konu, alt konu, mümkünse kazanım/beceri, KPSS türü, soru tipi, gizli zorluk, içerik, şıklar, doğru cevap, çözüm, kaynak ve kalite durumu gibi bilgiler tutulacaktır.
+   - Etiketleme mümkün olduğunca **Ders → Konu → Alt konu → Kazanım/Beceri** hiyerarşisinde yapılacaktır.
+   - Kaynaklar resmî/geçmiş sınav soruları, insan tarafından hazırlanmış özgün sorular ve AI destekli özgün sorular şeklinde ayrıştırılabilir.
+   - AI tarafından oluşturulan yeni sorular doğrudan canlı bankaya girmeyecek; taslak/kontrol/onay/aktif benzeri kalite aşamalarından geçecektir.
+   - Jev/AI; ders, konu, alt konu, kazanım, soru tipi, ilk zorluk tahmini ve KPSS uygunluğu gibi sınıflandırmalarda kullanılacaktır; tek başına nihai otorite olmayacaktır.
+   - Başlangıç AI zorluk tahmini ile gerçek kullanıcı verisinden türetilen zorluk ayrı tutulabilecek; yeterli veri oluşunca gerçek kullanım verisi daha değerli olacaktır.
+   - Ham doğru yüzdesi tek başına yeterli görülmeyecek; mümkün olduğunca soruyu çözen kullanıcıların seviyeleri de gerçek zorluk değerlendirmesinde hesaba katılacaktır.
+   - Kullanıcı-soru geçmişi tutulacaktır: gördü mü, doğru/yanlış/boş, tekrar çözüm, işaretleme gibi bilgiler.
+   - İlk 30 benzersiz soru kalibrasyonunda tekrar gösterilen soru yeni benzersiz soru sayılmayacaktır.
+   - Soru benzerliği/neredeyse kopya sorular ileride çeşitlilik ve kalite sinyali olarak değerlendirilebilir.
+   - Sorular bilgi, yorum, işlem, problem çözme, grafik/tablo, paragraf, çıkarım, kavram, kronoloji gibi soru/beceri tipleriyle etiketlenebilecektir.
+   - Canlı bankadaki soruların kullanıcı incelemesinde kullanılabilecek açıklamalı çözümleri bulunması hedeflenecektir.
+   - Kullanıcının bulduğu soruda hazır açıklamalı çözüm olmaması normaldir; kullanıcıdan çözümü kendi ders bilgisiyle yazması beklenmeyecektir.
+   - **Hazır çözümü olmayan sorular için AI açıklamalı çözüm üretecektir.** Soru metni, şıklar ve varsa güvenilir cevap anahtarı modele verilerek anlaşılır çözüm oluşturulacaktır.
+   - AI çözümü doğrudan güvenilir kabul edilmeyecek; yayına girmeden önce doğrulama/kalite kontrol sürecinden geçecektir.
+   - Güvenilir doğru cevabı bilinmeyen sorular tek bir AI cevabına dayanarak otomatik aktif edilmeyecek; taslak/kontrol durumunda kalacaktır.
+   - Kullanıcı hata bildirimleri, sıra dışı başarı oranları ve benzeri kullanım sinyalleri sorunlu soruları inceleme kuyruğuna taşıyabilecektir.
+   - Soruların silinmesi yerine sürümlenmesi tercih edilebilir; düzeltmelerin hangi soru sürümüne ait olduğu geçmiş kullanıcı verileriyle korunacaktır.
+   - 10 soruluk testler sadece aynı zorlukta 10 rastgele sorudan oluşmayacak; seviyeye yakın sorular temel ağırlıkta olurken bir miktar daha kolay/zor soruyla seviye doğrulama ve gelişim sağlanabilecektir.
+   - Kesin test zorluk dağılımı şimdilik sabitlenmemiştir.
+   - **AÇIK:** AI tarafından üretilen açıklamalı çözümün yayına alınmadan önce hangi doğrulama zincirinden geçeceği (tek model + kontrol, ikinci model, kod/simgesel kontrol, güven skoru vb.) ayrıca netleştirilecek.
 
 6. ⬜ **Konu Öğrenme Sistemi**
    - YouTube üzerinden küratörlü konu anlatımı videoları
