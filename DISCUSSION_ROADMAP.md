@@ -19,7 +19,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Kullanıcı iş ve günlük hayatın yanında KPSS çalıştığı için ana sayfa yalnızca verimli değil, motive edici ve eğlenceli de olmalı.
    - Oyunlaştırmanın dashboard içindeki görünürlüğü ve yoğunluğu ayrıca tartışılacak.
 
-2. 🟨 **Günlük Çalışma Sistemi**
+2. ✅ **Günlük Çalışma Sistemi**
    - Kullanıcı kendi isteğiyle çalışmaya başlar; sistem günlük zorunlu çalışma saati dayatmaz.
    - Kullanıcıya “bugün şu kadar saat çalışmalısın” denmeyecek.
    - Sistem o gün ne kadar çalıştığını ve geçmiş çalışma sürelerini gösterebilir.
@@ -43,8 +43,9 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - YouTube izleme/like/subscription gibi etkileşimlere XP bağlanmaması; ödülün gerçek öğrenme/çalışma davranışına bağlanması
    - Konu öğrenme tamamlandıktan sonra pekiştirme ve adaptif soru çözümüne geçilmesi
    - Hızlı akademik kalibrasyonun ancak konu öğrenildikten veya kullanıcı konuyu bildiğini belirttikten sonra başlaması
+   - Bu başlıkta kalan ayrıntılar program motoru, konu öğrenme sistemi ve oyunlaştırma başlıklarında ele alınacaktır.
 
-3. ⬜ **Çalışma Programı Motoru**
+3. 🟨 **Çalışma Programı Motoru**
    - Sınava kalan süre
    - Kullanıcının müsait olduğu zaman
    - Eksik konular
@@ -197,4 +198,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **2. Günlük Çalışma Sistemi**.
+Şu anda aktif tartışma konusu: **3. Çalışma Programı Motoru**.
