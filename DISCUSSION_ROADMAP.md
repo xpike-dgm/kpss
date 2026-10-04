@@ -32,9 +32,15 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Kaçırılan günlerde planın cezalandırmadan yeniden dağıtılması
    - Günün net biçimde “tamamlandı” hissi vermesi
    - **Yeni bir konuda soru çözmeden önce konu öğrenme aşaması bulunması**
-   - Konu videosu / öğrenme içeriğinin gerçek bir günlük çalışma görevi sayılması
-   - 1–2 saatlik uzun konu videolarının tek oturum zorunluluğu olmadan parçalara/chapter'lara bölünmesi
-   - Video ilerlemesinin kaydedilmesi ve sonraki oturumda kaldığı yerden devam edilmesi
+   - Konu videosunun günlük çalışma görevi sayılması
+   - Videoların kendi sunucumuzda tutulmaması; YouTube üzerinden seçilmesi
+   - Mümkün olan videoların resmi YouTube embed oynatıcısıyla site içinde izletilmesi
+   - Embed kapalı / video kaldırılmış ise YouTube bağlantısı veya alternatif video gösterilmesi
+   - YouTube videosunun indirilmemesi, kopyalanmaması veya yeniden barındırılmaması
+   - 1–2 saatlik uzun videoların tek oturum zorunluluğu olmadan çalışma parçalarına ayrılması
+   - Oynatma konumunun kaldığı yerden devam kolaylığı için takip edilip edilemeyeceği
+   - Video izlemenin tek başına “konu öğrenildi” sayılmaması
+   - YouTube izleme/like/subscription gibi etkileşimlere XP bağlanmaması; ödülün öğrenme kontrolü veya soru çözümüne bağlanması
    - Önerilen akış: Öğren → kısa anlayış kontrolü → pekiştirme → adaptif soru → tekrar
    - Hızlı akademik kalibrasyonun konu öğrenildikten sonra başlaması
    - Kullanıcının konuyu zaten bildiğini belirtmesi halinde videoyu atlama veya kısa seviye kontrolüyle geçme seçeneği olup olmayacağı
@@ -62,14 +68,17 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Jev ile sınıflandırma
 
 6. ⬜ **Konu Öğrenme Sistemi**
-   - Konu anlatımları
-   - Uzun video içeriklerini chapter/bölümlere ayırma
-   - Video ilerlemesini kaydetme
+   - YouTube üzerinden küratörlü konu anlatımı videoları
+   - Resmi YouTube embed oynatıcısının kullanımı
+   - Embed mümkün değilse harici YouTube bağlantısı / alternatif video
+   - Video dosyalarını kendi sunucumuzda barındırmama
+   - Uzun video içeriklerini çalışma bölümlerine ayırma
+   - Video oynatma konumunu kaldığı yerden devam için kullanma
    - Kısa özetler
    - Formüller / önemli bilgiler
    - Örnek sorular
    - Püf noktaları
-   - Video sonu anlayış kontrolü
+   - Video sonrası anlayış kontrolü
    - Konuyu zaten bilen kullanıcı için atlama / seviye kontrolü davranışı
 
 7. ⬜ **Tekrar ve Unutma Sistemi**
