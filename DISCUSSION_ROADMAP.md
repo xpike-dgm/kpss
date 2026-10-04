@@ -46,19 +46,16 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Bu başlıkta kalan ayrıntılar program motoru, konu öğrenme sistemi ve oyunlaştırma başlıklarında ele alınacaktır.
 
 3. 🟨 **Çalışma Programı Motoru**
-   - Sınava kalan süre
-   - Kullanıcının müsait olduğu zaman
-   - Eksik konular
-   - Otomatik ve dinamik program üretimi
-   - Programın önerici mi yoksa daha yönlendirici mi olacağı
-   - Kullanıcının özgür çalışma yaklaşımıyla nasıl uyumlu hale getirileceği
+   - Motor katı takvim yerine dinamik biçimde “şu anda en mantıklı çalışma nedir?” sorusunu cevaplayan öneri sistemi olacaktır.
+   - Program önerici olacaktır; kullanıcı kendi çalışma özgürlüğünü koruyacaktır.
+   - **AÇIK:** Kullanıcının o anki müsait süresinin program motorunda zorunlu, opsiyonel veya hiç kullanılmayan bir girdi olup olmayacağı henüz kesinleştirilmedi.
    - Öneriler yalnızca global öncelik puanına göre sıralanmamalı; yeni öğrenilen bir konu pekiştirilmeden araya çok sayıda bağımsız çalışma girmemeli.
    - Bir konuya başlandığında o konu için bir **öğrenme zinciri** oluşmalı: konu anlatımı tamamlandıktan sonra kısa sürede pekiştirme ve adaptif soru çözümü gelmeli.
    - Yeni öğrenilen konu için gerekli ilk pekiştirme, başka derslerin daha düşük aciliyetli önerilerinin önüne geçebilmeli.
    - Motor “yeni konu öğrenildi ama henüz pekiştirilmedi” durumunu ayrı bir durum olarak takip etmeli.
    - Kullanıcı bir konuyu öğrendikten sonra o konu 4–5 öneri geriye düşüp unutulmaya bırakılmamalı.
    - Pekiştirme tamamlandıktan sonra konu normal öneri havuzuna dönebilmeli ve daha uzun aralıklı tekrar sistemi 7. başlıktaki unutma/tekrar motoruna devredilmeli.
-   - Konu zincirinin ne kadar sıkı olacağı, ilk pekiştirmede kaç soru kullanılacağı ve tekrar aralıkları ayrıca tartışılacak.
+   - Konu zincirinin ne kadar sıkı olacağı, ilk pekiştirmede kaç soru kullanılacağı ve tekrar aralıkları ilgili sonraki başlıklarda detaylandırılacak.
    - Öncelik motoru yalnızca “en düşük gizli seviye puanına sahip konu” mantığıyla çalışmamalı.
    - Geçmiş KPSS sınavlarında bir konunun görülme sıklığı / ortalama soru sayısı yararlı bir sinyal olabilir; ancak **konu bazındaki anlık net getirisi tek başına çalışma sırasını belirlememeli**.
    - Ana optimizasyon mantığı konu konu kısa vadeli net kovalamak yerine **dersin genel sınav değeri + kullanıcının o dersteki mevcut ilerlemesi + dersin öğrenme sırası** üzerinden düşünülmeli.
@@ -84,6 +81,12 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Geçiş kararı için gizli puanın yanında yeterli **gerçek çözüm kanıtı / güven seviyesi / benzersiz soru sayısı** bulunmalıdır.
    - Sonraki konunun önerilmesi önceki konunun tamamen bittiği anlamına gelmez; önceki konu tekrar/unutma sistemiyle korunup geliştirilmeye devam eder.
    - Kullanıcının özgür çalışma prensibi korunur: sistem bir sonraki konuyu henüz önermese bile kullanıcı isterse manuel olarak başka bir konuya gidebilir.
+   - Sınava kalan süre sürekli değişen bir **zaman baskısı** girdisi olacaktır; katı dönem sınırları veya belirli bir tarihten sonra yeni konu yasağı olmayacaktır.
+   - Sınava uzun süre varken temel oluşturma, yeni konu öğrenme ve kapsamı genişletme daha yüksek değer taşır; sınav yaklaştıkça tekrar, pekiştirme, yanlışlar, denemeler ve kısa sürede yüksek fayda sağlayan çalışmaların ağırlığı artar.
+   - Sınav çok yakın olsa bile kısa sürede öğrenilebilecek ve anlamlı fayda sağlayabilecek yeni konu otomatik olarak elenmez; zaman baskısı yalnızca öncelikleri değiştirir.
+   - Dersler arasında mekanik eşit zaman dağılımı yapılmaz. Uzun süredir anlamlı biçimde çalışılmayan dersin önceliği **ihmal bonusu** ile kademeli biçimde yükselir.
+   - Son dönemde sürekli aynı derse çalışılmışsa o dersin global öneri avantajı bir miktar azaltılabilir; böylece diğer önemli dersler uzun süre görünmez kalmaz.
+   - **Aktif öğrenme zinciri ders dengesi kuralının önüne geçebilir:** yeni öğrenilmiş konu henüz pekiştirilmediyse sırf başka ders ihmal edildi diye zincir yarıda kesilmez; ilk pekiştirme tamamlandıktan sonra ders dengesi yeniden değerlendirilir.
 
 4. ⬜ **Soru Çözme Ekranı**
    - Şıklar
@@ -183,46 +186,46 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
     - Oyunlaştırmanın profesyonel KPSS hazırlık hissini bozmayacak şekilde nasıl tasarlanacağı
 
 15. ⬜ **Arkadaş Sistemi**
-    - Arkadaş ekleme
-    - Ortak çalışma
-    - Sıralamalar
-    - Ortak hedefler
-    - İlerleme paylaşımı
+   - Arkadaş ekleme
+   - Ortak çalışma
+   - Sıralamalar
+   - Ortak hedefler
+   - İlerleme paylaşımı
 
 16. ⬜ **Kayıt ve İlk Kurulum Deneyimi**
-    - Hesap oluşturma
-    - KPSS türü seçimi
-    - Ders seviyeleri
-    - Hedefler
-    - İlk çalışma profilinin oluşturulması
+   - Hesap oluşturma
+   - KPSS türü seçimi
+   - Ders seviyeleri
+   - Hedefler
+   - İlk çalışma profilinin oluşturulması
 
 17. ⬜ **Mobil / PWA Deneyimi**
-    - Telefon ana ekranına ekleme
-    - Mobil navigasyon
-    - Bildirimler
-    - Çevrimdışı davranış
+   - Telefon ana ekranına ekleme
+   - Mobil navigasyon
+   - Bildirimler
+   - Çevrimdışı davranış
 
 18. ⬜ **Admin Paneli**
-    - Soru ekleme ve düzenleme
-    - Hatalı soru bildirimleri
-    - Kullanıcı yönetimi
-    - Konu ağacı
-    - AI sınıflandırmalarının kontrolü
+   - Soru ekleme ve düzenleme
+   - Hatalı soru bildirimleri
+   - Kullanıcı yönetimi
+   - Konu ağacı
+   - AI sınıflandırmalarının kontrolü
 
 19. ⬜ **İçerik Kalite Kontrolü**
-    - Yanlış cevaplı sorular
-    - Hatalı / belirsiz sorular
-    - Güncelliğini kaybetmiş içerikler
-    - AI ve insan kontrol akışı
+   - Yanlış cevaplı sorular
+   - Hatalı / belirsiz sorular
+   - Güncelliğini kaybetmiş içerikler
+   - AI ve insan kontrol akışı
 
 20. ⬜ **Teknik Altyapı**
-    - Veritabanı
-    - Backend
-    - Auth
-    - Hosting
-    - AI servisleri
-    - Yedekleme
-    - Performans
+   - Veritabanı
+   - Backend
+   - Auth
+   - Hosting
+   - AI servisleri
+   - Yedekleme
+   - Performans
 
 ---
 
