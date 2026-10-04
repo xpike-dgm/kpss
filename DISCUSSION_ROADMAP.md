@@ -194,13 +194,28 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Başarılı tekrar hatırlama güvenini yükseltip sonraki tekrar aralığını uzatır; zayıf performans gerekirse gerçek seviyeyi performans kurallarıyla düşürür, hedefli güçlendirme tetikler ve tekrar aralığını kısaltır.
    - Mimari düzeyde açık soru kalmamıştır; kesin gün aralıkları ve adaptasyon katsayıları gerçek kullanım verisiyle kalibre edilebilir.
 
-8. 🟨 **Yanlış Soru Sistemi**
-   - Yanlış defteri
-   - Yanlış nedenleri
-   - Sorunun yeniden gösterilmesi
-   - Benzer soru önerileri
+8. ✅ **Yanlış Soru Sistemi**
+   - Her yanlış soru otomatik olarak **Yanlışlarım** alanına alınacaktır.
+   - Yanlış kaydında soru/sürüm, kullanıcının cevabı, doğru cevap, açıklamalı çözüm, ders-konu-alt konu/kazanım, tarih ve ilgili test/deneme bağlamı tutulacaktır.
+   - Tek bir yanlış “konuyu bilmiyor” anlamına gelmeyecek; sistem tekrar eden hata örüntülerini izleyecektir.
+   - Aynı alt konu/kazanımda tekrarlanan yanlışlar o alanın riskini ve hedefli güçlendirme önceliğini yükseltecek; bu veri tekrar sistemi, program motoru ve AI katmanlarına sinyal verecektir.
+   - **“Neden yanlış yaptım?”** geri bildirimi opsiyonel olacaktır. Başlangıç seçenekleri: bilgiyi bilmiyordum, formülü/kuralı unuttum, soruyu yanlış anladım, işlem hatası yaptım, dikkatsizlik yaptım, iki şık arasında kaldım, emin değilim/bilmiyorum.
+   - Hata nedeni geçmişi ileride gerçek çalışma içgörüleri üretmekte kullanılabilecektir.
+   - Yanlışlar pasif bir arşiv olmayacak; **Aktif Yanlışlar / Tekrar Bekleyenler / Çözüldü-Pekişti** benzeri anlamlı gruplar kullanılabilecektir.
+   - İç yaşam döngüsü yeni yanlış → incelendi → güçlendiriliyor → doğrulandı → arşivlendi benzeri durumlarla takip edilebilir.
+   - Aynı yanlış soru sürekli döndürülmeyecek; yanlış incelendikten sonra aynı kazanımı ölçen daha önce görülmemiş yeni sorularla öğrenme doğrulanacaktır.
+   - Eski yanlış soru yeniden gösterilebilir fakat yeni bağımsız sorular akademik doğrulamada daha güçlü kanıt olacaktır.
+   - Başlangıç kuralı olarak aynı kazanımı ölçen **en az iki ayrı yeni doğrulama sorusunda** başarılı performans, yanlışın aktif problem olmaktan çıkması için kullanılabilir; gerçek kullanım verisiyle kalibre edilebilir.
+   - İlk doğrulama kısa süre sonra, ikinci doğrulama daha ileri bir zamanda/başka pakette yapılabilir.
+   - Yeterli yeni soru kanıtı oluşunca yanlış **çözüldü/pekişti** durumuna geçer; geçmiş kayıt silinmez.
+   - Kullanıcı bir yanlışı **Önemli / Tekrar Bak** şeklinde manuel işaretleyebilir; sistem toparlanmış saysa bile kullanıcı işaretli soruya erişebilir.
+   - **Boş sorular yanlışlarla aynı şey sayılmayacaktır** ve ayrı sonuç türü olarak tutulacaktır; ancak aynı kazanımda tekrarlanan boşlar da zayıflık sinyali oluşturabilir.
+   - Yanlış incelemesindeki **AI'ya sor** akışı doğrulanmış doğru cevap ve açıklamalı çözümü bağlam olarak kullanacaktır.
+   - Yanlış soru sistemi için ayrı bir yanlış puanı oluşturulmayacak; yanlışlar gizli konu seviyesini, alt konu riskini, tekrar ihtiyacını ve program motoru önceliğini besleyecektir.
+   - Temel döngü: **yanlış → incele → nedeni anlamaya çalış → aynı beceriyi yeni sorularla doğrula → yeterli kanıt oluşunca aktif yanlış olmaktan çıkar**.
+   - Mimari düzeyde açık soru kalmamıştır; kesin doğrulama zamanları ve küçük UX ayrıntıları geliştirme/gerçek kullanım verisiyle ayarlanabilir.
 
-9. ⬜ **Deneme Sınavları**
+9. 🟨 **Deneme Sınavları**
    - Gerçek KPSS simülasyonu
    - Branş denemeleri
    - Süre yönetimi
@@ -317,4 +332,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **8. Yanlış Soru Sistemi**.
+Şu anda aktif tartışma konusu: **9. Deneme Sınavları**.
