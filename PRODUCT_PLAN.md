@@ -424,8 +424,35 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Ana ekran mümkün olduğunca sade tutulacaktır: dönem özeti → gelişim/trend → dersler → hız ve doğruluk → deneme trendi → tekrar/yanlış durumu → kişisel içgörüler/öneriler biçiminde katmanlı bir bilgi hiyerarşisi kullanılabilir.
 - Performans ve istatistik sisteminin mimari düzeyde açık sorusu kalmamıştır; görsel grafik türleri, kesin etiket isimleri ve küçük sunum ayrıntıları UI geliştirme aşamasında rafine edilebilir.
 
-## 21. Henüz planlanacak büyük alanlar
-- Hedef puan ve sınava hazır oluş sistemi
+## 21. Hedef puan sistemi — kararlaştırıldı
+- Kullanıcı profilinde isteğe bağlı bir **hedef KPSS puanı** tutulacaktır. Kullanıcı hedefini belirleyebilir, daha sonra değiştirebilir veya hedef puan belirtmeden platformu kullanmaya devam edebilir.
+- Hedef puan yalnızca kaydedilen bir sayı olmayacak; sistem kullanıcının mevcut gerçek performansı ile hedef arasındaki mesafeyi sürekli yeniden değerlendirecek ve farkın nereden kapatılabileceğini göstermeye çalışacaktır.
+- Sistem **ölçülen performans** ile **tahmini KPSS puanını** birbirinden ayıracaktır. Son deneme netleri gerçek ölçüm olarak saklanırken puan karşılığı tahmin olarak sunulacaktır.
+- Kullanıcıya gereksiz kesinlik veren `81,37` benzeri tek değerler yerine mümkün olduğunca **tahmini puan aralığı** gösterilecektir. Örneğin `80–83` gibi bir aralık ve veri güveni sunulabilir.
+- Puan tahminindeki güven; deneme sayısı, gerçek sınav modu verisi, denemelerin güncelliği ve kalitesi, zorluk kalibrasyonu, kapsanan ders/konular ve genel veri miktarı gibi sinyallere dayanacaktır.
+- Yeterli veri yoksa sistem açıkça **“Henüz güvenilir puan tahmini için yeterli deneme verisi yok”** benzeri bir ifade kullanacak; sahte bir tahmin üretmeye zorlanmayacaktır.
+- Kullanıcı hedef ile mevcut tahmini performansı birlikte görebilecektir. Sistem gerekirse hedefe ulaşmak için gereken **yaklaşık net gelişimini** aralık halinde gösterebilir; bunun kesin reçete değil tahmin olduğu belirtilmelidir.
+- Hedefe kalan net ihtiyacı derslere mekanik eşit biçimde dağıtılmayacaktır. Sistem kullanıcının gerçek seviyesine, hata örüntülerine, soru sıklığına, gelişim alanlarına ve öğrenme sırasına göre **en ulaşılabilir gelişim fırsatlarını** bulmaya çalışacaktır.
+- Sistem konu/ders bazında tahmini net gelişim potansiyeli gösterebilir; ancak bu değerler kesin sonuç değil karar destek sinyali olacaktır.
+- Hedef puan sistemi mevcut çalışma programı motorunun eğitim mantığını geçersiz kılamaz. Yüksek kısa vadeli net potansiyeli olan bir konu için gerekli önkoşullar atlanmayacak; hedef sistemi motora amaç/öncelik sinyali verirken öğrenme sırası korunacaktır.
+- Kullanıcıya **“85 puan alma ihtimalin %74”** gibi temelsiz hassas olasılıklar gösterilmeyecektir. Bunun yerine **Veri yetersiz / Hedeften uzak / Gelişim gerekiyor / Hedefe yaklaşıyor / Hedef bandında / Hedefin üzerinde** benzeri anlaşılır durumlar kullanılabilecektir.
+- **Tahmini puan performansı** ile **sınava hazır oluş** aynı kavram olmayacaktır. Kullanıcı hedef puan bandına ulaşsa bile konu kapsamı eksik, veri güveni düşük, retention riski yüksek veya süre yönetimi zayıfsa sistem otomatik olarak “sınava hazırsın” demeyecektir.
+- Hazır oluş değerlendirmesinde puan performansına ek olarak **kapsam, veri güveni, hatırlama/retention durumu, gerçek sınav modu performansı ve zaman yönetimi** gibi sinyaller birlikte kullanılacaktır.
+- Puan tahmininde tek bir en iyi deneme yerine **trend ve yakın dönem performansı** esas alınacaktır. Son gerçek sınav modu denemeleri eski verilere göre daha yüksek ağırlık alabilir.
+- Deneme zorluğu mümkün olduğunca normalize edilecektir. Daha zor bir denemedeki daha düşük ham net otomatik olarak gerçek performans düşüşü sayılmayacaktır.
+- **Gerçek Sınav Modu** hedef puan tahmininde **Çalışma Modu**ndan daha güçlü kanıt kabul edilecektir. Çalışma Modu verisi yardımcı olabilir ancak gerçek sınav performansıyla eşdeğer sayılmayacaktır.
+- Hedef puan çalışma programı motoruna kullanıcıya göre farklı optimizasyon sinyalleri verebilir. Daha yüksek hedeflerde zor sorular, küçük hata oranlarını azaltma ve hız optimizasyonu daha değerli hale gelebilir; temel seviyesi düşük kullanıcıda ise kolay/orta sorulardaki kayıpları kapatma ve temel öğrenme daha değerli olabilir.
+- Hedef hiçbir zaman sert konu yasağına dönüşmeyecektir. Sistem **“Hedefin sadece 70, bu konuyu öğrenmene gerek yok”** gibi davranmayacak; hedef yalnızca önceliklendirme sinyali olacaktır.
+- Kullanıcı farklı puan hedeflerinin gerektirdiği gelişim farkını görebileceği **hedef senaryolarını** inceleyebilir; örneğin 80 / 85 / 90 hedeflerinin mevcut performansa göre yaklaşık gereksinimleri karşılaştırılabilir. Yine de tek bir aktif hedef kullanıcı tarafından seçilecektir.
+- Hedef puan zaman içinde değiştirilebilecektir. Geçmiş hedefler istenirse kilometre taşı olarak saklanabilir; örneğin `75 ✅ → 80 ✅ → güncel 85` biçiminde gelişim geçmişine dönüştürülebilir.
+- Hedef sistemi motivasyon baskısına dönüşmeyecektir. Dashboard ve diğer ekranlarda “hedefinden 12 puan geridesin” gibi cezalandırıcı alarm dili yerine **hedef için en değerli sonraki gelişim alanı** gibi yapıcı yönlendirmeler kullanılacaktır.
+- Hedef ekranında en az **aktif hedef, tahmini mevcut performans aralığı, güven düzeyi, son deneme trendi, hedefe kalan yaklaşık gelişim, en yüksek gelişim fırsatları ve hazır oluş sinyalleri** birlikte gösterilebilecektir.
+- **“Hedefime göre çalış”** benzeri bir eylem bulunabilir. Bu eylem ayrı ve çelişkili bir çalışma algoritması başlatmayacak; mevcut çalışma programı motorunu hedef puan bağlamıyla çalıştıracaktır.
+- Hedef puan sistemi temel olarak **belirsizlik içeren bir hedef optimizasyon problemi** kabul edilecektir; basit “X puan için Y net kesin gerekir” hesaplayıcısına indirgenmeyecektir.
+- Gerçek deneme ve kullanıcı verisi arttıkça puan tahmini, net gereksinimi ve ders/konu bazlı gelişim potansiyeli daha iyi kalibre edilecektir.
+- Hedef puan ve sınava hazır oluş sisteminin mimari düzeyde açık sorusu kalmamıştır; gerçek KPSS puan dönüşümünün kesin formülleri, güncel sınav parametreleri ve görsel sunum ayrıntıları uygulama aşamasında güncel/verifiye edilmiş sınav bilgilerine göre yapılandırılacaktır.
+
+## 22. Henüz planlanacak büyük alanlar
 - AI öğretmen / AI koç
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
