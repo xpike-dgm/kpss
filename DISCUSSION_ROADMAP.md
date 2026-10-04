@@ -146,19 +146,29 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Soru bankasının mimari düzeyde açık sorusu kalmamıştır; ayrıntılı kalite operasyonları Admin Paneli ve İçerik Kalite Kontrolü başlıklarında ele alınacaktır.
 
 6. 🟨 **Konu Öğrenme Sistemi**
-   - YouTube üzerinden küratörlü konu anlatımı videoları
-   - Resmi YouTube embed oynatıcısının kullanımı
-   - Embed mümkün değilse harici YouTube bağlantısı / alternatif video
-   - Video dosyalarını kendi sunucumuzda barındırmama
-   - Uzun videoları farklı oturumlarda tamamlayabilme
-   - Video oynatma konumunu kaldığı yerden devam için kullanma
-   - Kullanıcı konuyu bilmiyorsa video/öğrenme aşaması tamamlanmadan soru çözümüne geçmeme
-   - Konuyu zaten bilen kullanıcı için videoyu atlama davranışı
-   - Kısa özetler
-   - Formüller / önemli bilgiler
-   - Örnek sorular
-   - Püf noktaları
-   - Video sonrası anlayış kontrolü
+   - Ana akış: **konuya giriş → öğrenilecekler çerçevesi → öğretmen/video seçimi → konu anlatımı → kısa destek materyalleri → kısa anlayış kontrolü → 10 soruluk pekiştirme/adaptif test**.
+   - Kullanıcı konuyu bilmiyorsa öğrenme aşaması soru çözümünden önce gelecektir.
+   - Kullanıcı konuyu zaten biliyorsa video zorunlu olmayacak; “Bu konuyu biliyorum” benzeri bir seçenekle doğrudan kalibrasyon/test aşamasına geçebilecektir.
+   - YouTube konu anlatımları mümkün olduğunca resmi embed oynatıcıyla site içinde izletilecek; video indirilmeyecek veya yeniden barındırılmayacaktır.
+   - Konu ekranında kısa özet, önemli kurallar/formüller, püf noktaları, örnekler ve kullanıcının kendi notları bulunacaktır.
+   - Kısa özet/not içerikleri AI ile taslak olarak üretilebilir; akademik kalite kontrolünden geçecektir.
+   - Video izleme ilerlemesi akademik ustalık sayılmayacaktır.
+   - Video oynatma konumu saklanacak ve kullanıcı farklı oturumlarda kaldığı yerden devam edebilecektir.
+   - Uzun videolar mantıksal bölümlere ayrılabilecek; YouTube chapter varsa kullanılacak, yoksa video zaman aralıkları alt başlıklarla eşleştirilebilecektir.
+   - Kullanıcı video sırasında not alabilecek; uygun olduğunda not video zaman damgasına bağlanarak ilgili ana geri dönüş sağlayacaktır.
+   - Konu ekranında AI öğretmene soru sorabilmek için entegrasyon noktası bulunacaktır; ayrıntılar 12. başlıkta tartışılacaktır.
+   - Ana 10 soruluk testten önce çok kısa ve düşük sürtünmeli bir anlayış kontrolü olacaktır; bu mini kontrol ana adaptif testin yerine geçmeyecek ve gizli seviyeyi ana test kadar etkilemeyecektir.
+   - Anlayış kontrolü zayıfsa ilgili özet veya video bölümüne geri yönlendirme yapılabilecektir.
+   - Konu özeti daha sonra tekrar sistemi içinde hızlı hatırlatma materyali olarak da kullanılabilecektir.
+   - Öğrenme içeriği dersin doğasına göre farklı bloklar kullanabilecektir; bütün derslere tek tip içerik şablonu zorlanmayacaktır.
+   - Öğrenme durumu **başlanmadı / öğreniliyor / öğrenme aşaması tamamlandı** gibi durumlarla akademik gizli seviyeden ayrı tutulacaktır.
+   - “Öğrenme aşaması tamamlandı” ifadesi “konuda ustalaşıldı” anlamına gelmeyecektir; akademik yeterlilik soru performansıyla doğrulanacaktır.
+   - Kullanıcı öğrenmeyi yarıda bırakırsa sistem kaldığı yerden devam etmeyi önerecek; ancak kullanıcı başka çalışma seçmekte özgür olacaktır.
+   - **Kullanıcı tek bir öğretmen/hoca ile sınırlandırılmayacaktır.** Aynı konuyu anlatan mümkün olduğunca çok uygun KPSS öğretmeni ve video seçeneği sunulacaktır.
+   - Kullanıcı istediği öğretmenin anlatımını seçebilecektir; bir videonun önerilen/varsayılan gösterilmesi diğer öğretmenleri erişilemez hale getirmeyecektir.
+   - Video seçeneklerinde KPSS kapsamına uygunluk, güncellik, anlatım kalitesi, konu kapsamı ve erişilebilirlik gibi kalite sinyalleri tutulabilir.
+   - **AÇIK:** Çok sayıdaki öğretmen/video seçeneğinin kullanıcıyı boğmadan nasıl sıralanacağı, filtreleneceği veya gruplanacağı netleştirilecek.
+   - **AÇIK:** “Öğrenme aşaması tamamlandı” durumunu kullanıcının manuel eylemi mi, video/mini kontrol sinyalleri mi yoksa birleşik bir kural mı belirleyecek?
 
 7. ⬜ **Tekrar ve Unutma Sistemi**
    - Öğrenilmiş konuların unutulmasını tespit etme
