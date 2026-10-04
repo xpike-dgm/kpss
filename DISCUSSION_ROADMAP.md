@@ -16,7 +16,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Kullanıcı siteyi açtığında ne görecek?
    - Bugün ne yapması gerektiği nasıl gösterilecek?
    - Dashboard hangi bilgileri öne çıkaracak?
-   - Kullanıcı iş ve günlük hayatın yanında KPSS çalıştığı için ana sayfa yalnızca verimli değil, motive edici ve eğlenceli de olmalı.
+   - Kullanıcı iş ve günlük hayatın yanında KPSS hazırlığı yürüttüğü için ana sayfa yalnızca verimli değil, motive edici ve eğlenceli de olmalı.
    - Oyunlaştırmanın dashboard içindeki görünürlüğü ve yoğunluğu ayrıca tartışılacak.
 
 2. ✅ **Günlük Çalışma Sistemi**
@@ -84,7 +84,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Sınava kalan süre sürekli değişen bir **zaman baskısı** girdisi olacaktır; katı dönem sınırları veya belirli bir tarihten sonra yeni konu yasağı olmayacaktır.
    - Sınava uzun süre varken temel oluşturma, yeni konu öğrenme ve kapsamı genişletme daha yüksek değer taşır; sınav yaklaştıkça tekrar, pekiştirme, yanlışlar, denemeler ve kısa sürede yüksek fayda sağlayan çalışmaların ağırlığı artar.
    - Sınav çok yakın olsa bile kısa sürede öğrenilebilecek ve anlamlı fayda sağlayabilecek yeni konu otomatik olarak elenmez; zaman baskısı yalnızca öncelikleri değiştirir.
-   - Dersler arasında mekanik eşit zaman dağılımı yapılmaz. Uzun süredir anlamlı biçimde çalışılmayan dersin önceliği **ihmal bonusu** ile kademeli biçimde yükselir.
+   - Dersler arasında mekanik eşit zaman dağıtımı yapılmaz. Uzun süredir anlamlı biçimde çalışılmayan dersin önceliği **ihmal bonusu** ile kademeli biçimde yükselir.
    - Son dönemde sürekli aynı derse çalışılmışsa o dersin global öneri avantajı bir miktar azaltılabilir; böylece diğer önemli dersler uzun süre görünmez kalmaz.
    - **Aktif öğrenme zinciri ders dengesi kuralının önüne geçebilir:** yeni öğrenilmiş konu henüz pekiştirilmediyse sırf başka ders ihmal edildi diye zincir yarıda kesilmez; ilk pekiştirme tamamlandıktan sonra ders dengesi yeniden değerlendirilir.
    - Mimari düzeyde açık soru kalmamıştır; sayısal eşiklerin ve alt mekaniklerin ayrıntıları ilgili sonraki başlıklarda ele alınacaktır.
@@ -271,20 +271,43 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
     - Önerilen bilgi hiyerarşisi: dönem özeti → gelişim/trend → dersler → hız ve doğruluk → deneme trendi → tekrar/yanlış durumu → kişisel içgörüler/öneriler.
     - Mimari düzeyde açık soru kalmamıştır; kesin grafik türleri, etiket isimleri ve küçük görsel ayrıntılar UI aşamasında rafine edilebilir.
 
-11. 🟨 **Hedef Puan Sistemi**
-    - Hedef KPSS puanı
-    - Gereken yaklaşık netler
-    - Mevcut durum ile hedef arasındaki fark
-    - Tahmini mevcut KPSS puanının hangi veriyle hesaplanacağı
-    - Puan tahminindeki belirsizlik/güven düzeyinin nasıl gösterileceği
-    - Hedefin çalışma programı motoruna nasıl sinyal vereceği
-    - Kullanıcıyı sahte kesinlik veya gereksiz baskıyla yönlendirmeden hedefe ilerleme
+11. ✅ **Hedef Puan Sistemi**
+    - Hedef puan kullanıcı profilinde isteğe bağlı tutulacak; kullanıcı hedefini değiştirebilecek veya hedef belirtmeden çalışabilecektir.
+    - Sistem hedefi yalnızca kaydetmeyecek; mevcut gerçek performans ile hedef arasındaki mesafeyi ve bu farkın nereden kapatılabileceğini değerlendirecektir.
+    - **Ölçülen performans** ile **tahmini KPSS puanı** ayrılacaktır; gerçek deneme netleri ölçüm, puan karşılığı tahmin olarak sunulacaktır.
+    - Gereksiz kesin tek sayı yerine mümkün olduğunca **tahmini puan aralığı + veri güveni** kullanılacaktır.
+    - Veri azsa sistem güvenilir puan tahmini için yeterli veri olmadığını açıkça söyleyecektir.
+    - Hedefe kalan tahmini gelişim yaklaşık net aralığı olarak gösterilebilir; kesin reçete gibi sunulmayacaktır.
+    - Gereken gelişim derslere eşit paylaştırılmayacak; sistem kullanıcının gerçek performansına göre **en ulaşılabilir gelişim fırsatlarını** bulacaktır.
+    - Ders/konu bazlı tahmini net potansiyeli karar destek sinyali olabilir; önkoşullar ve dersin öğrenme sırası her zaman korunacaktır.
+    - Hedef sistemi mevcut program motorunun eğitim mantığını geçersiz kılmayacak; motora amaç/öncelik sinyali verecektir.
+    - Temelsiz hassas “hedefi tutturma ihtimali %X” gösterilmeyecek; **Veri yetersiz / Hedeften uzak / Gelişim gerekiyor / Hedefe yaklaşıyor / Hedef bandında / Hedefin üzerinde** gibi durumlar kullanılabilecektir.
+    - **Tahmini puan** ile **sınava hazır oluş** ayrı kavramlar olacaktır. Hazır oluşta puan performansının yanında kapsam, veri güveni, retention, gerçek sınav modu ve zaman yönetimi birlikte değerlendirilecektir.
+    - Tek en iyi deneme yerine yakın dönem trendi esas alınacak; yeni ve gerçek sınav modu verileri daha güçlü kanıt kabul edilebilecektir.
+    - Deneme zorluğu mümkün olduğunca normalize edilecek; zor denemedeki daha düşük ham net otomatik gerileme sayılmayacaktır.
+    - **Gerçek Sınav Modu**, hedef puan tahmininde **Çalışma Modu**ndan daha güçlü kanıt olacaktır.
+    - Farklı hedef seviyeleri çalışma motorunun önceliklerini etkileyebilir; yüksek hedeflerde zor sorular/hata azaltma/hız, temel seviyesi düşük kullanıcıda temel ve kolay-orta kayıpları kapatma daha değerli olabilir.
+    - Hedef hiçbir zaman sert konu yasağına dönüşmeyecek; sadece önceliklendirme sinyali olacaktır.
+    - Kullanıcı farklı hedeflerin gerektirdiği yaklaşık gelişimi karşılaştırabileceği **hedef senaryolarını** inceleyebilir; tek aktif hedefi kendisi seçer.
+    - Hedef zaman içinde değiştirilebilir; geçmiş hedefler istenirse kilometre taşı olarak saklanabilir.
+    - Hedef sistemi baskıcı alarm diline dönüşmeyecek; kullanıcıya hedef için en değerli sonraki gelişim alanları gösterilecektir.
+    - Hedef ekranında aktif hedef, tahmini mevcut performans aralığı, güven, deneme trendi, hedefe kalan yaklaşık gelişim, en yüksek gelişim fırsatları ve hazır oluş sinyalleri birlikte gösterilebilecektir.
+    - **“Hedefime göre çalış”** eylemi ayrı bir algoritma kurmayacak; mevcut çalışma programı motorunu hedef bağlamıyla çalıştıracaktır.
+    - Sistem hedef puanı **belirsizlik içeren bir optimizasyon problemi** olarak ele alacak; “X puan için Y net kesin gerekir” basit hesaplayıcısına indirgenmeyecektir.
+    - Gerçek kullanım verisi arttıkça puan tahmini, net gereksinimi ve gelişim potansiyeli yeniden kalibre edilecektir.
+    - Mimari düzeyde açık soru kalmamıştır; kesin KPSS puan dönüşümleri ve güncel sınav parametreleri uygulama aşamasında doğrulanmış güncel verilere göre yapılandırılacaktır.
 
-12. ⬜ **AI Öğretmen**
+12. 🟨 **AI Öğretmen**
     - Soru açıklama
     - Konu anlatımı
     - Kullanıcının seviyesine göre anlatım
     - Takip soruları
+    - Öğrenme sayfasında video/konu bağlamını kullanması
+    - Yanlış soru incelemesinde doğrulanmış çözümü bağlam olarak kullanması
+    - AI'ın ne zaman doğrudan cevap vermesi, ne zaman ipucu/sokratik yönlendirme yapması gerektiği
+    - Akademik doğruluk ve güvenilir kaynak/çözüm bağlamı
+    - Kullanıcı seviyesine göre açıklama derinliği ve dilinin ayarlanması
+    - AI öğretmenin kullanıcıya yeni soru/örnek üretip üretmeyeceği ve bunların kalite kontrolü
 
 13. ⬜ **AI Çalışma Koçu**
     - Bugün ne çalışmalıyım?
@@ -379,4 +402,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **11. Hedef Puan Sistemi**.
+Şu anda aktif tartışma konusu: **12. AI Öğretmen**.
