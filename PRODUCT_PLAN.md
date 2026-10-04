@@ -82,16 +82,13 @@ Amaç:
 Kurallar:
 - Kalibrasyon sayacında benzersiz sorular esas alınacaktır.
 - Aynı sorunun tekrar çözülmesi ilk 30 soruluk kalibrasyon sayacını ilerletmeyecektir.
-- Her cevap sonrasında yeni puan hesaplanacak ve sonraki soru güncel seviyeye göre seçilecektir.
+- 10 soruluk test sırasında verilen cevaplar test teslim edilene kadar geçici kabul edilir; kullanıcı önceki sorulara dönüp cevabını değiştirebilir.
+- Test içindeki sorular, test başındaki güncel gizli seviyeye uygun seçilir. Test sürerken geçici cevaplar nedeniyle kalıcı gizli seviye değiştirilmez.
+- Kullanıcı **“Testi Bitir”** dediğinde yalnızca nihai cevaplar kalibrasyon kurallarına göre işlenir ve gizli seviye güncellenir.
+- Sonraki 10 soruluk test, test sonunda oluşan yeni gizli seviyeye göre hazırlanır.
 - Puan 0–110 sınırları içinde tutulacaktır.
 
-Örnek: Kullanıcı Matematik için “Orta” seçti ve Temel Kavramlar 60 puanla başladı.
-- 1. soru doğru → 65
-- 2. soru doğru → 70
-- 3. soru yanlış → 65
-- 4. soru doğru → 70
-
-Sonraki soru, başlangıçtaki 60 yerine kullanıcının güncel seviyesine göre seçilmelidir.
+Örnek: Kullanıcı Matematik için “Orta” seçti ve Temel Kavramlar 60 puanla bir 10 soruluk teste başladı. Test boyunca cevaplarını değiştirebilir ve kalıcı puanı 60 olarak kalır. Test teslim edildiğinde nihai cevaplar ilgili +5/-5, +3/-3, +2/-2 veya +1/-1 kurallarıyla işlenir. Örneğin test sonunda gizli seviye 70 olduysa bir sonraki test 70 civarındaki seviyeye uygun sorulardan hazırlanır.
 
 ## 6. Seviye güveni / örnek sayısı
 Sistem yalnızca konu puanını değil, o puanın ne kadar güvenilir olduğunu da bilmelidir.
@@ -145,7 +142,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 2. Seviyeyi ders yerine mümkün olduğunca konu bazında takip et.
 3. Arka plan puanlarını kullanıcıya göstermek zorunda kalma.
 4. İlk kullanımda hızlı kalibrasyon, sonrasında stabil gelişim sağla.
-5. Her yeni cevaptan sonra sistem kullanıcı hakkında biraz daha doğru hale gelsin.
+5. Her tamamlanmış testten sonra sistem kullanıcı hakkında biraz daha doğru hale gelsin.
 6. Rastgele soru yığını yerine seviyeye ve ihtiyaca uygun soru sun.
 7. AI'ı kesin matematiksel kuralların yerine değil, belirsiz sınıflandırma ve karar noktalarında kullan.
 8. Gerçek kullanım verisi oluştuğunda AI tahmininden daha fazla ağırlık ver.
@@ -233,12 +230,13 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Soru çözme sırasında kullanıcıya özel not alanı bulunabilir.
 - Soru çözme sırasında karalama alanı bulunabilir.
 - Adaptif sistem test performansıyla bağlantılı olacaktır; soru/test sonuçları kullanıcının gizli konu seviyesini ve öğrenme verilerini beslemeye devam edecektir.
+- 10 soruluk test, test başındaki mevcut gizli seviyeye göre hazırlanacaktır. Test sırasında cevaplar değiştirilebildiği için geçici cevaplar kalıcı gizli seviye değişikliğine yol açmayacaktır.
+- Kullanıcı **“Testi Bitir”** dediğinde nihai cevaplar topluca işlenecek ve gizli konu seviyesi güncellenecektir. Sonraki test güncellenmiş seviyeye göre hazırlanacaktır.
 - Çalışma süresi soru bazlı ayrı bir test kronometresinden ziyade platformun genel çalışma kronometresi üzerinden takip edilecektir.
 - Genel çalışma kronometresi kullanıcı tarafından başlatılabilecek, duraklatılabilecek ve durdurulabilecektir.
 - Özel klavye kısayolları öncelikli ihtiyaç değildir ve planın temel parçası olmayacaktır.
 - Kullanıcı hatalı, belirsiz, cevabı sorunlu veya görseli bozuk soruları bildirebilecektir.
 - 10 soruluk test bittikten sonra kullanıcı isterse yeni bir teste geçerek çalışmaya devam edebilecektir.
-- Test bitmeden değiştirilebilen cevapların adaptif puanlamaya hangi anda yansıyacağı henüz kesinleştirilmemiştir; bu başlık altında ayrıca netleştirilecektir.
 
 ## 15. Henüz planlanacak büyük alanlar
 - Soru çözme deneyiminin kalan ayrıntıları
