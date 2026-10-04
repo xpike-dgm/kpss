@@ -110,8 +110,10 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Test sürerken cevaplar değiştirilebildiği için geçici cevaplar kalıcı gizli seviye değişikliğine yol açmayacaktır.
    - Kullanıcı **“Testi Bitir”** dediğinde yalnızca nihai cevaplar topluca işlenecek ve gizli konu seviyesi güncellenecektir.
    - Sonraki 10 soruluk test, test sonunda oluşan yeni gizli seviyeye göre hazırlanacaktır.
-   - Soru bazlı ayrı süre göstergesi ana mekanik olmayacaktır. Çalışma süresi sitenin genel çalışma kronometresi üzerinden takip edilecektir.
-   - Genel çalışma kronometresi kullanıcı tarafından başlatılabilecek, duraklatılabilecek ve durdurulabilecektir.
+   - **Normal 10 soruluk testlerde test bazlı süre ölçülecek ve kaydedilecektir.** Bu süre kullanıcıya gösterilebilir; varsayılan olarak sınav tipi zorlayıcı geri sayım değil, performans/istatistik verisidir.
+   - Mümkün olduğu ölçüde soru bazlı etkileşim/çözüm süresi arka planda tutulabilecek; bu veri konu/soru türü bazlı hız analizi, kullanıcı istatistikleri, AI koç içgörüleri, soru kalite/zorluk analizi ve sistem geliştirmede kullanılacaktır.
+   - Süre tek başına akademik seviye puanını değiştirmeyecek; doğruluk ve diğer performans verileriyle birlikte yardımcı sinyal olarak yorumlanacaktır.
+   - Platformun genel çalışma kronometresi toplam çalışma süresini ayrıca takip etmeye devam edecektir; test süresi ile genel çalışma süresi farklı amaçlara hizmet edecektir.
    - Klavye kısayolları öncelikli bir ihtiyaç değildir; özel klavye desteği planlanmayacaktır.
    - Kullanıcı hatalı, belirsiz, cevabı sorunlu veya görseli bozuk soruları bildirebilecektir.
    - Mobil ve masaüstü arayüz sade olacak; asıl odak soru, şıklar, soru navigasyonu, not/karalama ve testi bitirme akışı olacaktır.
@@ -215,18 +217,42 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Temel döngü: **yanlış → incele → nedeni anlamaya çalış → aynı beceriyi yeni sorularla doğrula → yeterli kanıt oluşunca aktif yanlış olmaktan çıkar**.
    - Mimari düzeyde açık soru kalmamıştır; kesin doğrulama zamanları ve küçük UX ayrıntıları geliştirme/gerçek kullanım verisiyle ayarlanabilir.
 
-9. 🟨 **Deneme Sınavları**
-   - Gerçek KPSS simülasyonu
-   - Branş denemeleri
-   - Süre yönetimi
-   - Deneme sonrası analiz
+9. ✅ **Deneme Sınavları**
+   - İki ana tür: **Tam KPSS Denemesi** ve **Branş Denemesi**.
+   - Tam deneme, kullanıcının seçtiği KPSS türünün soru dağılımı/soru sayısı/süre yapısını taklit edecek; sınav şablonları değişebilir olduğu için yapılandırılabilir tutulacaktır.
+   - Branş denemesi tek konu testi değil; bir dersin farklı konularını karışık biçimde ölçen genel ders denemesidir.
+   - Branş denemelerinde de süre ölçülecek; deneme şablonuna göre süre hedefi/kısıtı tanımlanabilecektir.
+   - Denemelerde soru navigasyonu, cevap değiştirme ve soru işaretleme desteklenecek; sınav bitmeden doğru/yanlış gösterilmeyecektir.
+   - Bitirme eylemi **“Sınavı Bitir”** olacaktır.
+   - İki mod: **Gerçek Sınav Modu** ve **Çalışma Modu**.
+   - Gerçek Sınav Modunda tanımlı/resmi süre durdurulamaz; sayfa/app kapanması süreyi durdurmaz. Çalışma Modu daha esnek ve gerektiğinde duraklatılabilir olabilir.
+   - Gerçek Sınav ve Çalışma Modu sonuçları aynı performans kategorisi olarak değerlendirilmez.
+   - Denemede ayrı sınav kronometresi vardır; genel çalışma kronometresi toplam çalışma süresini ayrıca takip edebilir.
+   - Cevaplar, işaretler, mevcut soru ve başlangıç zamanı otomatik kaydedilir; sayfa yenileme/bağlantı sorunu cevapları kaybettirmemelidir.
+   - Sonuç ekranı toplam doğru/yanlış/boş/net/süre yanında ders bazlı ve konu/alt konu bazlı analiz sunacaktır.
+   - Soru, ders ve konu bazlı süre verisi mümkün olduğunca arka planda tutulacak; hız ve zaman yönetimi analizi yapılacaktır.
+   - Deneme cevapları mevcut adaptif akademik sisteme gerçek performans kanıtı olarak eklenecek; deneme için ayrı paralel akademik puan sistemi kurulmayacaktır.
+   - Tek deneme geçmiş akademik veriyi aşırı ezmeyecek; mevcut performans/güven modeline yeni kanıt olarak katılacaktır.
+   - Akademik konu yeterliliğinden ayrı **deneme/sınav performansı** izlenecektir; bilgi ile süre yönetimi/sınav dayanıklılığı ayrıştırılabilecektir.
+   - Deneme geçmişi saklanacak ve tek deneme yerine son denemelerdeki trendler gösterilebilecektir.
+   - Denemelerin zorluk/kalite bilgisi tutulacak ve gerçek kullanıcı verisiyle yeniden kalibre edilebilecektir.
+   - Farklı zorluktaki denemelerin ham netleri doğrudan eşdeğer sayılmayacak; ileride karşılaştırma/sıralama için aynı deneme veya normalize edilmiş sonuç kullanılacaktır.
+   - Deneme sonrası yanlış/boş incelemesi 8. **Yanlış Soru Sistemi**ne bağlanacaktır.
+   - Deneme sonucu program motoruna sinyal verecek ve **“Bu denemeye göre en değerli sonraki çalışmalar”** benzeri hedefli öneriler oluşturulabilecektir; zorunlu görev olmayacaktır.
+   - Deneme sıklığı katı takvimle zorunlu tutulmayacak; program motoru ölçüm ihtiyacı ve sınava kalan süreye göre deneme önerebilecektir.
+   - Kullanıcının özel soru/ders/zorluk karışımıyla oluşturduğu paketler gerçek denemeden ayrılarak **Karma Test** gibi ayrı kategori altında tutulabilecektir.
+   - Tahmini KPSS puanı ve hedef puan ilişkisi 11. **Hedef Puan Sistemi** başlığında ayrıca netleştirilecektir.
+   - Mimari düzeyde açık soru kalmamıştır; kesin deneme şablonları, resmi süreler ve küçük UX ayrıntıları uygulama aşamasında güncel sınav kurallarına göre yapılandırılabilir.
 
-10. ⬜ **Performans ve İstatistik Ekranı**
+10. 🟨 **Performans ve İstatistik Ekranı**
     - Netler
     - Doğruluk oranları
     - Çalışma süresi
+    - Test/deneme süreleri ve hız gelişimi
     - Konu gelişimi
     - Hazır oluş seviyesi
+    - Kullanıcıya hangi verilerin gösterileceği ve hangi verilerin yalnızca sistem içinde kalacağı
+    - Akademik performans, hız, çalışma emeği ve trendlerin nasıl ayrıştırılacağı
 
 11. ⬜ **Hedef Puan Sistemi**
     - Hedef KPSS puanı
@@ -332,4 +358,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **9. Deneme Sınavları**.
+Şu anda aktif tartışma konusu: **10. Performans ve İstatistik Ekranı**.
