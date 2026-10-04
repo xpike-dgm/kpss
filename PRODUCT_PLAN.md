@@ -274,7 +274,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - 10 soruluk adaptif test rastgele aynı seviyedeki 10 sorudan oluşmak zorunda değildir. Kullanıcının seviyesine yakın sorular temel ağırlığı oluştururken bir miktar daha kolay ve daha zor soru da seviye doğrulama/gelişim amacıyla kullanılabilir. Kesin dağılım gerçek kullanım verisi ve test kalitesi gözlendikçe ayarlanabilir.
 - Soru bankasının mimari düzeyde açık sorusu kalmamıştır; ayrıntılı kalite operasyonları daha sonra İçerik Kalite Kontrolü ve Admin Paneli başlıklarında ele alınacaktır.
 
-## 16. Konu öğrenme sistemi — kısmen kararlaştırıldı
+## 16. Konu öğrenme sistemi — kararlaştırıldı
 - Konu öğrenme sistemi yalnızca video oynatıcı olmayacaktır; temel akış **konuya giriş → konu çerçevesi → öğretmen/video seçimi → konu anlatımı → kısa destek materyalleri → kısa anlayış kontrolü → 10 soruluk pekiştirme/adaptif test** şeklinde ilerleyecektir.
 - Konu girişinde kullanıcıya “Bu konuda neleri öğreneceksin?” benzeri kısa bir çerçeve sunulacaktır.
 - Kullanıcı konuyu zaten biliyorsa öğrenme videosunu zorunlu olarak izlemek zorunda olmayacak; **“Bu konuyu biliyorum”** benzeri bir seçenekle doğrudan kalibrasyon/test aşamasına geçebilecektir.
@@ -295,12 +295,18 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Kullanıcı öğrenmeyi yarıda bırakırsa sistem kaldığı yerden devam etmeyi önerebilir; kullanıcı isterse başka bir çalışma seçerek özgürlüğünü korur.
 - **Kullanıcı tek bir öğretmene/hocaya zorlanmayacaktır.** Aynı konuyu anlatan mümkün olduğunca çok uygun KPSS öğretmeni/video seçeneği konu sayfasında erişilebilir olacaktır.
 - Kullanıcı anlatım tarzına, öğretmene veya videoya göre kendi seçimini yapabilecektir. Platformun bir videoyu varsayılan/önerilen göstermesi, diğer öğretmenleri erişilemez hale getirmeyecektir.
+- Kullanıcı bir derste ilk kez bir öğretmen/hoca seçtiğinde bu seçim **o ders için varsayılan öğretmen** olarak kaydedilecektir. Sonraki konularda o öğretmenin uygun içeriği varsa sistem öncelikle onu açacak/öne çıkaracaktır.
+- Kullanıcı varsayılan öğretmeni daha sonra ayarlardan değiştirebilecektir. Varsayılan öğretmen seçimi diğer uygun öğretmenleri erişilemez hale getirmeyecektir.
 - Video seçenekleri arasında KPSS kapsamına uygunluk, güncellik, anlatım kalitesi, konu kapsamı ve erişilebilirlik gibi kalite sinyalleri tutulabilir; ancak kullanıcı seçimi korunacaktır.
-- Video sunumunun tam sıralama/filtreleme UX'i henüz kesinleştirilmemiştir; çok sayıdaki öğretmen seçeneğinin kullanıcıyı boğmadan sunulması ayrıca netleştirilebilir.
-- “Öğrenme aşaması tamamlandı” durumunun yalnızca kullanıcının düğmesine mi, video/mini kontrol sinyallerine mi yoksa birleşik kurala mı dayanacağı henüz kesinleştirilmemiştir.
+- Kullanıcı **“Bu konuyu biliyorum”** diyerek öğrenme aşamasını atladığında öğrenme aşaması tamamlanmış kabul edilir ve akademik yeterlilik doğrudan 10 soruluk kalibrasyon/test performansıyla ölçülür.
+- Konuyu öğrenen kullanıcı için öğrenme aşamasının tamamlanması kullanıcının **“Konu anlatımını tamamladım”** benzeri açık eylemiyle gerçekleşecektir; video izleme yüzdesi tek başına zorunlu tamamlama kapısı olmayacaktır.
+- Bu eylemden sonra kısa anlayış kontrolü gösterilecektir. Mini kontrolde zayıf sonuç alınırsa ilgili özet/video bölümüne dönme önerisi yapılabilir; ancak kullanıcı ana 10 soruluk teste geçmekten zorla alıkonulmayacaktır.
+- Video %100 izlenmedi diye öğrenme tamamlanamaz gibi sert bir kural kullanılmayacaktır. Video ilerlemesi yardımcı sinyal ve kaldığın yer bilgisi olarak kalacaktır.
+- Akademik ustalık ve sonraki konuya hazır oluş; öğrenme tamamlama düğmesinden veya video yüzdesinden değil, gerçek soru performansı ve daha önce kabul edilen adaptif/önkoşul kurallarından türetilecektir.
+- Çok sayıdaki öğretmen/video seçeneğinin tam kart, filtre ve sıralama UX'i geliştirme aşamasında netleştirilebilir; mimari düzeyde karar verilmiştir: varsayılan öğretmen ders bazında hatırlanır, fakat kullanıcı diğer öğretmenlere erişimini kaybetmez.
+- Konu öğrenme sisteminin mimari düzeyde açık sorusu kalmamıştır.
 
 ## 17. Henüz planlanacak büyük alanlar
-- Konu öğrenme sisteminin kalan ayrıntıları
 - Deneme sınavı sistemi
 - Yanlış / boş / işaretlenen sorular
 - Tekrar ve unutma sistemi
