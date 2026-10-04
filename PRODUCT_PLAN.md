@@ -150,27 +150,34 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 7. AI'ı kesin matematiksel kuralların yerine değil, belirsiz sınıflandırma ve karar noktalarında kullan.
 8. Gerçek kullanım verisi oluştuğunda AI tahmininden daha fazla ağırlık ver.
 9. Proje ticari olmadığı için profesyonel kalite hedefinden taviz verme.
+10. Kullanıcı kendi iradesiyle çalışır; sistem günlük zorunlu çalışma saati veya baskıcı kota dayatmaz.
+11. Platformun görevi kullanıcıyı zorlamak değil; çalışmasını kolaylaştırmak, daha verimli hale getirmek, gelişimini takip etmek ve doğru yönlendirmelerle gelişimini desteklemektir.
+12. Sistem çalışma süresini ölçebilir ve kullanıcıya ne kadar çalıştığını gösterebilir; ancak bunu “bugün şu kadar saat çalışmak zorundasın” biçiminde kullanmayacaktır.
 
 ## 11. Dashboard ve oyunlaştırma yönü — kısmen kararlaştırıldı
-- Dashboard'un ana görevi kullanıcıya “şimdi ne çalışmalıyım?” sorusunun cevabını hızlıca vermek olacaktır.
+- Dashboard'un ana görevi kullanıcıya “şimdi ne çalışabilirim / sıradaki mantıklı adım ne?” sorusunun cevabını hızlıca vermek olacaktır.
 - Kullanıcının iş, günlük hayat ve KPSS hazırlığını aynı anda yürüttüğü kabul edilecektir; çalışma deneyimi gereksiz yere sıkıcı veya ağır hissettirilmemelidir.
+- Dashboard önerici olacaktır; kullanıcıya günlük çalışma süresi veya çalışma miktarı zorunluluğu dayatmayacaktır.
 - Oyunlaştırma projede bilinçli biçimde kullanılacaktır. Amaç yalnızca ödül dağıtmak değil, ders çalışmayı daha keyifli, sürükleyici ve devam ettirilebilir hale getirmektir.
 - Profesyonellik ile eğlence birbirinin karşıtı kabul edilmeyecektir. Site ciddi bir sınava hazırlık aracı olurken aynı zamanda kullanıcının çalışmaktan keyif almasını hedefleyecektir.
 - XP, seri, görevler, başarımlar, görsel ilerleme, seviyeler ve benzeri mekaniklerin tam biçimi henüz kararlaştırılmamıştır; ayrı oyunlaştırma başlığında detaylandırılacaktır.
 - Gizli akademik seviye puanı ile kullanıcıya gösterilen oyunlaştırma/ödül puanları birbirine karıştırılmayacaktır.
 
 ## 12. Günlük çalışma sistemi — kısmen kararlaştırıldı
-- Günlük çalışma sistemi, kullanıcının iş ve günlük hayatına uyum sağlayacak; tek ve katı bir uzun çalışma bloğu dayatmayacaktır.
-- Gün, ana görevler ve isteğe bağlı ekstra çalışmalar şeklinde ayrılabilecektir.
-- Kullanıcı kısa zaman aralıklarında da verimli çalışabilmelidir; 10, 20, 45 dakika veya daha uzun çalışma oturumları desteklenmelidir.
+- Günlük çalışma sistemi kullanıcının kendi isteğiyle başlattığı çalışma oturumlarını destekleyecektir; sistem kullanıcıya “bugün X saat çalışmalısın” zorunluluğu koymayacaktır.
+- Kullanıcı siteye ne zaman isterse gelir, istediği kadar ilerler ve istediği noktada bırakabilir.
+- Sistem kullanıcının o gün ve geçmişte ne kadar süre çalıştığını gösterebilir.
+- Kullanıcı kısa zaman aralıklarında da verimli çalışabilmelidir; çalışma tek bir uzun oturum olmak zorunda değildir.
 - Aynı gün içindeki çalışma farklı zamanlara bölünebilir ve sistem ilerlemeyi kaldığı yerden devam ettirmelidir.
-- Büyük görevler mümkün olduğunca küçük, tamamlanabilir parçalara bölünmelidir.
-- Günlük çalışma; yeni öğrenme, pekiştirme, adaptif soru çözme ve tekrar türlerini desteklemelidir.
-- Kaçırılan bir gün kullanıcıyı cezalandıran bir deneyime dönüşmemeli; tamamlanmayan işler sonraki plana yeniden dağıtılabilmelidir.
-- Ana görevler tamamlandığında kullanıcının o günü başarıyla bitirdiği net biçimde gösterilmeli; isterse ekstra çalışmaya devam edebilmelidir.
+- Büyük çalışmalar mümkün olduğunca küçük, anlaşılır adımlara bölünebilir; ancak bunlar zorunlu günlük kota olarak sunulmayacaktır.
+- Sistem yeni öğrenme, pekiştirme, adaptif soru çözme ve tekrar türlerini desteklemelidir.
+- Kaçırılan gün kavramı cezalandırıcı biçimde kullanılmayacaktır; kullanıcı çalışmadığı için borç veya birikmiş görev baskısı yaşamamalıdır.
+- Platform, kullanıcının ne kadar ilerlediğini ve neyin sırada mantıklı olduğunu takip eder; son karar kullanıcıdadır.
 
 ### Konu öğrenmeden soru çözmeye geçmeme prensibi
-- Kullanıcı yeni bir konuda doğrudan soru çözmeye gönderilmemelidir; önce konuyu öğrenmesi için gerekli öğrenme içeriğine yönlendirilmelidir.
+- Kullanıcı bir konuyu bilmiyorsa, o konunun soru çözme aşamasına geçmeden önce konu anlatımını tamamlamalıdır.
+- Konu anlatımı bitmeden o konuya ait normal/adaptif soru çözümü başlatılmamalıdır; bilmediği bilgiyi soru üzerinden tahmin etmeye zorlamak öğrenme modeli olarak kabul edilmeyecektir.
+- Kullanıcı konuyu zaten bildiğini belirtiyorsa konu anlatımını izlemek zorunlu değildir; doğrudan soru/kalibrasyon aşamasına geçebilir.
 - Platform kendi konu anlatım videolarını üretmek veya video dosyalarını kendi sunucusunda barındırmak zorunda değildir.
 - Ana model, uygun KPSS konu anlatım videolarını YouTube üzerinden seçmek ve mümkün olduğu durumlarda resmi YouTube gömülü oynatıcısıyla ders sayfası içinde izletmektir.
 - Böylece video YouTube altyapısında kalırken kullanıcı mümkün olduğunca siteden çıkmadan konu çalışabilir.
@@ -178,13 +185,11 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Platform YouTube videolarını indirmeyecek, kopyalamayacak veya kendi sunucusundan yeniden yayınlamayacaktır.
 - YouTube embed kullanılması telif sorumluluğunun tamamen ortadan kalktığı anlamına gelmez; resmi YouTube oynatıcısı ve YouTube'un kullanım/oynatıcı politikaları çerçevesinde hareket edilecektir.
 - YouTube IFrame Player API kullanılırsa oynatma durumu ve mevcut zaman gibi verilerden yararlanılarak kullanıcının kaldığı konuma geri dönmesi kolaylaştırılabilir; ancak bu veri tek başına “konuyu öğrendi” kanıtı sayılmayacaktır.
-- YouTube politikaları nedeniyle video izleme, beğenme, paylaşma veya kanala abone olma gibi YouTube etkileşimlerine doğrudan XP/ödül bağlanmayacaktır. Oyunlaştırma ödülleri video sonrası mini kontrol, soru çözümü veya gerçek öğrenme görevlerine bağlanabilir.
-- Konu videosu / öğrenme içeriği günlük planın gerçek bir çalışma görevi olarak kabul edilmelidir; yalnızca soru sayısı üzerinden ilerleme ölçülmemelidir.
-- Bazı konu videolarının 1–2 saat veya daha uzun olabileceği kabul edilerek, uzun içerikler tek oturumda bitirilmek zorunda bırakılmamalıdır.
-- Uzun videolar için YouTube chapter'ları varsa kullanılabilir; yoksa platform kendi çalışma planında zaman aralıklarına göre parçalar tanımlayabilir.
-- Bir konu için önerilen temel akış: **Öğren → kısa anlayış kontrolü → pekiştirme → adaptif soru çözümü → tekrar**.
-- İlk 30 soruluk hızlı akademik kalibrasyonun, kullanıcı konuyu öğrenmeden önce rastgele başlatılması tercih edilmeyecektir; kalibrasyon öğrenme aşamasından sonra anlamlı hale gelmelidir.
-- Kullanıcının bir konuyu zaten bildiğini söylemesi durumunda videoyu tamamen atlama / kısa seviye kontrolüyle geçme davranışı ayrıca tartışılacaktır.
+- YouTube politikaları nedeniyle video izleme, beğenme, paylaşma veya kanala abone olma gibi YouTube etkileşimlerine doğrudan XP/ödül bağlanmayacaktır. Oyunlaştırma ödülleri video sonrası öğrenme kontrolü, soru çözümü veya gerçek çalışma davranışlarına bağlanabilir.
+- Bazı konu videolarının 1–2 saat veya daha uzun olabileceği kabul edilerek, kullanıcı videoyu farklı oturumlarda tamamlayabilmelidir.
+- Uzun videolar için YouTube chapter'ları varsa kullanılabilir; yoksa platform kendi çalışma arayüzünde ilerleme/kaldığın yer mantığı sağlayabilir.
+- Konu öğrenme tamamlandıktan sonra pekiştirme ve adaptif soru çözümü başlar.
+- İlk 30 soruluk hızlı akademik kalibrasyon konu öğrenildikten sonra veya kullanıcı “bu konuyu biliyorum” diyerek öğrenme aşamasını geçtiğinde devreye girer.
 
 ## 13. Henüz planlanacak büyük alanlar
 - Günlük çalışma sisteminin kalan ayrıntıları
