@@ -17,8 +17,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Bugün ne yapması gerektiği nasıl gösterilecek?
    - Dashboard hangi bilgileri öne çıkaracak?
    - Kullanıcı iş ve günlük hayatın yanında KPSS çalıştığı için ana sayfa yalnızca verimli değil, motive edici ve eğlenceli de olmalı.
-   - Oyunlaştırma dashboard deneyiminin doğal bir parçası olabilir; akademik ciddiyet ile eğlence karşıt kabul edilmeyecek.
-   - Gizli akademik seviye puanı ile görünen XP/ödül/ilerleme sistemleri ayrı tutulmalı.
+   - Oyunlaştırmanın dashboard içindeki görünürlüğü ve yoğunluğu ayrıca tartışılacak.
 
 2. ⬜ **Günlük Çalışma Sistemi**
    - Günlük görevler
@@ -96,13 +95,30 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
     - Çalışma stratejisi önerileri
 
 14. ⬜ **Motivasyon / Oyunlaştırma**
-    - Seri sistemi
-    - XP / başarımlar
-    - Görevler
-    - Görsel ilerleme ve seviye hissi
-    - Çalışma seanslarını daha eğlenceli ve sürükleyici hale getirme
-    - Kullanıcının gerçek öğrenmesini gölgelemeyen ödül tasarımı
-    - Akademik gizli seviye ile görünen oyunlaştırma seviyesini ayırma
+    - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
+    - XP sistemi olacak mı, nasıl kazanılacak?
+    - Kullanıcıya görünen genel profil seviyesi olacak mı?
+    - Akademik gizli seviye ile oyunlaştırma seviyesi birbirinden nasıl ayrılacak?
+    - Günlük görev sistemi ve görev tamamlama ödülleri
+    - Çalışma serisi / streak sistemi
+    - Bir gün çalışamayan kullanıcıyı gereksiz yere cezalandırmayan seri tasarımı
+    - Başarımlar ve rozetler
+    - Çözülen soru, tamamlanan konu, deneme ve tekrar gibi gerçek çalışmalara bağlı ödüller
+    - Haftalık görevler
+    - Lig / sıralama sistemi olup olmayacağı
+    - Arkadaşlarla rekabetin oyunlaştırmaya nasıl bağlanacağı
+    - Görsel ilerleme ve seviye atlama animasyonları
+    - Çalışma oturumu sonunda XP, seri, başarım ve ilerleme geri bildirimi
+    - Profil çerçevesi, avatar öğeleri, tema ve unvan gibi kilidi açılabilir kozmetik ödüller
+    - Sürpriz ödüller olup olmayacağı
+    - KPSS hazırlığını görsel bir yolculuk / ilerleme haritasına dönüştürme fikri
+    - “Başlangıç → Temel Atma → Gelişim → Güçlenme → Deneme Dönemi → Sınava Hazır” benzeri aşamalar olup olmayacağı
+    - Bu aşamaların yalnızca XP ile mi yoksa gerçek akademik ilerleme ile birlikte mi açılacağı
+    - Adaptif sistemin zayıf alanları kullanıcıya görev/kamp şeklinde sunması
+    - Örneğin “Problemler Kampı” gibi dinamik özel görevler
+    - Kullanıcının sadece siteye girerek veya anlamsız işlem yaparak XP kasmasının engellenmesi
+    - Ödüllerin gerçek öğrenme ve çalışma davranışına bağlı olması
+    - Oyunlaştırmanın profesyonel KPSS hazırlık hissini bozmayacak şekilde nasıl tasarlanacağı
 
 15. ⬜ **Arkadaş Sistemi**
     - Arkadaş ekleme
