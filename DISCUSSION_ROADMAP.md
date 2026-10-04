@@ -106,7 +106,10 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Soru çözme sırasında kullanıcıya ait **not alanı** bulunabilir.
    - Soru çözme sırasında **karalama alanı** bulunabilir.
    - Adaptif sistem soru çözme/test sonuçlarıyla bağlantılı olacaktır; gizli konu seviyesi ve diğer öğrenme verileri test performansından güncellenmeye devam edecektir.
-   - **AÇIK:** Kullanıcı test bitmeden cevaplarını değiştirebildiği için, gizli seviye güncellemesinin soru soru geçici cevaplara göre mi yoksa test teslim edildiğinde topluca mı yapılacağı netleştirilecek. Öneri: test mevcut seviyeye göre hazırlanır, kalıcı seviye güncellemesi “Testi Bitir” sonrasında yapılır.
+   - 10 soruluk test, test başındaki mevcut gizli seviyeye göre hazırlanacaktır.
+   - Test sürerken cevaplar değiştirilebildiği için geçici cevaplar kalıcı gizli seviye değişikliğine yol açmayacaktır.
+   - Kullanıcı **“Testi Bitir”** dediğinde yalnızca nihai cevaplar topluca işlenecek ve gizli konu seviyesi güncellenecektir.
+   - Sonraki 10 soruluk test, test sonunda oluşan yeni gizli seviyeye göre hazırlanacaktır.
    - Soru bazlı ayrı süre göstergesi ana mekanik olmayacaktır. Çalışma süresi sitenin genel çalışma kronometresi üzerinden takip edilecektir.
    - Genel çalışma kronometresi kullanıcı tarafından başlatılabilecek, duraklatılabilecek ve durdurulabilecektir.
    - Klavye kısayolları öncelikli bir ihtiyaç değildir; özel klavye desteği planlanmayacaktır.
