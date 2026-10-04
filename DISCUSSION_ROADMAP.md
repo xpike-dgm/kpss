@@ -16,6 +16,9 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Kullanıcı siteyi açtığında ne görecek?
    - Bugün ne yapması gerektiği nasıl gösterilecek?
    - Dashboard hangi bilgileri öne çıkaracak?
+   - Kullanıcı iş ve günlük hayatın yanında KPSS çalıştığı için ana sayfa yalnızca verimli değil, motive edici ve eğlenceli de olmalı.
+   - Oyunlaştırma dashboard deneyiminin doğal bir parçası olabilir; akademik ciddiyet ile eğlence karşıt kabul edilmeyecek.
+   - Gizli akademik seviye puanı ile görünen XP/ödül/ilerleme sistemleri ayrı tutulmalı.
 
 2. ⬜ **Günlük Çalışma Sistemi**
    - Günlük görevler
@@ -96,7 +99,10 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
     - Seri sistemi
     - XP / başarımlar
     - Görevler
-    - Kullanıcıyı çocukça bir deneyime zorlamadan motivasyon
+    - Görsel ilerleme ve seviye hissi
+    - Çalışma seanslarını daha eğlenceli ve sürükleyici hale getirme
+    - Kullanıcının gerçek öğrenmesini gölgelemeyen ödül tasarımı
+    - Akademik gizli seviye ile görünen oyunlaştırma seviyesini ayırma
 
 15. ⬜ **Arkadaş Sistemi**
     - Arkadaş ekleme
