@@ -59,6 +59,16 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Kullanıcı bir konuyu öğrendikten sonra o konu 4–5 öneri geriye düşüp unutulmaya bırakılmamalı.
    - Pekiştirme tamamlandıktan sonra konu normal öneri havuzuna dönebilmeli ve daha uzun aralıklı tekrar sistemi 7. başlıktaki unutma/tekrar motoruna devredilmeli.
    - Konu zincirinin ne kadar sıkı olacağı, ilk pekiştirmede kaç soru kullanılacağı ve tekrar aralıkları ayrıca tartışılacak.
+   - Öncelik motoru yalnızca “en düşük gizli seviye puanına sahip konu” mantığıyla çalışmamalı.
+   - Her konu için geçmiş KPSS sınavlarında görülme sıklığı / ortalama soru sayısı temel girdilerden biri olmalı.
+   - Gizli konu seviyesi ile o konudan sınavda beklenen soru sayısı birlikte değerlendirilerek **beklenen kayıp net / beklenen kazanılabilir net** tahmini üretilebilmeli.
+   - Örnek fikir: bir konudan ortalama 2 soru çıkıyor ve kullanıcı o konuda yaklaşık %50 başarı gösterecek durumdaysa yaklaşık 1 soru kayıp riski vardır; başka bir konudan ortalama 6 soru çıkıyor ve kullanıcı yaklaşık %60 başarı düzeyindeyse yaklaşık 2–3 soru kayıp riski olabilir. Bu durumda ikinci konu, gizli seviyesi daha yüksek olmasına rağmen daha yüksek çalışma önceliği alabilir.
+   - Ana hedef yalnızca bütün konuları eşit düzeyde öğrenmek değil; kullanıcının sınavda mümkün olan en yüksek net/puanı elde etmesine yardım etmek olmalı.
+   - Yüksek soru getirili konular, kullanıcının eksikliğiyle birleştiğinde daha yüksek öncelik alabilmeli.
+   - Düşük soru getirili konular tamamen yok sayılmamalı; sistem uzun vadede kapsam bütünlüğünü korumalı ancak sınırlı çalışma zamanında beklenen puan getirisine ağırlık verebilmeli.
+   - Gizli seviye puanı doğrudan “doğru yapma yüzdesi” kabul edilmeden önce gerçek kullanıcı verisiyle kalibre edilmeli; ileride `seviye → beklenen doğru olasılığı` dönüşümü öğrenilebilir.
+   - Geçmiş sınav sıklığı tek bir yıla aşırı bağlı olmamalı; birden fazla yılın verisi, güncellik ve müfredat değişiklikleri hesaba katılmalı.
+   - İleride daha gelişmiş bir metrik olarak **beklenen kazanılabilir net / tahmini çalışma süresi** düşünülebilir. Böylece 2 saat çalışmayla +1 net kazandırabilecek konu ile 10 saat çalışmayla +1 net kazandırabilecek konu aynı öncelikte değerlendirilmez.
 
 4. ⬜ **Soru Çözme Ekranı**
    - Şıklar
