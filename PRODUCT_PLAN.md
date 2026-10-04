@@ -232,8 +232,12 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Adaptif sistem test performansıyla bağlantılı olacaktır; soru/test sonuçları kullanıcının gizli konu seviyesini ve öğrenme verilerini beslemeye devam edecektir.
 - 10 soruluk test, test başındaki mevcut gizli seviyeye göre hazırlanacaktır. Test sırasında cevaplar değiştirilebildiği için geçici cevaplar kalıcı gizli seviye değişikliğine yol açmayacaktır.
 - Kullanıcı **“Testi Bitir”** dediğinde nihai cevaplar topluca işlenecek ve gizli konu seviyesi güncellenecektir. Sonraki test güncellenmiş seviyeye göre hazırlanacaktır.
-- Çalışma süresi soru bazlı ayrı bir test kronometresinden ziyade platformun genel çalışma kronometresi üzerinden takip edilecektir.
-- Genel çalışma kronometresi kullanıcı tarafından başlatılabilecek, duraklatılabilecek ve durdurulabilecektir.
+- **Normal 10 soruluk testlerde test bazlı geçen süre ölçülecektir.** Bu süre kullanıcıya gösterilebilir ve testin ne kadar sürdüğü kalıcı performans verisi olarak tutulacaktır.
+- Mümkün olduğu ölçüde soru bazlı etkileşim/çözüm süreleri de arka planda tutulabilir; ancak soru ekranını gereksiz sayaçlarla doldurmak zorunlu değildir.
+- Normal kısa testlerde süre varsayılan olarak bir sınav süresi kısıtı/deadline değildir; esas işlevi hız, verimlilik ve gelişim analizi için veri üretmektir.
+- Test süre verileri kullanıcı istatistiklerinde, konu/soru türü bazlı hız analizinde, AI koç içgörülerinde, soru zorluğu/kalite değerlendirmesinde ve sistemin gerçek kullanım verisiyle geliştirilmesinde kullanılabilecektir.
+- Süre tek başına akademik seviye puanını doğrudan değiştiren bağımsız bir kural olmayacaktır; doğruluk ve diğer performans sinyalleriyle birlikte yorumlanabilecek yardımcı veridir.
+- Platformun genel çalışma kronometresi ayrıca toplam çalışma süresini takip etmeye devam edecektir; kullanıcı tarafından başlatılabilecek, duraklatılabilecek ve durdurulabilecektir. Test süresi ile genel çalışma süresi farklı amaçlara hizmet eder.
 - Özel klavye kısayolları öncelikli ihtiyaç değildir ve planın temel parçası olmayacaktır.
 - Kullanıcı hatalı, belirsiz, cevabı sorunlu veya görseli bozuk soruları bildirebilecektir.
 - 10 soruluk test bittikten sonra kullanıcı isterse yeni bir teste geçerek çalışmaya devam edebilecektir.
@@ -242,7 +246,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Cevaplanmış, boş ve kullanıcı tarafından işaretlenmiş sorular soru haritasında tek bakışta ayırt edilebilmelidir.
 - Mobilde soru numaraları ekran alanını sürekli tüketmemelidir; `7 / 10` benzeri kompakt bir gösterge üzerinden açılan panel/bottom-sheet ile soru haritasına erişim sağlanabilir.
 - Mobil ekranda öncelik her zaman **soru ve şıklar** olacaktır; arayüz öğeleri soru içeriğini gölgelemeyecektir.
-- Üst bar mümkün olduğunca sade tutulacak; konu bilgisi, test ilerlemesi, genel çalışma kronometresi ve gerekli ana eylemler net bir hiyerarşiyle sunulacaktır.
+- Üst bar mümkün olduğunca sade tutulacak; konu bilgisi, test ilerlemesi, test süresi/genel çalışma süresi ve gerekli ana eylemler net bir hiyerarşiyle sunulacaktır.
 - Not, karalama ve soru işaretleme gibi ikincil araçlar erişilebilir olacak ancak ana soru alanıyla görsel olarak yarışmayacaktır.
 - Normal kısa çalışma testlerinde eylem adı **“Testi Bitir”** olacaktır. **“Sınavı Bitir”** ifadesi yalnızca gerçek deneme/sınav simülasyonu modlarında kullanılacaktır.
 - Nihai UI; daha güçlü tipografi, boşluk kullanımı, dokunma alanları, seçili şık durumları ve mobil uyumlulukla örnek görsellerden belirgin biçimde daha yüksek kalite hedefleyecektir.
@@ -352,8 +356,37 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Yanlış soru sisteminin temel döngüsü **yanlış → incele → nedeni anlamaya çalış → aynı beceriyi yeni sorularla doğrula → yeterli kanıt oluşunca aktif yanlış olmaktan çıkar** olacaktır.
 - Yanlış soru sisteminin mimari düzeyde açık sorusu kalmamıştır; kesin doğrulama zamanlamaları ve küçük UX ayrıntıları gerçek kullanım verisi/geliştirme aşamasında ayarlanabilir.
 
-## 19. Henüz planlanacak büyük alanlar
-- Deneme sınavı sistemi
+## 19. Deneme sınavları — kararlaştırıldı
+- Deneme sistemi normal 10 soruluk testlerin yalnızca büyütülmüş hali olmayacaktır; amacı **gerçek sınav koşullarında bilgi düzeyini, süre yönetimini ve sınav performansını birlikte ölçmek** olacaktır.
+- İki ana deneme türü bulunacaktır: **Tam KPSS Denemesi** ve **Branş Denemesi**.
+- Tam KPSS denemesi kullanıcının seçtiği KPSS türüne uygun soru dağılımı, toplam soru sayısı ve süre yapısını taklit edecektir. Bu sınav yapısı kod içine sabit gömülmeyecek; sınav türü ve güncel kurallar değişebileceği için yapılandırılabilir olacaktır.
+- Branş denemeleri Matematik, Türkçe, Tarih, Coğrafya, Vatandaşlık gibi tek bir dersin farklı konularını karışık biçimde ölçen genel ders denemeleri olacaktır; tek konuya ait 10 soruluk testlerle aynı şey sayılmayacaktır.
+- Branş denemelerinde de süre ölçülecek; deneme şablonunda belirlenmiş bir süre hedefi/kısıtı varsa uygulanabilecektir. Kesin branş süreleri içerik şablonuna göre tanımlanabilir.
+- Denemelerde soru navigasyonu, önceki soruya dönme, cevabı değiştirme ve soru işaretleme desteklenecektir. Doğru/yanlış sonucu sınav bitmeden gösterilmeyecektir.
+- Deneme sınavlarında bitirme eylemi **“Sınavı Bitir”** olarak adlandırılacaktır.
+- Deneme için iki kullanım modu desteklenecektir: **Gerçek Sınav Modu** ve **Çalışma Modu**.
+- Gerçek Sınav Modu resmi/atanmış süreyi kullanacak, süre kullanıcı tarafından duraklatılamayacak ve gerçek sınav performansını ölçen esas mod olarak ayrı tutulacaktır.
+- Çalışma Modu daha esnek olacaktır; gerektiğinde duraklatma gibi kolaylıklar sunulabilir. Gerçek Sınav Modu ve Çalışma Modu sonuçları aynı performans kategorisiymiş gibi karşılaştırılmayacaktır.
+- Denemelerde ayrı sınav kronometresi bulunacaktır. Platformun genel çalışma kronometresi denemede geçirilen zamanı toplam çalışma süresine ekleyebilir; ancak deneme ekranındaki ana süre bilgisi denemenin kendi süresi/kalan süresi olacaktır.
+- Deneme sırasında cevaplar, işaretlenen sorular, mevcut soru ve başlangıç zamanı otomatik kaydedilecektir. Sayfa yenilenmesi, uygulamanın kapanması veya bağlantı sorunu denemenin cevaplarını kaybettirmemelidir.
+- Gerçek Sınav Modunda uygulamanın kapanması veya sayfanın terk edilmesi süreyi durdurmayacaktır. Kullanıcı geri geldiğinde sınav gerçek zaman üzerinden kaldığı yerden devam edecektir.
+- Deneme sonu yalnızca toplam doğru/yanlış/boş göstermekle sınırlı kalmayacaktır. **Toplam sonuç, net, kullanılan süre, ders bazlı sonuçlar ve konu/alt konu analizi** katmanlı biçimde sunulacaktır.
+- Denemelerde soru başına ve ders/konu bazında harcanan süre mümkün olduğunca arka planda ölçülecek; bu veriler hız analizi, zaman yönetimi ve kullanıcı istatistiklerinde kullanılacaktır.
+- Süre analizi; örneğin kullanıcının Matematikte doğru yapmasına rağmen yavaş kalması, sınavın son bölümünde hız/doğruluk düşüşü yaşaması veya belirli soru türlerinde gereğinden fazla süre harcaması gibi anlamlı içgörüler üretebilecektir.
+- Deneme soruları da ders/konu/alt konu/kazanım/zorluk etiketlerine sahip olduğu için sonuçlar mevcut adaptif akademik sisteme gerçek performans kanıtı olarak katılacaktır. Denemeler için ayrı ve paralel bir akademik puan sistemi kurulmayacaktır.
+- Tek bir denemedeki kötü sonuç kullanıcının geçmiş akademik verisini aşırı biçimde ezmeyecektir; deneme cevapları mevcut soru bazlı performans ve güven mantığına yeni kanıt olarak eklenecektir.
+- Akademik konu yeterliliğinden ayrı olarak **deneme/sınav performansı** da izlenecektir. Böylece bilgisi iyi olduğu halde süre yetiştiremeyen, sınav sonunda dağılan veya gerçek sınav koşullarında daha fazla hata yapan kullanıcılar ayırt edilebilecektir.
+- Her deneme ve sonucu geçmişte saklanacaktır. Kullanıcı tek bir denemeden çok **son denemelerdeki trendi** görebilecek; gelişim/gerileme değerlendirmesi birden fazla denemeye dayanabilecektir.
+- Denemelerin kendi zorluk seviyeleri/kalite bilgileri tutulacaktır. Gerçek kullanım verisi oluştuğunda denemelerin zorluğu kullanıcı performansından yeniden kalibre edilebilecektir.
+- Farklı zorluktaki denemelerin ham netleri doğrudan eşdeğer kabul edilmeyecektir. İleride kullanıcılar arası karşılaştırma veya sıralama yapılırsa aynı deneme ya da zorluk normalize edilmiş sonuç kullanılması gerekecektir.
+- Deneme sonrası yanlış ve boş incelemesi ayrı bir sistem kurmak yerine mevcut **Yanlış Soru Sistemi**ne bağlanacaktır: yanlış → çözüm → AI'ya sor → neden yanlış yaptım → benzer yeni sorularla doğrulama/güçlendirme.
+- Deneme sonucu çalışma programı motorunu besleyecektir. Sistem deneme sonrasında **“Bu denemeye göre en değerli sonraki çalışmalar”** benzeri bir bölümde hedefli konu güçlendirme, kısa tekrar veya hız çalışması önerebilecektir; bunlar zorunlu görev olmayacaktır.
+- Deneme çözme sıklığı katı takvimle zorunlu tutulmayacaktır. Program motoru, son denemeden geçen süreyi, sınava kalan zamanı ve genel ölçüm ihtiyacını değerlendirerek deneme önerebilir; kullanıcı istediği zaman manuel deneme de başlatabilir.
+- Kullanıcının kendi ders/soru sayısı/zorluk karışımını seçerek oluşturduğu çalışma paketleri desteklenebilir; ancak gerçek KPSS simülasyonuyla karışmaması için bunlar **Karma Test** gibi ayrı bir kategori altında tutulacaktır.
+- Tahmini KPSS puanı ve hedef puanla ilişkilendirme 11. **Hedef Puan Sistemi** başlığında ayrıca netleştirilecektir; deneme mimarisinin çalışması buna bağlı değildir.
+- Deneme sınavlarının mimari düzeyde açık sorusu kalmamıştır; kesin sınav şablonları, süreler ve küçük UX ayrıntıları güncel sınav kuralları/uygulama aşamasında yapılandırılabilir.
+
+## 20. Henüz planlanacak büyük alanlar
 - İstatistik ve performans analizi
 - Hedef puan ve sınava hazır oluş sistemi
 - AI öğretmen / AI koç
