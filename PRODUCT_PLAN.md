@@ -248,8 +248,29 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Nihai UI; daha güçlü tipografi, boşluk kullanımı, dokunma alanları, seçili şık durumları ve mobil uyumlulukla örnek görsellerden belirgin biçimde daha yüksek kalite hedefleyecektir.
 - Soru çözme deneyiminin mimari düzeyde açık sorusu kalmamıştır. Boş soru uyarısının biçimi, not/karalama panelinin konumu ve benzeri küçük UX ayrıntıları geliştirme sırasında netleştirilebilir.
 
-## 15. Henüz planlanacak büyük alanlar
-- Soru bankası ve içerik yönetimi
+## 15. Soru bankasının yapısı — kısmen kararlaştırıldı
+- Soru bankası yalnızca soru metni ve doğru cevabı tutan bir depo olmayacak; adaptif sistemin akademik veri kaynağı olarak tasarlanacaktır.
+- Her soruda en az ders, konu, alt konu, mümkünse kazanım/beceri, uygun KPSS türü, soru tipi, gizli zorluk değeri, soru metni, varsa görsel/tablo, şıklar, doğru cevap, çözüm, kaynak, oluşturulma/güncellenme bilgisi ve kalite durumu tutulacaktır.
+- İçerik sınıflandırması mümkün olduğunca **Ders → Konu → Alt konu → Kazanım/Beceri** hiyerarşisinde tutulacaktır. Gizli kullanıcı seviyesi her mikro kazanımda tutulmak zorunda değildir; ancak soruların ayrıntılı etiketlenmesi ileride zayıf alt alanların tespitini mümkün kılacaktır.
+- Soru kaynakları üç ana grupta tutulabilir: resmî/geçmiş sınav kaynaklı sorular, insan tarafından hazırlanmış özgün sorular ve AI destekli üretilmiş özgün sorular.
+- AI destekli oluşturulan soru doğrudan canlı bankaya girmeyecektir. İçerik yaşam döngüsü taslak/kontrol/onay/aktif benzeri aşamalarla yönetilecektir.
+- Jev veya ilgili sınıflandırma modeli; ders, konu, alt konu, kazanım, soru tipi, ilk zorluk tahmini ve KPSS uygunluğu gibi alanları doldurmaya yardımcı olabilir. AI sınıflandırması tek başına nihai otorite olmayacaktır.
+- Soru zorluğunda başlangıçta AI tahmini tutulabilir; yeterli kullanıcı verisi oluştuğunda gerçek kullanıcı performansından türetilen zorluk ve bu tahminin güveni daha önemli hale gelecektir.
+- Gerçek zorluk değerlendirmesi yalnızca ham doğru yüzdesine bakmayacak; mümkün olduğunca soruyu çözen kullanıcıların seviyeleriyle birlikte yorumlanacaktır.
+- Sistem kullanıcı-soru ilişkisini takip edecektir: sorunun daha önce görülüp görülmediği, doğru/yanlış/boş sonucu, tekrar çözümü ve işaretlenme durumu gibi bilgiler tutulacaktır. İlk 30 benzersiz soru kalibrasyonunda daha önce çözülen soru yeni soru sayılmayacaktır.
+- Birbirinin yalnızca sayı veya küçük ifade değişikliği yapılmış kopyalarına aşırı yüklenmemek için soru çeşitliliği ve benzerlik ileride kalite sinyali olarak kullanılabilir.
+- Soruların bilgi, yorum, işlem, problem çözme, grafik/tablo okuma, paragraf, çıkarım, kavram, kronoloji gibi soru/beceri türleriyle etiketlenmesi desteklenecektir.
+- Canlı soru bankasındaki her sorunun kullanıcı inceleme ekranında kullanılabilecek açıklamalı bir çözümü bulunması hedeflenecektir.
+- Kullanıcının bulduğu kaynak soruda hazır açıklamalı çözüm bulunmaması normal kabul edilecektir; kullanıcıdan ders bilgisiyle çözümü kendisinin yazması beklenmeyecektir.
+- Hazır çözümü olmayan sorular için **AI açıklamalı çözüm üretebilecektir**. AI'ya soru metni, şıklar ve mevcutsa güvenilir doğru cevap/cevap anahtarı verilerek adım adım, anlaşılır bir çözüm oluşturulacaktır.
+- AI tarafından üretilen çözüm doğrudan güvenilir kabul edilmeyecek; canlı kullanım öncesinde kalite/doğrulama sürecinden geçecektir. Doğrulamanın kesin teknik yöntemi ayrıca netleştirilebilir.
+- Eğer sorunun güvenilir doğru cevabı da bilinmiyorsa, yalnızca tek bir AI cevabına dayanarak soru otomatik aktif edilmemelidir; soru daha güçlü doğrulama gerektiren taslak/kontrol durumunda kalmalıdır.
+- Kullanıcı hata bildirimleri ve kullanım verileri soru kalitesini besleyecektir. Çok sayıda cevap hatası bildirimi, sıra dışı başarı dağılımı veya başka anormallikler soruyu inceleme kuyruğuna taşıyabilir.
+- Sorular mümkün olduğunca silinip geçmiş veriyle bağ koparmak yerine sürümlenebilir; düzeltme sonrası yeni sürüm oluşturulması geçmiş kullanıcı çözüm kayıtlarının hangi soru sürümüne ait olduğunu korur.
+- 10 soruluk adaptif test rastgele aynı seviyedeki 10 sorudan oluşmak zorunda değildir. Kullanıcının seviyesine yakın sorular temel ağırlığı oluştururken bir miktar daha kolay ve daha zor soru da seviye doğrulama/gelişim amacıyla kullanılabilir. Kesin dağılım henüz sabitlenmemiştir.
+
+## 16. Henüz planlanacak büyük alanlar
+- Soru bankası ve içerik yönetiminin kalan ayrıntıları
 - Deneme sınavı sistemi
 - Yanlış / boş / işaretlenen sorular
 - Tekrar ve unutma sistemi
