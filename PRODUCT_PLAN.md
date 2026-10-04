@@ -306,10 +306,32 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Çok sayıdaki öğretmen/video seçeneğinin tam kart, filtre ve sıralama UX'i geliştirme aşamasında netleştirilebilir; mimari düzeyde karar verilmiştir: varsayılan öğretmen ders bazında hatırlanır, fakat kullanıcı diğer öğretmenlere erişimini kaybetmez.
 - Konu öğrenme sisteminin mimari düzeyde açık sorusu kalmamıştır.
 
-## 17. Henüz planlanacak büyük alanlar
+## 17. Tekrar ve unutma sistemi — kararlaştırıldı
+- Konu seviyesi yalnızca zaman geçti diye otomatik olarak düşürülmeyecektir. **Akademik gizli seviye** ile **hatırlama/unutma riski** birbirinden ayrı tutulacaktır.
+- Akademik gizli seviye, kullanıcının doğrulanmış soru performansına dayanır. Zaman geçmesi tek başına bu seviyeyi düşürmek için yeterli kanıt sayılmayacaktır.
+- Ayrı bir retention/hatırlama güveni veya unutma riski sinyali; son doğrulanmış çalışma zamanı, konu seviyesi, seviye güveni, son test performansı, yeni öğrenilmiş olma durumu, geçmiş tekrar sonuçları ve sınava kalan süre gibi girdilerden beslenecektir.
+- Zaman geçtikçe hatırlama riski artabilir. Sistem bu durumda kısa tekrar önerebilir; ancak gerçek akademik seviye ancak yeni performans kanıtı oluştuğunda değişir.
+- Yeni öğrenilmiş konular ilk dönemde daha sık korunacaktır. Başarılı hatırlama/tekrar performansı geldikçe tekrar aralığı uzayacak; kullanıcı zorlandıkça aralık kısalacaktır.
+- `1 gün → 3 gün → 7 gün → 14 gün` gibi sabit aralıklar başlangıçta yardımcı olabilir fakat bütün kullanıcılar ve bütün konular için değişmez kural olmayacaktır. Sistem zamanla kullanıcıya ve konuya göre uyarlanacaktır.
+- Tekrarın varsayılan biçimi uzun konu videosunu yeniden izlemek olmayacaktır. Temel akış **hatırlama kontrolü → kısa soru paketi → sonuca göre hedefli güçlendirme** şeklinde olacaktır.
+- Normal tekrar için yaklaşık **5 soruluk hızlı tekrar** kullanılabilir. Bu kısa kontrol yeterli güven üretmez veya kullanıcı zorlanırsa **10 soruluk güçlendirme testi** gibi daha derin bir çalışma önerilebilir.
+- Tekrar paketinde ağırlık, kullanıcının daha önce görmediği fakat aynı konu/kazanımı ölçen yeni sorularda olacaktır. Böylece yalnızca eski sorunun cevabını hatırlamak gerçek bilgiyle karıştırılmayacaktır.
+- Eski yanlış sorular da tekrar paketine dahil edilebilir; ancak yeni ve bağımsız sorular akademik kanıt açısından daha güçlü kabul edilecektir.
+- Kullanıcı tekrar sırasında belirli bir alt konu/kazanımda zorlanırsa tüm konuyu baştan çalıştırmak yerine ilgili alt alana hedefli **kısa güçlendirme** önerilebilecektir.
+- Hedefli güçlendirme; ilgili konu özeti, önemli kural/formül, kullanıcının eski notları, gerekli soru örnekleri ve gerekirse seçili video bölümünü içerebilir. Kullanıcı her seferinde tüm konu videosuna geri gönderilmeyecektir.
+- Tekrar içeriği dersin doğasına göre değişebilecektir. Tarih/Vatandaşlık gibi bilgi ağırlıklı derslerde bilgi, kronoloji ve kavram hatırlama; Matematikte işlem/yöntem uygulama; Türkçede kural ve düzenli pratik gibi farklı tekrar biçimleri desteklenebilir.
+- Soru bankasındaki ayrıntılı **Ders → Konu → Alt konu → Kazanım/Beceri** etiketleri, kullanıcının genel konudan ziyade belirli zayıf alt alanlarının tekrar edilmesinde kullanılacaktır.
+- Kullanıcının eski yanlışları önemli bir sinyal olacak; aynı alt konuda tekrarlanan hatalar, genel konu seviyesinden bağımsız olarak hedefli tekrar önceliğini yükseltebilecektir.
+- Tekrarlar kaçırıldığında görevler borç gibi birikmeyecektir. Kullanıcı uzun süre siteye girmemişse sistem “17 tekrar gecikti” benzeri baskıcı bir yapı kurmak yerine o an için en değerli tekrar ihtiyaçlarını yeniden hesaplayacaktır.
+- Tekrar sistemi ayrı bir zorunlu yapılacaklar listesi gibi çalışmayacak; çalışma programı motoruna **unutma riski / tekrar ihtiyacı** sinyali verecektir. Motor bunu yeni konu öğrenme, aktif öğrenme zinciri, ders dengesi ve sınava kalan süreyle birlikte değerlendirecektir.
+- Sistem zamanla kullanıcıya özgü **hafıza dayanıklılığı** öğrenebilir. Kullanıcının bazı dersleri/konuları daha uzun süre koruduğu, bazılarını daha hızlı unuttuğu gözlenirse tekrar aralıkları kişiselleştirilecektir.
+- Kullanıcıya ham retention skoru göstermek zorunlu değildir. Bunun yerine **Sağlam**, **Tazelemek iyi olabilir**, **Tekrar öneriliyor** gibi anlaşılır durum ifadeleri kullanılabilir.
+- Başarılı tekrar performansı hatırlama güvenini yükseltir ve sonraki tekrarın daha ileri tarihe taşınmasını sağlar. Zayıf tekrar performansı ise gerekirse gerçek akademik seviyeyi performans kuralları çerçevesinde düşürür, hedefli güçlendirmeyi tetikler ve sonraki tekrar aralığını kısaltır.
+- Tekrar ve unutma sisteminin mimari düzeyde açık sorusu kalmamıştır; kesin gün aralıkları ve adaptasyon katsayıları gerçek kullanım verisiyle kalibre edilebilir.
+
+## 18. Henüz planlanacak büyük alanlar
 - Deneme sınavı sistemi
 - Yanlış / boş / işaretlenen sorular
-- Tekrar ve unutma sistemi
 - İstatistik ve performans analizi
 - Hedef puan ve sınava hazır oluş sistemi
 - AI öğretmen / AI koç
