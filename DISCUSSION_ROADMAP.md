@@ -118,7 +118,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Kullanıcı 10 soruluk testi bitirdikten sonra isterse yeni bir teste geçerek çalışmaya devam edebilecektir.
    - Mimari düzeyde açık soru kalmamıştır; boş soru uyarısının biçimi, not/karalama panelinin konumu ve benzeri küçük UX ayrıntıları geliştirme aşamasında netleştirilebilir.
 
-5. 🟨 **Soru Bankasının Yapısı**
+5. ✅ **Soru Bankasının Yapısı**
    - Soru bankası adaptif sistemin akademik veri kaynağı olacaktır; yalnızca soru metni ve cevap depolamayacaktır.
    - Her soruda ders, konu, alt konu, mümkünse kazanım/beceri, KPSS türü, soru tipi, gizli zorluk, içerik, şıklar, doğru cevap, çözüm, kaynak ve kalite durumu gibi bilgiler tutulacaktır.
    - Etiketleme mümkün olduğunca **Ders → Konu → Alt konu → Kazanım/Beceri** hiyerarşisinde yapılacaktır.
@@ -135,14 +135,17 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Kullanıcının bulduğu soruda hazır açıklamalı çözüm olmaması normaldir; kullanıcıdan çözümü kendi ders bilgisiyle yazması beklenmeyecektir.
    - **Hazır çözümü olmayan sorular için AI açıklamalı çözüm üretecektir.** Soru metni, şıklar ve varsa güvenilir cevap anahtarı modele verilerek anlaşılır çözüm oluşturulacaktır.
    - AI çözümü doğrudan güvenilir kabul edilmeyecek; yayına girmeden önce doğrulama/kalite kontrol sürecinden geçecektir.
-   - Güvenilir doğru cevabı bilinmeyen sorular tek bir AI cevabına dayanarak otomatik aktif edilmeyecek; taslak/kontrol durumunda kalacaktır.
+   - Kabul edilen doğrulama zinciri: **üretici AI → bağımsız doğrulayıcı → mümkün olan yerde kod/simgesel kontrol → uyuşmazlıkta karantina/kontrol kuyruğu**.
+   - Matematik ve hesaplanabilir alanlarda mümkün olduğu ölçüde kod, formül veya simgesel hesapla ek doğrulama yapılacaktır.
+   - Üretici AI, doğrulayıcı AI ve varsa kod/simgesel kontrol aynı sonuca ulaşmıyorsa soru/çözüm otomatik olarak canlı bankaya alınmayacaktır.
+   - Güvenilir doğru cevabı bilinmeyen sorular tek bir AI cevabına dayanarak otomatik aktif edilmeyecek; bağımsız doğrulama gerektiren taslak/kontrol durumunda kalacaktır.
    - Kullanıcı hata bildirimleri, sıra dışı başarı oranları ve benzeri kullanım sinyalleri sorunlu soruları inceleme kuyruğuna taşıyabilecektir.
    - Soruların silinmesi yerine sürümlenmesi tercih edilebilir; düzeltmelerin hangi soru sürümüne ait olduğu geçmiş kullanıcı verileriyle korunacaktır.
    - 10 soruluk testler sadece aynı zorlukta 10 rastgele sorudan oluşmayacak; seviyeye yakın sorular temel ağırlıkta olurken bir miktar daha kolay/zor soruyla seviye doğrulama ve gelişim sağlanabilecektir.
-   - Kesin test zorluk dağılımı şimdilik sabitlenmemiştir.
-   - **AÇIK:** AI tarafından üretilen açıklamalı çözümün yayına alınmadan önce hangi doğrulama zincirinden geçeceği (tek model + kontrol, ikinci model, kod/simgesel kontrol, güven skoru vb.) ayrıca netleştirilecek.
+   - Kesin test zorluk dağılımı gerçek kullanım verisiyle kalibre edilebilir.
+   - Soru bankasının mimari düzeyde açık sorusu kalmamıştır; ayrıntılı kalite operasyonları Admin Paneli ve İçerik Kalite Kontrolü başlıklarında ele alınacaktır.
 
-6. ⬜ **Konu Öğrenme Sistemi**
+6. 🟨 **Konu Öğrenme Sistemi**
    - YouTube üzerinden küratörlü konu anlatımı videoları
    - Resmi YouTube embed oynatıcısının kullanımı
    - Embed mümkün değilse harici YouTube bağlantısı / alternatif video
@@ -285,4 +288,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **5. Soru Bankasının Yapısı**.
+Şu anda aktif tartışma konusu: **6. Konu Öğrenme Sistemi**.
