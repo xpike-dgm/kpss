@@ -151,7 +151,15 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 8. Gerçek kullanım verisi oluştuğunda AI tahmininden daha fazla ağırlık ver.
 9. Proje ticari olmadığı için profesyonel kalite hedefinden taviz verme.
 
-## 11. Henüz planlanacak büyük alanlar
+## 11. Dashboard ve oyunlaştırma yönü — kısmen kararlaştırıldı
+- Dashboard'un ana görevi kullanıcıya “şimdi ne çalışmalıyım?” sorusunun cevabını hızlıca vermek olacaktır.
+- Kullanıcının iş, günlük hayat ve KPSS hazırlığını aynı anda yürüttüğü kabul edilecektir; çalışma deneyimi gereksiz yere sıkıcı veya ağır hissettirilmemelidir.
+- Oyunlaştırma projede bilinçli biçimde kullanılacaktır. Amaç yalnızca ödül dağıtmak değil, ders çalışmayı daha keyifli, sürükleyici ve devam ettirilebilir hale getirmektir.
+- Profesyonellik ile eğlence birbirinin karşıtı kabul edilmeyecektir. Site ciddi bir sınava hazırlık aracı olurken aynı zamanda kullanıcının çalışmaktan keyif almasını hedefleyecektir.
+- XP, seri, görevler, başarımlar, görsel ilerleme, seviyeler ve benzeri mekaniklerin tam biçimi henüz kararlaştırılmamıştır; ayrı oyunlaştırma başlığında detaylandırılacaktır.
+- Gizli akademik seviye puanı ile kullanıcıya gösterilen oyunlaştırma/ödül puanları birbirine karıştırılmayacaktır.
+
+## 12. Henüz planlanacak büyük alanlar
 - Ana sayfa / dashboard
 - Günlük çalışma sistemi
 - Çalışma programı ve planlama motoru
