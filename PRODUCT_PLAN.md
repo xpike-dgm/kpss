@@ -217,8 +217,31 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Kullanıcının yakın zamanda sürekli aynı derse çalışması, o dersin global öneri avantajını bir miktar azaltabilir; böylece diğer önemli derslerin uzun süre görünmez hale gelmesi engellenir.
 - Aktif öğrenme zinciri istisnadır: yeni öğrenilen bir konu henüz pekiştirilmemişse sırf ders dengesi sağlamak için zincir kesilmez. Önce gerekli ilk pekiştirme tamamlanır, sonra dersler arası denge yeniden değerlendirilir.
 
-## 14. Henüz planlanacak büyük alanlar
-- Soru çözme deneyimi
+## 14. Soru çözme deneyimi — kısmen kararlaştırıldı
+- Ana soru çözme deneyimi tek tek “şıkkı seç → hemen cevapla” biçiminde olmayacaktır; kısa test mantığıyla ilerleyecektir.
+- Standart kısa test başlangıçta **10 soru** olacaktır.
+- Kullanıcı 10 soruyu sırayla yanıtlayacak, test bitmeden önce önceki sorulara dönebilecek ve verdiği cevabı değiştirebilecektir.
+- Test sırasında soruların doğru/yanlış sonucu gösterilmeyecektir.
+- Testin sonunda **“Testi Bitir”** eylemi bulunacaktır.
+- Test teslim edildiğinde ayrı bir sonuç ekranı açılacak ve kullanıcının **doğru, yanlış ve boş** sayıları gösterilecektir.
+- Sonuç ekranında yanlış yapılan sorular görülebilecek ve her yanlış soru için **“İncele”** eylemi bulunacaktır.
+- Yanlış soru incelemesinde kullanıcının seçtiği yanlış şık kırmızı, doğru şık yeşil olarak belirgin gösterilecektir.
+- İnceleme ekranında sorunun yazılı çözümü bulunacaktır.
+- Çözümün yanında **AI'ya sor** seçeneği bulunacak; kullanıcı isterse o soru veya konu hakkında AI öğretmene takip sorusu sorabilecektir.
+- Yanlış soru incelemesinde “Neden yanlış yaptım?” seçenekleri opsiyonel olarak sunulacaktır. Kullanıcıya bu geri bildirimin sistemin ve öğrenme içeriğinin daha iyi çalışmasına yardımcı olduğu açıkça belirtilecektir.
+- Kullanıcıdan “eminim / emin değilim” bilgisi istenmeyecektir.
+- Soru çözme sırasında kullanıcıya özel not alanı bulunabilir.
+- Soru çözme sırasında karalama alanı bulunabilir.
+- Adaptif sistem test performansıyla bağlantılı olacaktır; soru/test sonuçları kullanıcının gizli konu seviyesini ve öğrenme verilerini beslemeye devam edecektir.
+- Çalışma süresi soru bazlı ayrı bir test kronometresinden ziyade platformun genel çalışma kronometresi üzerinden takip edilecektir.
+- Genel çalışma kronometresi kullanıcı tarafından başlatılabilecek, duraklatılabilecek ve durdurulabilecektir.
+- Özel klavye kısayolları öncelikli ihtiyaç değildir ve planın temel parçası olmayacaktır.
+- Kullanıcı hatalı, belirsiz, cevabı sorunlu veya görseli bozuk soruları bildirebilecektir.
+- 10 soruluk test bittikten sonra kullanıcı isterse yeni bir teste geçerek çalışmaya devam edebilecektir.
+- Test bitmeden değiştirilebilen cevapların adaptif puanlamaya hangi anda yansıyacağı henüz kesinleştirilmemiştir; bu başlık altında ayrıca netleştirilecektir.
+
+## 15. Henüz planlanacak büyük alanlar
+- Soru çözme deneyiminin kalan ayrıntıları
 - Soru bankası ve içerik yönetimi
 - Deneme sınavı sistemi
 - Yanlış / boş / işaretlenen sorular
@@ -229,6 +252,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - AI öğretmen / AI koç
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
+- Sürekli gelişim / meta oyun sistemi
 - Bildirimler / hatırlatmalar
 - Profil ve kişiselleştirme
 - Mobil/PWA deneyimi
