@@ -20,37 +20,37 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Oyunlaştırmanın dashboard içindeki görünürlüğü ve yoğunluğu ayrıca tartışılacak.
 
 2. 🟨 **Günlük Çalışma Sistemi**
-   - Günlük görevler
-   - Ana görevler ve isteğe bağlı ekstra çalışma
-   - Ders dağılımı
-   - Soru hedefleri
-   - Konu çalışma hedefleri
-   - Kullanıcının gün içindeki kısa zamanlarını da değerlendirebilmesi
-   - Çalışmayı gün içine bölme ve kaldığı yerden devam etme
-   - Uzun görevleri küçük tamamlanabilir parçalara bölme
+   - Kullanıcı kendi isteğiyle çalışmaya başlar; sistem günlük zorunlu çalışma saati dayatmaz.
+   - Kullanıcıya “bugün şu kadar saat çalışmalısın” denmeyecek.
+   - Sistem o gün ne kadar çalıştığını ve geçmiş çalışma sürelerini gösterebilir.
+   - Platformun rolü kullanıcıyı zorlamak değil; çalışmasını kolaylaştırmak, verimli hale getirmek, ilerlemesini takip etmek ve doğru yönlendirmeler sunmak olacaktır.
+   - Kullanıcı ne zaman isterse çalışmaya başlayabilir, istediği kadar ilerleyebilir ve istediği zaman bırakabilir.
+   - Çalışma tek bir uzun oturum olmak zorunda değildir; gün içine bölünebilir.
+   - Kaldığı yerden devam etme desteklenmelidir.
    - Yeni öğrenme / pekiştirme / adaptif soru / tekrar dengesi
-   - Kaçırılan günlerde planın cezalandırmadan yeniden dağıtılması
-   - Günün net biçimde “tamamlandı” hissi vermesi
+   - Çalışılmayan günün “borç görev” baskısına dönüşmemesi
    - **Yeni bir konuda soru çözmeden önce konu öğrenme aşaması bulunması**
-   - Konu videosunun günlük çalışma görevi sayılması
+   - Kullanıcı konuyu bilmiyorsa konu anlatımı bitmeden o konuya ait normal/adaptif sorular açılmamalı.
+   - Kullanıcı konuyu zaten biliyorsa video zorunlu olmamalı; soru/kalibrasyon aşamasına doğrudan geçebilmeli.
+   - Konu videosunun çalışma ilerlemesinin bir parçası sayılması
    - Videoların kendi sunucumuzda tutulmaması; YouTube üzerinden seçilmesi
    - Mümkün olan videoların resmi YouTube embed oynatıcısıyla site içinde izletilmesi
    - Embed kapalı / video kaldırılmış ise YouTube bağlantısı veya alternatif video gösterilmesi
    - YouTube videosunun indirilmemesi, kopyalanmaması veya yeniden barındırılmaması
-   - 1–2 saatlik uzun videoların tek oturum zorunluluğu olmadan çalışma parçalarına ayrılması
+   - 1–2 saatlik uzun videoların farklı oturumlarda tamamlanabilmesi
    - Oynatma konumunun kaldığı yerden devam kolaylığı için takip edilip edilemeyeceği
    - Video izlemenin tek başına “konu öğrenildi” sayılmaması
-   - YouTube izleme/like/subscription gibi etkileşimlere XP bağlanmaması; ödülün öğrenme kontrolü veya soru çözümüne bağlanması
-   - Önerilen akış: Öğren → kısa anlayış kontrolü → pekiştirme → adaptif soru → tekrar
-   - Hızlı akademik kalibrasyonun konu öğrenildikten sonra başlaması
-   - Kullanıcının konuyu zaten bildiğini belirtmesi halinde videoyu atlama veya kısa seviye kontrolüyle geçme seçeneği olup olmayacağı
-   - “Yorgun / Normal / Enerjik” gibi günlük enerji seçiminin gerekli olup olmadığı
+   - YouTube izleme/like/subscription gibi etkileşimlere XP bağlanmaması; ödülün gerçek öğrenme/çalışma davranışına bağlanması
+   - Konu öğrenme tamamlandıktan sonra pekiştirme ve adaptif soru çözümüne geçilmesi
+   - Hızlı akademik kalibrasyonun ancak konu öğrenildikten veya kullanıcı konuyu bildiğini belirttikten sonra başlaması
 
 3. ⬜ **Çalışma Programı Motoru**
    - Sınava kalan süre
    - Kullanıcının müsait olduğu zaman
    - Eksik konular
    - Otomatik ve dinamik program üretimi
+   - Programın önerici mi yoksa daha yönlendirici mi olacağı
+   - Kullanıcının özgür çalışma yaklaşımıyla nasıl uyumlu hale getirileceği
 
 4. ⬜ **Soru Çözme Ekranı**
    - Şıklar
@@ -72,14 +72,15 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Resmi YouTube embed oynatıcısının kullanımı
    - Embed mümkün değilse harici YouTube bağlantısı / alternatif video
    - Video dosyalarını kendi sunucumuzda barındırmama
-   - Uzun video içeriklerini çalışma bölümlerine ayırma
+   - Uzun videoları farklı oturumlarda tamamlayabilme
    - Video oynatma konumunu kaldığı yerden devam için kullanma
+   - Kullanıcı konuyu bilmiyorsa video/öğrenme aşaması tamamlanmadan soru çözümüne geçmeme
+   - Konuyu zaten bilen kullanıcı için videoyu atlama davranışı
    - Kısa özetler
    - Formüller / önemli bilgiler
    - Örnek sorular
    - Püf noktaları
    - Video sonrası anlayış kontrolü
-   - Konuyu zaten bilen kullanıcı için atlama / seviye kontrolü davranışı
 
 7. ⬜ **Tekrar ve Unutma Sistemi**
    - Öğrenilmiş konuların unutulmasını tespit etme
