@@ -12,14 +12,14 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 ## Tartışma Başlıkları
 
-1. 🟨 **Ana Sayfa / Dashboard**
+1. ✅ **Ana Sayfa / Dashboard**
    - Kullanıcı siteyi açtığında ne görecek?
    - Bugün ne yapması gerektiği nasıl gösterilecek?
    - Dashboard hangi bilgileri öne çıkaracak?
    - Kullanıcı iş ve günlük hayatın yanında KPSS çalıştığı için ana sayfa yalnızca verimli değil, motive edici ve eğlenceli de olmalı.
    - Oyunlaştırmanın dashboard içindeki görünürlüğü ve yoğunluğu ayrıca tartışılacak.
 
-2. ⬜ **Günlük Çalışma Sistemi**
+2. 🟨 **Günlük Çalışma Sistemi**
    - Günlük görevler
    - Ders dağılımı
    - Soru hedefleri
@@ -168,4 +168,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **1. Ana Sayfa / Dashboard**.
+Şu anda aktif tartışma konusu: **2. Günlük Çalışma Sistemi**.
