@@ -237,6 +237,15 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Özel klavye kısayolları öncelikli ihtiyaç değildir ve planın temel parçası olmayacaktır.
 - Kullanıcı hatalı, belirsiz, cevabı sorunlu veya görseli bozuk soruları bildirebilecektir.
 - 10 soruluk test bittikten sonra kullanıcı isterse yeni bir teste geçerek çalışmaya devam edebilecektir.
+- Gönderilen örnek ekranlar **görsel tasarım referansı değil, işlevsel/wireframe referansı** olarak kabul edilecektir; mevcut koyu renkli/yoğun görsel dil kopyalanmayacaktır.
+- Masaüstünde soru içeriği ana odak olacaktır. 10 soruluk yapı için ağır bir 20 soruluk yan panel yerine, 1–10 arasındaki sorulara hızlı geçiş sağlayan daha kompakt ve zarif bir soru navigasyonu / ilerleme alanı kullanılacaktır.
+- Cevaplanmış, boş ve kullanıcı tarafından işaretlenmiş sorular soru haritasında tek bakışta ayırt edilebilmelidir.
+- Mobilde soru numaraları ekran alanını sürekli tüketmemelidir; `7 / 10` benzeri kompakt bir gösterge üzerinden açılan panel/bottom-sheet ile soru haritasına erişim sağlanabilir.
+- Mobil ekranda öncelik her zaman **soru ve şıklar** olacaktır; arayüz öğeleri soru içeriğini gölgelemeyecektir.
+- Üst bar mümkün olduğunca sade tutulacak; konu bilgisi, test ilerlemesi, genel çalışma kronometresi ve gerekli ana eylemler net bir hiyerarşiyle sunulacaktır.
+- Not, karalama ve soru işaretleme gibi ikincil araçlar erişilebilir olacak ancak ana soru alanıyla görsel olarak yarışmayacaktır.
+- Normal kısa çalışma testlerinde eylem adı **“Testi Bitir”** olacaktır. **“Sınavı Bitir”** ifadesi yalnızca gerçek deneme/sınav simülasyonu modlarında kullanılacaktır.
+- Nihai UI; daha güçlü tipografi, boşluk kullanımı, dokunma alanları, seçili şık durumları ve mobil uyumlulukla örnek görsellerden belirgin biçimde daha yüksek kalite hedefleyecektir.
 - Soru çözme deneyiminin mimari düzeyde açık sorusu kalmamıştır. Boş soru uyarısının biçimi, not/karalama panelinin konumu ve benzeri küçük UX ayrıntıları geliştirme sırasında netleştirilebilir.
 
 ## 15. Henüz planlanacak büyük alanlar
