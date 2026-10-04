@@ -89,7 +89,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - **Aktif öğrenme zinciri ders dengesi kuralının önüne geçebilir:** yeni öğrenilmiş konu henüz pekiştirilmediyse sırf başka ders ihmal edildi diye zincir yarıda kesilmez; ilk pekiştirme tamamlandıktan sonra ders dengesi yeniden değerlendirilir.
    - Mimari düzeyde açık soru kalmamıştır; sayısal eşiklerin ve alt mekaniklerin ayrıntıları ilgili sonraki başlıklarda ele alınacaktır.
 
-4. 🟨 **Soru Çözme Ekranı**
+4. ✅ **Soru Çözme Ekranı**
    - Ana soru çözme deneyimi tek tek “şıkkı seç → hemen cevapla” biçiminde olmayacak; kısa test mantığıyla ilerleyecek.
    - Standart kısa test başlangıçta **10 soru** olacaktır.
    - Kullanıcı soruları sırayla yanıtlayacak; test bitmeden önce önceki sorulara geri dönüp cevabını değiştirebilecektir.
@@ -116,8 +116,9 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Kullanıcı hatalı, belirsiz, cevabı sorunlu veya görseli bozuk soruları bildirebilecektir.
    - Mobil ve masaüstü arayüz sade olacak; asıl odak soru, şıklar, soru navigasyonu, not/karalama ve testi bitirme akışı olacaktır.
    - Kullanıcı 10 soruluk testi bitirdikten sonra isterse yeni bir teste geçerek çalışmaya devam edebilecektir.
+   - Mimari düzeyde açık soru kalmamıştır; boş soru uyarısının biçimi, not/karalama panelinin konumu ve benzeri küçük UX ayrıntıları geliştirme aşamasında netleştirilebilir.
 
-5. ⬜ **Soru Bankasının Yapısı**
+5. 🟨 **Soru Bankasının Yapısı**
    - Soruların kaynağı
    - Ders / konu / alt konu / kazanım etiketleri
    - Soru tipi
@@ -267,4 +268,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **4. Soru Çözme Ekranı**.
+Şu anda aktif tartışma konusu: **5. Soru Bankasının Yapısı**.
