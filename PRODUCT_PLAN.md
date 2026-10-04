@@ -170,10 +170,18 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Ana görevler tamamlandığında kullanıcının o günü başarıyla bitirdiği net biçimde gösterilmeli; isterse ekstra çalışmaya devam edebilmelidir.
 
 ### Konu öğrenmeden soru çözmeye geçmeme prensibi
-- Kullanıcı yeni bir konuda doğrudan soru çözmeye gönderilmemelidir; önce konuyu öğrenmesi için gerekli öğrenme içeriği tamamlanmalıdır.
-- Konu videosu veya öğrenme içeriği günlük planın gerçek bir çalışma görevi olarak kabul edilmelidir; yalnızca soru sayısı üzerinden ilerleme ölçülmemelidir.
+- Kullanıcı yeni bir konuda doğrudan soru çözmeye gönderilmemelidir; önce konuyu öğrenmesi için gerekli öğrenme içeriğine yönlendirilmelidir.
+- Platform kendi konu anlatım videolarını üretmek veya video dosyalarını kendi sunucusunda barındırmak zorunda değildir.
+- Ana model, uygun KPSS konu anlatım videolarını YouTube üzerinden seçmek ve mümkün olduğu durumlarda resmi YouTube gömülü oynatıcısıyla ders sayfası içinde izletmektir.
+- Böylece video YouTube altyapısında kalırken kullanıcı mümkün olduğunca siteden çıkmadan konu çalışabilir.
+- Bir video gömülmeye izin vermiyorsa, kaldırılmışsa, gizliye alınmışsa veya erişilemiyorsa kullanıcıya doğrudan YouTube bağlantısı ve mümkünse alternatif video gösterilmelidir.
+- Platform YouTube videolarını indirmeyecek, kopyalamayacak veya kendi sunucusundan yeniden yayınlamayacaktır.
+- YouTube embed kullanılması telif sorumluluğunun tamamen ortadan kalktığı anlamına gelmez; resmi YouTube oynatıcısı ve YouTube'un kullanım/oynatıcı politikaları çerçevesinde hareket edilecektir.
+- YouTube IFrame Player API kullanılırsa oynatma durumu ve mevcut zaman gibi verilerden yararlanılarak kullanıcının kaldığı konuma geri dönmesi kolaylaştırılabilir; ancak bu veri tek başına “konuyu öğrendi” kanıtı sayılmayacaktır.
+- YouTube politikaları nedeniyle video izleme, beğenme, paylaşma veya kanala abone olma gibi YouTube etkileşimlerine doğrudan XP/ödül bağlanmayacaktır. Oyunlaştırma ödülleri video sonrası mini kontrol, soru çözümü veya gerçek öğrenme görevlerine bağlanabilir.
+- Konu videosu / öğrenme içeriği günlük planın gerçek bir çalışma görevi olarak kabul edilmelidir; yalnızca soru sayısı üzerinden ilerleme ölçülmemelidir.
 - Bazı konu videolarının 1–2 saat veya daha uzun olabileceği kabul edilerek, uzun içerikler tek oturumda bitirilmek zorunda bırakılmamalıdır.
-- Uzun konu anlatımları bölüm/chapter mantığıyla küçük parçalara ayrılabilmeli ve kullanıcının video ilerlemesi kaydedilmelidir.
+- Uzun videolar için YouTube chapter'ları varsa kullanılabilir; yoksa platform kendi çalışma planında zaman aralıklarına göre parçalar tanımlayabilir.
 - Bir konu için önerilen temel akış: **Öğren → kısa anlayış kontrolü → pekiştirme → adaptif soru çözümü → tekrar**.
 - İlk 30 soruluk hızlı akademik kalibrasyonun, kullanıcı konuyu öğrenmeden önce rastgele başlatılması tercih edilmeyecektir; kalibrasyon öğrenme aşamasından sonra anlamlı hale gelmelidir.
 - Kullanıcının bir konuyu zaten bildiğini söylemesi durumunda videoyu tamamen atlama / kısa seviye kontrolüyle geçme davranışı ayrıca tartışılacaktır.
