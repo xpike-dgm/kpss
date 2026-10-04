@@ -329,9 +329,31 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Başarılı tekrar performansı hatırlama güvenini yükseltir ve sonraki tekrarın daha ileri tarihe taşınmasını sağlar. Zayıf tekrar performansı ise gerekirse gerçek akademik seviyeyi performans kuralları çerçevesinde düşürür, hedefli güçlendirmeyi tetikler ve sonraki tekrar aralığını kısaltır.
 - Tekrar ve unutma sisteminin mimari düzeyde açık sorusu kalmamıştır; kesin gün aralıkları ve adaptasyon katsayıları gerçek kullanım verisiyle kalibre edilebilir.
 
-## 18. Henüz planlanacak büyük alanlar
+## 18. Yanlış soru sistemi — kararlaştırıldı
+- Kullanıcının yanlış yaptığı her soru otomatik olarak **Yanlışlarım** alanına alınacaktır; kullanıcıdan manuel olarak yanlış defterine ekleme beklenmeyecektir.
+- Yanlış kaydında en az soru/soru sürümü, kullanıcının verdiği cevap, doğru cevap, açıklamalı çözüm, ders-konu-alt konu/kazanım bilgisi, yanlışın tarihi ve ilgili test/deneme bağlamı korunacaktır.
+- Tek bir yanlış otomatik olarak “kullanıcı bu konuyu bilmiyor” anlamına gelmeyecektir. Sistem tekil hatadan çok **tekrarlanan hata örüntülerine** önem verecektir.
+- Aynı alt konu/kazanımda farklı sorularda tekrar eden yanlışlar, o alt alanın riskini ve hedefli güçlendirme önceliğini artıracaktır. Bu sinyal tekrar sistemi, çalışma programı motoru ve gerektiğinde AI öğretmen/koç tarafından kullanılabilecektir.
+- Test sonrası yanlış incelemesinde daha önce kabul edilen **“Neden yanlış yaptım?”** geri bildirimi opsiyonel olarak sunulacaktır. Kullanıcı yanıtlamak zorunda olmayacaktır.
+- Başlangıç neden seçenekleri: **Bilgiyi bilmiyordum**, **Formülü/kuralı unuttum**, **Soruyu yanlış anladım**, **İşlem hatası yaptım**, **Dikkatsizlik yaptım**, **İki şık arasında kaldım**, **Emin değilim / bilmiyorum**.
+- Kullanıcının seçtiği hata nedenleri yalnızca etiket olarak saklanmayacak; yeterli veri oluştuğunda “bilgi eksiğinden çok işlem hatası yapıyor” benzeri gerçek çalışma içgörüleri üretmekte kullanılabilecektir.
+- Yanlışlar ekranı yüzlerce sorunun biriktiği pasif bir arşiv olmayacaktır. Kullanıcı açısından **Aktif Yanlışlar**, **Tekrar Bekleyenler** ve **Çözüldü / Pekişti** benzeri anlamlı gruplar kullanılabilir.
+- İç sistemde yanlışın yaşam döngüsü yeni yanlış → incelendi → güçlendiriliyor → doğrulandı → arşivlendi benzeri durumlarla takip edilebilir; kullanıcıya bu teknik durum isimlerini aynen göstermek zorunlu değildir.
+- Yanlış soruyu düzeltmenin ana yöntemi aynı soruyu sürekli yeniden göstermek olmayacaktır. Kullanıcı önce yanlışı ve doğrulanmış çözümünü inceler; daha sonra aynı kazanımı ölçen **daha önce görülmemiş yeni sorularla** gerçekten öğrenip öğrenmediği doğrulanır.
+- Eski yanlış soru daha sonra yeniden gösterilebilir; ancak cevabın ezberlenmesi gerçek öğrenmeyle karıştırılmayacaktır. Akademik doğrulamada yeni bağımsız sorular daha güçlü kanıt kabul edilecektir.
+- Başlangıç ürün kuralı olarak, bir yanlışın aktif problem olmaktan çıkması için aynı kazanımı ölçen **en az iki ayrı yeni doğrulama sorusunda** başarılı performans aranabilir. Bu sayı ve zaman aralığı gerçek kullanım verisiyle kalibre edilebilir.
+- İlk doğrulama kısa süre sonra, ikinci doğrulama ise daha ileri bir zamanda/başka bir pakette yapılabilir. Böylece anlık ezber ile kalıcı toparlanma ayrıştırılır.
+- Kullanıcı yeni benzer sorularda düzenli başarılı hale geldiğinde yanlış “çözüldü/pekişti” durumuna geçer; geçmiş kayıt silinmez ve performans geçmişinde korunur.
+- Kullanıcı isterse bir yanlış soruyu **Önemli / Tekrar Bak** benzeri bir işaretle manuel olarak saklayabilir. Sistem bir yanlışı toparlanmış saysa bile kullanıcının kendi işaretlediği soru erişilebilir kalır.
+- **Boş sorular yanlışlarla aynı şey sayılmayacaktır.** Boş bırakma; bilmeme, emin olamama, süre, uğraşmama veya başka nedenlerden kaynaklanabilir ve ayrı bir sonuç türü olarak tutulacaktır.
+- Bununla birlikte aynı konu/kazanımda tekrarlanan boşlar da zayıflık sinyali sayılabilir ve hedefli tekrar/güçlendirmeyi etkileyebilir.
+- Yanlış soru incelemesindeki **AI'ya sor** akışı, mümkün olduğunca doğrulanmış doğru cevap ve açıklamalı çözümü bağlam olarak kullanacaktır. Kullanıcı “daha basit anlat”, “neden C'yi seçmiş olabilirim?”, “benzer örnek ver” gibi takip soruları sorabilecektir.
+- Yanlış soru sistemi için ayrıca bağımsız bir “yanlış puanı” oluşturulmayacaktır. Yanlış verileri zaten gizli konu seviyesini, alt konu riskini, tekrar ihtiyacını ve program motoru önceliğini besleyecektir.
+- Yanlış soru sisteminin temel döngüsü **yanlış → incele → nedeni anlamaya çalış → aynı beceriyi yeni sorularla doğrula → yeterli kanıt oluşunca aktif yanlış olmaktan çıkar** olacaktır.
+- Yanlış soru sisteminin mimari düzeyde açık sorusu kalmamıştır; kesin doğrulama zamanlamaları ve küçük UX ayrıntıları gerçek kullanım verisi/geliştirme aşamasında ayarlanabilir.
+
+## 19. Henüz planlanacak büyük alanlar
 - Deneme sınavı sistemi
-- Yanlış / boş / işaretlenen sorular
 - İstatistik ve performans analizi
 - Hedef puan ve sınava hazır oluş sistemi
 - AI öğretmen / AI koç
