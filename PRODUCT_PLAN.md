@@ -209,6 +209,12 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Sonraki konunun önerilmesi mevcut konunun tamamen bittiği anlamına gelmez. Eski konu daha sonra tekrar/unutma sistemi üzerinden korunur ve geliştirilmeye devam eder.
 - Bu kurallar öneri motorunu yönetir; kullanıcının özgür çalışma prensibi korunur ve kullanıcı isterse farklı bir konuya manuel olarak gidebilir.
 - `+20` gelişim miktarı başlangıç ürün kuralıdır; gerçek kullanım verileri ileride bunun konu türüne veya seviyeye göre ayarlanmasının daha doğru olduğunu gösterirse kalibre edilebilir.
+- Sınava kalan süre motor için sürekli değişen bir **zaman baskısı** girdisidir; katı dönemler veya “şu tarihten sonra yeni konu yasak” gibi sert eşikler kullanılmayacaktır.
+- Sınava uzun süre varken temel kurma, yeni konu öğrenme ve kapsamı genişletme daha değerli kabul edilir. Sınav yaklaştıkça tekrar, pekiştirme, yanlışlar, denemeler ve kısa sürede yüksek fayda sağlayabilecek çalışmaların ağırlığı artar.
+- Sınava çok az süre kalmış olsa bile kısa sürede öğrenilebilecek ve anlamlı sınav faydası sağlayabilecek yeni bir konu otomatik olarak dışlanmaz; zaman baskısı yalnızca öncelikleri değiştirir.
+- Dersler arasında mekanik eşit zaman dağıtımı yapılmayacaktır; ancak bir ders uzun süre anlamlı biçimde çalışılmadığında **ihmal baskısı / ihmal bonusu** ile önceliği kademeli olarak yükselir.
+- Kullanıcının yakın zamanda sürekli aynı derse çalışması, o dersin global öneri avantajını bir miktar azaltabilir; böylece diğer önemli derslerin uzun süre görünmez hale gelmesi engellenir.
+- Aktif öğrenme zinciri istisnadır: yeni öğrenilen bir konu henüz pekiştirilmemişse sırf ders dengesi sağlamak için zincir kesilmez. Önce gerekli ilk pekiştirme tamamlanır, sonra dersler arası denge yeniden değerlendirilir.
 
 ## 14. Henüz planlanacak büyük alanlar
 - Çalışma programı motorunun kalan ayrıntıları
