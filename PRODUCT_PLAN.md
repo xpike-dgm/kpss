@@ -191,8 +191,9 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Konu öğrenme tamamlandıktan sonra pekiştirme ve adaptif soru çözümü başlar.
 - İlk 30 soruluk hızlı akademik kalibrasyon konu öğrenildikten sonra veya kullanıcı “bu konuyu biliyorum” diyerek öğrenme aşamasını geçtiğinde devreye girer.
 
-## 13. Çalışma programı motoru — kısmen kararlaştırıldı
+## 13. Çalışma programı motoru — kararlaştırıldı
 - Çalışma motoru kullanıcıya zorunlu saat veya katı günlük program dayatmak yerine, mevcut durumda en mantıklı çalışma yönünü önerecektir.
+- Motor kullanıcıdan “kaç dakikan var?” veya benzeri bir müsait süre girdisi istemeyecektir. Kullanıcı ne kadar çalışmak isterse o kadar çalışır; süre, öneri motorunun kullanıcıdan talep ettiği bir planlama parametresi değildir.
 - Öncelik karşılaştırması yalnızca konu bazındaki anlık net getirisine göre yapılmayacaktır. Ana bakış; **dersin genel sınav değeri, kullanıcının o dersteki mevcut ilerlemesi ve dersin öğrenme sırası** olacaktır.
 - Konu bazındaki geçmiş soru sıklığı, gizli seviye ve beklenen net kaybı yardımcı sinyallerdir; ancak ders içi öğrenme yolunu bozacak kadar baskın olamaz.
 - Bir ders içindeki temel/önkoşul konular, doğrudan az soru getiriyor olsalar bile sonraki öğrenmeyi mümkün kılıyorsa düşük öncelikli sayılmayacaktır.
@@ -217,7 +218,6 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Aktif öğrenme zinciri istisnadır: yeni öğrenilen bir konu henüz pekiştirilmemişse sırf ders dengesi sağlamak için zincir kesilmez. Önce gerekli ilk pekiştirme tamamlanır, sonra dersler arası denge yeniden değerlendirilir.
 
 ## 14. Henüz planlanacak büyük alanlar
-- Çalışma programı motorunun kalan ayrıntıları
 - Soru çözme deneyimi
 - Soru bankası ve içerik yönetimi
 - Deneme sınavı sistemi
