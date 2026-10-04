@@ -174,12 +174,27 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Akademik ustalık ve sonraki konuya hazır oluş; video yüzdesinden veya öğrenmeyi tamamla düğmesinden değil, gerçek soru performansı ve adaptif/önkoşul kurallarından türetilecektir.
    - Mimari düzeyde açık soru kalmamıştır; öğretmen kartlarının/filtrelerin tam görsel düzeni geliştirme aşamasında netleştirilebilir.
 
-7. 🟨 **Tekrar ve Unutma Sistemi**
-   - Öğrenilmiş konuların unutulmasını tespit etme
-   - Tekrar zamanlaması
-   - Tekrar testleri
+7. ✅ **Tekrar ve Unutma Sistemi**
+   - Akademik gizli seviye ile **hatırlama/unutma riski** ayrı tutulacaktır; yalnızca zaman geçti diye konu puanı otomatik düşmeyecektir.
+   - Unutma/hatırlama sinyali; son çalışma zamanı, gizli seviye, seviye güveni, yakın performans, konunun ne kadar yeni olduğu, geçmiş tekrar sonuçları ve sınava kalan süre gibi girdileri kullanacaktır.
+   - Zaman geçmesi tekrar ihtiyacını artırabilir fakat gerçek akademik seviye yalnızca yeni performans kanıtıyla değişecektir.
+   - Yeni öğrenilen konular ilk dönemde daha sık korunacak; başarılı hatırlama geldikçe tekrar aralığı uzayacak, zorlanıldıkça kısalacaktır.
+   - Sabit `1-3-7-14` benzeri aralıklar bütün kullanıcılar için değişmez kural olmayacak; tekrar sistemi kullanıcıya ve konuya göre uyarlanacaktır.
+   - Standart tekrar uzun videoyu baştan izlemek olmayacak; **hatırlama kontrolü → kısa soru paketi → gerekirse hedefli güçlendirme** akışı kullanılacaktır.
+   - Normal tekrar yaklaşık **5 soruluk hızlı tekrar** olabilir; yeterli güven oluşmazsa veya performans zayıfsa **10 soruluk güçlendirme testi** önerilebilir.
+   - Tekrar sorularının ağırlığı daha önce görülmemiş fakat aynı kazanımı ölçen yeni sorularda olacaktır. Eski yanlışlar da gösterilebilir fakat yeni sorular daha güçlü akademik kanıt kabul edilir.
+   - Belirli alt konu/kazanımda tekrarlanan hata varsa tüm konuyu baştan çalıştırmak yerine hedefli kısa güçlendirme yapılacaktır.
+   - Hedefli güçlendirmede kısa konu özeti, formül/kural, eski notlar, örnekler ve gerekirse seçili video bölümü kullanılabilir.
+   - Tekrar biçimi ders türüne göre değişebilir; Tarih/Vatandaşlıkta bilgi-kronoloji-kavram, Matematikte işlem/yöntem, Türkçede kural ve düzenli pratik gibi farklı yapılar kullanılabilir.
+   - Ayrıntılı soru etiketleri ve eski yanlışlar, zayıf alt alanların bulunmasında ve tekrar önceliğinde kullanılacaktır.
+   - Kaçırılmış tekrarlar “borç görev” olarak birikmeyecektir; sistem o an için en değerli tekrar ihtiyaçlarını yeniden hesaplayacaktır.
+   - Tekrar sistemi çalışma programı motoruna **unutma riski / tekrar ihtiyacı** sinyali verecek; ayrı ve zorunlu bir yapılacaklar listesine dönüşmeyecektir.
+   - Sistem zamanla kullanıcının ders/konu bazındaki **hafıza dayanıklılığını** öğrenip tekrar aralıklarını kişiselleştirebilecektir.
+   - Kullanıcıya ham retention puanı yerine **Sağlam / Tazelemek iyi olabilir / Tekrar öneriliyor** benzeri anlaşılır durumlar gösterilebilir.
+   - Başarılı tekrar hatırlama güvenini yükseltip sonraki tekrar aralığını uzatır; zayıf performans gerekirse gerçek seviyeyi performans kurallarıyla düşürür, hedefli güçlendirme tetikler ve tekrar aralığını kısaltır.
+   - Mimari düzeyde açık soru kalmamıştır; kesin gün aralıkları ve adaptasyon katsayıları gerçek kullanım verisiyle kalibre edilebilir.
 
-8. ⬜ **Yanlış Soru Sistemi**
+8. 🟨 **Yanlış Soru Sistemi**
    - Yanlış defteri
    - Yanlış nedenleri
    - Sorunun yeniden gösterilmesi
@@ -302,4 +317,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **7. Tekrar ve Unutma Sistemi**.
+Şu anda aktif tartışma konusu: **8. Yanlış Soru Sistemi**.
