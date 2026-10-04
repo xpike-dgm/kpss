@@ -21,9 +21,24 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 2. 🟨 **Günlük Çalışma Sistemi**
    - Günlük görevler
+   - Ana görevler ve isteğe bağlı ekstra çalışma
    - Ders dağılımı
    - Soru hedefleri
    - Konu çalışma hedefleri
+   - Kullanıcının gün içindeki kısa zamanlarını da değerlendirebilmesi
+   - Çalışmayı gün içine bölme ve kaldığı yerden devam etme
+   - Uzun görevleri küçük tamamlanabilir parçalara bölme
+   - Yeni öğrenme / pekiştirme / adaptif soru / tekrar dengesi
+   - Kaçırılan günlerde planın cezalandırmadan yeniden dağıtılması
+   - Günün net biçimde “tamamlandı” hissi vermesi
+   - **Yeni bir konuda soru çözmeden önce konu öğrenme aşaması bulunması**
+   - Konu videosu / öğrenme içeriğinin gerçek bir günlük çalışma görevi sayılması
+   - 1–2 saatlik uzun konu videolarının tek oturum zorunluluğu olmadan parçalara/chapter'lara bölünmesi
+   - Video ilerlemesinin kaydedilmesi ve sonraki oturumda kaldığı yerden devam edilmesi
+   - Önerilen akış: Öğren → kısa anlayış kontrolü → pekiştirme → adaptif soru → tekrar
+   - Hızlı akademik kalibrasyonun konu öğrenildikten sonra başlaması
+   - Kullanıcının konuyu zaten bildiğini belirtmesi halinde videoyu atlama veya kısa seviye kontrolüyle geçme seçeneği olup olmayacağı
+   - “Yorgun / Normal / Enerjik” gibi günlük enerji seçiminin gerekli olup olmadığı
 
 3. ⬜ **Çalışma Programı Motoru**
    - Sınava kalan süre
@@ -48,10 +63,14 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 6. ⬜ **Konu Öğrenme Sistemi**
    - Konu anlatımları
+   - Uzun video içeriklerini chapter/bölümlere ayırma
+   - Video ilerlemesini kaydetme
    - Kısa özetler
    - Formüller / önemli bilgiler
    - Örnek sorular
    - Püf noktaları
+   - Video sonu anlayış kontrolü
+   - Konuyu zaten bilen kullanıcı için atlama / seviye kontrolü davranışı
 
 7. ⬜ **Tekrar ve Unutma Sistemi**
    - Öğrenilmiş konuların unutulmasını tespit etme
