@@ -159,9 +159,27 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - XP, seri, görevler, başarımlar, görsel ilerleme, seviyeler ve benzeri mekaniklerin tam biçimi henüz kararlaştırılmamıştır; ayrı oyunlaştırma başlığında detaylandırılacaktır.
 - Gizli akademik seviye puanı ile kullanıcıya gösterilen oyunlaştırma/ödül puanları birbirine karıştırılmayacaktır.
 
-## 12. Henüz planlanacak büyük alanlar
-- Ana sayfa / dashboard
-- Günlük çalışma sistemi
+## 12. Günlük çalışma sistemi — kısmen kararlaştırıldı
+- Günlük çalışma sistemi, kullanıcının iş ve günlük hayatına uyum sağlayacak; tek ve katı bir uzun çalışma bloğu dayatmayacaktır.
+- Gün, ana görevler ve isteğe bağlı ekstra çalışmalar şeklinde ayrılabilecektir.
+- Kullanıcı kısa zaman aralıklarında da verimli çalışabilmelidir; 10, 20, 45 dakika veya daha uzun çalışma oturumları desteklenmelidir.
+- Aynı gün içindeki çalışma farklı zamanlara bölünebilir ve sistem ilerlemeyi kaldığı yerden devam ettirmelidir.
+- Büyük görevler mümkün olduğunca küçük, tamamlanabilir parçalara bölünmelidir.
+- Günlük çalışma; yeni öğrenme, pekiştirme, adaptif soru çözme ve tekrar türlerini desteklemelidir.
+- Kaçırılan bir gün kullanıcıyı cezalandıran bir deneyime dönüşmemeli; tamamlanmayan işler sonraki plana yeniden dağıtılabilmelidir.
+- Ana görevler tamamlandığında kullanıcının o günü başarıyla bitirdiği net biçimde gösterilmeli; isterse ekstra çalışmaya devam edebilmelidir.
+
+### Konu öğrenmeden soru çözmeye geçmeme prensibi
+- Kullanıcı yeni bir konuda doğrudan soru çözmeye gönderilmemelidir; önce konuyu öğrenmesi için gerekli öğrenme içeriği tamamlanmalıdır.
+- Konu videosu veya öğrenme içeriği günlük planın gerçek bir çalışma görevi olarak kabul edilmelidir; yalnızca soru sayısı üzerinden ilerleme ölçülmemelidir.
+- Bazı konu videolarının 1–2 saat veya daha uzun olabileceği kabul edilerek, uzun içerikler tek oturumda bitirilmek zorunda bırakılmamalıdır.
+- Uzun konu anlatımları bölüm/chapter mantığıyla küçük parçalara ayrılabilmeli ve kullanıcının video ilerlemesi kaydedilmelidir.
+- Bir konu için önerilen temel akış: **Öğren → kısa anlayış kontrolü → pekiştirme → adaptif soru çözümü → tekrar**.
+- İlk 30 soruluk hızlı akademik kalibrasyonun, kullanıcı konuyu öğrenmeden önce rastgele başlatılması tercih edilmeyecektir; kalibrasyon öğrenme aşamasından sonra anlamlı hale gelmelidir.
+- Kullanıcının bir konuyu zaten bildiğini söylemesi durumunda videoyu tamamen atlama / kısa seviye kontrolüyle geçme davranışı ayrıca tartışılacaktır.
+
+## 13. Henüz planlanacak büyük alanlar
+- Günlük çalışma sisteminin kalan ayrıntıları
 - Çalışma programı ve planlama motoru
 - Soru çözme deneyimi
 - Soru bankası ve içerik yönetimi
