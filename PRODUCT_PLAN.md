@@ -274,8 +274,33 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - 10 soruluk adaptif test rastgele aynı seviyedeki 10 sorudan oluşmak zorunda değildir. Kullanıcının seviyesine yakın sorular temel ağırlığı oluştururken bir miktar daha kolay ve daha zor soru da seviye doğrulama/gelişim amacıyla kullanılabilir. Kesin dağılım gerçek kullanım verisi ve test kalitesi gözlendikçe ayarlanabilir.
 - Soru bankasının mimari düzeyde açık sorusu kalmamıştır; ayrıntılı kalite operasyonları daha sonra İçerik Kalite Kontrolü ve Admin Paneli başlıklarında ele alınacaktır.
 
-## 16. Henüz planlanacak büyük alanlar
-- Konu anlatımı ve öğrenme materyalleri
+## 16. Konu öğrenme sistemi — kısmen kararlaştırıldı
+- Konu öğrenme sistemi yalnızca video oynatıcı olmayacaktır; temel akış **konuya giriş → konu çerçevesi → öğretmen/video seçimi → konu anlatımı → kısa destek materyalleri → kısa anlayış kontrolü → 10 soruluk pekiştirme/adaptif test** şeklinde ilerleyecektir.
+- Konu girişinde kullanıcıya “Bu konuda neleri öğreneceksin?” benzeri kısa bir çerçeve sunulacaktır.
+- Kullanıcı konuyu zaten biliyorsa öğrenme videosunu zorunlu olarak izlemek zorunda olmayacak; **“Bu konuyu biliyorum”** benzeri bir seçenekle doğrudan kalibrasyon/test aşamasına geçebilecektir.
+- Konuyu bilmeyen kullanıcı için öğrenme aşaması normal/adaptif soru çözümünden önce gelecektir.
+- YouTube konu anlatımları resmi embed oynatıcı üzerinden mümkün olduğunca site içinde izletilecek; videolar indirilmeyecek veya yeniden barındırılmayacaktır.
+- Konu öğrenme ekranı video ile sınırlı kalmayacak; **kısa özet, önemli kurallar/formüller, püf noktaları, örnekler ve kullanıcının kendi notları** gibi destek materyalleri bulunacaktır.
+- Bu kısa özet/not içeriklerinin ilk taslakları AI tarafından üretilebilir; ancak akademik içerik oldukları için kalite kontrolünden geçmeleri gerekir.
+- Video ilerlemesi öğrenme ilerlemesi olarak takip edilebilir fakat **video izleme oranı akademik ustalık kanıtı değildir**.
+- Kullanıcının video içinde kaldığı konum saklanarak farklı oturumlarda aynı yerden devam etmesi sağlanacaktır. Dashboard veya konu sayfasında kaldığı yerden devam kolaylığı sunulabilir.
+- Uzun videolar mümkün olduğunca mantıksal bölümlere ayrılacaktır. YouTube chapter'ları varsa kullanılabilir; yoksa platform video zaman aralıklarını konu alt başlıklarıyla eşleştirebilir.
+- Kullanıcı konu videosu sırasında not alabilecektir. Uygun olduğunda notlar video zaman damgasına bağlanarak kullanıcı daha sonra nota tıkladığında ilgili video anına dönebilir.
+- Konu ekranında **AI'ya Sor** entegrasyon noktası bulunacaktır; AI öğretmen ayrıntıları 12. başlıkta tasarlanacaktır.
+- Video/öğrenme sonrasında ana 10 soruluk teste geçmeden önce **çok kısa ve düşük sürtünmeli bir anlayış kontrolü** kullanılacaktır. Bu kontrol normal adaptif testin yerine geçmeyecek ve gizli akademik seviyeyi ana test kadar etkilemeyecektir.
+- Anlayış kontrolünün amacı kullanıcının içeriği temel düzeyde takip edip etmediğini görmek ve gerekirse ilgili özet/video bölümüne geri yönlendirmektir.
+- Konu özeti ilk öğrenmeden sonra da tekrar sistemi içinde hızlı hatırlatma materyali olarak kullanılabilecektir.
+- Öğrenme içeriği dersin doğasına göre değişebilecektir: Matematikte yöntem/işlem/örnek; Tarihte bilgi/kronoloji/ilişki; Coğrafyada kavram/harita/neden-sonuç; Vatandaşlıkta kavram/kurum/işleyiş; Türkçede kural/yorum/soru tekniği gibi farklı bloklar kullanılabilir.
+- Sistem **başlanmadı / öğreniliyor / öğrenme aşaması tamamlandı** gibi öğrenme durumlarını akademik gizli seviyeden ayrı tutacaktır. “Öğrenme tamamlandı” durumu “konuda ustalaştı” anlamına gelmeyecektir.
+- Kullanıcı öğrenmeyi yarıda bırakırsa sistem kaldığı yerden devam etmeyi önerebilir; kullanıcı isterse başka bir çalışma seçerek özgürlüğünü korur.
+- **Kullanıcı tek bir öğretmene/hocaya zorlanmayacaktır.** Aynı konuyu anlatan mümkün olduğunca çok uygun KPSS öğretmeni/video seçeneği konu sayfasında erişilebilir olacaktır.
+- Kullanıcı anlatım tarzına, öğretmene veya videoya göre kendi seçimini yapabilecektir. Platformun bir videoyu varsayılan/önerilen göstermesi, diğer öğretmenleri erişilemez hale getirmeyecektir.
+- Video seçenekleri arasında KPSS kapsamına uygunluk, güncellik, anlatım kalitesi, konu kapsamı ve erişilebilirlik gibi kalite sinyalleri tutulabilir; ancak kullanıcı seçimi korunacaktır.
+- Video sunumunun tam sıralama/filtreleme UX'i henüz kesinleştirilmemiştir; çok sayıdaki öğretmen seçeneğinin kullanıcıyı boğmadan sunulması ayrıca netleştirilebilir.
+- “Öğrenme aşaması tamamlandı” durumunun yalnızca kullanıcının düğmesine mi, video/mini kontrol sinyallerine mi yoksa birleşik kurala mı dayanacağı henüz kesinleştirilmemiştir.
+
+## 17. Henüz planlanacak büyük alanlar
+- Konu öğrenme sisteminin kalan ayrıntıları
 - Deneme sınavı sistemi
 - Yanlış / boş / işaretlenen sorular
 - Tekrar ve unutma sistemi
