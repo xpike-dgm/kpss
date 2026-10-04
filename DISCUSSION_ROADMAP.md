@@ -90,12 +90,29 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Mimari düzeyde açık soru kalmamıştır; sayısal eşiklerin ve alt mekaniklerin ayrıntıları ilgili sonraki başlıklarda ele alınacaktır.
 
 4. 🟨 **Soru Çözme Ekranı**
-   - Şıklar
-   - Süre
-   - Çözüm gösterimi
-   - Not alma
-   - Soru işaretleme
-   - Mobil ve masaüstü UX
+   - Ana soru çözme deneyimi tek tek “şıkkı seç → hemen cevapla” biçiminde olmayacak; kısa test mantığıyla ilerleyecek.
+   - Standart kısa test başlangıçta **10 soru** olacaktır.
+   - Kullanıcı soruları sırayla yanıtlayacak; test bitmeden önce önceki sorulara geri dönüp cevabını değiştirebilecektir.
+   - Sorular cevaplanırken doğru/yanlış sonucu gösterilmeyecektir.
+   - Testin sonunda **“Testi Bitir”** butonu olacaktır.
+   - Test tamamlanınca ayrı bir sonuç ekranı açılacak; **doğru, yanlış ve boş** sayıları gösterilecektir.
+   - Sonuç ekranında kullanıcının yanlış yaptığı sorular açıkça görülebilecek ve her yanlış sorunun yanında **“İncele”** eylemi bulunacaktır.
+   - İnceleme ekranında kullanıcının verdiği yanlış cevap kırmızı, doğru cevap yeşil biçimde şıklar üzerinde belirgin gösterilecektir.
+   - İnceleme ekranında sorunun yazılı çözümü bulunacaktır.
+   - Çözümün yanında **AI'ya sor** eylemi bulunacak; kullanıcı isterse o soru/konu hakkında AI öğretmene takip sorusu sorabilecektir.
+   - Yanlış soru incelemesinde **“Neden yanlış yaptım?”** seçenekleri opsiyonel olarak bulunacaktır.
+   - Bu geri bildirimin zorunlu olmadığı, ancak sistemin ve öğrenme içeriğinin kullanıcıya daha iyi uyarlanmasına yardımcı olduğu kullanıcıya açıkça belirtilecektir.
+   - “Eminim / emin değilim” özelliği kullanılmayacaktır.
+   - Soru çözme sırasında kullanıcıya ait **not alanı** bulunabilir.
+   - Soru çözme sırasında **karalama alanı** bulunabilir.
+   - Adaptif sistem soru çözme/test sonuçlarıyla bağlantılı olacaktır; gizli konu seviyesi ve diğer öğrenme verileri test performansından güncellenmeye devam edecektir.
+   - **AÇIK:** Kullanıcı test bitmeden cevaplarını değiştirebildiği için, gizli seviye güncellemesinin soru soru geçici cevaplara göre mi yoksa test teslim edildiğinde topluca mı yapılacağı netleştirilecek. Öneri: test mevcut seviyeye göre hazırlanır, kalıcı seviye güncellemesi “Testi Bitir” sonrasında yapılır.
+   - Soru bazlı ayrı süre göstergesi ana mekanik olmayacaktır. Çalışma süresi sitenin genel çalışma kronometresi üzerinden takip edilecektir.
+   - Genel çalışma kronometresi kullanıcı tarafından başlatılabilecek, duraklatılabilecek ve durdurulabilecektir.
+   - Klavye kısayolları öncelikli bir ihtiyaç değildir; özel klavye desteği planlanmayacaktır.
+   - Kullanıcı hatalı, belirsiz, cevabı sorunlu veya görseli bozuk soruları bildirebilecektir.
+   - Mobil ve masaüstü arayüz sade olacak; asıl odak soru, şıklar, soru navigasyonu, not/karalama ve testi bitirme akışı olacaktır.
+   - Kullanıcı 10 soruluk testi bitirdikten sonra isterse yeni bir teste geçerek çalışmaya devam edebilecektir.
 
 5. ⬜ **Soru Bankasının Yapısı**
    - Soruların kaynağı
@@ -186,40 +203,53 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
     - Ödüllerin gerçek öğrenme ve çalışma davranışına bağlı olması
     - Oyunlaştırmanın profesyonel KPSS hazırlık hissini bozmayacak şekilde nasıl tasarlanacağı
 
-15. ⬜ **Arkadaş Sistemi**
+15. ⬜ **Sürekli Gelişim / Meta Oyun Sistemi**
+    - Ürünün yalnızca “KPSS soru çözme sitesi” gibi hissettirmeyip, kullanıcının devamlı gelişimini takip ettiği yarı oyun deneyimine dönüşmesi ayrıca tartışılacak.
+    - Çalışma kronometresi bu sistemin önemli girdilerinden biri olabilir.
+    - Bugün / bu hafta / bu ay en çok çalışan kullanıcılar için leaderboard olup olmayacağı.
+    - Çalışma süresine göre sıralama.
+    - Çözülen soru sayısına göre sıralama.
+    - Test, konu, tekrar, deneme ve başka gerçek öğrenme davranışlarının meta ilerlemeye nasıl bağlanacağı.
+    - Kullanıcının sadece süre açık bırakarak veya anlamsız soru çözerek sistemi sömürmesini önleyecek kurallar.
+    - Akademik başarı, çalışma emeği ve oyun ilerlemesinin birbirine nasıl bağlanacağı.
+    - Uzun vadeli karakter/profil/hesap gelişimi hissi oluşturulup oluşturulmayacağı.
+    - Sosyal rekabet, sezonlar, ligler, görevler veya başka oyun sistemleri olup olmayacağı.
+    - Bu başlık klasik XP/rozet oyunlaştırmasından daha geniş tutulacak ve ayrı tartışılacaktır.
+
+16. ⬜ **Arkadaş Sistemi**
    - Arkadaş ekleme
    - Ortak çalışma
    - Sıralamalar
    - Ortak hedefler
    - İlerleme paylaşımı
 
-16. ⬜ **Kayıt ve İlk Kurulum Deneyimi**
+17. ⬜ **Kayıt ve İlk Kurulum Deneyimi**
    - Hesap oluşturma
    - KPSS türü seçimi
    - Ders seviyeleri
    - Hedefler
    - İlk çalışma profilinin oluşturulması
 
-17. ⬜ **Mobil / PWA Deneyimi**
+18. ⬜ **Mobil / PWA Deneyimi**
    - Telefon ana ekranına ekleme
    - Mobil navigasyon
    - Bildirimler
    - Çevrimdışı davranış
 
-18. ⬜ **Admin Paneli**
+19. ⬜ **Admin Paneli**
    - Soru ekleme ve düzenleme
    - Hatalı soru bildirimleri
    - Kullanıcı yönetimi
    - Konu ağacı
    - AI sınıflandırmalarının kontrolü
 
-19. ⬜ **İçerik Kalite Kontrolü**
+20. ⬜ **İçerik Kalite Kontrolü**
    - Yanlış cevaplı sorular
    - Hatalı / belirsiz sorular
    - Güncelliğini kaybetmiş içerikler
    - AI ve insan kontrol akışı
 
-20. ⬜ **Teknik Altyapı**
+21. ⬜ **Teknik Altyapı**
    - Veritabanı
    - Backend
    - Auth
