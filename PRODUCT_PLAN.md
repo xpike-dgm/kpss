@@ -214,7 +214,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Kullanıcının yakın zamanda sürekli aynı derse çalışması, o dersin global öneri avantajını bir miktar azaltabilir; böylece diğer önemli derslerin uzun süre görünmez hale gelmesi engellenir.
 - Aktif öğrenme zinciri istisnadır: yeni öğrenilen bir konu henüz pekiştirilmemişse sırf ders dengesi sağlamak için zincir kesilmez. Önce gerekli ilk pekiştirme tamamlanır, sonra dersler arası denge yeniden değerlendirilir.
 
-## 14. Soru çözme deneyimi — kısmen kararlaştırıldı
+## 14. Soru çözme deneyimi — kararlaştırıldı
 - Ana soru çözme deneyimi tek tek “şıkkı seç → hemen cevapla” biçiminde olmayacaktır; kısa test mantığıyla ilerleyecektir.
 - Standart kısa test başlangıçta **10 soru** olacaktır.
 - Kullanıcı 10 soruyu sırayla yanıtlayacak, test bitmeden önce önceki sorulara dönebilecek ve verdiği cevabı değiştirebilecektir.
@@ -237,9 +237,9 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Özel klavye kısayolları öncelikli ihtiyaç değildir ve planın temel parçası olmayacaktır.
 - Kullanıcı hatalı, belirsiz, cevabı sorunlu veya görseli bozuk soruları bildirebilecektir.
 - 10 soruluk test bittikten sonra kullanıcı isterse yeni bir teste geçerek çalışmaya devam edebilecektir.
+- Soru çözme deneyiminin mimari düzeyde açık sorusu kalmamıştır. Boş soru uyarısının biçimi, not/karalama panelinin konumu ve benzeri küçük UX ayrıntıları geliştirme sırasında netleştirilebilir.
 
 ## 15. Henüz planlanacak büyük alanlar
-- Soru çözme deneyiminin kalan ayrıntıları
 - Soru bankası ve içerik yönetimi
 - Deneme sınavı sistemi
 - Yanlış / boş / işaretlenen sorular
