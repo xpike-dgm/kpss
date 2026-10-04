@@ -191,9 +191,27 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Konu öğrenme tamamlandıktan sonra pekiştirme ve adaptif soru çözümü başlar.
 - İlk 30 soruluk hızlı akademik kalibrasyon konu öğrenildikten sonra veya kullanıcı “bu konuyu biliyorum” diyerek öğrenme aşamasını geçtiğinde devreye girer.
 
-## 13. Henüz planlanacak büyük alanlar
-- Günlük çalışma sisteminin kalan ayrıntıları
-- Çalışma programı ve planlama motoru
+## 13. Çalışma programı motoru — kısmen kararlaştırıldı
+- Çalışma motoru kullanıcıya zorunlu saat veya katı günlük program dayatmak yerine, mevcut durumda en mantıklı çalışma yönünü önerecektir.
+- Öncelik karşılaştırması yalnızca konu bazındaki anlık net getirisine göre yapılmayacaktır. Ana bakış; **dersin genel sınav değeri, kullanıcının o dersteki mevcut ilerlemesi ve dersin öğrenme sırası** olacaktır.
+- Konu bazındaki geçmiş soru sıklığı, gizli seviye ve beklenen net kaybı yardımcı sinyallerdir; ancak ders içi öğrenme yolunu bozacak kadar baskın olamaz.
+- Bir ders içindeki temel/önkoşul konular, doğrudan az soru getiriyor olsalar bile sonraki öğrenmeyi mümkün kılıyorsa düşük öncelikli sayılmayacaktır.
+- Gereken derslerde konu önkoşul ağı / öğrenme yolu tanımlanacaktır. Öncelik puanı bu yapıyı geçersiz kılamaz.
+- Yeni öğrenilen bir konu pekiştirilmeden çok sayıda bağımsız önerinin arkasına düşmemelidir. Konu anlatımı sonrasında kısa sürede pekiştirme ve adaptif soru çözümü önerilmelidir.
+- Kullanıcı bir konuyu tamamladıktan sonra aynı dersin sonraki konusunu önermeden önce mevcut konuda yeterli öğrenme kanıtı aranacaktır.
+- **Tüm kullanıcılar için sabit bir `60` geçiş eşiği kullanılmayacaktır.** 0–20 seviyesindeki kullanıcıyı sırf evrensel eşik nedeniyle 60'a taşımaya çalışmak ile 60 seviyesindeki kullanıcıyı geliştirmek aynı yük değildir.
+- Geçiş değerlendirmesi iki ana şartı birlikte kullanacaktır:
+  1. **Kişisel gelişim hedefi:** Kullanıcının gerçek sorularla doğrulanmış başlangıç seviyesine göre anlamlı ilerleme göstermesi. Başlangıç kuralı olarak yaklaşık `+20` puanlık gelişim düşünülecektir; 110 üst sınırdır.
+  2. **Sonraki konunun önkoşul yeterliliği:** Yeni konu mevcut konudan belirli bir bilgi düzeyi gerektiriyorsa, kullanıcı bu minimum yeterliliğe de ulaşmış olmalıdır.
+- Örneğin doğrulanmış başlangıcı 10 olan kullanıcı için kişisel hedef yaklaşık 30 olabilir. Sonraki konu mevcut konudan en az 40 düzeyinde yeterlilik gerektiriyorsa sistem 30'da gelişimi başarılı kabul eder fakat sonraki konuyu önermeden önce 40'a kadar mevcut konuyu güçlendirmeyi önerebilir.
+- Doğrulanmış başlangıç seviyesi, onboarding beyanından gelen ilk puanla aynı şey değildir. Geçiş kararında gerçek benzersiz soru performansı ve seviye güveni dikkate alınmalıdır.
+- Bir kullanıcı yüksek seviyede başlıyorsa sistem düşük bir sabit eşikle “zaten yeterlisin” dememelidir; yüksek seviyeli kullanıcıdan da kendi başlangıcına göre anlamlı gelişim beklenmelidir.
+- Sonraki konunun önerilmesi mevcut konunun tamamen bittiği anlamına gelmez. Eski konu daha sonra tekrar/unutma sistemi üzerinden korunur ve geliştirilmeye devam eder.
+- Bu kurallar öneri motorunu yönetir; kullanıcının özgür çalışma prensibi korunur ve kullanıcı isterse farklı bir konuya manuel olarak gidebilir.
+- `+20` gelişim miktarı başlangıç ürün kuralıdır; gerçek kullanım verileri ileride bunun konu türüne veya seviyeye göre ayarlanmasının daha doğru olduğunu gösterirse kalibre edilebilir.
+
+## 14. Henüz planlanacak büyük alanlar
+- Çalışma programı motorunun kalan ayrıntıları
 - Soru çözme deneyimi
 - Soru bankası ve içerik yönetimi
 - Deneme sınavı sistemi
