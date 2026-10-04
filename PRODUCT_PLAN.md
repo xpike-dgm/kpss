@@ -386,8 +386,45 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Tahmini KPSS puanı ve hedef puanla ilişkilendirme 11. **Hedef Puan Sistemi** başlığında ayrıca netleştirilecektir; deneme mimarisinin çalışması buna bağlı değildir.
 - Deneme sınavlarının mimari düzeyde açık sorusu kalmamıştır; kesin sınav şablonları, süreler ve küçük UX ayrıntıları güncel sınav kuralları/uygulama aşamasında yapılandırılabilir.
 
-## 20. Henüz planlanacak büyük alanlar
-- İstatistik ve performans analizi
+## 20. Performans ve istatistik ekranı — kararlaştırıldı
+- İstatistik ekranının amacı mümkün olan her veriyi göstermek değil; kullanıcının **nerede iyi olduğunu, nerede zorlandığını, hızının nasıl değiştiğini, gerçekten gelişip gelişmediğini ve bundan sonra neye odaklanmasının mantıklı olduğunu** anlaşılır biçimde göstermektir.
+- Ana yapı **Genel Durum**, **Ders ve Konu Performansı**, **Hız ve Süre**, **Deneme Performansı**, **Hata / Tekrar Analizi** bölümlerinden oluşacaktır.
+- Kullanıcı istatistikleri **7 gün / 30 gün / 3 ay / tüm zamanlar** gibi zaman filtreleriyle inceleyebilecektir.
+- Genel özet; çözülen soru sayısı, toplam çalışma süresi, doğruluk, öğrenilen konu, yapılan tekrar ve çözülen deneme gibi temel metrikleri gösterebilir. Ham sayıların yanında sistem kısa ve anlamlı yorumlar da üretecektir.
+- Kullanıcıya gizli `0–110` akademik konu puanı doğrudan gösterilmeyecektir. Bunun yerine **Yeni / Temel / Gelişiyor / İyi / Güçlü / Çok Güçlü** benzeri anlaşılır durum etiketleri veya görsel ilerleme ifadeleri kullanılabilecektir. Kesin isimler UI aşamasında rafine edilebilir.
+- Kullanıcı yalnızca mevcut durumu değil, zaman içindeki değişimi de görebilecektir; örneğin “Problemler — son 30 günde belirgin gelişim” gibi trend ifadeleri kullanılacaktır.
+- Ders kartlarında doğruluk, son dönem trendi, ortalama soru süresi, güçlü alanlar, aktif zayıf alanlar ve tekrar ihtiyacı gibi özet bilgiler yer alabilecektir.
+- Ders kartından konu ve alt konu seviyesine inilebilecek; son testler, doğruluk, hız, yanlış/boş, tekrar ihtiyacı, son çalışma tarihi ve alt konu/kazanım kırılımı incelenebilecektir.
+- Sistem yalnızca ders bazında değil, mümkün olduğunda **konu / alt konu / kazanım / soru türü** bazında performans analizi sunacaktır.
+- Hız analizi test süresi, soru bazlı süre, ders, konu ve soru türü kırılımlarını kullanacaktır. Kullanıcı zaman içindeki hız gelişimini görebilecektir.
+- **Hız ve doğruluk birlikte değerlendirilecektir.** Sadece daha hızlı çözmek gelişim sayılmayacak; hızlanırken doğruluğun korunup korunmadığı veya düştüğü de yorumlanacaktır.
+- Sistem “Türkçede hızlandın ve doğruluğunu korudun” veya “Matematikte daha hızlı çözüyorsun ancak hata oranı arttı” gibi birleşik performans içgörüleri üretebilecektir.
+- Genel çalışma kronometresi verisi bugün/hafta/ay/toplam bazında gösterilebilecek; çalışma süresi derslere ve çalışma türlerine göre ayrıştırılabilecektir.
+- Çalışma türü kırılımında **konu öğrenme, soru çözme, tekrar, deneme, yanlış inceleme** gibi aktiviteler ayrı analiz edilebilecektir.
+- Sistem yalnızca “ne kadar çalıştı?” sorusuna değil, mümkün olduğunda **“çalışma performansa nasıl yansıdı?”** sorusuna da bakacaktır. Örneğin bir konuya harcanan çalışma süresi ile doğruluk/hız gelişimi birlikte incelenebilir.
+- Çalışma → performans ilişkisi kullanıcıya kesin ve yanıltıcı tek bir “verimlilik puanı” olarak sunulmayacak; örüntü ve içgörü şeklinde yorumlanacaktır.
+- Yanlış nedeni analizi yalnızca kullanıcı gerçekten geri bildirim verdiği örnekler üzerinden yapılacaktır. Yetersiz örnek varken bütün yanlışlara genelleme yapılmayacaktır.
+- Hata nedenleri bilgi eksikliği, dikkatsizlik, işlem hatası, yanlış anlama gibi kategorilerde özetlenebilecek ve veri kapsamı kullanıcıya dürüst biçimde belirtilecektir.
+- Boş sorular da ayrı analiz edilecektir. Özellikle denemelerde yüksek boş oranı, düşük yanlış oranıyla birlikte görüldüğünde süre, risk alma veya bilgi eksikliği gibi olası örüntüler için sinyal oluşturacaktır.
+- Tekrar/unutma sisteminin kullanıcıya dönük özeti ham retention skoru göstermeyecek; örneğin **Sağlam / Tazelemek iyi olabilir / Tekrar öneriliyor** durumlarının sayıları ve değişimi gösterilebilecektir.
+- Tekrarların sonrasında performansın korunup korunmadığı veya toparlanıp toparlanmadığı takip edilebilecektir.
+- Deneme istatistiklerinde tek “en iyi sonuç” yerine trend ön planda olacaktır. Son deneme, en iyi deneme, son 5 ortalama, ders bazlı netler, doğru/yanlış/boş ve süre kullanımı gösterilebilecektir.
+- Deneme süre analizi sınavın bölümlerindeki hız/doğruluk değişimini, özellikle sınav sonlarına doğru düşüşleri ve belirli derslerde aşırı süre tüketimini tespit edebilecektir.
+- Soru zorluğuna göre performans analizinde kolay/orta/zor benzeri seviyelerde doğruluk ve özellikle zaman içindeki gelişim gösterilebilecektir; daha zor sorularda daha düşük doğruluk normal bağlamıyla sunulacaktır.
+- Soru türü/beceri analizi kullanılacaktır. Örneğin işlem, problem çözme, grafik/tablo, bilgi, yorum, kronoloji gibi etiketler kullanıcının konu bilgisinden bağımsız performans örüntülerini gösterebilir.
+- İstatistik yorumları **örnek sayısı ve veri güvenini** dikkate alacaktır. Az sayıda sorudan çıkan sonuç ile yüzlerce sorudan çıkan sonuç eşit kesinlikte sunulmayacaktır.
+- Kullanıcıya teknik güven puanı göstermek zorunlu değildir; **Veri henüz sınırlı / güven orta / yeterli veri var** benzeri anlaşılır ifadeler kullanılabilir.
+- İstatistik ekranı yalnızca geçmişi raporlamayacak; ekranın sonunda veya uygun yerlerinde **“Bundan sonra ne yapmalıyım?”** sorusuna veri tabanlı yanıt verecektir.
+- Sistem, örneğin tekrar eden Yüzde Problemleri hatası için güçlendirme, iyi doğruluk ama yüksek süre görülen Paragraf için hız çalışması veya uzun süredir dokunulmayan bir konu için hızlı tekrar önerebilecektir.
+- Bu öneriler mevcut çalışma programı motoruna bağlanacak ve zorunlu görev olmayacaktır.
+- AI tarafından üretilen istatistik yorumları havadan/genel motivasyon cümleleri kurmayacak; yapılandırılmış gerçek kullanıcı verisine dayanacaktır.
+- AI yorumlarında doğruluk trendi, süre trendi, tekrar eden alt konu hatası, hata nedeni ve benzeri gerçek sinyaller kullanılabilecek; yetersiz veri varsa kesin yargıdan kaçınılacaktır.
+- Kullanıcı **bu ay vs geçen ay** gibi dönem karşılaştırmaları yapabilecek; soru sayısı, çalışma süresi, doğruluk, ortalama çözüm süresi ve öğrenilen konu gibi değişimler görülebilecektir.
+- İstatistik ekranının ana karşılaştırma ekseni **kullanıcı vs geçmişteki kendisi** olacaktır. Arkadaş/lig/leaderboard kıyasları bu ekranın temel amacı olmayacak; sosyal rekabet ayrı oyunlaştırma/meta sisteminde ele alınacaktır.
+- Ana ekran mümkün olduğunca sade tutulacaktır: dönem özeti → gelişim/trend → dersler → hız ve doğruluk → deneme trendi → tekrar/yanlış durumu → kişisel içgörüler/öneriler biçiminde katmanlı bir bilgi hiyerarşisi kullanılabilir.
+- Performans ve istatistik sisteminin mimari düzeyde açık sorusu kalmamıştır; görsel grafik türleri, kesin etiket isimleri ve küçük sunum ayrıntıları UI geliştirme aşamasında rafine edilebilir.
+
+## 21. Henüz planlanacak büyük alanlar
 - Hedef puan ve sınava hazır oluş sistemi
 - AI öğretmen / AI koç
 - Arkadaş ve sosyal özellikler
