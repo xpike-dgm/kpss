@@ -45,10 +45,10 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Hızlı akademik kalibrasyonun ancak konu öğrenildikten veya kullanıcı konuyu bildiğini belirttikten sonra başlaması
    - Bu başlıkta kalan ayrıntılar program motoru, konu öğrenme sistemi ve oyunlaştırma başlıklarında ele alınacaktır.
 
-3. 🟨 **Çalışma Programı Motoru**
+3. ✅ **Çalışma Programı Motoru**
    - Motor katı takvim yerine dinamik biçimde “şu anda en mantıklı çalışma nedir?” sorusunu cevaplayan öneri sistemi olacaktır.
    - Program önerici olacaktır; kullanıcı kendi çalışma özgürlüğünü koruyacaktır.
-   - **AÇIK:** Kullanıcının o anki müsait süresinin program motorunda zorunlu, opsiyonel veya hiç kullanılmayan bir girdi olup olmayacağı henüz kesinleştirilmedi.
+   - Kullanıcıdan “kaç dakikan var?” veya benzeri bir müsait süre girdisi istenmeyecektir; kullanıcı ne kadar isterse o kadar çalışır.
    - Öneriler yalnızca global öncelik puanına göre sıralanmamalı; yeni öğrenilen bir konu pekiştirilmeden araya çok sayıda bağımsız çalışma girmemeli.
    - Bir konuya başlandığında o konu için bir **öğrenme zinciri** oluşmalı: konu anlatımı tamamlandıktan sonra kısa sürede pekiştirme ve adaptif soru çözümü gelmeli.
    - Yeni öğrenilen konu için gerekli ilk pekiştirme, başka derslerin daha düşük aciliyetli önerilerinin önüne geçebilmeli.
@@ -87,8 +87,9 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Dersler arasında mekanik eşit zaman dağılımı yapılmaz. Uzun süredir anlamlı biçimde çalışılmayan dersin önceliği **ihmal bonusu** ile kademeli biçimde yükselir.
    - Son dönemde sürekli aynı derse çalışılmışsa o dersin global öneri avantajı bir miktar azaltılabilir; böylece diğer önemli dersler uzun süre görünmez kalmaz.
    - **Aktif öğrenme zinciri ders dengesi kuralının önüne geçebilir:** yeni öğrenilmiş konu henüz pekiştirilmediyse sırf başka ders ihmal edildi diye zincir yarıda kesilmez; ilk pekiştirme tamamlandıktan sonra ders dengesi yeniden değerlendirilir.
+   - Mimari düzeyde açık soru kalmamıştır; sayısal eşiklerin ve alt mekaniklerin ayrıntıları ilgili sonraki başlıklarda ele alınacaktır.
 
-4. ⬜ **Soru Çözme Ekranı**
+4. 🟨 **Soru Çözme Ekranı**
    - Şıklar
    - Süre
    - Çözüm gösterimi
@@ -233,4 +234,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **3. Çalışma Programı Motoru**.
+Şu anda aktif tartışma konusu: **4. Soru Çözme Ekranı**.
