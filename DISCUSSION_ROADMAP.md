@@ -60,21 +60,27 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Pekiştirme tamamlandıktan sonra konu normal öneri havuzuna dönebilmeli ve daha uzun aralıklı tekrar sistemi 7. başlıktaki unutma/tekrar motoruna devredilmeli.
    - Konu zincirinin ne kadar sıkı olacağı, ilk pekiştirmede kaç soru kullanılacağı ve tekrar aralıkları ayrıca tartışılacak.
    - Öncelik motoru yalnızca “en düşük gizli seviye puanına sahip konu” mantığıyla çalışmamalı.
-   - Her konu için geçmiş KPSS sınavlarında görülme sıklığı / ortalama soru sayısı temel girdilerden biri olmalı.
-   - Gizli konu seviyesi ile o konudan sınavda beklenen soru sayısı birlikte değerlendirilerek **beklenen kayıp net / beklenen kazanılabilir net** tahmini üretilebilmeli.
-   - Örnek fikir: bir konudan ortalama 2 soru çıkıyor ve kullanıcı o konuda yaklaşık %50 başarı gösterecek durumdaysa yaklaşık 1 soru kayıp riski vardır; başka bir konudan ortalama 6 soru çıkıyor ve kullanıcı yaklaşık %60 başarı düzeyindeyse yaklaşık 2–3 soru kayıp riski olabilir. Bu durumda ikinci konu, gizli seviyesi daha yüksek olmasına rağmen daha yüksek çalışma önceliği alabilir.
-   - Ana hedef yalnızca bütün konuları eşit düzeyde öğrenmek değil; kullanıcının sınavda mümkün olan en yüksek net/puanı elde etmesine yardım etmek olmalı.
-   - Yüksek soru getirili konular, kullanıcının eksikliğiyle birleştiğinde daha yüksek öncelik alabilmeli.
-   - Düşük soru getirili konular tamamen yok sayılmamalı; sistem uzun vadede kapsam bütünlüğünü korumalı ancak sınırlı çalışma zamanında beklenen puan getirisine ağırlık verebilmeli.
+   - Geçmiş KPSS sınavlarında bir konunun görülme sıklığı / ortalama soru sayısı yararlı bir sinyal olabilir; ancak **konu bazındaki anlık net getirisi tek başına çalışma sırasını belirlememeli**.
+   - Ana optimizasyon mantığı konu konu kısa vadeli net kovalamak yerine **dersin genel sınav değeri + kullanıcının o dersteki mevcut ilerlemesi + dersin öğrenme sırası** üzerinden düşünülmeli.
+   - Örneğin Matematikte temel bir konu doğrudan az soru getiriyor olsa bile Matematik dersinin geri kalanında sağlıklı ilerlemek için gerekliyse düşük öncelikli sayılmamalı.
+   - Öncelik karşılaştırması özellikle dersler arasında yapılırken, o dersin toplam KPSS net potansiyeli ve kullanıcının o dersteki ilerleme ihtiyacı hesaba katılmalı.
+   - Konu bazındaki geçmiş soru sıklığı, gizli seviye ve beklenen net kaybı yine yardımcı girdiler olabilir; fakat ders içi öğrenme yolunu bozacak kadar baskın olmamalı.
    - Gizli seviye puanı doğrudan “doğru yapma yüzdesi” kabul edilmeden önce gerçek kullanıcı verisiyle kalibre edilmeli; ileride `seviye → beklenen doğru olasılığı` dönüşümü öğrenilebilir.
    - Geçmiş sınav sıklığı tek bir yıla aşırı bağlı olmamalı; birden fazla yılın verisi, güncellik ve müfredat değişiklikleri hesaba katılmalı.
-   - İleride daha gelişmiş bir metrik olarak **beklenen kazanılabilir net / tahmini çalışma süresi** düşünülebilir. Böylece 2 saat çalışmayla +1 net kazandırabilecek konu ile 10 saat çalışmayla +1 net kazandırabilecek konu aynı öncelikte değerlendirilmez.
+   - İleride daha gelişmiş bir metrik olarak ders bazında **beklenen kazanılabilir net / tahmini çalışma süresi** düşünülebilir.
    - **Öncelik puanı konu sırasını / önkoşul mantığını geçersiz kılamaz.** Bir konu yüksek net getirili olsa bile gerekli temel konular öğrenilmeden ana öneri olarak sunulmamalı.
    - Derslerde gerektiği ölçüde bir **konu önkoşul ağı / öğrenme yolu** tanımlanmalı. Sistem hangi konunun başka hangi konulara dayandığını bilmelidir.
-   - Motor iki aşamalı çalışmalı: önce kullanıcının mevcut bilgisine göre **öğrenmeye uygun (unlocked)** konular belirlenmeli; ardından yalnızca bu konular arasında net getirisi, gizli seviye, unutma riski ve diğer öncelik girdileriyle sıralama yapılmalı.
+   - Motor önce kullanıcının mevcut bilgisine göre **öğrenmeye uygun (unlocked)** konuları belirlemeli; ardından dersler arası öncelik ve ders içi mantıklı sırayı birlikte değerlendirmelidir.
    - Örneğin aynı derste 6. konu 1. konudaki bilgiye dayanıyorsa, 6. konu sınavda daha fazla soru getiriyor olsa bile 1. konu yeterince öğrenilmeden 6. konu öne çıkarılmamalı.
    - Önkoşul sistemi her ders için tamamen doğrusal olmak zorunda değildir. Birbirinden bağımsız ilerleyebilen konu kolları varsa paralel biçimde açılabilir.
    - Amaç **öğrenme mantığını bozmadan sınavda mümkün olan en yüksek puanı getirecek çalışma sırasını önermek** olmalıdır.
+   - Aynı ders içinde bir sonraki konu önerilmeden önce mevcut konuda bir **asgari doğrulanmış ustalık seviyesi** aranması fikri değerlendirilecek.
+   - Başlangıç için örneğin gizli seviye `60` bir geçiş eşiği olabilir; ancak kesin eşik henüz kararlaştırılmamıştır.
+   - Onboarding sırasında verilen başlangıç puanı bu eşiği tek başına karşılamış sayılmamalıdır. Örneğin kullanıcı “Orta” seçtiği için konu 60 puanla başladıysa, hiç soru çözmeden sonraki konu önerilmemelidir.
+   - Geçiş için gizli puanın yanında yeterli **gerçek çözüm kanıtı / güven seviyesi / benzersiz soru sayısı** bulunmalıdır.
+   - Örnek aday kural: konu öğrenme aşaması tamamlanmış olmalı, belirli sayıda benzersiz kalibrasyon sorusu çözülmüş olmalı ve doğrulanmış gizli seviye eşik değerin üzerinde bulunmalı.
+   - Kullanıcının özgür çalışma prensibi korunmalı: eşik sağlanmadığında sistem sonraki konuyu **önermeyebilir**, fakat kullanıcı isterse manuel olarak farklı bir konuya gidebilmelidir.
+   - Temel/önkoşul niteliği çok yüksek konularda geçiş eşiğinin standart konulardan daha yüksek olup olmayacağı ayrıca tartışılacak.
 
 4. ⬜ **Soru Çözme Ekranı**
    - Şıklar
