@@ -74,13 +74,16 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Örneğin aynı derste 6. konu 1. konudaki bilgiye dayanıyorsa, 6. konu sınavda daha fazla soru getiriyor olsa bile 1. konu yeterince öğrenilmeden 6. konu öne çıkarılmamalı.
    - Önkoşul sistemi her ders için tamamen doğrusal olmak zorunda değildir. Birbirinden bağımsız ilerleyebilen konu kolları varsa paralel biçimde açılabilir.
    - Amaç **öğrenme mantığını bozmadan sınavda mümkün olan en yüksek puanı getirecek çalışma sırasını önermek** olmalıdır.
-   - Aynı ders içinde bir sonraki konu önerilmeden önce mevcut konuda bir **asgari doğrulanmış ustalık seviyesi** aranması fikri değerlendirilecek.
-   - Başlangıç için örneğin gizli seviye `60` bir geçiş eşiği olabilir; ancak kesin eşik henüz kararlaştırılmamıştır.
-   - Onboarding sırasında verilen başlangıç puanı bu eşiği tek başına karşılamış sayılmamalıdır. Örneğin kullanıcı “Orta” seçtiği için konu 60 puanla başladıysa, hiç soru çözmeden sonraki konu önerilmemelidir.
-   - Geçiş için gizli puanın yanında yeterli **gerçek çözüm kanıtı / güven seviyesi / benzersiz soru sayısı** bulunmalıdır.
-   - Örnek aday kural: konu öğrenme aşaması tamamlanmış olmalı, belirli sayıda benzersiz kalibrasyon sorusu çözülmüş olmalı ve doğrulanmış gizli seviye eşik değerin üzerinde bulunmalı.
-   - Kullanıcının özgür çalışma prensibi korunmalı: eşik sağlanmadığında sistem sonraki konuyu **önermeyebilir**, fakat kullanıcı isterse manuel olarak farklı bir konuya gidebilmelidir.
-   - Temel/önkoşul niteliği çok yüksek konularda geçiş eşiğinin standart konulardan daha yüksek olup olmayacağı ayrıca tartışılacak.
+   - Aynı ders içinde sonraki konuyu önermek için bütün kullanıcıları tek bir sabit gizli seviye eşiğine (ör. `60`) zorlamak doğru değildir.
+   - Geçiş değerlendirmesi **kişisel gelişim hedefi + sonraki konunun önkoşul yeterliliği** birlikte kullanılarak yapılmalıdır.
+   - Kişisel gelişim hedefi, onboarding tahminine değil gerçek sorularla doğrulanmış başlangıç seviyesine göre belirlenmelidir.
+   - Başlangıç kuralı olarak doğrulanmış seviyeden yaklaşık `+20` puanlık anlamlı gelişim hedeflenebilir; üst sınır 110'dur. Bu miktar ileride kullanım verisiyle kalibre edilebilir.
+   - Çok düşük başlangıç seviyesindeki kullanıcı sırf evrensel bir eşik nedeniyle 0/10/20 seviyelerinden 60'a kadar aynı konuda tutulmamalıdır.
+   - Örneğin doğrulanmış başlangıç 10 ise kişisel gelişim hedefi yaklaşık 30 olabilir. Ancak sonraki konu mevcut konudan en az 40 düzeyinde yeterlilik gerektiriyorsa, sistem yeni konuyu önermeden önce 40'a kadar güçlendirmeyi önerebilir.
+   - Yüksek seviyede başlayan kullanıcı da düşük bir sabit eşik nedeniyle “zaten yeterli” kabul edilmemeli; kendi başlangıç düzeyine göre anlamlı gelişim göstermelidir.
+   - Geçiş kararı için gizli puanın yanında yeterli **gerçek çözüm kanıtı / güven seviyesi / benzersiz soru sayısı** bulunmalıdır.
+   - Sonraki konunun önerilmesi önceki konunun tamamen bittiği anlamına gelmez; önceki konu tekrar/unutma sistemiyle korunup geliştirilmeye devam eder.
+   - Kullanıcının özgür çalışma prensibi korunur: sistem bir sonraki konuyu henüz önermese bile kullanıcı isterse manuel olarak başka bir konuya gidebilir.
 
 4. ⬜ **Soru Çözme Ekranı**
    - Şıklar
