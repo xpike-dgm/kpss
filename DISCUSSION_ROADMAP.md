@@ -69,6 +69,12 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Gizli seviye puanı doğrudan “doğru yapma yüzdesi” kabul edilmeden önce gerçek kullanıcı verisiyle kalibre edilmeli; ileride `seviye → beklenen doğru olasılığı` dönüşümü öğrenilebilir.
    - Geçmiş sınav sıklığı tek bir yıla aşırı bağlı olmamalı; birden fazla yılın verisi, güncellik ve müfredat değişiklikleri hesaba katılmalı.
    - İleride daha gelişmiş bir metrik olarak **beklenen kazanılabilir net / tahmini çalışma süresi** düşünülebilir. Böylece 2 saat çalışmayla +1 net kazandırabilecek konu ile 10 saat çalışmayla +1 net kazandırabilecek konu aynı öncelikte değerlendirilmez.
+   - **Öncelik puanı konu sırasını / önkoşul mantığını geçersiz kılamaz.** Bir konu yüksek net getirili olsa bile gerekli temel konular öğrenilmeden ana öneri olarak sunulmamalı.
+   - Derslerde gerektiği ölçüde bir **konu önkoşul ağı / öğrenme yolu** tanımlanmalı. Sistem hangi konunun başka hangi konulara dayandığını bilmelidir.
+   - Motor iki aşamalı çalışmalı: önce kullanıcının mevcut bilgisine göre **öğrenmeye uygun (unlocked)** konular belirlenmeli; ardından yalnızca bu konular arasında net getirisi, gizli seviye, unutma riski ve diğer öncelik girdileriyle sıralama yapılmalı.
+   - Örneğin aynı derste 6. konu 1. konudaki bilgiye dayanıyorsa, 6. konu sınavda daha fazla soru getiriyor olsa bile 1. konu yeterince öğrenilmeden 6. konu öne çıkarılmamalı.
+   - Önkoşul sistemi her ders için tamamen doğrusal olmak zorunda değildir. Birbirinden bağımsız ilerleyebilen konu kolları varsa paralel biçimde açılabilir.
+   - Amaç **öğrenme mantığını bozmadan sınavda mümkün olan en yüksek puanı getirecek çalışma sırasını önermek** olmalıdır.
 
 4. ⬜ **Soru Çözme Ekranı**
    - Şıklar
