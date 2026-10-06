@@ -585,14 +585,26 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Ana kalite döngüsü Kaynak → Doğrulama → Quality Gate → Review → Active → Gerçek Kullanım → Re-review → Versioned Fix → Impact Repair → Pipeline Learning olacak.
    - ✅ **İçerik Kalite Kontrolü ürün mimarisi açısından tamamlandı.**
 
-21. 🟨 **Teknik Altyapı**
-   - Veritabanı
-   - Backend
-   - Auth
-   - Hosting
-   - AI servisleri
-   - Yedekleme
-   - Performans
+21. ✅ **Teknik Altyapı**
+   - ✅ Modüler monolit + ayrı worker/realtime/Python içerik süreçleri kabul edildi.
+   - ✅ Ana omurga: Next.js PWA + Hono/Zod/Drizzle + managed PostgreSQL 18.
+   - ✅ pg-boss background jobs; ayrı WebSocket realtime; Python/FastAPI PDF/OCR/istatistik servisi kullanılacak.
+   - ✅ Better Auth, admin MFA, least-privilege RBAC ve güvenli session yaklaşımı kullanılacak.
+   - ✅ S3 uyumlu object storage, IndexedDB/Dexie offline katmanı ve service worker kullanılacak.
+   - ✅ Selective immutable event ledger + projection/state tabloları + versioning + idempotency veri güvenilirliğinin temeli olacak.
+   - ✅ Deterministik TypeScript motorları AI'dan bağımsız çalışacak; reason-code üretecek.
+   - ✅ Gerçek Sınav Modu başlatılırken internet gerekecek; başladıktan sonra desteklenen offline devam süreyi durdurmayacak.
+   - ✅ AI Gateway sağlayıcı/model bağımsız olacak; BYOK anahtarları sunucuda zarf şifreli tutulacak.
+   - ✅ Jev ana sınıflandırıcı olmadan önce Türkçe golden dataset üzerinde ölçülecek; yetersizse structured-output LLM ana/yedek olacak.
+   - ✅ FSRS güçlü retention adayı, Rasch/1PL güçlü difficulty adayı olacak; ikisi de gerçek veriyle doğrulanarak aktive edilecek ve engine arayüzleri algoritmadan bağımsız kalacak.
+   - ✅ PDF/OCR hattı ayrı worker havuzunda; native soru çıkarımı + kritik token doğrulama + mevcut Quality Gate akışıyla çalışacak.
+   - ✅ Tam DM olmayacak; çalışma odası/takım/kısa tepki odaklı iletişim korunacak.
+   - ✅ Çalışma günü varsayılan sınırı kullanıcı saat diliminde 04:00 olacak ve config ile değiştirilebilecek.
+   - ✅ Cloudflare + Docker tabanlı taşınabilir hosting yaklaşımı; Hetzner güçlü aday ancak sağlayıcı bağımlılığı olmayacak.
+   - ✅ Production veritabanında managed PostgreSQL tercih edilecek; yedek + bağımsız kopya + restore tatbikatı uygulanacak.
+   - ✅ OpenTelemetry, audit, correlation ID, structured logs ve güvenlik/PII maskeleme uygulanacak.
+   - ✅ Golden dataset, regression, end-to-end ve gerekli load testleri teknik kalite kapısı olacak.
+   - ✅ **Teknik Altyapı ürün mimarisi açısından tamamlandı.**
 
 ---
 
@@ -600,4 +612,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **21. Teknik Altyapı**.
+Ana ürün planlama yol haritasındaki 21 ana başlığın tamamı ✅ durumundadır. Bundan sonraki çalışmalar UI/UX, denge, içerik operasyonu ve uygulama ayrıntılarını netleştirecektir.
