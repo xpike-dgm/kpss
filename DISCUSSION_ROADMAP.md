@@ -371,12 +371,25 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Kesin XP sayıları ve katsayıları sonradan değiştirilebilir denge parametreleri olarak tutulacak.
       - ✅ **XP / Level alt sistemi ürün mimarisi açısından tamamlandı.**
       - Kesin sayısal denge, kozmetik kataloğu ve seviye 100 sonrası sistem uygulama/gerçek kullanım verisi aşamasına bırakıldı.
-    - 🟨 **Sıradaki alt konu: Streak / Çalışma Serisi Sistemi**
-      - Bir gün kaçırıldığında seri tamamen sıfırlanmalı mı?
-      - Serinin çalışma baskısına dönüşmemesi nasıl sağlanacak?
-      - Günlük seri ile uzun dönem istikrar ayrı mı tutulacak?
-      - Seri koruma / telafi mekanizması olacak mı?
-      - Serinin XP, profil ve sosyal görünürlükle ilişkisi nasıl olacak?
+    - ✅ **Streak / Çalışma Serisi Sistemi kabul edildi.**
+      - Seri yalnızca gerçek/anlamlı çalışmayla ilerleyecek; login streak sayılmayacak.
+      - Güncel Seri, En Uzun Seri ve 30 günlük İstikrar ayrı göstergeler olacak.
+      - Tekil kaçırılan günler için sınırlı Dinlenme Hakkı / Seri Koruması bulunacak; sınırsız gün atlama aracı olmayacak.
+      - Seri bozulunca XP/level/ödül kaybı olmayacak ve cezalandırıcı dil kullanılmayacak.
+      - Streak sürekli XP çarpanı vermeyecek; milestone ödülleri tek seferlik ve kalıcı olabilecek.
+      - Gece yarısına taşan oturumlar ve saat dilimi adil, tutarlı kuralla ele alınacak.
+      - Aynı gün ne kadar çalışılırsa çalışılsın tek streak günü sayılacak.
+      - Takvim görünümü, istikrar başarımları ve isteğe bağlı sosyal profil görünürlüğü desteklenebilecek.
+      - Kullanıcı streak göstergesini kapatabilecek.
+      - Kesin aktif gün eşiği, koruma kazanma sıklığı ve milestone değerleri denge parametresi olarak sonra netleşecek.
+      - ✅ **Streak alt sistemi ürün mimarisi açısından tamamlandı.**
+    - 🟨 **Sıradaki alt konu: Başarımlar ve Rozetler**
+      - Hangi davranışlar başarım açmalı?
+      - Başarımlar tek seferlik mi, kademeli mi olmalı?
+      - Gizli/sürpriz başarımlar olacak mı?
+      - Rozetler profil ve sosyal görünürlükte nasıl kullanılmalı?
+      - Başarımlar XP veya kozmetik ödül vermeli mi?
+      - Farm edilebilir başarımlar nasıl engellenecek?
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
