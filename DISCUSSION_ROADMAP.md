@@ -359,6 +359,16 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Günlük gerçek çalışma için XP tavanı olmayacak; yalnızca farm davranışlarına azalan getiri uygulanacak.
       - AI kullanımı XP için zorunlu olmayacak ve yalnızca AI ile mesajlaşmak XP üretmeyecek.
       - Kesin XP tablosu, level eğrisi ve ödül kilometre taşları daha sonra dengelenecek.
+      - ✅ XP ekonomisinin ana ilkeleri de kabul edildi: sabit soru başı XP yerine aktivite değeri + kalite + anti-farm yaklaşımı kullanılacak.
+      - Doğrudan dakika başı XP verilmeyecek; gerçek aktif çalışma varsa oturum bonusu düşünülebilecek.
+      - İlk tamamlama ve tam öğrenme döngüsü bonusları bulunabilecek.
+      - Aynı soru/kolay içerik spamında XP getirisi kademeli azalacak; planlı yanlış/tekrar çalışmaları farm sayılmayacak.
+      - Level eğrisi doğrusal olmayacak; başlangıç hızlı, yüksek seviyeler daha yavaş ilerleyecek.
+      - Belirli level kilometre taşlarında şeffaf kozmetik/unvan ödülleri açılacak; lootbox olmayacak.
+      - Başarımlar sınırlı ek XP verebilecek.
+      - Sürekli 2X XP temel ekonomi yapılmayacak.
+      - İlk sürümde coin/mağaza yok; ana ekonomi XP → Level → Ödül olacak.
+      - Kesin XP sayıları ve katsayıları sonradan değiştirilebilir denge parametreleri olarak tutulacak.
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
