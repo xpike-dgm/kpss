@@ -445,7 +445,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Sosyal profilde level, seçili unvan, çerçeve, banner, rozet vitrini ve isteğe bağlı seri bilgisi gösterilebilecek; gizli akademik seviye gösterilmeyecek.
       - Temel açık/koyu mod ve erişilebilirlik ödül arkasına kilitlenmeyecek.
       - Soru/gerçek sınav ekranlarında kozmetik kullanım sınırlı ve dikkat dağıtmayan yapıda olacak.
-      - Lootbox ve ilk sürüm coin/mağaza sistemi olmayacak; ödüller şeffaf koşullarla açılacak.
+      - Lootbox ve ayrı coin/mağaza sistemi olmayacak; ödüller şeffaf koşullarla açılacak.
       - Standart / Nadir / Destansı / Efsanevi nadirlikleri desteklenebilecek; efsanevi ödüller gerçekten nadir tutulacak.
       - Kazanılmış kozmetikler kalıcı olacak, duplicate item verilmeyecek.
       - Koleksiyon ve profil düzenleme/önizleme ekranları desteklenebilecek.
@@ -481,20 +481,23 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Lig/sıralama ve arkadaşlarla rekabet gibi sosyal oyunlaştırma kararları Meta Oyun ve Arkadaş Sistemi başlıklarına taşındı.
       - Kesin sayısal denge, kataloglar ve görsel üretim ayrıntıları uygulama/denge/UI aşamalarında netleştirilecek.
 
-15. 🟨 **Sürekli Gelişim / Meta Oyun Sistemi**
-    - Ürünün yalnızca “KPSS soru çözme sitesi” gibi hissettirmeyip, kullanıcının devamlı gelişimini takip ettiği yarı oyun deneyimine dönüşmesi ayrıca tartışılacak.
-    - Çalışma kronometresi bu sistemin önemli girdilerinden biri olabilir.
-    - Bugün / bu hafta / bu ay en çok çalışan kullanıcılar için leaderboard olup olmayacağı.
-    - Çalışma süresine göre sıralama.
-    - Çözülen soru sayısına göre sıralama.
-    - Test, konu, tekrar, deneme ve başka gerçek öğrenme davranışlarının meta ilerlemeye nasıl bağlanacağı.
-    - Kullanıcının sadece süre açık bırakarak veya anlamsız soru çözerek sistemi sömürmesini önleyecek kurallar.
-    - Akademik başarı, çalışma emeği ve oyun ilerlemesinin birbirine nasıl bağlanacağı.
-    - Uzun vadeli karakter/profil/hesap gelişimi hissi oluşturulup oluşturulmayacağı.
-    - Sosyal rekabet, sezonlar, ligler, görevler veya başka oyun sistemleri olup olmayacağı.
-    - Bu başlık klasik XP/rozet oyunlaştırmasından daha geniş tutulacak ve ayrı tartışılacaktır.
+15. ✅ **Sürekli Gelişim / Meta Oyun Sistemi**
+    - ✅ Meta oyun, mevcut bireysel oyunlaştırma sistemlerini aylar boyunca bağlayan uzun vadeli katman olarak kabul edildi.
+    - ✅ Sezonlar ve kalıcı oyuncu level'ı birbirinden ayrılacak; sezon puanı dönemsel, hesap gelişimi kalıcı olacak.
+    - ✅ Kişisel Sezon Yolu sosyal rekabetten bağımsız çalışacak ve gerçek çalışmayla kozmetik/milestone açacak.
+    - ✅ Ligler ve leaderboard'lar isteğe bağlı olacak; sosyal rekabeti kapatan kullanıcı meta sistemden tam yararlanabilecek.
+    - ✅ Ham süre, ham soru sayısı ve ham net tek başına ana sıralama metriği olmayacak; anti-farm ve geçerli çalışma sinyalleri kullanılacak.
+    - ✅ Kendi geçmişinle yarışmak sosyal rekabetten daha önemli olacak; Kişisel Rekor Merkezi ve dönem karşılaştırmaları desteklenecek.
+    - ✅ Sezon görevleri, dönemsel etkinlikler, koleksiyonlar ve topluluk hedefleri akademik motorla uyumlu çalışacak.
+    - ✅ Takım/arkadaş meta özellikleri ürün kapsamındadır; ayrıntıları 16. Arkadaş Sistemi başlığında kesinleştirilecek.
+    - ✅ Uzun ara sonrası Geri Dönüş Akışı olacak; kaçırılmış görevler borç olarak birikmeyecek.
+    - ✅ Sınav sonrası geçmiş KPSS dönemleri arşivlenebilecek; hesap level'ı, başarımlar, kozmetikler ve tarihçe korunacak.
+    - ✅ Meta Merkez; sezon, lig, rekor, koleksiyon, geçmiş ve yaklaşan milestone'ları bir arada gösterecek; dashboard'un görevini devralmayacak.
+    - ✅ Ayrı coin/mağaza ekonomisi kullanılmayacak; meta ödülleri akademik avantaj sağlamayacak.
+    - ✅ **Sürekli Gelişim / Meta Oyun Sistemi ürün mimarisi açısından tamamlandı.**
+    - ✅ **Çıkış kapsamı ilkesi:** ürün MVP/“ilk sürüm sonra ekleriz” mantığıyla parçalanmayacak; kabul edilen ana sistemlerin tamamı tek kapsamlı ürün çıkışının parçasıdır. “Daha sonra ele alınacak” ifadesi yalnızca planlama sırasını belirtir.
 
-16. ⬜ **Arkadaş Sistemi**
+16. 🟨 **Arkadaş Sistemi**
    - Arkadaş ekleme
    - Ortak çalışma
    - Sıralamalar
