@@ -1459,7 +1459,119 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Admin Panelinin temel kalite üçlüsü: **Versioned Configuration + Simulation/Sandbox + Full Audit Log**.
 - Admin Paneli ürün mimarisi açısından tamamlanmıştır; kesin ekran bilgi mimarisi, permission matrisi, config şemaları ve operasyon metrikleri Teknik Altyapı/UI aşamasında netleştirilecektir.
 
-## 41. Henüz planlanacak büyük alanlar
+## 41. İçerik Kalite Kontrolü — kararlaştırıldı
+- İçerik kalite sistemi yalnız “soru doğru mu?” kontrolü olmayacak; **kaynak, cevap, çözüm, taxonomy, zorluk, güncellik, görsel bütünlük, kullanım uygunluğu ve geçmiş kullanıcı etkisini** birlikte yönetecektir.
+- Her içerik arka planda kaynak/provenance, doğrulama durumu, sürüm ve kalite geçmişi taşıyacaktır.
+- Kaynak türleri ayrılacaktır: resmî/çıkmış soru, insan üretimi, izinli/lisanslı kaynak, AI destekli üretim ve AI taslağı gibi.
+- Güçlü kaynak tek başına hata imkânsızlığı anlamına gelmeyecek; gerektiğinde bağımsız doğrulama uygulanacaktır.
+
+### Cevap ve çözüm doğrulaması
+- Doğru cevap için kaynak cevap anahtarı, bağımsız çözüm, reviewer kararı ve mümkün olduğunda deterministik/matematiksel kontrol ayrı kanıtlar olarak tutulabilecektir.
+- Kaynak cevap anahtarı ile bağımsız çözüm çelişirse **Answer Conflict** kalite sinyali üretilecektir.
+- **Answer validation** ve **Solution validation** ayrı yapılacaktır; doğru cevap doğru olsa bile hatalı çözüm kalite problemi sayılacaktır.
+- Matematikte uygun sorular mümkün olduğunda kod/symbolic doğrulama ile kontrol edilecektir.
+- Jev ve diğer AI sistemleri kalite sinyali/reviewer olarak kullanılabilir ancak nihai doğru cevap otoritesi olmayacaktır.
+- Birden fazla AI'nın aynı sonuca ulaşması yalnızca güven sinyalidir; tek başına doğruluk kanıtı değildir.
+- AI tarafından üretilen sorular duplicate, cevap, ambiguity, taxonomy, zorluk, çözüm ve reviewer kontrollerinden geçmeden yayına alınmayacaktır.
+
+### PDF/OCR kalite kontrolü
+- PDF import soruları extraction sonrası source-comparison kontrolünden geçecektir.
+- OCR confidence yalnız genel yüzde olarak kullanılmayacak; sayı, işaret, üs, kök, kesir, eşitsizlik ve seçenek değerleri gibi kritik token'lar ayrıca kontrol edilecektir.
+- Eksik görsel/bağlam, yanlış crop ve soru-görsel eşleşme sorunları otomatik kalite sinyali oluşturabilecektir.
+- “Aşağıdaki/yukarıdaki/şekilde/tabloda” benzeri referans dili bulunup gerekli bağlam eksikse **Missing Context** uyarısı üretilecektir.
+- Kaynak görsel ile extracted görsel admin review ekranında karşılaştırılabilecektir.
+
+### Taxonomy ve zorluk kalitesi
+- Ders, konu, alt konu ve kazanım sınıflandırması ayrı kalite boyutu olacaktır.
+- Jev başlangıç taxonomy ve tahmini zorluk sınıflandırmasını yapabilir; gerçek kullanıcı verisi oluştuğunda data-driven difficulty daha yüksek ağırlık kazanacaktır.
+- Estimated difficulty ile gerçek performans arasında büyük uyumsuzluk varsa **Difficulty Mismatch** kalite sinyali oluşacaktır.
+- Taxonomy anomalileri gerçek kullanıcı performansı ve soru benzerliklerinden de tespit edilebilecektir.
+
+### Gerçek kullanım sinyalleri
+- Kullanıcı verisi doğru cevabı belirlemek için değil, kalite anomalisini tespit etmek için kullanılacaktır.
+- Doğruluk oranı tek başına karar vermeyecek; kullanıcı seviyesi, cevap süresi, blank oranı, distractor dağılımı, benzer soru performansı ve raporlar birlikte değerlendirilecektir.
+- Yüksek seviyeli kullanıcıların beklenmedik ölçüde hata yaptığı sorular güçlü kalite sinyali oluşturabilir.
+- Distractor dağılımı iki şık arasında belirsizlik, aşırı kolaylık veya zayıf çeldirici sinyali verebilir.
+- Olağan dışı uzun çözüm süresi ve yüksek boş bırakma oranı da kalite incelemesine katkı sağlayacaktır.
+- Kullanıcı raporları kategori/severity bazlı gruplanacak; aynı soruya gelen çoklu raporlar önceliği yükseltecektir.
+- Geçmişte yüksek doğrulukla hata raporlayan kullanıcıların raporları internal triage için daha yüksek ağırlık alabilir; bu sosyal prestij sistemine dönüşmeyecektir.
+
+### Quality Queue ve quarantine
+- İçerik Kalite Merkezi; **Kritik Sorunlar, Kullanıcı Raporları, AI/Validator Çakışmaları, İstatistiksel Anomaliler, Güncellik, Coverage Eksikleri, Duplicate/Benzerlik, PDF Import Kalitesi, Çözüm Kalitesi ve Geçmiş Etki Onarımları** gibi kuyrukları içerecektir.
+- Quality Queue severity ve risk üzerinden önceliklendirilecektir.
+- Ciddi şüpheli soru **Quarantine** durumuna alınabilecek; yeni testlere dağıtılmayacak ancak geçmiş kayıtları korunacaktır.
+- Otomatik quarantine yalnız güçlü sinyallerde kullanılacaktır; yalnız düşük doğruluk oranı otomatik kapatma nedeni olmayacaktır.
+- Kullanılmış içerikler hard-delete yerine Archived/Retired olarak tutulacaktır.
+
+### Impact Repair
+- Hatalı soru bulunduğunda sistem yalnız soruyu düzeltmekle kalmayacak, hatanın geçmiş kullanıcı modeline etkisini de analiz edecektir.
+- **Geçmiş Etki Analizi**; etkilenen cevapları, wrong history kayıtlarını, mastery event'lerini, retention'ı, deneme sonuçlarını ve ilgili diğer hesaplamaları belirleyebilecektir.
+- Material düzeltmeler sonrasında kontrollü **Impact Repair / yeniden işleme** job'u çalıştırılabilecektir.
+- Kullanıcının aslında doğru olan cevabı yanlış sayıldıysa wrong history, mastery, retention ve deneme sonucu mümkün olduğunca düzeltilir.
+- Platform hatası nedeniyle eksik XP verilmişse fark verilebilir; platform hatası nedeniyle fazla XP verilmişse normal kullanıcıdan XP/level geri alınmayacaktır.
+- Kazanılmış başarımlar platform hatası nedeniyle kullanıcıdan geri alınmayacaktır.
+- Akademik mastery/readiness gerçek veriye göre yeniden hesaplanabilir; oyuncu prestiji cezalandırılmaz.
+- Deneme sonucu değişirse geçmişte açıklanabilir bir kalite-düzeltme kaydı gösterilebilir.
+- Kullanıcıya teknik event ayrıntısı değil, sade “Daha önce çözdüğün bir soruda hata düzeltildi; ilgili istatistiklerin güncellendi.” mesajı verilecektir.
+
+### Güncellik ve provenance
+- Zaman duyarlı içerik ile evergreen içerik ayrılacaktır.
+- Gereken içeriklerde validFrom, lastVerifiedAt ve reviewDueAt benzeri metadata kullanılabilecektir.
+- Mevzuat, kurum bilgisi ve güncel resmî içerik AI tarafından time-sensitive olarak işaretlenebilir; nihai güncellik kontrolü mümkün olduğunda resmî kaynağa dayanacaktır.
+- Kaynak/provenance; PDF, sayfa, resmî kaynak, sınav/yıl veya insan yazar gibi bilgileri internal olarak saklayacaktır.
+- Kaynak güncellendiğinde ona bağlı içerikler topluca **Review Required** durumuna alınabilecektir.
+- Resmî geçmiş sorular **Official / Past Exam** olarak ayrı işaretlenecek; resmî soru ile platformun hazırladığı çözüm provenance olarak ayrılacaktır.
+- PDF/kitap içeriklerinde teknik kaliteye ek olarak kaynak kullanım hakkı durumu tutulabilecektir; “kaynağı biraz değiştirip bizim yapmak” yaklaşımı kullanılmayacaktır.
+
+### Versioning ve revision
+- Her sorunun revision history'si tutulacaktır.
+- **Minor revision** ile **Material revision** ayrılacaktır.
+- Doğru cevap, anlam veya ölçülen beceriyi etkileyen material revision geçmiş etki analizini tetikleyebilecektir.
+- Yayındaki soru sessizce kökten değiştirilmeyecektir; gerektiğinde yeni version veya yeni question entity oluşturulacaktır.
+- Kullanıcının hangi question version'ını çözdüğü bilinebilecektir.
+- Aktif test ve Gerçek Sınav oturumları question/version snapshot ile korunacaktır; admin değişikliği oturum ortasında soruyu değiştirmeyecektir.
+
+### Coverage ve içerik çeşitliliği
+- Kalite yalnız tek tek soruların doğruluğu değil, konu/alt konu/kazanım kapsamını da içerecektir.
+- Admin **Coverage Matrix** ile soru sayısı, onaylı soru, zorluk çeşitliliği, görsel soru, çıkmış soru ve kalite boşluklarını görebilecektir.
+- Aynı template'in sayı değiştirilmiş çok sayıda varyasyonu gerçek çeşitlilik sayılmayacak; semantic/template similarity ile fake diversity tespit edilecektir.
+- Difficulty coverage gerçek sınav ihtiyacına göre izlenecek; yapay 33/33/33 dağılım zorunluluğu olmayacaktır.
+- Kazanım/skill coverage konu başlığından daha ayrıntılı kalite göstergesi olarak kullanılacaktır.
+- İçerik az olduğunda sistem kalite barını sessizce düşürüp zayıf sorularla havuzu doldurmayacak; coverage shortage admin'e bildirilecektir.
+
+### Quality Gate ve kullanım uygunluğu
+- Bir soru Active olabilmek için soru yapısı, şıklar, doğrulanmış cevap, taxonomy, kaynak/provenance, çözüm ve kritik kalite flag'leri gibi gerekli koşulları sağlamalıdır.
+- **Approved** ile **Active** ayrı durumlar olarak kalacaktır.
+- Quality Gate eksik kritik alanlarda yayını engelleyecektir; yüksek yetkili override açık risk uyarısı ve audit gerektirir.
+- Sorular kullanım uygunluğu flag'lerine sahip olabilecektir: **Practice Eligible, Calibration Eligible, Mock Eligible, Duel Eligible** vb.
+- Kalibrasyon ve retention doğrulama soruları daha yüksek güven standardı kullanacaktır.
+- Tam/branş denemeleri ve özellikle Gerçek Sınav Modu için daha yüksek **Exam-Grade** kalite standardı uygulanabilecektir.
+- Program motoru yalnız Active + ilgili quality tier/eligibility şartlarını sağlayan sorulardan seçim yapacaktır.
+
+### Review operasyonları
+- Kritik/karmaşık içeriklerde double review zorunlu tutulabilir.
+- Bağımsız ikinci reviewer ilk reviewer kararını görmeden değerlendirme yapabilir.
+- Reviewer performansı içerik kalitesini geliştirmek için internal olarak izlenebilir; editör leaderboard'u yapılmayacaktır.
+- Review kuyruğu yaşlanması görünür olacak; kritik sorunların uzun süre beklemesi engellenecektir.
+- Soru yayın checklist'i admin'e neden Active olamadığını açıkça gösterecektir.
+
+### Çözüm ve AI kalite döngüsü
+- Çözüm kalitesi ayrı izlenecek; “çözüm hatalı” ve “çözümü anlamadım” raporları ayrılacaktır.
+- AI Öğretmen verified solution'a dayanacak.
+- AI Öğretmen doğrulanmış çözümle çelişirse bu soru hatası sayılmadan **AI Quality Event** oluşturulacaktır.
+- Model/prompt sürümlerinin taxonomy ve kalite performansı gerçek review sonuçlarıyla ölçülebilecektir.
+- PDF kaynakları/import batch'leri extraction correction rate gibi kalite metrikleriyle karşılaştırılabilecektir.
+- Sürekli iyi sonuç veren kaynak profilleri review önceliğini optimize edebilir; hiçbir kaynak kör güven statüsü kazanmayacaktır.
+- Kalite sisteminden öğrenilen hata paternleri OCR, Jev sınıflandırması, prompt ve import pipeline'larını iyileştirmek için kullanılacaktır.
+
+### İçerik kalite operasyon ilkesi
+- Kalite otomasyonu kullanıcı test akışını gereksiz AI çağrılarıyla yavaşlatmayacaktır; ağır analizler yayın öncesinde veya asenkron/batch çalışabilir.
+- Bir soru review/quarantine durumuna geçse bile aktif kullanıcı oturumu snapshot ile bozulmadan devam edecektir.
+- Kalite sisteminin amacı “sıfır hata” iddiası değil; **hataları yayına girmeden mümkün olduğunca yakalamak, yayındaki hataları hızlı tespit etmek ve kullanıcı modeline bıraktığı izi onarmaktır.**
+- Ana kalite döngüsü: **Kaynak → Extraction/Creation → Jev Sınıflandırma → Answer/Solution Validation → Quality Gates → Gerektiğinde Human Review → Approved → Active → Gerçek Kullanım Verisi → Anomaly/Reports → Re-review → Versioned Fix → Impact Repair → Pipeline Learning**.
+- İçerik Kalite Kontrolü ürün mimarisi açısından tamamlanmıştır; kesin kalite skorları, severity eşikleri, review SLA'ları ve eligibility kuralları denge/operasyon/teknik aşamasında netleştirilecektir.
+
+## 42. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
