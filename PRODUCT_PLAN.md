@@ -976,7 +976,128 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Bundan sonraki planlama metinlerinde “ilk sürümde yapardım / sonraki sürümde eklenir” dili kullanılmayacak; bunun yerine **çıkış kapsamı**, **ürün kapsamı** veya **ilgili başlıkta detaylandırılacak** ifadeleri kullanılacaktır.
 - Yalnızca kullanıcı açıkça kapsam dışı bırakırsa veya daha sonra karar değiştirirse bir özellik ana çıkıştan çıkarılacaktır.
 
-## 36. Henüz planlanacak büyük alanlar
+## 36. Arkadaş Sistemi — kararlaştırıldı
+- Arkadaş sistemi tamamen isteğe bağlı sosyal katman olacaktır; arkadaş kullanmayan kullanıcı ürünün akademik, oyunlaştırma veya meta özelliklerinden mahrum kalmayacaktır.
+- Sosyal sistemin amacı sosyal medya oluşturmak değil, **birlikte çalışma, sağlıklı rekabet ve motivasyonu** desteklemektir.
+- Arkadaş ekleme; benzersiz @kullanıcıadı, profil bağlantısı, arkadaş kodu ve uygun olduğunda QR kod ile yapılabilecektir.
+- Gerçek ad zorunlu olmayacak; görünen ad değişebilir, benzersiz kullanıcı adı kimlik için kullanılacaktır.
+- Arkadaşlık karşılıklı onayla kurulacaktır. İstek gizliliği; Herkes / arkadaşların arkadaşları / yalnızca kod-link / kimse gibi seçeneklerle yönetilebilir.
+- Engelleme, sessize alma ve sosyal görünürlük kontrolleri temel güvenlik özellikleri olacaktır.
+- Profil görünürlüğü tek açık/kapalı seçeneğine sıkıştırılmayacak; level, streak, rozet, yolculuk aşaması, aktivite durumu ve benzeri öğeler ayrı ayrı paylaşılabilir/gizlenebilir olacaktır.
+- Gizli akademik skor hiçbir koşulda sosyal profile taşınmayacaktır.
+- Zayıf konular ve ayrıntılı akademik analizler varsayılan olarak özel kalacaktır.
+- Deneme netleri ve sonuçlar varsayılan olarak özel olacak; kullanıcı isterse belirli bir sonucu manuel paylaşabilecektir.
+- Sosyal profilin ana vitrini avatar, çerçeve, banner, oyuncu level'ı, seçili unvan, 3–5 rozet vitrini, isteğe bağlı KPSS Yolculuk aşaması, sezon/lig rozeti ve önemli anlardan oluşabilecektir.
+- Son aktivite/presence bilgisi isteğe bağlı olacaktır; örneğin “Çalışıyor”, “Bugün aktif”, “Yakın zamanda aktif”. Tam zaman ve ayrıntılı izleme gösterilmeyecektir.
+- Arkadaş ana ekranı sonsuz sosyal feed olmayacaktır. Bunun yerine kompakt **Arkadaşlar Merkezi** kullanılacaktır.
+- Arkadaşlar Merkezi; arkadaş listesi, çalışan arkadaşlar, istekler, ortak hedefler, çalışma davetleri, meydan okumalar ve uygun karşılaştırmaları gösterebilir.
+- Arkadaş listesinde çevrimiçi, çalışıyor, takımım, favoriler ve son birlikte çalışılanlar gibi filtreler desteklenebilir.
+- Favori arkadaşlar çalışma daveti ve sosyal bildirimlerde önceliklendirme için kullanılabilir.
+- Arkadaşlık silme sessiz olacaktır; karşı tarafa gereksiz sosyal gerilim oluşturan bildirim gönderilmeyecektir.
+
+### Birlikte çalışma
+- Arkadaşlar birbirini **Birlikte Çalış** davetiyle ortak çalışma odasına çağırabilecektir.
+- Ortak çalışma odasında herkes kendi akademik programına devam edebilir; aynı soru/konuyu çözmek zorunda değildir.
+- Oda; aktif kullanıcılar, çalışma durumu, bireysel hedef, mola durumu ve toplam ortak çalışma bağlamını gösterebilir.
+- Kullanıcı isterse çalıştığı konu bilgisini gizleyip yalnızca “Çalışıyor” durumunu paylaşabilir.
+- Pomodoro zorunlu değildir; 25/5, 50/10 veya serbest çalışma gibi seçenekler desteklenebilir.
+- Sessiz odak modu bulunacaktır; kullanıcılar birlikte çalışırken sohbet tamamen kapatılabilir.
+- Grup molası desteklenebilir ancak herkes aynı anda mola vermeye zorlanmaz.
+- Oda gizliliği Davetle / Arkadaşlar katılabilir / Takıma özel gibi seçeneklerle yönetilebilir.
+- Ortak oturum sonunda kişi kişi hassas akademik veri açmadan toplam aktif süre, kişi sayısı ve tamamlanan oturum gibi grup özeti gösterilebilir.
+- Ortak odada bulunmak ayrı ana XP kaynağı olmayacaktır; kullanıcı kendi gerçek çalışmasından normal XP kazanır.
+- Sosyal milestone/başarım yalnızca gerçek aktif çalışma sinyali varsa üretilebilir.
+- İki arkadaş arasında “birlikte X saat çalışıldı / X ortak oturum yapıldı” gibi ortak geçmiş istatistikleri tutulabilir.
+- “Arkadaşlık serisi” gibi kırılınca baskı oluşturan bir mekanik kullanılmayacaktır; milestone yaklaşımı tercih edilecektir.
+
+### Meydan okumalar ve 1v1
+- Arkadaşlar birbirine isteğe bağlı meydan okumalar gönderebilecektir.
+- Meydan okumalar retention, gerçek deneme, yanlış güçlendirme, aktif gün veya program motoruyla uyumlu geçerli çalışmalar gibi sağlıklı davranışlara dayanacaktır.
+- Ham soru sayısı spamı veya akademik plana aykırı görevler teşvik edilmeyecektir.
+- Meydan okumayı karşı taraf kabul etmeden kullanıcıya görev dayatılamayacaktır.
+- Program motorunun önerileri sosyal meydan okuma nedeniyle bozulmayacaktır.
+- Aynı şartlarda gerçek oyun rekabeti için **canlı 1v1 soru düellosu** desteklenecektir.
+- 1v1'de doğruluk hızdan önce gelecektir; yanlış hızlı cevap, doğru cevaba karşı avantaj sağlamayacaktır.
+- Düello soru havuzu yakın zamanda görülmüş sorulara ve ezber/farm riskine karşı korunacaktır.
+- Düello bir oyun modu olacaktır; normal akademik mastery hesabının ana veri kaynağı olmayacaktır.
+- Düello sonuç dili nötr ve profesyonel olacaktır; aşağılayıcı “ezildin” benzeri dil kullanılmayacaktır.
+- Aynı kullanıcıların tekrar tekrar düello yaparak XP/sezon puanı farm etmesi engellenecektir.
+- Sosyal rekabet ödülleri çoğunlukla kozmetik, prestij ve hatıra niteliğinde olacaktır.
+
+### Arkadaş sıralamaları ve karşılaştırmalar
+- Arkadaşlar arasında haftalık/sezonluk mini sıralamalar bulunabilecektir.
+- Sezon Puanı, İstikrar ve geçerli aktif çalışma gibi sağlıklı metrikler kullanılabilir; ham net ana sosyal sıralama metriği olmayacaktır.
+- Günlük bilgi gösterilebilir ancak ödüllü rekabet daha çok haftalık/sezonluk bağlamda tutulacaktır.
+- Arkadaş karşılaştırmasında level, başarımlar, streak, sezon puanı, ortak çalışma ve meydan okuma geçmişi gibi izinli veriler kullanılabilir.
+- Gizli akademik skor, zayıf alanlar ve paylaşılmamış akademik veriler karşılaştırmaya dahil edilmeyecektir.
+- “Seni geçti / geriye düştün” gibi baskıcı bildirim dili temel yaklaşım olmayacaktır.
+- Lig görünümünde arkadaşların konumu vurgulanabilir.
+- Aynı takım üyeleri bireysel liglerde birbirini görebilir ancak “takımın sonuncusu” gibi utandırıcı etiketler kullanılmayacaktır.
+- Hedef net sosyal üstünlük metriği olmayacak; paylaşımı tamamen isteğe bağlıdır.
+
+### Çalışma ekipleri
+- Küçük **Çalışma Ekibi** sistemi ürün kapsamındadır; yaklaşık 3–8 kişilik gruplar hedeflenebilir, kesin limit daha sonra dengelenir.
+- Ekiplerde ad, logo/avatar, banner ve kısa açıklama bulunabilir.
+- Kullanıcı birden fazla çalışma grubunda bulunabilir; sezon rekabetinde bir aktif takım seçme gibi sınırlamalar adalet için kullanılabilir.
+- Takım için ayrı kalıcı XP ekonomisi oluşturulmayacaktır.
+- Takım gelişimi ortak milestone, görev, sezon katkısı, başarımlar ve geçmiş ile gösterilecektir.
+- Takım ortak görevleri retention, gerçek denemeler, yanlış güçlendirme ve başka akademik olarak değerli katkılara dayanabilir.
+- Ekip hedefleri toplam katkı modeliyle tasarlanabilir; herkesin %100 tamamlaması zorunlu olmayacaktır.
+- Takım görevi tamamlanmazsa ceza, streak kaybı veya borç oluşmayacaktır.
+- Bireysel katkılar gösterilebilir fakat kullanıcıları suçlayan/toksik dil kullanılmayacaktır.
+- Takım sezon puanı ve takım ligleri desteklenecektir.
+- Takım büyüklüğü sıralama adaletinde normalize edilecek; kalabalık takım sırf kişi sayısıyla avantaj kazanmayacaktır.
+- Takım rolleri basit olacaktır: Kurucu / Yönetici / Üye gibi.
+- Takım sahibi üyeleri davet edebilir, çıkarabilir ve temel yönetim yapabilir; karmaşık Discord tarzı rol sistemi kurulmayacaktır.
+- Kurucu ayrılırsa takım devredilebilir; takım geçmişi ve sezon başarıları korunacaktır.
+- Takım sezon geçmişi, ortak hedefler ve takım rozetleri saklanabilir.
+- Geçmiş takım başarıları kullanıcı hesabında hatıra olarak kalabilir; aktif takım kozmetiklerinin kullanım kuralları kozmetik bağlamında belirlenebilir.
+- Arkadaşlar birlikte sezon meydan okumaları başlatabilir.
+
+### Topluluk ve paylaşım
+- Global Topluluk Hedefleri sosyal sistemle entegre çalışacaktır; hedefler yalnızca gerçek akademik fayda sağlayan davranışlardan üretilecektir.
+- Topluluk hedefleri ortak kozmetik, rozet veya hatıra gibi ödüller verebilir.
+- Arkadaşlar birbirine kısa tebrik/reaksiyon gönderebilir.
+- Önemli An / Hatıra Kartları kullanıcı isterse arkadaşlarıyla paylaşılabilir; otomatik paylaşım olmayacaktır.
+- Her test veya küçük aktivite otomatik feed'e yayınlanmayacaktır.
+- Platform içindeki konu özeti, video veya başka yararlı çalışma kaynağı arkadaşla paylaşılabilir; bu paylaşım karşı tarafın programına otomatik görev olarak eklenmez.
+- Test tamamlandıktan sonra uygun sorular arkadaşla paylaşılabilir ve tartışılabilir.
+- Aktif test veya Gerçek Sınav Modunun bütünlüğünü bozacak soru paylaşımı engellenecektir.
+- Uygun bağlamda arkadaşla soru tartışmasına AI Öğretmen dahil edilebilir.
+
+### Mesajlaşma ve güvenlik
+- Ürünün odağı sosyal ağ olmayacaktır. Temel model; çalışma odası sohbeti, kısa sosyal mesajlar/reaksiyonlar ve çalışma odaklı iletişimdir.
+- Tam DM sistemi kullanılacaksa engelleme, sessize alma, şikâyet, mesaj isteği ve “kim mesaj gönderebilir?” kontrolleri eksiksiz uygulanacaktır.
+- Sosyal güvenlik araçları yarım bırakılmayacaktır.
+- Arkadaş önerileri agresif rehber/telefon taramasına dayanmayacaktır; ortak arkadaş veya takım gibi bağlamlar kullanılabilir ve öneriler kapatılabilir.
+- Profil için doğum tarihi, okul veya şehir gibi kişisel bilgilerin paylaşılması gerekmeyecektir.
+- KPSS türü/düzeyi dahi kullanıcı isterse görünür olacaktır.
+- AI özel arkadaş mesajlarını varsayılan olarak analiz etmeyecektir.
+- AI Koç sosyal veriyi kullanacaksa yalnızca gerekli yapılandırılmış veriler (ortak oturum sayısı, ekip hedefi, meydan okuma sonucu vb.) kullanılacaktır.
+
+### Bildirim ve odak koruması
+- Sosyal bildirimler seçici olacaktır; arkadaşlık isteği, çalışma daveti, meydan okuma, takım hedefi ve doğrudan tebrik gibi anlamlı olaylara odaklanacaktır.
+- “X seni geçti”, “Y çevrimiçi”, “Z 10 soru çözdü” gibi sürekli sosyal baskı/spam bildirimleri kullanılmayacaktır.
+- Sosyal bildirim kategorileri ayrı ayrı kapatılabilecektir.
+- Gerçek Sınav Modunda mesajlar, davetler, presence ve sosyal popup'lar tamamen sessize alınacaktır.
+- Sınav sonucu paylaşımı yalnızca manuel olacaktır.
+- Dashboard sosyal özelliklerle doldurulmayacaktır; en fazla küçük ve yararlı sosyal özetler gösterilebilir.
+- Meta Merkez lig, takım sezonu, arkadaş sıralaması ve sezon sosyal durumunun daha doğal ana yüzeyi olacaktır.
+
+### Sosyal başarımlar ve anti-farm
+- Ortak çalışma, ekip görevi ve benzeri sosyal başarımlar bulunabilir.
+- Arkadaş sayısı üzerinden “100 arkadaş ekle” gibi başarımlar kullanılmayacaktır.
+- Sosyal başarının ölçüsü arkadaş sayısı değil, **birlikte yapılan anlamlı çalışma** olacaktır.
+- Çok kısa sahte çalışma odaları, sahte hesaplar ve tekrar eden düellolar sosyal XP/başarım/sezon puanı üretmeyecektir.
+- Sosyal sistem tüm ürünle aynı gerçek aktif çalışma, geçerli soru, gerçekçi süre ve anti-farm sinyallerini paylaşacaktır.
+- Sosyal sistem AI olmadan tamamen çalışacaktır.
+
+### Sosyal mimarinin ana zinciri
+- Temel sosyal akış: **kişisel profil + kontrollü gizlilik → arkadaşlık → birlikte çalışma → isteğe bağlı meydan okumalar → küçük ekipler → takım hedefleri → bireysel/takım sezon rekabeti → ortak hatıra ve sosyal prestij**.
+- Sosyal sistem akademik veriyi izinsiz ifşa etmeyecek, çalışma ekranını sosyal bildirim kalabalığına çevirmeyecek ve akademik program motorunun üzerinde karar verici olmayacaktır.
+- Arkadaş Sistemi ürün mimarisi açısından tamamlanmıştır; kesin ekip limiti, düello puanlama formülü, takım normalizasyonu, presence ayrıntıları ve mesajlaşma arayüzü daha sonra denge/UI/teknik aşamada netleştirilecektir.
+
+## 37. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
