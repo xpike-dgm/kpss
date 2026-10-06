@@ -697,7 +697,46 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Temel ayrım: **Günlük görev = küçük adım; Haftalık görev = geniş davranış hedefi; Kamp = belirli akademik problemi birkaç aşamada çözmeye yönelik kişisel mini program.**
 - Görev Zincirleri / Kamplar alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin kamp sayısı, aşama sınırları, bonus değerleri, şablon kataloğu ve yeniden değerlendirme eşikleri daha sonra denge/konfigürasyon olarak netleştirilecektir.
 
-## 30. Henüz planlanacak büyük alanlar
+## 30. Oturum Sonu Geri Bildirimi / Ödül Sunumu — kararlaştırıldı
+- Oturum sonucu tek bir tutarlı akışta gösterilecektir: **Akademik Sonuç → Gelişim → XP/Level → Görev/Streak/Başarım → Sonraki Öneri**.
+- İlk ve en görünür bölüm her zaman akademik sonuç olacaktır. Doğru/yanlış/boş, süre, gerekirse zayıf alanlar ve incelenmesi gereken yanlışlar oyunlaştırma bilgisinden önce gelecektir.
+- Gizli akademik 0–110 puanı doğrudan gösterilmeyecektir. Bunun yerine “ilerleme sinyali”, “daha güçlü performans”, “daha fazla kanıt gerekiyor” gibi insan dili kullanılacaktır.
+- XP özeti ana ekranda sade biçimde gösterilecek; ayrıntılı XP kaynakları isteğe bağlı açılabilir olacaktır.
+- XP animasyonu kısa ve akıcı olacak; uzun sayı sayma veya ilerlemeyi bekleten animasyonlar kullanılmayacaktır.
+- Level-up normal oturumdan daha görünür olabilir ancak kullanıcıyı bekletmeyecek ve doğrudan devam etme seçeneği olacaktır.
+- Oyuncu level-up ile akademik başarı birbirine karıştırılmayacaktır. Zayıf test performansında dahi level atlanmışsa akademik sonuç dürüst, level mesajı nötr biçimde gösterilecektir.
+- Streak bilgisi aynı gün tekrar tekrar gösterilmeyecek; günün ilk anlamlı çalışma sonucunda veya ilgili milestone/koruma olayında gösterilebilecektir.
+- Göreve bağlı çalışma tamamlandığında görev ilerlemesi ve varsa küçük görev bonusu sonuç ekranında gösterilebilir.
+- Yeni başarım/rozet soru sırasında değil, oturum sonunda gösterilecektir.
+- Aynı oturumda birden fazla ödül açılırsa art arda popup yerine **Bu oturumda kazandıkların** biçiminde toplu özet kullanılacaktır.
+- Ödül geri bildirimi üç yoğunluk seviyesinde düşünülecektir:
+  - **Normal:** XP ve görev ilerlemesi.
+  - **Önemli:** başarım, streak milestone, kamp tamamlama.
+  - **Büyük:** level-up, nadir kozmetik veya büyük milestone.
+- Nadirlik, görsel geri bildirimin yoğunluğunu etkileyebilir; ancak profesyonel KPSS deneyimini bozacak aşırı mobil oyun estetiğinden kaçınılacaktır.
+- Oyunlaştırma sesleri isteğe bağlı olacaktır.
+- Kullanıcı **Tam / Azaltılmış / Kapalı** gibi animasyon seviyeleri seçebilecek; cihazın reduce-motion tercihlerine de saygı gösterilecektir.
+- Oyunlaştırma animasyonları hiçbir zaman “Devam Et” veya “Atla” aksiyonunu engellemeyecektir.
+- Yanlışları inceleme, önerilen güçlendirme veya sonraki çalışma gibi akademik aksiyonlar XP/ödül detaylarından daha görünür ana CTA olacaktır.
+- Oturum ekranının sonunda program motorundan gelen **sonraki en iyi hareket** gösterilecektir.
+- Kamp aşaması ve kamp tamamlanması normal testten daha zengin sonuç özeti kullanabilir; yalnızca gerçek veri varsa değişim/trend bilgisi gösterilecektir.
+- Tam KPSS ve branş denemelerinde akademik analiz önce gelecek; oyunlaştırma ödülleri sonuç analizinin sonunda daha küçük bölüm olarak sunulacaktır.
+- Gerçek Sınav Modu sonucu daha sade ve ciddi görünecek; oyunlaştırma gerçek sınav simülasyonu hissini bozmayacaktır.
+- Düşük performansta sahte kutlama dili kullanılmayacaktır. Gerçek çalışma XP’si verilebilir ancak akademik mesaj dürüst ve yapıcı kalacaktır.
+- Yanlış cevaplar tüm emeği değersizleştirmeyecek; temel çalışma XP’si ile performans bonusu birbirinden ayrılabilecektir.
+- Karşılaştırılabilir veri olduğunda kişisel rekorlar gösterilebilir; farklı zorluk/koşullar arasında sahte rekor üretilmeyecektir.
+- Oturum sonunda bugünkü toplam soru, oturum, XP ve aktif çalışma süresi gibi küçük bir gün özeti gösterilebilir.
+- Ayrı bir isteğe bağlı **Gün Sonu Özeti** bulunabilir; zorunlu bildirim olmayacaktır.
+- XP kaynakları kategori seviyesinde şeffaf olacaktır; ancak anti-farm algoritmasının sömürülebilecek kesin katsayı/formülü açıklanmayacaktır.
+- Yeni kozmetik veya ödül açıldığında kullanıcı mümkünse **Şimdi Kullan** seçeneğiyle doğrudan etkinleştirebilecektir.
+- Hızlı kapatılan sonuçlarda kazanımlar kaybolmayacak; Seviye Merkezi, Başarım Merkezi veya geçmişte tekrar görülebilecektir.
+- Aynı olay birden fazla ekranda tekrar tekrar kutlanmayacaktır; ödül olayı bir kez aktif olarak gösterilip sonrasında geçmişte saklanacaktır.
+- Kullanıcı ödül sunumunu **Normal / Sade / Minimum** gibi bir tercihle azaltabilecektir.
+- Temel amaç kullanıcının oturum sonunda üç soruyu net cevaplayabilmesidir: **Ne yaptım? Akademik sonucu neydi? Hesabım/yolculuğum nasıl ilerledi?**
+- Oyunlaştırma üçüncü soruyu destekleyecek; ilk iki sorunun önüne geçmeyecektir.
+- Oturum Sonu Geri Bildirimi / Ödül Sunumu alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin animasyon süreleri, sesler, görsel efekt yoğunluğu ve kart yerleşimleri UI/UX aşamasında netleştirilecektir.
+
+## 31. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
