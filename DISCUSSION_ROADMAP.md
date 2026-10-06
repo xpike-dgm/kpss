@@ -383,13 +383,29 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Kullanıcı streak göstergesini kapatabilecek.
       - Kesin aktif gün eşiği, koruma kazanma sıklığı ve milestone değerleri denge parametresi olarak sonra netleşecek.
       - ✅ **Streak alt sistemi ürün mimarisi açısından tamamlandı.**
-    - 🟨 **Sıradaki alt konu: Başarımlar ve Rozetler**
-      - Hangi davranışlar başarım açmalı?
-      - Başarımlar tek seferlik mi, kademeli mi olmalı?
-      - Gizli/sürpriz başarımlar olacak mı?
-      - Rozetler profil ve sosyal görünürlükte nasıl kullanılmalı?
-      - Başarımlar XP veya kozmetik ödül vermeli mi?
-      - Farm edilebilir başarımlar nasıl engellenecek?
+    - ✅ **Başarımlar ve Rozetler kabul edildi.**
+      - Level sürekli hesap gelişimini, başarımlar özel kilometre taşlarını temsil edecek.
+      - Çalışma, akademik gelişim, deneme, yanlışlardan öğrenme, istikrar, derslere özel ve nadir başarımlar gibi kategoriler bulunabilecek.
+      - Bazı başarımlar kademeli olacak; aynı başarı ailesi I / II / III / IV biçiminde gelişebilecek.
+      - Sayısal başarımların yanında anlamlı öğrenme davranışlarını ödüllendiren başarımlar bulunacak.
+      - Gizli akademik skor doğrudan başarım koşulu olarak gösterilmeyecek.
+      - Başarımların çoğu ilerleme göstergesiyle görülebilecek; küçük bir kısmı gizli/sürpriz olabilecek.
+      - Başarımlar sınırlı tek seferlik XP ve/veya kozmetik ödül verebilecek.
+      - Standart / Nadir / Destansı / Efsanevi gibi nadirlik katmanları desteklenebilecek.
+      - Gerçek kullanım verisi oluştuğunda gerçek açılma oranları nadirlik göstergesi olarak sunulabilecek.
+      - Profilde 3–5 seçili başarımın sergilendiği Rozet Vitrini bulunabilecek.
+      - Ayrı Başarım Merkezi; kategori, nadirlik, ilerleme ve kupa geçmişini gösterecek.
+      - Anti-farm kuralları benzersiz/geçerli soru, gerçek aktif çalışma ve gerçekçi deneme davranışını esas alacak.
+      - Kazanılmış başarım geri alınmayacak.
+      - ✅ **Başarımlar ve Rozetler alt sistemi ürün mimarisi açısından tamamlandı.**
+    - 🟨 **Sıradaki alt konu: Günlük / Haftalık Görev Sistemi**
+      - Görevler kullanıcıya baskı kurmadan nasıl motive edecek?
+      - Günlük görevler sabit mi, kişiye özel mi olacak?
+      - Haftalık görevler nasıl farklılaşacak?
+      - Görevler program motorunun önerileriyle nasıl uyumlu olacak?
+      - Tamamlanmayan görevler borç olarak birikecek mi?
+      - Görev ödülleri XP/başarım/kozmetik sistemine nasıl bağlanacak?
+      - Farm edilebilir veya anlamsız görevler nasıl engellenecek?
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
