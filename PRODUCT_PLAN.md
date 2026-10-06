@@ -575,7 +575,37 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Online sistemlerde oyuncu level'ı sosyal profil bilgisi olabilir fakat tek başına rekabet sıralaması ölçütü olmayacaktır; haftalık/aylık XP ve diğer sosyal ölçüler daha sonra ayrı tasarlanacaktır.
 - Kesin XP değerleri uygulamaya gömülü değişmez sabitler olmayacak; gerçek kullanım verisine göre ayarlanabilen **denge konfigürasyonu** olarak tutulacaktır.
 
-## 26. Henüz planlanacak büyük alanlar
+## 26. Streak / Çalışma Serisi Sistemi — kararlaştırıldı
+- Çalışma serisi klasik **“her gün gir, bir gün kaçırırsan her şey sıfırlanır”** modeli olmayacaktır. Amaç motivasyon sağlamak, kullanıcıyı strese sokmak değildir.
+- Seri yalnızca **gerçek ve anlamlı çalışma** ile ilerleyecektir. Siteye giriş yapmak, sayfa açmak veya pasif kullanım streak günü sayılmayacaktır.
+- Streak için katı günlük soru/süre kotası zorunlu tutulmayacaktır. Kısa ama gerçek bir çalışma günü de aktif gün sayılabilecektir; kesin teknik eşikler sonradan dengelenecektir.
+- Kullanıcıya iki ayrı gösterge sunulacaktır:
+  - **Güncel Seri:** ardışık anlamlı çalışma günleri.
+  - **İstikrar:** örneğin son 30 gündeki aktif çalışma günü oranı/sayısı.
+- Streak bozulsa bile kullanıcının uzun dönem emeği görünür kalacaktır. Örneğin **Son 30 gün: 26 aktif gün** bilgisi seri sıfırlansa da korunur.
+- Ayrı bir **En Uzun Seri** kaydı tutulacaktır. Güncel seri bittiğinde kişisel rekor ve geçmiş başarım silinmeyecektir.
+- **Dinlenme Hakkı / Seri Koruması** mekanizması olacaktır. Belirli gerçek çalışma birikimi sonrasında kullanıcı sınırlı sayıda koruma hakkı kazanabilir.
+- Seri koruması izole kaçırılan tek günü otomatik olarak koruyabilir. Koruma hakları sınırsız biriktirilmeyecek; örneğin düşük bir maksimum stok sınırı bulunacaktır.
+- Art arda birden fazla çalışılmayan günün sonsuza kadar korumayla geçirilmesine izin verilmeyecektir. Seri koruması düzenli biçimde gün atlama aracı değil, gerçek hayat kaynaklı tekil kaçırmalar için kullanılacaktır.
+- Seri bozulduğunda dramatik veya cezalandırıcı mesajlar kullanılmayacaktır. **“68 günlük serini kaybettin”** yerine önceki rekoru ve yeni başlangıcı vurgulayan yapıcı dil kullanılacaktır.
+- Streak kaybı **XP kaybı, level düşüşü veya daha önce açılmış ödüllerin geri alınması** gibi cezalar üretmeyecektir.
+- Streak sürekli XP çarpanına dönüşmeyecektir. Uzun seri sahibi kullanıcılara kalıcı 2X XP gibi ekonomik avantajlar verilmeyecektir.
+- Bunun yerine **milestone ödülleri** kullanılabilir. Örneğin 3 / 7 / 14 / 30 / 60 / 100 günlük seri eşiklerinde tek seferlik küçük XP, başarım, unvan veya kozmetik ödül açılabilir.
+- Bir milestone bir kez kazanıldığında streak bozulsa bile başarım/ödül kalıcı olacaktır.
+- Takvim günü hesabı kullanıcının saat dilimine göre yapılacaktır. Gece yarısına taşan gerçek çalışma oturumlarında adaletsiz seri kaybı yaşanmaması için oturumun hangi güne yazılacağı tutarlı bir kuralla belirlenecektir.
+- Aynı gün çok uzun çalışmak birden fazla streak günü üretmeyecektir. Streak **miktarı değil devamlılığı** ölçer.
+- Dashboard'da seri görünür olabilir fakat ana akademik içeriği gölgelemeyecektir.
+- Haftalık/aylık takvim görünümüyle çalışılan günler, dinlenme hakkı kullanılan günler ve bugünün durumu gösterilebilecektir.
+- **İstikrar başarımları** streak'ten ayrı olabilir; örneğin son 30 günün 20'sinde çalışma veya 90 günün 65'inde çalışma gibi.
+- Sosyal profil tarafında kullanıcı isterse **güncel seri, en uzun seri ve son 30 günlük aktif gün** bilgilerini gösterebilecektir.
+- Leaderboard doğrudan en uzun streak üzerine kurulmayacaktır; eski kullanıcıların kalıcı avantaj kazanmaması için dönemsel istikrar gibi sosyal metrikler ileride ayrıca değerlendirilebilir.
+- Kullanıcıya **“bugün henüz çalışma kaydedilmedi”** gibi sakin hatırlatmalar gösterilebilir; kırmızı alarm ve kayıp korkusu dili kullanılmayacaktır.
+- Bildirim gönderilip gönderilmeyeceği ayrıca bildirim başlığında kararlaştırılacaktır.
+- Kullanıcı isterse streak göstergesini tamamen kapatabilecektir. Oyunlaştırma isteğe bağlı kalacaktır.
+- Streak sistemi ile XP sistemi görev olarak ayrı tutulacaktır: streak **devamlılığı**, XP ise **gerçek çalışma ve hesap gelişimini** temsil edecektir.
+- Streak alt sistemi ürün mimarisi açısından kararlaştırılmıştır; kesin aktif gün eşiği, koruma hakkı kazanma sıklığı, milestone değerleri ve UI ayrıntıları daha sonra denge parametresi olarak netleştirilecektir.
+
+## 27. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
