@@ -1314,7 +1314,152 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Jev'in hangi sınıflandırmalarda sık hata yaptığı ölçülebilecek; kategori bazında doğruluk/itiraz oranları kalite iyileştirmesinde kullanılabilecektir.
 - PDF importer'ın kalite ilkesi **yüksek otomasyon + confidence tabanlı review** olacaktır; sistem belirsiz bir alanı sessizce doğru kabul etmek yerine inceleme kuyruğuna taşıyacaktır.
 
-## 40. Henüz planlanacak büyük alanlar
+## 40. Admin Paneli — ana yönetim sistemi — kararlaştırıldı
+- Admin Paneli yalnızca soru yönetim ekranı değil, ürünün tamamını yöneten **Control Center / Operasyon Merkezi** olacaktır.
+- Üründeki önemli sistemler mümkün olduğunca kod değişikliği ve deploy gerektirmeden güvenli biçimde izlenebilir, yapılandırılabilir ve yönetilebilir olacaktır.
+- Admin ana ekranı grafik kalabalığı yerine **aksiyon gerektiren durumları** öne çıkaracaktır: inceleme bekleyen sorular, yüksek itirazlı içerikler, sync hataları, AI servis sorunları, moderasyon kuyruğu, yaklaşan sezon olayları ve kritik sistem uyarıları.
+- Evrensel admin araması; kullanıcı, soru ID, konu, test, deneme, sezon, başarım, kamp, bildirim, rapor ve işlem kayıtlarını bulabilecektir.
+
+### Yetki ve güvenlik modeli
+- Tek tip sınırsız admin yaklaşımı kullanılmayacaktır; ayrıntılı rol/yetki sistemi olacaktır.
+- Yetkiler modüler izinler olarak tanımlanacak; Super Admin, İçerik Editörü, Reviewer, Akademik Yönetici, AI Yöneticisi, Moderasyon, Destek, Oyunlaştırma Yöneticisi, Sistem Operatörü ve Analist benzeri roller bu izinlerin birleşimi olacaktır.
+- Kritik işlemler ikinci onay, etki önizlemesi ve gerektiğinde yeniden doğrulama isteyecektir.
+- Admin hiçbir zaman kullanıcı şifresini veya API anahtarını açık metin olarak göremeyecektir.
+- Production ve test/staging ortamları görsel olarak net biçimde ayrılacaktır.
+
+### Soru bankası ve içerik operasyonları
+- Soru pipeline'ı **Draft → Review → Approved → Active** ve gerektiğinde **Problemli / Quarantine / Pasif / Arşiv** durumlarını destekleyecektir.
+- Her soruda metin, şıklar, doğrulanmış cevap, çözüm, taxonomy, kazanım, tahmini/data-driven zorluk, kaynak, sürüm, kullanım istatistikleri, itirazlar ve değişiklik geçmişi görülebilecektir.
+- Soru düzenlemeleri destructive olmayacak; versioning kullanılacaktır.
+- Toplu filtreleme, tag/taxonomy değişikliği, durum değiştirme ve batch review desteklenecek; bulk işlem öncesi etki önizlemesi olacaktır.
+- Hatalı soru bildirimleri kategori bazlı toplanacak ve aynı soruya gelen bildirimler gruplanacaktır.
+- Yüksek bildirim oranı veya istatistiksel anomali gösteren sorular **Kalite Sinyalleri** kuyruğuna alınabilecektir.
+- Duplicate / near-duplicate soru tespiti desteklenecektir.
+- PDF / Kitap İçe Aktarma ve Jev sınıflandırması bu ana soru operasyonlarının parçası olarak çalışacaktır.
+
+### Müfredat / taxonomy yönetimi
+- Ders → Konu → Alt Konu → Kazanım/Beceri ağacı ayrı profesyonel editörde yönetilecektir.
+- Konu ekleme, yeniden adlandırma, taşıma, birleştirme, arşivleme, sınav türüne göre kullanılabilirlik ve prerequisite ilişkileri yönetilebilecektir.
+- Prerequisite grafiği görsel olarak incelenebilecek; döngüsel bağımlılıklar engellenecektir.
+- Taxonomy değişikliklerinde etkilenecek soru, kullanıcı profili, kamp ve diğer bağımlılıklar önceden gösterilecektir.
+
+### Öğrenme içeriği yönetimi
+- Konu özetleri, formüller, püf noktaları, örnekler, understanding-check içerikleri, video kaynakları, öğretmen seçenekleri, video segmentleri ve timestamp açıklamaları yönetilebilecektir.
+- Eksik içerik, erişilemeyen video ve kalite boşlukları raporlanabilecektir.
+- İçerikler taslak → önizleme → yayın akışıyla yönetilecektir.
+
+### Akademik motor yönetimi
+- Program motoru, retention, prerequisite, ihmal bonusu, deneme etkisi, improvement potential ve benzeri tuning parametreleri açıklamalı biçimde yönetilebilir olacaktır.
+- Akademik config versiyonlanacak; taslak config test edilip aktive edilecek, gerektiğinde önceki sürüme dönülebilecektir.
+- Her parametrede açıklama, mevcut değer, varsayılan ve güvenli aralık bulunacaktır.
+- Admin gerçek kullanıcı verisini bozmadan sahte profiller üzerinde **Program Motoru Simülasyonu** çalıştırabilecektir.
+- Kullanıcının mastery skorunu keyfi elle değiştirmek yerine event düzeltme / yeniden işleme / recalculation araçları kullanılacaktır.
+- Gereken özel override yalnız yüksek yetkiyle ve audit log ile yapılabilecektir.
+
+### Kullanıcı yönetimi ve destek
+- Kullanıcı detayında hesap durumu, KPSS dönemi, son aktiflik, level, sezon, streak, AI bağlantı durumu, cihazlar, sync sorunları, moderasyon ve teknik olay geçmişi görülebilecektir.
+- Hassas akademik verilere erişim ayrıca yetkilendirilecektir.
+- XP, test, sync ve event geçmişi kullanıcı destek incelemesi için açıklanabilir olacaktır.
+- Kullanıcı adına veri değiştiren doğrudan impersonation yerine mümkün olduğunca **read-only Destek Görünümü** kullanılacaktır.
+- Uyarı, sosyal kısıtlama, geçici askı, yeniden aktivasyon ve hesap silme gibi aksiyonlar yetki + gerekçe + audit ile yönetilecektir.
+
+### AI Control Center
+- AI sağlayıcıları, gerçek model eşlemeleri, kalite/maliyet seviyeleri, fallback yolları ve servis sağlıkları yönetilecektir.
+- Kullanıcı tarafında gizlenen gerçek model isimleri admin tarafında görülebilecektir.
+- AI Öğretmen, AI Koç, soru üretici, çözüm üretici, sınıflandırıcı ve zorluk tahmini için prompt şablonları versiyonlanacaktır.
+- Prompt test alanı eski/yeni prompt çıktılarının karşılaştırılmasını destekleyecektir.
+- AI kalite merkezi; negatif feedback, doğrulanmış cevap çelişkileri, hata oranları ve örnek inceleme kuyruğunu gösterecektir.
+- AI soru üretimi doğrudan yayına çıkmayacak; mevcut Draft → Review → Approved → Active sürecine girecektir.
+
+### Oyunlaştırma ve meta yönetimi
+- XP bantları, anti-farm katsayıları, level eğrisi, milestone ödülleri ve ilgili config panelden yönetilebilecektir.
+- Level ekonomisi simülasyonu; tipik çalışma davranışının level ilerlemesine etkisini gösterebilecektir.
+- Başarım/Rozet editörü; isim, açıklama, kategori, rarity, koşul, ödül, görünür/gizli ve ikon alanlarını destekleyecektir.
+- Günlük/haftalık/sezon görev aileleri ve şablonları yönetilebilecektir.
+- Kamp şablonları; aşamalar, tetikleme koşulları, minimum veri, doğrulama ve ödüllerle yönetilebilecektir.
+- Streak, koruma ve milestone kuralları versiyonlu config ile yönetilecektir.
+- Kozmetik katalog; avatar, çerçeve, banner, unvan, tema ve çalışma kozmetiklerini içerecek, mobil/dark mode önizleme sunacaktır.
+- Sezon Yönetimi; tarih, tema, Sezon Yolu, milestone, görev, ödül, lig ve takım ligi ayarlarını kapsayacaktır.
+- Sezonlar taslak → preview/simülasyon → yayın akışını kullanacaktır; başlamış sezonda adaleti etkileyen kritik değişiklikler sınırlandırılacaktır.
+- Lig katmanları, placement, grup boyutu, yükselme/düşme ve ödüller yönetilecektir.
+- Özel Anlar; tetik koşulu, cooldown, sunum, rarity, hatıra kartı ve ödül alanlarıyla yönetilecektir.
+- KPSS Yolculuk aşamaları; metin, görsel, milestone, ödül ve geçiş kriter gruplarıyla yönetilecektir.
+
+### Sosyal sistem ve moderasyon
+- Arkadaş, takım, çalışma odası, meydan okuma, düello ve topluluk hedeflerine ilişkin operasyon araçları bulunacaktır.
+- Moderasyon Merkezi; kullanıcı adı, profil görseli, takım adı, mesaj, spam, taciz, sahte hesap ve farm raporlarını tek kuyruğa toplayacaktır.
+- Moderasyon aksiyonları uyarı, içerik kaldırma, mesaj/sosyal kısıtlama, geçici askı ve hesap askısını destekleyecektir.
+- Bütün moderasyon aksiyonları reason code ve audit log ile kaydedilecektir.
+- Topluluk hedefleri yalnız kontrollü akademik hedef tiplerinden üretilecektir.
+
+### Bildirim ve duyuru yönetimi
+- Olay tabanlı bildirim şablonları; başlık, metin, deep-link, kategori, kanal ve koşul ile yönetilecektir.
+- Toplu duyurularda hedef kitle seçimi, önizleme ve ikinci onay bulunacaktır.
+- Bildirimlerin mobil/PWA görünümü önizlenebilecektir.
+
+### Mobil/PWA operasyonları
+- PWA sürümleri, cihaz dağılımı, push abonelik sağlığı, cache/sync hataları ve eski sürüm kullanımı izlenebilecektir.
+- Offline sync kuyruğu ve problemli cihaz/oturum sinyalleri görülebilecektir.
+
+### Feature Flags ve deneyler
+- Özellikler feature flag ile tüm kullanıcılar, belirli kullanıcılar, belirli gruplar veya yüzdesel rollout için açılıp kapatılabilecektir.
+- Feature flag sistemi kapsam erteleme aracı değil, güvenli operasyon ve geri dönüş mekanizmasıdır.
+- UI/oyunlaştırma gibi uygun alanlarda kontrollü A/B deneyleri desteklenebilir; akademik güvenliği bozacak deneyler yapılmayacaktır.
+
+### Sistem konfigürasyonu ve audit
+- Akademik, Oyunlaştırma, Sosyal, AI ve Mobil/PWA config alanları ayrı kategorilerde yönetilecektir.
+- Her ayarda açıklama, tip, mevcut değer, varsayılan, güvenli aralık ve son değiştiren kişi görülecektir.
+- Önemli bütün admin işlemleri **Audit Log** içine yazılacaktır.
+- Audit; kim, ne zaman, neyi, önceki/yeni değeri ve mümkünse neden değiştirdi bilgisini içerecektir.
+- Audit kayıtları normal adminler tarafından silinemeyecektir.
+- Kritik değişikliklerde kısa gerekçe zorunlu olacaktır.
+- Content Audit, Security Audit, User Support Audit ve Configuration Audit gibi kategoriler desteklenecektir.
+
+### Sistem sağlığı, jobs ve event explorer
+- Admin temel sistem sağlığını dış geliştirici araçlarına girmeden görebilecektir: API hata oranı, response time, database, queue, AI provider, push, realtime ve sync sağlığı.
+- Background Job Merkezi retention hesapları, sezon kapanışı, achievement değerlendirmesi, bildirim, analytics, AI queue ve cleanup işlerini gösterecektir.
+- Başarısız job uygun yetkiyle yeniden çalıştırılabilecektir.
+- Event Explorer kullanıcı/sistem olaylarını zaman çizelgesi halinde gösterecektir: TEST_STARTED, ANSWER_SELECTED, TEST_COMPLETED, XP_GRANTED, MASTERY_UPDATED, ACHIEVEMENT_UNLOCKED vb.
+- Veri düzeltme araçları SQL yerine kontrollü preview → execute → audit akışıyla çalışacaktır.
+- Büyük recalculation işleri progress ve hata raporuyla yönetilecektir.
+
+### Import / Export ve içerik operasyonları
+- Soru bankası, taxonomy, achievement katalogu, season config ve uygun diğer yapıların kontrollü export/import araçları olacaktır.
+- Import işlemleri validation → preview → import akışını kullanacaktır.
+- Geçerli/hatalı/duplicate şüpheli kayıtlar ayrı raporlanacaktır.
+- Kaydedilmiş filtreler/görünümler ve admin notları desteklenecektir.
+- Gerekirse içerik ekipleri için hafif operasyon task/atama sistemi bulunabilecektir.
+
+### Analytics, güvenlik ve anti-farm
+- Ürün analytics merkezi; aktif kullanım, onboarding, test tamamlama, AI, PWA, offline, sosyal ve sezon kullanımını gösterecektir.
+- Akademik kalite analytics'i konu bazında soru sayısı, çözüm eksikleri, difficulty dağılımı, çeşitlilik ve kalite flag'lerini gösterecektir.
+- AI kullanım/maliyet/servis sağlık verileri admin tarafından izlenebilecektir; kullanıcı API anahtarları görünmeyecektir.
+- Güvenlik Merkezi başarısız giriş, şüpheli oturum, rate limit, spam, sahte hesap ve anormal kullanım sinyallerini gösterecektir.
+- Anti-Farm Merkezi aşırı soru spamı, kronometre/aktif süre uyumsuzluğu, düello spamı ve benzeri anomalileri review kuyruğuna alabilecektir.
+- Şüpheli sinyal otomatik olarak suçluluk kararı anlamına gelmeyecektir.
+
+### Gizlilik ve veri yönetimi
+- Veri export, hesap silme ve uygun anonimleştirme operasyonları admin panelinden yönetilebilecektir.
+- Hassas kullanıcı verisine erişim rol ve audit ile sınırlandırılacaktır.
+- Kullanıcının özel verileri merak amaçlı görüntülenemeyecek şekilde least-privilege yaklaşımı uygulanacaktır.
+
+### Taslak, geri alma ve etki analizi
+- Soru dışında sezon, başarım, görev, kamp, bildirim, AI prompt, taxonomy ve öğrenme içeriğinde de **Taslak → Önizleme → Yayın** modeli kullanılacaktır.
+- Versioning olan alanlarda mümkün olduğunca **Önceki sürüme dön** desteği olacaktır.
+- Büyük değişikliklerde **Değişiklik Etkisi** ekranı; etkilenecek soru, kullanıcı, kamp, config ve diğer bağımlılıkları gösterecektir.
+
+### Sandbox / simülasyon
+- Gerçek analytics ve leaderboard'a karışmayan test kullanıcıları/profilleri oluşturulabilecektir.
+- Yeni kullanıcı, ileri kullanıcı, belirli derslerde zayıf/güçlü kullanıcı ve sınava az süre kalmış kullanıcı gibi senaryolar test edilebilecektir.
+- **Kullanıcı Yolculuğunu Simüle Et** aracı; belirli çalışma davranışları altında level, streak, görev, retention, yolculuk ve sezon sistemlerinin nasıl ilerlediğini gösterebilecektir.
+
+### Admin UX
+- Admin Paneli masaüstü/tablet öncelikli olacaktır; telefon üzerinden temel izleme ve basit moderasyon yapılabilir ancak karmaşık taxonomy/sezon tasarımı telefona zorlanmayacaktır.
+- Her ana modülde güçlü arama, filtre, kaydedilmiş görünüm ve toplu işlem desteği olacaktır.
+- Admin Panelinin temel kalite üçlüsü: **Versioned Configuration + Simulation/Sandbox + Full Audit Log**.
+- Admin Paneli ürün mimarisi açısından tamamlanmıştır; kesin ekran bilgi mimarisi, permission matrisi, config şemaları ve operasyon metrikleri Teknik Altyapı/UI aşamasında netleştirilecektir.
+
+## 41. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
