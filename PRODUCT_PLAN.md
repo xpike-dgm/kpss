@@ -1271,7 +1271,50 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - En kritik kalite üçlüsü **offline devam + otomatik kayıt + cihazlar arası kaldığın yerden devam** olacaktır.
 - Mobil / PWA Deneyimi ürün mimarisi açısından tamamlanmıştır; kesin breakpoint'ler, cache stratejisi, deep-link route'ları, sync protokolü ve performans hedefleri Teknik Altyapı/UI aşamasında netleştirilecektir.
 
-## 39. Henüz planlanacak büyük alanlar
+## 39. Admin Paneli — PDF / Kitap İçe Aktarma alt sistemi — kararlaştırıldı
+- Admin Panelinde ayrı bir **PDF / Kitap İçe Aktarma Merkezi** bulunacaktır.
+- Amaç PDF sayfasını veya tüm soruyu görsel olarak kırpıp soru diye saklamak değildir. Sistem soruyu **yapısal/native içerik** olarak yeniden oluşturacaktır.
+- PDF içindeki soru metni ve şıklar normal metin/matematik içeriğine dönüştürülecek; yalnızca gerçek şekil, grafik, tablo, harita veya benzeri görsel öğeler kaynak PDF'den ayrıştırılarak görsel olarak saklanacaktır.
+- Matematiksel ifadeler mümkün olduğunca yapılandırılmış matematik gösterimine dönüştürülecek; üs, kök, kesir, eşitsizlik, parantez ve benzeri kritik semboller ayrıca doğrulanacaktır.
+- Kopyalanabilir text layer bulunmayan, tamamen taranmış/image tabanlı PDF'ler de desteklenecektir.
+- Sistem OCR ile sınırlı olmayacak; sayfa düzeni, kolonlar, soru sınırları, şıklar, görseller, header/footer ve sayfadan sayfaya devam eden sorular document-layout + vision tabanlı analizle ayrıştırılacaktır.
+- Soruya ait görsel gerekiyorsa yalnız ilgili görsel bölgesi yüksek kalitede çıkarılacak; soru metni veya şıklar screenshot olarak saklanmayacaktır.
+- Embedded orijinal görsel mevcutsa mümkün olduğunda doğrudan kaynak görsel kullanılacak; tarama ise yüksek çözünürlüklü crop ve uygun trim/padding uygulanacaktır.
+- Geometri/grafik gibi görseller AI tarafından yeniden çizilerek veri değiştirme riski oluşturulmayacak; kaynak görsel korunacaktır.
+- Kitap sonundaki cevap anahtarı otomatik tespit edilip soru numaralarıyla eşleştirilebilecektir.
+- Kitapta çözümler varsa soru, cevap anahtarı ve çözüm bölümleri mümkün olduğunca eşleştirilecektir.
+- Orijinal PDF, sayfa numarası, source region ve import batch bilgisi provenance olarak saklanacaktır; öğrenci yüzeyinde zorunlu olarak gösterilmeyecek ancak admin doğrulamasında erişilebilir olacaktır.
+- Her import işlemi ayrı **Import Batch** olarak izlenecek; OCR, soru tespiti, görsel çıkarma, cevap anahtarı eşleme, sınıflandırma ve doğrulama aşamalarının durumu görülebilecektir.
+- İşlem sonunda başarılı, kontrol önerilen, düşük güvenli ve işlenemeyen sorular ayrı sayılarla raporlanacaktır.
+- Admin inceleme ekranında solda orijinal PDF bölgesi, sağda sistemin oluşturduğu native soru gösterilecek ve alanlar sonradan elle düzenlenebilecektir.
+- Yüksek güvenli sorular toplu review/onay akışına alınabilir; düşük güvenli alanlar öncelikli insan incelemesine gönderilecektir.
+- Aynı PDF'nin yeniden yüklenmesi dosya hash'i ve soru benzerliği ile tespit edilmeye çalışılacaktır.
+- Yeni sorular mevcut soru bankasına karşı duplicate/near-duplicate kontrolünden geçebilecektir.
+- Import batch gerektiğinde kontrollü biçimde geri alınabilecektir; yayımlanmış/sürüm geçmişi olan kayıtlar veri bütünlüğü kurallarına göre ele alınacaktır.
+- Büyük PDF'lerde binlerce soru için toplu işleme ve ilerleme takibi desteklenecektir.
+
+### Jev ile otomatik akademik sınıflandırma
+- PDF'den yapısal olarak çıkarılan her soru **Jev sınıflandırma aşamasından** geçirilebilecektir.
+- Jev; soru içeriği ve gerektiğinde ilişkili görseli kullanarak şu metadata alanları için aday üretir:
+  - Ders
+  - Konu
+  - Alt konu
+  - Kazanım / beceri
+  - Soru tipi
+  - Tahmini zorluk seviyesi
+  - Gerekli diğer akademik etiketler
+- Jev sınıflandırması mevcut müfredat/taxonomy ağacındaki geçerli ID'lere bağlanacaktır; serbest metinle kontrolsüz yeni konu üretmeyecektir.
+- Her sınıflandırma alanı için güven/confidence tutulacaktır.
+- Yüksek güvenli sınıflandırmalar hızlı review akışına girebilir; düşük güven veya taxonomy çakışması insan incelemesine gönderilecektir.
+- Jev özellikle PDF importunda yüzlerce/binlerce sorunun konu ve alt konuya elle ayrılma yükünü ciddi biçimde azaltmak için kullanılacaktır.
+- Jev'in tahmini zorluk etiketi **başlangıç tahmini** olacaktır; gerçek kullanıcı çözüm verisi oluştukça data-driven difficulty daha yüksek ağırlık kazanacaktır.
+- Jev doğru cevap için tek otorite olmayacaktır. Cevap anahtarı, doğrulanmış çözüm ve mevcut soru kalite pipeline'ı ayrı otorite olarak korunacaktır.
+- Jev classification/scoring aracı olarak kullanılabilir; nihai akademik doğruluk ve yayın kararı mevcut review/validation pipeline'ından geçecektir.
+- Admin, Jev'in önerdiği konu/alt konu/zorluk etiketlerini toplu veya tekil olarak değiştirebilecektir.
+- Jev'in hangi sınıflandırmalarda sık hata yaptığı ölçülebilecek; kategori bazında doğruluk/itiraz oranları kalite iyileştirmesinde kullanılabilecektir.
+- PDF importer'ın kalite ilkesi **yüksek otomasyon + confidence tabanlı review** olacaktır; sistem belirsiz bir alanı sessizce doğru kabul etmek yerine inceleme kuyruğuna taşıyacaktır.
+
+## 40. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
