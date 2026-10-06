@@ -665,7 +665,39 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Temel ilke: **Görev sistemi çalışma programına rakip değil, onun oyunlaştırılmış uzantısıdır.**
 - Kesin görev sayıları, bonus değerleri, reroll sınırı, görev kataloğu ve yenilenme ayrıntıları daha sonra denge parametresi olarak ayarlanacaktır.
 
-## 29. Henüz planlanacak büyük alanlar
+## 29. Görev Zincirleri / Kamplar — kararlaştırıldı
+- Görev Zinciri / Kamp, günlük görevden daha büyük ve belirli bir akademik problemi birkaç aşamada çözmeye yönelik kişisel mini programdır.
+- Kamp her zayıf konu için otomatik açılmayacaktır. Tekrarlayan yanlışlar, yeterince güvenilir düşük performans, retention riski, denemelerde sürekli aynı kayıp, hız problemi, önkoşul eksikliği veya ilerleyememe gibi anlamlı sinyaller olduğunda önerilecektir.
+- Her kampın kullanıcıya açık, anlaşılır bir amacı olacaktır; örneğin belirli bir konudaki tekrar eden hataları azaltmak veya hızı iyileştirmek.
+- Kamp kullanıcıya başarı garantisi vermeyecek; “güçlendirme süreci” olarak sunulacaktır.
+- Kamp yapısı probleme göre değişebilecek ve tipik olarak 2–6 aşamadan oluşabilecektir. Gereksiz uzun zincirlerden kaçınılacaktır.
+- Tipik aşamalar: kısa tekrar/öğrenme, uygun seviyede test, yanlış güçlendirme, yeni doğrulama testi ve gerektiğinde hız kontrolü.
+- Kamp tek oturumda bitmek zorunda olmayacaktır; ilerleme kaydedilecek ve kullanıcı kaldığı yerden devam edebilecektir.
+- Kampın tamamlanmaması veya ara verilmesi borç/ceza üretmeyecektir. Uzun aradan sonra kamp yeni performans verilerine göre yeniden değerlendirilebilecektir.
+- Kamp belirli kontrol noktalarında dinamik olarak kısalabilir, uzayabilir veya farklı aşama ekleyebilir; ancak sürekli değişerek kullanıcıyı şaşırtmayacaktır.
+- Kamp, program motoruyla aynı akademik öncelik sistemine bağlı olacaktır. Ayrı bir motor gibi “her şeyi bırak bunu yap” yaklaşımı kullanmayacaktır.
+- Aktif kampın sıradaki aşaması program motorunda uygun bir öncelik sinyali olarak kullanılabilecektir.
+- Aynı anda çok sayıda aktif kamp açılmayacaktır. Varsayılan yaklaşım bir ana kamp ve gerekirse sınırlı bir yan kamp olabilir; kesin sınır daha sonra dengelenecektir.
+- Kullanıcı sistem önerisi olmadan da istediği ders/konu için kamp başlatabilecektir; kamp yine mevcut kullanıcı verilerine göre kişiselleştirilecektir.
+- Hazır kamp şablonları kullanılabilecektir: Problemler Güçlendirme, Paragraf Hız, Tarih Tekrar, Coğrafya Yorum/Harita, Vatandaşlık Kavram ve Deneme Sonrası Hata gibi.
+- Kamp sistemi AI olmadan tamamen çalışacaktır. AI açıksa kampın gerekçesini ve açıklamalarını daha doğal biçimde sunabilir.
+- Her kamp aşaması kendi normal çalışma XP’sini üretir; kamp tamamlandığında küçük bir Kamp Tamamlama Bonusu ve bazı özel durumlarda başarım/rozet verilebilir.
+- Kamp sırf XP için tekrar tekrar farm edilebilir olmayacaktır. Aynı kolay kampın tekrarında ilk tamamlama bonusu kaldırılabilir, soru havuzu yenilenebilir veya yalnızca gerçek ihtiyaç varsa tekrar önerilebilir.
+- Kampı tamamlamak “konu kesin bitti” anlamına gelmeyecektir. Akademik durum doğrulama verisine göre ayrı takip edilmeye devam edecektir.
+- Kamp sonunda gerçek veriye dayalı bir özet gösterilebilecektir: aşama sayısı, benzersiz soru, güçlendirilen yanlışlar, doğruluk/süre değişimi ve sonraki öneri.
+- Yeterli gelişim olmazsa “kamp başarısız” gibi cezalandırıcı dil kullanılmayacak; sistem farklı öğrenme yolu, önkoşul, daha kolay test, AI Öğretmen veya başka bir tekrar yaklaşımı önerebilecektir.
+- Kamp normal görevden daha özel bir görsel kimliğe sahip olabilir; aşama ilerlemesi ve mini kilometre taşları gösterilebilir.
+- Kamp geçmişi saklanacaktır. Sistem geçmiş kamp bilgisini gelecekteki kişiselleştirmede kullanabilecektir.
+- Özellikle **Deneme Sonrası Güçlendirme Kampı** desteklenecektir; denemede kümelenen konu, hız veya hata problemleri gerçek çalışma zincirine dönüştürülebilecektir.
+- Kamp bitişi sadece kutu işaretlemeye dayanmayacaktır. Gerekli durumlarda içerik tamamlanmış olsa bile ayrı doğrulama testi istenebilecektir.
+- Kullanıcı kampı durdurabilir/arşivleyebilir; XP geri alınmaz, streak etkilenmez ve “başarısız” etiketi oluşmaz.
+- Aktif kampın aşamaları günlük görevlere entegre olabilecektir; örneğin günün ana görevi kampın sıradaki aşaması olabilir.
+- Haftalık görevler aktif kampta ilerlemeyi teşvik edebilir ancak kampı tamamen bitirmeyi zorunlu deadline haline getirmeyecektir.
+- Başlangıç kamp türleri: **Güçlendirme Kampı, Hız Kampı, Deneme Sonrası Kampı**. Yeni Konu Kampı ileride normal öğrenme sistemiyle çakışmayacak biçimde ayrıca değerlendirilebilir.
+- Temel ayrım: **Günlük görev = küçük adım; Haftalık görev = geniş davranış hedefi; Kamp = belirli akademik problemi birkaç aşamada çözmeye yönelik kişisel mini program.**
+- Görev Zincirleri / Kamplar alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin kamp sayısı, aşama sınırları, bonus değerleri, şablon kataloğu ve yeniden değerlendirme eşikleri daha sonra denge/konfigürasyon olarak netleştirilecektir.
+
+## 30. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
