@@ -556,6 +556,24 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Ayrı bir **Seviye Merkezi** ekranında mevcut level, toplam XP, sonraki level, sonraki ödül, son açılan ödüller, kozmetikler ve XP kaynakları gösterilebilecektir.
 - Oyuncu seviyesi sosyal prestij sağlayabilir ancak **yüksek level = yüksek akademik yeterlilik** şeklinde yorumlanmayacak; iki sistem kullanıcı deneyimi ve veri modelinde ayrı tutulacaktır.
 - Kesin XP değerleri, 1–100 eğrisi, kilometre taşı ödülleri ve anti-farm katsayıları ayrıca dengelenecektir; şu an ürün mimarisi ve davranış ilkeleri kesinleşmiştir.
+- XP ekonomisinin temel yaklaşımı **sabit “1 doğru = X XP” modeli olmayacaktır**. Aktivite türü, öğrenme değeri, kalite/performance ve tekrar/farm etkileri birlikte değerlendirilebilecektir.
+- Başlangıç dengelemesinde 10 soruluk adaptif test, kısa tekrar, konu öğrenme, yanlış güçlendirme, branş denemesi ve tam KPSS denemesi farklı temel XP bantlarına sahip olacaktır; ancak bu sayılar ürün kuralı değil **ayar parametresi** olacaktır.
+- Testlerde yalnızca doğru cevap sayısı ödüllendirilmeyecek; gerçek bir testi tamamlamak temel emek XP'si verebilir, doğruluk ve kaliteli performans ek bonus üretebilir.
+- **Dakika başına doğrudan XP** verilmeyecektir. Kronometreyi açık bırakmak XP üretmez. Gerçek aktif çalışma sinyalleri varsa oturum sonunda küçük **Odaklı Çalışma Bonusu** verilebilir.
+- Bir öğrenme döngüsünü kaliteli biçimde tamamlamak, örneğin **konu öğrenme → adaptif test → yanlış inceleme**, küçük bir **Tam Öğrenme Döngüsü bonusu** üretebilir.
+- İlk kez tamamlanan anlamlı aktivitelerde bir defalık **ilk tamamlama bonusları** bulunabilir; örneğin ilk konu, ilk gerçek deneme veya ilk yanlış güçlendirme.
+- Tekrar edilen aynı sorularda XP getirisi kademeli biçimde azalabilir; anti-farm sistemi mümkün olduğunca **görünmez ve sessiz** çalışacaktır.
+- Yanlış defterindeki planlı tekrar ve güçlendirme çalışmaları farm sayılmayacak; bunlar yeni soru XP'si yerine tekrar/güçlendirme XP'si üretebilecektir.
+- Seviye gereksinimleri doğrusal olmayacaktır. İlk seviyeler hızlı ilerlerken yüksek seviyeler giderek daha fazla XP isteyecektir.
+- İlk sürümde seviye kilometre taşları belirli ödüller açacaktır. Her seviyeye eşya koymak yerine 5/10/15/20 vb. önemli noktalarda daha anlamlı kozmetik ve unvan ödülleri kullanılabilir.
+- Kozmetik ödüllerde **Standart / Nadir / Destansı / Efsanevi** benzeri nadirlik katmanları kullanılabilir; ancak lootbox veya rastgele satın alma mantığı olmayacaktır. Ödülün nasıl açılacağı şeffaf olacaktır.
+- Başarımlar ve rozetler ayrıca XP verebilir; ancak başarım XP'si normal çalışmanın ana XP kaynağının önüne geçmeyecektir.
+- Dashboard ve Seviye Merkezi kullanıcıya yalnızca mevcut level'ı değil, **bir sonraki önemli ödülü** ve ona kalan ilerlemeyi de gösterebilecektir.
+- Seviye atlama geri bildirimi kısa ve kaliteli olacaktır; uzun konfeti/popup akışları soru çözme deneyimini kesmeyecektir.
+- Sürekli **2X XP** benzeri kampanyalar temel ekonomi haline getirilmeyecektir. Özel çevrimiçi etkinliklerde sınırlı bonuslar ileride ayrıca düşünülebilir.
+- İlk sürümde ayrı bir coin/mağaza ekonomisi kurulmayacaktır. Temel akış **XP → Level → Ödül açılması** olarak sade tutulacaktır.
+- Online sistemlerde oyuncu level'ı sosyal profil bilgisi olabilir fakat tek başına rekabet sıralaması ölçütü olmayacaktır; haftalık/aylık XP ve diğer sosyal ölçüler daha sonra ayrı tasarlanacaktır.
+- Kesin XP değerleri uygulamaya gömülü değişmez sabitler olmayacak; gerçek kullanım verisine göre ayarlanabilen **denge konfigürasyonu** olarak tutulacaktır.
 
 ## 26. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
