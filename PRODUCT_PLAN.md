@@ -476,8 +476,54 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Temel akış: **anlamadım → mevcut bağlamı otomatik al → seviyeye uygun kısa açıklama → isteğe göre ipucu/detay/adım adım/örnek → gerekirse AI pratik sorusu → yararlı açıklamayı nota kaydet**.
 - AI Öğretmenin mimari düzeyde temel yönü kararlaştırılmıştır. Model seçimi, maliyet, bağlam penceresi, transcript elde etme yöntemi, moderasyon ve teknik entegrasyon ayrıntıları 21. **Teknik Altyapı** başlığında ayrıca kesinleştirilecektir.
 
-## 23. Henüz planlanacak büyük alanlar
-- AI koç
+## 23. AI Çalışma Koçu — kararlaştırıldı
+- AI Çalışma Koçu serbest biçimde çalışma programı uyduran ayrı bir karar motoru olmayacaktır. Mevcut çalışma programı motorunun, performans verilerinin ve hedef sisteminin **kişisel, açıklanabilir ve konuşulabilir yüzü** olacaktır.
+- Koç gerektiğinde kullanıcının KPSS türü, hedef puanı, sınava kalan süre, konu bazlı gizli seviyeleri ve güvenleri, öğrenilmiş/öğrenilmemiş konular, önkoşullar, unutma riskleri, yanlış/hata örüntüleri, çözüm hızları, çalışma geçmişi, deneme sonuçları ve program motoru önerilerini kullanabilecektir.
+- Her AI çağrısına bütün kullanıcı geçmişi gönderilmeyecek; backend soruya uygun ve gerekli bağlamı seçerek aktaracaktır.
+- **“Bugün ne çalışmalıyım?”** sorusunda çalışma motoru en değerli adayları hesaplayacak, AI Koç bunları kullanıcıya anlaşılır gerekçelerle açıklayacak ve mümkünse doğrudan **Çalışmaya Başla** eylemi sunacaktır.
+- **“Bu hafta neye odaklanmalıyım?”** sorusu günlük öneriden farklı olarak daha stratejik, ders/konu odaklarını özetleyen bir cevap verecektir.
+- **“Neden ilerleyemiyorum?”** gibi sorulara genel tavsiye vermek yerine gerçek verilerden hata örüntüsü, hız, tekrar ihtiyacı, konu bazlı gelişim ve benzeri kanıtlara dayanarak cevap verecektir.
+- Koç kullanıcıyı çalışmadığı için azarlamayacak, geçmiş görevleri borç olarak yığmayacak ve projedeki baskısız çalışma felsefesini koruyacaktır.
+- Kullanıcı uzun süre ara verdiyse sistem mevcut durumu yeniden hesaplayıp en değerli dönüş noktasını önerecektir.
+- Haftalık değerlendirmelerde yalnızca ham istatistikleri tekrar etmek yerine gelişim, risk, unutma, hız ve sonraki en değerli çalışma gibi **içgörüler** üretmeye çalışacaktır.
+- Hedef puan sistemiyle entegre çalışacak; hedefe kalan gelişimi tek bir kaba net reçetesine indirgemek yerine en ulaşılabilir ders/konu fırsatlarını yorumlayacaktır.
+- Kullanıcı koç önerisini reddedebilir. Örneğin Matematik çalışmak istemiyorsa koç program motorunun uygun alternatifleri arasından ikinci en faydalı seçeneği sunabilir; kullanıcı algoritmaya zorlanmayacaktır.
+- Kullanıcı doğal dilde **“bugün çok yorgunum”**, **“15 dakikam var”** gibi ek bağlam verirse koç bu bilgiyi mevcut çalışma motoruyla birlikte değerlendirebilir. Sistem kullanıcıya süre girmeyi zorunlu kılmayacaktır.
+- Zamanla yeterli veri oluşursa kullanıcının çalışma alışkanlıkları hakkında düşük riskli örüntüler çıkarılabilir; yetersiz veriyle kesin kişilik/alışkanlık yargıları üretilmeyecektir.
+- Koç önerilerinde **“Neden?”** açıklaması bulunabilecek; kullanıcı bir önerinin hangi gerçek sinyallere dayandığını görebilecektir.
+- Koç önerileri mümkün olduğunda doğrudan eyleme dönüşecektir: **Çalışmaya Başla / Yanlışları Aç / Tekrarı Başlat / Denemeyi İncele** gibi.
+- AI Koç program motorunun kesin kurallarını, konu önkoşullarını veya akademik hesaplarını kendi başına değiştiremeyecektir.
+- Veri yetersiz olduğunda koç **“bunu söylemek için yeterli veri yok”** diyebilecek ve sahte kesinlik üretmeyecektir.
+- Test, deneme veya çalışma oturumu sonunda kısa **Koçun yorumu** kartlarıyla bağlamsal öneriler sunulabilecektir.
+- Koç proaktif olabilir ancak rahatsız edici popup/chatbot davranışı göstermeyecektir. Dashboard ve sonuç ekranlarında gerektiğinde küçük bağlamsal öneriler gösterebilir.
+- Oyunlaştırma ve XP mekanikleri henüz kararlaştırılmadığı için AI Koçun ana amacı şimdilik **öğrenme verimliliği ve yönlendirme** olacaktır. Oyunlaştırma 14–15. başlıklarda tasarlandıktan sonra entegrasyon ayrıca yapılabilir.
+- AI Koç ile AI Öğretmen birbirine geçiş yapabilecek ancak görevleri ayrı kalacaktır. Koç çalışma stratejisine, Öğretmen konu/soru öğretimine odaklanacaktır.
+- Ayrı bir Koç ekranında **Bugün ne çalışayım? / Bu hafta neye odaklanayım? / Neden ilerleyemiyorum? / Hedefime göre durumum nasıl? / Son denememi yorumla / Zayıf alanlarımı söyle** gibi hızlı başlangıçlar bulunabilir.
+- AI Çalışma Koçunun temel ürün mimarisi kararlaştırılmıştır; model, maliyet, context seçimi ve teknik entegrasyon ayrıntıları Teknik Altyapı başlığında netleştirilecektir.
+
+## 24. Genel AI kullanımı, kullanıcı API'si ve AI'sız çalışma — kararlaştırıldı
+- Platformun **AI kullanması zorunlu olmayacaktır**. Kullanıcı hiçbir API anahtarı eklemeden de sitenin çekirdek özelliklerini kullanabilecektir.
+- AI olmadan da soru bankası, konu öğrenme, adaptif seviye/kalibrasyon, soru çözme, tekrar ve unutma sistemi, yanlışlar, denemeler, performans/istatistikler, hedef puan sistemi ve deterministik çalışma programı motoru çalışacaktır.
+- AI Öğretmen, AI Çalışma Koçu, AI açıklamaları, AI pratik soruları ve benzeri özellikler çekirdek ürünün üzerine eklenen **opsiyonel gelişmiş katmanlar** olacaktır.
+- Proje ticari olmadığı için platform kullanıcılara merkezi olarak AI kullanım maliyeti yüklemek zorunda olmayacaktır. Ayarlarda kullanıcı kendi desteklenen AI sağlayıcısını/API bağlantısını ve **kendi API anahtarını** tanımlayabilecektir.
+- Normal kullanıcı arayüzünde ham model adlarıyla seçim yaptırılmayacaktır. Kullanıcı model ailesi isimleri yerine dört anlaşılır kalite/maliyet profili arasından seçim yapacaktır:
+  1. **Düşük Seviyeli AI — Çok Ucuz Fiyat**
+  2. **Normal Seviyeli AI — Ucuz Fiyat**
+  3. **Yüksek Seviyeli AI — Normal Fiyat**
+  4. **Çok Yüksek Seviyeli AI — Yüksek Fiyat**
+- Her kalite seçeneğinin yanında küçük bir **bilgi/ünlem ikonu** bulunabilecektir. Masaüstünde hover, mobilde dokunma ile kısa bir açıklama açılacak; örneğin hız, muhakeme/öğretim kapasitesi, uzun veya zor sorulardaki yetenek ve göreli maliyet gibi farklar sade biçimde anlatılacaktır.
+- Uygulama arka planda seçilen sağlayıcının gerçek modellerini bu dört kalite seviyesine eşleştirecektir. Böylece model isimleri veya sağlayıcı katalogları değişse bile kullanıcı deneyimi aynı soyut kalite seviyeleri üzerinden korunabilecektir.
+- Bir sağlayıcıda belirli kalite seviyesine uygun model yoksa sistem o seçeneği desteklenmiyor olarak işaretleyebilir; kullanıcıya var olmayan bir yetenek vaat edilmeyecektir.
+- Fiyat etiketleri **göreli maliyet seviyesi** anlamına gelecektir; sağlayıcı fiyatları zamanla değişebileceği için arayüzde kalıcı ve doğrulanmamış sabit token fiyatları model adına bağlanmayacaktır.
+- AI özelliği kullanılmak istendiğinde API yapılandırması yoksa kullanıcıya sade şekilde **“AI özelliklerini kullanmak için Ayarlar'dan kendi API bağlantını ekleyebilirsin”** benzeri yönlendirme gösterilecektir; çekirdek çalışma akışı engellenmeyecektir.
+- Geçersiz API anahtarı, kota aşımı, rate limit, sağlayıcı kesintısı veya AI hatası platformun çekirdek çalışma sistemlerini bozamayacaktır. AI özelliği hata verirse site **AI'sız akışa güvenli biçimde geri dönecektir**.
+- AI çağrıları akademik seviye puanlama, doğrulanmış cevaplar, test sonuçları veya deterministik çalışma motoru gibi çekirdek gerçeklerin tek kaynağı olmayacaktır.
+- Kullanıcı isterse AI özelliklerini tamamen kapatabilecektir.
+- API anahtarının güvenli saklanması, maskelenmesi, istemci/sunucu sınırı, şifreleme, loglardan çıkarılması, sağlayıcı adapter yapısı ve model→kalite eşlemesinin teknik biçimi **Teknik Altyapı** başlığında ayrıca tasarlanacaktır.
+- Varsayılan güvenlik ilkesi olarak API anahtarı ekranda açık biçimde tekrar gösterilmeyecek ve uygulama loglarına yazılmayacaktır.
+- AI mimarisi mümkün olduğunca sağlayıcıdan bağımsız kurulacaktır; böylece gelecekte desteklenen servis veya modeller değiştiğinde ürün mantığının tamamını yeniden yazmak gerekmeyecektir.
+
+## 25. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
