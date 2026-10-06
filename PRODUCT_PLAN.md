@@ -1097,7 +1097,69 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Sosyal sistem akademik veriyi izinsiz ifşa etmeyecek, çalışma ekranını sosyal bildirim kalabalığına çevirmeyecek ve akademik program motorunun üzerinde karar verici olmayacaktır.
 - Arkadaş Sistemi ürün mimarisi açısından tamamlanmıştır; kesin ekip limiti, düello puanlama formülü, takım normalizasyonu, presence ayrıntıları ve mesajlaşma arayüzü daha sonra denge/UI/teknik aşamada netleştirilecektir.
 
-## 37. Henüz planlanacak büyük alanlar
+## 37. Kayıt ve İlk Kurulum Deneyimi — kararlaştırıldı
+- Onboarding’in amacı tüm bilgileri baştan toplamak değil, sistemin ilk yararlı akademik kararı için gereken minimum güvenilir bilgiyi almak ve geri kalan profili gerçek kullanım sırasında oluşturmaktır.
+- Kayıt kısa tutulacak; ürün için gereksiz kişisel bilgiler istenmeyecektir.
+- Görünen ad ile benzersiz @kullanıcıadı ayrılacaktır; sosyal sistemi kullanmayan kişi ilk anda kullanıcı adı seçmeye zorlanmayacaktır.
+- Temel akademik seçimler KPSS türü/düzeyi ve sınav dönemi/yılı olacaktır.
+- Resmî sınav tarihi varsa sistem kullanır; kesin tarih yoksa tahmini dönem ile resmî tarih ayrılır.
+- Hedef puan/net isteğe bağlıdır.
+- Günlük saat veya haftalık gün kotası zorunlu onboarding girdisi olmayacaktır.
+- Ana dersler için **Hiç bilmiyorum / Başlangıç / Orta / İyi / Çok iyi** öz değerlendirmesi kullanılacaktır.
+- Öz değerlendirme yalnızca başlangıç tahmini sayılacak; doğrulanmış akademik kanıt olmayacaktır.
+- Arka plandaki başlangıç eşlemesi kabul edilen 20 / 40 / 60 / 80 / 100 mantığını kullanacaktır.
+- “Bu dersi hiç görmedim” seçeneği öğrenme akışına erken yönlendirme için kullanılabilir.
+- Her konu için uzun anket yapılmayacak; ayrıntılı konu profili kalibrasyon ve gerçek kullanım verisiyle oluşacaktır.
+- Kısa başlangıç kalibrasyonu sunulacak; kullanıcı **Şimdi çöz** veya **Çalışırken beni tanı** seçeneğiyle ilerleyebilecektir.
+- Kalibrasyon normal test prensibini kullanacak: cevaplar bitişe kadar değiştirilebilir, sonuçlar toplu işlenir.
+- İlk profil gizli 0–110 skorları göstermeyecek; güçlü başlangıç sinyali, ilk odak ve veri yetersiz alanlar insan diliyle anlatılacaktır.
+- Onboarding sonunda ana CTA **İlk Çalışmanı Başlat** olacaktır.
+- İlk çalışma program motoru tarafından mevcut başlangıç verisine göre seçilecek; kullanıcı öneriyi değiştirebilecektir.
+- “Neden bunu öneriyoruz?” açıklaması ilk günden erişilebilir olacaktır.
+
+### Progressive disclosure
+- XP, streak, kamp, sezon, lig, başarım ve readiness gibi sistemler onboarding’de uzun uzun anlatılmayacaktır.
+- Bu sistemler ilk kez gerçekten kullanıldıklarında kısa mikro açıklamalarla tanıtılacaktır.
+- İsteğe bağlı kısa özet en fazla şu üç fikri anlatacaktır: sistem seni zamanla tanır; sıradaki yararlı çalışmayı önerir; gerçek çalışmaların hesabını ve KPSS yolculuğunu geliştirir.
+
+### AI ve sosyal kurulum
+- AI kurulumu zorunlu olmayacak ve onboarding’i kilitlemeyecektir.
+- AI bağlantısı yoksa çekirdek akademik sistem eksiksiz çalışacaktır.
+- Sosyal profil ve arkadaş ekleme de isteğe bağlı olacaktır.
+- Sosyal kurulum rehber/telefon erişimine dayanmayacaktır; kullanıcı adı, kod ve link yeterlidir.
+- İlk girişte uzun kozmetik seçimi yaptırılmayacak; kaliteli varsayılan görünüm kullanılacaktır.
+- Gizlilik güvenli varsayılanlarla başlayacak; zayıf konular, netler ve ayrıntılı akademik bilgiler özel kalacaktır.
+- Bildirim izni ilk saniyede değil, kullanıcıya faydası oluşan bağlamda istenecektir.
+
+### Akış dayanıklılığı
+- Onboarding ilerlemesi adım adım kaydedilecek; yarıda çıkan kullanıcı baştan başlamayacaktır.
+- Zorunlu çekirdek mümkün olduğunca az olacaktır: **hesap + KPSS türü/dönemi + minimum başlangıç akademik profili**.
+- Hedef, AI, sosyal profil ve ayrıntılı kalibrasyon gibi adımlar geçilebilir olacaktır.
+- Geri butonu ve seçim düzeltme akışı düzgün çalışacaktır.
+- Onboarding sonrası temel tercihler değiştirilebilir olacaktır.
+- KPSS türü/dönemi değişiminde geçmiş veri mümkün olduğunca korunacaktır.
+- Eski kullanıcı yeni KPSS döneminde tam onboarding yerine kısa **Yeni KPSS Dönemi Başlat** akışını kullanacaktır.
+- Uzun ara sonrası normal onboarding değil, kabul edilen **Geri Dönüş Akışı** kullanılacaktır.
+- Hata durumlarında tamamlanan adımlar kaybolmayacaktır.
+
+### İlk kullanım ilkeleri
+- İlk gün streak veya sezon/lig baskısı yapılmayacaktır.
+- Login/hoş geldin için yapay büyük XP verilmeyecek; ilk gerçek çalışma normal XP üretir.
+- Günlük görevler gerçek başlangıç verisi oluştuktan sonra üretilecektir.
+- Kamp, tekrar eden zayıflık kanıtı oluşmadan açılmayacaktır.
+- Readiness ve hedef puan tahmini veri yetersizken sahte kesinlik göstermeyecektir.
+- Yolculuk Haritası görülebilir ancak onboarding’i bitirmek otomatik ileri aşama sağlamaz.
+- Akademik kişiselleştirme verisi ile sosyal paylaşım verisi açık biçimde ayrılacaktır.
+
+### Demo ve ana akış
+- Kalıcı akademik kullanım hesap gerektirebilir; kayıt öncesi isteğe bağlı örnek verili **Demo** akışı bulunabilir ve gerçek profile yazılmaz.
+- Görsel dil premium ve hafif oyunlaştırılmış olacaktır; çocukça veya aşırı kutlamalı olmayacaktır.
+- Son ekran eylem odaklı olacaktır: **Başlangıç profilin hazır. İlk çalışmanı başlatalım.**
+- Temel akış: **Hesap Oluştur → KPSS Türü/Dönemi → Kısa Ders Öz Değerlendirmesi → İsteğe Bağlı Kısa Kalibrasyon → İlk Profil Özeti → İlk Çalışmayı Başlat**.
+- Temel ilke: **Sistem ilk gün kullanıcıyı tamamen bildiğini iddia etmez; kullanıcı çalıştıkça onu giderek daha doğru tanır.**
+- Kayıt ve İlk Kurulum Deneyimi ürün mimarisi açısından tamamlanmıştır; kesin ekran sayısı, metinler ve kalibrasyon uzunluğu UI/UX ve teknik aşamada netleştirilecektir.
+
+## 38. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
