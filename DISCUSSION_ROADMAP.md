@@ -439,13 +439,27 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - XP kaynakları kategori düzeyinde şeffaf olacak; anti-farm formülü tamamen açılmayacak.
       - Ödül olayları bir kez kutlanacak, sonrasında merkezlerde/geçmişte erişilebilir olacak.
       - ✅ **Oturum Sonu Geri Bildirimi / Ödül Sunumu alt sistemi ürün mimarisi açısından tamamlandı.**
-    - 🟨 **Sıradaki alt konu: Kozmetik Ödüller / Profil Kişiselleştirme**
-      - Hangi kozmetik türleri olacak?
-      - Level, başarım, streak ve kamp ödülleri kozmetiklerle nasıl bağlanacak?
-      - Kullanıcı aynı anda hangi kozmetikleri sergileyebilecek?
-      - Nadirlik ve özel efekt sınırları nasıl olacak?
-      - Kozmetikler akademik deneyimi bozmadan nerelerde gösterilecek?
-      - Kullanıcı kozmetik görünürlüğünü azaltıp kapatabilecek mi?
+    - ✅ **Kozmetik Ödüller / Profil Kişiselleştirme kabul edildi.**
+      - Kozmetikler akademik avantaj değil, hesap kimliği ve yolculuk geçmişi sağlayacak.
+      - Profil çerçevesi, banner, unvan, avatar/aksesuar, rozet vitrini, tema ve çalışma ekranı kozmetikleri ayrı slotlar olacak.
+      - Sosyal profilde level, seçili unvan, çerçeve, banner, rozet vitrini ve isteğe bağlı seri bilgisi gösterilebilecek; gizli akademik seviye gösterilmeyecek.
+      - Temel açık/koyu mod ve erişilebilirlik ödül arkasına kilitlenmeyecek.
+      - Soru/gerçek sınav ekranlarında kozmetik kullanım sınırlı ve dikkat dağıtmayan yapıda olacak.
+      - Lootbox ve ilk sürüm coin/mağaza sistemi olmayacak; ödüller şeffaf koşullarla açılacak.
+      - Standart / Nadir / Destansı / Efsanevi nadirlikleri desteklenebilecek; efsanevi ödüller gerçekten nadir tutulacak.
+      - Kazanılmış kozmetikler kalıcı olacak, duplicate item verilmeyecek.
+      - Koleksiyon ve profil düzenleme/önizleme ekranları desteklenebilecek.
+      - FOMO düşük tutulacak; varsayılan görünüm zaten kaliteli olacak.
+      - Kozmetik hedefleri program motorunun akademik önerilerini değiştirmeyecek.
+      - Reduce-motion, sade profil ve efekt azaltma tercihleri desteklenecek.
+      - ✅ **Kozmetik Ödüller / Profil Kişiselleştirme alt sistemi ürün mimarisi açısından tamamlandı.**
+    - 🟨 **Sıradaki alt konu: KPSS Yolculuk Haritası / Aşamalar**
+      - Hazırlık süreci görsel bir ilerleme yolculuğuna dönüştürülecek mi?
+      - Başlangıç → Temel Atma → Gelişim → Güçlenme → Deneme Dönemi → Sınava Hazır gibi aşamalar kullanılmalı mı?
+      - Aşamalar yalnızca XP'ye mi, gerçek akademik ilerlemeye mi, yoksa ikisinin birleşimine mi bağlanmalı?
+      - Harita gerçek çalışma önerilerini nasıl desteklemeli?
+      - Kullanıcı akademik olarak geri düştüğünde görsel aşama geri alınmalı mı?
+      - Yolculuk haritası oyun hissi verirken profesyonel KPSS deneyimini nasıl korumalı?
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
