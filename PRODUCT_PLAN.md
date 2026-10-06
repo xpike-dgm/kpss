@@ -452,8 +452,32 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Gerçek deneme ve kullanıcı verisi arttıkça puan tahmini, net gereksinimi ve ders/konu bazlı gelişim potansiyeli daha iyi kalibre edilecektir.
 - Hedef puan ve sınava hazır oluş sisteminin mimari düzeyde açık sorusu kalmamıştır; gerçek KPSS puan dönüşümünün kesin formülleri, güncel sınav parametreleri ve görsel sunum ayrıntıları uygulama aşamasında güncel/verifiye edilmiş sınav bilgilerine göre yapılandırılacaktır.
 
-## 22. Henüz planlanacak büyük alanlar
-- AI öğretmen / AI koç
+## 22. AI Öğretmen — kararlaştırıldı
+- AI Öğretmen platformun kenarına eklenmiş genel amaçlı bir chatbot olmayacak; soru bankası, konu öğrenme, yanlışlar, notlar ve adaptif seviye sistemiyle bağlamlı çalışan öğretim katmanı olacaktır.
+- Kullanıcı soru inceleme ekranında **AI'ya Sor** dediğinde soru metnini yeniden kopyalamak zorunda kalmayacaktır. Sistem AI'a ders, konu, alt konu, soru, şıklar, doğrulanmış doğru cevap/çözüm, kullanıcının verdiği cevap ve varsa yanlış nedeni gibi mevcut bağlamı otomatik sağlayabilecektir.
+- Öğrenme/video ekranındaki AI; ders, konu, seçilen hoca/video, ilgili video bölümü, mümkünse transcript ve mevcut zaman damgası bağlamını kullanarak **“burayı anlamadım”** gibi kısa soruları anlamlandırabilecektir.
+- AI açıklama biçimini kullanıcının gerçek öğrenme durumuna göre ayarlayacaktır. Gizli akademik skor doğrudan gösterilmese de sistem AI'a kullanıcının yaklaşık düzeyi, zorlandığı alt alanlar ve uygun anlatım derinliği için bağlam verebilecektir.
+- Varsayılan AI cevabı kısa, anlaşılır ve soruna doğrudan yönelik olacaktır. Kullanıcı isterse **Daha basit anlat / Detaylı anlat / Adım adım çöz / Örnek ver / Benzer soru göster** gibi eylemlerle açıklamayı genişletebilecektir.
+- AI yalnızca doğru cevabı veren bir makine gibi davranmayacaktır. Kullanıcı isterse önce ipucu, ardından daha güçlü ipucu ve en sonunda tam çözüm akışını kullanabilecektir; ancak kullanıcı tam çözümü istiyorsa sistem bunu gereksiz yere engellemeyecektir.
+- Soru incelemesinde AI; **Benim cevabım neden yanlış? / Doğru cevap neden doğru? / Diğer şıkları açıkla / Bu sorunun püf noktası ne? / En hızlı nasıl çözülürdü?** gibi bağlama özel soruları destekleyecektir.
+- AI yalnızca soru açıklaması değil, bağımsız **KPSS odaklı konu anlatımı** da yapabilecektir. Konu anlatımı genel ansiklopedi cevabı yerine temel mantık, KPSS'de bilinmesi gerekenler, sık karıştırılanlar ve çıkabilecek soru tipleri gibi sınava yönelik biçimde yapılandırılabilecektir.
+- AI Öğretmen kişiselleştirme için kullanıcının gerçek performans geçmişinden yararlanabilecektir. Örneğin geçmiş yanlışlar, alt konu hata örüntüleri ve kullanıcı tarafından belirtilmiş hata nedenleri üzerinden **“konunun tamamından çok şu bölümde zorlanıyorsun”** gibi kanıta dayalı açıklamalar yapabilecektir.
+- **AI Öğretmen** ile **AI Çalışma Koçu** ayrı sorumluluklar olacaktır. AI Öğretmen soru/konu öğretimi ve açıklama yaparken, 13. başlıktaki AI Çalışma Koçu çalışma önceliği ve strateji kararlarına odaklanacaktır.
+- Kayıtlı sorularda AI'ın temel akademik bağlamı sistemdeki **doğrulanmış doğru cevap ve doğrulanmış çözüm** olacaktır. AI anlatım biçimini değiştirebilir fakat doğrulanmış akademik gerçeği kendi başına değiştirmeyecektir.
+- AI doğrulanmış çözüm ile soru metni arasında çelişki fark ederse yeni bir doğru cevap uydurmak yerine olası tutarsızlığı belirtip **Hatalı soru bildir** akışına yönlendirebilecektir.
+- Kullanıcı AI'dan **benzer soru / yeni örnek** isteyebilecektir. Ancak AI'ın anlık ürettiği ve kalite kontrolden geçmemiş sorular **AI pratik sorusu** sayılacak, normal soru bankası kanıtı gibi kullanıcının gizli akademik seviyesini değiştirmeyecektir.
+- AI tarafından oluşturulan soru ancak normal kalite kontrol/onay sürecinden geçerse soru bankasına alınabilecek ve adaptif akademik ölçümde kullanılabilecektir.
+- AI öğretmen konuşmaları tek dev sonsuz sohbet olmak yerine ders/konu bağlamında oturumlar halinde tutulabilecektir. Kullanıcı aynı konuya döndüğünde önceki yararlı bağlamdan devam edebilmesi hedeflenecektir.
+- Kullanıcı yararlı bir AI açıklamasını tek hareketle **Notlarıma ekle** diyerek ilgili ders/konu notlarına kaydedebilecektir; bu notlar daha sonra öğrenme ve tekrar akışında tekrar kullanılabilir.
+- **Gerçek Sınav Modu** sırasında AI Öğretmen kapalı olacaktır. Deneme tamamlandıktan sonra yanlış/boş incelemesinde yeniden kullanılabilecektir.
+- Normal 10 soruluk adaptif testte AI yardımı testin cevaplama aşamasını bozmayacak; mevcut test modeline uygun biçimde özellikle **Testi Bitir** sonrasında inceleme/öğretim için devreye girecektir. Konu öğrenme ekranında ise AI her zaman kullanılabilir.
+- AI Öğretmenin tonu destekleyici ve anlaşılır olacaktır ancak aşırı oyunlaştırılmış veya yapay motivasyon diline dönüşmeyecektir. Kullanıcı isterse **Kısa ve net / Normal / Detaylı** gibi açıklama tercihleri kullanabilecektir.
+- AI'nın kişiselleştirmesindeki ana değer kozmetik “kişilik” değil, kullanıcının gerçekten ne bildiğini ve nerede zorlandığını anlayıp uygun açıklama sunması olacaktır.
+- Temel akış: **anlamadım → mevcut bağlamı otomatik al → seviyeye uygun kısa açıklama → isteğe göre ipucu/detay/adım adım/örnek → gerekirse AI pratik sorusu → yararlı açıklamayı nota kaydet**.
+- AI Öğretmenin mimari düzeyde temel yönü kararlaştırılmıştır. Model seçimi, maliyet, bağlam penceresi, transcript elde etme yöntemi, moderasyon ve teknik entegrasyon ayrıntıları 21. **Teknik Altyapı** başlığında ayrıca kesinleştirilecektir.
+
+## 23. Henüz planlanacak büyük alanlar
+- AI koç
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
