@@ -523,7 +523,41 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Varsayılan güvenlik ilkesi olarak API anahtarı ekranda açık biçimde tekrar gösterilmeyecek ve uygulama loglarına yazılmayacaktır.
 - AI mimarisi mümkün olduğunca sağlayıcıdan bağımsız kurulacaktır; böylece gelecekte desteklenen servis veya modeller değiştiğinde ürün mantığının tamamını yeniden yazmak gerekmeyecektir.
 
-## 25. Henüz planlanacak büyük alanlar
+## 25. KPSS Seviye / Karakter Gelişim Sistemi — kararlaştırıldı
+- Platformda kullanıcıya görünen ayrı bir **oyuncu seviyesi / hesap seviyesi** bulunacaktır. Bu seviye akademik gizli puandan tamamen ayrı tutulacaktır.
+- Akademik seviye **ne kadar bildiğini**, oyuncu seviyesi ise **bu yolculukta hesabını ne kadar geliştirdiğini ve ne kadar gerçek çalışma yaptığını** temsil edecektir.
+- Oyuncu seviyesi kullanıcıya açık biçimde gösterilebilir; örneğin `Seviye 27`, toplam XP ve bir sonraki seviyeye kalan XP.
+- Soru çözme, konu öğrenme, tekrar, yanlış güçlendirme, adaptif test, branş denemesi ve tam deneme gibi **gerçek çalışma faaliyetleri** XP kazandıracaktır.
+- Siteye giriş, sayfa açma, anlamsız tıklamalar, videoyu açık bırakma veya benzeri pasif davranışlar XP üretmeyecektir.
+- XP yalnızca ham soru sayısına bağlı olmayacaktır. Soru yeniliği, uygun zorluk, gerçek çalışma değeri, testin tamamlanması ve tekrar/farm davranışı gibi sinyaller dikkate alınabilecektir.
+- Kullanıcının seviyesinin çok altında, daha önce defalarca çözülmüş veya açıkça farm amacıyla kullanılan soruların XP getirisi azalabilecek veya sıfırlanabilecektir.
+- Yanlış cevap tamamen değersiz sayılmayacaktır. Gerçek bir çalışma/test tamamlayan kullanıcı temel emek XP'si kazanabilir; kaliteli doğru performans ve gerçek öğrenme kanıtı ek değer üretebilir.
+- Konu öğrenme XP'si yalnızca video süresine bağlanmayacaktır. Konu öğrenmenin tamamlanması ve sonrasındaki gerçek öğrenme/pekiştirme sinyalleri esas alınacaktır.
+- **“Bu konuyu zaten biliyorum”** diyerek içeriği atlayan kullanıcı konu öğrenme XP'si kazanmayacak, ancak kalibrasyon/test performansından normal XP kazanabilecektir.
+- Yanlışların gerçekten düzeltilmesi özel olarak ödüllendirilebilecektir. Yanlış incelenip aynı beceriyi ölçen yeni doğrulama sorularında başarı sağlandığında **Hata Düzeltme / Güçlendirme XP'si** verilebilir.
+- Seviye eğrisi başlangıçta daha hızlı, ilerleyen seviyelerde daha yavaş olacaktır. İlk seviyeler kısa sürede tatmin vermeli; yüksek seviyeler uzun dönem gerçek çalışma gerektirmelidir.
+- İlk sürüm için 1–100 seviye yaklaşımı kullanılabilir; 100 sonrası prestij veya daha uzun vadeli ilerleme sistemi gerçek kullanım verisine göre ayrıca tasarlanabilir.
+- Seviye atlama kaliteli ama dikkat dağıtmayan bir görsel geri bildirimle gösterilecektir. Test/oturum sonunda kazanılan XP ve level-up durumu özetlenebilir.
+- Her seviyede özel ödül bulunmak zorunda değildir. Belirli kilometre taşlarında daha anlamlı ödüller açılacaktır.
+- Ödüller akademik avantaj vermeyecektir. Profil çerçevesi, banner, tema, avatar öğesi, unvan, çalışma ekranı kozmetiği ve benzeri görsel/kişisel ödüller kullanılabilir.
+- Unvan sistemi yalnızca level'a bağlı olmayabilir. Bazı unvanlar gerçek davranış ve başarılardan açılarak aynı seviyedeki kullanıcıların profillerinin farklılaşmasını sağlayabilir.
+- Profil zamanla görsel olarak gelişecek; arkadaş/sosyal sistem geldiğinde level, seçili unvan, çerçeve ve bazı başarılar diğer kullanıcılar tarafından görülebilecektir.
+- XP geri bildirimi her soruda popup olarak gösterilmeyecek. XP sessizce birikebilir; test, konu, oturum veya level-up sonunda toplu ve anlamlı biçimde gösterilecektir.
+- Sistem **anti-farm** mantığına sahip olacaktır. Aynı kolay soruyu tekrar tekrar çözme, kronometreyi açık bırakma, aşırı hızlı rastgele işaretleme ve benzeri davranışların getirisi düşürülecektir.
+- Gerçek ve anlamlı çalışmaya **günlük XP tavanı** konulmayacaktır. Uzun süre gerçekten çalışan kullanıcı cezalandırılmayacak; yalnızca sömürülebilir davranışlara azalan getiri uygulanacaktır.
+- Denemeler, normal kısa testlerden daha büyük çalışma olayları olarak daha yüksek XP değeri taşıyabilir; ancak açıkça rastgele/gerçek dışı tamamlanan denemeler normal ödülü üretmemelidir.
+- Tekrar ve retention çalışmaları özellikle ödüllendirilecektir; çünkü oyunlaştırma sıkıcı ama gerekli tekrar davranışını daha çekici hale getirmelidir.
+- Kullanıcı XP geçmişinde XP'nin hangi çalışma türlerinden geldiğini görebilecektir; örneğin soru çözme, konu öğrenme, tekrar, yanlış düzeltme ve deneme.
+- Oyuncu seviyesi dashboard'da küçük ama sürekli görülebilir; ana akademik çalışma deneyimini gölgelemeyecektir.
+- Kullanıcıya yalnızca mevcut XP değil, **bir sonraki önemli ödül** de gösterilebilir. Örneğin `Seviye 25: yeni tema açılıyor`.
+- XP ekonomisi çalışma programını bozmamalıdır. Farklı aktivitelerin XP/zaman getirileri aşırı dengesiz olmayacak; kullanıcı yalnızca daha çok XP verdiği için program motorunun faydalı önerisini terk etmeye teşvik edilmeyecektir.
+- AI kullanımı XP için zorunlu değildir. AI kapalı kullanıcı aynı level sistemini eksiksiz kullanacaktır.
+- AI Öğretmen/Koç ile yalnızca mesajlaşmak kendi başına XP vermeyecektir; AI sonrası gerçekleşen gerçek öğrenme, test veya güçlendirme faaliyeti kendi XP'sini üretecektir.
+- Ayrı bir **Seviye Merkezi** ekranında mevcut level, toplam XP, sonraki level, sonraki ödül, son açılan ödüller, kozmetikler ve XP kaynakları gösterilebilecektir.
+- Oyuncu seviyesi sosyal prestij sağlayabilir ancak **yüksek level = yüksek akademik yeterlilik** şeklinde yorumlanmayacak; iki sistem kullanıcı deneyimi ve veri modelinde ayrı tutulacaktır.
+- Kesin XP değerleri, 1–100 eğrisi, kilometre taşı ödülleri ve anti-farm katsayıları ayrıca dengelenecektir; şu an ürün mimarisi ve davranış ilkeleri kesinleşmiştir.
+
+## 26. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
