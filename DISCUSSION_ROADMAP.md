@@ -348,6 +348,17 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 - API anahtarı güvenliği ve sağlayıcı adapter/mapping ayrıntıları Teknik Altyapı başlığında kesinleştirilecektir.
 
 14. 🟨 **Motivasyon / Oyunlaştırma**
+    - ✅ **KPSS Seviye / Karakter Gelişim Sistemi kabul edildi.**
+      - Akademik gizli seviye ile oyuncu/account seviyesi tamamen ayrı tutulacak.
+      - Gerçek çalışma faaliyetleri XP verecek; pasif veya anlamsız işlemler XP üretmeyecek.
+      - XP soru yeniliği, zorluk, gerçek çalışma değeri ve anti-farm sinyalleriyle dengelenecek.
+      - Konu öğrenme, tekrar, yanlış güçlendirme, adaptif test ve denemeler XP sistemine bağlanacak.
+      - Başlangıç level'ları daha hızlı, yüksek level'lar daha yavaş ilerleyecek; ilk hedef 1–100 olabilir.
+      - Level-up, XP özeti, sonraki ödül ve Seviye Merkezi ekranı olacak.
+      - Profil çerçevesi, tema, banner, unvan ve benzeri kozmetik ödüller açılabilecek; akademik avantaj verilmeyecek.
+      - Günlük gerçek çalışma için XP tavanı olmayacak; yalnızca farm davranışlarına azalan getiri uygulanacak.
+      - AI kullanımı XP için zorunlu olmayacak ve yalnızca AI ile mesajlaşmak XP üretmeyecek.
+      - Kesin XP tablosu, level eğrisi ve ödül kilometre taşları daha sonra dengelenecek.
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
