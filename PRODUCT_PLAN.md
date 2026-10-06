@@ -605,7 +605,43 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Streak sistemi ile XP sistemi görev olarak ayrı tutulacaktır: streak **devamlılığı**, XP ise **gerçek çalışma ve hesap gelişimini** temsil edecektir.
 - Streak alt sistemi ürün mimarisi açısından kararlaştırılmıştır; kesin aktif gün eşiği, koruma hakkı kazanma sıklığı, milestone değerleri ve UI ayrıntıları daha sonra denge parametresi olarak netleştirilecektir.
 
-## 27. Henüz planlanacak büyük alanlar
+## 27. Başarımlar ve Rozetler — kararlaştırıldı
+- Başarım sistemi oyuncu level'ından farklı bir amacı temsil edecektir:
+  - **Level:** kullanıcının hesabını ne kadar geliştirdiği ve ne kadar gerçek çalışma yaptığı.
+  - **Başarımlar:** süreçte hangi özel kilometre taşlarını, davranışları ve gelişimleri gerçekleştirdiği.
+- Başarımlar yalnızca ham sayaçlardan oluşmayacaktır. Sistem **Çalışma, Akademik Gelişim, Deneme, Yanlışlardan Öğrenme, İstikrar, Derslere Özel ve Özel/Nadir** gibi farklı kategorilere ayrılabilecektir.
+- Bazı başarımlar **kademeli** olacaktır. Örneğin aynı başarım ailesi I / II / III / IV biçiminde gelişebilir ve bronz/gümüş/altın/özel görsel seviyelere sahip olabilir.
+- Aynı tür davranış için yüzlerce ayrı küçük rozet üretmek yerine kademeli başarımlar tercih edilecektir.
+- Başarımların önemli bir bölümü sayısal eşikten ziyade **anlamlı öğrenme davranışlarını** ödüllendirecektir; örneğin bir yanlışı gerçekten güçlendirmek, uzun aradan sonra geri dönmek, farklı derslerde dengeli çalışma yapmak veya retention tekrarını başarıyla tamamlamak.
+- Akademik başarımlar kullanıcının gizli 0–110 skorunu doğrudan göstermeyecektir. Kullanıcıya anlaşılır ve doğrulanmış olaylar üzerinden başarım verilecektir.
+- Derslere özel başarım aileleri bulunabilecektir. Türkçe, Matematik, Tarih, Coğrafya ve Vatandaşlık kendi özgün çalışma davranışlarını ödüllendirebilir.
+- Ders başarımlarında sistem ölçmediği bir yeterliliği iddia eden aşırı unvanlar kullanılmayacaktır.
+- Başarımların büyük bölümü kullanıcı tarafından önceden görülebilecek; kilitli başarımlarda koşul ve ilerleme örneğin **37 / 50** şeklinde takip edilebilecektir.
+- Başarımların küçük bir bölümü **gizli / sürpriz** olabilir. Bu tür başarımlar sınırlı tutulacak ve kullanıcıyı anlamsız denemeler yapmaya teşvik edecek kadar belirsiz tasarlanmayacaktır.
+- Başarımlar tek seferlik küçük XP ödülleri verebilir ancak başarım XP'si normal gerçek çalışmanın ana XP kaynağının önüne geçmeyecektir.
+- Bazı özel başarımlar profil çerçevesi, unvan, rozet, tema veya başka kozmetik öğeler açabilecektir.
+- Başarımlarda **Standart / Nadir / Destansı / Efsanevi** benzeri nadirlik katmanları kullanılabilecektir.
+- Gerçek kullanım verisi yeterli olduğunda kullanıcıya **“kullanıcıların %X'i bu başarımı açtı”** benzeri gerçek nadirlik istatistiği gösterilebilir. Bu oran yapay olarak uydurulmayacaktır.
+- Kullanıcı profilinde sınırlı sayıda özel başarıyı sergileyebileceği **Rozet Vitrini** bulunacaktır. Örneğin kullanıcı 3–5 rozetini seçerek sosyal profilinde gösterebilir.
+- Tüm başarımlar ayrıca ayrı bir **Başarım Merkezi** ekranından görüntülenebilecektir.
+- Yeni başarım açıldığında geri bildirim kısa ve kaliteli olacaktır; soru çözme akışını kesen büyük popup'lar kullanılmayacaktır.
+- Başarım bildirimi ad, açıklama ve varsa XP/kozmetik ödülünü gösterebilir.
+- Başarımlar **anti-farm** kurallarına tabi olacaktır:
+  - Soru sayısı başarımlarında gerektiğinde benzersiz/geçerli sorular esas alınacaktır.
+  - Çalışma süresi başarımlarında yalnızca kronometrenin açık kalması yeterli olmayacaktır.
+  - Açıkça rastgele veya gerçek dışı hızda tamamlanan denemeler geçerli başarım ilerlemesi üretmeyebilir.
+- Kazanılmış başarım sonradan geri alınmayacaktır. Akademik performans düşse bile geçmişte gerçekten kazanılmış bir kilometre taşı kalıcıdır.
+- Başarımlar kullanıcının KPSS yolculuğunu kronolojik olarak anlatabilecek bir **hesap geçmişi / kupa tarihçesi** oluşturacaktır.
+- Başarım Merkezi; toplam açılan başarım, toplam başarım sayısı, kategori dağılımı, nadirlik dağılımı, devam eden kademeli başarımlar ve rozet vitrini gibi bilgileri gösterebilecektir.
+- Başarımlar doğal çalışma akışını bozmayacaktır. Kullanıcının sırf bir rozete ulaşmak için çalışma motorunun daha değerli önerilerini terk etmesini teşvik eden aşırı ödül dengelerinden kaçınılacaktır.
+- Oyunlaştırma rolleri birbirinden ayrı tutulacaktır:
+  - **XP / Level:** sürekli hesap gelişimi.
+  - **Streak:** devamlılık.
+  - **Başarımlar:** özel kilometre taşları ve yolculuk hikâyesi.
+  - **Rozet Vitrini:** sosyal prestij ve kişiselleştirme.
+- Başarımlar ve Rozetler alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin başarım kataloğu, eşikler, XP ödülleri, kozmetik listesi ve nadirlik dağılımı daha sonra içerik/denge konfigürasyonu olarak tasarlanacaktır.
+
+## 28. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
