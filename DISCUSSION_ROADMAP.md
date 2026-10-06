@@ -318,13 +318,36 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
     - Ton destekleyici olacak fakat aşırı yapay motivasyon dili kullanılmayacak; kısa/normal/detaylı anlatım tercihleri desteklenebilecek.
     - Mimari düzeyde ana kararlar tamamlandı; teknik model/maliyet/transcript/moderasyon ayrıntıları Teknik Altyapı başlığına bırakıldı.
 
-13. 🟨 **AI Çalışma Koçu**
-    - Bugün ne çalışmalıyım?
-    - Bu hafta neye odaklanmalıyım?
-    - Neden ilerleyemiyorum?
-    - Çalışma stratejisi önerileri
+13. ✅ **AI Çalışma Koçu**
+    - Program motorunun yerine geçmeyecek; onun verilerini ve gerçek performans sinyallerini açıklayan/konuşulabilir katman olacak.
+    - Bugün ne çalışmalıyım, bu hafta neye odaklanmalıyım, neden ilerleyemiyorum, hedefime göre durumum nasıl gibi soruları destekleyecek.
+    - Kullanıcının seviye, güven, unutma, yanlış, hız, deneme, hedef ve çalışma geçmişinden gerekli bağlamı seçerek kullanabilecek.
+    - Öneriler gerçek program motoru adaylarından üretilecek ve Neden? açıklamasıyla sunulabilecek.
+    - Kullanıcı öneriyi reddedebilir; uygun alternatif çalışma sunulabilir.
+    - Yorgunluk veya eldeki süre gibi doğal dilde verilen kullanıcı bağlamı dikkate alınabilir; süre/kota zorunluluğu getirilmeyecek.
+    - Veri yetersizliğinde kesin yargı üretmeyecek.
+    - Çalışma/deneme sonunda kısa Koçun yorumu kartları bulunabilecek.
+    - Öneriler Çalışmaya Başla / Yanlışları Aç / Tekrarı Başlat gibi doğrudan eylemlere bağlanabilecek.
+    - Proaktif öneriler rahatsız edici popup/chatbot davranışına dönüşmeyecek.
+    - AI Öğretmenle geçiş yapabilecek ancak Öğretmen ve Koç görevleri ayrı kalacak.
+    - Oyunlaştırma entegrasyonu 14–15. başlıklardan sonra ayrıca ele alınacak.
+    - Mimari düzeyde ana kararlar tamamlandı.
 
-14. ⬜ **Motivasyon / Oyunlaştırma**
+### ✅ Genel AI altyapı prensibi — çapraz ürün kararı
+- Site AI kullanmak zorunda değildir; API anahtarı olmadan çekirdek özelliklerin tamamı çalışmalıdır.
+- Kullanıcı Ayarlar'dan kendi desteklenen AI sağlayıcısını/API bağlantısını ve kendi API anahtarını ekleyebilir.
+- Kullanıcıya ham model adları yerine dört kalite/maliyet seviyesi gösterilir:
+  1. Düşük Seviyeli AI — Çok Ucuz Fiyat
+  2. Normal Seviyeli AI — Ucuz Fiyat
+  3. Yüksek Seviyeli AI — Normal Fiyat
+  4. Çok Yüksek Seviyeli AI — Yüksek Fiyat
+- Her seçeneğin bilgi/ünlem ikonunda kısa yetenek, hız ve göreli maliyet açıklaması bulunabilir.
+- Gerçek model eşlemesi arka planda tutulur; normal kullanıcı arayüzünde model adı gösterilmez.
+- AI bağlantısı yoksa veya servis hata verirse çekirdek çalışma akışı bozulmaz; AI'sız moda güvenli biçimde devam edilir.
+- Kullanıcı AI özelliklerini tamamen kapatabilir.
+- API anahtarı güvenliği ve sağlayıcı adapter/mapping ayrıntıları Teknik Altyapı başlığında kesinleştirilecektir.
+
+14. 🟨 **Motivasyon / Oyunlaştırma**
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
@@ -411,4 +434,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **13. AI Çalışma Koçu**.
+Şu anda aktif tartışma konusu: **14. Motivasyon / Oyunlaştırma**.
