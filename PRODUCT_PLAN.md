@@ -1159,7 +1159,119 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Temel ilke: **Sistem ilk gün kullanıcıyı tamamen bildiğini iddia etmez; kullanıcı çalıştıkça onu giderek daha doğru tanır.**
 - Kayıt ve İlk Kurulum Deneyimi ürün mimarisi açısından tamamlanmıştır; kesin ekran sayısı, metinler ve kalibrasyon uzunluğu UI/UX ve teknik aşamada netleştirilecektir.
 
-## 38. Henüz planlanacak büyük alanlar
+## 38. Mobil / PWA Deneyimi — kararlaştırıldı
+- Ürün telefonda masaüstünün küçültülmüş hali gibi değil, **uygulama kalitesinde mobil deneyim** olarak tasarlanacaktır.
+- Tek ürün/tek hesap yaklaşımı korunacak; responsive web masaüstünde güçlü çalışma alanı, kurulabilir PWA telefonda uygulama hissi sunacaktır.
+- Kullanıcı telefonda başladığı çalışmayı bilgisayarda, bilgisayarda başladığını tablette/telefonda sürdürebilecektir.
+
+### PWA ve mobil kabuk
+- PWA ana ekrana eklenebilir, uygulama ikonu/splash/standalone pencere ve uygun deep-link davranışları sunacaktır.
+- PWA kurulumu kullanıcıya ilk saniyede zorlanmayacak; anlamlı kullanım sonrası sakin biçimde önerilecektir.
+- Kurulu PWA ve tarayıcı sürümü aynı hesap/backend/veriyi kullanacaktır.
+- Linkler mümkün olduğunda kurulu PWA içindeki doğru ekrana; kurulu değilse webde aynı route'a açılacaktır.
+- PWA güncellemeleri aktif test/oturumu zorla yenilemeyecek; güncelleme güvenli zamanda uygulanacaktır.
+
+### Mobil navigasyon ve yerleşim
+- Mobil ana navigasyon sade kalacaktır: **Ana Sayfa · Çalış · Denemeler · İstatistikler · Profil**.
+- Yolculuk, Sezon, Başarımlar, Koleksiyon ve Arkadaşlar gibi ikincil alanlar ilgili merkezlerden erişilecektir.
+- Mobil dashboard aksiyon öncelikli; masaüstü dashboard daha fazla bağlam gösterebilecektir.
+- Mobil **Çalış** ekranı program motorunun ana önerisi, kaldığın yer, kısa tekrar, yanlışlar ve uygun alternatiflere hızlı erişim sunacaktır.
+- Sık kullanılan CTA'lar başparmak erişimine uygun bölgelerde olacaktır.
+- Safe-area, notch, gesture bar ve farklı ekran oranları desteklenecektir.
+- Tabletlerde uygun yerlerde iki kolon gibi daha zengin responsive düzenler kullanılabilecektir.
+- Masaüstü mobil uğruna fakirleştirilmeyecek; geniş ekran, çoklu kolon ve klavye kısayolları gibi avantajlar kullanılacaktır.
+
+### Mobil soru çözme
+- Şıklar büyük dokunma alanlarına sahip olacak; küçük radio-button tarzı kontrol kullanılmayacaktır.
+- Görseller pinch-to-zoom ve gerektiğinde tam ekran görüntülenebilecektir.
+- Önceki/Sonraki ve soru paleti mobil için ergonomik olacak; soru paleti bottom-sheet gibi açılabilecektir.
+- Android geri hareketi veya tarayıcı geri tuşu normal testte veri kaybettirmeyecektir.
+- Her cevap ve önemli durum düzenli biçimde otomatik kaydedilecektir.
+- Uygulama kapanması, arama gelmesi, ekran kilitlenmesi veya arka plana düşme normal çalışmayı kaybettirmeyecektir.
+- Gerçek Sınav Modunda gerçek süre kuralları korunacak; uygulamadan çıkmak süreyi durdurmayacaktır.
+
+### Offline ve bağlantı durumları
+- Ürün dört tutarlı bağlantı durumunu destekleyecektir: **Çevrimiçi / Zayıf bağlantı / Çevrimdışı / Yeniden bağlandı**.
+- Önceden cihazda bulunan uygun akademik içerikler çevrimdışı çalışabilecektir: aktif test, özet, not, yanlışlar ve yerel soru paketleri gibi.
+- Kullanıcı isterse belirli konu/çalışma paketini **Çevrimdışı Kullan** için önceden hazırlayabilecektir.
+- YouTube içeriği indirilmeyecek; çevrimdışında video erişilemeyebilir ancak özet/not/sorular kullanılabilir.
+- AI Öğretmen, AI Koç, canlı sosyal özellikler, presence, 1v1 ve leaderboard gibi sunucu gerektiren özellikler bağlantı yokken açıkça bekleme durumuna geçecektir.
+- Offline testlerde soru sürümü, başlangıç/bitiş ve cevap olayları saklanacak; bağlantı gelince sunucu doğrulayacaktır.
+- Sosyal/sezon puanı gibi rekabet verilerinde nihai doğrulama sunucuda yapılacaktır.
+- Kullanıcıya sade senkron durumları gösterilebilir: **Kaydedildi / Çevrimdışı, değişiklikler bekliyor / Senkronlandı**.
+- Not gibi kullanıcı içeriğinde sürüm/çakışma yönetimi; test/XP/mastery gibi sistem kayıtlarında olay temelli sunucu mantığı kullanılacaktır.
+- Soru bankası sürümleme sistemi cache ile uyumlu olacak; eski offline soru sürümü çözüldüğünde hangi sürümün kullanıldığı bilinecektir.
+
+### Cihazlar arası devam
+- Video/özet ilerlemesi, normal test, kamp aşaması, yanlış inceleme ve notlar mümkün olduğunca cihazlar arasında kaldığı yerden devam edecektir.
+- Aynı test iki cihazda aynı anda düzenleniyorsa sistem bunu fark edip kontrollü davranacaktır.
+- Telefon + bilgisayar + tablet aynı hesapta doğal çalışma yüzeyleri olacaktır.
+- Kullanıcının deneyimi “sabah telefonda başladım, öğlen bilgisayarda devam ettim” şeklinde kesintisiz hissettirmelidir.
+
+### Bildirim ve deep-link altyapısı
+- PWA bildirimleri desteklenecek ancak bildirim izni bağlama göre istenecektir.
+- Bildirimler retention, kullanıcı hatırlatması, çalışma daveti, takım hedefi ve önemli sezon olayı gibi gerçek faydalı durumlara odaklanacaktır.
+- Suçluluk üreten veya spam sosyal bildirim dili kullanılmayacaktır.
+- Bildirim kategorileri ayrı ayrı yönetilebilir olacaktır.
+- Bildirime dokunulduğunda kullanıcı ana sayfaya değil ilgili içeriğin deep-link'ine gidecektir.
+- Gerçek Sınav Modunda sosyal bildirimler ürün içinde susturulacaktır.
+
+### Kronometre ve aktif çalışma
+- Mobil çalışma kronometresi uygulama arka plana geçtiğinde teknik olarak bozulmayacaktır.
+- **Oturum süresi** ile **aktif çalışma süresi** ayrılacaktır.
+- Kronometrenin açık kalması tek başına aktif çalışma/XP/sezon katkısı sayılmayacaktır.
+
+### Öğrenme, video, AI ve notlar
+- Video öğrenme ekranı mobil için özel tasarlanacak; video, bölüm listesi, özet, notlar ve AI Öğretmen rahat erişilebilir olacaktır.
+- Timestamp'e bağlı notlar desteklenecektir.
+- Telefon yataya döndüğünde video uygun tam ekran davranışı gösterecektir.
+- AI Öğretmen mobilde bottom-sheet veya tam ekran chat olarak açılabilir; mevcut soru/öğrenme bağlamını otomatik taşıyacaktır.
+- Hızlı AI aksiyonları: Daha basit anlat / Adım adım / Bu şık neden yanlış / Benzer örnek.
+- AI sohbetinden çıkınca kullanıcı aynı çalışma/yanlış konumuna geri dönecektir.
+- Mobil not alma hızlı bottom-sheet mantığında başlayıp gerektiğinde genişleyebilecektir.
+
+### İstatistik, yolculuk, sezon ve sosyal mobil UX
+- Mobil istatistikler masaüstü tablolarının küçültülmüş hali olmayacak; kart, drill-down ve dokunmatik grafiklerle tasarlanacaktır.
+- Hover bağımlı etkileşimler mobilde tap/tooltip davranışına çevrilecektir.
+- Yolculuk Haritası mobilde dikey rota olarak akabilecek ve aktif aşama odağa getirilebilecektir.
+- Meta/Sezon ekranları sekme/kart mantığıyla düzenlenecektir; önemli özellikler yalnız swipe hareketine saklanmayacaktır.
+- Ortak çalışma odaları mobilde sade odak görünümü sunacak; sessiz modda sosyal UI minimuma inecektir.
+- Canlı 1v1 mobilde büyük şıklar, reconnect ve adil bağlantı davranışıyla tasarlanacaktır.
+
+### Erişilebilirlik, tema ve performans
+- Sistem font büyütme, kontrast, screen reader, klavye erişimi ve reduce-motion tercihlerine dayanacaktır.
+- Dark mode **Sistem / Açık / Koyu** seçenekleriyle temel özellik olacaktır; kozmetik ödül sayılmayacaktır.
+- Düşük veri modu desteklenebilir; ağır görsel/animasyon ve gereksiz prefetch azaltılacaktır.
+- Düşük güçlü cihazlarda ilk açılış ve soru ekranı hızlı kalmalıdır.
+- Ağır grafik, sosyal ve AI bölümleri gerektiğinde lazy-load edilecektir.
+- Kritik içerik önce yüklenecek; AI/sosyal widget'lar soru/test açılışını yavaşlatmayacaktır.
+- Mobil klavye açıldığında input alanları görünür kalacak ve sayfa düzeni bozulmayacaktır.
+
+### Güvenlik ve izinler
+- API anahtarları, token'lar ve hassas veriler için güvenli depolama yaklaşımı kullanılacak; sınırsız düz localStorage yaklaşımı kullanılmayacaktır.
+- Oturum yönetimi kullanıcıyı gereksiz tekrar login'e zorlamayacak; yeni/şüpheli cihazlarda uygun yeniden doğrulama yapılacaktır.
+- Aktif cihazlar/oturumlar yönetimi desteklenebilir.
+- İzin minimizasyonu uygulanacaktır: bildirim isteğe bağlı, kamera yalnız gerçek QR gibi ihtiyaçta, dosya/görsel yalnız kullanıcı seçtiğinde.
+- Gereksiz konum, mikrofon veya benzeri izinler istenmeyecektir.
+
+### Paylaşım ve cihaz entegrasyonu
+- Hatıra kartı, çalışma odası daveti veya soru linki cihazın doğal paylaşım menüsüyle paylaşılabilecektir.
+- Dosya/görsel ekleme gereken yerlerde sistem picker'ları kullanılacaktır.
+- Kamera yalnız gerçek ürün faydası olan QR gibi durumlarda kullanılacaktır.
+
+### Hata ve kalite davranışı
+- Mobil bağlantı hataları teknik hata kodu yerine kullanıcıyı rahatlatan doğru durum mesajları verecektir.
+- Yerelde kayıtlı çalışma varsa “bağlantı gelince senkronlanacak” açıkça belirtilecektir.
+- Sunucu gereken özellikte “Bu özellik için bağlantı gerekiyor” ayrımı yapılacaktır.
+- Skeleton/loading kullanılabilir ancak çalışma başlangıcını gereksiz bekletmeyecektir.
+- Ürün kalite telemetrisi performans/bozuk ekran gibi teknik sorunları anlamak için kullanılabilir; gereksiz hassas veri toplanmayacaktır.
+
+### Temel mobil/PWA ilkesi
+- Kullanıcı için ürün teknik olarak “PWA” değil, **KPSS uygulaması** gibi hissettirmelidir.
+- En kritik kalite üçlüsü **offline devam + otomatik kayıt + cihazlar arası kaldığın yerden devam** olacaktır.
+- Mobil / PWA Deneyimi ürün mimarisi açısından tamamlanmıştır; kesin breakpoint'ler, cache stratejisi, deep-link route'ları, sync protokolü ve performans hedefleri Teknik Altyapı/UI aşamasında netleştirilecektir.
+
+## 39. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
