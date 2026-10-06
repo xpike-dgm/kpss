@@ -549,26 +549,23 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ En kritik kalite üçlüsü: offline devam + otomatik kayıt + cihazlar arası devam.
    - ✅ **Mobil / PWA Deneyimi ürün mimarisi açısından tamamlandı.**
 
-19. 🟨 **Admin Paneli**
-   - ✅ **PDF / Kitap İçe Aktarma alt sistemi kabul edildi.**
-     - Tarama/image tabanlı PDF'ler dahil desteklenecek.
-     - Soru metni ve şıklar native metin/matematik olarak oluşturulacak; tüm soru screenshot olarak kaydedilmeyecek.
-     - Gerçek soru görselleri kaynak PDF'den ayrıştırılıp korunacak.
-     - Cevap anahtarı/çözüm eşleme, confidence, batch işleme, provenance, duplicate kontrolü ve yan yana review ekranı olacak.
-     - Büyük PDF'lerde yüksek güvenli sorular toplu review, belirsizler insan inceleme kuyruğuna gidecek.
-   - ✅ **Jev otomatik soru sınıflandırmasında kullanılacak.**
-     - Ders, konu, alt konu, kazanım/beceri, soru tipi ve tahmini zorluk için aday metadata üretecek.
-     - Mevcut taxonomy ID'lerine bağlanacak ve confidence tutulacak.
-     - Düşük güven/çakışma insan review'una gidecek.
-     - Jev zorluk tahmini başlangıç tahmini olacak; gerçek kullanıcı verisi zamanla daha yüksek ağırlık kazanacak.
-     - Jev doğru cevap otoritesi olmayacak; mevcut doğrulama pipeline'ı korunacak.
-   - Soru ekleme ve düzenleme
-   - Hatalı soru bildirimleri
-   - Kullanıcı yönetimi
-   - Konu ağacı
-   - AI sınıflandırmalarının kontrolü
+19. ✅ **Admin Paneli**
+   - ✅ Admin Paneli soru yönetimiyle sınırlı olmayacak; ürünün tamamını yöneten Control Center / Operasyon Merkezi olacak.
+   - ✅ Rol/yetki sistemi, kritik işlem koruması ve tam audit log kullanılacak.
+   - ✅ Soru bankası, PDF/kitap importu, Jev sınıflandırması, kalite sinyalleri, duplicate kontrolü ve versioning yönetilecek.
+   - ✅ Müfredat/taxonomy/prerequisite ağı, öğrenme içerikleri ve akademik motor config'leri panelden yönetilecek.
+   - ✅ Akademik motor, XP/level, streak, görev, kamp, başarımlar, kozmetikler, Yolculuk, Özel Anlar, sezon ve ligler versiyonlu config ile yönetilecek.
+   - ✅ AI Control Center; provider/model mapping, prompt versioning, kalite analizi ve AI üretim pipeline'ını yönetecek.
+   - ✅ Kullanıcı destek görünümü, event geçmişi, kontrollü veri düzeltme/recalculation ve moderasyon araçları bulunacak.
+   - ✅ Arkadaş/takım/sosyal sistem, topluluk hedefleri, bildirimler ve PWA operasyonları yönetilecek.
+   - ✅ Feature flags, kontrollü deneyler, sistem konfigürasyonu, import/export ve operasyon araçları bulunacak.
+   - ✅ Sistem sağlığı, background jobs, Event Explorer, güvenlik ve Anti-Farm merkezi bulunacak.
+   - ✅ Taslak → Önizleme → Yayın, geri alma ve Değişiklik Etkisi analizi temel admin çalışma modeli olacak.
+   - ✅ Gerçek veriye karışmayan Sandbox / Simülasyon araçları kullanıcı yolculuğu ve ekonomi/akademik motor davranışını test edecek.
+   - ✅ Temel kalite üçlüsü: Versioned Configuration + Simulation/Sandbox + Full Audit Log.
+   - ✅ **Admin Paneli ürün mimarisi açısından tamamlandı.**
 
-20. ⬜ **İçerik Kalite Kontrolü**
+20. 🟨 **İçerik Kalite Kontrolü**
    - Yanlış cevaplı sorular
    - Hatalı / belirsiz sorular
    - Güncelliğini kaybetmiş içerikler
