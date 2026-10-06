@@ -530,13 +530,26 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Kayıt öncesi örnek verili Demo akışı desteklenebilecek.
    - ✅ **Kayıt ve İlk Kurulum Deneyimi ürün mimarisi açısından tamamlandı.**
 
-18. 🟨 **Mobil / PWA Deneyimi**
-   - Telefon ana ekranına ekleme
-   - Mobil navigasyon
-   - Bildirimler
-   - Çevrimdışı davranış
+18. ✅ **Mobil / PWA Deneyimi**
+   - ✅ Responsive web + kurulabilir PWA tek ürün/tek hesap olarak çalışacak.
+   - ✅ Mobil navigasyon sade, aksiyon öncelikli ve tek elle kullanıma uygun olacak.
+   - ✅ Mobil soru çözme; büyük dokunma alanları, soru paleti, zoom ve güvenli geri hareketi destekleyecek.
+   - ✅ Normal çalışmalar sürekli otomatik kaydedilecek; uygulama kapanması/arama/arka plan veri kaybettirmeyecek.
+   - ✅ Çevrimiçi / zayıf bağlantı / çevrimdışı / yeniden bağlandı durumları tutarlı biçimde desteklenecek.
+   - ✅ Uygun içerikler çevrimdışı kullanılabilecek; AI ve canlı sosyal özellikler bağlantı gerektirebilecek.
+   - ✅ Offline çalışmalar bağlantı gelince güvenli şekilde senkronlanacak; soru sürümleri korunacak.
+   - ✅ Telefon, tablet ve masaüstü arasında kaldığın yerden devam temel ürün davranışı olacak.
+   - ✅ Bildirimler bağlamsal ve kategori bazlı olacak; deep-link doğrudan ilgili ekrana götürecek.
+   - ✅ Oturum süresi ile gerçek aktif çalışma süresi ayrılacak.
+   - ✅ Video, AI Öğretmen, notlar, istatistik, Yolculuk, Sezon ve çalışma odaları mobil için özel UX kullanacak.
+   - ✅ Tablet ve masaüstü kendi ekran avantajlarını kullanacak; mobil uğruna fakirleştirilmeyecek.
+   - ✅ Erişilebilirlik, dark mode, düşük veri modu, düşük güçlü cihaz performansı ve safe-area desteği korunacak.
+   - ✅ PWA güncellemeleri aktif oturumu/testi bozmayacak.
+   - ✅ Hassas yerel veri, oturum ve izinler güvenli/minimum yetki yaklaşımıyla yönetilecek.
+   - ✅ En kritik kalite üçlüsü: offline devam + otomatik kayıt + cihazlar arası devam.
+   - ✅ **Mobil / PWA Deneyimi ürün mimarisi açısından tamamlandı.**
 
-19. ⬜ **Admin Paneli**
+19. 🟨 **Admin Paneli**
    - Soru ekleme ve düzenleme
    - Hatalı soru bildirimleri
    - Kullanıcı yönetimi
