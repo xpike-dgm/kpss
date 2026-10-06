@@ -641,7 +641,31 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
   - **Rozet Vitrini:** sosyal prestij ve kişiselleştirme.
 - Başarımlar ve Rozetler alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin başarım kataloğu, eşikler, XP ödülleri, kozmetik listesi ve nadirlik dağılımı daha sonra içerik/denge konfigürasyonu olarak tasarlanacaktır.
 
-## 28. Henüz planlanacak büyük alanlar
+## 28. Günlük / Haftalık Görev Sistemi — kararlaştırıldı
+- Görev sistemi ayrı bir çalışma motoru olmayacak; mevcut program motorunun yararlı önerilerini oyunlaştırılmış hedeflere çevirecek.
+- Günlük görevler kişiye özel olacak; temel yapı düşük sayıda görevden, örneğin 1 ana + 1–2 yan görevden oluşabilecek.
+- Ana görev dashboard/program motorunun en değerli önerisiyle çelişmeyecek.
+- Görevler zorunlu olmayacak; tamamlanmayan görevler ertesi güne borç olarak taşınmayacak.
+- Günlük görevler kısa ve somut, haftalık görevler daha geniş davranış/denge hedefleri olacak.
+- Haftalık görevler belirli güne zorlamayacak; kullanıcı hafta içinde istediği zaman tamamlayabilecek.
+- Kullanıcı görevi değiştirebilecek; alternatifler program motorunun akademik olarak uygun seçeneklerinden gelecek ve sınırsız kolay görev aramaya dönüşmeyecek.
+- Görev içindeki çalışma normal XP'sini verecek; görev tamamlaması yalnızca küçük ek bonus üretebilecek.
+- Görev tamamlamak streak için zorunlu olmayacak.
+- Görev türleri Öğrenme, Test, Tekrar, Yanlış Güçlendirme, Deneme, Denge ve Hız gibi farklı ailelerden oluşabilecek.
+- Görev zorluğu kullanıcının seviyesi, geçmişi, tekrar ihtiyacı ve program motoruna göre ayarlanabilecek; kullanıcıdan zorunlu süre girdisi istenmeyecek.
+- Tüm günlük görevleri tamamlamaya küçük ek bonus verilebilir; kısmi tamamlamalar boşa gitmeyecek.
+- Streak sistemini kopyalayan görevlerden kaçınılacak; oyunlaştırma mekaniklerinin rolleri ayrı tutulacak.
+- Günlük yenilenme kullanıcının saat dilimine göre olacak; gece yarısına taşan oturumlar adil bir grace-period/oturum günü kuralıyla ele alınabilecek.
+- Kullanıcı görev sistemini görünürlük ayarlarından kapatabilecek.
+- Dashboard'da kısa görev özeti, ayrı Görevler ekranında günlük/haftalık görevler, aktif görev zincirleri ve geçmiş bulunabilecek.
+- Görev geçmişinde tamamlanan çalışmalar öne çıkarılacak; kaçırılan görevler negatif performans metriği olarak kullanılmayacak.
+- Görev sistemi AI olmadan çalışacak. AI Koç varsa görevin neden önerildiğini doğal dille açıklayabilecek.
+- Çok aşamalı akademik ihtiyaçlar için Görev Zinciri / Kamp yapısı kullanılabilecek.
+- Online/takım görevleri daha sonra sosyal/meta oyun başlığında ele alınacak.
+- Temel ilke: **Görev sistemi çalışma programına rakip değil, onun oyunlaştırılmış uzantısıdır.**
+- Kesin görev sayıları, bonus değerleri, reroll sınırı, görev kataloğu ve yenilenme ayrıntıları daha sonra denge parametresi olarak ayarlanacaktır.
+
+## 29. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
