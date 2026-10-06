@@ -410,13 +410,26 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Dashboard özeti ve ayrı Görevler ekranı bulunabilecek.
       - Çok aşamalı ihtiyaçlar Görev Zinciri / Kamp yapısına dönüşebilecek.
       - ✅ **Günlük / Haftalık Görev alt sistemi ürün mimarisi açısından tamamlandı.**
-    - 🟨 **Sıradaki alt konu: Görev Zincirleri / Kamplar**
-      - Normal görevden ne zaman daha uzun zincire geçilmeli?
-      - Zincir kaç aşamalı olmalı ve nasıl tamamlanmalı?
-      - Zayıf konular için dinamik zincir üretilecek mi?
-      - Ödül yapısı normal görevlerden nasıl ayrılmalı?
-      - Tamamlanmayan zincirler borç/ceza üretmeli mi?
-      - Kullanıcı kendi isteğiyle zincir başlatabilmeli mi?
+    - ✅ **Görev Zincirleri / Kamplar kabul edildi.**
+      - Kamp, belirli akademik problemi birkaç aşamada çözmeye yönelik kişisel mini program olacak.
+      - Yalnızca anlamlı zayıflık/retention/hız/önkoşul sinyallerinde önerilecek; her konu için otomatik açılmayacak.
+      - Kamp 2–6 gibi makul sayıda aşamadan oluşabilecek ve tek oturumda bitmek zorunda olmayacak.
+      - Tekrar/öğrenme, test, yanlış güçlendirme, doğrulama ve gerektiğinde hız kontrolü aşamaları kullanılabilecek.
+      - Kamp borç veya ceza üretmeyecek; uzun aradan sonra yeni verilerle yeniden değerlendirilebilecek.
+      - Program motoruyla aynı öncelik sistemi kullanılacak; aynı anda çok sayıda aktif kamp açılmayacak.
+      - Kullanıcı kendi isteğiyle kamp başlatabilecek; hazır şablonlar kişiselleştirilebilecek.
+      - AI olmadan çalışacak; kamp tamamlaması küçük bonus ve bazı durumlarda başarım/rozet verebilecek.
+      - Kamp bitirmek konuya kalıcı ustalık anlamına gelmeyecek; akademik doğrulama ayrı kalacak.
+      - Deneme Sonrası Güçlendirme Kampı özellikle desteklenecek.
+      - Kullanıcı kampı durdurabilecek; XP/streak cezası veya başarısız etiketi olmayacak.
+      - Aktif kamp günlük/haftalık görevlerle entegre olabilecek.
+      - ✅ **Görev Zincirleri / Kamplar alt sistemi ürün mimarisi açısından tamamlandı.**
+    - 🟨 **Sıradaki alt konu: Oturum Sonu Geri Bildirimi / Ödül Sunumu**
+      - Test veya çalışma oturumu sonunda hangi oyunlaştırma bilgileri gösterilecek?
+      - XP, level, streak, görev ve başarım ilerlemesi tek ekranda nasıl dengelenecek?
+      - Level-up / başarım animasyonları ne kadar görünür olmalı?
+      - Ödül geri bildirimi akademik sonuç ekranını gölgelememeli mi?
+      - Kullanıcı bu animasyonları azaltıp kapatabilmeli mi?
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
