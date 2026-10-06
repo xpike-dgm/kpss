@@ -497,14 +497,24 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
     - ✅ **Sürekli Gelişim / Meta Oyun Sistemi ürün mimarisi açısından tamamlandı.**
     - ✅ **Çıkış kapsamı ilkesi:** ürün MVP/“ilk sürüm sonra ekleriz” mantığıyla parçalanmayacak; kabul edilen ana sistemlerin tamamı tek kapsamlı ürün çıkışının parçasıdır. “Daha sonra ele alınacak” ifadesi yalnızca planlama sırasını belirtir.
 
-16. 🟨 **Arkadaş Sistemi**
-   - Arkadaş ekleme
-   - Ortak çalışma
-   - Sıralamalar
-   - Ortak hedefler
-   - İlerleme paylaşımı
+16. ✅ **Arkadaş Sistemi**
+   - ✅ Arkadaşlık karşılıklı onaylı, benzersiz kullanıcı adı/kod/link tabanlı ve ayrıntılı gizlilik kontrollü olacak.
+   - ✅ Gizli akademik skor, zayıf alanlar ve paylaşılmamış netler sosyal profile açılmayacak.
+   - ✅ Sosyal profil; avatar, çerçeve, banner, level, unvan, rozet vitrini, isteğe bağlı yolculuk/lig ve önemli anlardan oluşabilecek.
+   - ✅ Sonsuz sosyal feed yerine kompakt Arkadaşlar Merkezi kullanılacak.
+   - ✅ Birlikte Çalış odaları, sessiz odak, isteğe bağlı Pomodoro ve ortak oturum geçmişi desteklenecek.
+   - ✅ Meydan okumalar isteğe bağlı ve akademik motorla uyumlu olacak; ham soru spamı teşvik edilmeyecek.
+   - ✅ Canlı 1v1 soru düellosu desteklenecek; doğruluk hızdan önce gelecek ve akademik mastery'nin ana verisi olmayacak.
+   - ✅ Arkadaş sıralamaları haftalık/sezonluk sağlıklı metriklerle çalışacak; ham net ana sosyal sıralama olmayacak.
+   - ✅ Küçük Çalışma Ekipleri, ortak görevler, takım sezon puanı, takım ligleri ve takım geçmişi desteklenecek.
+   - ✅ Takım büyüklüğü sıralamalarda normalize edilecek; ayrı kalıcı takım XP ekonomisi kurulmayacak.
+   - ✅ Topluluk hedefleri, tebrikler, isteğe bağlı Hatıra Kartı paylaşımı ve çalışma içeriği/soru paylaşımı desteklenecek.
+   - ✅ Sosyal mesajlaşma çalışma odaklı kalacak; tam DM varsa engelleme/sessize alma/şikâyet/mesaj izinleri eksiksiz olacak.
+   - ✅ Gerçek Sınav Modunda sosyal bildirim ve etkileşimler sessize alınacak.
+   - ✅ Sosyal başarımlar arkadaş sayısına değil, birlikte yapılan anlamlı çalışmaya dayanacak ve anti-farm korunacak.
+   - ✅ **Arkadaş Sistemi ürün mimarisi açısından tamamlandı.**
 
-17. ⬜ **Kayıt ve İlk Kurulum Deneyimi**
+17. 🟨 **Kayıt ve İlk Kurulum Deneyimi**
    - Hesap oluşturma
    - KPSS türü seçimi
    - Ders seviyeleri
