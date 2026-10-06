@@ -1571,7 +1571,193 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Ana kalite döngüsü: **Kaynak → Extraction/Creation → Jev Sınıflandırma → Answer/Solution Validation → Quality Gates → Gerektiğinde Human Review → Approved → Active → Gerçek Kullanım Verisi → Anomaly/Reports → Re-review → Versioned Fix → Impact Repair → Pipeline Learning**.
 - İçerik Kalite Kontrolü ürün mimarisi açısından tamamlanmıştır; kesin kalite skorları, severity eşikleri, review SLA'ları ve eligibility kuralları denge/operasyon/teknik aşamasında netleştirilecektir.
 
-## 42. Henüz planlanacak büyük alanlar
+## 42. Teknik Altyapı — birleşik mimari — kararlaştırıldı
+- Teknik mimarinin temel hedefi yalnız sistemi çalıştırmak değil; **doğruluk, izlenebilirlik, geri alınabilirlik, offline dayanıklılık ve güvenli yeniden hesaplama** sağlamaktır.
+- Ana mimari **modüler monolit + çalışma karakteri farklı yardımcı süreçler** olacaktır. Gereksiz erken mikroservisleşme, Kubernetes/service-mesh ve benzeri operasyon yükü kullanılmayacaktır.
+- Ana ürün tek tutarlı domain modeli ve tek ana veritabanı etrafında çalışacak; uzun süren işler, realtime bağlantılar ve Python gerektiren içerik işlemleri ayrı process/container olarak çalışabilecektir.
+- Sistem standart PostgreSQL, S3 uyumlu nesne depolama, Docker ve OpenTelemetry gibi taşınabilir bileşenlere dayanacak; tek bir hosting sağlayıcısına mimari olarak kilitlenmeyecektir.
+
+### Uygulama ve teknoloji omurgası
+- Ana dil **TypeScript strict** olacaktır.
+- Öğrenci PWA ve Admin uygulaması **Next.js** tabanlı ayrı uygulamalar olacaktır.
+- UI katmanı Tailwind + erişilebilir component primitive'leri üzerine kendi design system'imizle kurulacaktır.
+- Ana API **Hono + Zod/OpenAPI** yaklaşımıyla oluşturulacak; modül sınırları lint/dependency kurallarıyla korunacaktır.
+- Veri erişiminde **Drizzle + gerektiğinde doğrudan SQL** kullanılacaktır.
+- Ana veritabanı **PostgreSQL 18** olacaktır; ilişkisel veri, JSONB, Türkçe arama ve gerektiğinde vector benzerlik aynı platformda kullanılabilecektir.
+- Üretim varsayılanı **managed PostgreSQL** olacaktır. Self-host PostgreSQL teknik olarak desteklenebilir fakat tek kişi + AI destekli operasyon modelinde veritabanı işletme yükü varsayılan kabul edilmeyecektir.
+- Background job altyapısı başlangıçta **PostgreSQL tabanlı queue (pg-boss)** olacaktır. Gerçek yük bunu gerektirirse Valkey/Redis + ayrı queue sistemine geçiş yolu açık tutulacaktır.
+- Realtime çalışma odası/presence/canlı düello için ayrı WebSocket süreci olacaktır; canlı düello server-authoritative çalışacaktır.
+- PDF/OCR, SymPy, istatistiksel kalibrasyon ve uygun ML/embedding işleri için ayrı **Python/FastAPI içerik servisi** kullanılacaktır.
+- Soru/PDF/görsel/kozmetik gibi dosyalar **S3 uyumlu object storage** üzerinde tutulacaktır; Cloudflare R2 güçlü varsayılan adaydır.
+- PWA offline katmanı **IndexedDB/Dexie + service worker** üzerinden çalışacaktır; service worker için Serwist benzeri modern yaklaşım kullanılacaktır.
+- Matematik içerikleri yapılandırılmış matematik olarak saklanacak ve KaTeX benzeri renderer ile gösterilecektir.
+- Admin içerik editörü soru içeriğini düz HTML yerine yapılandırılmış belge biçiminde üretecektir.
+
+### Seçici olay günlüğü + projeksiyonlar
+- Sistem **event sourcing lite / selective immutable domain ledger** kullanacaktır.
+- Test bitirme, akademik kanıt, mastery/retention değişimleri, wrong lifecycle, XP, achievement, sezon puanı, soru material revision, config publish ve Impact Repair gibi geçmişten yeniden hesaplama için önemli olaylar append-only biçimde saklanacaktır.
+- Hover, sayfa açma ve benzeri önemsiz UI telemetrisi ana domain event ledger'ını doldurmayacaktır; ürün analitiği ayrı katmanda tutulabilir.
+- Güncel durum hızlı okunan **projection/state tablolarında** tutulacaktır.
+- Projection bozulursa veya material soru düzeltmesi yapılırsa ilgili domain olaylarından yeniden hesaplama/replay yapılabilecektir.
+- Her kritik olay hangi içerik sürümü, motor sürümü ve config sürümüyle işlendiğini taşıyabilecektir.
+- Correlation/causation kimlikleri test → mastery → XP → başarım gibi zincirlerin Event Explorer'da izlenmesini sağlayacaktır.
+
+### Deterministik motorlar
+- Academic/mastery, planner, progression/gamification, goals/readiness ve benzeri çekirdek karar motorları mümkün olduğunca **saf ve deterministik TypeScript fonksiyonları** olacaktır.
+- Motorlar veritabanı veya AI'a doğrudan bağımlı olmayacak; state + event + versioned config alıp sonuç ve reason-code üretecektir.
+- Aynı motor kodu backend, worker, admin sandbox ve gerektiğinde offline önizlemede yeniden kullanılabilecektir.
+- AI motorun içine gömülmeyecek; AI kesilse bile çekirdek akademik sistem çalışmaya devam edecektir.
+- Program motoru her öneri için yapılandırılmış **reason codes** üretecek; “Neden bunu öneriyoruz?” ve AI Koç bu gerçek gerekçelerden beslenecektir.
+
+### Versioning ve snapshot
+- Soru, çözüm, taxonomy, config, prompt, sezon ve kritik kataloglar versiyonlanacaktır.
+- Test oluşturulurken kullanılan **question_version** kayıtları snapshot olarak sabitlenecektir.
+- Admin soru değiştirse bile aktif test veya Gerçek Sınav oturumu ortasında içerik değişmeyecektir.
+- Material revision geçmiş etki analizini ve gerekirse Impact Repair'i tetikleyebilecektir.
+- Aktif oturumun kullandığı önemli motor/config sürümleri gerektiğinde saklanacaktır.
+
+### Offline ve idempotency
+- Offline yazma klasik CRUD senkronu yerine **client outbox + olay/komut kuyruğu** mantığıyla yapılacaktır.
+- Her kritik yazma işlemi benzersiz idempotency kimliğine sahip olacaktır; bağlantı kesilip aynı istek tekrar gönderilse bile test, XP, sezon puanı veya başka sonuç iki kere işlenmeyecektir.
+- İstemci cevap/eylem bildirir; mastery, doğruluk, XP, achievement, readiness ve sezon puanında **sunucu otoritedir**.
+- Notlar, ayarlar, test cevapları ve sistem üretimi verilerin çakışma politikaları veri türüne göre ayrı olacaktır.
+- Telefonda başlanmış uygun çalışmaların diğer cihazlarda sürdürülmesi resume pointer/snapshot mantığıyla desteklenecektir.
+- Aynı kritik oturumun iki cihazda aynı anda değiştirilmesi kontrollü lease/uyarı yaklaşımıyla yönetilecektir.
+
+### Gerçek Sınav Modu
+- Gerçek Sınav Modunun **başlatılması için bağlantı gerekecektir**.
+- Başlangıçta soru sürümleri ve server-authoritative başlangıç zamanı sabitlenecektir.
+- Sınav başladıktan sonra bağlantı geçici olarak kesilirse desteklenen ölçüde kullanıcı devam edebilecek, süre durmayacak ve olaylar yerelde bekletilecektir.
+- Yeniden bağlantıda sunucu sonuçları/idempotency kayıtlarını doğrulayacaktır.
+
+### Background jobs
+- PDF import, AI içerik işlemleri, Impact Repair, akademik recalculation, difficulty calibration, kalite anomaly scan, analytics rollup, bildirim, sezon kapanışı, anti-farm ve cleanup gibi ağır işler request-response içinde çalıştırılmayacaktır.
+- Büyük işler parçalı ve yeniden denenebilir job'lardan oluşacak; tek sayfa veya aşama hatası bütün batch'i sıfırdan başlatmayacaktır.
+- Job handler'ları idempotent olacaktır.
+- Kalıcı hata durumunda review/failed queue'ya düşecek ve Admin Background Job Merkezi'nden incelenebilecektir.
+- Veri değişikliği + job oluşturma kaybını önlemek için transaction/outbox garantisi kullanılacaktır.
+
+### Realtime ve sosyal
+- Presence yalnız gerekli minimum ve gizlilik izinli bilgiyi tutacaktır.
+- Canlı 1v1'de soru, süre, cevap zamanı ve skor hesabı sunucuda olacaktır; client skoru belirlemeyecektir.
+- Bağlantı kopmasında makul reconnect penceresi olacaktır.
+- Realtime geçici state için kullanılacak; XP ve kalıcı akademik veri source-of-truth olarak PostgreSQL'de kalacaktır.
+- **Tam birebir DM sistemi olmayacaktır.** Sosyal iletişim çalışma odası sohbeti, takım bağlamı, kısa tepkiler/tebrikler ve çalışma odaklı iletişimle sınırlandırılacaktır.
+
+### Auth ve yetkilendirme
+- Auth katmanı kendi PostgreSQL'imizle çalışan **Better Auth** yaklaşımını kullanacaktır.
+- Öğrenciler için e-posta/şifre, Google ve passkey desteklenecek; telefon/SMS zorunlu kimlik yöntemi olmayacaktır.
+- Kullanıcı oturumları güvenli cookie/session yaklaşımıyla yönetilecektir.
+- Admin uygulaması ayrı subdomain'de çalışacak; admin için MFA/passkey veya TOTP zorunlu olacaktır.
+- Kritik admin işlemleri step-up doğrulama, etki önizlemesi, ikinci onay/gerekçe ve audit gerektirebilecektir.
+- Admin ve kullanıcı yetkileri least-privilege/RBAC yaklaşımıyla uygulanacaktır.
+- Impersonation yerine mümkün olduğunca read-only Destek Görünümü kullanılacaktır.
+
+### AI Gateway ve BYOK
+- Tüm AI çağrıları uygulama içinde doğrudan sağlayıcı SDK'larına dağılmayacak; merkezi **AI Gateway** arayüzünden geçecektir.
+- Görev → kalite seviyesi → sağlayıcı/model eşlemesi Admin AI Control Center'dan değiştirilebilecektir.
+- Kullanıcı tarafında Düşük / Normal / Yüksek / Çok Yüksek soyut seviyeleri korunacak; gerçek model isimleri operasyon katmanında yönetilecektir.
+- Kullanıcı AI'sı (BYOK) ile platform içerik AI'sı bütçe/credential olarak tamamen ayrılacaktır.
+- Kullanıcı API anahtarları sunucuda **zarf/envelope şifreleme** ile saklanacak, admin tarafından açık metin görülemeyecek ve loglara yazılmayacaktır.
+- AI çıktıları Zod/structured-output şemalarından geçirilecek; AI doğrudan veritabanı veya kritik akademik state değiştiremeyecektir.
+- AI provider outage çekirdek ürünü bozmayacaktır.
+- Platform içerik AI'sı için sabit dolar tutarı ürün kuralı olmayacak; Admin'de görev bazlı kullanım ve bütçe limitleri config olarak yönetilecektir.
+
+### Jev
+- Jev **ölçülmeden ana sınıflandırıcı kabul edilmeyecektir**.
+- İnsan tarafından doğrulanmış yaklaşık birkaç yüz Türkçe KPSS sorusundan oluşan golden dataset üzerinde ders/konu/alt konu/kazanım alanlarındaki gerçek doğruluk ve confidence kalibrasyonu ölçülecektir.
+- Yeterli kalite sağlarsa taxonomy-bound sınıflandırmada kullanılacak; yetersizse structured-output LLM ana/yedek sınıflandırıcı olacaktır.
+- Görselli sorular sınıflandırılmadan önce vision katmanı tarafından yapılandırılmış metin temsilinə dönüştürülebilir.
+- Jev'e serbest taxonomy üretme yetkisi verilmeyecek; yalnız geçerli ID seçeneklerinden seçim yaptırılacaktır.
+- Jev cevap doğrulama, sembolik matematik hesabı veya kronoloji gibi güvenilmez alanlarda otorite olmayacaktır.
+- Jev'in başlangıç zorluk tahmini düşük güvenli aday sinyal olarak kalacak; gerçek kullanıcı verisi esas olacaktır.
+
+### Retention / FSRS
+- FSRS, kabul edilmiş adaptif retention sisteminin **güçlü varsayılan algoritma adayı** olacaktır.
+- FSRS doğrudan değiştirilemez ürün kuralına dönüştürülmeyecek; engine-memory arayüzü algoritmadan bağımsız tutulacaktır.
+- Kullanıcı × kazanım/alt konu modeline yapılan uyarlama golden/simülasyon verisinde doğrulanacaktır.
+- Gerçek veride beklenen kaliteyi sağlamazsa aynı ürün davranışını koruyan başka memory modeli devreye alınabilecektir.
+- Retention akademik mastery'den ayrı kalacaktır.
+
+### Soru zorluğu / IRT
+- Mevcut kullanıcı mastery güncelleme kuralları (+5/+3/+2/+1 vb.) korunacaktır.
+- Soru zorluğunda **estimated difficulty** ve **data-driven difficulty** ayrı tutulacaktır.
+- Soğuk başlangıçta Jev/LLM yalnız tahmin üretebilir.
+- Yeterli gerçek çözüm verisi oluşunca kullanıcı seviyesini de dikkate alan toplu istatistiksel kalibrasyon kullanılacaktır.
+- İlk güçlü varsayılan **regularized Rasch/1PL** yaklaşımıdır; yeterli veri ve doğrulama oluşursa 2PL/ileri IRT değerlendirilebilir.
+- Difficulty modeli de versiyonlu ve ölçülebilir olacaktır; büyük estimated/data uyuşmazlığı kalite sinyali üretir.
+
+### PDF / içerik servisi
+- Orijinal PDF immutable provenance olarak saklanacaktır.
+- PDF text layer varsa kullanılacak; image/scanned sayfalar yüksek kaliteli render + OCR/layout/vision ile işlenecektir.
+- Soru metni/şıklar native yapılandırılmış içeriğe dönüştürülecek; yalnız gerçek görseller kaynak dosyadan çıkarılacaktır.
+- Kritik matematik token'ları ikinci bağımsız okuma/kontrol ile karşılaştırılabilecektir.
+- Cevap anahtarı ve çözüm eşleme, Jev/LLM sınıflandırma, duplicate, Quality Gate ve human review mevcut kabul edilmiş içerik hattıyla devam edecektir.
+- PDF parser/OCR işleri ana API kaynaklarını tüketmeyecek ayrı worker/container havuzunda çalışacaktır.
+
+### Arama ve duplicate
+- Normal admin/soru araması için PostgreSQL full-text/trigram yaklaşımı kullanılacaktır.
+- Semantic duplicate/near-duplicate tespiti için pgvector/embedding desteği kullanılabilir.
+- Aynı şablonun yalnız sayıları değiştirilmiş varyantlarını yakalamak için lexical/template benzerlik sinyalleri de kullanılacaktır.
+- Vector search normal ilişkisel veya metin aramanın yerine geçmeyecektir.
+
+### Bildirim ve çalışma günü
+- Bildirim olayı ile teslimat kanalı ayrılacaktır; push başarısız olsa bile uygulama içi gerçek durum kaybolmayacaktır.
+- Bildirim tercihleri kategori bazlı olacak ve deep-link kullanacaktır.
+- Streak/günlük görev gibi “çalışma günü” hesaplarında kullanıcı timezone'u esas alınacak ve varsayılan gün sınırı **04:00** olacaktır; bu değer config ile değiştirilebilir.
+- Gerçek timestamp'ler veritabanında UTC tutulacaktır.
+
+### Hosting, taşınabilirlik ve veri konumu
+- Cloudflare; DNS/CDN/WAF ve S3 uyumlu object storage tarafında güçlü varsayılan katman olacaktır.
+- Uygulama/API/worker'lar Docker container olarak taşınabilir compute üzerinde çalışacaktır; Hetzner maliyet avantajlı güçlü adaydır ancak zorunlu sağlayıcı olmayacaktır.
+- Development / Staging / Production ayrı ortamlar olacaktır.
+- Kubernetes kullanılmayacaktır; gerçek ölçek ihtiyacı oluşmadan dağıtık operasyon karmaşıklığı eklenmeyecektir.
+- Veri konumu AB/Türkiye kararı mimariyi değiştirmeyecek şekilde taşınabilir tutulacaktır.
+- Production öncesinde gerçek veri akışı için KVKK ve yurt dışı aktarım gereksinimleri ayrıca hukuki/operasyonel olarak doğrulanacaktır.
+- AI sağlayıcılarına gereksiz kişisel tanımlayıcı veri gönderilmeyecek; veri minimizasyonu uygulanacaktır.
+
+### Yedekleme ve felaket kurtarma
+- Managed DB sağlayıcısının PITR/backup kabiliyetlerine ek olarak bağımsız ikinci kopya politikası uygulanacaktır.
+- Kritik veriler için 3-2-1 mantığı hedeflenecektir.
+- Database yedekleri, object storage varlıkları ve config/içerik export'ları birlikte düşünülerek eksiksiz restore planı oluşturulacaktır.
+- **Backup almak yeterli değildir; otomatik/periyodik restore tatbikatı yapılacaktır.**
+- Altyapı tanımı ve deploy/runbook'ları yeniden üretilebilir olacaktır.
+
+### Güvenlik ve gözlemlenebilirlik
+- TLS, güvenli cookie/session, input validation, rate limit, CSP/CSRF gerektiği yerde, signed upload, least privilege, RBAC ve secrets management uygulanacaktır.
+- Admin yüzeyi ek koruma katmanına sahip olacaktır.
+- Loglarda password, token, API key, private message ve benzeri hassas bilgiler maskelenecektir.
+- OpenTelemetry tabanlı structured logs + metrics + traces kullanılacaktır.
+- Frontend/backend/worker hataları correlation ID ile zincir boyunca izlenebilecektir.
+- Admin System Health bu gerçek observability verisinden beslenecektir.
+- Audit Log append-only ve normal admin tarafından silinemez olacaktır.
+
+### Test ve regression stratejisi
+- Deterministik motorlar kapsamlı unit/property testleriyle korunacaktır.
+- PDF/OCR/Jev için insan tarafından doğrulanmış **golden dataset** bulunacaktır.
+- Yeni OCR/Jev/model/prompt sürümü aynı sabit corpus üzerinde eski sürümle karşılaştırılmadan production'a alınmayacaktır.
+- AI prompt regression testleri ve içerik kalite metrikleri gerçek reviewer sonuçlarıyla ölçülecektir.
+- Kritik kullanıcı akışları onboarding → test → submit → yanlış → offline/reconnect → Impact Repair dahil end-to-end testlerle korunacaktır.
+- Düello, deneme başlatma, sezon kapanışı ve PDF batch gibi kritik alanlarda gerektiğinde load test yapılacaktır.
+
+### Ölçek yaklaşımı
+- Sistem küçük arkadaş grubunda gereksiz altyapı maliyeti yaratmayacak şekilde çalışacaktır.
+- Mimari yüzlerce aktif kullanıcı ve daha yüksek büyüme için yeniden yazım gerektirmeden dikey/yatay ölçeklenebilir tasarlanacaktır.
+- API, worker, Python worker ve realtime süreçleri gerektiğinde bağımsız sayıda çoğaltılabilecektir.
+- Ancak gerçek darboğaz oluşmadan Kafka, ayrı analytics cluster, büyük Redis cluster veya çok sayıda mikroservis eklenmeyecektir.
+
+### Teknik kararların ana ilkesi
+- Birleşik teknik omurganın özeti: **Next.js PWA + Hono/Zod/Drizzle API + managed PostgreSQL 18 + pg-boss worker + ayrı WebSocket realtime process + Python/FastAPI içerik servisi + S3 uyumlu object storage + Dexie/IndexedDB offline katmanı + Better Auth + merkezi AI Gateway**.
+- Veri güvenilirliğinin ana üçlüsü: **Versioned Domain Data + Selective Immutable Event Ledger + Idempotent Processing**.
+- Teknik seçimler yalnız popülerlik nedeniyle değil, kabul edilmiş ürün davranışlarını güvenilir ve açıklanabilir biçimde gerçekleştirmek için kullanılacaktır.
+- Teknik Altyapı ürün mimarisi açısından tamamlanmıştır. Sağlayıcı fiyatları, exact machine size, model isimleri ve operasyon limitleri uygulama/deploy zamanında yeniden doğrulanacaktır.
+
+## 43. Planlama turu sonrası açık uygulama detayları
+- Ana ürün sistemleri ve teknik mimari planlama turu tamamlanmıştır.
+- Bundan sonraki çalışmalar kabul edilmiş özellikleri çıkış kapsamından çıkarmadan; UI/UX ekran tasarımı, kesin denge değerleri, içerik üretim hacmi, marka/alan adı, operasyon limitleri, production KVKK/hukuki doğrulaması ve uygulama ayrıntılarını netleştirebilir.
+- Bu alanların daha sonra detaylandırılması post-launch erteleme anlamına gelmez; kabul edilmiş ana sistemler tek kapsamlı ürün çıkışının parçasıdır.
+
+
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
