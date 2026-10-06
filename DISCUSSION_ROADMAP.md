@@ -514,14 +514,23 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Sosyal başarımlar arkadaş sayısına değil, birlikte yapılan anlamlı çalışmaya dayanacak ve anti-farm korunacak.
    - ✅ **Arkadaş Sistemi ürün mimarisi açısından tamamlandı.**
 
-17. 🟨 **Kayıt ve İlk Kurulum Deneyimi**
-   - Hesap oluşturma
-   - KPSS türü seçimi
-   - Ders seviyeleri
-   - Hedefler
-   - İlk çalışma profilinin oluşturulması
+17. ✅ **Kayıt ve İlk Kurulum Deneyimi**
+   - ✅ Kayıt kısa ve gereksiz kişisel veri toplamayan yapıda olacak.
+   - ✅ KPSS türü/dönemi temel akademik kurulum bilgisi olacak.
+   - ✅ Hedef puan/net isteğe bağlı olacak; günlük saat/gün kotası zorunlu olmayacak.
+   - ✅ Ders öz değerlendirmesi yalnızca başlangıç tahmini olacak; doğrulanmış kanıt yerine geçmeyecek.
+   - ✅ Kısa kalibrasyon isteğe bağlı olacak; kullanıcı isterse çalışırken sistemin kendisini tanımasına izin verecek.
+   - ✅ İlk profil gizli akademik skoru göstermeyecek; sade ve dürüst insan dili kullanılacak.
+   - ✅ Ana onboarding CTA’sı “İlk Çalışmanı Başlat” olacak ve öneri program motorundan gelecek.
+   - ✅ XP, streak, kamp, sezon, lig ve benzeri sistemler progressive disclosure ile ihtiyaç anında tanıtılacak.
+   - ✅ AI ve sosyal kurulum zorunlu olmayacak; güvenli gizlilik varsayılanları kullanılacak.
+   - ✅ Onboarding ilerlemesi kaydedilecek; temel tercihler sonradan değiştirilebilecek.
+   - ✅ Yeni KPSS dönemi ve uzun aradan dönüş ayrı, daha kısa akışlarla yönetilecek.
+   - ✅ Readiness/hedef puan ilk gün veri yokken sahte kesinlik üretmeyecek.
+   - ✅ Kayıt öncesi örnek verili Demo akışı desteklenebilecek.
+   - ✅ **Kayıt ve İlk Kurulum Deneyimi ürün mimarisi açısından tamamlandı.**
 
-18. ⬜ **Mobil / PWA Deneyimi**
+18. 🟨 **Mobil / PWA Deneyimi**
    - Telefon ana ekranına ekleme
    - Mobil navigasyon
    - Bildirimler
