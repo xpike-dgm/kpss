@@ -565,13 +565,27 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Temel kalite üçlüsü: Versioned Configuration + Simulation/Sandbox + Full Audit Log.
    - ✅ **Admin Paneli ürün mimarisi açısından tamamlandı.**
 
-20. 🟨 **İçerik Kalite Kontrolü**
-   - Yanlış cevaplı sorular
-   - Hatalı / belirsiz sorular
-   - Güncelliğini kaybetmiş içerikler
-   - AI ve insan kontrol akışı
+20. ✅ **İçerik Kalite Kontrolü**
+   - ✅ Kaynak/provenance, cevap, çözüm, taxonomy, zorluk, güncellik ve görsel bütünlük ayrı kalite boyutları olarak yönetilecek.
+   - ✅ Cevap ve çözüm ayrı doğrulanacak; uygun Matematik sorularında deterministik/symbolic kontrol kullanılabilecek.
+   - ✅ Jev ve diğer AI sistemleri kalite sinyali üretecek ancak doğru cevap otoritesi olmayacak.
+   - ✅ PDF/OCR içeriklerinde kritik sembol, görsel, bağlam ve source-comparison kontrolleri yapılacak.
+   - ✅ Estimated difficulty ile gerçek data difficulty ayrı kalacak; kullanıcı performansı anomaly sinyali olarak kullanılacak.
+   - ✅ Doğruluk, süre, blank oranı, distractor dağılımı ve kullanıcı raporları birlikte kalite sinyali üretecek.
+   - ✅ Quality Queue risk/severity ile önceliklendirilecek; güçlü sorunlarda Quarantine kullanılacak.
+   - ✅ Hatalı soru düzeltmesinde **Impact Repair** geçmiş mastery, yanlış, retention ve deneme etkilerini mümkün olduğunca onaracak.
+   - ✅ Platform hatası nedeniyle kullanıcıdan level/başarım geri alınmayacak; akademik ölçümler doğru veriye göre yeniden hesaplanabilecek.
+   - ✅ Evergreen ve time-sensitive içerikler ayrılacak; resmî kaynak/provenance ve güncellik metadata'sı tutulacak.
+   - ✅ Minor/Material revision ayrımı ve question version snapshot kullanılacak.
+   - ✅ Coverage Matrix, fake-diversity/near-duplicate ve difficulty/kazanım coverage takibi yapılacak.
+   - ✅ Practice / Calibration / Mock / Duel gibi kullanım uygunluğu flag'leri ve daha yüksek Exam-Grade kalite standardı desteklenecek.
+   - ✅ Taslak/Approved/Active ayrımı ve otomatik Quality Gate yayın standardını koruyacak.
+   - ✅ Gerekli kritik içeriklerde bağımsız double review uygulanabilecek.
+   - ✅ AI/OCR/Jev/model-prompt kalite performansı gerçek review sonuçlarıyla ölçülerek pipeline iyileştirilecek.
+   - ✅ Ana kalite döngüsü Kaynak → Doğrulama → Quality Gate → Review → Active → Gerçek Kullanım → Re-review → Versioned Fix → Impact Repair → Pipeline Learning olacak.
+   - ✅ **İçerik Kalite Kontrolü ürün mimarisi açısından tamamlandı.**
 
-21. ⬜ **Teknik Altyapı**
+21. 🟨 **Teknik Altyapı**
    - Veritabanı
    - Backend
    - Auth
@@ -586,4 +600,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **14. Motivasyon / Oyunlaştırma**.
+Şu anda aktif tartışma konusu: **21. Teknik Altyapı**.
