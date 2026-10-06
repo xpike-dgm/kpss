@@ -297,19 +297,28 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
     - Gerçek kullanım verisi arttıkça puan tahmini, net gereksinimi ve gelişim potansiyeli yeniden kalibre edilecektir.
     - Mimari düzeyde açık soru kalmamıştır; kesin KPSS puan dönüşümleri ve güncel sınav parametreleri uygulama aşamasında doğrulanmış güncel verilere göre yapılandırılacaktır.
 
-12. 🟨 **AI Öğretmen**
-    - Soru açıklama
-    - Konu anlatımı
-    - Kullanıcının seviyesine göre anlatım
-    - Takip soruları
-    - Öğrenme sayfasında video/konu bağlamını kullanması
-    - Yanlış soru incelemesinde doğrulanmış çözümü bağlam olarak kullanması
-    - AI'ın ne zaman doğrudan cevap vermesi, ne zaman ipucu/sokratik yönlendirme yapması gerektiği
-    - Akademik doğruluk ve güvenilir kaynak/çözüm bağlamı
-    - Kullanıcı seviyesine göre açıklama derinliği ve dilinin ayarlanması
-    - AI öğretmenin kullanıcıya yeni soru/örnek üretip üretmeyeceği ve bunların kalite kontrolü
+12. ✅ **AI Öğretmen**
+    - Genel chatbot değil; soru bankası, konu öğrenme, yanlışlar, notlar ve adaptif sistemle bağlamlı öğretim katmanı olacak.
+    - Soru ekranında ders/konu/alt konu/soru/şıklar/doğrulanmış çözüm/kullanıcı cevabı bağlamını otomatik kullanacak.
+    - Video/öğrenme ekranında konu, video, bölüm, mümkünse transcript ve mevcut zaman damgasını kullanabilecek.
+    - Açıklama derinliği kullanıcının gerçek öğrenme durumuna göre ayarlanacak.
+    - Varsayılan cevap kısa ve doğrudan olacak; Daha basit / Detaylı / Adım adım / Örnek / Benzer soru gibi genişletmeler bulunabilecek.
+    - İpucu → daha güçlü ipucu → tam çözüm akışı desteklenecek; tam çözüm isteyen kullanıcı gereksiz yere engellenmeyecek.
+    - Yanlış şık ve çeldirici analizi yapabilecek; kullanıcının seçtiği cevabın neden yanlış olduğunu açıklayabilecek.
+    - KPSS odaklı bağımsız konu anlatımı yapabilecek.
+    - Geçmiş yanlışlar, alt konu hata örüntüleri ve hata nedenlerini kişiselleştirme bağlamı olarak kullanabilecek.
+    - AI Öğretmen ile AI Çalışma Koçu ayrı sorumluluklar olarak tutulacak.
+    - Kayıtlı sorularda doğrulanmış doğru cevap ve çözüm akademik gerçek kaynağı olacak; AI bunları kendi başına değiştirmeyecek.
+    - Çelişki fark edilirse yeni cevap uydurmak yerine hatalı soru bildirim akışına yönlendirecek.
+    - AI benzer soru/örnek üretebilecek; kalite kontrolden geçmemiş AI pratik soruları akademik seviye puanını etkilemeyecek.
+    - AI sohbetleri ders/konu bazlı oturumlar halinde saklanabilecek.
+    - Yararlı AI açıklamaları Notlarıma ekle ile ilgili konu notlarına kaydedilebilecek.
+    - Gerçek Sınav Modu sırasında AI kapalı; sınav sonrasında inceleme aşamasında açık olacak.
+    - 10 soruluk adaptif testin cevaplama aşamasını bozmayacak; ağırlıklı olarak Testi Bitir sonrasında kullanılacak.
+    - Ton destekleyici olacak fakat aşırı yapay motivasyon dili kullanılmayacak; kısa/normal/detaylı anlatım tercihleri desteklenebilecek.
+    - Mimari düzeyde ana kararlar tamamlandı; teknik model/maliyet/transcript/moderasyon ayrıntıları Teknik Altyapı başlığına bırakıldı.
 
-13. ⬜ **AI Çalışma Koçu**
+13. 🟨 **AI Çalışma Koçu**
     - Bugün ne çalışmalıyım?
     - Bu hafta neye odaklanmalıyım?
     - Neden ilerleyemiyorum?
@@ -402,4 +411,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Şu anda aktif tartışma konusu: **12. AI Öğretmen**.
+Şu anda aktif tartışma konusu: **13. AI Çalışma Koçu**.
