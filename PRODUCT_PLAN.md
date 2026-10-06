@@ -829,7 +829,32 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
   - **Readiness:** bugün gerçek sınava ne kadar hazır olunduğu.
 - KPSS Yolculuk Haritası / Aşamalar alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin aşama adları, görsel rota tasarımı, çok sinyalli geçiş eşikleri ve milestone kataloğu daha sonra veri/denge/UI aşamasında netleştirilecektir.
 
-## 33. Henüz planlanacak büyük alanlar
+## 33. Sürpriz Ödüller / Özel Anlar — kararlaştırıldı
+- Özel Anlar, kullanıcının gerçek çalışma geçmişindeki nadir ve anlamlı gelişmeleri özel biçimde vurgulayacaktır.
+- Ödül hakkı rastgele olmayacaktır; rastgelelik yalnızca sunum varyasyonunda kullanılabilir.
+- Şansa dayalı kutu/ödül sistemi, rastgele büyük XP avantajı veya kullanıcıyı farm etmeye iten mekanikler kullanılmayacaktır.
+- Özel Anlar; ilkler, kişisel rekorlar, geri dönüşler, istikrar, akademik kırılma noktaları, yolculuk aşamaları ve nadir anlamlı davranış kombinasyonlarından doğabilecektir.
+- Başarım ile Özel An ayrılacaktır: başarım önceden tanımlı milestone, Özel An ise kullanıcının yolculuğundaki bağlamsal ve anlamlı olaydır.
+- Kişisel rekorlar yalnızca karşılaştırılabilir koşullarda üretilecektir.
+- Aynı özel an türü sık tekrarlanmayacak; tür bazlı tekrar sınırı/cooldown uygulanacaktır.
+- Özel Anlar seyrek ve kişiselleştirilmiş olacaktır; her kullanıcı aynı anları aynı sırada görmeyecektir.
+- Gizli başarımların küçük bir bölümü Özel An sunumuyla açılabilir.
+- Özel An ödülleri çoğunlukla hatıra kartı, rozet, unvan, banner varyantı veya küçük kozmetik olacaktır; küçük XP bonusu verilebilse de ana XP ekonomisinin yerini almayacaktır.
+- Çok nadir bir Özel An mutlaka büyük ödül vermek zorunda değildir; yalnızca kalıcı bir hatıra kartı da yeterli olabilir.
+- Ayrı bir **Önemli Anlar / Hatıra Kartları** bölümü bulunabilir ve olaylar tarihleriyle saklanabilir.
+- Hatıra kartları ileride sosyal sistemde kullanıcı isterse paylaşılabilir; otomatik paylaşım yapılmayacaktır.
+- Kötü performans “özel başarısızlık anı” olarak koleksiyonlaştırılmayacaktır; sistem yapıcı gelişim ve geri dönüşleri öne çıkaracaktır.
+- Sistem AI olmadan çalışacaktır. AI Koç yalnızca açıklama dilini zenginleştirebilir.
+- Özel An sunumları kısa, atlanabilir ve olayın önemine göre farklı yoğunlukta olacaktır.
+- Kullanıcı **Özel Anları Göster** ayarını kapatabilecektir; temel başarımlar ve milestone'lar etkilenmeyecektir.
+- Sistem FOMO yaratmayacak; kullanıcı belirli bir gün giriş yapmadığı için hak ettiği geçmiş bir özel anı kaybetmeyecektir.
+- Sonuç ekranı hızlı geçilse bile Özel An geçmişe kaydedilecek ve sonradan görülebilecektir.
+- Bazı Özel Anlar hiçbir XP/kozmetik vermeden yalnızca anlamlı bir geri bildirim ve hatıra kartı olabilir.
+- Kullanıcıya “bu neden geldi?” sorusunun anlaşılır cevabı verilecek; ancak sömürülebilecek kesin formül gösterilmeyecektir.
+- Temel amaç, uzun vadede kullanıcının kendi **KPSS çalışma tarihçesini** oluşturabilmesidir.
+- Sürpriz Ödüller / Özel Anlar alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin katalog, tekrar sınırları, nadirlik ve görseller daha sonra içerik/denge/UI aşamasında netleştirilecektir.
+
+## 34. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
