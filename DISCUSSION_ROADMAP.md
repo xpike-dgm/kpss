@@ -453,13 +453,27 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Kozmetik hedefleri program motorunun akademik önerilerini değiştirmeyecek.
       - Reduce-motion, sade profil ve efekt azaltma tercihleri desteklenecek.
       - ✅ **Kozmetik Ödüller / Profil Kişiselleştirme alt sistemi ürün mimarisi açısından tamamlandı.**
-    - 🟨 **Sıradaki alt konu: KPSS Yolculuk Haritası / Aşamalar**
-      - Hazırlık süreci görsel bir ilerleme yolculuğuna dönüştürülecek mi?
-      - Başlangıç → Temel Atma → Gelişim → Güçlenme → Deneme Dönemi → Sınava Hazır gibi aşamalar kullanılmalı mı?
-      - Aşamalar yalnızca XP'ye mi, gerçek akademik ilerlemeye mi, yoksa ikisinin birleşimine mi bağlanmalı?
-      - Harita gerçek çalışma önerilerini nasıl desteklemeli?
-      - Kullanıcı akademik olarak geri düştüğünde görsel aşama geri alınmalı mı?
-      - Yolculuk haritası oyun hissi verirken profesyonel KPSS deneyimini nasıl korumalı?
+    - ✅ **KPSS Yolculuk Haritası / Aşamalar kabul edildi.**
+      - Yolculuk Haritası oyuncu level'ından ayrı olacak; level emeği, yolculuk ise hazırlık sürecindeki büyük aşamayı temsil edecek.
+      - Aşamalar yalnızca XP'ye değil; konu kapsamı, doğrulanmış performans, güven, retention, önkoşullar, yanlışlar, denemeler ve zaman yönetimi gibi gerçek akademik sinyallere dayanacak.
+      - Başlangıç → Temel Atma → Gelişim → Güçlenme → Deneme Dönemi → Final Hazırlığı/Sınav Dönemi biçiminde yaklaşık altı ana aşama kullanılacak.
+      - Yolculuk aşaması ile gerçek sınav readiness'i ayrı sistemler olacak.
+      - Geçişler tek eşikle değil çoklu kanıtla yapılacak; kullanıcıya karmaşık formül gösterilmeyecek.
+      - Ana aşama bir kez kazanıldıktan sonra geri alınmayacak; güncel akademik durum/readiness gerektiğinde düşebilecek.
+      - Harita özellik kilidi olmayacak ve program motorunun yerini almayacak.
+      - Sınava kalan süre tek başına kullanıcıyı ileri aşamaya taşımayacak.
+      - Görsel dil premium rota/istasyon/kilometre taşı yapısında olacak; aşırı fantastik RPG estetiğine kaçılmayacak.
+      - Kamp, görev, zayıf alan ve deneme gibi kişisel olaylar haritada yan milestone olarak gösterilebilecek.
+      - Sosyal profilde aşama isteğe bağlı gösterilebilecek ancak sıralama/üstünlük ölçütü olmayacak.
+      - Dashboard “şimdi ne yapmalıyım?”, Yolculuk Haritası “genel olarak neredeyim?” sorusunu cevaplayacak.
+      - ✅ **KPSS Yolculuk Haritası / Aşamalar alt sistemi ürün mimarisi açısından tamamlandı.**
+    - 🟨 **Sıradaki alt konu: Sürpriz Ödüller / Özel Anlar**
+      - Sürpriz ödül gerçekten gerekli mi, yoksa tüm ödüller önceden görünür mü olmalı?
+      - Rastgelelik varsa lootbox hissine kaçmadan nasıl kullanılmalı?
+      - Nadir özel anlar hangi gerçek çalışma davranışlarında tetiklenmeli?
+      - Sürpriz ödüller XP/kozmetik/başarım sistemine nasıl bağlanmalı?
+      - FOMO ve kullanıcıyı anlamsız farm davranışına itme nasıl engellenmeli?
+      - Özel anların ne sıklıkta gösterileceği nasıl sınırlandırılmalı?
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
