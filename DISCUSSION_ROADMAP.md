@@ -550,6 +550,18 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ **Mobil / PWA Deneyimi ürün mimarisi açısından tamamlandı.**
 
 19. 🟨 **Admin Paneli**
+   - ✅ **PDF / Kitap İçe Aktarma alt sistemi kabul edildi.**
+     - Tarama/image tabanlı PDF'ler dahil desteklenecek.
+     - Soru metni ve şıklar native metin/matematik olarak oluşturulacak; tüm soru screenshot olarak kaydedilmeyecek.
+     - Gerçek soru görselleri kaynak PDF'den ayrıştırılıp korunacak.
+     - Cevap anahtarı/çözüm eşleme, confidence, batch işleme, provenance, duplicate kontrolü ve yan yana review ekranı olacak.
+     - Büyük PDF'lerde yüksek güvenli sorular toplu review, belirsizler insan inceleme kuyruğuna gidecek.
+   - ✅ **Jev otomatik soru sınıflandırmasında kullanılacak.**
+     - Ders, konu, alt konu, kazanım/beceri, soru tipi ve tahmini zorluk için aday metadata üretecek.
+     - Mevcut taxonomy ID'lerine bağlanacak ve confidence tutulacak.
+     - Düşük güven/çakışma insan review'una gidecek.
+     - Jev zorluk tahmini başlangıç tahmini olacak; gerçek kullanıcı verisi zamanla daha yüksek ağırlık kazanacak.
+     - Jev doğru cevap otoritesi olmayacak; mevcut doğrulama pipeline'ı korunacak.
    - Soru ekleme ve düzenleme
    - Hatalı soru bildirimleri
    - Kullanıcı yönetimi
