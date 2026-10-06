@@ -593,6 +593,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - AI servisleri
    - Yedekleme
    - Performans
+   - Öneri belgesi: `TECHNICAL_INFRASTRUCTURE_PROPOSAL.md` (tartışma taslağı; kabul edilen maddeler `PRODUCT_PLAN.md` içine işlenecek)
 
 ---
 
