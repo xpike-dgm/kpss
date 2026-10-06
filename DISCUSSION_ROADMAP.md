@@ -347,7 +347,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 - Kullanıcı AI özelliklerini tamamen kapatabilir.
 - API anahtarı güvenliği ve sağlayıcı adapter/mapping ayrıntıları Teknik Altyapı başlığında kesinleştirilecektir.
 
-14. 🟨 **Motivasyon / Oyunlaştırma**
+14. ✅ **Motivasyon / Oyunlaştırma**
     - ✅ **KPSS Seviye / Karakter Gelişim Sistemi kabul edildi.**
       - Akademik gizli seviye ile oyuncu/account seviyesi tamamen ayrı tutulacak.
       - Gerçek çalışma faaliyetleri XP verecek; pasif veya anlamsız işlemler XP üretmeyecek.
@@ -467,39 +467,21 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Sosyal profilde aşama isteğe bağlı gösterilebilecek ancak sıralama/üstünlük ölçütü olmayacak.
       - Dashboard “şimdi ne yapmalıyım?”, Yolculuk Haritası “genel olarak neredeyim?” sorusunu cevaplayacak.
       - ✅ **KPSS Yolculuk Haritası / Aşamalar alt sistemi ürün mimarisi açısından tamamlandı.**
-    - 🟨 **Sıradaki alt konu: Sürpriz Ödüller / Özel Anlar**
-      - Sürpriz ödül gerçekten gerekli mi, yoksa tüm ödüller önceden görünür mü olmalı?
-      - Rastgelelik varsa lootbox hissine kaçmadan nasıl kullanılmalı?
-      - Nadir özel anlar hangi gerçek çalışma davranışlarında tetiklenmeli?
-      - Sürpriz ödüller XP/kozmetik/başarım sistemine nasıl bağlanmalı?
-      - FOMO ve kullanıcıyı anlamsız farm davranışına itme nasıl engellenmeli?
-      - Özel anların ne sıklıkta gösterileceği nasıl sınırlandırılmalı?
-    - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
-    - XP sistemi olacak mı, nasıl kazanılacak?
-    - Kullanıcıya görünen genel profil seviyesi olacak mı?
-    - Akademik gizli seviye ile oyunlaştırma seviyesi birbirinden nasıl ayrılacak?
-    - Günlük görev sistemi ve görev tamamlama ödülleri
-    - Çalışma serisi / streak sistemi
-    - Bir gün çalışamayan kullanıcıyı gereksiz yere cezalandırmayan seri tasarımı
-    - Başarımlar ve rozetler
-    - Çözülen soru, tamamlanan konu, deneme ve tekrar gibi gerçek çalışmalara bağlı ödüller
-    - Haftalık görevler
-    - Lig / sıralama sistemi olup olmayacağı
-    - Arkadaşlarla rekabetin oyunlaştırmaya nasıl bağlanacağı
-    - Görsel ilerleme ve seviye atlama animasyonları
-    - Çalışma oturumu sonunda XP, seri, başarım ve ilerleme geri bildirimi
-    - Profil çerçevesi, avatar öğeleri, tema ve unvan gibi kilidi açılabilir kozmetik ödüller
-    - Sürpriz ödüller olup olmayacağı
-    - KPSS hazırlığını görsel bir yolculuk / ilerleme haritasına dönüştürme fikri
-    - “Başlangıç → Temel Atma → Gelişim → Güçlenme → Deneme Dönemi → Sınava Hazır” benzeri aşamalar olup olmayacağı
-    - Bu aşamaların yalnızca XP ile mi yoksa gerçek akademik ilerleme ile birlikte mi açılacağı
-    - Adaptif sistemin zayıf alanları kullanıcıya görev/kamp şeklinde sunması
-    - Örneğin “Problemler Kampı” gibi dinamik özel görevler
-    - Kullanıcının sadece siteye girerek veya anlamsız işlem yaparak XP kasmasının engellenmesi
-    - Ödüllerin gerçek öğrenme ve çalışma davranışına bağlı olması
-    - Oyunlaştırmanın profesyonel KPSS hazırlık hissini bozmayacak şekilde nasıl tasarlanacağı
+    - ✅ **Sürpriz Ödüller / Özel Anlar kabul edildi.**
+      - Özel Anlar gerçek ve anlamlı çalışma olaylarından doğacak; ödül hakkı rastgele olmayacak.
+      - İlkler, kişisel rekorlar, geri dönüşler, istikrar, akademik kırılma noktaları ve yolculuk anları desteklenecek.
+      - Şansa dayalı kutu/büyük XP sistemi olmayacak; ana ödüller hatıra kartı, rozet, unvan veya küçük kozmetik olacak.
+      - Aynı tür Özel An sık tekrarlanmayacak; seyrek ve kişiselleştirilmiş olacak.
+      - Önemli Anlar / Hatıra Kartları geçmişi tutulabilecek.
+      - FOMO ve farm davranışı oluşturulmayacak; hak edilen olay sonradan da görülebilecek.
+      - Sistem AI olmadan çalışacak; kullanıcı Özel An sunumlarını kapatabilecek.
+      - ✅ **Sürpriz Ödüller / Özel Anlar alt sistemi ürün mimarisi açısından tamamlandı.**
+    - ✅ **Motivasyon / Oyunlaştırma ana başlığı tamamlandı.**
+      - Bireysel oyunlaştırma omurgası XP/Level, Streak, Başarımlar, Görevler, Kamplar, Oturum Ödül Sunumu, Kozmetikler, Yolculuk Haritası ve Özel Anlar olarak tamamlandı.
+      - Lig/sıralama ve arkadaşlarla rekabet gibi sosyal oyunlaştırma kararları Meta Oyun ve Arkadaş Sistemi başlıklarına taşındı.
+      - Kesin sayısal denge, kataloglar ve görsel üretim ayrıntıları uygulama/denge/UI aşamalarında netleştirilecek.
 
-15. ⬜ **Sürekli Gelişim / Meta Oyun Sistemi**
+15. 🟨 **Sürekli Gelişim / Meta Oyun Sistemi**
     - Ürünün yalnızca “KPSS soru çözme sitesi” gibi hissettirmeyip, kullanıcının devamlı gelişimini takip ettiği yarı oyun deneyimine dönüşmesi ayrıca tartışılacak.
     - Çalışma kronometresi bu sistemin önemli girdilerinden biri olabilir.
     - Bugün / bu hafta / bu ay en çok çalışan kullanıcılar için leaderboard olup olmayacağı.
