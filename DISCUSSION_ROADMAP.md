@@ -398,14 +398,25 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Anti-farm kuralları benzersiz/geçerli soru, gerçek aktif çalışma ve gerçekçi deneme davranışını esas alacak.
       - Kazanılmış başarım geri alınmayacak.
       - ✅ **Başarımlar ve Rozetler alt sistemi ürün mimarisi açısından tamamlandı.**
-    - 🟨 **Sıradaki alt konu: Günlük / Haftalık Görev Sistemi**
-      - Görevler kullanıcıya baskı kurmadan nasıl motive edecek?
-      - Günlük görevler sabit mi, kişiye özel mi olacak?
-      - Haftalık görevler nasıl farklılaşacak?
-      - Görevler program motorunun önerileriyle nasıl uyumlu olacak?
-      - Tamamlanmayan görevler borç olarak birikecek mi?
-      - Görev ödülleri XP/başarım/kozmetik sistemine nasıl bağlanacak?
-      - Farm edilebilir veya anlamsız görevler nasıl engellenecek?
+    - ✅ **Günlük / Haftalık Görev Sistemi kabul edildi.**
+      - Görevler program motorunun oyunlaştırılmış uzantısı olacak; ayrı karar motoru olmayacak.
+      - Günlük görevler kişiye özel, az sayıda ve kısa; haftalık görevler daha geniş davranış hedefleri olacak.
+      - Tamamlanmayan görevler borç olarak birikmeyecek.
+      - Kullanıcı uygun alternatif görev seçebilecek; görev değişimi kolay görev farmına dönüşmeyecek.
+      - Görev çalışması normal XP verecek; görev tamamlama yalnızca küçük ek bonus üretebilecek.
+      - Görev tamamlamak streak için zorunlu olmayacak.
+      - Öğrenme, Test, Tekrar, Yanlış, Deneme, Denge ve Hız gibi görev türleri desteklenebilecek.
+      - Kullanıcı görev sistemini kapatabilecek; sistem AI olmadan da çalışacak.
+      - Dashboard özeti ve ayrı Görevler ekranı bulunabilecek.
+      - Çok aşamalı ihtiyaçlar Görev Zinciri / Kamp yapısına dönüşebilecek.
+      - ✅ **Günlük / Haftalık Görev alt sistemi ürün mimarisi açısından tamamlandı.**
+    - 🟨 **Sıradaki alt konu: Görev Zincirleri / Kamplar**
+      - Normal görevden ne zaman daha uzun zincire geçilmeli?
+      - Zincir kaç aşamalı olmalı ve nasıl tamamlanmalı?
+      - Zayıf konular için dinamik zincir üretilecek mi?
+      - Ödül yapısı normal görevlerden nasıl ayrılmalı?
+      - Tamamlanmayan zincirler borç/ceza üretmeli mi?
+      - Kullanıcı kendi isteğiyle zincir başlatabilmeli mi?
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
