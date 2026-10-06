@@ -369,6 +369,14 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Sürekli 2X XP temel ekonomi yapılmayacak.
       - İlk sürümde coin/mağaza yok; ana ekonomi XP → Level → Ödül olacak.
       - Kesin XP sayıları ve katsayıları sonradan değiştirilebilir denge parametreleri olarak tutulacak.
+      - ✅ **XP / Level alt sistemi ürün mimarisi açısından tamamlandı.**
+      - Kesin sayısal denge, kozmetik kataloğu ve seviye 100 sonrası sistem uygulama/gerçek kullanım verisi aşamasına bırakıldı.
+    - 🟨 **Sıradaki alt konu: Streak / Çalışma Serisi Sistemi**
+      - Bir gün kaçırıldığında seri tamamen sıfırlanmalı mı?
+      - Serinin çalışma baskısına dönüşmemesi nasıl sağlanacak?
+      - Günlük seri ile uzun dönem istikrar ayrı mı tutulacak?
+      - Seri koruma / telafi mekanizması olacak mı?
+      - Serinin XP, profil ve sosyal görünürlükle ilişkisi nasıl olacak?
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
