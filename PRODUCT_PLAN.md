@@ -736,7 +736,46 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Oyunlaştırma üçüncü soruyu destekleyecek; ilk iki sorunun önüne geçmeyecektir.
 - Oturum Sonu Geri Bildirimi / Ödül Sunumu alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin animasyon süreleri, sesler, görsel efekt yoğunluğu ve kart yerleşimleri UI/UX aşamasında netleştirilecektir.
 
-## 31. Henüz planlanacak büyük alanlar
+## 31. Kozmetik Ödüller / Profil Kişiselleştirme — kararlaştırıldı
+- Kozmetik sisteminin amacı akademik avantaj vermek değil, kullanıcının hesabına zamanla **kimlik, geçmiş ve kişiselleştirme hissi** kazandırmaktır.
+- Sosyal profil; avatar/profil görseli, oyuncu seviyesi, seçili unvan, profil çerçevesi, banner, seçilmiş rozet vitrini ve kullanıcının isterse göstereceği streak/istikrar bilgilerini içerebilir. Gizli akademik seviye sosyal profile taşınmayacaktır.
+- Kozmetikler ayrı slotlarda yönetilecektir: **Profil Çerçevesi, Banner, Unvan, Avatar/Avatar Öğesi, Rozet Vitrini, Tema ve Çalışma Ekranı Kozmetiği** gibi.
+- Profil çerçeveleri ve bannerlar sosyal profilin en görünür kişiselleştirme araçlarından olacaktır. Hareketli öğeler desteklenebilir ancak dikkat dağıtıcı yanıp sönme/yoğun efektlerden kaçınılacaktır.
+- Unvanlar level, başarım, streak, kamp, deneme veya başka anlamlı kilometre taşlarından açılabilir. Ölçülmeyen akademik üstünlüğü iddia eden “deha/uzman” gibi unvanlardan kaçınılacaktır.
+- İlk sürüm avatar sistemi basit tutulabilir: kaliteli hazır avatarlar ve uygun olduğunda profil fotoğrafı. Parça parça karakter oluşturma sistemi ileride değerlendirilebilir.
+- Avatar aksesuarları yalnızca kozmetik olacaktır; akademik statü veya avantaj ifade etmeyecektir.
+- Rozet Vitrini daha önce kararlaştırıldığı gibi sınırlı sayıda seçili başarımı (yaklaşık 3–5) sosyal profilde sergilemeye izin verecektir.
+- Açık/Koyu mod, erişilebilirlik ve temel kullanılabilirlik özellikleri ödül arkasına kilitlenmeyecektir. Kozmetik temalar yalnızca alternatif görsel stiller, vurgu renkleri ve yüzey/motif seçenekleri sunacaktır.
+- Soru çözme ve gerçek sınav ekranlarında kozmetik kullanım çok sınırlı tutulacaktır. İşlevsel renkler, kontrast, doğru/yanlış durumu ve ana navigasyon kozmetik temadan bağımsız kalacaktır.
+- Kilitli kozmetiklerin açılma koşulları gizli başarım ödülleri dışında açıkça gösterilecektir; örneğin level, başarım veya streak kilometre taşı.
+- Lootbox, rastgele kutu veya şansa dayalı kozmetik kazanımı kullanılmayacaktır.
+- İlk sürümde ayrı coin/mağaza sistemi olmayacaktır. Temel akış **gerçek çalışma → level/başarım/milestone → kozmetik açılması** şeklinde kalacaktır.
+- Kozmetiklerde **Standart / Nadir / Destansı / Efsanevi** gibi nadirlik katmanları kullanılabilir. Yüksek nadirlik gerçekten daha özel koşullara bağlanacak ve özellikle Efsanevi ödüller sınırlı tutulacaktır.
+- Kozmetik kaynakları çeşitlenecektir: level, başarım, streak, kamp, deneme, kişisel rekor ve ileride sosyal/meta etkinlikler.
+- Aynı kozmetik ikinci kez “duplicate item” olarak verilmez. Bir kez açılan ödül kalıcıdır.
+- Önceden kazanılmış kozmetikler streak bozulması, akademik performans düşüşü veya uzun ara nedeniyle geri alınmayacaktır.
+- Ayrı bir **Koleksiyon** ekranı açılmış/kilitli kozmetikleri kategori bazında gösterebilir; ancak kullanıcıyı zorlayıcı yüzde 100 tamamlama/FOMO tasarımından kaçınılacaktır.
+- Süreli etkinlik kozmetikleri ileride kullanılırsa sert “şimdi almazsan sonsuza kadar yok” modeli temel yaklaşım olmayacaktır; mümkün olduğunda yeniden erişim veya alternatif kazanım yolu düşünülecektir.
+- Profilde tek bir **Düzenle** modu üzerinden avatar, çerçeve, banner, unvan ve rozet vitrini birlikte düzenlenebilecektir.
+- Kullanıcı kilitli kozmetiklerin profilinde nasıl görüneceğini önizleyebilecek ancak açılmadan kullanamayacaktır.
+- Yeni açılan kozmetik sonuç ekranından **Şimdi Kullan / Sonra** seçeneğiyle doğrudan etkinleştirilebilecektir.
+- Birden fazla profil görünümü/loadout ileride eklenebilir ancak ilk sürüm için zorunlu değildir.
+- Sosyal profilde kozmetikler görünür olabilir; netler, zayıf konular ve ayrıntılı akademik istatistiklerin paylaşımı otomatik olmayacak ve sosyal/gizlilik başlığında ayrıca kararlaştırılacaktır.
+- Bazı kişiselleştirmeler yalnızca kullanıcının kendi dashboard/çalışma deneyiminde görünebilir; sosyal gösterim zorunlu değildir.
+- Kullanıcı **kozmetik efektleri azalt / sade profil** benzeri seçeneklerle görünümü sadeleştirebilecektir.
+- Hareketli kozmetikler reduce-motion ve daha önce seçilmiş animasyon azaltma tercihlerine uyacak; gerektiğinde statik sürümleri gösterilecektir.
+- Varsayılan profil ve tema zaten kaliteli olacaktır. Kullanıcının iyi bir arayüz elde etmek için kozmetik kasması gerekmeyecektir.
+- Kozmetik hedefleri program motorunun akademik kararlarını değiştirmeyecektir; kullanıcı ödüle yakın diye daha az faydalı çalışma önerilmeyecektir.
+- Dashboard'da yaklaşan önemli kozmetik ödül küçük biçimde gösterilebilir; ancak ödül uğruna akademik akış bozulmayacaktır.
+- Bazı özel kozmetikler dengeli çalışma kombinasyonlarından açılabilir; sadece tek bir metriği spamlamak yerine öğrenme + tekrar + deneme + yanlış güçlendirme gibi sağlıklı davranışların bileşimi ödüllendirilebilir.
+- **KPSS yolculuğu** ve ders temalı koleksiyonlar kullanılabilir. Bunlar estetik tercih sağlar; akademik uzmanlık iddiası taşımaz.
+- Sosyal etkinlik/turnuva/topluluk kozmetikleri ileride Meta Oyun/Sosyal sistemlerde ayrıca ele alınacaktır.
+- Kozmetiklerde kazanma/açılma tarihi gösterilebilir; böylece ödüller hesabın yolculuk anılarına dönüşebilir.
+- Profilin üst bölümünde avatar + çerçeve, oyuncu level'ı, seçili unvan, banner, 3–5 rozet vitrini ve isteğe bağlı seri bilgisi yer alabilir; gizli akademik puan/zayıf alanlar burada gösterilmeyecektir.
+- Temel ilke: **Kozmetik “daha güçlü oldum” değil, “hesabımın kimliği ve geçmişi oluştu” hissini vermelidir.**
+- Kozmetik Ödüller / Profil Kişiselleştirme alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin kozmetik kataloğu, görsel stiller, nadirlik dağılımı ve ilk sürüm içerik sayıları UI/UX ve içerik üretimi aşamasında netleştirilecektir.
+
+## 32. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
