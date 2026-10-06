@@ -775,7 +775,61 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Temel ilke: **Kozmetik “daha güçlü oldum” değil, “hesabımın kimliği ve geçmişi oluştu” hissini vermelidir.**
 - Kozmetik Ödüller / Profil Kişiselleştirme alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin kozmetik kataloğu, görsel stiller, nadirlik dağılımı ve ilk sürüm içerik sayıları UI/UX ve içerik üretimi aşamasında netleştirilecektir.
 
-## 32. Henüz planlanacak büyük alanlar
+## 32. KPSS Yolculuk Haritası / Aşamalar — kararlaştırıldı
+- KPSS hazırlığı kullanıcıya genel konumunu gösteren ayrı bir **Yolculuk Haritası** ile görselleştirilecektir.
+- Yolculuk Haritası oyuncu level'ından tamamen farklı anlam taşıyacaktır:
+  - **Oyuncu Level:** gerçek çalışma ve hesap gelişimi.
+  - **KPSS Yolculuğu:** sınava hazırlık sürecinin hangi büyük aşamasında olunduğu.
+- Yolculuk aşaması yalnızca XP'ye bağlanmayacaktır. Konu kapsamı, doğrulanmış akademik kanıt, güven, önkoşullar, retention, yanlışlar, branş/tam deneme verileri, hız/zaman yönetimi ve dersler arası kapsam gibi gerçek hazırlık sinyalleri kullanılacaktır.
+- XP yolculuk aşamasının belirleyici akademik ölçütü olmayacaktır; gerekli görülürse yalnızca yardımcı bağlamsal sinyal olabilir.
+- İlk ana aşama yapısı yaklaşık altı büyük bölümden oluşacaktır:
+  1. **Başlangıç** — kalibrasyon ve kullanıcı profilinin oluşması.
+  2. **Temel Atma** — temel konular/önkoşullar ve büyük bilgi boşluklarının kapatılması.
+  3. **Gelişim** — konu kapsamının genişlemesi ve daha fazla güvenilir performans verisi oluşması.
+  4. **Güçlenme** — yanlış, retention, zayıf alt konu ve hız problemlerinin aktif güçlendirilmesi.
+  5. **Deneme Dönemi** — branş/tam deneme ve zaman yönetiminin ağırlığının artması.
+  6. **Final Hazırlığı / Sınav Dönemi** — yeni içerikten çok deneme, retention, kritik zayıflıklar ve sınav stratejisinin öne çıkması.
+- **“Sınava Hazır”** ifadesi yolculuk aşaması adı olarak kullanılmayacaktır; çünkü gerçek sınav readiness'i ayrı çok boyutlu sistemdir.
+- Yolculuk aşaması “hazırlık sürecinin hangi bölümündesin?”, readiness ise “bugün sınava ne kadar hazırsın?” sorusunu cevaplayacaktır.
+- Aşama geçişi tek bir yüzde veya tek eşikle olmayacak; her aşama için birden fazla gerçek akademik sinyal ve minimum koşul birlikte değerlendirilecektir.
+- Backend çok sinyalli olabilir ancak kullanıcıya formül gösterilmeyecektir. Kullanıcı mevcut aşamasını, bu aşamadaki odaklarını ve bir sonraki aşama için anlaşılır genel ihtiyaçlarını görecektir.
+- Aşama ilerlemesinde sahte hassasiyet üreten kesin yüzdelerden kaçınılacaktır. Gerekirse sayısız ilerleme barı veya “başlangıç / ilerliyor / aşamaya yakın” gibi kaba durumlar kullanılacaktır.
+- Ana yolculuk doğrusal büyük aşamalardan oluşabilir; kişisel kamp, zayıflık, deneme ve özel çalışma olayları yan rota/kilometre taşı olarak haritada gösterilebilir.
+- Yolculuk geçmişi tarihsel olarak saklanacaktır; kullanıcı hangi büyük aşamaya ne zaman geçtiğini görebilecektir.
+- Bir kez geçilmiş ana yolculuk aşaması sonradan akademik düşüş nedeniyle geri alınmayacaktır. **Yolculuk milestone'u kalıcı**, güncel akademik durum/readiness ise gerektiğinde düşebilir.
+- Geri alınmayan aşama yapısı nedeniyle aşama geçişleri yeterli kanıt oluşmadan erken verilmemeli; sistem gerektiğinde “bir sonraki aşamaya yakınsın” durumunda beklemelidir.
+- Aşama geçişi önemli ama abartısız bir oyunlaştırma olayı olarak gösterilebilir; geçişin akademik anlamı kısa şekilde açıklanacaktır.
+- Aşama geçişi küçük XP, başarım, unvan, banner veya profil çerçevesi gibi kalıcı kozmetik ödüller açabilir; ancak ödüller akademik kriterleri değiştirmeyecektir.
+- Yolculuk aşamaları özellik kilidi olmayacaktır. Kullanıcı ilgili aşamaya ulaşmadan da deneme vb. özellikleri kullanabilir; aşama yalnızca sistem önerilerinin bağlamını ve ağırlığını etkileyebilir.
+- Program motoru mevcut aşamayı bağlamsal sinyal olarak kullanabilir; ancak asıl karar yine güncel kullanıcı verisi, önkoşullar ve akademik fayda üzerinden verilecektir.
+- Sınava kalan süre aşama bağlamını etkileyebilir fakat tek başına kullanıcıyı Final Hazırlığı gibi ileri aşamaya taşımayacaktır.
+- Genel yolculuk haritasının yanında dersler için daha işlevsel mini durum etiketleri kullanılabilir; ana altı aşama her derse birebir zorla uygulanmayacaktır.
+- Görsel tasarım aşırı fantastik RPG dünyası olmayacak; premium rota, istasyon, kamp noktası ve kilometre taşı metaforları tercih edilecektir.
+- Ana aşamaların kendi görsel atmosferi olabilir ancak bu estetik katman akademik mantığı değiştirmeyecektir.
+- Harita yaklaşan kamp, zayıf alan, deneme veya önemli milestone gibi kişisel olayları gösterebilir.
+- Aktif görev/kamp ve “sonraki yararlı hareket” haritada görsel bağlama oturtulabilir; harita ayrı bir çalışma karar motoru olmayacaktır.
+- Yolculuk aşaması XP/streak farmı ile açılmayacak; gerçek hazırlık ilerlemesinin oyunlaştırılmış sunumu olacaktır.
+- Mevcut aşamanın ayrıntısında **bu aşamada yaptıkların / geliştirilmesi gerekenler / sonraki aşamaya genel ihtiyaçlar** gösterilebilecektir.
+- Kullanıcıya “bir sonraki aşamaya 300 soru kaldı” gibi farm edilebilir sayısal eşikler gösterilmeyecektir.
+- Yolculuk aşaması sosyal profilde isteğe bağlı gösterilebilir; ancak aşama bir kullanıcıyı diğerinden akademik olarak üstün ilan eden sıralama ölçütü olmayacaktır.
+- Ana aşamalara bağlı kalıcı başarımlar/rozetler ve daha küçük yolculuk milestone'ları oluşturulabilir.
+- Ana yolculuk aşamaları sık değişmeyecek; birkaç haftalık/aylık hazırlık dönemlerini temsil eden büyük bölümler olacaktır.
+- Kullanıcı onboarding'de güçlü çıkarsa Başlangıç aşamasında uzun süre zorunlu tutulmayacaktır; ancak ileri aşamaya yerleşmek yalnızca self-report ile değil, yeterli doğrulanmış kanıtla yapılacaktır.
+- Yolculuk Haritası dashboard'un yerini almayacaktır:
+  - **Dashboard:** “Şimdi ne yapmalıyım?”
+  - **Yolculuk Haritası:** “Genel hazırlık sürecinde neredeyim?”
+- Harita ayrı bir **Yolculuk** ekranında veya uygun merkez içinde ayrıntılı, dashboard'da ise küçük özet olarak gösterilebilir.
+- Temel sistem ayrımı korunacaktır:
+  - **XP/Level:** emek ve hesap gelişimi.
+  - **Streak:** devamlılık.
+  - **Başarımlar:** özel kilometre taşları.
+  - **Görevler:** mevcut yararlı küçük adımlar.
+  - **Kamplar:** belirli akademik problemi çözmeye yönelik mini programlar.
+  - **KPSS Yolculuğu:** genel hazırlık sürecindeki büyük konum.
+  - **Readiness:** bugün gerçek sınava ne kadar hazır olunduğu.
+- KPSS Yolculuk Haritası / Aşamalar alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin aşama adları, görsel rota tasarımı, çok sinyalli geçiş eşikleri ve milestone kataloğu daha sonra veri/denge/UI aşamasında netleştirilecektir.
+
+## 33. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
