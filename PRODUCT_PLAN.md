@@ -759,7 +759,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Profilde tek bir **Düzenle** modu üzerinden avatar, çerçeve, banner, unvan ve rozet vitrini birlikte düzenlenebilecektir.
 - Kullanıcı kilitli kozmetiklerin profilinde nasıl görüneceğini önizleyebilecek ancak açılmadan kullanamayacaktır.
 - Yeni açılan kozmetik sonuç ekranından **Şimdi Kullan / Sonra** seçeneğiyle doğrudan etkinleştirilebilecektir.
-- Birden fazla profil görünümü/loadout ileride eklenebilir ancak ilk sürüm için zorunlu değildir.
+- Birden fazla profil görünümü/loadout desteklenebilir; kesin sayı ve kullanım biçimi UI/UX aşamasında netleştirilecektir.
 - Sosyal profilde kozmetikler görünür olabilir; netler, zayıf konular ve ayrıntılı akademik istatistiklerin paylaşımı otomatik olmayacak ve sosyal/gizlilik başlığında ayrıca kararlaştırılacaktır.
 - Bazı kişiselleştirmeler yalnızca kullanıcının kendi dashboard/çalışma deneyiminde görünebilir; sosyal gösterim zorunlu değildir.
 - Kullanıcı **kozmetik efektleri azalt / sade profil** benzeri seçeneklerle görünümü sadeleştirebilecektir.
@@ -773,7 +773,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Kozmetiklerde kazanma/açılma tarihi gösterilebilir; böylece ödüller hesabın yolculuk anılarına dönüşebilir.
 - Profilin üst bölümünde avatar + çerçeve, oyuncu level'ı, seçili unvan, banner, 3–5 rozet vitrini ve isteğe bağlı seri bilgisi yer alabilir; gizli akademik puan/zayıf alanlar burada gösterilmeyecektir.
 - Temel ilke: **Kozmetik “daha güçlü oldum” değil, “hesabımın kimliği ve geçmişi oluştu” hissini vermelidir.**
-- Kozmetik Ödüller / Profil Kişiselleştirme alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin kozmetik kataloğu, görsel stiller, nadirlik dağılımı ve ilk sürüm içerik sayıları UI/UX ve içerik üretimi aşamasında netleştirilecektir.
+- Kozmetik Ödüller / Profil Kişiselleştirme alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin kozmetik kataloğu, görsel stiller, nadirlik dağılımı ve çıkış içerik sayıları UI/UX ve içerik üretimi aşamasında netleştirilecektir.
 
 ## 32. KPSS Yolculuk Haritası / Aşamalar — kararlaştırıldı
 - KPSS hazırlığı kullanıcıya genel konumunu gösteren ayrı bir **Yolculuk Haritası** ile görselleştirilecektir.
@@ -854,7 +854,129 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Temel amaç, uzun vadede kullanıcının kendi **KPSS çalışma tarihçesini** oluşturabilmesidir.
 - Sürpriz Ödüller / Özel Anlar alt sistemi ürün mimarisi açısından tamamlanmıştır; kesin katalog, tekrar sınırları, nadirlik ve görseller daha sonra içerik/denge/UI aşamasında netleştirilecektir.
 
-## 34. Henüz planlanacak büyük alanlar
+## 34. Sürekli Gelişim / Meta Oyun Sistemi — kararlaştırıldı
+- Meta oyun, mevcut XP/Level, streak, başarımlar, görevler, kamplar, kozmetikler, yolculuk haritası ve özel anların üstünde duran **uzun vadeli bağlayıcı katman** olacaktır.
+- Meta oyun ayrı bir ikinci kalıcı XP/enerji/coin ekonomisi yaratmayacaktır. Mevcut sistemleri sezon, lig, kişisel rekor, koleksiyon, dönemsel etkinlik ve sosyal rekabet döngüleriyle birleştirecektir.
+- Akademik katman “ne çalışmalıyım?”, meta katman ise “uzun vadede hesabım ve çalışma yolculuğum nasıl gelişiyor?” sorusunu cevaplayacaktır.
+- Meta sistem akademik program motorunu hiçbir zaman override etmeyecek; ödül veya sıralama uğruna daha düşük akademik faydalı çalışma önerilmeyecektir.
+
+### Sezon sistemi
+- Ana uzun vadeli döngü **Sezonlar** olacaktır. Kesin süre daha sonra dengelenecek; yaklaşık birkaç haftalık dönemler mantığı kullanılacaktır.
+- Sezon boyunca kullanıcı, kalıcı oyuncu XP’sinden ayrı **Sezon Puanı** kazanabilecektir.
+- Sezon Puanı yalnızca dönemsel rekabet/ilerleme içindir; sezon bitince yenilenebilir. Kalıcı oyuncu level'ı, başarımlar, kozmetikler, yolculuk ve hatıra geçmişi korunur.
+- Sezon puanı ham çalışma süresine bağlanmayacaktır. Geçerli testler, yeni/benzersiz sorular, retention, yanlış güçlendirme, kamp ilerlemesi, denemeler, konu öğrenme ve dengeli çalışma gibi gerçek davranışlar esas alınacaktır.
+- Aynı etkinlik hem kalıcı XP hem sezon puanı üretebilir ancak iki sistemin ağırlıkları farklı amaçlara göre ayarlanabilir.
+- Sezon puanı aynı soru spamı, kolay içerik farmı, kronometre açık bırakma, rastgele deneme tamamlama gibi davranışlara karşı anti-farm koruması kullanacaktır.
+- Gerçek ve uzun süreli kaliteli çalışma sert günlük tavanla cezalandırılmayacaktır; düşük değerli tekrar davranışlarında azalan getiri uygulanabilir.
+
+### Kişisel Sezon Yolu
+- Her sezonda sosyal rekabetten bağımsız **Kişisel Sezon Yolu** bulunacaktır.
+- Kullanıcı anlamlı sezon puanı/milestone'ları ile sezon yolu üzerinde ilerleyerek kozmetik, unvan, banner, rozet ve benzeri kalıcı ödüller açabilir.
+- Sezon Yolu ücretli battle-pass mantığında olmayacaktır; ilerleme yalnızca gerçek çalışmayla sağlanacaktır.
+- Ana sezon ödülleri önceden görülebilir ve şeffaf olacaktır; küçük Özel Anlar sürpriz kalabilir.
+- Sezon Yolu sağlıksız sonsuz grind baskısı yaratmayacak; anlamlı sayıda ana milestone ve isteğe bağlı prestij ilerlemesi mantığı kullanılabilir.
+- Sezon boyunca makul ve gerçek katılım gösteren kullanıcılar temel sezon ödüllerine ulaşabilir; yalnızca en üst yüzdeye ödül verme yaklaşımı kullanılmayacaktır.
+
+### Ligler ve sıralama
+- Sosyal rekabet isteyen kullanıcılar için **isteğe bağlı Lig sistemi** olacaktır.
+- Kullanıcılar benzer dönem/aktivite bağlamında daha küçük rekabet gruplarına yerleştirilebilir; kesin grup boyutu ve lig yapısı sonra dengelenecektir.
+- Lig yükselme/düşme mekanizması olabilir ancak düşüş ağır ceza veya hesap kaybı olarak sunulmayacaktır.
+- Lig seviyesi akademik avantaj sağlamayacaktır; ödüller prestij, profil ve kozmetik tarafında kalacaktır.
+- Lig/sezon adı ve görsel hiyerarşisi profesyonel ama oyun hissi veren yapıda tasarlanacaktır; kesin isimler UI/marka aşamasında netleşecektir.
+- Yeni kullanıcılar uzun süredir aktif kullanıcılarla anlamsız biçimde eşleştirilmeyecek; placement/korumalı başlangıç mantığı kullanılacaktır.
+- Kalıcı oyuncu level'ı sezon veya lig değişiminde sıfırlanmayacaktır.
+- Profilde geçmiş sezon/lig dereceleri ve tarihçesi saklanabilecektir.
+- Sezon ödülleri **katılım ödülü + başarı/prestij varyantı** şeklinde katmanlanabilir.
+- Liglere katılım isteğe bağlı olacaktır; sosyal rekabeti kapatan kullanıcı Sezon Yolu, kişisel rekor, koleksiyon ve diğer meta sistemlerden tam olarak yararlanabilecektir.
+- Sosyal rekabeti kapatan kullanıcı temel ödül sisteminde ikinci sınıf kullanıcıya dönüştürülmeyecektir.
+
+### Leaderboard ilkeleri
+- Tek bir global “en çok çalışan” sıralaması ana meta sistem olmayacaktır.
+- Ham akademik net, ham çalışma süresi veya ham soru sayısı tek başına ana leaderboard metriği olmayacaktır.
+- Gerekirse birkaç ayrı rekabet ekseni kullanılabilir; örneğin **Sezon Genel, İstikrar, Deneme/Geçerli Çalışma Katkısı** gibi.
+- Çok fazla leaderboard açılmayacak; her sıralama neyi ölçtüğünü açıkça anlatacaktır.
+- Akademik gelişim karşılaştırması kullanılacaksa başlangıç noktası, veri güveni ve zorluk farkı normalize edilmelidir; güvenilir değilse sosyal sıralama yerine kişisel rekor olarak gösterilecektir.
+- Aktif çalışma süresi gösterilecekse yalnızca kronometre süresi değil, gerçek etkileşimle desteklenen aktif süre kullanılacaktır.
+- Soru sayısı gösterilecekse geçerli/benzersiz soru ve anti-farm filtreleri kullanılacaktır.
+
+### Kişisel rekabet ve rekorlar
+- Meta sistemde **kendi geçmişinle yarışmak**, sosyal rekabetten daha önemli olacaktır.
+- Ayrı bir **Kişisel Rekor Merkezi**; karşılaştırılabilir deneme performansı, en uzun seri, 30 günlük istikrar, yanlış güçlendirme, hız/doğruluk dengesi, kamp ve benzeri güvenilir rekorları gösterebilir.
+- “Bu haftaki sen vs geçen haftaki sen” gibi dönem karşılaştırmaları yalnızca toplam süreyi değil, çalışma kalitesini ve davranış çeşitliliğini de gösterecektir.
+- AI Koç varsa dönem karşılaştırmasını doğal dille yorumlayabilir; sistem AI olmadan da çalışacaktır.
+
+### Sezon görevleri ve uzun dönem hedefleri
+- Sezon görevleri günlük/haftalık görevlerden farklı, birkaç haftaya yayılan geniş davranış hedefleri olacaktır.
+- Örnek hedefler retention, gerçek sınav denemeleri, yanlış güçlendirme ve dersler arası dengeli çalışma gibi faydalı davranışlara dayanabilir.
+- Sezon görevleri program motorunun akademik önceliklerini bozmayacak; tek konuya zorlayıcı ve farm edilebilir tasarlanmayacaktır.
+- Kullanıcıya zorunlu kota vermeden kişisel haftalık gelişim hedefleri sunulabilir; kaçırılması ceza/borç üretmeyecektir.
+
+### Koleksiyon ve uzun vadeli hesap hissi
+- Meta merkezde sezon koleksiyonları, ders temalı koleksiyonlar, yolculuk rozetleri ve diğer kalıcı setler görülebilecektir.
+- Koleksiyon sistemi FOMO veya zorunlu %100 tamamlama baskısı yaratmayacaktır.
+- Kalıcı level, geçmiş sezon rozetleri, başarımlar, kozmetikler, hatıra kartları ve yolculuk geçmişi hesabın zamanla “yaşlanmış ve gelişmiş” hissini verecektir.
+- Ayrı bir yeni city-builder/üs ekonomisi zorunlu değildir; mevcut profil/yolculuk/meta sistemlerinin uzun vadeli hesap kimliği üretmesi esas alınacaktır.
+
+### Dönemsel etkinlikler ve topluluk hedefleri
+- KPSS çalışma mantığıyla uyumlu dönemsel etkinlikler desteklenecektir; örneğin Deneme Dönemi, Retention Haftası veya Yanlışlardan Öğrenme temaları.
+- Etkinlikler program motorunu override etmeyecek ve kullanıcıyı akademik ihtiyacından uzaklaştırmayacaktır.
+- Topluluk çapında ortak hedefler desteklenebilir; örneğin belirli dönemde toplam geçerli çalışma katkısıyla ortak kozmetik/rozet açılması.
+- Topluluk hedefleri “global boss” benzeri oyun hissi verebilir ancak profesyonel KPSS dili ve akademik fayda korunacaktır.
+- Sezon ve etkinlikler sert FOMO yaratmayacak; kaçırılan bir dönem kullanıcı hesabını kalıcı olarak eksik/işlevsiz bırakmayacaktır.
+
+### Takım ve arkadaş bağlantısı
+- Takım/arkadaş temelli meta özellikler ürün kapsamındadır; ayrıntıları **Arkadaş Sistemi** başlığında sosyal grafik ve gizlilik kararlarıyla birlikte kesinleştirilecektir.
+- Küçük çalışma ekipleri, ortak haftalık hedefler, takım sezon puanı, takım ligleri ve ortak etkinlikler desteklenebilecek ana konseptlerdir.
+- Sosyal profil ve leaderboard görünürlüğü kontrollü olacaktır; net, zayıf konu ve ayrıntılı akademik veri otomatik olarak paylaşılmayacaktır.
+
+### Geri dönüş ve uzun ara
+- Uzun ara veren kullanıcı cezalandırılmayacak; **Geri Dönüş Akışı** ile retention riski, kısa yeniden kalibrasyon ve en yararlı sonraki adım gösterilebilecektir.
+- Kaçırılmış günlük/haftalık/sezon görevleri borç olarak birikmeyecektir.
+- Kullanıcı döndüğünde geçmiş hesap gelişimi korunacak ve sistem o günkü gerçek duruma göre yeniden başlayacaktır.
+
+### Sınava yaklaşma ve sınav sonrası
+- Sınava çok yaklaşıldığında meta oyun arayüz ağırlığı azaltılabilir; deneme, kritik tekrar ve sınav stratejisi daha görünür hale gelir.
+- Meta sistem arka planda ilerlemeye devam edebilir ancak akademik odak önceliklidir.
+- Sınav sonrası hesap “ölmeyecektir”. Tamamlanan KPSS dönemi arşivlenebilir ve yeni sınav dönemi ayrı bir yolculuk olarak başlatılabilir.
+- Önceki dönemler yıl/hedef bazında saklanabilir; kalıcı oyuncu level'ı, başarımlar, kozmetikler ve hesap tarihi korunabilir.
+- Veri modeli kullanıcının sonraki yıllarda farklı KPSS hedef/düzey dönemlerine geçmesini destekleyecek şekilde tasarlanmalıdır.
+
+### Meta Merkez
+- Kullanıcı arayüzünde adı “Meta Oyun” olmak zorunda değildir; **Gelişim / Sezon / Merkez** gibi doğal bir ad kullanılabilir.
+- Meta Merkez; oyuncu level'ı, sezon durumu, Sezon Yolu, lig, kişisel rekorlar, koleksiyon, önemli anlar, sezon geçmişi ve yaklaşan büyük milestone'ları birlikte gösterebilir.
+- Dashboard “şimdi ne yapmalıyım?”, Meta Merkez ise “uzun vadede hesabım/sezonum nasıl ilerliyor?” sorusunu cevaplayacaktır.
+- Kullanıcıya ayrıca anlamsız bir “Meta Güç” birleşik skoru gösterilmeyecektir.
+- Meta ödülleri hiçbir zaman soru zorluğu, AI kalitesi, sınav sonucu veya akademik ayrıcalık sağlamayacaktır.
+
+### Ekonomi sınırları
+- Ayrı coin/mağaza sistemi şu anki ürün tasarımına dahil edilmeyecektir; mevcut XP → Level → Ödül ve sezon/kozmetik yapısı yeterlidir.
+- Level 100 sonrası ayrı Prestij sistemi gerçek denge/ilerleme eğrisi netleşmeden yapay biçimde eklenmeyecektir; bunun ayrıntısı seviye ekonomisi son dengelemesinde kararlaştırılacaktır.
+- Meta sistem yeni para birimleri ekleyerek karmaşıklaştırılmayacaktır.
+
+### Ana meta omurga
+- Ürünün kapsamlı meta omurgası şu bileşenlerden oluşacaktır:
+  - Kalıcı Oyuncu Level'ı
+  - Sezonlar
+  - Kişisel Sezon Yolu
+  - İsteğe bağlı Ligler / Leaderboard'lar
+  - Kişisel Rekor Merkezi
+  - Sezon görevleri ve dönemsel hedefler
+  - Koleksiyon / sezon geçmişi
+  - Dönemsel etkinlikler ve topluluk hedefleri
+  - Geri Dönüş Akışı
+  - Arkadaş/takım meta özellikleri
+  - Çok yıllı KPSS dönem arşivi
+- Sürekli Gelişim / Meta Oyun Sistemi ürün mimarisi açısından tamamlanmıştır; kesin sezon süresi, puan katsayıları, lig boyutları, milestone eşikleri ve ödül kataloğu daha sonra denge/konfigürasyon/UI aşamasında netleştirilecektir.
+
+## 35. Ürün Çıkış Kapsamı İlkesi — kararlaştırıldı
+- Ürün planı **MVP / ilk sürüm / sonra ekleriz** mantığıyla parçalanmayacaktır.
+- Hedef, planlama sürecinde kabul edilen ana sistemlerin tamamını içeren **tek, kapsamlı ve bütünlüklü ürün çıkışı**dır.
+- Bir özellik başka bir başlıkta “daha sonra ele alınacak” denildiğinde bu, sonraki ürün sürümüne ertelendiği anlamına gelmez; yalnızca ürün planlama sırasındaki ilgili tartışma başlığını ifade eder.
+- Kabul edilmiş bir özelliğin detayları UI/UX, teknik mimari, denge veya içerik üretimi aşamasında netleşebilir; bu durum özelliği çıkış kapsamı dışına çıkarmaz.
+- Bundan sonraki planlama metinlerinde “ilk sürümde yapardım / sonraki sürümde eklenir” dili kullanılmayacak; bunun yerine **çıkış kapsamı**, **ürün kapsamı** veya **ilgili başlıkta detaylandırılacak** ifadeleri kullanılacaktır.
+- Yalnızca kullanıcı açıkça kapsam dışı bırakırsa veya daha sonra karar değiştirirse bir özellik ana çıkıştan çıkarılacaktır.
+
+## 36. Henüz planlanacak büyük alanlar
 - Arkadaş ve sosyal özellikler
 - Motivasyon ve gamification
 - Sürekli gelişim / meta oyun sistemi
