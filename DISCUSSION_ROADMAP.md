@@ -424,12 +424,28 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Kullanıcı kampı durdurabilecek; XP/streak cezası veya başarısız etiketi olmayacak.
       - Aktif kamp günlük/haftalık görevlerle entegre olabilecek.
       - ✅ **Görev Zincirleri / Kamplar alt sistemi ürün mimarisi açısından tamamlandı.**
-    - 🟨 **Sıradaki alt konu: Oturum Sonu Geri Bildirimi / Ödül Sunumu**
-      - Test veya çalışma oturumu sonunda hangi oyunlaştırma bilgileri gösterilecek?
-      - XP, level, streak, görev ve başarım ilerlemesi tek ekranda nasıl dengelenecek?
-      - Level-up / başarım animasyonları ne kadar görünür olmalı?
-      - Ödül geri bildirimi akademik sonuç ekranını gölgelememeli mi?
-      - Kullanıcı bu animasyonları azaltıp kapatabilmeli mi?
+    - ✅ **Oturum Sonu Geri Bildirimi / Ödül Sunumu kabul edildi.**
+      - Sonuç akışı Akademik Sonuç → Gelişim → XP/Level → Görev/Streak/Başarım → Sonraki Öneri şeklinde ilerleyecek.
+      - Akademik sonuç her zaman oyunlaştırmadan önce ve daha görünür olacak.
+      - Gizli akademik puan gösterilmeyecek; gelişim insan diliyle anlatılacak.
+      - XP özeti sade, ayrıntısı isteğe bağlı olacak; level-up kısa ve atlanabilir geri bildirimle gösterilecek.
+      - Streak aynı gün tekrar tekrar gösterilmeyecek; görev ve başarımlar uygun oturum sonunda özetlenecek.
+      - Çoklu ödüller tek bir “Bu oturumda kazandıkların” alanında gruplanacak.
+      - Normal / Önemli / Büyük olaylara göre görsel yoğunluk değişecek.
+      - Sesler ve animasyonlar azaltılabilir/kapatılabilir olacak; reduce-motion tercihine uyulacak.
+      - Yanlışları inceleme ve sonraki akademik adım ana CTA olarak kalacak.
+      - Deneme ve Gerçek Sınav Modu sonuçlarında oyunlaştırma akademik analizi gölgelemeyecek.
+      - Düşük performansta sahte kutlama dili kullanılmayacak.
+      - XP kaynakları kategori düzeyinde şeffaf olacak; anti-farm formülü tamamen açılmayacak.
+      - Ödül olayları bir kez kutlanacak, sonrasında merkezlerde/geçmişte erişilebilir olacak.
+      - ✅ **Oturum Sonu Geri Bildirimi / Ödül Sunumu alt sistemi ürün mimarisi açısından tamamlandı.**
+    - 🟨 **Sıradaki alt konu: Kozmetik Ödüller / Profil Kişiselleştirme**
+      - Hangi kozmetik türleri olacak?
+      - Level, başarım, streak ve kamp ödülleri kozmetiklerle nasıl bağlanacak?
+      - Kullanıcı aynı anda hangi kozmetikleri sergileyebilecek?
+      - Nadirlik ve özel efekt sınırları nasıl olacak?
+      - Kozmetikler akademik deneyimi bozmadan nerelerde gösterilecek?
+      - Kullanıcı kozmetik görünürlüğünü azaltıp kapatabilecek mi?
     - Oyunlaştırmanın temel amacı: kullanıcının ders çalışırken hem öğrenmesi hem de eğlenmesi
     - XP sistemi olacak mı, nasıl kazanılacak?
     - Kullanıcıya görünen genel profil seviyesi olacak mı?
