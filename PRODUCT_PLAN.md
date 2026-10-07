@@ -2286,5 +2286,288 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Güvenli varsayılanlar korunurken çekirdek ürün; push, AI, sosyal paylaşım veya geniş telemetry onayına bağımlı olmayacaktır.
 - **25. Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik başlığı ürün mimarisi açısından tamamlanmıştır.**
 
+
+## 48. İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri — kararlaştırıldı
+
+### İçerik fabrikası ana modeli
+- İçerik üretimi tek seferlik import işi değil, ürün boyunca sürekli çalışan **Content Factory** olacaktır.
+- Ana akış: **Kaynak → Rights/Provenance kaydı → Import/Oluşturma → Extraction → Yapılandırma → Taxonomy → Cevap/Çözüm Doğrulama → Duplicate/Similarity → Quality Gate → Human Review → Approved → Active → Gerçek Kullanım → Anomaly/Re-review → Version Fix → Impact Repair**.
+- PDF/kitap/AI çıktısı hiçbir zaman yalnız “oluşturuldu” diye doğrudan canlı öğrenci havuzuna geçmeyecektir.
+
+### İçerik türleri
+- En az şu içerik tipleri ayrı yönetilecektir:
+  - sorular
+  - çözümler
+  - konu özetleri
+  - formül/kural kartları
+  - örnek çözümler
+  - mini understanding check'ler
+  - video/öğretmen mapping'leri ve bölüm metadata'sı
+  - Güncel Bilgiler kartları
+  - deneme şablonları
+- Her içerik tipi kendi kalite gate'lerine sahip olabilir; kritikiyet seviyeleri aynı olmak zorunda değildir.
+
+### Provenance
+- Her içerik sisteme girdiği anda kaynağını/provenance bilgisini taşıyacaktır.
+- Kaynak türü; PDF/kitap, ÖSYM/resmî doküman, insan tarafından özgün üretilmiş, AI destekli üretilmiş, admin manuel giriş vb. olabilir.
+- PDF importlarında mümkün olduğunca dosya hash'i, doküman adı/baskı/sürüm, sayfa, koordinat/bounding box, import batch ve orijinal dosya referansı korunacaktır.
+- Sistem yıllar sonra “bu içerik nereden geldi?” sorusunu cevaplayabilmelidir.
+
+### Rights Status ayrı metadata
+- Kaynak türü ile kullanım hakkı aynı şey değildir.
+- Her kaynak/içerik uygun bir **Rights Status** taşıyacaktır.
+- Başlangıç durum ailesi örneği:
+  - OWNED_ORIGINAL
+  - LICENSED
+  - PERMISSION_CONFIRMED
+  - OPEN_LICENSE / PUBLIC_USE_VERIFIED
+  - PRIVATE_REFERENCE_ONLY
+  - RIGHTS_UNKNOWN
+  - RESTRICTED
+- Kesin enum isimleri teknik aşamada değişebilir; ayrımın mantığı korunacaktır.
+
+### Admin rights override — kabul edilen özel karar
+- Rights Status **zorunlu metadata olacaktır ancak teknik yayın hard gate'i olmayacaktır**.
+- Hak kontrolü yapılmamış, belirsiz veya kısıtlı işaretlenmiş bir kaynak/içerik Admin tarafından açıkça onaylanarak Active yapılabilir.
+- Admin bu durumda **Admin Onayıyla Yayınla / Rights Override** benzeri bilinçli eylem kullanacaktır.
+- Sistem yayın öncesi “kullanım hakkı doğrulanmadı / kısıtlı işaretli” uyarısını açıkça gösterecektir.
+- Override eden admin, zaman, kaynak/içerik ve varsa gerekçe audit log'a yazılacaktır.
+- Rights durumu daha sonra değiştirilebilir; ilgili içerikler toplu review/quarantine/archive akışına alınabilir.
+- Rights durumu akademik kalite eligibility'sinden ayrı tutulacaktır.
+- Exam-Grade içerikte de rights override teknik olarak mümkündür; akademik kalite gate'leri bundan bağımsız şekilde zorunlu kalır.
+- Bu ürün davranışı hukuki uygunluk kararı yerine geçmez; gerçek hukuki/compliance değerlendirme 28. başlıkta ayrıca ele alınacaktır.
+
+### AI'ın içerik üretimindeki rolü
+- AI/OCR/Jev; extraction düzeltme, taxonomy adayı, çözüm taslağı, özet, distractor analizi, benzer soru taslağı ve Güncel Bilgiler taslağı gibi görevlerde yoğun kullanılabilir.
+- AI hiçbir learner-facing içeriği kendi başına Active yapamaz.
+- AI çıktısı Quality Gate ve gerekli review süreçlerinden geçecektir.
+
+### Human review
+- **Her Active soru en az 1 human approval** alacaktır.
+- AI + AI + kod/symbolic kontrol mutabakatı human review gereksinimini ortadan kaldırmaz.
+- Reviewer; bağlam, dil, görsel, taxonomy, cevap/çözüm ve kullanım uygunluğunu birlikte değerlendirecektir.
+
+### Exam-Grade / yüksek riskli double review
+- Exam-Grade ve yüksek riskli içeriklerde daha yüksek kalite standardı uygulanacaktır.
+- Tam KPSS denemesinde kullanılacak, yüksek riskli mevzuat/Güncel Bilgiler veya geçmiş conflict taşıyan içerikler **iki bağımsız human review** gerektirebilir.
+- Exam-Grade kalite kontrolü en az cevap, çözüm, taxonomy, görsel, dil, difficulty, source/provenance ve kullanım eligibility'sini kapsar.
+- Rights override yapılmış olması Exam-Grade akademik review standardını düşürmez.
+
+### İçerik rolleri
+- Sistem rollerini kavramsal olarak **Producer / Reviewer / Senior Reviewer-Publisher** biçiminde ayıracaktır.
+- Kişisel kullanımda aynı kişi birden fazla rolü üstlenebilir; veri modelinde üretici ve onaylayan kimliği yine ayrı kaydedilir.
+
+### Review UX
+- Review ekranı mümkün olduğunca yüksek throughput için tasarlanacaktır.
+- PDF kaynaklı sorularda kaynak sayfa ve native soru yan yana görülebilecektir.
+- Cevap, çözüm, taxonomy, difficulty, source, rights, duplicate/similarity ve AI confidence aynı review yüzeyinde erişilebilir olacaktır.
+- Temel aksiyonlar: **Onayla / Düzelt / Karantinaya Al / Başka Reviewer'a Gönder**.
+
+### Review Queue önceliği
+- İçerik review queue severity/priority ile çalışacaktır.
+- Örnek öncelik sınıfları:
+  - **P0 Critical:** canlı yanlış cevap, iki doğru şık, ciddi görsel/bağlam bozukluğu
+  - **P1 High:** Exam-Grade review, kritik coverage açığı, sınava yakın time-sensitive içerik
+  - **P2 Normal:** yeni batch, çözüm review, taxonomy düzeltme
+  - **P3 Enrichment:** alternatif çözüm, özet iyileştirme, video metadata
+- Kritik queue normal zenginleştirme işlerinden önce gelir.
+
+### Effective Coverage
+- Coverage yalnız ham soru sayısı olmayacaktır.
+- **Raw Question Count** ve **Effective Independent Count** ayrı gösterilecektir.
+- Near-duplicate/template cluster, difficulty çeşitliliği, soru tipi, Primary Assessed Skill ve usage eligibility effective coverage hesabına girer.
+- Aynı template'in küçük sayı değişiklikleri coverage'ı yapay biçimde şişiremez.
+
+### Coverage temel birimi
+- Akademik coverage'ın en küçük ciddi ölçüm birimi 24. başlıkta kabul edilen **Primary Assessed Skill** olacaktır.
+- Ders veya topic toplam soru sayısı tek başına yeterlilik göstergesi değildir.
+- Coverage Matrix skill → topic → ders → Exam Blueprint seviyelerinde toplanabilir.
+
+### İlk release minimum skill coverage
+- İlk ContentCoveragePolicy için her aktif **Primary Assessed Skill** başına en az **12 effective unique soru** hedef/alt sınırı kullanılacaktır.
+- Bu 12 soru tek template cluster'dan oluşmayacaktır.
+- Hedef olarak en az **3 farklı soru/template biçimi** bulunmalıdır.
+- Uygun olduğu ölçüde difficulty çeşitliliği sağlanacaktır.
+- 12'nin altına düşen zorunlu skill release açısından **RED / blocking veya degraded** durumuna girebilir.
+- Kesin eşikler source code'a gömülmeyecek; versioned ContentCoveragePolicy ile yönetilecektir.
+
+### Topic coverage
+- Genel başlangıç release standardı olarak aktif topic başına en az **40 effective unique Active soru** hedeflenecektir.
+- Geniş/yüksek ağırlıklı topic'lerde **60+** effective soru hedeflenecektir.
+- Dar topic'lerde aynı sayı mekanik biçimde zorlanmayabilir; exam weight + taxonomy breadth birlikte değerlendirilir.
+- Ana ilke: ilk 30 benzersiz kalibrasyon sorusu topic'in tüm bağımsız havuzunu tüketmemelidir.
+
+### Unseen Reserve
+- Sistem toplam soru sayısının yanında **Unseen Reserve Capacity** hesaplayacaktır.
+- Kullanıcının kalibrasyon, retention, wrong verification ve sonraki adaptif testleri için yeterli yeni bağımsız soru kalmalıdır.
+- Reserve kritik seviyeye düşerse içerik üretim önceliği otomatik yükseltilebilir.
+- Ürün yeni soru kalmadığında aynı birkaç soruyu döndürerek “adaptif öğrenme devam ediyor” izlenimi vermeyecektir.
+
+### Eligibility havuzları
+- Aynı question_version fiziksel olarak birden çok kez kopyalanmadan farklı kullanım eligibility flag'leri taşıyabilir:
+  - Practice Eligible
+  - Calibration Eligible
+  - Retention Eligible
+  - Wrong Verification Eligible
+  - Mock Eligible
+  - Duel Eligible
+- Seçim motoru kullanıcı exposure geçmişini ve evidence kurallarını ayrıca dikkate alacaktır.
+
+### Tam deneme coverage
+- Her aktif Exam Blueprint için başlangıç release hedefi olarak en az **8 tamamen çakışmayan tam deneme eşdeğeri Exam-Grade kapasitesi** bulunacaktır.
+- 120 soruluk bir blueprint'te bu yaklaşık 960 Exam-Grade question-slot kapasitesine karşılık gelir; aynı soru bazı başka eligibility havuzlarında da kullanılabilir.
+- Tam deneme havuzu blueprint, difficulty, content coverage ve kullanıcı exposure kurallarına uymalıdır.
+
+### Branş denemeleri
+- Her ana ders için başlangıç release hedefi en az **6 farklı branş denemesi eşdeğeri** içerik kapasitesidir.
+- Bu değer de ContentCoveragePolicy üzerinden ayarlanabilir.
+
+### Güncel Bilgiler coverage
+- Güncel Bilgiler yalnız soru sayısıyla ölçülmeyecektir.
+- Aktif sınav dönemi için bilgi kartı, kaynak doğrulaması, kategori coverage, freshness ve question coverage birlikte izlenecektir.
+- Tek kategoriye yığılmış içerik iyi coverage sayılmayacaktır.
+
+### Learning content coverage
+- Aktif bir öğrenme topic'i yalnız soru bankasına sahip olmakla “hazır” sayılmayacaktır.
+- Minimum öğrenme paketi konuya uygun biçimde:
+  - kısa konu özeti
+  - önemli kural/formüller
+  - açıklamalı örnekler
+  - 3–4 mini understanding check
+  - uygun video/öğretmen mapping'i veya native fallback anlatım
+  içermelidir.
+- Video bulunmaması core öğrenme akışını durdurmaz; native içerik fallback olarak yeterli olmalıdır.
+
+### Solution coverage
+- **Active soru = doğrulanmış doğru cevap + açıklamalı çözüm** kuralı uygulanacaktır.
+- Çözümü olmayan soru learner-facing Active yapılamaz.
+- Taslak/review aşamasında çözüm sonradan üretilebilir ancak Active gate'ten önce tamamlanmalıdır.
+
+### Active metadata completeness
+- Active soruda en az source/provenance, question version, Primary Assessed Skill, doğru cevap, çözüm, rights status ve quality state bulunmalıdır.
+- Rights status'un belirsiz/kısıtlı olması Admin override ile yayınlanabilir; metadata'nın hiç olmaması kabul edilmez.
+- Akademik kalite metadata'sı eksikse Quality Gate geçilemez.
+
+### Difficulty ve soru tipi coverage
+- Bütün skill'lere yapay sabit kolay/orta/zor oranı dayatılmayacaktır.
+- Coverage Matrix ilgili skill/topic için difficulty çeşitliliğinin yeterli olup olmadığını izleyecektir.
+- Gerçek difficulty kullanıcı verisiyle yeniden kalibre edilir.
+- Konuya uygun olduğu ölçüde bilgi, yorum, işlem, problem, çıkarım, grafik/tablo, kronoloji vb. soru tipi çeşitliliği izlenir.
+- Sırf tabloyu doldurmak için konuya anlamsız soru tipi üretilmez.
+
+### Content Debt
+- Admin Panelinde **Content Debt** görünümü bulunacaktır.
+- Örnek sinyaller: skill effective soru sayısı düşük, unseen reserve düşük, Exam-Grade eksik, current affairs category açığı, duplicate yoğunluğu, overdue review.
+- İçerik üretim önceliği Content Debt ve gerçek kullanım verisine göre belirlenebilir.
+
+### Kullanım verisiyle üretim önceliği
+- Başlangıçta Exam Blueprint/taxonomy coverage ana üretim girdisidir.
+- Gerçek kullanım sonrası çok tekrar gören soru, düşük reserve, yüksek rapor/anomaly, duplicate yoğunluğu, difficulty boşluğu ve yoğun kullanılan topic'ler içerik üretim önceliğini etkiler.
+- Böylece Content Factory ihtiyaç bazlı sürekli üretim sistemine dönüşür.
+
+### Learning material workflow
+- Konu özeti/formül/örnek gibi öğrenme materyalleri için ayrı workflow bulunacaktır:
+  **taxonomy/topic → kaynak seçimi → AI/insan taslak → factual/math check → editorial review → version → Active**.
+- Tarih/Vatandaşlık/Güncel Bilgiler gibi factual alanlarda kaynak doğrulaması önemlidir.
+- Matematik gibi deterministik örneklerde mümkün olduğunca kod/symbolic kontrol kullanılabilir.
+- AI özeti otomatik yayınlanmaz.
+
+### Time-sensitive review
+- İçerik sınıfları farklı review cadence'ine sahip olabilir.
+- Güncel Bilgiler ve mevzuat/kurum verileri daha sık; evergreen içerik daha seyrek gözden geçirilebilir.
+- Kesin süreler versioned config'tir.
+- Review overdue olan kritik time-sensitive içerik Exam-Grade eligibility'sini kaybedebilir veya review gerektirebilir.
+
+### Kaynak değişikliği ve toplu impact
+- Önemli kaynak/mevzuat değişikliğinde o kaynağa bağlı sorular, özetler ve denemeler toplu bulunabilmelidir.
+- İlgili içerikler batch olarak **Review Required / Quarantine** durumuna alınabilir.
+- Impact Analysis etkilenen kullanıcı geçmişini ve denemeleri gerektiğinde Impact Repair'a bağlar.
+
+### Pipeline regression
+- Yeni OCR/Jev/model/prompt/PDF parser sürümü doğrudan production içerik hattına alınmayacaktır.
+- Golden corpus üzerinde eski/yeni performans karşılaştırması yapılacaktır.
+- Belirgin kalite gerilemesi varsa yeni pipeline aktive edilmez.
+
+### Batch operasyonları
+- Import batch **pause / quarantine / rollback** yapılabilir olmalıdır.
+- Sistemik OCR/parser hatasında yüzlerce soruyu tek tek düzeltme zorunluluğu olmamalıdır.
+- Batch provenance her child content item ile ilişkilendirilir.
+
+### Yayından kaldırma
+- Kullanılmış içerik hard delete edilmek yerine Quarantine/Archived durumuna alınacaktır.
+- Geçmiş test/attempt referansları question version üzerinden korunur.
+- Material hata Impact Repair tetikleyebilir.
+
+### Kullanıcı raporları ve anomaly
+- “cevap yanlış / soru belirsiz / görsel bozuk / çözüm hatalı” gibi raporlar Quality Queue'ya girer.
+- Tek rapor otomatik hüküm değildir; rapor yoğunluğu, güçlü kullanıcı anomaly'si, answer validator conflict ve benzeri sinyaller severity'yi yükseltir.
+- Çok güçlü problem sinyalinde içerik otomatik **Quarantine Pending Review** durumuna alınabilir.
+
+### İçerik Release Dashboard
+- Admin tek ekranda en az şu göstergeleri görebilecektir:
+  - Official Scope Mapping
+  - Active Topic Coverage
+  - Effective Question Coverage
+  - Solution Coverage
+  - Rights Status dağılımı / Rights Override oranı
+  - Exam-Grade Capacity
+  - Mock Capacity
+  - Retention/Unseen Reserve
+  - Current Affairs Freshness
+  - Overdue Reviews
+  - Critical Quality Issues
+  - Content Debt
+- Dashboard'ın amacı “ürün içerik olarak hazır mı?” sorusunu cevaplamaktır.
+
+### Release content gate
+- Ürün kod olarak tamamlanmış olsa bile content gate geçmeden release-ready sayılmayacaktır.
+- Başlangıç sert kriterleri:
+  - Official Scope mapping %100
+  - zorunlu active topic'lerde blocking RED coverage olmaması
+  - her required Primary Skill'in minimum effective coverage'ı karşılaması
+  - active topic'lerde yeterli soru havuzu ve unseen reserve
+  - Active soruların %100'ünde doğrulanmış cevap + açıklamalı çözüm
+  - Active soruların %100'ünde provenance + rights status metadata
+  - kritik answer conflict = 0
+  - kritik broken image/context issue = 0
+  - yeterli Exam-Grade pool
+  - en az 8 tam deneme eşdeğeri kapasite
+  - ana derslerde en az 6 branş denemesi eşdeğeri kapasite
+  - active öğrenme konularında minimum learning content
+  - aktif Güncel Bilgiler dönem setinin review edilmiş olması
+  - overdue kritik time-sensitive içeriğin Exam-Grade havuzunda olmaması
+- Rights status belirsiz/kısıtlı içerik bu gate'i yalnız **Admin rights override + audit** ile geçebilir; rights metadata'sının kendisi ise %100 bulunmalıdır.
+
+### ContentCoveragePolicy
+- 12 skill / 40 topic / 60+ geniş topic / 8 full mock / 6 branch mock rakamları **ContentCoveragePolicy v1** başlangıç standardıdır.
+- Bu sayılar source code'a gömülmeyecek, versioned config olacaktır.
+- Eşik değişikliği audit/simulation ile izlenebilir olmalıdır.
+
+### Coverage degradation
+- Quarantine/Impact Repair sonrası coverage minimumun altına düşerse alan **Coverage Degraded** durumuna geçer.
+- Yeni içerik üretim önceliği yükselir.
+- Gerekirse Calibration/Mock/Retention gibi eligibility'ler güvenli biçimde sınırlandırılır.
+- Exam-Grade kapasitesi minimumun altına düşerse yeni resmî-benzeri deneme üretimi durdurulabilir.
+
+### Dürüst kıtlık davranışı
+- Yeterli yeni bağımsız soru yoksa sistem bunu gizlemek için aynı soruları aşırı döndürmeyecektir.
+- Gerekirse kullanıcıya yeni soru havuzunun sınırlı olduğu sade biçimde söylenir ve başka yararlı çalışma önerilir.
+
+### Academic Evidence entegrasyonu
+- 24. Evidence sistemi question eligibility ve content quality durumunu kullanacaktır.
+- Practice-only soru Gerçek Sınav denemesine giremez; Mock Eligible soru Calibration Eligible olmak zorunda değildir.
+- İçerik kalitesi ve eligibility, akademik evidence üretiminin ön koşullarındandır.
+
+### Sürekli operasyon
+- Content Factory yalnız launch hazırlığı değildir.
+- Release sonrası kullanıcı exposure'ı arttıkça reserve azalacağı için içerik üretimi ve review sürekli devam eder.
+- Admin sistemi sürekli “hangi içerik alanını şimdi üretmeliyiz?” sorusuna cevap verecektir.
+
+### Ana karar
+- **Kodun tamamlanması ile ürünün release-ready olması aynı şey değildir.**
+- İçerik coverage, solution, quality, provenance, review ve Exam-Grade kapasitesi release'in zorunlu parçasıdır.
+- Rights/telif durumu izlenir ve uyarılır; ancak **Admin açık override ile her kaynak/içerik learner-facing Active yapılabilir**.
+- **26. İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri ürün mimarisi açısından tamamlanmıştır.**
+
 ---
 Durum: Ürün planlama aşaması devam ediyor. Henüz geliştirmeye başlanmadı.
