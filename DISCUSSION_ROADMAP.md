@@ -753,10 +753,22 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Nihai Product Ready tanımı: Functional Complete + Academic Correct + Content Sufficient + Secure + Recoverable + Observable + Privacy/Compliance Reviewed + Operable.
    - ✅ **Data Retention / Compliance / Release Acceptance Criteria tamamlandı.**
 
+
+29. 🟨 **Marka / Ürün Kimliği**
+   - ✅ Ürün adı **Kavriva KPSS** olarak kesinleşti.
+   - ✅ Kullanıcı-facing yüzeylerde mümkün olduğunca tam ürün adı **Kavriva KPSS** kullanılacak.
+   - ✅ Domain satın alma/seçme işi sonraya bırakıldı.
+   - ⬜ Kavriva KPSS logo varyantı / wordmark düzeni
+   - ⬜ Accent renk sistemi
+   - ⬜ Tipografi
+   - ⬜ Slogan
+   - ⬜ PWA/app icon uygulaması
+   - ⬜ Marka tonu ve temel landing/SEO metinleri
+
 ---
 
 ## Çalışma Prensibi
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-İlk 21 ana başlık sonrasında açılan post-audit turu da tamamlanmıştır. **1–28 ana başlığın tamamı ürün mimarisi düzeyinde kararlaştırılmıştır.** Bundan sonraki aşama kabul edilmiş planın uygulama/inşa sırasına dönüştürülmesi ve geliştirmedir.
+İlk 21 ana başlık sonrasında açılan post-audit turu tamamlanmıştır ve **1–28 ana başlığın tamamı ürün mimarisi düzeyinde kararlaştırılmıştır.** Marka kimliği için ek **29. başlık** açılmıştır. Şu anda aktif tartışma konusu: **29. Marka / Ürün Kimliği 🟨**.
