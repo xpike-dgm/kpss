@@ -3106,5 +3106,71 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Kavriva KPSS'nin görsel ve iletişim omurgası indigo accent, Manrope + Inter, “Sıradaki doğru adım.” sloganı ve “Sıradaki Adım” imza özelliği üzerine kurulacaktır.
 - **29. Marka / Ürün Kimliği başlığı tamamlanmıştır.**
 
+
+## 52. Asset Sistemi / Görsel Varlık Planı — kararlaştırıldı
+
+### Ana ilke
+- Kavriva KPSS asset üretimi tek tek bağımsız görsel üretimi olarak değil, **tek bir tasarım sistemi altında yönetilen üretim operasyonu** olarak ele alınacaktır.
+- Logo, ikon, onboarding, empty state, academic visual, gamification, AI, social, marketing, admin ve motion varlıkları aynı marka diline bağlı olacaktır.
+- Hedef “çok sayıda güzel görsel” değil, **tek ekip tarafından üretilmiş gibi görünen tutarlı bir asset ailesidir**.
+
+### Canonical asset belgeleri
+Aşağıdaki dosyalar görsel üretim operasyonunun canonical çalışma belgeleridir:
+- `docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md`
+- `docs/design/KAVRIVA_KPSS_ASSET_CHECKLIST.md`
+- `docs/design/KAVRIVA_KPSS_FIGMA_STRUCTURE.md`
+- `docs/design/KAVRIVA_KPSS_AI_BATCH_PLAN.md`
+
+### Asset kapsamı
+- Brand Core
+- App/PWA icon ve favicon
+- Global UI ve akademik icon sistemi
+- Ders/kategori görselleri
+- Empty state'ler
+- Onboarding görselleri
+- Gamification
+- AI
+- Social
+- Academic content visual templates
+- Landing/marketing
+- Share/SEO
+- Admin/Operations
+- Motion key visual'ları
+
+### Asset ID ve takip
+- Her üretilen görsel canonical bir **Asset ID** taşıyacaktır.
+- Prompt Pack içindeki Asset ID ile Checklist, Figma Asset Registry ve final export aynı kimliği kullanacaktır.
+- Başlangıç envanteri **87 ayrı asset tanımıdır**.
+- Durum akışı: **Planned → In Production → Review → Approved → Exported/Figma Ready**.
+
+### Tutarlılık
+- Asset üretiminde 29. Marka / Ürün Kimliği kararları zorunlu üst katmandır.
+- Yeni batch rastgele yeni renk, font, icon geometry veya illustration style oluşturmayacaktır.
+- Birden fazla AI/artist paralel çalışıyorsa Approved asset'lerden oluşturulan Style Anchor Pack kullanılacaktır.
+- Brand, app icon ve icon grammar onaylanmadan bunlara bağımlı geniş görsel batch'ler finale taşınmayacaktır.
+
+### Figma
+- Figma yapısı foundations, design system, assets, academic, gamification, AI, social, product screens, marketing, admin/operations ve archive alanlarına ayrılacaktır.
+- Variables, Auto Layout, component/variant ve naming standardı kullanılacaktır.
+- UI metinleri raster görsellere gömülmek yerine mümkün olduğunca editable/native component olarak tutulacaktır.
+- Playground/experiment ile production-ready component/assets ayrılacaktır.
+
+### Teknik çıktı
+- Logo/ikon/badge gibi uygun varlıklarda SVG source korunacaktır.
+- Raster gerektiğinde optimize PNG/WebP export alınacaktır.
+- App icon, maskable icon ve favicon küçük boyut/safe-area testlerinden geçecektir.
+- Light/dark ve gerekli semantic/state varyantları tamamlanmadan asset final sayılmayacaktır.
+- Motion asset'lerinde reduced-motion/static fallback bulunacaktır.
+
+### Batch üretimi
+- Asset üretimi `KAVRIVA_KPSS_AI_BATCH_PLAN.md` içindeki bağımlılık sırasına göre yürütülecektir.
+- Önce Master Brand ve Kavriva KPSS lockup, ardından app icon ve icon grammar oluşturulacaktır.
+- Category/onboarding/empty/gamification/AI/social sistemleri ancak style anchor'lar yeterince stabil olduktan sonra genişletilecektir.
+- Son aşamada Cross-System Consistency Audit ve Production Export/Figma Handoff yapılacaktır.
+
+### Ana karar
+- Kavriva KPSS'nin görsel üretimi ayrı bir yan iş değil, ürünün design system'inin parçası olan versioned ve takip edilebilir bir üretim hattıdır.
+- **30. Asset Sistemi / Görsel Varlık Planı tamamlanmıştır.**
+
 ---
-Durum: Ürün mimarisi, post-audit ve marka kimliği planlaması tamamlandı. Henüz geliştirmeye başlanmadı.
+Durum: Ürün mimarisi, post-audit, marka kimliği ve asset sistemi planlaması tamamlandı. Henüz geliştirmeye başlanmadı.
