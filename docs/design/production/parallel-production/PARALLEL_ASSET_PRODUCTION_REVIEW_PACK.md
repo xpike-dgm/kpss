@@ -62,3 +62,7 @@ Each track report and actual source/prompts/build recipe is committed under prod
 selection.json lists exactly41 selected AssetIDs and paths. cross-track-qa.json records duplicate-ID/hash checks, native flags and unchanged K source hash; measurements complement visual inspection. Current87-ID registry: **13 Approved for Design Direction,48 Review,26 Planned**; three A exploration approvals separately preserved. Checklist and current local registry updated; Figma registry writes Pending. Source vector needed still open for Brand/App K, not a production-direction blocker.
 
 Owner collective review required next. **Batch15 has not started.**
+
+## Owner Decision — 2026-10-07
+Category7 + parallel41 accepted:48 Approved for Design Direction. Final Production Export / Figma Pending; raster palette/theme/alpha polish excluded. P01–P06 recorded PRODUCTION_POLISH_BACKLOG.md, non-blocking for next wave but mandatory before final export. Owner authorizes F/G/H/J batches15/16/17/20 Review; marketing18/19 held, stop before21. Current registry production/core-system/asset-registry.json.
+

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-07",
+  "accepted": "Category family7 + parallel production41 =48 assets",
+  "assetPrefixes": ["CAT", "EMPTY", "ONBOARD", "GAME", "AI", "SOCIAL"],
+  "status": "Approved for Design Direction",
+  "finalProductionExport": "Pending",
+  "figma": "Pending",
+  "excludedApprovalScope": "Raster production token normalization / final dark adaptation / alpha cleanup",
+  "polishBacklog": "docs/design/PRODUCTION_POLISH_BACKLOG.md",
+  "nextWave": "Tracks F/G/H/J, Batches15/16/17/20 Review only",
+  "hold": "Batches18/19 marketing; MKT01–06 Planned; stop before21"
+}

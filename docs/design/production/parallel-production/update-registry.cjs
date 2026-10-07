@@ -1,4 +1,5 @@
 const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../../../..');
+if(fs.existsSync(path.join(__dirname,'owner-decisions.json'))){console.log('Owner approval present. Retired snapshot updater; current registry is production/core-system/asset-registry.json. No approvals changed.');process.exit(0);}
 const registry=JSON.parse(fs.readFileSync(path.join(root,'docs/design/production/batch-06/asset-registry.json'),'utf8').replace(/^\uFEFF/,''));
 const selection=JSON.parse(fs.readFileSync(path.join(__dirname,'selection.json'),'utf8'));const byId=new Map(selection.entries.map(e=>[e.assetId,e]));
 const required=[...Array.from({length:10},(_,i)=>'EMPTY-'+String(i+1).padStart(2,'0')),...Array.from({length:10},(_,i)=>'ONBOARD-'+String(i+1).padStart(2,'0')),...Array.from({length:10},(_,i)=>'GAME-'+String(i+1).padStart(2,'0')),...Array.from({length:6},(_,i)=>'AI-'+String(i+1).padStart(2,'0')),...Array.from({length:5},(_,i)=>'SOCIAL-'+String(i+1).padStart(2,'0'))];
