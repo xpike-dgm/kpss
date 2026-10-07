@@ -38,7 +38,7 @@ Bir asset yalnız görsel olarak güzel olduğu için tamamlanmış sayılmaz. F
 | BRAND-03 | Kavriva KPSS Yatay Logo Varyantı | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | BRAND-04 | Kavriva KPSS Dikey / Stacked Logo Varyantı | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | BRAND-05 | Sadece K Sembolü | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
-| BRAND-06 | Logo Kullanım Sunum Kartı | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
+| BRAND-06 | Kavriva Master Brand Kalibrasyon / Kullanım Kartı | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | APP-01 | Kavriva KPSS App Icon | App / PWA | ⬜ Planned | SVG master + PNG exports | main / maskable / small-size | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | APP-02 | Maskable PWA Icon | App / PWA | ⬜ Planned | SVG master + PNG exports | main / maskable / small-size | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | APP-03 | Favicon | App / PWA | ⬜ Planned | SVG master + PNG exports | main / maskable / small-size | ⬜ | ⬜ | ⬜ | ⬜ |  |
@@ -52,7 +52,7 @@ Bir asset yalnız görsel olarak güzel olduğu için tamamlanmış sayılmaz. F
 | CAT-04 | Coğrafya Görsel Kartı | Academic Category Visuals | ⬜ Planned | SVG/WebP | light; dark-safe | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | CAT-05 | Vatandaşlık Görsel Kartı | Academic Category Visuals | ⬜ Planned | SVG/WebP | light; dark-safe | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | CAT-06 | Güncel Bilgiler Görsel Kartı | Academic Category Visuals | ⬜ Planned | SVG/WebP | light; dark-safe | ⬜ | ⬜ | ⬜ | ⬜ |  |
-| CAT-07 | Eğitim Bilimleri Görsel Kartı | Academic Category Visuals | ⬜ Planned | SVG/WebP | light; dark-safe | ⬜ | ⬜ | ⬜ | ⬜ |  |
+| CAT-07 | Genel Yetenek / Genel Kültür Overview Görsel Kartı | Academic Category Visuals | ⬜ Planned | SVG/WebP | light; dark-safe | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | EMPTY-01 | Hiç Soru Çözülmemiş | Empty States | ⬜ Planned | SVG/WebP | light / dark | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | EMPTY-02 | Henüz Deneme Yok | Empty States | ⬜ Planned | SVG/WebP | light / dark | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | EMPTY-03 | Yanlışlarım Boş | Empty States | ⬜ Planned | SVG/WebP | light / dark | ⬜ | ⬜ | ⬜ | ⬜ |  |
