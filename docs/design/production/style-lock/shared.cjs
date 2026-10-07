@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path'),{chromium}=require('playwright');
+const root=path.resolve(__dirname,'../../../..');
+const T={indigo:'#4F46E5',ink:'#101828',text:'#344054',border:'#D0D5DD',surface:'#F7F8FC',white:'#FFFFFF',dark:'#0C111D',darkText:'#FFFFFF'};
+const fontCSS=['Manrope','Inter'].map(f=>`@font-face{font-family:${f};src:url(data:font/ttf;base64,${fs.readFileSync(path.join(root,'docs/design/production/batch-01/fonts',f+'.ttf')).toString('base64')}) format('truetype');font-weight:100 900}`).join('');
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const txt=(x,y,s,size=20,fill=T.text,weight=400,family='Inter')=>`<text x="${x}" y="${y}" style="font-family:${family};font-size:${size}px;font-weight:${weight};fill:${fill}">${esc(s)}</text>`;
+const rect=(x,y,w,h,fill,stroke='none',r=0)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="${fill}" stroke="${stroke}"/>`;
+const svg=(w,h,body,defs='',fonts=false)=>`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><defs>${fonts?`<style>${fontCSS}</style>`:''}${defs}</defs>${body}</svg>`;
+const header=(id,title,sub,w=1600)=>rect(0,0,w,200,T.surface)+txt(64,60,`${id} / STYLE LOCK REVIEW`,18,T.indigo,600)+txt(64,119,title,44,T.ink,650,'Manrope')+txt(64,162,sub,20);
+async function renderer(){const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});const page=await browser.newPage({deviceScaleFactor:1});return {async render(source,file,w,h){await page.setViewportSize({width:w,height:h});await page.setContent(`<html><head><style>html,body{margin:0;padding:0}svg{display:block}</style></head><body>${source}</body></html>`);await page.evaluate(()=>document.fonts.ready);const overflow=await page.evaluate(()=>[...document.querySelectorAll('text')].map(n=>({text:n.textContent,r:n.getBoundingClientRect().toJSON()})).filter(o=>o.r.x<0||o.r.y<0||o.r.right>innerWidth||o.r.bottom>innerHeight));if(overflow.length)throw Error(JSON.stringify({file,overflow}));await page.screenshot({path:file});return {file,textOverflow:0};},async close(){await browser.close();}};}
+module.exports={root,T,fontCSS,txt,rect,svg,header,renderer,fs,path};

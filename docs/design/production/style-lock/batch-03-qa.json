@@ -1,0 +1,91 @@
+{
+  "status": "Review",
+  "dependencies": {
+    "batch01": "Approved for Design Direction",
+    "batch02": "Direction A Approved for Design Direction"
+  },
+  "sourceHash": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
+  "sourceHashMatches": true,
+  "kSymbolHash": "0b864485757a4274b540d03677e1e0b2645b54ddf5f2549a4128871b4ca73bb7",
+  "geometryOperations": {
+    "redraw": false,
+    "simplify": false,
+    "contourChange": false,
+    "nonUniformScale": false
+  },
+  "appColor": "#4F46E5",
+  "kWhite": "luminance alpha presentation of the same raster; no threshold in artwork",
+  "maskable": {
+    "size": 512,
+    "safeZoneRadius": 204.8,
+    "maximumSignificantInkRadius": 142.34123940011332,
+    "entireSourceCropCornerRadius": 179.71615236021128,
+    "pass": true,
+    "symbolWidthFraction": 0.5,
+    "backgroundOpaque": true,
+    "maskTests": [
+      "circle",
+      "rounded square",
+      "squircle-like"
+    ],
+    "standard": "https://www.w3.org/TR/appmanifest/#icon-masks-and-safe-zone"
+  },
+  "smallSize": {
+    "sizes": [
+      16,
+      32,
+      48,
+      64,
+      128,
+      192,
+      512
+    ],
+    "favicon16": "permitted by owner; marginal detail, no contour changes"
+  },
+  "splashDirection": "A, Manrope KPSS 57.6, source-wordmark left x410; no new lockup direction",
+  "figma": "Pending",
+  "finalProductionVectorExport": "Pending for K artwork",
+  "approvedBy": null,
+  "files": [
+    "APP-01__kavriva-kpss-app-icon__main-192__v01.svg",
+    "APP-01__kavriva-kpss-app-icon__main-192__v01.png",
+    "APP-01__kavriva-kpss-app-icon__main-512__v01.svg",
+    "APP-01__kavriva-kpss-app-icon__main-512__v01.png",
+    "APP-02__kavriva-kpss-maskable__safe-192__v01.svg",
+    "APP-02__kavriva-kpss-maskable__safe-192__v01.png",
+    "APP-02__kavriva-kpss-maskable__safe-512__v01.svg",
+    "APP-02__kavriva-kpss-maskable__safe-512__v01.png",
+    "APP-03__kavriva-kpss-favicon__indigo-16__v01.svg",
+    "APP-03__kavriva-kpss-favicon__indigo-16__v01.png",
+    "APP-03__kavriva-kpss-favicon__light-16__v01.svg",
+    "APP-03__kavriva-kpss-favicon__light-16__v01.png",
+    "APP-03__kavriva-kpss-favicon__dark-16__v01.svg",
+    "APP-03__kavriva-kpss-favicon__dark-16__v01.png",
+    "APP-03__kavriva-kpss-favicon__indigo-32__v01.svg",
+    "APP-03__kavriva-kpss-favicon__indigo-32__v01.png",
+    "APP-03__kavriva-kpss-favicon__light-32__v01.svg",
+    "APP-03__kavriva-kpss-favicon__light-32__v01.png",
+    "APP-03__kavriva-kpss-favicon__dark-32__v01.svg",
+    "APP-03__kavriva-kpss-favicon__dark-32__v01.png",
+    "APP-03__kavriva-kpss-favicon__indigo-48__v01.svg",
+    "APP-03__kavriva-kpss-favicon__indigo-48__v01.png",
+    "APP-03__kavriva-kpss-favicon__light-48__v01.svg",
+    "APP-03__kavriva-kpss-favicon__light-48__v01.png",
+    "APP-03__kavriva-kpss-favicon__dark-48__v01.svg",
+    "APP-03__kavriva-kpss-favicon__dark-48__v01.png",
+    "APP-04__kavriva-kpss-splash__mobile-light__v01.svg",
+    "APP-04__kavriva-kpss-splash__mobile-light__v01.png",
+    "APP-04__kavriva-kpss-splash__mobile-dark__v01.svg",
+    "APP-04__kavriva-kpss-splash__mobile-dark__v01.png",
+    "APP-04__kavriva-kpss-splash__desktop-light__v01.svg",
+    "APP-04__kavriva-kpss-splash__desktop-light__v01.png",
+    "APP-04__kavriva-kpss-splash__desktop-dark__v01.svg",
+    "APP-04__kavriva-kpss-splash__desktop-dark__v01.png",
+    "APP-04__kavriva-kpss-splash__mobile-indigo__v01.svg",
+    "APP-04__kavriva-kpss-splash__mobile-indigo__v01.png",
+    "APP-04__kavriva-kpss-splash__desktop-indigo__v01.svg",
+    "APP-04__kavriva-kpss-splash__desktop-indigo__v01.png",
+    "APP-01__app-icon-family__comparison__v01.svg",
+    "APP-01__app-icon-family__comparison__v01.png"
+  ]
+}

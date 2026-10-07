@@ -1,0 +1,312 @@
+{
+  "assetId": "ICON-02",
+  "status": "Review",
+  "batch": 5,
+  "grammar": {
+    "grid": 24,
+    "opticalBounds": [
+      2,
+      2,
+      22,
+      22
+    ],
+    "keyline": [
+      3,
+      3,
+      21,
+      21
+    ],
+    "curveOvershoot": 1,
+    "stroke": 1.75,
+    "cap": "round",
+    "join": "round",
+    "cornerRadius": 2,
+    "default": "outline",
+    "active": "filled primary silhouette where appropriate; otherwise indigo outline",
+    "smallSizes": [
+      16,
+      20,
+      24,
+      32
+    ],
+    "color": "currentColor",
+    "status": "Review"
+  },
+  "grammarHash": "2d791051b8841e979fa8c9c17c6e66a368ed5a0c290ad7349e5244be181b6d7a",
+  "count": 17,
+  "names": [
+    "turkish",
+    "mathematics",
+    "history",
+    "geography",
+    "citizenship",
+    "current-affairs",
+    "gy-gk-overview",
+    "question-solving",
+    "topic-learning",
+    "revision",
+    "full-mock-exam",
+    "analysis",
+    "time-management",
+    "accuracy",
+    "difficulty",
+    "concept-mastery",
+    "progress"
+  ],
+  "filledSupported": [],
+  "nativeVector": true,
+  "thirdPartyLibraries": [],
+  "lightDark": "same currentColor geometry; light ink/indigo, dark neutral/white; SVG color presentation attribute can be overridden by CSS",
+  "smallSizes": [
+    16,
+    20,
+    24,
+    32
+  ],
+  "bounds": [
+    {
+      "name": "turkish",
+      "bounds": {
+        "x": 4,
+        "y": 3,
+        "width": 16,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "mathematics",
+      "bounds": {
+        "x": 4,
+        "y": 4,
+        "width": 16,
+        "height": 16
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "history",
+      "bounds": {
+        "x": 4,
+        "y": 5,
+        "width": 17,
+        "height": 15
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "geography",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "citizenship",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "current-affairs",
+      "bounds": {
+        "x": 3,
+        "y": 4,
+        "width": 18,
+        "height": 16
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "gy-gk-overview",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "question-solving",
+      "bounds": {
+        "x": 4,
+        "y": 3,
+        "width": 16,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "topic-learning",
+      "bounds": {
+        "x": 3,
+        "y": 4,
+        "width": 18,
+        "height": 16
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "revision",
+      "bounds": {
+        "x": 4,
+        "y": 5,
+        "width": 15.356775283813477,
+        "height": 16.14290428161621
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "full-mock-exam",
+      "bounds": {
+        "x": 4,
+        "y": 3,
+        "width": 16,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "analysis",
+      "bounds": {
+        "x": 4,
+        "y": 3,
+        "width": 17,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "time-management",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "accuracy",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "difficulty",
+      "bounds": {
+        "x": 4,
+        "y": 3,
+        "width": 16,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "concept-mastery",
+      "bounds": {
+        "x": 4,
+        "y": 3,
+        "width": 16,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "progress",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    }
+  ],
+  "approvedBy": null,
+  "figma": "Pending",
+  "files": [
+    "ICON-02__turkish__outline__v01.svg",
+    "ICON-02__turkish__active__v01.svg",
+    "ICON-02__turkish__outline-dark__v01.svg",
+    "ICON-02__turkish__active-dark__v01.svg",
+    "ICON-02__mathematics__outline__v01.svg",
+    "ICON-02__mathematics__active__v01.svg",
+    "ICON-02__mathematics__outline-dark__v01.svg",
+    "ICON-02__mathematics__active-dark__v01.svg",
+    "ICON-02__history__outline__v01.svg",
+    "ICON-02__history__active__v01.svg",
+    "ICON-02__history__outline-dark__v01.svg",
+    "ICON-02__history__active-dark__v01.svg",
+    "ICON-02__geography__outline__v01.svg",
+    "ICON-02__geography__active__v01.svg",
+    "ICON-02__geography__outline-dark__v01.svg",
+    "ICON-02__geography__active-dark__v01.svg",
+    "ICON-02__citizenship__outline__v01.svg",
+    "ICON-02__citizenship__active__v01.svg",
+    "ICON-02__citizenship__outline-dark__v01.svg",
+    "ICON-02__citizenship__active-dark__v01.svg",
+    "ICON-02__current-affairs__outline__v01.svg",
+    "ICON-02__current-affairs__active__v01.svg",
+    "ICON-02__current-affairs__outline-dark__v01.svg",
+    "ICON-02__current-affairs__active-dark__v01.svg",
+    "ICON-02__gy-gk-overview__outline__v01.svg",
+    "ICON-02__gy-gk-overview__active__v01.svg",
+    "ICON-02__gy-gk-overview__outline-dark__v01.svg",
+    "ICON-02__gy-gk-overview__active-dark__v01.svg",
+    "ICON-02__question-solving__outline__v01.svg",
+    "ICON-02__question-solving__active__v01.svg",
+    "ICON-02__question-solving__outline-dark__v01.svg",
+    "ICON-02__question-solving__active-dark__v01.svg",
+    "ICON-02__topic-learning__outline__v01.svg",
+    "ICON-02__topic-learning__active__v01.svg",
+    "ICON-02__topic-learning__outline-dark__v01.svg",
+    "ICON-02__topic-learning__active-dark__v01.svg",
+    "ICON-02__revision__outline__v01.svg",
+    "ICON-02__revision__active__v01.svg",
+    "ICON-02__revision__outline-dark__v01.svg",
+    "ICON-02__revision__active-dark__v01.svg",
+    "ICON-02__full-mock-exam__outline__v01.svg",
+    "ICON-02__full-mock-exam__active__v01.svg",
+    "ICON-02__full-mock-exam__outline-dark__v01.svg",
+    "ICON-02__full-mock-exam__active-dark__v01.svg",
+    "ICON-02__analysis__outline__v01.svg",
+    "ICON-02__analysis__active__v01.svg",
+    "ICON-02__analysis__outline-dark__v01.svg",
+    "ICON-02__analysis__active-dark__v01.svg",
+    "ICON-02__time-management__outline__v01.svg",
+    "ICON-02__time-management__active__v01.svg",
+    "ICON-02__time-management__outline-dark__v01.svg",
+    "ICON-02__time-management__active-dark__v01.svg",
+    "ICON-02__accuracy__outline__v01.svg",
+    "ICON-02__accuracy__active__v01.svg",
+    "ICON-02__accuracy__outline-dark__v01.svg",
+    "ICON-02__accuracy__active-dark__v01.svg",
+    "ICON-02__difficulty__outline__v01.svg",
+    "ICON-02__difficulty__active__v01.svg",
+    "ICON-02__difficulty__outline-dark__v01.svg",
+    "ICON-02__difficulty__active-dark__v01.svg",
+    "ICON-02__concept-mastery__outline__v01.svg",
+    "ICON-02__concept-mastery__active__v01.svg",
+    "ICON-02__concept-mastery__outline-dark__v01.svg",
+    "ICON-02__concept-mastery__active-dark__v01.svg",
+    "ICON-02__progress__outline__v01.svg",
+    "ICON-02__progress__active__v01.svg",
+    "ICON-02__progress__outline-dark__v01.svg",
+    "ICON-02__progress__active-dark__v01.svg",
+    "ICON-02__academic-icon-sheet__review__v01.svg",
+    "ICON-02__academic-icon-sheet__review__v01.png"
+  ]
+}

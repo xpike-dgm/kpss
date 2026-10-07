@@ -1,0 +1,286 @@
+{
+  "assetId": "ICON-03",
+  "status": "Review",
+  "batch": 5,
+  "grammar": {
+    "grid": 24,
+    "opticalBounds": [
+      2,
+      2,
+      22,
+      22
+    ],
+    "keyline": [
+      3,
+      3,
+      21,
+      21
+    ],
+    "curveOvershoot": 1,
+    "stroke": 1.75,
+    "cap": "round",
+    "join": "round",
+    "cornerRadius": 2,
+    "default": "outline",
+    "active": "filled primary silhouette where appropriate; otherwise indigo outline",
+    "smallSizes": [
+      16,
+      20,
+      24,
+      32
+    ],
+    "color": "currentColor",
+    "status": "Review"
+  },
+  "grammarHash": "2d791051b8841e979fa8c9c17c6e66a368ed5a0c290ad7349e5244be181b6d7a",
+  "count": 15,
+  "names": [
+    "xp",
+    "level",
+    "streak",
+    "daily-mission",
+    "weekly-mission",
+    "badge",
+    "achievement",
+    "season",
+    "rank",
+    "leaderboard",
+    "team-contribution",
+    "milestone",
+    "special-moment",
+    "reward-chest",
+    "progress-ring"
+  ],
+  "filledSupported": [
+    "xp",
+    "badge",
+    "achievement"
+  ],
+  "nativeVector": true,
+  "thirdPartyLibraries": [],
+  "lightDark": "same currentColor geometry; light ink/indigo, dark neutral/white; SVG color presentation attribute can be overridden by CSS",
+  "smallSizes": [
+    16,
+    20,
+    24,
+    32
+  ],
+  "bounds": [
+    {
+      "name": "xp",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "level",
+      "bounds": {
+        "x": 4,
+        "y": 4,
+        "width": 16,
+        "height": 17
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "streak",
+      "bounds": {
+        "x": 4,
+        "y": 6,
+        "width": 16,
+        "height": 15
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "daily-mission",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "weekly-mission",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "badge",
+      "bounds": {
+        "x": 5,
+        "y": 3,
+        "width": 14,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "achievement",
+      "bounds": {
+        "x": 5,
+        "y": 3,
+        "width": 14,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "season",
+      "bounds": {
+        "x": 5,
+        "y": 3,
+        "width": 14,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "rank",
+      "bounds": {
+        "x": 4,
+        "y": 3,
+        "width": 16,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "leaderboard",
+      "bounds": {
+        "x": 3,
+        "y": 4,
+        "width": 18,
+        "height": 17
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "team-contribution",
+      "bounds": {
+        "x": 3,
+        "y": 4,
+        "width": 18,
+        "height": 17
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "milestone",
+      "bounds": {
+        "x": 4,
+        "y": 3,
+        "width": 15,
+        "height": 19
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "special-moment",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "reward-chest",
+      "bounds": {
+        "x": 3,
+        "y": 5,
+        "width": 18,
+        "height": 16
+      },
+      "viewportSafe": true
+    },
+    {
+      "name": "progress-ring",
+      "bounds": {
+        "x": 3,
+        "y": 3,
+        "width": 18,
+        "height": 18
+      },
+      "viewportSafe": true
+    }
+  ],
+  "approvedBy": null,
+  "figma": "Pending",
+  "files": [
+    "ICON-03__xp__outline__v01.svg",
+    "ICON-03__xp__active__v01.svg",
+    "ICON-03__xp__outline-dark__v01.svg",
+    "ICON-03__xp__active-dark__v01.svg",
+    "ICON-03__level__outline__v01.svg",
+    "ICON-03__level__active__v01.svg",
+    "ICON-03__level__outline-dark__v01.svg",
+    "ICON-03__level__active-dark__v01.svg",
+    "ICON-03__streak__outline__v01.svg",
+    "ICON-03__streak__active__v01.svg",
+    "ICON-03__streak__outline-dark__v01.svg",
+    "ICON-03__streak__active-dark__v01.svg",
+    "ICON-03__daily-mission__outline__v01.svg",
+    "ICON-03__daily-mission__active__v01.svg",
+    "ICON-03__daily-mission__outline-dark__v01.svg",
+    "ICON-03__daily-mission__active-dark__v01.svg",
+    "ICON-03__weekly-mission__outline__v01.svg",
+    "ICON-03__weekly-mission__active__v01.svg",
+    "ICON-03__weekly-mission__outline-dark__v01.svg",
+    "ICON-03__weekly-mission__active-dark__v01.svg",
+    "ICON-03__badge__outline__v01.svg",
+    "ICON-03__badge__active__v01.svg",
+    "ICON-03__badge__outline-dark__v01.svg",
+    "ICON-03__badge__active-dark__v01.svg",
+    "ICON-03__achievement__outline__v01.svg",
+    "ICON-03__achievement__active__v01.svg",
+    "ICON-03__achievement__outline-dark__v01.svg",
+    "ICON-03__achievement__active-dark__v01.svg",
+    "ICON-03__season__outline__v01.svg",
+    "ICON-03__season__active__v01.svg",
+    "ICON-03__season__outline-dark__v01.svg",
+    "ICON-03__season__active-dark__v01.svg",
+    "ICON-03__rank__outline__v01.svg",
+    "ICON-03__rank__active__v01.svg",
+    "ICON-03__rank__outline-dark__v01.svg",
+    "ICON-03__rank__active-dark__v01.svg",
+    "ICON-03__leaderboard__outline__v01.svg",
+    "ICON-03__leaderboard__active__v01.svg",
+    "ICON-03__leaderboard__outline-dark__v01.svg",
+    "ICON-03__leaderboard__active-dark__v01.svg",
+    "ICON-03__team-contribution__outline__v01.svg",
+    "ICON-03__team-contribution__active__v01.svg",
+    "ICON-03__team-contribution__outline-dark__v01.svg",
+    "ICON-03__team-contribution__active-dark__v01.svg",
+    "ICON-03__milestone__outline__v01.svg",
+    "ICON-03__milestone__active__v01.svg",
+    "ICON-03__milestone__outline-dark__v01.svg",
+    "ICON-03__milestone__active-dark__v01.svg",
+    "ICON-03__special-moment__outline__v01.svg",
+    "ICON-03__special-moment__active__v01.svg",
+    "ICON-03__special-moment__outline-dark__v01.svg",
+    "ICON-03__special-moment__active-dark__v01.svg",
+    "ICON-03__reward-chest__outline__v01.svg",
+    "ICON-03__reward-chest__active__v01.svg",
+    "ICON-03__reward-chest__outline-dark__v01.svg",
+    "ICON-03__reward-chest__active-dark__v01.svg",
+    "ICON-03__progress-ring__outline__v01.svg",
+    "ICON-03__progress-ring__active__v01.svg",
+    "ICON-03__progress-ring__outline-dark__v01.svg",
+    "ICON-03__progress-ring__active-dark__v01.svg",
+    "ICON-03__gamification-icon-sheet__review__v01.svg",
+    "ICON-03__gamification-icon-sheet__review__v01.png"
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "status": "Review",
+  "batch02": "Direction A Approved for Design Direction",
+  "newAssetIds": [
+    "APP-01",
+    "APP-02",
+    "APP-03",
+    "APP-04",
+    "ICON-01",
+    "ICON-02",
+    "ICON-03"
+  ],
+  "sourceHash": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
+  "sourceHashMatches": true,
+  "kHashMatches": true,
+  "canonicalDirectionAPass": true,
+  "indigo": "#4F46E5",
+  "maskable": {
+    "size": 512,
+    "safeZoneRadius": 204.8,
+    "maximumSignificantInkRadius": 142.34123940011332,
+    "entireSourceCropCornerRadius": 179.71615236021128,
+    "pass": true,
+    "symbolWidthFraction": 0.5,
+    "backgroundOpaque": true,
+    "maskTests": [
+      "circle",
+      "rounded square",
+      "squircle-like"
+    ],
+    "standard": "https://www.w3.org/TR/appmanifest/#icon-masks-and-safe-zone",
+    "opaquePixelCheck": true
+  },
+  "grammarHash": "2d791051b8841e979fa8c9c17c6e66a368ed5a0c290ad7349e5244be181b6d7a",
+  "grammarMatches": true,
+  "variantCounts": {
+    "ICON-01": {
+      "glyphs": 38,
+      "vectorVariants": 152
+    },
+    "ICON-02": {
+      "glyphs": 17,
+      "vectorVariants": 68
+    },
+    "ICON-03": {
+      "glyphs": 15,
+      "vectorVariants": 60
+    }
+  },
+  "nativeVectorGlyphVariants": 280,
+  "academicScope": "GY/GK; no Education Sciences",
+  "thirdPartyLibraries": [],
+  "contrast": {
+    "whiteIndigo": 6.29,
+    "inkWhite": 17.75,
+    "inkSurface": 16.72,
+    "neutralDark": 12.79,
+    "whiteDark": 18.86
+  },
+  "visualQA": "App board, global, academic, gamification sheets inspected; no remaining overlap or clipping",
+  "limitations": [
+    "16px favicon limited detail, geometry unchanged",
+    "16px complex UI glyphs need label/context; 20/24px recommended",
+    "Logo/app K remain raster-embedded; original vector source needed",
+    "Filled cutout colors are surface-specific light/dark examples; bind to Surface tokens in Figma",
+    "Figma Pending; no product implementation or component creation"
+  ],
+  "ownerStyleLockApproval": "Pending",
+  "stopBeforeBatch": 6,
+  "fileEvidence": [
+    {
+      "file": "APP-01__kavriva-kpss-app-icon__main-192__v01.svg",
+      "sha256": "45294888fe47d3ce244f01fe4563202fdc2f320e853b238e6f0b1a7d709a60ee"
+    },
+    {
+      "file": "APP-01__kavriva-kpss-app-icon__main-192__v01.png",
+      "sha256": "bff3b2bdf4fe754dd2af680bf273b84acecad15a8508c42ec28d294037e57851"
+    },
+    {
+      "file": "APP-01__kavriva-kpss-app-icon__main-512__v01.svg",
+      "sha256": "3bc1c99fec88c6436ab76d6ccb6d6759d5c1a814a6934aea942f18ee4356847d"
+    },
+    {
+      "file": "APP-01__kavriva-kpss-app-icon__main-512__v01.png",
+      "sha256": "be7ddf7128a3e8803541ff61735b51d423e192502038e40e95bb1744b8a77ee6"
+    },
+    {
+      "file": "APP-02__kavriva-kpss-maskable__safe-192__v01.svg",
+      "sha256": "81dd1b36e05c38687d71ebf6a80170c8a46c5546707edf9634d6ad93480643e6"
+    },
+    {
+      "file": "APP-02__kavriva-kpss-maskable__safe-192__v01.png",
+      "sha256": "5e5481a4908e1fb4b4631d879e28b372466bb1467c9a38523fab6f04a733e782"
+    },
+    {
+      "file": "APP-02__kavriva-kpss-maskable__safe-512__v01.svg",
+      "sha256": "a1d6f8700d1bc122f726c72d00865c1c38bcda154e3e2c88b6a1d6f84da83540"
+    },
+    {
+      "file": "APP-02__kavriva-kpss-maskable__safe-512__v01.png",
+      "sha256": "d5d97e345f1a66fa94bb066b195d195b25aefe1cc8410d0e6680764b6cc2c270"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__indigo-16__v01.svg",
+      "sha256": "1b27360974e98961ec37d2631c78a015121f7b9ee8ea7027d934392662472506"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__indigo-16__v01.png",
+      "sha256": "12ca48c73655397817b65e178a7bd02334b8d7024a928fca476f7b23c8917550"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__light-16__v01.svg",
+      "sha256": "ccb8fa0fab7dd6eeb02c312e1e98ee15b00ea3bfd092dbd6bc6c015c80915153"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__light-16__v01.png",
+      "sha256": "a329c087e0a3d021ad0a2a29156581f40dd80966204c049c2ce939110ba88763"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__dark-16__v01.svg",
+      "sha256": "aeb8f4f90352f42bcc04d128dea8f9bc0376eef46dab5fca4c05938749ae39dd"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__dark-16__v01.png",
+      "sha256": "430502591af8a1eb0d90ac487de4241205187c3a0093f7d834345c4c513eba4f"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__indigo-32__v01.svg",
+      "sha256": "1d603f2c67e9c5d444e0889c2af5e5d8cf34094e1019a40f11d8a3ce085a8be2"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__indigo-32__v01.png",
+      "sha256": "aae7db56d4791222b5dc7218f01cabbd75c1018a04fa978a266d2813080c87ed"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__light-32__v01.svg",
+      "sha256": "68a1ae9475ce1b6c116191406d6ab29aeeef2e9f381e751231fd0acf09cbce94"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__light-32__v01.png",
+      "sha256": "0a07abedb20eb9f65d24af992aa15c9986c157440e347ba3eba71e02f66b2f28"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__dark-32__v01.svg",
+      "sha256": "195dae58a0666d36ec3263607edf167dd34d3d3c829ca948dc2269345fc4af9c"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__dark-32__v01.png",
+      "sha256": "760768234e5256c7489498919e6d6d3f5b14402332385d94ebaf413891232ffa"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__indigo-48__v01.svg",
+      "sha256": "6e2e169d3b877add887a6aa43c9e371ee0b206b6c50ec9243df9cfc66cab9556"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__indigo-48__v01.png",
+      "sha256": "e3ca3d779a59c94538fb2a1ca80e8081490f6b7190b81ab733dc82a5838d7279"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__light-48__v01.svg",
+      "sha256": "ce62b1cfdff950eb56f336b705f1d1c3615b75fdd80dfbee9633c1f802ae47f0"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__light-48__v01.png",
+      "sha256": "d67c690d3a56dbb61af35dc71c3b256e6d4c36e0c3c0a7773e842f553978612c"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__dark-48__v01.svg",
+      "sha256": "356e83b8407d9c8a9dcf16c9f5f885a27ccff452268ee9b8023a784ff07b6466"
+    },
+    {
+      "file": "APP-03__kavriva-kpss-favicon__dark-48__v01.png",
+      "sha256": "f69e4c3c1450d827460fe335375bea26493de4bcbd4d195b83952560f6a40b14"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__mobile-light__v01.svg",
+      "sha256": "077d90fde50971308a47ecf259220f831ba3f21a1f55433ba4cf2d5d95810c36"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__mobile-light__v01.png",
+      "sha256": "118cbb2971f5c9012e63c75bd3754e1f583f3088b78e6b73f8905f11f21650b6"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__mobile-dark__v01.svg",
+      "sha256": "f64e4ef46c16901c0b522f5ea2ea68683a17553a51d8d3feab8b13a970930c85"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__mobile-dark__v01.png",
+      "sha256": "911ca9166799916a83e35b473088203b8d1cf4f095821f62dd448b769d50cd9f"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__desktop-light__v01.svg",
+      "sha256": "f712a4e1fcb2c5dc1b71aba11a87fb58a9e613dc6d080214d9b290af1df731ac"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__desktop-light__v01.png",
+      "sha256": "a1ea14bffd865b669f31ba4446fad0123eba763189341c3ca0733f4e93481744"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__desktop-dark__v01.svg",
+      "sha256": "63279cb17380b348c39cc5834eb85d2a5f4a9b85c57d9601abe027dad3612248"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__desktop-dark__v01.png",
+      "sha256": "9ab45d73bbb956aeee34345ea33e0097b6d46b3310d756df2abcaa8c10c80039"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__mobile-indigo__v01.svg",
+      "sha256": "91c76554ab8a4b191d41018041ddb697b967ea225f8c420a65e1dbb47cb013fc"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__mobile-indigo__v01.png",
+      "sha256": "d52ee70ed0618879f3007faa1856e4f778d334876b6bbac5ae42db2e155756ec"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__desktop-indigo__v01.svg",
+      "sha256": "919eb810a92c78872d84277e6d8fd71f595da0290074795b951ed2d6e7a9eff3"
+    },
+    {
+      "file": "APP-04__kavriva-kpss-splash__desktop-indigo__v01.png",
+      "sha256": "417246f51a52f2109cfd92fa856e488adfa377b5f711c5f83328dd7ab1032c1b"
+    },
+    {
+      "file": "APP-01__app-icon-family__comparison__v01.svg",
+      "sha256": "a061b0ebc5a28602b0639e7bf5b57123f92863d84a062d0f306ee8360250fea8"
+    },
+    {
+      "file": "APP-01__app-icon-family__comparison__v01.png",
+      "sha256": "fcd4a914f461f5d19dd3498ab6a1e4952fec2eb8720db8d29559b9c67be09670"
+    }
+  ]
+}
