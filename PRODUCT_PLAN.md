@@ -1,6 +1,6 @@
 # KPSS Çalışma Platformu — Ürün Planı
 
-> Bu belge, proje hakkında yapılan konuşmalarda kararlaştırılmış ürün kararlarını kalıcı olarak tutar. Yeni kararlar netleştikçe güncellenecektir.
+> Bu belge yalnızca güncel ve kabul edilmiş ürün kararlarını tutan kanonik kaynaktır. Daha yeni ve daha ayrıntılı kabul edilmiş bir karar eski/geçici bir ifadeyle çelişirse eski ifade güncellenir veya kaldırılır; karar tarihçesi Git geçmişinde korunur.
 
 ## 1. Projenin amacı ve kalite hedefi
 - Proje ticari amaçlı değildir.
@@ -19,21 +19,24 @@ Kullanıcı kayıt sırasında hangi sınava hazırlandığını zorunlu olarak 
 
 Bu seçim soru seçimi, içerik derinliği, zorluk seviyesi ve adaptif sistem tarafından dikkate alınacaktır.
 
-## 3. İlk kayıt / onboarding
-Kayıt yalnızca e-posta ve şifre formu olmayacak; kullanıcının başlangıç çalışma profilini oluşturacaktır.
+## 3. İlk kayıt / onboarding — kararlaştırıldı
+Kayıt yalnızca hesap oluşturma formu olmayacak; sistemin ilk yararlı akademik kararı için gereken minimum başlangıç profilini oluşturacaktır.
 
-Zorunlu başlangıç bilgileri:
-- Hazırlandığı KPSS türü
-- Ders bazında kendi mevcut seviyesi
+Zorunlu çekirdek mümkün olduğunca az tutulacaktır:
+- Hesap
+- Hazırlandığı KPSS türü ve sınav dönemi/yılı
+- Minimum başlangıç akademik profili
 
-Dersler için başlangıç seviyeleri:
+Ana dersler için başlangıç öz değerlendirmesi:
 - Hiç bilmiyorum
 - Başlangıç
 - Orta
 - İyi
 - Çok iyi
 
-Hedef puan, günlük çalışma süresi, önceki KPSS deneyimi ve çalışma aşaması gibi ek sorular ileride değerlendirilebilir; henüz kesin değildir.
+Bu öz değerlendirme yalnızca 20 / 40 / 60 / 80 / 100 başlangıç tahminine karşılık gelir; doğrulanmış akademik kanıt değildir. Kullanıcı kısa kalibrasyonu hemen çözebilir veya **Çalışırken beni tanı** akışıyla gerçek profilin kullanım sırasında oluşmasına izin verebilir.
+
+Hedef KPSS puanı isteğe bağlıdır, sonradan değiştirilebilir ve hedef belirtmeden platform kullanılabilir. Günlük çalışma süresi, önceki KPSS deneyimi ve çalışma aşaması zorunlu onboarding soruları değildir.
 
 ## 4. Adaptif konu bazlı seviye sistemi
 Kullanıcının gerçek seviyesi yalnızca ders bazında tutulmayacaktır. Her konu için ayrı bir gizli seviye puanı olacaktır.
@@ -102,28 +105,19 @@ Bu güven bilgisi kullanıcıya puan olarak gösterilmek zorunda değildir; adap
 - Her sorunun gizli bir zorluk skoru / seviyesi olacaktır.
 - Kullanıcının konu seviyesi ile soru seviyesi eşleştirilerek uygun soru seçilecektir.
 - Kullanıcı yalnızca kolay sorularla değil, seviyesine yakın ve gelişmeye açık sorularla karşılaşacaktır.
-- Soru zorluk puanının kesin hesaplama yöntemi henüz tamamlanmamıştır.
+- Soru zorluğunda **estimated difficulty** ile **data-driven difficulty** ayrı tutulacaktır. Cold-start aşamasında Jev/LLM yalnızca başlangıç tahmini üretebilir; yeterli gerçek çözüm verisi oluştuğunda kullanıcı seviyesini de dikkate alan istatistiksel kalibrasyon daha yüksek ağırlık kazanacaktır. İlk güçlü aday regularized Rasch/1PL yaklaşımıdır; yalnız golden/simülasyon ve gerçek kullanım verisiyle doğrulandıktan sonra aktive edilir, model sürümlenir ve yeterli veri oluşursa daha ileri IRT yaklaşımları değerlendirilebilir.
 
-## 8. Jev AI kullanımı
-Jev, sistemin matematiksel kurallarının yerine geçmeyecektir.
+## 8. Jev AI kullanımı — konsolide karar
+Jev, sistemin matematiksel kurallarının veya doğrulanmış akademik gerçeğin yerine geçmeyecektir.
 
-Jev için planlanan görevler:
-- Sorunun konu / alt konusunu sınıflandırmak
-- Sorunun zorluk seviyesini başlangıçta tahmin etmek
-- Soru tipini sınıflandırmak
-- Çeldirici gücü ve bilişsel zorluk gibi nitelikleri değerlendirmek
-- KPSS seviyesine uygunluğunu değerlendirmek
-- Kod tarafından önceden filtrelenmiş aday sorular arasından uygun seçimlerde yardımcı olmak
-
-Jev'in yapmayacağı işler:
-- Kullanıcının +5/-5, +3/-3, +2/-2, +1/-1 puan değişimini belirlemek
-- Temel seviye matematiğini yönetmek
-- Kesin sistem kurallarını tek başına değiştirmek
-
-Yaklaşım:
-- Kod: kesin kurallar, puanlama, sınırlar ve matematik
-- Jev: sınıflandırma ve sınırlı karar problemleri
-- LLM: açıklama, öğretim, çözüm anlatımı ve koçluk gibi açık uçlu görevler
+- Jev **ölçülmeden ana sınıflandırıcı kabul edilmeyecektir**.
+- İnsan tarafından doğrulanmış yaklaşık birkaç yüz (hedef olarak 300–500 civarı) Türkçe KPSS sorusundan oluşan golden dataset üzerinde ders, konu, alt konu ve kazanım alanlarındaki gerçek doğruluk/confidence kalibrasyonu ölçülecektir.
+- Yeterli kalite sağlarsa yalnız mevcut taxonomy içindeki geçerli ID seçeneklerinden seçim yapan taxonomy-bound sınıflandırmada kullanılacaktır.
+- Türkçe performansı veya belirli alanlardaki kalitesi yeterli değilse structured-output LLM ana/yedek sınıflandırıcı olacaktır.
+- Görsel içeren sorularda Jev'e doğrudan görsel yeteneği varsayılmayacak; gerektiğinde vision katmanı önce sınıflandırma amacıyla yapılandırılmış metin temsili üretir.
+- Jev'in başlangıç zorluk değerlendirmesi düşük güvenli cold-start sinyalidir; gerçek kullanıcı verisi oluştukça data-driven difficulty esas olur.
+- Jev doğru cevap otoritesi olmayacak; cevap doğrulama, sembolik matematik hesabı, kronoloji/sayısal hassasiyet gerektiren görevler ve deterministik akademik kurallar Jev'e bırakılmayacaktır.
+- Kod kesin kuralları/puanlamayı yürütür; Jev yalnız ölçümle güvenilir olduğu gösterilmiş sınırlı sınıflandırma görevlerinde yardımcı olur; LLM öğretim, açıklama ve yapılandırılmış açık uçlu görevlerde kontrollü biçimde kullanılır.
 
 ## 9. AI tahmini ve gerçek kullanım verisi
 Yeni sorularda yeterli kullanıcı verisi olmayacağı için AI başlangıç zorluk tahmini yapabilir.
@@ -151,16 +145,16 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 11. Platformun görevi kullanıcıyı zorlamak değil; çalışmasını kolaylaştırmak, daha verimli hale getirmek, gelişimini takip etmek ve doğru yönlendirmelerle gelişimini desteklemektir.
 12. Sistem çalışma süresini ölçebilir ve kullanıcıya ne kadar çalıştığını gösterebilir; ancak bunu “bugün şu kadar saat çalışmak zorundasın” biçiminde kullanmayacaktır.
 
-## 11. Dashboard ve oyunlaştırma yönü — kısmen kararlaştırıldı
+## 11. Dashboard ve oyunlaştırma yönü — kararlaştırıldı
 - Dashboard'un ana görevi kullanıcıya “şimdi ne çalışabilirim / sıradaki mantıklı adım ne?” sorusunun cevabını hızlıca vermek olacaktır.
 - Kullanıcının iş, günlük hayat ve KPSS hazırlığını aynı anda yürüttüğü kabul edilecektir; çalışma deneyimi gereksiz yere sıkıcı veya ağır hissettirilmemelidir.
 - Dashboard önerici olacaktır; kullanıcıya günlük çalışma süresi veya çalışma miktarı zorunluluğu dayatmayacaktır.
 - Oyunlaştırma projede bilinçli biçimde kullanılacaktır. Amaç yalnızca ödül dağıtmak değil, ders çalışmayı daha keyifli, sürükleyici ve devam ettirilebilir hale getirmektir.
 - Profesyonellik ile eğlence birbirinin karşıtı kabul edilmeyecektir. Site ciddi bir sınava hazırlık aracı olurken aynı zamanda kullanıcının çalışmaktan keyif almasını hedefleyecektir.
-- XP, seri, görevler, başarımlar, görsel ilerleme, seviyeler ve benzeri mekaniklerin tam biçimi henüz kararlaştırılmamıştır; ayrı oyunlaştırma başlığında detaylandırılacaktır.
+- XP/Level, streak, görevler, kamplar, başarımlar, kozmetikler, Yolculuk Haritası, Özel Anlar ve meta oyun ayrı kabul edilmiş sistemlerdir; dashboard bunların yararlı özetlerini gösterebilir ancak akademik ana eylemi gölgelemeyecektir.
 - Gizli akademik seviye puanı ile kullanıcıya gösterilen oyunlaştırma/ödül puanları birbirine karıştırılmayacaktır.
 
-## 12. Günlük çalışma sistemi — kısmen kararlaştırıldı
+## 12. Günlük çalışma sistemi — kararlaştırıldı
 - Günlük çalışma sistemi kullanıcının kendi isteğiyle başlattığı çalışma oturumlarını destekleyecektir; sistem kullanıcıya “bugün X saat çalışmalısın” zorunluluğu koymayacaktır.
 - Kullanıcı siteye ne zaman isterse gelir, istediği kadar ilerler ve istediği noktada bırakabilir.
 - Sistem kullanıcının o gün ve geçmişte ne kadar süre çalıştığını gösterebilir.
@@ -238,7 +232,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Test süre verileri kullanıcı istatistiklerinde, konu/soru türü bazlı hız analizinde, AI koç içgörülerinde, soru zorluğu/kalite değerlendirmesinde ve sistemin gerçek kullanım verisiyle geliştirilmesinde kullanılabilecektir.
 - Süre tek başına akademik seviye puanını doğrudan değiştiren bağımsız bir kural olmayacaktır; doğruluk ve diğer performans sinyalleriyle birlikte yorumlanabilecek yardımcı veridir.
 - Platformun genel çalışma kronometresi ayrıca toplam çalışma süresini takip etmeye devam edecektir; kullanıcı tarafından başlatılabilecek, duraklatılabilecek ve durdurulabilecektir. Test süresi ile genel çalışma süresi farklı amaçlara hizmet eder.
-- Özel klavye kısayolları öncelikli ihtiyaç değildir ve planın temel parçası olmayacaktır.
+- **Tam klavye navigasyonu erişilebilirlik gereği zorunludur.** Tab / Enter / Space / ok tuşları gibi standart davranışlar düzgün çalışacaktır. `1=A`, `2=B`, `N=sonraki` gibi özel power-user kısayolları zorunlu çekirdek özellik değildir; yararlı bulunursa eklenebilir.
 - Kullanıcı hatalı, belirsiz, cevabı sorunlu veya görseli bozuk soruları bildirebilecektir.
 - 10 soruluk test bittikten sonra kullanıcı isterse yeni bir teste geçerek çalışmaya devam edebilecektir.
 - Gönderilen örnek ekranlar **görsel tasarım referansı değil, işlevsel/wireframe referansı** olarak kabul edilecektir; mevcut koyu renkli/yoğun görsel dil kopyalanmayacaktır.
@@ -258,7 +252,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - İçerik sınıflandırması mümkün olduğunca **Ders → Konu → Alt konu → Kazanım/Beceri** hiyerarşisinde tutulacaktır. Gizli kullanıcı seviyesi her mikro kazanımda tutulmak zorunda değildir; ancak soruların ayrıntılı etiketlenmesi ileride zayıf alt alanların tespitini mümkün kılacaktır.
 - Soru kaynakları üç ana grupta tutulabilir: resmî/geçmiş sınav kaynaklı sorular, insan tarafından hazırlanmış özgün sorular ve AI destekli üretilmiş özgün sorular.
 - AI destekli oluşturulan soru doğrudan canlı bankaya girmeyecektir. İçerik yaşam döngüsü taslak/kontrol/onay/aktif benzeri aşamalarla yönetilecektir.
-- Jev veya ilgili sınıflandırma modeli; ders, konu, alt konu, kazanım, soru tipi, ilk zorluk tahmini ve KPSS uygunluğu gibi alanları doldurmaya yardımcı olabilir. AI sınıflandırması tek başına nihai otorite olmayacaktır.
+- Akademik sınıflandırma Jev/structured-output LLM üzerinden kontrollü biçimde yapılabilir; Jev yalnız Türkçe golden dataset ölçümünde yeterli olduğu alanlarda ve mevcut taxonomy ID'leriyle sınırlı olarak kullanılır. İlk zorluk tahmini yalnız cold-start sinyalidir; hiçbir AI sınıflandırması tek başına nihai akademik otorite değildir.
 - Soru zorluğunda başlangıçta AI tahmini tutulabilir; yeterli kullanıcı verisi oluştuğunda gerçek kullanıcı performansından türetilen zorluk ve bu tahminin güveni daha önemli hale gelecektir.
 - Gerçek zorluk değerlendirmesi yalnızca ham doğru yüzdesine bakmayacak; mümkün olduğunca soruyu çözen kullanıcıların seviyeleriyle birlikte yorumlanacaktır.
 - Sistem kullanıcı-soru ilişkisini takip edecektir: sorunun daha önce görülüp görülmediği, doğru/yanlış/boş sonucu, tekrar çözümü ve işaretlenme durumu gibi bilgiler tutulacaktır. İlk 30 benzersiz soru kalibrasyonunda daha önce çözülen soru yeni soru sayılmayacaktır.
@@ -383,7 +377,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Deneme sonucu çalışma programı motorunu besleyecektir. Sistem deneme sonrasında **“Bu denemeye göre en değerli sonraki çalışmalar”** benzeri bir bölümde hedefli konu güçlendirme, kısa tekrar veya hız çalışması önerebilecektir; bunlar zorunlu görev olmayacaktır.
 - Deneme çözme sıklığı katı takvimle zorunlu tutulmayacaktır. Program motoru, son denemeden geçen süreyi, sınava kalan zamanı ve genel ölçüm ihtiyacını değerlendirerek deneme önerebilir; kullanıcı istediği zaman manuel deneme de başlatabilir.
 - Kullanıcının kendi ders/soru sayısı/zorluk karışımını seçerek oluşturduğu çalışma paketleri desteklenebilir; ancak gerçek KPSS simülasyonuyla karışmaması için bunlar **Karma Test** gibi ayrı bir kategori altında tutulacaktır.
-- Tahmini KPSS puanı ve hedef puanla ilişkilendirme 11. **Hedef Puan Sistemi** başlığında ayrıca netleştirilecektir; deneme mimarisinin çalışması buna bağlı değildir.
+- Deneme sonuçlarının tahmini KPSS puanı ve kullanıcı hedefiyle ilişkisi kabul edilmiş **Hedef Puan Sistemi** kurallarına göre çalışacaktır; ölçülen net ile tahmini puan birbirine karıştırılmayacaktır.
 - Deneme sınavlarının mimari düzeyde açık sorusu kalmamıştır; kesin sınav şablonları, süreler ve küçük UX ayrıntıları güncel sınav kuralları/uygulama aşamasında yapılandırılabilir.
 
 ## 20. Performans ve istatistik ekranı — kararlaştırıldı
@@ -455,7 +449,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 ## 22. AI Öğretmen — kararlaştırıldı
 - AI Öğretmen platformun kenarına eklenmiş genel amaçlı bir chatbot olmayacak; soru bankası, konu öğrenme, yanlışlar, notlar ve adaptif seviye sistemiyle bağlamlı çalışan öğretim katmanı olacaktır.
 - Kullanıcı soru inceleme ekranında **AI'ya Sor** dediğinde soru metnini yeniden kopyalamak zorunda kalmayacaktır. Sistem AI'a ders, konu, alt konu, soru, şıklar, doğrulanmış doğru cevap/çözüm, kullanıcının verdiği cevap ve varsa yanlış nedeni gibi mevcut bağlamı otomatik sağlayabilecektir.
-- Öğrenme/video ekranındaki AI; ders, konu, seçilen hoca/video, ilgili video bölümü, mümkünse transcript ve mevcut zaman damgası bağlamını kullanarak **“burayı anlamadım”** gibi kısa soruları anlamlandırabilecektir.
+- Öğrenme/video ekranındaki AI; ders, konu, seçilen hoca/video, ilgili bölüm ve mevcut zaman damgası bağlamını kullanacaktır. Transcript yalnız resmî/yetkili biçimde erişilebiliyorsa veya içerik sahibi tarafından sağlanmışsa kullanılabilir; ürün üçüncü taraf transcript scraping'ine bağımlı olmayacaktır. Normal bağlam admin onaylı bölüm başlıkları, zaman aralıkları ve kısa bölüm özetleriyle kurulacaktır.
 - AI açıklama biçimini kullanıcının gerçek öğrenme durumuna göre ayarlayacaktır. Gizli akademik skor doğrudan gösterilmese de sistem AI'a kullanıcının yaklaşık düzeyi, zorlandığı alt alanlar ve uygun anlatım derinliği için bağlam verebilecektir.
 - Varsayılan AI cevabı kısa, anlaşılır ve soruna doğrudan yönelik olacaktır. Kullanıcı isterse **Daha basit anlat / Detaylı anlat / Adım adım çöz / Örnek ver / Benzer soru göster** gibi eylemlerle açıklamayı genişletebilecektir.
 - AI yalnızca doğru cevabı veren bir makine gibi davranmayacaktır. Kullanıcı isterse önce ipucu, ardından daha güçlü ipucu ve en sonunda tam çözüm akışını kullanabilecektir; ancak kullanıcı tam çözümü istiyorsa sistem bunu gereksiz yere engellemeyecektir.
@@ -474,7 +468,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - AI Öğretmenin tonu destekleyici ve anlaşılır olacaktır ancak aşırı oyunlaştırılmış veya yapay motivasyon diline dönüşmeyecektir. Kullanıcı isterse **Kısa ve net / Normal / Detaylı** gibi açıklama tercihleri kullanabilecektir.
 - AI'nın kişiselleştirmesindeki ana değer kozmetik “kişilik” değil, kullanıcının gerçekten ne bildiğini ve nerede zorlandığını anlayıp uygun açıklama sunması olacaktır.
 - Temel akış: **anlamadım → mevcut bağlamı otomatik al → seviyeye uygun kısa açıklama → isteğe göre ipucu/detay/adım adım/örnek → gerekirse AI pratik sorusu → yararlı açıklamayı nota kaydet**.
-- AI Öğretmenin mimari düzeyde temel yönü kararlaştırılmıştır. Model seçimi, maliyet, bağlam penceresi, transcript elde etme yöntemi, moderasyon ve teknik entegrasyon ayrıntıları 21. **Teknik Altyapı** başlığında ayrıca kesinleştirilecektir.
+- AI Öğretmenin ürün ve teknik omurgası kabul edilmiştir; sağlayıcı/model eşlemesi merkezi AI Gateway ve Admin AI Control Center üzerinden yönetilecek, video bağlamında yetkisiz transcript scraping'i ürün bağımlılığı olmayacaktır. Kullanıcı-facing AI veri yaşam döngüsü ve gizlilik ayrıntıları ilgili sonraki planlama başlığında tamamlanacaktır.
 
 ## 23. AI Çalışma Koçu — kararlaştırıldı
 - AI Çalışma Koçu serbest biçimde çalışma programı uyduran ayrı bir karar motoru olmayacaktır. Mevcut çalışma programı motorunun, performans verilerinin ve hedef sisteminin **kişisel, açıklanabilir ve konuşulabilir yüzü** olacaktır.
@@ -496,7 +490,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Veri yetersiz olduğunda koç **“bunu söylemek için yeterli veri yok”** diyebilecek ve sahte kesinlik üretmeyecektir.
 - Test, deneme veya çalışma oturumu sonunda kısa **Koçun yorumu** kartlarıyla bağlamsal öneriler sunulabilecektir.
 - Koç proaktif olabilir ancak rahatsız edici popup/chatbot davranışı göstermeyecektir. Dashboard ve sonuç ekranlarında gerektiğinde küçük bağlamsal öneriler gösterebilir.
-- Oyunlaştırma ve XP mekanikleri henüz kararlaştırılmadığı için AI Koçun ana amacı şimdilik **öğrenme verimliliği ve yönlendirme** olacaktır. Oyunlaştırma 14–15. başlıklarda tasarlandıktan sonra entegrasyon ayrıca yapılabilir.
+- AI Koçun ana amacı **öğrenme verimliliği ve yönlendirme** olmaya devam edecektir. Kabul edilmiş oyunlaştırma/meta bağlamını ikincil bilgi olarak kullanabilir ancak XP, görev, streak, sezon veya ödül hedefleri akademik program motorunun kararlarının önüne geçemez. Koç ↔ oyunlaştırma ayrıntıları sonraki çapraz planlama turunda kesinleştirilecektir.
 - AI Koç ile AI Öğretmen birbirine geçiş yapabilecek ancak görevleri ayrı kalacaktır. Koç çalışma stratejisine, Öğretmen konu/soru öğretimine odaklanacaktır.
 - Ayrı bir Koç ekranında **Bugün ne çalışayım? / Bu hafta neye odaklanayım? / Neden ilerleyemiyorum? / Hedefime göre durumum nasıl? / Son denememi yorumla / Zayıf alanlarımı söyle** gibi hızlı başlangıçlar bulunabilir.
 - AI Çalışma Koçunun temel ürün mimarisi kararlaştırılmıştır; model, maliyet, context seçimi ve teknik entegrasyon ayrıntıları Teknik Altyapı başlığında netleştirilecektir.
@@ -536,7 +530,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - **“Bu konuyu zaten biliyorum”** diyerek içeriği atlayan kullanıcı konu öğrenme XP'si kazanmayacak, ancak kalibrasyon/test performansından normal XP kazanabilecektir.
 - Yanlışların gerçekten düzeltilmesi özel olarak ödüllendirilebilecektir. Yanlış incelenip aynı beceriyi ölçen yeni doğrulama sorularında başarı sağlandığında **Hata Düzeltme / Güçlendirme XP'si** verilebilir.
 - Seviye eğrisi başlangıçta daha hızlı, ilerleyen seviyelerde daha yavaş olacaktır. İlk seviyeler kısa sürede tatmin vermeli; yüksek seviyeler uzun dönem gerçek çalışma gerektirmelidir.
-- İlk sürüm için 1–100 seviye yaklaşımı kullanılabilir; 100 sonrası prestij veya daha uzun vadeli ilerleme sistemi gerçek kullanım verisine göre ayrıca tasarlanabilir.
+- Oyuncu seviyesi için kabul edilmiş temel aralık **1–100** olacaktır. Seviye 100 sonrasında hard-cap mı yoksa ayrı prestij yaklaşımı mı kullanılacağı açık denge kararı olarak ayrıca kapatılacaktır; bu belirsizlik 1–100 sistemini değiştirmez.
 - Seviye atlama kaliteli ama dikkat dağıtmayan bir görsel geri bildirimle gösterilecektir. Test/oturum sonunda kazanılan XP ve level-up durumu özetlenebilir.
 - Her seviyede özel ödül bulunmak zorunda değildir. Belirli kilometre taşlarında daha anlamlı ödüller açılacaktır.
 - Ödüller akademik avantaj vermeyecektir. Profil çerçevesi, banner, tema, avatar öğesi, unvan, çalışma ekranı kozmetiği ve benzeri görsel/kişisel ödüller kullanılabilir.
@@ -565,13 +559,13 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Tekrar edilen aynı sorularda XP getirisi kademeli biçimde azalabilir; anti-farm sistemi mümkün olduğunca **görünmez ve sessiz** çalışacaktır.
 - Yanlış defterindeki planlı tekrar ve güçlendirme çalışmaları farm sayılmayacak; bunlar yeni soru XP'si yerine tekrar/güçlendirme XP'si üretebilecektir.
 - Seviye gereksinimleri doğrusal olmayacaktır. İlk seviyeler hızlı ilerlerken yüksek seviyeler giderek daha fazla XP isteyecektir.
-- İlk sürümde seviye kilometre taşları belirli ödüller açacaktır. Her seviyeye eşya koymak yerine 5/10/15/20 vb. önemli noktalarda daha anlamlı kozmetik ve unvan ödülleri kullanılabilir.
+- Seviye kilometre taşları belirli ödüller açacaktır. Her seviyeye eşya koymak yerine 5/10/15/20 vb. önemli noktalarda daha anlamlı kozmetik ve unvan ödülleri kullanılabilir.
 - Kozmetik ödüllerde **Standart / Nadir / Destansı / Efsanevi** benzeri nadirlik katmanları kullanılabilir; ancak lootbox veya rastgele satın alma mantığı olmayacaktır. Ödülün nasıl açılacağı şeffaf olacaktır.
 - Başarımlar ve rozetler ayrıca XP verebilir; ancak başarım XP'si normal çalışmanın ana XP kaynağının önüne geçmeyecektir.
 - Dashboard ve Seviye Merkezi kullanıcıya yalnızca mevcut level'ı değil, **bir sonraki önemli ödülü** ve ona kalan ilerlemeyi de gösterebilecektir.
 - Seviye atlama geri bildirimi kısa ve kaliteli olacaktır; uzun konfeti/popup akışları soru çözme deneyimini kesmeyecektir.
 - Sürekli **2X XP** benzeri kampanyalar temel ekonomi haline getirilmeyecektir. Özel çevrimiçi etkinliklerde sınırlı bonuslar ileride ayrıca düşünülebilir.
-- İlk sürümde ayrı bir coin/mağaza ekonomisi kurulmayacaktır. Temel akış **XP → Level → Ödül açılması** olarak sade tutulacaktır.
+- Ayrı bir coin/mağaza ekonomisi mevcut ürün tasarımına dahil değildir. Temel akış **XP → Level → Ödül açılması** olarak sade tutulacaktır.
 - Online sistemlerde oyuncu level'ı sosyal profil bilgisi olabilir fakat tek başına rekabet sıralaması ölçütü olmayacaktır; haftalık/aylık XP ve diğer sosyal ölçüler daha sonra ayrı tasarlanacaktır.
 - Kesin XP değerleri uygulamaya gömülü değişmez sabitler olmayacak; gerçek kullanım verisine göre ayarlanabilen **denge konfigürasyonu** olarak tutulacaktır.
 
@@ -600,7 +594,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Sosyal profil tarafında kullanıcı isterse **güncel seri, en uzun seri ve son 30 günlük aktif gün** bilgilerini gösterebilecektir.
 - Leaderboard doğrudan en uzun streak üzerine kurulmayacaktır; eski kullanıcıların kalıcı avantaj kazanmaması için dönemsel istikrar gibi sosyal metrikler ileride ayrıca değerlendirilebilir.
 - Kullanıcıya **“bugün henüz çalışma kaydedilmedi”** gibi sakin hatırlatmalar gösterilebilir; kırmızı alarm ve kayıp korkusu dili kullanılmayacaktır.
-- Bildirim gönderilip gönderilmeyeceği ayrıca bildirim başlığında kararlaştırılacaktır.
+- Streak dahil bildirim davranışı genel bildirim politikasıyla yönetilecektir: bildirimler bağlamsal, kategori bazlı, deep-link destekli ve suçluluk/spam üretmeyen yapıda olacaktır. Streak bildiriminin varsayılanı, sessiz saatleri ve frekans sınırları Bildirimler/Gizlilik planlama başlığında kesinleştirilecektir.
 - Kullanıcı isterse streak göstergesini tamamen kapatabilecektir. Oyunlaştırma isteğe bağlı kalacaktır.
 - Streak sistemi ile XP sistemi görev olarak ayrı tutulacaktır: streak **devamlılığı**, XP ise **gerçek çalışma ve hesap gelişimini** temsil edecektir.
 - Streak alt sistemi ürün mimarisi açısından kararlaştırılmıştır; kesin aktif gün eşiği, koruma hakkı kazanma sıklığı, milestone değerleri ve UI ayrıntıları daha sonra denge parametresi olarak netleştirilecektir.
@@ -742,14 +736,14 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Kozmetikler ayrı slotlarda yönetilecektir: **Profil Çerçevesi, Banner, Unvan, Avatar/Avatar Öğesi, Rozet Vitrini, Tema ve Çalışma Ekranı Kozmetiği** gibi.
 - Profil çerçeveleri ve bannerlar sosyal profilin en görünür kişiselleştirme araçlarından olacaktır. Hareketli öğeler desteklenebilir ancak dikkat dağıtıcı yanıp sönme/yoğun efektlerden kaçınılacaktır.
 - Unvanlar level, başarım, streak, kamp, deneme veya başka anlamlı kilometre taşlarından açılabilir. Ölçülmeyen akademik üstünlüğü iddia eden “deha/uzman” gibi unvanlardan kaçınılacaktır.
-- İlk sürüm avatar sistemi basit tutulabilir: kaliteli hazır avatarlar ve uygun olduğunda profil fotoğrafı. Parça parça karakter oluşturma sistemi ileride değerlendirilebilir.
+- Mevcut ürün kapsamında kaliteli hazır avatarlar ve uygun olduğunda profil fotoğrafı desteklenecektir. Parça parça karakter oluşturma sistemi kabul edilmiş zorunlu kapsam değildir ve ayrı karar verilmeden ürün sözü sayılmayacaktır.
 - Avatar aksesuarları yalnızca kozmetik olacaktır; akademik statü veya avantaj ifade etmeyecektir.
 - Rozet Vitrini daha önce kararlaştırıldığı gibi sınırlı sayıda seçili başarımı (yaklaşık 3–5) sosyal profilde sergilemeye izin verecektir.
 - Açık/Koyu mod, erişilebilirlik ve temel kullanılabilirlik özellikleri ödül arkasına kilitlenmeyecektir. Kozmetik temalar yalnızca alternatif görsel stiller, vurgu renkleri ve yüzey/motif seçenekleri sunacaktır.
 - Soru çözme ve gerçek sınav ekranlarında kozmetik kullanım çok sınırlı tutulacaktır. İşlevsel renkler, kontrast, doğru/yanlış durumu ve ana navigasyon kozmetik temadan bağımsız kalacaktır.
 - Kilitli kozmetiklerin açılma koşulları gizli başarım ödülleri dışında açıkça gösterilecektir; örneğin level, başarım veya streak kilometre taşı.
 - Lootbox, rastgele kutu veya şansa dayalı kozmetik kazanımı kullanılmayacaktır.
-- İlk sürümde ayrı coin/mağaza sistemi olmayacaktır. Temel akış **gerçek çalışma → level/başarım/milestone → kozmetik açılması** şeklinde kalacaktır.
+- Ayrı coin/mağaza sistemi kullanılmayacaktır. Temel akış **gerçek çalışma → level/başarım/milestone → kozmetik açılması** şeklinde kalacaktır.
 - Kozmetiklerde **Standart / Nadir / Destansı / Efsanevi** gibi nadirlik katmanları kullanılabilir. Yüksek nadirlik gerçekten daha özel koşullara bağlanacak ve özellikle Efsanevi ödüller sınırlı tutulacaktır.
 - Kozmetik kaynakları çeşitlenecektir: level, başarım, streak, kamp, deneme, kişisel rekor ve ileride sosyal/meta etkinlikler.
 - Aynı kozmetik ikinci kez “duplicate item” olarak verilmez. Bir kez açılan ödül kalıcıdır.
@@ -1067,7 +1061,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 
 ### Mesajlaşma ve güvenlik
 - Ürünün odağı sosyal ağ olmayacaktır. Temel model; çalışma odası sohbeti, kısa sosyal mesajlar/reaksiyonlar ve çalışma odaklı iletişimdir.
-- Tam DM sistemi kullanılacaksa engelleme, sessize alma, şikâyet, mesaj isteği ve “kim mesaj gönderebilir?” kontrolleri eksiksiz uygulanacaktır.
+- **Tam birebir DM sistemi olmayacaktır.** Sosyal iletişim çalışma odası sohbeti, takım bağlamı, kısa mesaj/reaksiyon/tebrik ve çalışma odaklı iletişimle sınırlandırılacaktır; mevcut engelleme, sessize alma ve raporlama güvenlik araçları bu yüzeylerde geçerli olacaktır.
 - Sosyal güvenlik araçları yarım bırakılmayacaktır.
 - Arkadaş önerileri agresif rehber/telefon taramasına dayanmayacaktır; ortak arkadaş veya takım gibi bağlamlar kullanılabilir ve öneriler kapatılabilir.
 - Profil için doğum tarihi, okul veya şehir gibi kişisel bilgilerin paylaşılması gerekmeyecektir.
@@ -1179,7 +1173,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Sık kullanılan CTA'lar başparmak erişimine uygun bölgelerde olacaktır.
 - Safe-area, notch, gesture bar ve farklı ekran oranları desteklenecektir.
 - Tabletlerde uygun yerlerde iki kolon gibi daha zengin responsive düzenler kullanılabilecektir.
-- Masaüstü mobil uğruna fakirleştirilmeyecek; geniş ekran, çoklu kolon ve klavye kısayolları gibi avantajlar kullanılacaktır.
+- Masaüstü mobil uğruna fakirleştirilmeyecek; geniş ekran ve çoklu kolon gibi avantajlar kullanılacaktır. Klavye ile tam erişilebilir navigasyon zorunlu olacak; özel power-user kısayolları ise opsiyonel kalacaktır.
 
 ### Mobil soru çözme
 - Şıklar büyük dokunma alanlarına sahip olacak; küçük radio-button tarzı kontrol kullanılmayacaktır.
@@ -1294,8 +1288,8 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Büyük PDF'lerde binlerce soru için toplu işleme ve ilerleme takibi desteklenecektir.
 
 ### Jev ile otomatik akademik sınıflandırma
-- PDF'den yapısal olarak çıkarılan her soru **Jev sınıflandırma aşamasından** geçirilebilecektir.
-- Jev; soru içeriği ve gerektiğinde ilişkili görseli kullanarak şu metadata alanları için aday üretir:
+- PDF'den yapısal olarak çıkarılan sorular **ölçümle doğrulanmış Jev veya structured-output LLM sınıflandırma aşamasından** geçirilebilecektir; Jev zorunlu tek bağımlılık değildir.
+- Jev doğrudan görsel yeteneğe sahip varsayılmayacaktır. Görselli sorularda vision katmanı önce sınıflandırma amacıyla yapılandırılmış metin temsili üretir; Jev yalnız golden dataset ölçümünde yeterli bulunduğu alanlarda bu temsil/soru metni üzerinden şu metadata alanları için aday üretebilir:
   - Ders
   - Konu
   - Alt konu
@@ -1483,7 +1477,7 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 
 ### Taxonomy ve zorluk kalitesi
 - Ders, konu, alt konu ve kazanım sınıflandırması ayrı kalite boyutu olacaktır.
-- Jev başlangıç taxonomy ve tahmini zorluk sınıflandırmasını yapabilir; gerçek kullanıcı verisi oluştuğunda data-driven difficulty daha yüksek ağırlık kazanacaktır.
+- Jev yalnız Türkçe golden dataset üzerinde yeterli olduğu gösterilen taxonomy alanlarında başlangıç sınıflandırma adayı olabilir; tahmini zorluk yalnız düşük güvenli cold-start sinyalidir. Gerçek kullanıcı verisi oluştuğunda data-driven difficulty daha yüksek ağırlık kazanacaktır.
 - Estimated difficulty ile gerçek performans arasında büyük uyumsuzluk varsa **Difficulty Mismatch** kalite sinyali oluşacaktır.
 - Taxonomy anomalileri gerçek kullanıcı performansı ve soru benzerliklerinden de tespit edilebilecektir.
 
@@ -1753,20 +1747,23 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Teknik Altyapı ürün mimarisi açısından tamamlanmıştır. Sağlayıcı fiyatları, exact machine size, model isimleri ve operasyon limitleri uygulama/deploy zamanında yeniden doğrulanacaktır.
 
 ## 43. Planlama turu sonrası açık uygulama detayları
-- Ana ürün sistemleri ve teknik mimari planlama turu tamamlanmıştır.
-- Bundan sonraki çalışmalar kabul edilmiş özellikleri çıkış kapsamından çıkarmadan; UI/UX ekran tasarımı, kesin denge değerleri, içerik üretim hacmi, marka/alan adı, operasyon limitleri, production KVKK/hukuki doğrulaması ve uygulama ayrıntılarını netleştirebilir.
-- Bu alanların daha sonra detaylandırılması post-launch erteleme anlamına gelmez; kabul edilmiş ana sistemler tek kapsamlı ürün çıkışının parçasıdır.
+- İlk 21 ana ürün/mimari başlığı tamamlanmıştır; son denetim, başlıklar arası bazı çapraz politika boşlukları ve eskimiş ifadeler bulunduğunu göstermiştir.
+- Planlama; kabul edilmiş özellikleri çıkış kapsamından çıkarmadan KPSS sınav modeli, akademik evidence/scoring, Ayarlar/Hesap/Bildirim/Gizlilik, içerik operasyonu, sosyal/AI edge-case'leri ve release/compliance kriterleri üzerinde devam edecektir.
+- UI/UX ekran tasarımı, kesin denge değerleri, içerik üretim hacmi, marka/alan adı ve operasyon limitlerinin detaylandırılması post-launch erteleme anlamına gelmez; kabul edilmiş ana sistemler tek kapsamlı ürün çıkışının parçasıdır.
 
-
-- Arkadaş ve sosyal özellikler
-- Motivasyon ve gamification
-- Sürekli gelişim / meta oyun sistemi
-- Bildirimler / hatırlatmalar
-- Profil ve kişiselleştirme
-- Mobil/PWA deneyimi
-- Admin paneli
-- Teknik mimari ve veri modeli
-- İçerik kalite kontrolü
+## 44. Plan Konsolidasyonu ve Karar Önceliği — kararlaştırıldı
+- `PRODUCT_PLAN.md` tartışma dökümü değil, **mevcut kabul edilmiş kararların kanonik kaynağıdır**.
+- Daha yeni ve daha ayrıntılı kabul edilmiş açık karar, eski/geçici ifadeyle çelişirse eski ifade belgede güncellenir veya kaldırılır; Git geçmişi karar tarihçesini korur.
+- “Mimari düzeyde açık soru kalmamıştır” ifadesi yalnız ilgili alt sistemin ana mimarisinin tamamlandığını anlatır; daha sonraki çapraz denetimlerin yeni politika/edge-case boşluğu bulamayacağı anlamına gelmez.
+- Dashboard ve Günlük Çalışma artık tamamlanmış başlıklardır; eski “kısmen kararlaştırıldı” durumu geçersizdir.
+- Hedef puan isteğe bağlı ve kabul edilmiş sistemdir; onboarding'de zorunlu değildir.
+- Jev ölçülmeden ana sınıflandırıcı değildir; soru zorluğunda estimated/data-driven ayrımı ve ölçülmüş istatistiksel kalibrasyon geçerlidir.
+- Klavye ile tam erişilebilir navigasyon zorunludur; özel power-user kısayolları opsiyoneldir.
+- Tam birebir DM yoktur; çalışma odası/takım/kısa tepki odaklı iletişim geçerlidir.
+- Video/AI bağlamında ürün yetkisiz transcript scraping'ine dayanmaz; yalnız resmî/yetkili transcript veya admin onaylı bölüm/zaman aralığı/özet bağlamı kullanılır.
+- Bildirimlerde genel kabul edilmiş ilke bağlamsal, kategori bazlı, deep-link destekli ve spam/suçluluk üretmeyen davranıştır; varsayılan/frekans/sessiz saat ayrıntıları ilgili yeni planlama başlığında kesinleştirilecektir.
+- “İlk sürüm” dili kaldırılmıştır; kabul edilmiş sistemler tek kapsamlı ürün çıkışının parçalarıdır.
+- İlk 21 başlık tamamlanmış olsa da post-audit planlama turu devam etmektedir; 23–28 başlıkları tamamlanmadan “önemli ürün kararı kalmadı” sonucu çıkarılmayacaktır.
 
 ---
 Durum: Ürün planlama aşaması devam ediyor. Henüz geliştirmeye başlanmadı.
