@@ -1,0 +1,58 @@
+{
+  "promptCount": 87,
+  "checklistCount": 87,
+  "duplicates": {
+    "prompt": [],
+    "checklist": [],
+    "assignments": []
+  },
+  "differences": {
+    "promptChecklist": [],
+    "checklistPrompt": [],
+    "promptAssignments": [],
+    "assignmentsPrompt": []
+  },
+  "batchCount": 22,
+  "batchSequence": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22"
+  ],
+  "assignmentCount": 87,
+  "checks": {
+    "educationSciencesExcluded": true,
+    "brand06MasterOnly": true,
+    "app03GeometryImmutable": true,
+    "sequenceAuthority": true
+  },
+  "sourceHashes": {
+    "PRODUCT_PLAN.md": "e784624427e836aef6267e3dd9e4d5558d693a499d7d5b4f14d2799d37d7e75e",
+    "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md": "b4ce7042b03a2d6f94a063340e77db2dfb7af3cbf5e7c5059e304b9ee4194539",
+    "docs/design/KAVRIVA_KPSS_ASSET_CHECKLIST.md": "44484dae0fc364605a3a4c448705f5c271e56b83ca63e7b7c2578db50084622f",
+    "docs/design/KAVRIVA_KPSS_FIGMA_STRUCTURE.md": "4b2d44b0d76d3cc8cb6e1a6eef75b7c6d2f86dbe9b283fe7f4c8e831c0c79d97",
+    "docs/design/KAVRIVA_KPSS_AI_BATCH_PLAN.md": "91130ba34e50d8a6e6824b5b0a815fbbac47afd24c3378b92d5637084dd797b1"
+  },
+  "reviewedCommit": "f3881c21584084e3ed851268ef21104742d2f72e",
+  "figmaWrite": "Pending",
+  "vectorSource": "source asset needed",
+  "pass": true
+}
