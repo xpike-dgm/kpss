@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-07",
+  "total": 87,
+  "duplicateIds": 0,
+  "checklistMatchesRegistry": true,
+  "approvedForDesignDirection": 81,
+  "planned": 6,
+  "plannedIds": [
+    "MKT-01",
+    "MKT-02",
+    "MKT-03",
+    "MKT-04",
+    "MKT-05",
+    "MKT-06"
+  ],
+  "figma": "Pending",
+  "finalProductionExport": "Pending",
+  "polish": "P-01–P-06 Open",
+  "batch18_19": "Not started — product screens/stable UI dependency",
+  "batch21_22": "Not started",
+  "newAssetsProduced": 0
+}

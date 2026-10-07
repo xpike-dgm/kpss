@@ -1,4 +1,5 @@
 const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../../../..');
+if(fs.existsSync(path.join(__dirname,'owner-decision.json'))){console.log('Superseded by Core System Owner Decision. Canonical checkpoint retained.');process.exit(0);}
 const currentPath=path.join(__dirname,'asset-registry.json');const source=JSON.parse(fs.readFileSync(fs.existsSync(currentPath)?currentPath:path.join(root,'docs/design/production/parallel-production/asset-registry.json'),'utf8'));
 const selected=source.assets.filter(a=>/^(CAT|EMPTY|ONBOARD|GAME|AI|SOCIAL)-/.test(a.assetId));if(selected.length!==48)throw Error('Owner scope mismatch');
 let checklist=fs.readFileSync(path.join(root,'docs/design/KAVRIVA_KPSS_ASSET_CHECKLIST.md'),'utf8');

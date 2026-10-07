@@ -1,8 +1,25 @@
 # Kavriva KPSS — Core System Completion Review Pack
 
-2026-10-07 · Batch15/16/17/20 · **20 asset Review**. Önceki category7 + parallel41 owner onayı **Approved for Design Direction** olarak işlendi. Registry toplamı: 87 unique asset; **61 Approved for Design Direction / 20 Review / 6 Planned**. Final Production Export ve Figma Pending. Yeni asset'e owner onayı verilmedi.
+2026-10-07 · Batch15/16/17/20 · **20 asset Approved for Design Direction — Owner accepted**. Canonical registry: 87 unique asset; **81 Approved for Design Direction / 6 Marketing Planned**. Final Production Export ve Figma Pending. Aşağıdaki pafta/QA bölümleri üretim review'ının tarihsel kanıtıdır; güncel Owner Decision bu bölümde kaydedilmiştir.
 
 [20 asset paftası](production/core-system/CORE_SYSTEM_COMPLETION__review-board__v01.png) · [Current registry](production/core-system/asset-registry.json) · [State transitions](production/core-system/state-transitions.json)
+
+## Owner Decision — Core System Completion, 2026-10-07
+
+Owner toplu review'ı kabul etti. **ACADEMIC-01–07, ADMIN-01–04, MOTION-01–04, SHARE-01–05**: toplam20 asset **Approved for Design Direction**. Final Production Export/Figma Pending; Final Export veya Figma Ready onayı verilmedi.
+
+Kabul notları:
+
+1. **MOTION-03:** light green peak ring yalnız decorative/supporting visual. Essential success/status anlamı primary check, editable label/text ve accessible semantic UI tarafından taşınacak.
+2. **MOTION-02:** tam achievement badge composite **48px+** önerisi kabul edildi. 24px gibi küçük kullanımda approved sade core glyph; Kavriva K değiştirilmeyecek.
+3. **ACADEMIC-02/04:** mevcut design direction kabul edildi. Production implementation'da complex mathematical typesetting, **KaTeX/native math rendering**, line wrapping, mobile narrow layouts, long Turkish explanations ve academic editorial validation ayrıca test edilecek. Bu işler direction onayını engellemez.
+4. **SHARE-01–05:** design direction kabul edildi. Kavriva master brand real vector source bulunana kadar **Final Production Vector Export = Pending**. Dynamic real-data substitution ve platform compression testleri final assembly aşamasında.
+
+**P-01–P-06 Open**; bu20 asset'in onayı hiçbir polish maddesini kapatmaz. Final Production Export öncesi zorunludur.
+
+**Marketing hold:** MKT-01–06 Planned. Batch18/19 gerçek Product Screens veya sufficiently stable component/UI system olmadan başlatılmayacak; fake product UI üretilmeyecek. Batch21 final audit, marketing eksik olduğundan başlatılmadı. Batch22 export/handoff, marketing eksik + polish açık + Brand/App real vector source eksik + Figma native handoff Pending nedeniyle başlatılmadı.
+
+[Asset Phase checkpoint](KAVRIVA_KPSS_ASSET_PHASE_STATUS.md) · [Owner record](production/core-system/owner-decision.json). Commit sonrası duruldu; bu kararla yeni asset üretim izni verilmedi.
 
 ## 1. Track F — Academic
 
@@ -68,4 +85,4 @@ ACADEMIC-01–07; ADMIN-01–04; MOTION-01–04; SHARE-01–05: Final Production
 
 [Production Polish Backlog](PRODUCTION_POLISH_BACKLOG.md): **P-01–P-06 Open**. AI-04 dark ring, EMPTY-05 dark connector, EMPTY-07/09 semantic separation, ONBOARD-07 verified authority assembly, raster edge/alpha ve palette normalization tamamlandı iddiası yok. Yeni wave'i bloklamaz; final export öncesi zorunludur.
 
-**Stop:** Batch18/19/21 başlatılmadı. MKT-01–06 Planned. Gerçek product screens / yeterince stabil component library olmadan marketing üretilmeyecek. Sonraki adım Owner'ın toplu review kararından sonra belirlenecek.
+**Stop:** Batch18/19/21/22 başlatılmadı. MKT-01–06 Planned. Gerçek product screens / yeterince stabil component library olmadan marketing üretilmeyecek. Owner toplu review'ı kabul etti ve bu checkpoint'te durulmasını istedi; sonraki çalışma ayrıca belirlenecek.

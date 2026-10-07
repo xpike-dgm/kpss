@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-07",
+  "authority": "Explicit Owner — Core System Completion accepted",
+  "assetIds": [
+    "ACADEMIC-01",
+    "ACADEMIC-02",
+    "ACADEMIC-03",
+    "ACADEMIC-04",
+    "ACADEMIC-05",
+    "ACADEMIC-06",
+    "ACADEMIC-07",
+    "ADMIN-01",
+    "ADMIN-02",
+    "ADMIN-03",
+    "ADMIN-04",
+    "MOTION-01",
+    "MOTION-02",
+    "MOTION-03",
+    "MOTION-04",
+    "SHARE-01",
+    "SHARE-02",
+    "SHARE-03",
+    "SHARE-04",
+    "SHARE-05"
+  ],
+  "status": "Approved for Design Direction",
+  "acceptanceNotes": {
+    "MOTION-03": "Light green peak ring decorative/supporting only. Essential success/status: primary check + editable label/text + accessible semantic UI.",
+    "MOTION-02": "Full achievement badge composite recommended48px+. At24px use approved simple core glyph. Kavriva K immutable.",
+    "ACADEMIC-02": "Production tests pending: complex typesetting, KaTeX/native math, wrapping, narrow mobile, long Turkish explanations and academic editorial validation.",
+    "ACADEMIC-04": "Production tests pending: complex typesetting, KaTeX/native math, wrapping, narrow mobile, long Turkish explanations and academic editorial validation."
+  },
+  "shareAcceptance": "SHARE01–05 accepted for direction. Final Production Vector Export Pending until master brand vector source. Dynamic real-data substitution and platform compression tests are final assembly work.",
+  "productionPolish": "P01–P06 Open; mandatory before Final Production Export; not closed by this approval",
+  "figma": "Pending",
+  "finalProductionExport": "Pending",
+  "holdBatches": [
+    18,
+    19,
+    21,
+    22
+  ],
+  "newProductionAuthorized": false
+}

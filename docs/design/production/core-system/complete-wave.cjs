@@ -1,5 +1,6 @@
 const {root,T,txt,rect,svg,renderer,fs,path}=require('../style-lock/shared.cjs'),crypto=require('crypto'),sharp=require('sharp');
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+if(fs.existsSync(path.join(__dirname,'owner-decision.json'))){console.log('Owner acceptance recorded. Historical review builder locked; no production or status downgrade.');process.exit(0);}
 async function main(){const f=read('docs/design/production/track-f/manifest.json').entries,g=read('docs/design/production/track-g/manifest.json').selected,h=read('docs/design/production/track-h/manifest.json').primary,j=read('docs/design/production/track-j/manifest.json').selected;
 const all=[...f,...g,...h,...j].map(a=>({...a,sourcePath:a.sourcePath||a.source,previewPath:a.previewPath||a.preview}));if(all.length!==20||new Set(all.map(a=>a.assetId)).size!==20)throw Error('Expected unique20');for(const a of all)for(const p of [a.sourcePath,a.previewPath])if(!fs.existsSync(path.join(root,p)))throw Error(p);
 let board=rect(0,0,2000,1900,T.surface)+txt(50,65,'CORE SYSTEM COMPLETION / 20 ASSET REVIEW',38,T.ink,650,'Manrope')+txt(50,105,'F: Academic 7   G: Admin 4   H: Motion 4   J: Share 5 · Final export / Figma Pending',23);

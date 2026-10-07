@@ -239,6 +239,146 @@
       "from": "In Production",
       "to": "Review",
       "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-01",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "ACADEMIC-02",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "ACADEMIC-03",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "ACADEMIC-04",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "ACADEMIC-05",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "ACADEMIC-06",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "ACADEMIC-07",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "ADMIN-01",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "ADMIN-02",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "ADMIN-03",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "ADMIN-04",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "MOTION-01",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "MOTION-02",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "MOTION-03",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "MOTION-04",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "SHARE-01",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "SHARE-02",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "SHARE-03",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "SHARE-04",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
+    },
+    {
+      "assetId": "SHARE-05",
+      "from": "Review",
+      "to": "Approved for Design Direction",
+      "date": "2026-10-07",
+      "authority": "Owner"
     }
   ]
 }

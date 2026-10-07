@@ -1,10 +1,10 @@
 {
   "date": "2026-10-07",
-  "scope": "Current registry —48 Owner Design Direction approvals + core wave",
+  "scope": "Current canonical registry — Asset Phase checkpoint",
   "styleLockOwnerApproval": "Accepted for Design Direction",
   "illustrationOwnerDirectionSelection": "A — Geometric Editorial",
   "figma": "Pending",
-  "stopBeforeBatch": 21,
+  "stopBeforeBatch": 18,
   "assets": [
     {
       "assetId": "BRAND-01",
@@ -1720,10 +1720,10 @@
     {
       "assetId": "ACADEMIC-01",
       "name": "Konu Özeti Kart Şablonu",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-320-default__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-01",
@@ -1731,15 +1731,17 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-320-default__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     },
     {
       "assetId": "ACADEMIC-02",
       "name": "Formül / Kural Kart Şablonu",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-320-default__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-02",
@@ -1747,15 +1749,18 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-320-default__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "ownerAcceptanceNotes": "Production tests pending: complex typesetting, KaTeX/native math, wrapping, narrow mobile, long Turkish explanations and academic editorial validation."
     },
     {
       "assetId": "ACADEMIC-03",
       "name": "Mini Check Kartı",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-default__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-03",
@@ -1763,15 +1768,17 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-default__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     },
     {
       "assetId": "ACADEMIC-04",
       "name": "Çözüm Adımı Blok Şablonu",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-320-default__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-04",
@@ -1779,15 +1786,18 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-320-default__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "ownerAcceptanceNotes": "Production tests pending: complex typesetting, KaTeX/native math, wrapping, narrow mobile, long Turkish explanations and academic editorial validation."
     },
     {
       "assetId": "ACADEMIC-05",
       "name": "İpucu / Dikkat Kutuları",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-tip__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-05",
@@ -1795,15 +1805,17 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-tip__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     },
     {
       "assetId": "ACADEMIC-06",
       "name": "Güncel Bilgiler Kart Şablonu",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-default__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-06",
@@ -1811,15 +1823,17 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-default__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     },
     {
       "assetId": "ACADEMIC-07",
       "name": "Analiz Mini Kart Seti",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-0__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-07",
@@ -1827,7 +1841,9 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-0__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     },
     {
       "assetId": "MKT-01",
@@ -1910,10 +1926,10 @@
     {
       "assetId": "SHARE-01",
       "name": "Open Graph Genel Görseli",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/share/track-j/review/SHARE-01__open-graph__og-light__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#SHARE-01",
@@ -1921,15 +1937,20 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/share/track-j/review/SHARE-01__open-graph__og-light__v01.png",
-      "nativeVector": false
+      "nativeVector": false,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "finalProductionVectorExport": "Pending",
+      "vectorSource": "source asset needed — Kavriva master brand",
+      "ownerAcceptanceNotes": "SHARE01–05 accepted for direction. Final Production Vector Export Pending until master brand vector source. Dynamic real-data substitution and platform compression tests are final assembly work."
     },
     {
       "assetId": "SHARE-02",
       "name": "Deneme Sonucu Paylaşım Kartı",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/share/track-j/review/SHARE-02__mock-result__og-light__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#SHARE-02",
@@ -1937,15 +1958,20 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/share/track-j/review/SHARE-02__mock-result__og-light__v01.png",
-      "nativeVector": false
+      "nativeVector": false,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "finalProductionVectorExport": "Pending",
+      "vectorSource": "source asset needed — Kavriva master brand",
+      "ownerAcceptanceNotes": "SHARE01–05 accepted for direction. Final Production Vector Export Pending until master brand vector source. Dynamic real-data substitution and platform compression tests are final assembly work."
     },
     {
       "assetId": "SHARE-03",
       "name": "Level Up Paylaşım Kartı",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/share/track-j/review/SHARE-03__level-up__og-light__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#SHARE-03",
@@ -1953,15 +1979,20 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/share/track-j/review/SHARE-03__level-up__og-light__v01.png",
-      "nativeVector": false
+      "nativeVector": false,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "finalProductionVectorExport": "Pending",
+      "vectorSource": "source asset needed — Kavriva master brand",
+      "ownerAcceptanceNotes": "SHARE01–05 accepted for direction. Final Production Vector Export Pending until master brand vector source. Dynamic real-data substitution and platform compression tests are final assembly work."
     },
     {
       "assetId": "SHARE-04",
       "name": "Streak Paylaşım Kartı",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/share/track-j/review/SHARE-04__streak__og-light__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#SHARE-04",
@@ -1969,15 +2000,20 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/share/track-j/review/SHARE-04__streak__og-light__v01.png",
-      "nativeVector": false
+      "nativeVector": false,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "finalProductionVectorExport": "Pending",
+      "vectorSource": "source asset needed — Kavriva master brand",
+      "ownerAcceptanceNotes": "SHARE01–05 accepted for direction. Final Production Vector Export Pending until master brand vector source. Dynamic real-data substitution and platform compression tests are final assembly work."
     },
     {
       "assetId": "SHARE-05",
       "name": "Achievement Paylaşım Kartı",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/share/track-j/review/SHARE-05__achievement__og-light__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#SHARE-05",
@@ -1985,15 +2021,20 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/share/track-j/review/SHARE-05__achievement__og-light__v01.png",
-      "nativeVector": false
+      "nativeVector": false,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "finalProductionVectorExport": "Pending",
+      "vectorSource": "source asset needed — Kavriva master brand",
+      "ownerAcceptanceNotes": "SHARE01–05 accepted for direction. Final Production Vector Export Pending until master brand vector source. Dynamic real-data substitution and platform compression tests are final assembly work."
     },
     {
       "assetId": "ADMIN-01",
       "name": "Content Quality Status Seti",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/admin/track-g/review/ADMIN-01__content-quality__review__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ADMIN-01",
@@ -2001,15 +2042,17 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/admin/track-g/review/ADMIN-01__content-quality__review__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     },
     {
       "assetId": "ADMIN-02",
       "name": "Rights Status Seti",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/admin/track-g/review/ADMIN-02__rights-status__review__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ADMIN-02",
@@ -2017,15 +2060,17 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/admin/track-g/review/ADMIN-02__rights-status__review__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     },
     {
       "assetId": "ADMIN-03",
       "name": "Review Queue Severity Seti",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/admin/track-g/review/ADMIN-03__queue-severity__review__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ADMIN-03",
@@ -2033,15 +2078,17 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/admin/track-g/review/ADMIN-03__queue-severity__review__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     },
     {
       "assetId": "ADMIN-04",
       "name": "System Health / Release Readiness Durumları",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/admin/track-g/review/ADMIN-04__system-health__review__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ADMIN-04",
@@ -2049,15 +2096,17 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/admin/track-g/review/ADMIN-04__system-health__review__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     },
     {
       "assetId": "MOTION-01",
       "name": "XP Gain Visual Frame",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#MOTION-01",
@@ -2065,15 +2114,17 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     },
     {
       "assetId": "MOTION-02",
       "name": "Achievement Unlock Visual Frame",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#MOTION-02",
@@ -2081,15 +2132,18 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "ownerAcceptanceNotes": "Full achievement badge composite recommended48px+. At24px use approved simple core glyph. Kavriva K immutable."
     },
     {
       "assetId": "MOTION-03",
       "name": "Success Pulse Visual Frame",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#MOTION-03",
@@ -2097,15 +2151,18 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "ownerAcceptanceNotes": "Light green peak ring decorative/supporting only. Essential success/status: primary check + editable label/text + accessible semantic UI."
     },
     {
       "assetId": "MOTION-04",
       "name": "Confetti / Kutlama Hafif Efekt Frame",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.svg",
       "version": null,
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#MOTION-04",
@@ -2113,14 +2170,29 @@
       "finalExportRef": null,
       "finalProductionExport": "Pending",
       "preview": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.png",
-      "nativeVector": true
+      "nativeVector": true,
+      "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
     }
   ],
-  "assetsReviewedThisPhase": 41,
+  "assetsReviewedThisPhase": 20,
   "counts": {
-    "Approved for Design Direction": 61,
-    "Review": 20,
+    "Approved for Design Direction": 81,
     "Planned": 6
   },
-  "ownerDecision": "production/parallel-production/owner-decisions.json"
+  "ownerDecision": "production/core-system/owner-decision.json",
+  "ownerDecisionHistory": [
+    "production/parallel-production/owner-decisions.json",
+    "production/core-system/owner-decision.json"
+  ],
+  "holdBatches": [
+    18,
+    19,
+    21,
+    22
+  ],
+  "productionPolish": "P-01–P-06 Open",
+  "finalProductionExport": "Pending",
+  "totalAssets": 87,
+  "duplicateIds": 0
 }

@@ -4,7 +4,7 @@
       "assetId": "ACADEMIC-01",
       "title": "Konu özeti",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-320-default__v01.svg",
       "previewPath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-320-default__v01.png",
       "variants": [
@@ -55,13 +55,14 @@
         }
       ],
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "ACADEMIC-02",
       "title": "Formül / kural",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-320-default__v01.svg",
       "previewPath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-320-default__v01.png",
       "variants": [
@@ -112,13 +113,14 @@
         }
       ],
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "ACADEMIC-03",
       "title": "Mini check",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-default__v01.svg",
       "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-default__v01.png",
       "variants": [
@@ -205,13 +207,14 @@
         }
       ],
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "ACADEMIC-04",
       "title": "Çözüm adımı",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-320-default__v01.svg",
       "previewPath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-320-default__v01.png",
       "variants": [
@@ -262,13 +265,14 @@
         }
       ],
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "ACADEMIC-05",
       "title": "İpucu / dikkat",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-tip__v01.svg",
       "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-tip__v01.png",
       "variants": [
@@ -463,13 +467,14 @@
         }
       ],
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "ACADEMIC-06",
       "title": "Güncel Bilgiler",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-default__v01.svg",
       "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-default__v01.png",
       "variants": [
@@ -556,13 +561,14 @@
         }
       ],
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "ACADEMIC-07",
       "title": "Analiz mini kartları",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-0__v01.svg",
       "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-0__v01.png",
       "variants": [
@@ -817,11 +823,12 @@
         }
       ],
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "ADMIN-01",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "nativeVector": true,
       "editableText": true,
       "states": [
@@ -841,11 +848,12 @@
       ],
       "finalProductionExport": "Pending",
       "figma": "Pending",
-      "compactPath": "assets/admin/track-g/review/ADMIN-01__compact-states__mobile-light-dark__v01.svg"
+      "compactPath": "assets/admin/track-g/review/ADMIN-01__compact-states__mobile-light-dark__v01.svg",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "ADMIN-02",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "nativeVector": true,
       "editableText": true,
       "states": [
@@ -869,11 +877,12 @@
       ],
       "finalProductionExport": "Pending",
       "figma": "Pending",
-      "compactPath": "assets/admin/track-g/review/ADMIN-02__compact-states__mobile-light-dark__v01.svg"
+      "compactPath": "assets/admin/track-g/review/ADMIN-02__compact-states__mobile-light-dark__v01.svg",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "ADMIN-03",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "nativeVector": true,
       "editableText": true,
       "states": [
@@ -892,11 +901,12 @@
       ],
       "finalProductionExport": "Pending",
       "figma": "Pending",
-      "compactPath": "assets/admin/track-g/review/ADMIN-03__compact-states__mobile-light-dark__v01.svg"
+      "compactPath": "assets/admin/track-g/review/ADMIN-03__compact-states__mobile-light-dark__v01.svg",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "ADMIN-04",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "nativeVector": true,
       "editableText": true,
       "states": [
@@ -917,43 +927,56 @@
       ],
       "finalProductionExport": "Pending",
       "figma": "Pending",
-      "compactPath": "assets/admin/track-g/review/ADMIN-04__compact-states__mobile-light-dark__v01.svg"
+      "compactPath": "assets/admin/track-g/review/ADMIN-04__compact-states__mobile-light-dark__v01.svg",
+      "approvedBy": "Owner — 2026-10-07"
     },
     {
       "assetId": "MOTION-01",
       "source": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.svg",
       "preview": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.png",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.svg",
-      "previewPath": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.png"
+      "previewPath": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.png",
+      "approvedBy": "Owner — 2026-10-07",
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "MOTION-02",
       "source": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.svg",
       "preview": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.png",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.svg",
-      "previewPath": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.png"
+      "previewPath": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.png",
+      "approvedBy": "Owner — 2026-10-07",
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "MOTION-03",
       "source": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.svg",
       "preview": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.png",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.svg",
-      "previewPath": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.png"
+      "previewPath": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.png",
+      "approvedBy": "Owner — 2026-10-07",
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "MOTION-04",
       "source": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.svg",
       "preview": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.png",
       "nativeVector": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "sourcePath": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.svg",
-      "previewPath": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.png"
+      "previewPath": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.png",
+      "approvedBy": "Owner — 2026-10-07",
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "SHARE-01",
@@ -967,9 +990,11 @@
       "editableText": true,
       "nativeVector": false,
       "immutableRasterBrand": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07",
+      "finalProductionVectorExport": "Pending"
     },
     {
       "assetId": "SHARE-02",
@@ -983,9 +1008,11 @@
       "editableText": true,
       "nativeVector": false,
       "immutableRasterBrand": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07",
+      "finalProductionVectorExport": "Pending"
     },
     {
       "assetId": "SHARE-03",
@@ -999,9 +1026,11 @@
       "editableText": true,
       "nativeVector": false,
       "immutableRasterBrand": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07",
+      "finalProductionVectorExport": "Pending"
     },
     {
       "assetId": "SHARE-04",
@@ -1015,9 +1044,11 @@
       "editableText": true,
       "nativeVector": false,
       "immutableRasterBrand": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07",
+      "finalProductionVectorExport": "Pending"
     },
     {
       "assetId": "SHARE-05",
@@ -1031,20 +1062,22 @@
       "editableText": true,
       "nativeVector": false,
       "immutableRasterBrand": true,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "figma": "Pending",
-      "finalProductionExport": "Pending"
+      "finalProductionExport": "Pending",
+      "approvedBy": "Owner — 2026-10-07",
+      "finalProductionVectorExport": "Pending"
     }
   ],
-  "status": "Review",
+  "status": "Approved for Design Direction",
   "finalProductionExport": "Pending",
   "figma": "Pending",
   "brandHash": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
   "registryCounts": {
-    "Approved for Design Direction": 61,
-    "Review": 20,
+    "Approved for Design Direction": 81,
     "Planned": 6
   },
   "marketing": "MKT01–06 Planned",
-  "polish": "P01–P06 Open"
+  "polish": "P01–P06 Open",
+  "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
 }
