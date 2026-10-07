@@ -680,13 +680,35 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Kritik güvenlik/gizlilik değişiklikleri audit event üretecek; hesap düzeyi ve cihaz düzeyi ayarlar ayrılacak.
    - ✅ **Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik tamamlandı.**
 
-26. 🟨 **İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri**
-   - İçerik üretim/review operasyonu
-   - Coverage standartları ve havuz yeterliliği
-   - Kaynak kullanım hakkı / yayın hard-gate'i
-   - Çıkış için içerik yeterlilik kriterleri
+26. ✅ **İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri**
+   - ✅ İçerik üretimi sürekli Content Factory olarak çalışacak; source → extraction/creation → validation → review → Active → kullanım → re-review → Impact Repair döngüsü korunacak.
+   - ✅ Sorular, çözümler, özetler, formül/kural kartları, örnekler, mini check'ler, video mapping'leri, Güncel Bilgiler ve deneme şablonları ayrı içerik tipleri olacak.
+   - ✅ Her içerik provenance taşıyacak; PDF kaynaklarında hash/sürüm/sayfa/batch gibi izlenebilir metadata korunacak.
+   - ✅ Rights Status zorunlu metadata olacak ancak teknik yayın hard gate'i olmayacak.
+   - ✅ Hak durumu belirsiz/kısıtlı kaynak Admin Rights Override + açık uyarı + audit ile learner-facing Active yapılabilecek.
+   - ✅ Rights override akademik kalite gate'lerini düşürmeyecek; Exam-Grade içerik de akademik review standardını koruyacak.
+   - ✅ Her Active soru en az 1 human approval alacak; Exam-Grade/yüksek riskli içerikte double review uygulanabilecek.
+   - ✅ Review Queue severity/priority ile çalışacak; kritik canlı içerik sorunları en yüksek öncelikte olacak.
+   - ✅ Coverage raw count değil Effective Independent Count ile ölçülecek; near-duplicate/template varyantları coverage'ı şişiremeyecek.
+   - ✅ Primary Assessed Skill coverage'ın temel birimi olacak.
+   - ✅ ContentCoveragePolicy v1 başlangıç standardı: ≥12 effective soru/skill, genel olarak ≥40/topic, geniş/yüksek ağırlıklı topic'lerde 60+, ≥8 full mock-equivalent, ≥6 branch mock-equivalent/ana ders.
+   - ✅ Unseen Reserve ayrıca ölçülecek ve içerik üretim önceliğini etkileyebilecek.
+   - ✅ Practice/Calibration/Retention/Wrong Verification/Mock/Duel eligibility flag'leri ayrı tutulacak.
+   - ✅ Active soru = doğrulanmış doğru cevap + açıklamalı çözüm; solution coverage %100 olacak.
+   - ✅ Active sorularda provenance + rights status + version + Primary Skill + quality metadata bulunacak.
+   - ✅ Learning content coverage da release gate'in parçası olacak; video yoksa native fallback öğrenme içeriği bulunacak.
+   - ✅ Güncel Bilgiler coverage; freshness, source, kategori ve question coverage ile birlikte değerlendirilecek.
+   - ✅ Content Debt + Coverage Matrix + gerçek kullanım verisi içerik üretim önceliğini yönetecek.
+   - ✅ Yeni OCR/Jev/model/prompt/parser sürümleri golden corpus regression karşılaştırması olmadan production içerik hattına alınmayacak.
+   - ✅ Import batch pause/quarantine/rollback destekleyecek; kullanılmış içerik hard-delete yerine version/quarantine/archive ile yönetilecek.
+   - ✅ Kullanıcı raporları ve anomaly sinyalleri Quality Queue'ya bağlanacak; güçlü sorunlar otomatik Quarantine Pending Review oluşturabilecek.
+   - ✅ Content Release Dashboard scope mapping, effective coverage, solution, rights/override, Exam-Grade capacity, mock capacity, reserve, freshness, overdue review, critical issue ve Content Debt gösterecek.
+   - ✅ Release content gate; %100 official scope mapping, minimum effective coverage, %100 solution/provenance/rights metadata, 0 kritik answer conflict/broken context ve yeterli mock/learning/current-affairs kapasitesi isteyecek.
+   - ✅ Rights belirsiz/kısıtlı içerik release gate'i yalnız Admin override + audit ile geçebilecek; rights metadata'nın bulunması yine zorunlu olacak.
+   - ✅ İçerik üretimi release sonrası da sürekli operasyon olarak devam edecek.
+   - ✅ **İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri tamamlandı.**
 
-27. ⬜ **Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler**
+27. 🟨 **Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler**
    - Sosyal lifecycle/edge-case politikaları
    - AI sohbet/veri yaşam döngüsü ve Koç↔oyunlaştırma ilişkisi
    - Yardım/Geri Bildirim Merkezi
@@ -704,4 +726,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **26. İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri 🟨**.
+İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **27. Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler 🟨**.
