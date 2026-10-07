@@ -113,3 +113,17 @@ Solid kontrast ölçümleri: white/indigo **6.29:1**; ink/white **17.75:1**; ink
 - `batch-03-qa.json`, `batch-04-icon-01-qa.json`, `batch-05-icon-02-qa.json`, `batch-05-icon-03-qa.json`, `cross-style-qa.json` → ölçüm kanıtları.
 
 Bu script'ler asset üretim araçlarıdır; ürün React/Next.js sayfası, database, uygulama davranışı veya yeni özellik oluşturulmadı. Logo regenerate edilmedi; generative image model kullanılmadı.
+
+## Owner Decision — 2026-10-07
+
+Owner Style Lock Pack'i kabul etti.
+
+- APP-01 / APP-02 / APP-03 / APP-04 / ICON-01 / ICON-02 / ICON-03: **Approved for Design Direction**.
+- Brand/App K için **Final Production Vector Export = Pending**; original vector source ihtiyacı açık.
+- **Figma = Pending**.
+- UI icon ana kullanım boyutu **20px / 24px**. 16px yalnız yeterince basit ve okunabilir glyph'lerde kullanılabilir.
+- 16px favicon istisnası kabul edildi; Kavriva K geometrisi hiçbir durumda değiştirilemez. Simplify/redraw/contour değişikliği yok.
+- Reward chest yalnız nötr reward sembolüdür; loot box, coin/store, random reward economy veya yeni ürün mekaniği tanımlamaz.
+- Son illustration-style gate için yalnız Batch 06 CAT-01/CAT-03/CAT-04 A/B/C exploration yetkilendirildi. Kalan kategoriler ve Batch 07 Owner direction seçimini bekler.
+
+Bu Owner Decision, raporun önceki Review/Pending owner onayı ifadelerini belirtilen design-direction kapsamında günceller. Eski görsel paftalar review tarihçesidir. Final production vector / Figma onayı verilmedi.

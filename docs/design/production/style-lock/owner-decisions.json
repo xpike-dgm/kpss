@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-07",
+  "approvedBy": "Owner",
+  "status": "Approved for Design Direction",
+  "assetIds": ["APP-01", "APP-02", "APP-03", "APP-04", "ICON-01", "ICON-02", "ICON-03"],
+  "brandAppKFinalProductionVectorExport": "Pending",
+  "figma": "Pending",
+  "uiIconMainSizesPx": [20,24],
+  "uiIcon16Px": "only sufficiently simple/readable glyphs",
+  "favicon16Px": "accepted exception; immutable K geometry",
+  "rewardChest": "neutral reward symbol only; no loot box, coin/store, random reward economy or new mechanic",
+  "nextAuthorizedScope": "Batch 06: CAT-01, CAT-03, CAT-04 A/B/C exploration only",
+  "stopBefore": "other categories and Batch 07 until owner direction selection"
+}
