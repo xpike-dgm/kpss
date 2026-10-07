@@ -2749,5 +2749,290 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Yardım/Support ve Kaydedilenler kullanıcı deneyiminin kalıcı ürün yüzeyleridir.
 - **27. Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler başlığı ürün mimarisi açısından tamamlanmıştır.**
 
+
+## 50. Data Retention / Compliance / Release Acceptance Criteria — kararlaştırıldı
+
+### Veri minimizasyonu ve Data Processing Inventory
+- Platform yalnız gerekli veri kategorilerini işleyecek; “ileride lazım olabilir” gerekçesiyle kontrolsüz veri biriktirmeyecektir.
+- Her veri sınıfı için en az amaç, işleme dayanağı, veri kategorisi, erişen rol/sistem, alıcı/aktarımı, saklama süresi ve silme/anonimleştirme davranışı tanımlanacaktır.
+- Admin/Compliance tarafında gerçek bir **Data Processing Inventory** tutulacaktır.
+- Hukuki yükümlülükler zamanla değişebileceği için compliance kuralları kod içine değişmez varsayım olarak gömülmeyecektir.
+
+### Versioned DataRetentionPolicy
+- Saklama süreleri tek tek kod parçalarına dağılmayacak; **DataRetentionPolicy v1** gibi versioned merkezi politika üzerinden yönetilecektir.
+- Her veri sınıfı bir retention class taşıyacaktır.
+- Retention politika değişiklikleri audit edilecek; eski/yeni değer ve etkilenen veri sınıfları izlenebilir olacaktır.
+
+### Başlangıç retention politikası
+- Aşağıdaki süreler **ürün/operasyon başlangıç varsayımlarıdır**, değişmez hukuki süre iddiası değildir:
+  - kullanıcı profil/hesap verisi: hesap aktif olduğu sürece
+  - akademik geçmiş/mastery/testler: hesap aktif olduğu sürece
+  - kullanıcı notları/Kaydedilenler: kullanıcı silene veya hesap silinene kadar
+  - AI sohbetleri: kullanıcı silene veya hesap silinene kadar
+  - Bildirim Merkezi: 90 gün
+  - normal çalışma odası mesajları: 30 gün
+  - moderasyon için tutulan sosyal içerik: vaka kapandıktan sonra 180 gün başlangıç adayı
+  - support ticket: kapanıştan sonra 1 yıl başlangıç adayı
+  - normal application log/trace: 30 gün
+  - security/auth audit: 1 yıl başlangıç adayı
+  - kritik Admin Audit Log: 2 yıl başlangıç adayı
+  - ham optional product analytics: 90 gün
+  - gerçekten anonim aggregate analytics: süresiz tutulabilir
+  - hazırlanmış kullanıcı export dosyası: 7 gün
+  - reset/verification tokenları: kullanım veya kısa expiry sonrası yok edilir
+  - Deletion Pending: 7 gün
+  - final deletion sonrası live/primary sistem PII temizliği: en geç 30 gün operasyon hedefi
+  - PITR/operasyonel backup: yaklaşık 30–35 gün
+  - bağımsız disaster-recovery backup: yaklaşık 90 gün
+- Bu süreler DataRetentionPolicy ile değiştirilebilir ve compliance review'a tabidir.
+
+### Hesap silme ve deletion lifecycle
+- 25. başlıkta kabul edilen **7 günlük geri alma penceresi** korunacaktır.
+- Akış: **Active → Deletion Pending → Finalizing Deletion → Deleted/Anonymized**.
+- 7 günlük pencere sonrası primary/live sistemde silinebilir kişisel veriler için otomatik deletion/anonimleştirme pipeline'ı başlayacaktır.
+- Internal operasyon hedefi final deletion işlemlerinin primary/live sistemde **30 gün içinde** tamamlanmasıdır.
+- Bu 30 gün hukuki saklama izni anlamına gelmez; operasyon SLA'sıdır.
+
+### Backup silme stratejisi
+- Immutable/encrypted backup içinden tek kullanıcı satırını fiziksel olarak çıkarmaya çalışmak temel strateji olmayacaktır.
+- Final deletion sonrası **Deletion Tombstone** oluşturulacaktır.
+- Restore gerektiğinde akış: **backup restore → deletion tombstone replay → silinmiş kullanıcıların yeniden aktif hale gelmesini engelleme**.
+- Backup doğal retention süresi sonunda expire olacaktır.
+- Böylece silinen hesap eski backup restore'uyla yanlışlıkla geri dönmeyecektir.
+
+### Anonimleştirme ve pseudonymization
+- Yalnız user ID'yi silmek veya null yapmak otomatik olarak gerçek anonimleştirme sayılmayacaktır.
+- **Pseudonymization ≠ Anonymization** ayrımı veri modelinde ve compliance politikasında açık olacaktır.
+- Anonim veri, makul şekilde başka verilerle yeniden ilişkilendirilemeyecek hale getirilmelidir.
+
+### Ortak sosyal kayıtlar
+- Hesap silme tamamlanmış takım/sezon/düello/community geçmişini veri bütünlüğünü bozacak şekilde yok etmeyecektir.
+- Gerekli ortak kayıtlar **Silinmiş Kullanıcı** benzeri anonim referansa dönüştürülebilir.
+- Özel mastery, kişisel not ve özel AI konuşmaları aynı gerekçeyle tutulmaz.
+
+### Credential revocation/delete
+- Final account deletion aşamasında BYOK API key, session/refresh token, passkey bağlantısı, push token ve uygun OAuth bağlantıları için ayrı revocation/delete job çalışacaktır.
+- Kullanıcı kaydı silinmiş olsa bile secret vault içinde aktif credential bırakılmayacaktır.
+
+### Privacy/KVKK request workflow
+- Self-service export/delete, formal privacy request sürecinin yerine geçmeyecektir.
+- Ayrı **Privacy Request / DSAR Queue** bulunacaktır.
+- Kullanıcı erişim, bilgi, düzeltme, silme/yok etme ve benzeri talepler oluşturabilecektir.
+- Güncel KVKK gereksinimi olarak talepler en kısa sürede ve en geç 30 gün içinde yanıtlanacak şekilde süreç tasarlanacaktır.
+- Platformun internal hedefi **14 gün SLA** olacaktır.
+- Deadline yaklaşınca Admin/Compliance uyarıları üretilecektir.
+
+### Aydınlatma ve açık rıza
+- Aydınlatma metni ile açık rıza birbirinden ayrı ele alınacaktır.
+- Kullanıcıya katmanlı ve anlaşılır privacy UX sunulacaktır; kısa özet + detaylı metin yaklaşımı kullanılabilir.
+- Açık rıza yalnız gerçekten rızaya dayanan optional işlem için alınacaktır.
+- Core ürün, zorunlu olmayan analytics/tracking rızasına bağlı olmayacaktır.
+- Rızanın verilmesi ve geri çekilmesi karşılaştırılabilir kolaylıkta olacaktır.
+- Consent type, policy version, verilme ve geri çekilme zamanı gibi kayıtlar tutulacaktır.
+
+### Cookie / SDK politikası
+- Minimum cookie/SDK yaklaşımı kullanılacaktır.
+- Reklam tracker'ı ürünün varsayılan parçası olmayacaktır.
+- Strictly necessary teknolojiler dışında optional analytics/tracking için uygun hukuki dayanak ve gerekiyorsa gerçek opt-in uygulanacaktır.
+- Optional product analytics varsayılan kapalı yaklaşımına uygun olacaktır.
+
+### Yurt dışı veri aktarımı
+- Dış sağlayıcılar için **International Data Transfer Registry** tutulacaktır.
+- Her vendor için en az hangi veri, hangi ülke/bölge, hangi amaç ve hangi aktarım mekanizması kullanıldığı bilinecektir.
+- Kişisel veri aktaracak yeni provider production'a alınmadan önce compliance review yapılacaktır.
+- Güncel KVKK yurt dışı aktarım kuralları, standart sözleşme ve gerekiyorsa Kurum bildirim yükümlülükleri release checklist'inde doğrulanacaktır.
+- AI Gateway gereksiz kullanıcı tanımlayıcılarını prompt/context'ten çıkarmaya çalışacaktır; yalnız user ID kaldırmak otomatik anonimlik sayılmayacaktır.
+
+### Vendor Registry
+- Cloudflare, DB, object storage, transactional email, AI sağlayıcıları, error monitoring, push ve analytics gibi dış servisler merkezi vendor registry'de tutulacaktır.
+- Her vendor için purpose, data categories, region, processor/controller rolü, DPA/contract, subprocessor, transfer mechanism, security review ve last review date gibi bilgiler izlenebilir olacaktır.
+
+### VERBİS ve güncel hukuki applicability
+- VERBİS yükümlülüğü source code varsayımı olmayacaktır.
+- Public/commercial production öncesi **VERBİS Applicability Review** yapılacaktır.
+- Şirket/ölçek veya mevzuat değiştiğinde yeniden değerlendirme yapılacaktır.
+
+### Yaş politikası
+- Public launch için başlangıç ürün politikası **18+** olacaktır.
+- 18 yaş altı desteği küçük bir checkbox değişikliği olarak eklenmeyecek; ayrı Minor User Policy, privacy ve sosyal güvenlik çalışması gerektirecektir.
+
+### Security Incident / Breach Runbook
+- Olay yaşam döngüsü: **Detected → Triaged → Contained → Impact Assessed → Notification Decision → Remediation → Postmortem**.
+- Güncel KVKK veri ihlali bildirim yükümlülükleri nedeniyle internal hedefler dış sınırdan daha kısa olacaktır.
+- Başlangıç internal hedefleri:
+  - ilk 4 saat içinde teknik triage
+  - 24 saat içinde kapsam/etki değerlendirmesi
+  - 48 saate gelmeden notification/legal decision
+- Güncel resmî ihlal bildirim süreleri production öncesi tekrar doğrulanacaktır.
+- Ayrı **Breach/Incident Register** tutulacaktır.
+
+### Security release gate
+- Public production launch öncesinde:
+  - bilinen Critical/High açık güvenlik bulgusu = 0
+  - Auth/AuthZ ve Admin RBAC test edilmiş
+  - horizontal privilege escalation test edilmiş
+  - rate limit ve abuse kontrolleri test edilmiş
+  - CSRF/XSS/SQL injection/upload güvenliği gözden geçirilmiş
+  - secret scan temiz veya kabul edilmiş riskler açık
+  - dependency/security scan tamamlanmış
+  - BYOK encryption doğrulanmış
+  - Admin MFA çalışıyor
+  - Audit Log bütünlüğü korunuyor
+  - loglarda parola/token/API key bulunmuyor
+  - OWASP-temelli security review yapılmış
+- Mümkün olduğunda production öncesi bağımsız security/pentest review uygulanacaktır.
+
+### Disaster Recovery
+- “Backup var” tek başına release kriteri değildir; gerçek restore başarısı kanıtlanmalıdır.
+- Core PostgreSQL için başlangıç hedefleri:
+  - **RPO ≤ 15 dakika**
+  - **RTO ≤ 4 saat**
+- Public release öncesinde staging/izole ortamda gerçek restore drill yapılacaktır.
+- Release sonrası başlangıç politikası **quarterly full restore drill** olacaktır.
+- Büyük schema/backup mimarisi değişikliklerinde ek restore testi yapılacaktır.
+
+### Backup standardı
+- 3-2-1 yaklaşımı korunacaktır.
+- Production DB/PITR, bağımsız ikinci backup, object storage manifest/backup ve kritik config/secret reconstruction runbook birlikte düşünülür.
+- Backup encrypted olacaktır.
+- Production ve bağımsız backup'ın tek credential compromise ile birlikte silinmesi engellenmeye çalışılacaktır.
+
+### Migration güvenliği
+- Kritik production migration'larında checkpoint/backup, forward migration, verification ve uygun rollback/roll-forward planı bulunacaktır.
+- Event ledger, mastery, question version ve progression tablolarındaki migration'lar özel dikkat gerektirir.
+
+### Offline/PWA release gate
+- En az şu senaryolar test edilmeden production-ready sayılmayacaktır:
+  - online → offline → online
+  - app kill/restart
+  - browser refresh
+  - PWA update
+  - aynı hesabın iki cihazı
+  - aynı kritik testin iki cihazda açılması
+  - outbox replay
+  - duplicate command
+  - server success/client timeout
+  - local storage dolması
+  - eski app version davranışı
+- Hiçbir senaryo double XP/mastery/test submit veya veri corruption üretmemelidir.
+
+### Akademik engine release gate
+- Deterministik academic engine için golden, unit/property, replay ve version/migration testleri geçmelidir.
+- Aynı event stream aynı engine version ile tekrar işlendiğinde aynı sonucu üretmelidir.
+- Mastery/evidence değişimlerinin reason-code zinciri açıklanabilir olmalıdır.
+
+### AI release gate
+- AI başarısız olsa bile core ürün çalışmalıdır.
+- Prompt injection, verified-solution conflict, structured-output validation, PII minimization, BYOK separation, provider fallback, timeout ve rate-limit senaryoları test edilmelidir.
+- AI'ın kritik state'lere doğrudan write yapamadığı doğrulanmalıdır.
+
+### Content release gate
+- 26. başlığın content gate'i gerçek release blocker olacaktır.
+- Official Scope mapping, minimum effective coverage, solution coverage, critical conflict, Exam-Grade/mock kapasitesi ve learning/current-affairs coverage gereksinimleri sağlanmalıdır.
+- Rights/telif konusunda 26. başlıktaki **Admin Rights Override** kararı aynen korunur.
+
+### Performance gate
+- Launch trafik tahmini çıkarılacak ve load test en az yaklaşık **beklenen launch peak'in 2 katı** hedefle yapılacaktır.
+- Test submit, dashboard, question selection, realtime duel ve admin batch gibi kritik yollar ayrı ölçülecektir.
+- Exact kullanıcı sayısı mimariye sabitlenmeyecektir.
+
+### Accessibility gate
+- Kritik kullanıcı akışlarında hedef **WCAG 2.2 AA** olacaktır.
+- Keyboard-only, focus, screen-reader labels, contrast, zoom/font, reduced motion, form error ve test answer-selection manuel olarak da kontrol edilecektir.
+- Yalnız otomatik accessibility test yeterli sayılmayacaktır.
+
+### Browser/device support
+- Desteklenen browser/device matrix dokümante edilecektir.
+- En az güncel Chrome/Chromium, Edge, Firefox, Safari ile Android/iOS PWA davranışı test edilecektir.
+- Desteklenmeyen browser sessizce bozulmak yerine uygun uyarı gösterecektir.
+
+### Observability release gate
+- Production launch öncesi structured logs, metrics, traces, error tracking, job failure alert, DB health, queue backlog, WebSocket health, AI provider health, storage health ve backup status gözlenebilir olmalıdır.
+- Kritik alarmın gerçek sorumluya ulaşma yolu bulunacaktır.
+
+### Operasyon runbook'ları
+- En az DB restore, provider outage, AI outage, security incident, data breach, stuck job, question batch rollback, Impact Repair, account deletion failure, cross-device corruption ve season close failure runbook'ları bulunacaktır.
+- Runbook'lar uygulanabilir prosedürler olacaktır; yalnız belge üretme amacı taşımayacaktır.
+
+### Release Candidate akışı
+- Release akışı **Development → Staging → Release Candidate → Production** olacaktır.
+- RC'ye migration, E2E, load, security, content, DR ve compliance sonuçları bağlanacaktır.
+- Tek commit doğrudan production'a çıkmayacaktır.
+
+### Go / No-Go matrisi
+- Release raporu en az şu kategorileri PASS/FAIL olarak gösterecektir:
+  - Academic
+  - Content
+  - Security
+  - Privacy/Compliance
+  - Disaster Recovery
+  - Performance
+  - Accessibility
+  - Critical E2E
+  - Operations
+- Tüm blocking kategoriler PASS ise **RELEASE READY**; aksi durumda **NO-GO**.
+
+### Release override politikası
+- Bazı non-critical gate'lerde Owner/Admin risk acceptance ile override yapılabilir.
+- Override; kim, neden, hangi risk ve varsa expiry/review date ile audit edilir.
+- Aşağıdakiler başlangıçta **no-override blocker** olacaktır:
+  - DB restore hiç test edilmemiş
+  - bilinen aktif Critical security vulnerability
+  - parola/API key plaintext sızıntısı
+  - core test-submit veri kaybı
+  - mastery/event-ledger corruption
+  - kitlesel critical answer conflict
+  - account deletion pipeline'ın çalışmaması
+
+### Bug politikası
+- Production launch'ta **P0 açık bug = 0**.
+- Varsayılan **P1 açık bug = 0**.
+- Gerçekten blocking olmayan P1 ancak açık Owner Risk Acceptance ile istisna olabilir.
+- P2/P3 backlog bulunabilir.
+
+### Production smoke / rollback
+- Deploy sonrası login, dashboard, question fetch, test submit, event processing, mastery projection, notification event ve admin health gibi kritik smoke testleri çalışacaktır.
+- Kritik failure'da rollback/traffic stop uygulanabilir.
+- Yeni release error rate, latency, submit/sync failure ve academic anomaly açısından izlenecektir.
+- Feature flag/kill-switch uygun yerlerde hızlı risk azaltma için kullanılacaktır.
+
+### Kritik config de release sayılır
+- Mastery delta, ContentCoveragePolicy, retention algorithm, XP/season, notification limit ve Exam Blueprint gibi kritik config değişiklikleri version, impact preview, audit ve rollback gerektirir.
+- Kod deploy edilmemesi bu değişiklikleri risksiz yapmaz.
+
+### Privacy/Compliance launch checklist
+- Public/commercial production öncesi en az:
+  - Aydınlatma Metni
+  - Gizlilik Politikası
+  - Çerez Politikası + gerekiyorsa consent manager
+  - Data Processing Inventory
+  - DataRetentionPolicy
+  - Privacy Request/DSAR procedure
+  - Vendor/Data Processor Registry
+  - International Transfer Registry
+  - AI data-flow review
+  - Incident/Breach Runbook
+  - VERBİS applicability decision
+  - RBAC/yetki matrisi
+  - hesap silme/export testleri
+  tamamlanacaktır.
+- Bu belgeler gerçek sistem davranışıyla uyumlu olmalıdır.
+
+### Compliance drift
+- Yeni AI provider, analytics SDK, email sistemi, hosting region veya yeni veri alanı **Compliance Impact Check** tetikleyebilir.
+- Yılda en az bir genel compliance review hedeflenecektir.
+
+### Product Ready tanımı
+- Nihai tanım:
+  **Product Ready = Functional Complete + Academic Correct + Content Sufficient + Secure + Recoverable + Observable + Privacy/Compliance Reviewed + Operable**.
+- Bir ekranın/özelliğin kodlanmış olması “Done” anlamına gelmez.
+- Gerektiği ölçüde test, telemetry, permissions, admin/support yüzeyi, edge-case, privacy/backup etkisi ve runbook tamamlanmadan özellik production-ready sayılmaz.
+
+### Ana karar
+- Kodun çalışması tek başına release yeterliliği değildir.
+- Ürün akademik olarak doğru, içerik olarak yeterli, güvenli, geri yüklenebilir, gözlemlenebilir ve privacy/compliance açısından kontrol edilmiş olmalıdır.
+- **28. Data Retention / Compliance / Release Acceptance Criteria başlığı ürün mimarisi açısından tamamlanmıştır.**
+- **Post-audit planlama turu tamamlanmıştır; 1–28 ana başlık ürün mimarisi düzeyinde kararlaştırılmıştır.**
+
 ---
-Durum: Ürün planlama aşaması devam ediyor. Henüz geliştirmeye başlanmadı.
+Durum: Ürün planlama ve post-audit turu tamamlandı. Henüz geliştirmeye başlanmadı.
