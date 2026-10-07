@@ -1,0 +1,911 @@
+{
+  "date": "2026-10-08",
+  "fileKey": "uNreojzi7JNDunoVUoboaH",
+  "assetDirectionCounts": {
+    "total": 87,
+    "approved": 81,
+    "planned": 6
+  },
+  "nativeMappedIds": 47,
+  "finalProductionExport": "Pending",
+  "assets": {
+    "EMPTY-01": {
+      "assetId": "EMPTY-01",
+      "nodeId": "15:2",
+      "type": "Approved raster visual reference",
+      "source": "assets/empty-states/track-a/review/EMPTY-01__fresh-start__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "EMPTY-02": {
+      "assetId": "EMPTY-02",
+      "nodeId": "15:4",
+      "type": "Approved raster visual reference",
+      "source": "assets/empty-states/track-a/review/EMPTY-02__no-mock-exams__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "EMPTY-03": {
+      "assetId": "EMPTY-03",
+      "nodeId": "15:6",
+      "type": "Approved raster visual reference",
+      "source": "assets/empty-states/track-a/review/EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "EMPTY-04": {
+      "assetId": "EMPTY-04",
+      "nodeId": "15:8",
+      "type": "Approved raster visual reference",
+      "source": "assets/empty-states/track-a/review/EMPTY-04__no-bookmarks__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "EMPTY-05": {
+      "assetId": "EMPTY-05",
+      "nodeId": "15:10",
+      "type": "Approved raster visual reference",
+      "source": "assets/empty-states/track-a/review/EMPTY-05__no-team__canonical-a__v02.png",
+      "status": "Native Figma Review"
+    },
+    "EMPTY-06": {
+      "assetId": "EMPTY-06",
+      "nodeId": "15:12",
+      "type": "Approved raster visual reference",
+      "source": "assets/empty-states/track-a/review/EMPTY-06__no-ai-history__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "EMPTY-07": {
+      "assetId": "EMPTY-07",
+      "nodeId": "15:14",
+      "type": "Approved raster visual reference",
+      "source": "assets/empty-states/track-a/review/EMPTY-07__no-search-results__canonical-a__v02.png",
+      "status": "Native Figma Review"
+    },
+    "EMPTY-08": {
+      "assetId": "EMPTY-08",
+      "nodeId": "15:16",
+      "type": "Approved raster visual reference",
+      "source": "assets/empty-states/track-a/review/EMPTY-08__offline__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "EMPTY-09": {
+      "assetId": "EMPTY-09",
+      "nodeId": "15:18",
+      "type": "Approved raster visual reference",
+      "source": "assets/empty-states/track-a/review/EMPTY-09__quality-review__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "EMPTY-10": {
+      "assetId": "EMPTY-10",
+      "nodeId": "15:20",
+      "type": "Approved raster visual reference",
+      "source": "assets/empty-states/track-a/review/EMPTY-10__limited-question-pool__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "ONBOARD-01": {
+      "assetId": "ONBOARD-01",
+      "nodeId": "15:196",
+      "type": "Approved raster visual reference",
+      "source": "assets/onboarding/track-b/review/ONBOARD-01__guided-learning__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "ONBOARD-02": {
+      "assetId": "ONBOARD-02",
+      "nodeId": "15:198",
+      "type": "Approved raster visual reference",
+      "source": "assets/onboarding/track-b/review/ONBOARD-02__level-calibration__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "ONBOARD-03": {
+      "assetId": "ONBOARD-03",
+      "nodeId": "15:200",
+      "type": "Approved raster visual reference",
+      "source": "assets/onboarding/track-b/review/ONBOARD-03__next-step__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "ONBOARD-04": {
+      "assetId": "ONBOARD-04",
+      "nodeId": "15:202",
+      "type": "Approved raster visual reference",
+      "source": "assets/onboarding/track-b/review/ONBOARD-04__spaced-revision__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "ONBOARD-05": {
+      "assetId": "ONBOARD-05",
+      "nodeId": "15:204",
+      "type": "Approved raster visual reference",
+      "source": "assets/onboarding/track-b/review/ONBOARD-05__constructive-review__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "ONBOARD-06": {
+      "assetId": "ONBOARD-06",
+      "nodeId": "15:206",
+      "type": "Approved raster visual reference",
+      "source": "assets/onboarding/track-b/review/ONBOARD-06__exam-analysis__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "ONBOARD-07": {
+      "assetId": "ONBOARD-07",
+      "nodeId": "15:208",
+      "type": "Approved raster visual reference",
+      "source": "assets/onboarding/track-b/review/ONBOARD-07__explanation-support__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "ONBOARD-08": {
+      "assetId": "ONBOARD-08",
+      "nodeId": "15:210",
+      "type": "Approved raster visual reference",
+      "source": "assets/onboarding/track-b/review/ONBOARD-08__collaborative-study__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "ONBOARD-09": {
+      "assetId": "ONBOARD-09",
+      "nodeId": "15:212",
+      "type": "Approved raster visual reference",
+      "source": "assets/onboarding/track-b/review/ONBOARD-09__timely-reminders__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "ONBOARD-10": {
+      "assetId": "ONBOARD-10",
+      "nodeId": "15:214",
+      "type": "Approved raster visual reference",
+      "source": "assets/onboarding/track-b/review/ONBOARD-10__offline-continuity__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "CAT-01": {
+      "assetId": "CAT-01",
+      "nodeId": "15:216",
+      "type": "Approved raster visual reference",
+      "source": "C:\\Users\\Xpike\\Desktop\\AI Projetcs\\kavriva-kpss\\assets\\categories\\batch-06\\family-review\\CAT-01__mathematics__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "CAT-02": {
+      "assetId": "CAT-02",
+      "nodeId": "15:218",
+      "type": "Approved raster visual reference",
+      "source": "C:\\Users\\Xpike\\Desktop\\AI Projetcs\\kavriva-kpss\\assets\\categories\\batch-06\\family-review\\CAT-02__turkish__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "CAT-03": {
+      "assetId": "CAT-03",
+      "nodeId": "15:220",
+      "type": "Approved raster visual reference",
+      "source": "C:\\Users\\Xpike\\Desktop\\AI Projetcs\\kavriva-kpss\\assets\\categories\\batch-06\\family-review\\CAT-03__history__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "CAT-04": {
+      "assetId": "CAT-04",
+      "nodeId": "15:222",
+      "type": "Approved raster visual reference",
+      "source": "C:\\Users\\Xpike\\Desktop\\AI Projetcs\\kavriva-kpss\\assets\\categories\\batch-06\\family-review\\CAT-04__geography__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "CAT-05": {
+      "assetId": "CAT-05",
+      "nodeId": "15:224",
+      "type": "Approved raster visual reference",
+      "source": "C:\\Users\\Xpike\\Desktop\\AI Projetcs\\kavriva-kpss\\assets\\categories\\batch-06\\family-review\\CAT-05__citizenship__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "CAT-06": {
+      "assetId": "CAT-06",
+      "nodeId": "15:226",
+      "type": "Approved raster visual reference",
+      "source": "C:\\Users\\Xpike\\Desktop\\AI Projetcs\\kavriva-kpss\\assets\\categories\\batch-06\\family-review\\CAT-06__current-affairs__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "CAT-07": {
+      "assetId": "CAT-07",
+      "nodeId": "15:228",
+      "type": "Approved raster visual reference",
+      "source": "C:\\Users\\Xpike\\Desktop\\AI Projetcs\\kavriva-kpss\\assets\\categories\\batch-06\\family-review\\CAT-07__gy-gk-overview__canonical-a__v01.png",
+      "status": "Native Figma Review"
+    },
+    "BRAND-01": {
+      "assetId": "BRAND-01",
+      "nodeId": "15:230",
+      "type": "Approved raster visual reference",
+      "source": "assets/brand/batch-01/review/BRAND-01__kavriva-master-logo__reference-crop__v01.png",
+      "status": "Native Figma Review"
+    },
+    "BRAND-05": {
+      "assetId": "BRAND-05",
+      "nodeId": "15:234",
+      "type": "Approved raster visual reference",
+      "source": "assets/brand/batch-01/review/BRAND-05__kavriva-k-symbol__reference-crop__v01.png",
+      "status": "Native Figma Review"
+    },
+    "APP-01": {
+      "assetId": "APP-01",
+      "nodeId": "15:236",
+      "type": "Approved raster visual reference",
+      "source": "assets/app/batch-03/review/APP-01__kavriva-kpss-app-icon__main-512__v01.png",
+      "status": "Native Figma Review"
+    },
+    "BRAND-02": {
+      "assetId": "BRAND-02",
+      "nodeId": "18:213",
+      "type": "Native lockup / immutable artwork + editable KPSS",
+      "source": "assets/brand/batch-02/review/BRAND-02__kavriva-kpss-lockup__direction-a-light__v01.svg",
+      "status": "Native Figma Review"
+    },
+    "BRAND-03": {
+      "assetId": "BRAND-03",
+      "nodeId": "18:223",
+      "type": "Native lockup / immutable artwork + editable KPSS",
+      "source": "assets/brand/batch-02/review/BRAND-03__kavriva-kpss-lockup__direction-a-light__v01.svg",
+      "status": "Native Figma Review"
+    },
+    "BRAND-04": {
+      "assetId": "BRAND-04",
+      "nodeId": "18:238",
+      "type": "Native lockup / immutable artwork + editable KPSS",
+      "source": "assets/brand/batch-02/review/BRAND-04__kavriva-kpss-lockup__direction-a-light__v01.svg",
+      "status": "Native Figma Review"
+    },
+    "BRAND-06": {
+      "assetId": "BRAND-06",
+      "nodeId": "18:239",
+      "type": "Native accepted usage decisions",
+      "source": "assets/brand/batch-01/review/BRAND-06__master-brand-calibration__usage-board__v01.svg",
+      "status": "Native Figma Review"
+    },
+    "ICON-01": {
+      "assetId": "ICON-01",
+      "nodeIds": [
+        {
+          "name": "ICON-01/ai/active",
+          "nodeId": "9:2"
+        },
+        {
+          "name": "ICON-01/ai/outline",
+          "nodeId": "9:6"
+        },
+        {
+          "name": "ICON-01/analytics/active",
+          "nodeId": "9:10"
+        },
+        {
+          "name": "ICON-01/analytics/outline",
+          "nodeId": "9:14"
+        },
+        {
+          "name": "ICON-01/back/active",
+          "nodeId": "9:18"
+        },
+        {
+          "name": "ICON-01/back/outline",
+          "nodeId": "9:22"
+        },
+        {
+          "name": "ICON-01/calendar/active",
+          "nodeId": "9:26"
+        },
+        {
+          "name": "ICON-01/calendar/outline",
+          "nodeId": "9:31"
+        },
+        {
+          "name": "ICON-01/chart/active",
+          "nodeId": "9:36"
+        },
+        {
+          "name": "ICON-01/chart/outline",
+          "nodeId": "9:40"
+        },
+        {
+          "name": "ICON-01/close/active",
+          "nodeId": "9:44"
+        },
+        {
+          "name": "ICON-01/close/outline",
+          "nodeId": "9:48"
+        },
+        {
+          "name": "ICON-01/delete/active",
+          "nodeId": "9:52"
+        },
+        {
+          "name": "ICON-01/delete/outline",
+          "nodeId": "9:56"
+        },
+        {
+          "name": "ICON-01/download/active",
+          "nodeId": "9:60"
+        },
+        {
+          "name": "ICON-01/download/outline",
+          "nodeId": "9:64"
+        },
+        {
+          "name": "ICON-01/edit/active",
+          "nodeId": "9:68"
+        },
+        {
+          "name": "ICON-01/edit/outline",
+          "nodeId": "9:72"
+        },
+        {
+          "name": "ICON-01/exams/active",
+          "nodeId": "9:76"
+        },
+        {
+          "name": "ICON-01/exams/outline",
+          "nodeId": "9:82"
+        },
+        {
+          "name": "ICON-01/filter/active",
+          "nodeId": "9:88"
+        },
+        {
+          "name": "ICON-01/filter/outline",
+          "nodeId": "9:92"
+        },
+        {
+          "name": "ICON-01/forward/active",
+          "nodeId": "9:96"
+        },
+        {
+          "name": "ICON-01/forward/outline",
+          "nodeId": "9:100"
+        },
+        {
+          "name": "ICON-01/help/active",
+          "nodeId": "9:104"
+        },
+        {
+          "name": "ICON-01/help/outline",
+          "nodeId": "9:109"
+        },
+        {
+          "name": "ICON-01/home/active",
+          "nodeId": "9:114"
+        },
+        {
+          "name": "ICON-01/home/outline",
+          "nodeId": "9:119"
+        },
+        {
+          "name": "ICON-01/lock/active",
+          "nodeId": "9:123"
+        },
+        {
+          "name": "ICON-01/lock/outline",
+          "nodeId": "9:129"
+        },
+        {
+          "name": "ICON-01/mistakes/active",
+          "nodeId": "9:134"
+        },
+        {
+          "name": "ICON-01/mistakes/outline",
+          "nodeId": "9:139"
+        },
+        {
+          "name": "ICON-01/notifications/active",
+          "nodeId": "9:144"
+        },
+        {
+          "name": "ICON-01/notifications/outline",
+          "nodeId": "9:149"
+        },
+        {
+          "name": "ICON-01/offline/active",
+          "nodeId": "9:153"
+        },
+        {
+          "name": "ICON-01/offline/outline",
+          "nodeId": "9:157"
+        },
+        {
+          "name": "ICON-01/online/active",
+          "nodeId": "9:161"
+        },
+        {
+          "name": "ICON-01/online/outline",
+          "nodeId": "9:165"
+        },
+        {
+          "name": "ICON-01/profile/active",
+          "nodeId": "9:169"
+        },
+        {
+          "name": "ICON-01/profile/outline",
+          "nodeId": "9:174"
+        },
+        {
+          "name": "ICON-01/report/active",
+          "nodeId": "9:179"
+        },
+        {
+          "name": "ICON-01/report/outline",
+          "nodeId": "9:183"
+        },
+        {
+          "name": "ICON-01/revision/active",
+          "nodeId": "9:187"
+        },
+        {
+          "name": "ICON-01/revision/outline",
+          "nodeId": "9:191"
+        },
+        {
+          "name": "ICON-01/saved/active",
+          "nodeId": "9:195"
+        },
+        {
+          "name": "ICON-01/saved/outline",
+          "nodeId": "9:199"
+        },
+        {
+          "name": "ICON-01/search/active",
+          "nodeId": "9:203"
+        },
+        {
+          "name": "ICON-01/search/outline",
+          "nodeId": "9:208"
+        },
+        {
+          "name": "ICON-01/security/active",
+          "nodeId": "9:213"
+        },
+        {
+          "name": "ICON-01/security/outline",
+          "nodeId": "9:218"
+        },
+        {
+          "name": "ICON-01/settings/active",
+          "nodeId": "9:222"
+        },
+        {
+          "name": "ICON-01/settings/outline",
+          "nodeId": "9:229"
+        },
+        {
+          "name": "ICON-01/share/active",
+          "nodeId": "9:236"
+        },
+        {
+          "name": "ICON-01/share/outline",
+          "nodeId": "9:243"
+        },
+        {
+          "name": "ICON-01/sort/active",
+          "nodeId": "9:250"
+        },
+        {
+          "name": "ICON-01/sort/outline",
+          "nodeId": "9:254"
+        },
+        {
+          "name": "ICON-01/streak/active",
+          "nodeId": "9:258"
+        },
+        {
+          "name": "ICON-01/streak/outline",
+          "nodeId": "9:262"
+        },
+        {
+          "name": "ICON-01/study/active",
+          "nodeId": "9:266"
+        },
+        {
+          "name": "ICON-01/study/outline",
+          "nodeId": "9:271"
+        },
+        {
+          "name": "ICON-01/support/active",
+          "nodeId": "9:276"
+        },
+        {
+          "name": "ICON-01/support/outline",
+          "nodeId": "9:282"
+        },
+        {
+          "name": "ICON-01/sync/active",
+          "nodeId": "9:288"
+        },
+        {
+          "name": "ICON-01/sync/outline",
+          "nodeId": "9:292"
+        },
+        {
+          "name": "ICON-01/target/active",
+          "nodeId": "9:296"
+        },
+        {
+          "name": "ICON-01/target/outline",
+          "nodeId": "9:302"
+        },
+        {
+          "name": "ICON-01/teams/active",
+          "nodeId": "9:308"
+        },
+        {
+          "name": "ICON-01/teams/outline",
+          "nodeId": "9:313"
+        },
+        {
+          "name": "ICON-01/timer/active",
+          "nodeId": "9:318"
+        },
+        {
+          "name": "ICON-01/timer/outline",
+          "nodeId": "9:323"
+        },
+        {
+          "name": "ICON-01/trophy/active",
+          "nodeId": "9:328"
+        },
+        {
+          "name": "ICON-01/trophy/outline",
+          "nodeId": "9:333"
+        },
+        {
+          "name": "ICON-01/unlock/active",
+          "nodeId": "9:337"
+        },
+        {
+          "name": "ICON-01/unlock/outline",
+          "nodeId": "9:342"
+        },
+        {
+          "name": "ICON-01/upload/active",
+          "nodeId": "9:347"
+        },
+        {
+          "name": "ICON-01/upload/outline",
+          "nodeId": "9:351"
+        }
+      ],
+      "type": "Editable approved vector components",
+      "status": "Native Figma Review"
+    },
+    "ICON-02": {
+      "assetId": "ICON-02",
+      "nodeIds": [
+        {
+          "name": "ICON-02/accuracy/active",
+          "nodeId": "9:355"
+        },
+        {
+          "name": "ICON-02/accuracy/outline",
+          "nodeId": "9:360"
+        },
+        {
+          "name": "ICON-02/analysis/active",
+          "nodeId": "9:365"
+        },
+        {
+          "name": "ICON-02/analysis/outline",
+          "nodeId": "9:369"
+        },
+        {
+          "name": "ICON-02/citizenship/active",
+          "nodeId": "9:373"
+        },
+        {
+          "name": "ICON-02/citizenship/outline",
+          "nodeId": "9:380"
+        },
+        {
+          "name": "ICON-02/concept-mastery/active",
+          "nodeId": "9:387"
+        },
+        {
+          "name": "ICON-02/concept-mastery/outline",
+          "nodeId": "9:391"
+        },
+        {
+          "name": "ICON-02/current-affairs/active",
+          "nodeId": "9:395"
+        },
+        {
+          "name": "ICON-02/current-affairs/outline",
+          "nodeId": "9:401"
+        },
+        {
+          "name": "ICON-02/difficulty/active",
+          "nodeId": "9:407"
+        },
+        {
+          "name": "ICON-02/difficulty/outline",
+          "nodeId": "9:411"
+        },
+        {
+          "name": "ICON-02/full-mock-exam/active",
+          "nodeId": "9:415"
+        },
+        {
+          "name": "ICON-02/full-mock-exam/outline",
+          "nodeId": "9:420"
+        },
+        {
+          "name": "ICON-02/geography/active",
+          "nodeId": "9:425"
+        },
+        {
+          "name": "ICON-02/geography/outline",
+          "nodeId": "9:429"
+        },
+        {
+          "name": "ICON-02/gy-gk-overview/active",
+          "nodeId": "9:433"
+        },
+        {
+          "name": "ICON-02/gy-gk-overview/outline",
+          "nodeId": "9:440"
+        },
+        {
+          "name": "ICON-02/history/active",
+          "nodeId": "9:447"
+        },
+        {
+          "name": "ICON-02/history/outline",
+          "nodeId": "9:454"
+        },
+        {
+          "name": "ICON-02/mathematics/active",
+          "nodeId": "9:461"
+        },
+        {
+          "name": "ICON-02/mathematics/outline",
+          "nodeId": "9:465"
+        },
+        {
+          "name": "ICON-02/progress/active",
+          "nodeId": "9:469"
+        },
+        {
+          "name": "ICON-02/progress/outline",
+          "nodeId": "9:473"
+        },
+        {
+          "name": "ICON-02/question-solving/active",
+          "nodeId": "9:477"
+        },
+        {
+          "name": "ICON-02/question-solving/outline",
+          "nodeId": "9:482"
+        },
+        {
+          "name": "ICON-02/revision/active",
+          "nodeId": "9:487"
+        },
+        {
+          "name": "ICON-02/revision/outline",
+          "nodeId": "9:491"
+        },
+        {
+          "name": "ICON-02/time-management/active",
+          "nodeId": "9:495"
+        },
+        {
+          "name": "ICON-02/time-management/outline",
+          "nodeId": "9:500"
+        },
+        {
+          "name": "ICON-02/topic-learning/active",
+          "nodeId": "9:505"
+        },
+        {
+          "name": "ICON-02/topic-learning/outline",
+          "nodeId": "9:510"
+        },
+        {
+          "name": "ICON-02/turkish/active",
+          "nodeId": "9:515"
+        },
+        {
+          "name": "ICON-02/turkish/outline",
+          "nodeId": "9:520"
+        }
+      ],
+      "type": "Editable approved vector components",
+      "status": "Native Figma Review"
+    },
+    "ICON-03": {
+      "assetId": "ICON-03",
+      "nodeIds": [
+        {
+          "name": "ICON-03/achievement/active",
+          "nodeId": "9:525"
+        },
+        {
+          "name": "ICON-03/achievement/outline",
+          "nodeId": "9:531"
+        },
+        {
+          "name": "ICON-03/badge/active",
+          "nodeId": "9:536"
+        },
+        {
+          "name": "ICON-03/badge/outline",
+          "nodeId": "9:541"
+        },
+        {
+          "name": "ICON-03/daily-mission/active",
+          "nodeId": "9:546"
+        },
+        {
+          "name": "ICON-03/daily-mission/outline",
+          "nodeId": "9:551"
+        },
+        {
+          "name": "ICON-03/leaderboard/active",
+          "nodeId": "9:556"
+        },
+        {
+          "name": "ICON-03/leaderboard/outline",
+          "nodeId": "9:560"
+        },
+        {
+          "name": "ICON-03/level/active",
+          "nodeId": "9:564"
+        },
+        {
+          "name": "ICON-03/level/outline",
+          "nodeId": "9:568"
+        },
+        {
+          "name": "ICON-03/milestone/active",
+          "nodeId": "9:572"
+        },
+        {
+          "name": "ICON-03/milestone/outline",
+          "nodeId": "9:577"
+        },
+        {
+          "name": "ICON-03/progress-ring/active",
+          "nodeId": "9:582"
+        },
+        {
+          "name": "ICON-03/progress-ring/outline",
+          "nodeId": "9:587"
+        },
+        {
+          "name": "ICON-03/rank/active",
+          "nodeId": "9:592"
+        },
+        {
+          "name": "ICON-03/rank/outline",
+          "nodeId": "9:596"
+        },
+        {
+          "name": "ICON-03/reward-chest/active",
+          "nodeId": "9:600"
+        },
+        {
+          "name": "ICON-03/reward-chest/outline",
+          "nodeId": "9:606"
+        },
+        {
+          "name": "ICON-03/season/active",
+          "nodeId": "9:612"
+        },
+        {
+          "name": "ICON-03/season/outline",
+          "nodeId": "9:616"
+        },
+        {
+          "name": "ICON-03/special-moment/active",
+          "nodeId": "9:620"
+        },
+        {
+          "name": "ICON-03/special-moment/outline",
+          "nodeId": "9:624"
+        },
+        {
+          "name": "ICON-03/streak/active",
+          "nodeId": "9:628"
+        },
+        {
+          "name": "ICON-03/streak/outline",
+          "nodeId": "9:632"
+        },
+        {
+          "name": "ICON-03/team-contribution/active",
+          "nodeId": "9:636"
+        },
+        {
+          "name": "ICON-03/team-contribution/outline",
+          "nodeId": "9:641"
+        },
+        {
+          "name": "ICON-03/weekly-mission/active",
+          "nodeId": "9:646"
+        },
+        {
+          "name": "ICON-03/weekly-mission/outline",
+          "nodeId": "9:651"
+        },
+        {
+          "name": "ICON-03/xp/active",
+          "nodeId": "9:656"
+        },
+        {
+          "name": "ICON-03/xp/outline",
+          "nodeId": "9:660"
+        }
+      ],
+      "type": "Editable approved vector components",
+      "status": "Native Figma Review"
+    },
+    "APP-02": {
+      "assetId": "APP-02",
+      "nodeId": "34:3497",
+      "type": "Immutable approved raster source",
+      "source": "assets/app/batch-03/review/APP-02__kavriva-kpss-maskable__safe-512__v01.png",
+      "status": "Native Figma Review"
+    },
+    "APP-03": {
+      "assetId": "APP-03",
+      "nodeId": "34:3503",
+      "type": "Immutable approved raster source",
+      "source": "assets/app/batch-03/review/APP-03__kavriva-kpss-favicon__indigo-48__v01.png",
+      "status": "Native Figma Review",
+      "nodeIds": [
+        {
+          "name": "APP-03/16",
+          "nodeId": "34:3499",
+          "source": "assets/app/batch-03/review/APP-03__kavriva-kpss-favicon__indigo-16__v01.png"
+        },
+        {
+          "name": "APP-03/32",
+          "nodeId": "34:3501",
+          "source": "assets/app/batch-03/review/APP-03__kavriva-kpss-favicon__indigo-32__v01.png"
+        },
+        {
+          "name": "APP-03/48",
+          "nodeId": "34:3503",
+          "source": "assets/app/batch-03/review/APP-03__kavriva-kpss-favicon__indigo-48__v01.png"
+        }
+      ]
+    },
+    "APP-04": {
+      "assetId": "APP-04",
+      "nodeId": "45:23",
+      "type": "Native splash component + canonical brand instances",
+      "status": "Native Figma Review"
+    },
+    "ACADEMIC-01": {
+      "assetId": "ACADEMIC-01",
+      "nodeId": "14:70",
+      "type": "Native editable academic component set",
+      "status": "Native Figma Review"
+    },
+    "ACADEMIC-02": {
+      "assetId": "ACADEMIC-02",
+      "nodeId": "14:85",
+      "type": "Native editable academic component set",
+      "status": "Native Figma Review"
+    },
+    "ACADEMIC-03": {
+      "assetId": "ACADEMIC-03",
+      "nodeId": "14:103",
+      "type": "Native editable academic component set",
+      "status": "Native Figma Review"
+    },
+    "ACADEMIC-04": {
+      "assetId": "ACADEMIC-04",
+      "nodeId": "14:118",
+      "type": "Native editable academic component set",
+      "status": "Native Figma Review"
+    },
+    "ACADEMIC-05": {
+      "assetId": "ACADEMIC-05",
+      "nodeId": "14:133",
+      "type": "Native editable academic component set",
+      "status": "Native Figma Review"
+    },
+    "ACADEMIC-06": {
+      "assetId": "ACADEMIC-06",
+      "nodeId": "14:148",
+      "type": "Native editable academic component set",
+      "status": "Native Figma Review"
+    },
+    "ACADEMIC-07": {
+      "assetId": "ACADEMIC-07",
+      "nodeId": "14:163",
+      "type": "Native editable academic component set",
+      "status": "Native Figma Review"
+    }
+  }
+}

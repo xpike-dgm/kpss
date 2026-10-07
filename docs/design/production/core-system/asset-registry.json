@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-07",
-  "scope": "Current canonical registry — Asset Phase checkpoint",
+  "date": "2026-10-08",
+  "scope": "Canonical asset phase checkpoint + native Figma Phase 1–2 Review",
   "styleLockOwnerApproval": "Accepted for Design Direction",
   "illustrationOwnerDirectionSelection": "A — Geometric Editorial",
-  "figma": "Pending",
+  "figma": "Native Phase 1–2 Review; final handoff Pending",
   "stopBeforeBatch": 18,
   "assets": [
     {
@@ -13,7 +13,7 @@
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "review PNG",
         "raster-embedded presentation SVG"
@@ -32,7 +32,11 @@
       ],
       "finalExportRef": null,
       "finalProductionVectorExport": "Pending",
-      "vectorSource": "source asset needed"
+      "vectorSource": "source asset needed",
+      "figmaNodeRefs": [
+        "15:230"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-230"
     },
     {
       "assetId": "BRAND-02",
@@ -41,7 +45,7 @@
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "review PNG",
         "raster-embedded presentation SVG"
@@ -59,7 +63,11 @@
       "ownerDirectionSelection": "A — Açık alt etiket",
       "finalProductionVectorExport": "Pending",
       "archiveStatus": "B/C: Archive / Rejected Exploration",
-      "archiveRef": "assets/brand/batch-02/archive/rejected-exploration"
+      "archiveRef": "assets/brand/batch-02/archive/rejected-exploration",
+      "figmaNodeRefs": [
+        "18:213"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=18-213"
     },
     {
       "assetId": "BRAND-03",
@@ -68,7 +76,7 @@
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "review PNG",
         "raster-embedded presentation SVG"
@@ -84,7 +92,11 @@
       "ownerDirectionSelection": "A — Açık alt etiket",
       "finalProductionVectorExport": "Pending",
       "archiveStatus": "B/C: Archive / Rejected Exploration",
-      "archiveRef": "assets/brand/batch-02/archive/rejected-exploration"
+      "archiveRef": "assets/brand/batch-02/archive/rejected-exploration",
+      "figmaNodeRefs": [
+        "18:223"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=18-223"
     },
     {
       "assetId": "BRAND-04",
@@ -93,7 +105,7 @@
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "review PNG",
         "raster-embedded presentation SVG"
@@ -109,7 +121,11 @@
       "ownerDirectionSelection": "A — Açık alt etiket",
       "finalProductionVectorExport": "Pending",
       "archiveStatus": "B/C: Archive / Rejected Exploration",
-      "archiveRef": "assets/brand/batch-02/archive/rejected-exploration"
+      "archiveRef": "assets/brand/batch-02/archive/rejected-exploration",
+      "figmaNodeRefs": [
+        "18:238"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=18-238"
     },
     {
       "assetId": "BRAND-05",
@@ -118,7 +134,7 @@
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "review PNG",
         "raster-embedded presentation SVG"
@@ -137,7 +153,11 @@
       ],
       "finalExportRef": null,
       "finalProductionVectorExport": "Pending",
-      "vectorSource": "source asset needed"
+      "vectorSource": "source asset needed",
+      "figmaNodeRefs": [
+        "15:234"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-234"
     },
     {
       "assetId": "BRAND-06",
@@ -146,7 +166,7 @@
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "review PNG",
         "raster-embedded presentation SVG"
@@ -158,7 +178,11 @@
       ],
       "finalExportRef": null,
       "finalProductionVectorExport": "Pending",
-      "vectorSource": "source asset needed"
+      "vectorSource": "source asset needed",
+      "figmaNodeRefs": [
+        "18:239"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=18-239"
     },
     {
       "assetId": "APP-01",
@@ -167,7 +191,7 @@
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "raster-embedded SVG",
         "review PNG"
@@ -183,7 +207,11 @@
       ],
       "finalExportRef": null,
       "nativeVector": false,
-      "finalProductionVectorExport": "Pending"
+      "finalProductionVectorExport": "Pending",
+      "figmaNodeRefs": [
+        "15:236"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-236"
     },
     {
       "assetId": "APP-02",
@@ -192,7 +220,7 @@
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "raster-embedded SVG",
         "review PNG"
@@ -206,7 +234,11 @@
       ],
       "finalExportRef": null,
       "nativeVector": false,
-      "finalProductionVectorExport": "Pending"
+      "finalProductionVectorExport": "Pending",
+      "figmaNodeRefs": [
+        "34:3497"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=34-3497"
     },
     {
       "assetId": "APP-03",
@@ -215,7 +247,7 @@
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "raster-embedded SVG",
         "review PNG"
@@ -243,7 +275,13 @@
       ],
       "finalExportRef": null,
       "nativeVector": false,
-      "finalProductionVectorExport": "Pending"
+      "finalProductionVectorExport": "Pending",
+      "figmaNodeRefs": [
+        "34:3499",
+        "34:3501",
+        "34:3503"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=34-3499"
     },
     {
       "assetId": "APP-04",
@@ -252,7 +290,7 @@
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "raster-embedded SVG",
         "review PNG"
@@ -274,7 +312,11 @@
       ],
       "finalExportRef": null,
       "nativeVector": false,
-      "finalProductionVectorExport": "Pending"
+      "finalProductionVectorExport": "Pending",
+      "figmaNodeRefs": [
+        "45:23"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=45-23"
     },
     {
       "assetId": "ICON-01",
@@ -283,7 +325,7 @@
       "source": "docs/design/production/style-lock/icon-grammar.cjs",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "vector SVG",
         "review sheet PNG"
@@ -448,7 +490,86 @@
       "finalExportRef": null,
       "nativeVector": true,
       "grammarHash": "2d791051b8841e979fa8c9c17c6e66a368ed5a0c290ad7349e5244be181b6d7a",
-      "finalProductionVectorExport": "Native vector source available; final handoff Pending"
+      "finalProductionVectorExport": "Native vector source available; final handoff Pending",
+      "figmaNodeRefs": [
+        "9:2",
+        "9:6",
+        "9:10",
+        "9:14",
+        "9:18",
+        "9:22",
+        "9:26",
+        "9:31",
+        "9:36",
+        "9:40",
+        "9:44",
+        "9:48",
+        "9:52",
+        "9:56",
+        "9:60",
+        "9:64",
+        "9:68",
+        "9:72",
+        "9:76",
+        "9:82",
+        "9:88",
+        "9:92",
+        "9:96",
+        "9:100",
+        "9:104",
+        "9:109",
+        "9:114",
+        "9:119",
+        "9:123",
+        "9:129",
+        "9:134",
+        "9:139",
+        "9:144",
+        "9:149",
+        "9:153",
+        "9:157",
+        "9:161",
+        "9:165",
+        "9:169",
+        "9:174",
+        "9:179",
+        "9:183",
+        "9:187",
+        "9:191",
+        "9:195",
+        "9:199",
+        "9:203",
+        "9:208",
+        "9:213",
+        "9:218",
+        "9:222",
+        "9:229",
+        "9:236",
+        "9:243",
+        "9:250",
+        "9:254",
+        "9:258",
+        "9:262",
+        "9:266",
+        "9:271",
+        "9:276",
+        "9:282",
+        "9:288",
+        "9:292",
+        "9:296",
+        "9:302",
+        "9:308",
+        "9:313",
+        "9:318",
+        "9:323",
+        "9:328",
+        "9:333",
+        "9:337",
+        "9:342",
+        "9:347",
+        "9:351"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=9-2"
     },
     {
       "assetId": "ICON-02",
@@ -457,7 +578,7 @@
       "source": "docs/design/production/style-lock/icon-grammar.cjs",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "vector SVG",
         "review sheet PNG"
@@ -538,7 +659,44 @@
       "finalExportRef": null,
       "nativeVector": true,
       "grammarHash": "2d791051b8841e979fa8c9c17c6e66a368ed5a0c290ad7349e5244be181b6d7a",
-      "finalProductionVectorExport": "Native vector source available; final handoff Pending"
+      "finalProductionVectorExport": "Native vector source available; final handoff Pending",
+      "figmaNodeRefs": [
+        "9:355",
+        "9:360",
+        "9:365",
+        "9:369",
+        "9:373",
+        "9:380",
+        "9:387",
+        "9:391",
+        "9:395",
+        "9:401",
+        "9:407",
+        "9:411",
+        "9:415",
+        "9:420",
+        "9:425",
+        "9:429",
+        "9:433",
+        "9:440",
+        "9:447",
+        "9:454",
+        "9:461",
+        "9:465",
+        "9:469",
+        "9:473",
+        "9:477",
+        "9:482",
+        "9:487",
+        "9:491",
+        "9:495",
+        "9:500",
+        "9:505",
+        "9:510",
+        "9:515",
+        "9:520"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=9-355"
     },
     {
       "assetId": "ICON-03",
@@ -547,7 +705,7 @@
       "source": "docs/design/production/style-lock/icon-grammar.cjs",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "vector SVG",
         "review sheet PNG"
@@ -620,7 +778,40 @@
       "finalExportRef": null,
       "nativeVector": true,
       "grammarHash": "2d791051b8841e979fa8c9c17c6e66a368ed5a0c290ad7349e5244be181b6d7a",
-      "finalProductionVectorExport": "Native vector source available; final handoff Pending"
+      "finalProductionVectorExport": "Native vector source available; final handoff Pending",
+      "figmaNodeRefs": [
+        "9:525",
+        "9:531",
+        "9:536",
+        "9:541",
+        "9:546",
+        "9:551",
+        "9:556",
+        "9:560",
+        "9:564",
+        "9:568",
+        "9:572",
+        "9:577",
+        "9:582",
+        "9:587",
+        "9:592",
+        "9:596",
+        "9:600",
+        "9:606",
+        "9:612",
+        "9:616",
+        "9:620",
+        "9:624",
+        "9:628",
+        "9:632",
+        "9:636",
+        "9:641",
+        "9:646",
+        "9:651",
+        "9:656",
+        "9:660"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=9-525"
     },
     {
       "assetId": "CAT-01",
@@ -629,7 +820,7 @@
       "source": "Built-in image_gen; prompt-set.json and generation-manifest.json",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "native transparent PNG",
         "comparison-board SVG/PNG"
@@ -644,7 +835,11 @@
       "nativeVector": false,
       "designDirectionApproval": "Owner accepted category family + parallel pack",
       "finalProductionExport": "Pending",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:216"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-216"
     },
     {
       "assetId": "CAT-02",
@@ -653,7 +848,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-02",
       "reviewFiles": [
@@ -664,7 +859,11 @@
       "ownerDirectionSelection": "A — Geometric Editorial; accepted",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
       "finalProductionExport": "Pending",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:218"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-218"
     },
     {
       "assetId": "CAT-03",
@@ -673,7 +872,7 @@
       "source": "Built-in image_gen; prompt-set.json and generation-manifest.json",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "native transparent PNG",
         "comparison-board SVG/PNG"
@@ -688,7 +887,11 @@
       "nativeVector": false,
       "designDirectionApproval": "Owner accepted category family + parallel pack",
       "finalProductionExport": "Pending",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:220"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-220"
     },
     {
       "assetId": "CAT-04",
@@ -697,7 +900,7 @@
       "source": "Built-in image_gen; prompt-set.json and generation-manifest.json",
       "version": "v01",
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [
         "native transparent PNG",
         "comparison-board SVG/PNG"
@@ -712,7 +915,11 @@
       "nativeVector": false,
       "designDirectionApproval": "Owner accepted category family + parallel pack",
       "finalProductionExport": "Pending",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:222"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-222"
     },
     {
       "assetId": "CAT-05",
@@ -721,7 +928,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-05",
       "reviewFiles": [
@@ -732,7 +939,11 @@
       "ownerDirectionSelection": "A — Geometric Editorial; accepted",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
       "finalProductionExport": "Pending",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:224"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-224"
     },
     {
       "assetId": "CAT-06",
@@ -741,7 +952,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-06",
       "reviewFiles": [
@@ -752,7 +963,11 @@
       "ownerDirectionSelection": "A — Geometric Editorial; accepted",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
       "finalProductionExport": "Pending",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:226"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-226"
     },
     {
       "assetId": "CAT-07",
@@ -761,7 +976,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-07",
       "reviewFiles": [
@@ -772,7 +987,11 @@
       "ownerDirectionSelection": "A — Geometric Editorial; accepted",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
       "finalProductionExport": "Pending",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:228"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-228"
     },
     {
       "assetId": "EMPTY-01",
@@ -781,7 +1000,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#EMPTY-01",
       "reviewFiles": [
@@ -795,7 +1014,11 @@
       "reviewReport": "docs/design/production/track-a/TRACK_A_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:2"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-2"
     },
     {
       "assetId": "EMPTY-02",
@@ -804,7 +1027,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#EMPTY-02",
       "reviewFiles": [
@@ -818,7 +1041,11 @@
       "reviewReport": "docs/design/production/track-a/TRACK_A_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:4"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-4"
     },
     {
       "assetId": "EMPTY-03",
@@ -827,7 +1054,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#EMPTY-03",
       "reviewFiles": [
@@ -841,7 +1068,11 @@
       "reviewReport": "docs/design/production/track-a/TRACK_A_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:6"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-6"
     },
     {
       "assetId": "EMPTY-04",
@@ -850,7 +1081,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#EMPTY-04",
       "reviewFiles": [
@@ -864,7 +1095,11 @@
       "reviewReport": "docs/design/production/track-a/TRACK_A_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:8"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-8"
     },
     {
       "assetId": "EMPTY-05",
@@ -873,7 +1108,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#EMPTY-05",
       "reviewFiles": [
@@ -887,7 +1122,11 @@
       "reviewReport": "docs/design/production/track-a/TRACK_A_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:10"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-10"
     },
     {
       "assetId": "EMPTY-06",
@@ -896,7 +1135,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#EMPTY-06",
       "reviewFiles": [
@@ -910,7 +1149,11 @@
       "reviewReport": "docs/design/production/track-a/TRACK_A_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:12"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-12"
     },
     {
       "assetId": "EMPTY-07",
@@ -919,7 +1162,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#EMPTY-07",
       "reviewFiles": [
@@ -933,7 +1176,11 @@
       "reviewReport": "docs/design/production/track-a/TRACK_A_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:14"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-14"
     },
     {
       "assetId": "EMPTY-08",
@@ -942,7 +1189,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#EMPTY-08",
       "reviewFiles": [
@@ -956,7 +1203,11 @@
       "reviewReport": "docs/design/production/track-a/TRACK_A_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:16"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-16"
     },
     {
       "assetId": "EMPTY-09",
@@ -965,7 +1216,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#EMPTY-09",
       "reviewFiles": [
@@ -979,7 +1230,11 @@
       "reviewReport": "docs/design/production/track-a/TRACK_A_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:18"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-18"
     },
     {
       "assetId": "EMPTY-10",
@@ -988,7 +1243,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#EMPTY-10",
       "reviewFiles": [
@@ -1002,7 +1257,11 @@
       "reviewReport": "docs/design/production/track-a/TRACK_A_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:20"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-20"
     },
     {
       "assetId": "ONBOARD-01",
@@ -1011,7 +1270,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ONBOARD-01",
       "reviewFiles": [
@@ -1025,7 +1284,11 @@
       "reviewReport": "docs/design/production/track-b/TRACK_B_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:196"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-196"
     },
     {
       "assetId": "ONBOARD-02",
@@ -1034,7 +1297,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ONBOARD-02",
       "reviewFiles": [
@@ -1048,7 +1311,11 @@
       "reviewReport": "docs/design/production/track-b/TRACK_B_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:198"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-198"
     },
     {
       "assetId": "ONBOARD-03",
@@ -1057,7 +1324,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ONBOARD-03",
       "reviewFiles": [
@@ -1071,7 +1338,11 @@
       "reviewReport": "docs/design/production/track-b/TRACK_B_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:200"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-200"
     },
     {
       "assetId": "ONBOARD-04",
@@ -1080,7 +1351,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ONBOARD-04",
       "reviewFiles": [
@@ -1094,7 +1365,11 @@
       "reviewReport": "docs/design/production/track-b/TRACK_B_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:202"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-202"
     },
     {
       "assetId": "ONBOARD-05",
@@ -1103,7 +1378,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ONBOARD-05",
       "reviewFiles": [
@@ -1117,7 +1392,11 @@
       "reviewReport": "docs/design/production/track-b/TRACK_B_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:204"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-204"
     },
     {
       "assetId": "ONBOARD-06",
@@ -1126,7 +1405,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ONBOARD-06",
       "reviewFiles": [
@@ -1140,7 +1419,11 @@
       "reviewReport": "docs/design/production/track-b/TRACK_B_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:206"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-206"
     },
     {
       "assetId": "ONBOARD-07",
@@ -1149,7 +1432,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ONBOARD-07",
       "reviewFiles": [
@@ -1163,7 +1446,11 @@
       "reviewReport": "docs/design/production/track-b/TRACK_B_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:208"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-208"
     },
     {
       "assetId": "ONBOARD-08",
@@ -1172,7 +1459,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ONBOARD-08",
       "reviewFiles": [
@@ -1186,7 +1473,11 @@
       "reviewReport": "docs/design/production/track-b/TRACK_B_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:210"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-210"
     },
     {
       "assetId": "ONBOARD-09",
@@ -1195,7 +1486,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ONBOARD-09",
       "reviewFiles": [
@@ -1209,7 +1500,11 @@
       "reviewReport": "docs/design/production/track-b/TRACK_B_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:212"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-212"
     },
     {
       "assetId": "ONBOARD-10",
@@ -1218,7 +1513,7 @@
       "source": null,
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ONBOARD-10",
       "reviewFiles": [
@@ -1232,7 +1527,11 @@
       "reviewReport": "docs/design/production/track-b/TRACK_B_REVIEW.md",
       "qa": "Raster family QA;96px/dark diagnostic, final theme Pending",
       "designDirectionApproval": "Owner accepted category family + parallel pack",
-      "productionPolish": "P01–P06 backlog as applicable; outside approval scope"
+      "productionPolish": "P01–P06 backlog as applicable; outside approval scope",
+      "figmaNodeRefs": [
+        "15:214"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=15-214"
     },
     {
       "assetId": "GAME-01",
@@ -1724,7 +2023,7 @@
       "source": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-320-default__v01.svg",
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-01",
       "reviewFiles": [],
@@ -1733,7 +2032,11 @@
       "preview": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-320-default__v01.png",
       "nativeVector": true,
       "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
-      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "figmaNodeRefs": [
+        "14:70"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=14-70"
     },
     {
       "assetId": "ACADEMIC-02",
@@ -1742,7 +2045,7 @@
       "source": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-320-default__v01.svg",
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-02",
       "reviewFiles": [],
@@ -1752,7 +2055,11 @@
       "nativeVector": true,
       "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
       "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
-      "ownerAcceptanceNotes": "Production tests pending: complex typesetting, KaTeX/native math, wrapping, narrow mobile, long Turkish explanations and academic editorial validation."
+      "ownerAcceptanceNotes": "Production tests pending: complex typesetting, KaTeX/native math, wrapping, narrow mobile, long Turkish explanations and academic editorial validation.",
+      "figmaNodeRefs": [
+        "14:85"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=14-85"
     },
     {
       "assetId": "ACADEMIC-03",
@@ -1761,7 +2068,7 @@
       "source": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-default__v01.svg",
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-03",
       "reviewFiles": [],
@@ -1770,7 +2077,11 @@
       "preview": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-default__v01.png",
       "nativeVector": true,
       "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
-      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "figmaNodeRefs": [
+        "14:103"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=14-103"
     },
     {
       "assetId": "ACADEMIC-04",
@@ -1779,7 +2090,7 @@
       "source": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-320-default__v01.svg",
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-04",
       "reviewFiles": [],
@@ -1789,7 +2100,11 @@
       "nativeVector": true,
       "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
       "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
-      "ownerAcceptanceNotes": "Production tests pending: complex typesetting, KaTeX/native math, wrapping, narrow mobile, long Turkish explanations and academic editorial validation."
+      "ownerAcceptanceNotes": "Production tests pending: complex typesetting, KaTeX/native math, wrapping, narrow mobile, long Turkish explanations and academic editorial validation.",
+      "figmaNodeRefs": [
+        "14:118"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=14-118"
     },
     {
       "assetId": "ACADEMIC-05",
@@ -1798,7 +2113,7 @@
       "source": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-tip__v01.svg",
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-05",
       "reviewFiles": [],
@@ -1807,7 +2122,11 @@
       "preview": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-tip__v01.png",
       "nativeVector": true,
       "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
-      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "figmaNodeRefs": [
+        "14:133"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=14-133"
     },
     {
       "assetId": "ACADEMIC-06",
@@ -1816,7 +2135,7 @@
       "source": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-default__v01.svg",
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-06",
       "reviewFiles": [],
@@ -1825,7 +2144,11 @@
       "preview": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-default__v01.png",
       "nativeVector": true,
       "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
-      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "figmaNodeRefs": [
+        "14:148"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=14-148"
     },
     {
       "assetId": "ACADEMIC-07",
@@ -1834,7 +2157,7 @@
       "source": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-0__v01.svg",
       "version": null,
       "approvedBy": "Owner — 2026-10-07",
-      "figma": "Pending",
+      "figma": "Native Review; final handoff Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#ACADEMIC-07",
       "reviewFiles": [],
@@ -1843,7 +2166,11 @@
       "preview": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-0__v01.png",
       "nativeVector": true,
       "designDirectionApproval": "Owner accepted Core System Completion Review Pack",
-      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json"
+      "ownerDecisionRef": "docs/design/production/core-system/owner-decision.json",
+      "figmaNodeRefs": [
+        "14:163"
+      ],
+      "figmaLink": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=14-163"
     },
     {
       "assetId": "MKT-01",
@@ -2194,5 +2521,15 @@
   "productionPolish": "P-01–P-06 Open",
   "finalProductionExport": "Pending",
   "totalAssets": 87,
-  "duplicateIds": 0
+  "duplicateIds": 0,
+  "canonicalFigmaFile": "https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS",
+  "figmaNativeReview": {
+    "date": "2026-10-08",
+    "phase": "Phase 1–2",
+    "status": "Review",
+    "ownerAcceptance": "Pending",
+    "mappedAssets": 47,
+    "pendingNativeMapping": 40,
+    "finalHandoff": "Pending"
+  }
 }

@@ -1,0 +1,1282 @@
+{
+  "date": "2026-10-08",
+  "phase": "Phase 1 + Phase 2 / Review",
+  "ownerAcceptance": "Pending",
+  "screenCount": 127,
+  "standardLight": 56,
+  "standardDark": 56,
+  "mobileSmall": 10,
+  "textScale200": 5,
+  "screens": {
+    "AUTH-01": {
+      "id": "19:2",
+      "name": "Hoş geldin",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:9",
+      "viewportId": "19:8"
+    },
+    "AUTH-02": {
+      "id": "19:26",
+      "name": "Giriş yap",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:40",
+      "viewportId": "19:39"
+    },
+    "AUTH-03": {
+      "id": "19:59",
+      "name": "Hesap oluştur",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:70",
+      "viewportId": "19:69"
+    },
+    "AUTH-04": {
+      "id": "19:94",
+      "name": "Şifre yenile",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:105",
+      "viewportId": "19:104"
+    },
+    "AUTH-05": {
+      "id": "19:118",
+      "name": "Diğer giriş seçenekleri",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:129",
+      "viewportId": "19:128"
+    },
+    "AUTH-06": {
+      "id": "19:140",
+      "name": "Passkey ile giriş",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:151",
+      "viewportId": "19:150"
+    },
+    "AUTH-07": {
+      "id": "19:163",
+      "name": "Giriş yap",
+      "theme": "Light",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:174",
+      "viewportId": "19:173"
+    },
+    "AUTH-08": {
+      "id": "19:193",
+      "name": "E-postanı doğrula",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:204",
+      "viewportId": "19:203"
+    },
+    "AUTH-09": {
+      "id": "19:215",
+      "name": "Bağlantı isteği alındı",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:226",
+      "viewportId": "19:225"
+    },
+    "ONB-01": {
+      "id": "19:234",
+      "name": "İlk adım",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:245",
+      "viewportId": "19:244"
+    },
+    "ONB-02": {
+      "id": "19:254",
+      "name": "KPSS türün",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:265",
+      "viewportId": "19:264"
+    },
+    "ONB-03": {
+      "id": "19:282",
+      "name": "Sınav dönemin",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:293",
+      "viewportId": "19:292"
+    },
+    "ONB-04": {
+      "id": "19:311",
+      "name": "Başlangıç noktan",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:322",
+      "viewportId": "19:321"
+    },
+    "ONB-05": {
+      "id": "19:345",
+      "name": "Seni tanıyalım",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:356",
+      "viewportId": "19:355"
+    },
+    "ONB-06": {
+      "id": "19:365",
+      "name": "Tercihlerin",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:376",
+      "viewportId": "19:375"
+    },
+    "ONB-07": {
+      "id": "19:392",
+      "name": "Hazırsın",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "19:403",
+      "viewportId": "19:402"
+    },
+    "DASH-01": {
+      "id": "20:183",
+      "name": "Ana sayfa",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:194",
+      "viewportId": "20:193"
+    },
+    "DASH-02": {
+      "id": "20:295",
+      "name": "Ana sayfa",
+      "theme": "Light",
+      "state": "FreshStart",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:306",
+      "viewportId": "20:305"
+    },
+    "DASH-03": {
+      "id": "20:359",
+      "name": "Ana sayfa",
+      "theme": "Light",
+      "state": "Offline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:370",
+      "viewportId": "20:369"
+    },
+    "DASH-04": {
+      "id": "20:425",
+      "name": "Ana sayfa",
+      "theme": "Light",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:436",
+      "viewportId": "20:435"
+    },
+    "NEXT-01": {
+      "id": "20:489",
+      "name": "Sıradaki Adım",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:500",
+      "viewportId": "20:499"
+    },
+    "NEXT-02": {
+      "id": "20:559",
+      "name": "Alternatif adımlar",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:570",
+      "viewportId": "20:569"
+    },
+    "STUDY-01": {
+      "id": "20:607",
+      "name": "Çalış",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:618",
+      "viewportId": "20:617"
+    },
+    "STUDY-02": {
+      "id": "20:725",
+      "name": "Matematik konuları",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:736",
+      "viewportId": "20:735"
+    },
+    "STUDY-03": {
+      "id": "20:792",
+      "name": "Arama sonucu",
+      "theme": "Light",
+      "state": "Empty",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:803",
+      "viewportId": "20:802"
+    },
+    "LEARN-01": {
+      "id": "20:850",
+      "name": "Oran ve orantı",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:861",
+      "viewportId": "20:860"
+    },
+    "LEARN-02": {
+      "id": "20:933",
+      "name": "Kısa öğrenme kontrolü",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:944",
+      "viewportId": "20:943"
+    },
+    "LEARN-03": {
+      "id": "20:967",
+      "name": "Kısa kontrol sonucu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:978",
+      "viewportId": "20:977"
+    },
+    "LEARN-04": {
+      "id": "20:992",
+      "name": "Video kullanılamıyor",
+      "theme": "Light",
+      "state": "ProviderUnavailable",
+      "width": 390,
+      "status": "Review",
+      "contentId": "20:1003",
+      "viewportId": "20:1002"
+    },
+    "TEST-01": {
+      "id": "22:786",
+      "name": "Konu testi",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:797",
+      "viewportId": "22:796"
+    },
+    "TEST-02": {
+      "id": "22:831",
+      "name": "Konu testi",
+      "theme": "Light",
+      "state": "Selected",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:842",
+      "viewportId": "22:841"
+    },
+    "TEST-03": {
+      "id": "22:876",
+      "name": "Konu testi",
+      "theme": "Light",
+      "state": "Unanswered",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:887",
+      "viewportId": "22:886"
+    },
+    "TEST-04": {
+      "id": "22:924",
+      "name": "Konu testi",
+      "theme": "Light",
+      "state": "Offline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:935",
+      "viewportId": "22:934"
+    },
+    "TEST-05": {
+      "id": "22:972",
+      "name": "Soru gezgini",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:983",
+      "viewportId": "22:982"
+    },
+    "TEST-06": {
+      "id": "22:1016",
+      "name": "Soru notu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1027",
+      "viewportId": "22:1026"
+    },
+    "TEST-07": {
+      "id": "22:1047",
+      "name": "Testi bitir?",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1058",
+      "viewportId": "22:1057"
+    },
+    "TEST-08": {
+      "id": "22:1069",
+      "name": "Yanıtlar işleniyor",
+      "theme": "Light",
+      "state": "Submitting",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1080",
+      "viewportId": "22:1079"
+    },
+    "TEST-09": {
+      "id": "22:1091",
+      "name": "Eşitleme bekliyor",
+      "theme": "Light",
+      "state": "OfflinePending",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1102",
+      "viewportId": "22:1101"
+    },
+    "RESULT-01": {
+      "id": "22:1110",
+      "name": "Test sonucu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1121",
+      "viewportId": "22:1120"
+    },
+    "RESULT-02": {
+      "id": "22:1188",
+      "name": "Test sonucu",
+      "theme": "Light",
+      "state": "LimitedData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1199",
+      "viewportId": "22:1198"
+    },
+    "WRONG-01": {
+      "id": "22:1212",
+      "name": "Yanlışlarım",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1223",
+      "viewportId": "22:1222"
+    },
+    "WRONG-02": {
+      "id": "22:1279",
+      "name": "Yanlış inceleme",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1290",
+      "viewportId": "22:1289"
+    },
+    "WRONG-03": {
+      "id": "22:1332",
+      "name": "Yeni sorularla güçlendir",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1343",
+      "viewportId": "22:1342"
+    },
+    "WRONG-04": {
+      "id": "22:1355",
+      "name": "Bağımsız soru bekleniyor",
+      "theme": "Light",
+      "state": "LimitedPool",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1366",
+      "viewportId": "22:1365"
+    },
+    "WRONG-05": {
+      "id": "22:1378",
+      "name": "Yanlışlarım",
+      "theme": "Light",
+      "state": "Empty",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1389",
+      "viewportId": "22:1388"
+    },
+    "WRONG-06": {
+      "id": "22:1432",
+      "name": "Doğrulama durumu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1443",
+      "viewportId": "22:1442"
+    },
+    "WRONG-07": {
+      "id": "22:1453",
+      "name": "Arşivlenen yanlış",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "22:1464",
+      "viewportId": "22:1463"
+    },
+    "AUTH-00": {
+      "id": "28:2876",
+      "name": "Splash",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "28:2887",
+      "viewportId": "28:2886"
+    },
+    "ONB-08": {
+      "id": "28:2896",
+      "name": "Hedefin · İsteğe bağlı",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "28:2907",
+      "viewportId": "28:2906"
+    },
+    "ONB-09": {
+      "id": "28:2931",
+      "name": "Başlangıç kalibrasyonu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "28:2942",
+      "viewportId": "28:2941"
+    },
+    "STUDY-04": {
+      "id": "28:2951",
+      "name": "Oran ve orantı alt konuları",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "28:2962",
+      "viewportId": "28:2961"
+    },
+    "WRONG-08": {
+      "id": "28:3029",
+      "name": "Yanlışları filtrele",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "28:3040",
+      "viewportId": "28:3039"
+    },
+    "TEST-02-A": {
+      "id": "34:3100",
+      "name": "Konu testi",
+      "theme": "Light",
+      "state": "Selected A",
+      "width": 390,
+      "status": "Review",
+      "contentId": "34:3106",
+      "viewportId": "34:3105"
+    },
+    "TEST-02-B": {
+      "id": "34:3197",
+      "name": "Konu testi",
+      "theme": "Light",
+      "state": "Selected B",
+      "width": 390,
+      "status": "Review",
+      "contentId": "34:3203",
+      "viewportId": "34:3202"
+    },
+    "TEST-02-D": {
+      "id": "34:3294",
+      "name": "Konu testi",
+      "theme": "Light",
+      "state": "Selected D",
+      "width": 390,
+      "status": "Review",
+      "contentId": "34:3300",
+      "viewportId": "34:3299"
+    },
+    "TEST-02-E": {
+      "id": "34:3391",
+      "name": "Konu testi",
+      "theme": "Light",
+      "state": "Selected E",
+      "width": 390,
+      "status": "Review",
+      "contentId": "34:3397",
+      "viewportId": "34:3396"
+    },
+    "AUTH-01__dark": {
+      "id": "25:1175",
+      "name": "Hoş geldin",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1181",
+      "viewportId": "25:1180"
+    },
+    "AUTH-02__dark": {
+      "id": "25:1202",
+      "name": "Giriş yap",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1208",
+      "viewportId": "25:1207"
+    },
+    "AUTH-03__dark": {
+      "id": "25:1232",
+      "name": "Hesap oluştur",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1238",
+      "viewportId": "25:1237"
+    },
+    "AUTH-04__dark": {
+      "id": "25:1267",
+      "name": "Şifre yenile",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1273",
+      "viewportId": "25:1272"
+    },
+    "AUTH-05__dark": {
+      "id": "25:1291",
+      "name": "Diğer giriş seçenekleri",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1297",
+      "viewportId": "25:1296"
+    },
+    "AUTH-06__dark": {
+      "id": "25:1313",
+      "name": "Passkey ile giriş",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1319",
+      "viewportId": "25:1318"
+    },
+    "AUTH-07__dark": {
+      "id": "25:1336",
+      "name": "Giriş yap",
+      "theme": "Dark",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1342",
+      "viewportId": "25:1341"
+    },
+    "AUTH-08__dark": {
+      "id": "25:1366",
+      "name": "E-postanı doğrula",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1372",
+      "viewportId": "25:1371"
+    },
+    "AUTH-09__dark": {
+      "id": "25:1388",
+      "name": "Bağlantı isteği alındı",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1394",
+      "viewportId": "25:1393"
+    },
+    "ONB-01__dark": {
+      "id": "25:1407",
+      "name": "İlk adım",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1413",
+      "viewportId": "25:1412"
+    },
+    "ONB-02__dark": {
+      "id": "25:1427",
+      "name": "KPSS türün",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1433",
+      "viewportId": "25:1432"
+    },
+    "ONB-03__dark": {
+      "id": "25:1455",
+      "name": "Sınav dönemin",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1461",
+      "viewportId": "25:1460"
+    },
+    "ONB-04__dark": {
+      "id": "25:1481",
+      "name": "Başlangıç noktan",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1487",
+      "viewportId": "25:1486"
+    },
+    "ONB-05__dark": {
+      "id": "25:1515",
+      "name": "Seni tanıyalım",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1521",
+      "viewportId": "25:1520"
+    },
+    "ONB-06__dark": {
+      "id": "25:1535",
+      "name": "Tercihlerin",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1541",
+      "viewportId": "25:1540"
+    },
+    "ONB-07__dark": {
+      "id": "25:1562",
+      "name": "Hazırsın",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1568",
+      "viewportId": "25:1567"
+    },
+    "DASH-01__dark": {
+      "id": "25:1582",
+      "name": "Ana sayfa",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1588",
+      "viewportId": "25:1587"
+    },
+    "DASH-02__dark": {
+      "id": "25:1673",
+      "name": "Ana sayfa",
+      "theme": "Dark",
+      "state": "FreshStart",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1679",
+      "viewportId": "25:1678"
+    },
+    "DASH-03__dark": {
+      "id": "25:1736",
+      "name": "Ana sayfa",
+      "theme": "Dark",
+      "state": "Offline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1742",
+      "viewportId": "25:1741"
+    },
+    "DASH-04__dark": {
+      "id": "25:1801",
+      "name": "Ana sayfa",
+      "theme": "Dark",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1807",
+      "viewportId": "25:1806"
+    },
+    "NEXT-01__dark": {
+      "id": "25:1865",
+      "name": "Sıradaki Adım",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1871",
+      "viewportId": "25:1870"
+    },
+    "NEXT-02__dark": {
+      "id": "25:1935",
+      "name": "Alternatif adımlar",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1941",
+      "viewportId": "25:1940"
+    },
+    "STUDY-01__dark": {
+      "id": "25:1981",
+      "name": "Çalış",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:1987",
+      "viewportId": "25:1986"
+    },
+    "STUDY-02__dark": {
+      "id": "25:2080",
+      "name": "Matematik konuları",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2086",
+      "viewportId": "25:2085"
+    },
+    "STUDY-03__dark": {
+      "id": "25:2147",
+      "name": "Arama sonucu",
+      "theme": "Dark",
+      "state": "Empty",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2153",
+      "viewportId": "25:2152"
+    },
+    "LEARN-01__dark": {
+      "id": "25:2205",
+      "name": "Oran ve orantı",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2211",
+      "viewportId": "25:2210"
+    },
+    "LEARN-02__dark": {
+      "id": "25:2288",
+      "name": "Kısa öğrenme kontrolü",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2294",
+      "viewportId": "25:2293"
+    },
+    "LEARN-03__dark": {
+      "id": "25:2322",
+      "name": "Kısa kontrol sonucu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2328",
+      "viewportId": "25:2327"
+    },
+    "LEARN-04__dark": {
+      "id": "25:2347",
+      "name": "Video kullanılamıyor",
+      "theme": "Dark",
+      "state": "ProviderUnavailable",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2353",
+      "viewportId": "25:2352"
+    },
+    "TEST-01__dark": {
+      "id": "25:2380",
+      "name": "Konu testi",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2386",
+      "viewportId": "25:2385"
+    },
+    "TEST-02__dark": {
+      "id": "25:2425",
+      "name": "Konu testi",
+      "theme": "Dark",
+      "state": "Selected",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2431",
+      "viewportId": "25:2430"
+    },
+    "TEST-03__dark": {
+      "id": "25:2470",
+      "name": "Konu testi",
+      "theme": "Dark",
+      "state": "Unanswered",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2476",
+      "viewportId": "25:2475"
+    },
+    "TEST-04__dark": {
+      "id": "25:2518",
+      "name": "Konu testi",
+      "theme": "Dark",
+      "state": "Offline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2524",
+      "viewportId": "25:2523"
+    },
+    "TEST-05__dark": {
+      "id": "25:2566",
+      "name": "Soru gezgini",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2572",
+      "viewportId": "25:2571"
+    },
+    "TEST-06__dark": {
+      "id": "25:2610",
+      "name": "Soru notu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2616",
+      "viewportId": "25:2615"
+    },
+    "TEST-07__dark": {
+      "id": "25:2641",
+      "name": "Testi bitir?",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2647",
+      "viewportId": "25:2646"
+    },
+    "TEST-08__dark": {
+      "id": "25:2663",
+      "name": "Yanıtlar işleniyor",
+      "theme": "Dark",
+      "state": "Submitting",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2669",
+      "viewportId": "25:2668"
+    },
+    "TEST-09__dark": {
+      "id": "25:2685",
+      "name": "Eşitleme bekliyor",
+      "theme": "Dark",
+      "state": "OfflinePending",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2691",
+      "viewportId": "25:2690"
+    },
+    "RESULT-01__dark": {
+      "id": "25:2704",
+      "name": "Test sonucu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2710",
+      "viewportId": "25:2709"
+    },
+    "RESULT-02__dark": {
+      "id": "25:2782",
+      "name": "Test sonucu",
+      "theme": "Dark",
+      "state": "LimitedData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2788",
+      "viewportId": "25:2787"
+    },
+    "WRONG-01__dark": {
+      "id": "25:2806",
+      "name": "Yanlışlarım",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2812",
+      "viewportId": "25:2811"
+    },
+    "WRONG-02__dark": {
+      "id": "25:2873",
+      "name": "Yanlış inceleme",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2879",
+      "viewportId": "25:2878"
+    },
+    "WRONG-03__dark": {
+      "id": "25:2923",
+      "name": "Yeni sorularla güçlendir",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2929",
+      "viewportId": "25:2928"
+    },
+    "WRONG-04__dark": {
+      "id": "25:2946",
+      "name": "Bağımsız soru bekleniyor",
+      "theme": "Dark",
+      "state": "LimitedPool",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2952",
+      "viewportId": "25:2951"
+    },
+    "WRONG-05__dark": {
+      "id": "25:2969",
+      "name": "Yanlışlarım",
+      "theme": "Dark",
+      "state": "Empty",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:2975",
+      "viewportId": "25:2974"
+    },
+    "WRONG-06__dark": {
+      "id": "25:3023",
+      "name": "Doğrulama durumu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:3029",
+      "viewportId": "25:3028"
+    },
+    "WRONG-07__dark": {
+      "id": "25:3044",
+      "name": "Arşivlenen yanlış",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "25:3050",
+      "viewportId": "25:3049"
+    },
+    "AUTH-02__small": {
+      "id": "26:2295",
+      "name": "Giriş yap",
+      "theme": "Light",
+      "state": "Default / Responsive",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2301",
+      "viewportId": "26:2300"
+    },
+    "AUTH-02__scale200": {
+      "id": "26:2325",
+      "name": "Giriş yap",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2331",
+      "viewportId": "26:2330"
+    },
+    "ONB-02__small": {
+      "id": "26:2355",
+      "name": "KPSS türün",
+      "theme": "Light",
+      "state": "Default / Responsive",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2361",
+      "viewportId": "26:2360"
+    },
+    "ONB-04__small": {
+      "id": "26:2383",
+      "name": "Başlangıç noktan",
+      "theme": "Light",
+      "state": "Default / Responsive",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2389",
+      "viewportId": "26:2388"
+    },
+    "DASH-01__small": {
+      "id": "26:2417",
+      "name": "Ana sayfa",
+      "theme": "Light",
+      "state": "Default / Responsive",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2423",
+      "viewportId": "26:2422"
+    },
+    "DASH-01__scale200": {
+      "id": "26:2508",
+      "name": "Ana sayfa",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2514",
+      "viewportId": "26:2513"
+    },
+    "NEXT-01__small": {
+      "id": "26:2599",
+      "name": "Sıradaki Adım",
+      "theme": "Light",
+      "state": "Default / Responsive",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2605",
+      "viewportId": "26:2604"
+    },
+    "STUDY-01__small": {
+      "id": "26:2669",
+      "name": "Çalış",
+      "theme": "Light",
+      "state": "Default / Responsive",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2675",
+      "viewportId": "26:2674"
+    },
+    "LEARN-01__small": {
+      "id": "26:2768",
+      "name": "Oran ve orantı",
+      "theme": "Light",
+      "state": "Default / Responsive",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2774",
+      "viewportId": "26:2773"
+    },
+    "LEARN-01__scale200": {
+      "id": "26:2851",
+      "name": "Oran ve orantı",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2857",
+      "viewportId": "26:2856"
+    },
+    "TEST-02__small": {
+      "id": "26:2934",
+      "name": "Konu testi",
+      "theme": "Light",
+      "state": "Selected / Responsive",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2940",
+      "viewportId": "26:2939"
+    },
+    "TEST-02__scale200": {
+      "id": "26:2979",
+      "name": "Konu testi",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:2985",
+      "viewportId": "26:2984"
+    },
+    "RESULT-01__small": {
+      "id": "26:3024",
+      "name": "Test sonucu",
+      "theme": "Light",
+      "state": "Default / Responsive",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:3030",
+      "viewportId": "26:3029"
+    },
+    "WRONG-02__small": {
+      "id": "26:3102",
+      "name": "Yanlış inceleme",
+      "theme": "Light",
+      "state": "Default / Responsive",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:3108",
+      "viewportId": "26:3107"
+    },
+    "WRONG-02__scale200": {
+      "id": "26:3152",
+      "name": "Yanlış inceleme",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "26:3158",
+      "viewportId": "26:3157"
+    },
+    "AUTH-00__dark": {
+      "id": "28:3200",
+      "name": "Splash",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "28:3205",
+      "viewportId": "28:3204"
+    },
+    "ONB-08__dark": {
+      "id": "28:3216",
+      "name": "Hedefin · İsteğe bağlı",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "28:3222",
+      "viewportId": "28:3221"
+    },
+    "ONB-09__dark": {
+      "id": "28:3251",
+      "name": "Başlangıç kalibrasyonu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "28:3257",
+      "viewportId": "28:3256"
+    },
+    "STUDY-04__dark": {
+      "id": "28:3271",
+      "name": "Oran ve orantı alt konuları",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "28:3277",
+      "viewportId": "28:3276"
+    },
+    "WRONG-08__dark": {
+      "id": "28:3349",
+      "name": "Yanlışları filtrele",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "28:3355",
+      "viewportId": "28:3354"
+    },
+    "TEST-02-A__dark": {
+      "id": "34:3151",
+      "name": "Konu testi",
+      "theme": "Dark",
+      "state": "Selected A",
+      "width": 390,
+      "status": "Review",
+      "contentId": "34:3157",
+      "viewportId": "34:3156"
+    },
+    "TEST-02-B__dark": {
+      "id": "34:3248",
+      "name": "Konu testi",
+      "theme": "Dark",
+      "state": "Selected B",
+      "width": 390,
+      "status": "Review",
+      "contentId": "34:3254",
+      "viewportId": "34:3253"
+    },
+    "TEST-02-D__dark": {
+      "id": "34:3345",
+      "name": "Konu testi",
+      "theme": "Dark",
+      "state": "Selected D",
+      "width": 390,
+      "status": "Review",
+      "contentId": "34:3351",
+      "viewportId": "34:3350"
+    },
+    "TEST-02-E__dark": {
+      "id": "34:3442",
+      "name": "Konu testi",
+      "theme": "Dark",
+      "state": "Selected E",
+      "width": 390,
+      "status": "Review",
+      "contentId": "34:3448",
+      "viewportId": "34:3447"
+    }
+  }
+}
