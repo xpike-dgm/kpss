@@ -1,0 +1,180 @@
+{
+  "track": "A — Empty States",
+  "status": "Review target; no owner approval",
+  "prompts": [
+    {
+      "assetId": "EMPTY-01",
+      "batch": 7,
+      "label": "Hiç soru çözülmemiş",
+      "shortName": "fresh-start",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Asset ID: EMPTY-01. Subject: A frontal clean blank question card with one indigo empty progress arc beginning at a single dot, a small poised triangular play cue nearby. Academic fresh beginning; no populated results or text.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-02",
+      "batch": 7,
+      "label": "Henüz deneme yok",
+      "shortName": "no-mock-exams",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Asset ID: EMPTY-02. Subject: A frontal blank exam sheet with simple answer-circle placeholders, paired with a small outline clock with no digits and a minimal empty chart baseline. Readiness/results waiting, not failed exam.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-03",
+      "batch": 7,
+      "label": "Yanlışlarım boş",
+      "shortName": "no-wrong-answers",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Asset ID: EMPTY-03. Subject: An empty shallow frontal review tray containing a single blank neatly aligned sheet and a small restrained indigo check circle. Positive tidy status, no red cross or alarm. Avoid isometric tray.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-04",
+      "batch": 7,
+      "label": "Kaydedilenler boş",
+      "shortName": "no-bookmarks",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Asset ID: EMPTY-04. Subject: One frontal blank content card with a large indigo bookmark ribbon outline hovering at its upper-right corner, plus a small empty collection outline behind. Calm collecting potential, not a folder stack.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-07",
+      "batch": 7,
+      "label": "Arama sonucu yok",
+      "shortName": "no-search-results",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Asset ID: EMPTY-07. Subject: A large clean frontal magnifying glass over an empty softly rounded rectangular search region with one subtle disconnected dot. No search bar text, cross or failure sign. Clear calm no-results metaphor.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-05",
+      "batch": 8,
+      "label": "Takım yok",
+      "shortName": "no-team",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Match established Batch07 family: frontal pale geometric content shapes, restrained indigo edge/ring/node accents. The attached first reference is the EMPTY-03 grammar anchor, others CAT01/03. No reflective glass or diagonal highlights. Asset ID: EMPTY-05. Subject: Three simple frontal abstract member nodes arranged around a small open central collaboration circle, two connector segments waiting to join. Neutral professional collaboration potential, no people illustrations or avatars faces.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/empty-states/track-a/review/EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-06",
+      "batch": 8,
+      "label": "AI sohbet yok",
+      "shortName": "no-ai-history",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Match established Batch07 family: frontal pale geometric content shapes, restrained indigo edge/ring/node accents. The attached first reference is the EMPTY-03 grammar anchor, others CAT01/03. No reflective glass or diagonal highlights. Asset ID: EMPTY-06. Subject: Two frontal empty outlined speech cards, one large and one small, with a subtle three-node indigo connection cue between. Intelligent conversation ready to begin, no robot, starburst magic, brain, glow, written text.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/empty-states/track-a/review/EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-08",
+      "batch": 8,
+      "label": "Offline",
+      "shortName": "offline",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Match established Batch07 family: frontal pale geometric content shapes, restrained indigo edge/ring/node accents. The attached first reference is the EMPTY-03 grammar anchor, others CAT01/03. No reflective glass or diagonal highlights. Asset ID: EMPTY-08. Subject: A clean frontal connectivity arc pair above a single small outlined device-card shape, with a deliberate gap in one connection segment and two quiet end dots. Temporary disconnected state. No slash, red cross, warning triangle or alarming visual.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/empty-states/track-a/review/EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-09",
+      "batch": 8,
+      "label": "Kalite incelemesinde",
+      "shortName": "quality-review",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Match established Batch07 family: frontal pale geometric content shapes, restrained indigo edge/ring/node accents. The attached first reference is the EMPTY-03 grammar anchor, others CAT01/03. No reflective glass or diagonal highlights. Asset ID: EMPTY-09. Subject: A clean frontal blank document within a partial indigo verification ring, accompanied by a small magnifying lens touching the edge. Careful academic quality curation in progress. Not error, lock, approval badge or completed green tick.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/empty-states/track-a/review/EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-10",
+      "batch": 8,
+      "label": "Yeterli soru yok",
+      "shortName": "limited-question-pool",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Match established Batch07 family: frontal pale geometric content shapes, restrained indigo edge/ring/node accents. The attached first reference is the EMPTY-03 grammar anchor, others CAT01/03. No reflective glass or diagonal highlights. Asset ID: EMPTY-10. Subject: A frontal small content shelf outlined in soft gray with two neatly separated blank indigo-edged question tiles and one subtle empty slot. Focused growing question pool, no promise of automatic incoming content or countdown.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/empty-states/track-a/review/EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-02",
+      "iteration": "targeted revision",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Asset ID: EMPTY-02. Subject: A completely blank frontal exam sheet with ONLY four EMPTY outline answer circles in one row (none filled), paired with one simple outline clock without numbers. No charts, no bars, no completed answers, no title lines, no text or marks. Empty mock-exam history waiting for a beginning. Keep sparse, frontal and same reference outline/indigo/cool neutral grammar.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-07",
+      "iteration": "targeted revision",
+      "prompt": "Use case: stylized-concept. Asset for Kavriva KPSS empty-state family, canonical A Geometric Editorial. Use reference images only for illustration grammar: frontal clean large geometry, matte flat fills with restrained short soft shadow, cool white/gray surfaces, indigo #4F46E5 accents and controlled dark ink outlines. Preserve this family but create the requested distinct metaphor. Centered square transparent canvas with generous negative space, 1 main object + at most 2 secondary cues. Professional calm encouraging academic SaaS aesthetic. Large silhouette readable at96px. No text, letters, digits, logo, K symbol, watermark, human, mascot, robot, isometric, slab, full3D, glossy plastic, clay, neon, random gradients, exaggerated alarm or red error symbol. Output true transparent alpha. Asset ID: EMPTY-07. A large completely flat frontal magnifying-glass outline crossing one blank rounded rectangular content region. The circular lens is simply a matte pale solid disc without diagonal highlights or reflections. Indigo ring, simple straight handle, one disconnected dot. No glass, no transparency inside lens, no glossy bevel, no material sheen. All shapes 2D frontal with only restrained short shadow.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    },
+    {
+      "assetId": "EMPTY-05",
+      "iteration": "targeted alpha edit",
+      "prompt": "Edit target: EMPTY-05 no-team illustration. Preserve the exact frontal arrangement and geometry of all three neutral member symbols, their indigo accents and pale surfaces. Change ONLY central dashed circle: remove its entire pale white/lavender fill and fuzzy white halo so the center inside the dashed ring is genuinely transparent alpha, the same as surrounding empty canvas. Preserve clean dashed circle outline and three connector segments; no background inside ring, no solid disc. Keep transparent canvas; no text, no logo, no new objects, no material/perspective changes.",
+      "references": [
+        "assets/empty-states/track-a/review/EMPTY-05__no-team__canonical-a__v01.png"
+      ],
+      "tool": "built-in image_gen",
+      "transparentBackground": true
+    }
+  ]
+}

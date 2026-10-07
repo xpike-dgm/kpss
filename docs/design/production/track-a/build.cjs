@@ -1,0 +1,3 @@
+const {build,root,fs,path}=require("../family-board.cjs");
+const manifest=require("./manifest.json");
+(async()=>{const evidence=await build({entries:manifest.entries,outDir:path.join(root,"assets/empty-states/track-a/review"),title:"Empty State Family",prefix:"EMPTY-01",columns:5});fs.writeFileSync(path.join(__dirname,"technical-qa.json"),JSON.stringify({evidence,status:"Review",finalProductionExport:"Pending",figma:"Pending",diagnosticOnly:true},null,2));for(const a of manifest.archive){const d=path.join(root,"assets/empty-states/track-a/archive",a.assetId+"__superseded-iteration__rejected__v01.png");fs.mkdirSync(path.dirname(d),{recursive:true});fs.copyFileSync(a.sourcePath,d);}})().catch(e=>{console.error(e);process.exit(1)});

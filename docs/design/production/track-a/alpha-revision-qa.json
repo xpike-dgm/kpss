@@ -1,0 +1,8 @@
+{
+  "assetId": "EMPTY-05",
+  "selectedFile": "EMPTY-05__no-team__canonical-a__v02.png",
+  "method": "Built-in image_gen targeted edit; native alpha preserved; raw alpha sample inspection",
+  "centralInteriorSamples": [{"x":627,"y":730,"alpha":0},{"x":600,"y":700,"alpha":0},{"x":650,"y":780,"alpha":0}],
+  "visualResult": "Opaque pale ring center and fuzzy pale edge removed; same three-member arrangement retained",
+  "remainingIssue": "Dark dashed ring/connector contrast remains Pending theme adaptation"
+}

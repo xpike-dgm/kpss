@@ -1,0 +1,108 @@
+{
+  "evidence": [
+    {
+      "assetId": "EMPTY-01",
+      "file": "EMPTY-01__fresh-start__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6727747126261354,
+      "sha256": "39a88b50709347b2302bfc94ab918f26d59a4922bac9035d6f0873956681aa5e",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "EMPTY-02",
+      "file": "EMPTY-02__no-mock-exams__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6589192097250521,
+      "sha256": "a95eff6a8572d00c5737ce82589b4eab24b3375e7715ab81bb144bc41cbbf9cb",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "EMPTY-03",
+      "file": "EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7498798104439001,
+      "sha256": "f0b28bc8461cf73fff64793a49f30bfcf36c6293fa4d00bec9b6bcd36f9c105d",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "EMPTY-04",
+      "file": "EMPTY-04__no-bookmarks__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6980990972428898,
+      "sha256": "9879ffe04418a633745c8f7af521d45ddfd167dc8a32fdbbbbc9d1036aafb74d",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "EMPTY-05",
+      "file": "EMPTY-05__no-team__canonical-a__v02.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.8537153199077148,
+      "sha256": "df5f7986dc886d31b68c4e5332646195205111bc9276d5b3a770fb37b1af2751",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "EMPTY-06",
+      "file": "EMPTY-06__no-ai-history__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7567477850781804,
+      "sha256": "33d52c3596ddd07077818f036f0d67b1136697b4a076d33602d235463877a104",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "EMPTY-07",
+      "file": "EMPTY-07__no-search-results__canonical-a__v02.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7344421296826232,
+      "sha256": "547bea71f010eb54dcf6a02e87bde656a6c69622518f0940dc195872a3c157ca",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "EMPTY-08",
+      "file": "EMPTY-08__offline__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.845303958751453,
+      "sha256": "da9f9ec1245ee041cf9235dc1e294c66426d77ad2ec96281760dd0d0213fb668",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "EMPTY-09",
+      "file": "EMPTY-09__quality-review__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7404134520729837,
+      "sha256": "b58a2ac4b8203e65c9c0dd4d68ba84e329c6597725177b4a3c7e5f1efd833ea9",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "EMPTY-10",
+      "file": "EMPTY-10__limited-question-pool__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7541487654179672,
+      "sha256": "6fa5e36421dea1f98d89ee1ea82d8279547de6880ac514476135b66b9ce699d7",
+      "sourceCopyExact": true
+    }
+  ],
+  "status": "Review",
+  "finalProductionExport": "Pending",
+  "figma": "Pending",
+  "diagnosticOnly": true
+}

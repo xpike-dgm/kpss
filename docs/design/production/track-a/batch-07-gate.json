@@ -1,0 +1,13 @@
+{
+  "batch": 7,
+  "assets": [
+    "EMPTY-01",
+    "EMPTY-02",
+    "EMPTY-03",
+    "EMPTY-04",
+    "EMPTY-07"
+  ],
+  "directionQA": "PASS",
+  "nextBatch": 8,
+  "notes": "Five frontal calm indigo/neutral metaphors preserve category A family. EMPTY02 populated results replaced with blank exam sheet. EMPTY07 reflective lens replaced by matte planar lens. 96px primary metaphors readable; dark preview diagnostic only; source alpha/no raster UI copy preserved. No final export or approval."
+}

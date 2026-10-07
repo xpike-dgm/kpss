@@ -1,0 +1,84 @@
+{
+  "entries": [
+    {
+      "assetId": "EMPTY-01",
+      "label": "Hiç soru çözülmemiş",
+      "filename": "EMPTY-01__fresh-start__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-38f02b14-6ed5-4d99-8458-25ab722cb359.png"
+    },
+    {
+      "assetId": "EMPTY-02",
+      "label": "Henüz deneme yok",
+      "filename": "EMPTY-02__no-mock-exams__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-6e71e4a3-747e-4c41-997b-1b9debb17db3.png"
+    },
+    {
+      "assetId": "EMPTY-03",
+      "label": "Yanlışlarım boş",
+      "filename": "EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-3937879e-6887-4e33-a14d-ef35baa6beeb.png"
+    },
+    {
+      "assetId": "EMPTY-04",
+      "label": "Kaydedilenler boş",
+      "filename": "EMPTY-04__no-bookmarks__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-77e7f330-fcb7-4807-8641-7609c7a1c99e.png"
+    },
+    {
+      "assetId": "EMPTY-05",
+      "label": "Takım yok",
+      "filename": "EMPTY-05__no-team__canonical-a__v02.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-4c51b162-df02-4a7a-9f19-91d60dec9967.png"
+    },
+    {
+      "assetId": "EMPTY-06",
+      "label": "AI sohbet yok",
+      "filename": "EMPTY-06__no-ai-history__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-4a1d1066-927b-4537-b272-b07615ff01bf.png"
+    },
+    {
+      "assetId": "EMPTY-07",
+      "label": "Arama sonucu yok",
+      "filename": "EMPTY-07__no-search-results__canonical-a__v02.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-4d2ba476-fc37-41ff-adf2-03a3a17ae916.png"
+    },
+    {
+      "assetId": "EMPTY-08",
+      "label": "Offline",
+      "filename": "EMPTY-08__offline__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-0188c1f7-b3a7-47ff-bfed-504b2dec5c8c.png"
+    },
+    {
+      "assetId": "EMPTY-09",
+      "label": "Kalite incelemesinde",
+      "filename": "EMPTY-09__quality-review__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-2ddfbabd-e229-464e-8643-1d861bcc4489.png"
+    },
+    {
+      "assetId": "EMPTY-10",
+      "label": "Yeterli soru yok",
+      "filename": "EMPTY-10__limited-question-pool__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-332043cf-95a7-4709-a659-1823d96908f0.png"
+    }
+  ],
+  "status": "Review",
+  "finalProductionExport": "Pending",
+  "figma": "Pending",
+  "archive": [
+    {
+      "assetId": "EMPTY-02",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-79ca1e5c-e1ab-4413-a76e-856478c0e132.png",
+      "reason": "Populated exam answers and chart were misleading for empty history"
+    },
+    {
+      "assetId": "EMPTY-07",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-415016e0-f52d-4520-a7f2-03c5fcee77b3.png",
+      "reason": "Reflective lens surface drift; replaced matte planar lens"
+    },
+    {
+      "assetId": "EMPTY-05",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-400d-7c22-8373-b87fbf6f75ba\\exec-147f007d-19e4-4aa2-9a8e-7e26c277eb2b.png",
+      "reason": "Pale opaque central disc and noisy halo replaced by true transparent open ring"
+    }
+  ]
+}
