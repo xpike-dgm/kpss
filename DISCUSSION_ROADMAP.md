@@ -727,11 +727,31 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ **Level 100 hard cap** olacak; prestige olmayacak. Level 100 sonrası uzun vadeli ilerlemeyi Season/Journey/Achievements/Records/Collections/Special Moments taşıyacak.
    - ✅ **Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler tamamlandı.**
 
-28. 🟨 **Data Retention / Compliance / Release Acceptance Criteria**
-   - Veri saklama/silme süreleri
-   - KVKK/compliance çıkış kapısı
-   - Felaket kurtarma ve güvenlik release koşulları
-   - “Ürün hazır” kabul kriterleri
+28. ✅ **Data Retention / Compliance / Release Acceptance Criteria**
+   - ✅ Versioned DataRetentionPolicy ve Data Processing Inventory merkezi veri yaşam döngüsü politikası olacak.
+   - ✅ Başlangıç retention süreleri veri sınıfı bazında tanımlandı; bunlar ürün/operasyon varsayımları olacak, hukuki sabit süre iddiası olmayacak.
+   - ✅ Hesap silme 7 günlük Deletion Pending sonrası final deletion/anonimleştirmeye geçecek; primary sistem temizliği için 30 günlük internal operasyon hedefi kullanılacak.
+   - ✅ Backup silme modeli Deletion Tombstone + restore sonrası replay + doğal backup expiry ile çalışacak.
+   - ✅ Pseudonymization ile gerçek anonymization ayrımı korunacak.
+   - ✅ Final hesap silmede BYOK/session/passkey/push/OAuth credential'ları ayrıca revoke/sil sürecine girecek.
+   - ✅ Formal Privacy/KVKK Request Queue olacak; güncel dış 30 günlük süreye karşı internal hedef 14 gün olacak.
+   - ✅ Aydınlatma ve açık rıza ayrılacak; optional analytics/tracking için gerekli olduğunda gerçek opt-in kullanılacak.
+   - ✅ International Data Transfer Registry ve Vendor Registry bulunacak; yeni dış sağlayıcılar compliance review'dan geçecek.
+   - ✅ VERBİS applicability production öncesi ayrıca güncel olarak değerlendirilecek.
+   - ✅ Public launch başlangıç yaş politikası 18+ olacak.
+   - ✅ Security Incident/Breach Runbook, Incident Register ve iç triage SLA'ları bulunacak.
+   - ✅ Security release gate Critical/High açık güvenlik bulgusu bırakmayacak; authz/RBAC/secret/BYOK/audit kontrolleri doğrulanacak.
+   - ✅ Core DB hedefi RPO ≤15 dk / RTO ≤4 saat olacak; pre-launch gerçek restore testi ve quarterly full restore drill uygulanacak.
+   - ✅ Offline/PWA, academic engine, AI, content, performance, accessibility, observability ve operasyon runbook'ları ayrı release gate'leri olacak.
+   - ✅ Critical kullanıcı akışlarında WCAG 2.2 AA hedeflenecek.
+   - ✅ Release akışı Development → Staging → Release Candidate → Production olacak.
+   - ✅ Go/No-Go matrisi Academic, Content, Security, Privacy/Compliance, DR, Performance, Accessibility, Critical E2E ve Operations kategorilerini PASS/FAIL olarak değerlendirecek.
+   - ✅ Bazı non-critical gate'lerde auditli risk acceptance mümkün olacak; DB restore test edilmemiş olması, aktif Critical security açığı, plaintext secret sızıntısı, core veri kaybı/corruption ve çalışmayan deletion pipeline no-override blocker olacak.
+   - ✅ Production launch P0=0, varsayılan P1=0 politikasıyla çıkacak.
+   - ✅ Kritik config değişiklikleri de version/impact preview/audit/rollback gerektiren release niteliğinde olacak.
+   - ✅ Privacy/Compliance launch checklist ve compliance drift kontrolü zorunlu olacak.
+   - ✅ Nihai Product Ready tanımı: Functional Complete + Academic Correct + Content Sufficient + Secure + Recoverable + Observable + Privacy/Compliance Reviewed + Operable.
+   - ✅ **Data Retention / Compliance / Release Acceptance Criteria tamamlandı.**
 
 ---
 
@@ -739,4 +759,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **28. Data Retention / Compliance / Release Acceptance Criteria 🟨**.
+İlk 21 ana başlık sonrasında açılan post-audit turu da tamamlanmıştır. **1–28 ana başlığın tamamı ürün mimarisi düzeyinde kararlaştırılmıştır.** Bundan sonraki aşama kabul edilmiş planın uygulama/inşa sırasına dönüştürülmesi ve geliştirmedir.
