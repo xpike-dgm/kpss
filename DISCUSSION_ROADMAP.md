@@ -754,16 +754,21 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ **Data Retention / Compliance / Release Acceptance Criteria tamamlandı.**
 
 
-29. 🟨 **Marka / Ürün Kimliği**
-   - ✅ Ürün adı **Kavriva KPSS** olarak kesinleşti.
+29. ✅ **Marka / Ürün Kimliği**
+   - ✅ Ana marka **Kavriva**, ürün adı **Kavriva KPSS** olacak.
    - ✅ Kullanıcı-facing yüzeylerde mümkün olduğunca tam ürün adı **Kavriva KPSS** kullanılacak.
-   - ✅ Domain satın alma/seçme işi sonraya bırakıldı.
-   - ⬜ Kavriva KPSS logo varyantı / wordmark düzeni
-   - ⬜ Accent renk sistemi
-   - ⬜ Tipografi
-   - ⬜ Slogan
-   - ⬜ PWA/app icon uygulaması
-   - ⬜ Marka tonu ve temel landing/SEO metinleri
+   - ✅ Mevcut geometrik Kavriva **K** sembolü ana marka sembolü olarak korunacak.
+   - ✅ KPSS wordmark'ı ana Kavriva markasının altında/yanında ikincil ürün etiketi olarak kullanılacak.
+   - ✅ Kavriva ürünleri ortak sembolü koruyup ürün accent rengiyle ayrışacak.
+   - ✅ Kavriva KPSS accent yönü **indigo / elektrik mavisi** olacak; exact token'lar design-system aşamasında kontrast testleriyle sabitlenecek.
+   - ✅ PWA/app icon yönü **indigo zemin + beyaz K sembolü** olacak.
+   - ✅ Tipografi **Manrope + Inter** olacak.
+   - ✅ Ana slogan **“Sıradaki doğru adım.”**
+   - ✅ Academic Planner'ın kullanıcı-facing imza yüzeyi **Sıradaki Adım** olacak.
+   - ✅ Marka tonu modern, sakin, güvenilir ve veri odaklı olacak; çocukça/dershanevari baskıcı dil kullanılmayacak.
+   - ✅ Temel landing mesajı Kavriva KPSS + “Sıradaki doğru adım.” + seviyeyi/eksikleri takip ederek ne çalışılması gerektiğini belirleme vaadi üzerine kurulacak.
+   - ✅ Domain satın alma/seçme işi sonraya bırakıldı; alınacağı zaman müsaitlik ve marka/tescil riski yeniden doğrulanacak.
+   - ✅ **Marka / Ürün Kimliği tamamlandı.**
 
 ---
 
@@ -771,4 +776,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-İlk 21 ana başlık sonrasında açılan post-audit turu tamamlanmıştır ve **1–28 ana başlığın tamamı ürün mimarisi düzeyinde kararlaştırılmıştır.** Marka kimliği için ek **29. başlık** açılmıştır. Şu anda aktif tartışma konusu: **29. Marka / Ürün Kimliği 🟨**.
+İlk 21 ana başlık sonrasında açılan post-audit turu tamamlanmış, ardından **29. Marka / Ürün Kimliği** de kesinleştirilmiştir. **1–29 başlığın tamamı kararlaştırılmıştır.** Bundan sonraki aşama kabul edilmiş planın uygulama/inşa sırasına dönüştürülmesi ve geliştirmedir.
