@@ -1,0 +1,328 @@
+{
+  "status": "Exploration / Review",
+  "ownerDirectionSelection": null,
+  "approvedBy": null,
+  "selectedCount": 9,
+  "rejectedIterationCount": 4,
+  "assetIds": [
+    "CAT-01",
+    "CAT-03",
+    "CAT-04"
+  ],
+  "tool": "Built-in image_gen",
+  "comparison": {
+    "frame": {
+      "w": 544,
+      "h": 470
+    },
+    "imageBox": {
+      "w": 420,
+      "h": 420
+    },
+    "background": "#FFFFFF",
+    "uniformCanvasScale": true,
+    "originalPixelsEdited": false,
+    "originalAlphaPreserved": true
+  },
+  "mobileDark": {
+    "sizePx": 96,
+    "background": "#0C111D",
+    "status": "Compatibility preview only; final theme variants unverified"
+  },
+  "sourceBrandHash": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
+  "brandArtworkGenerated": false,
+  "otherCategoryIdsGenerated": [],
+  "stopBeforeBatch": 7,
+  "exactFinalIllustrationTokensLocked": false,
+  "paletteNote": "Prompt target #4F46E5; raster shading/gradients approximate it. No pixel-perfect token lock claim.",
+  "evidence": [
+    {
+      "assetId": "CAT-01",
+      "direction": "a",
+      "file": "CAT-01__mathematics__direction-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "b997b4dff4a14d203f1d74fa92733f45d969cd34d262de414e2eb9ecc9d4f4e0",
+      "sourceCopyExact": true,
+      "transparentFraction": 0.7440401242340301,
+      "semiTransparentFraction": 0.2546168051708218,
+      "alphaBounds16": {
+        "x": 249,
+        "y": 224,
+        "w": 844,
+        "h": 729
+      },
+      "dominantQuantizedIndigoBins": [
+        [
+          "80,80,255",
+          42981
+        ],
+        [
+          "64,64,224",
+          35461
+        ],
+        [
+          "128,128,255",
+          30308
+        ]
+      ]
+    },
+    {
+      "assetId": "CAT-03",
+      "direction": "a",
+      "file": "CAT-03__history__direction-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "0d8db0aad85009bb0d143596a78fd4321bb4f13677203104784858c0b2de0b8f",
+      "sourceCopyExact": true,
+      "transparentFraction": 0.7166591627684551,
+      "semiTransparentFraction": 0.28199331517135595,
+      "alphaBounds16": {
+        "x": 229,
+        "y": 284,
+        "w": 866,
+        "h": 720
+      },
+      "dominantQuantizedIndigoBins": [
+        [
+          "208,208,255",
+          37841
+        ],
+        [
+          "192,192,255",
+          34731
+        ],
+        [
+          "80,80,255",
+          23305
+        ]
+      ]
+    },
+    {
+      "assetId": "CAT-04",
+      "direction": "a",
+      "file": "CAT-04__geography__direction-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "a5e4c17a59c5516e8ab02a7864d5b0b49deb78d69ef4ba967065db6dc1be11df",
+      "sourceCopyExact": true,
+      "transparentFraction": 0.7281681076694927,
+      "semiTransparentFraction": 0.2715349160199324,
+      "alphaBounds16": {
+        "x": 216,
+        "y": 269,
+        "w": 847,
+        "h": 729
+      },
+      "dominantQuantizedIndigoBins": [
+        [
+          "176,176,255",
+          80672
+        ],
+        [
+          "64,64,224",
+          62200
+        ],
+        [
+          "224,224,255",
+          55260
+        ]
+      ]
+    },
+    {
+      "assetId": "CAT-01",
+      "direction": "b",
+      "file": "CAT-01__mathematics__direction-b__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "6cde29584a9d5e0270070f0b4bf9ed40a21020c5545a2ef9603bae6dd75a8645",
+      "sourceCopyExact": true,
+      "transparentFraction": 0.6724433964423892,
+      "semiTransparentFraction": 0.32701670444052716,
+      "alphaBounds16": {
+        "x": 82,
+        "y": 302,
+        "w": 1128,
+        "h": 766
+      },
+      "dominantQuantizedIndigoBins": [
+        [
+          "208,208,255",
+          54097
+        ],
+        [
+          "80,80,224",
+          52393
+        ],
+        [
+          "192,192,240",
+          16343
+        ]
+      ]
+    },
+    {
+      "assetId": "CAT-03",
+      "direction": "b",
+      "file": "CAT-03__history__direction-b__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "24756e6e39f77255e3924b182d67a12788cb62d838008031607e144d70772c9e",
+      "sourceCopyExact": true,
+      "transparentFraction": 0.6968062646103442,
+      "semiTransparentFraction": 0.3030684584449379,
+      "alphaBounds16": {
+        "x": 152,
+        "y": 367,
+        "w": 1043,
+        "h": 648
+      },
+      "dominantQuantizedIndigoBins": [
+        [
+          "224,224,255",
+          63686
+        ],
+        [
+          "192,192,255",
+          14788
+        ],
+        [
+          "208,224,255",
+          14104
+        ]
+      ]
+    },
+    {
+      "assetId": "CAT-04",
+      "direction": "b",
+      "file": "CAT-04__geography__direction-b__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "75815096906d552a7487db5b74f37e0847a36ebd056e0dfe00d5b7313d03e990",
+      "sourceCopyExact": true,
+      "transparentFraction": 0.7007343645470062,
+      "semiTransparentFraction": 0.2990316155765665,
+      "alphaBounds16": {
+        "x": 155,
+        "y": 344,
+        "w": 1018,
+        "h": 751
+      },
+      "dominantQuantizedIndigoBins": [
+        [
+          "80,80,240",
+          53525
+        ],
+        [
+          "176,192,255",
+          24834
+        ],
+        [
+          "208,208,240",
+          17991
+        ]
+      ]
+    },
+    {
+      "assetId": "CAT-01",
+      "direction": "c",
+      "file": "CAT-01__mathematics__direction-c__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "6d0b7813c8b044be00ae96cd84762b1433c426dfe5b34f5ff35171a4cfba9ab8",
+      "sourceCopyExact": true,
+      "transparentFraction": 0.757881636816414,
+      "semiTransparentFraction": 0.24005924264045644,
+      "alphaBounds16": {
+        "x": 104,
+        "y": 262,
+        "w": 1046,
+        "h": 749
+      },
+      "dominantQuantizedIndigoBins": [
+        [
+          "80,80,240",
+          63424
+        ],
+        [
+          "224,224,255",
+          48597
+        ],
+        [
+          "208,208,255",
+          35044
+        ]
+      ]
+    },
+    {
+      "assetId": "CAT-03",
+      "direction": "c",
+      "file": "CAT-03__history__direction-c__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "41d64bdecad40de6b75e91be3154fd60d2e3a0dac3bd640770f745d8a07015d4",
+      "sourceCopyExact": true,
+      "transparentFraction": 0.7289490218223534,
+      "semiTransparentFraction": 0.2689219060410196,
+      "alphaBounds16": {
+        "x": 96,
+        "y": 274,
+        "w": 1063,
+        "h": 739
+      },
+      "dominantQuantizedIndigoBins": [
+        [
+          "208,208,255",
+          82462
+        ],
+        [
+          "64,64,240",
+          28681
+        ],
+        [
+          "80,64,240",
+          18283
+        ]
+      ]
+    },
+    {
+      "assetId": "CAT-04",
+      "direction": "c",
+      "file": "CAT-04__geography__direction-c__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "sha256": "b6962da463ef38363d4f36328f50721a53ff1a990f2fa60f14dbfa50d579ed5a",
+      "sourceCopyExact": true,
+      "transparentFraction": 0.7057371753292176,
+      "semiTransparentFraction": 0.29279447713091633,
+      "alphaBounds16": {
+        "x": 100,
+        "y": 282,
+        "w": 1055,
+        "h": 750
+      },
+      "dominantQuantizedIndigoBins": [
+        [
+          "208,208,255",
+          67686
+        ],
+        [
+          "224,224,255",
+          33794
+        ],
+        [
+          "192,192,255",
+          28228
+        ]
+      ]
+    }
+  ]
+}

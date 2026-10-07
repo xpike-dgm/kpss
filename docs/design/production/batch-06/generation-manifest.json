@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-07",
+  "tool": "Built-in image_gen",
+  "scope": "Batch 06, CAT-01 CAT-03 CAT-04 only",
+  "selected": [
+    {
+      "assetId": "CAT-01",
+      "direction": "a",
+      "shortName": "mathematics",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-f789d965-a716-4b31-84d2-a57604632a50.png",
+      "filename": "CAT-01__mathematics__direction-a__v01.png",
+      "status": "Exploration / Review",
+      "approvedBy": null
+    },
+    {
+      "assetId": "CAT-03",
+      "direction": "a",
+      "shortName": "history",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-3190e4d4-2bdf-4bdf-8908-07bae50cb30e.png",
+      "filename": "CAT-03__history__direction-a__v01.png",
+      "status": "Exploration / Review",
+      "approvedBy": null
+    },
+    {
+      "assetId": "CAT-04",
+      "direction": "a",
+      "shortName": "geography",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-f56de9a7-6d01-4c08-abd1-ce8553b35d2b.png",
+      "filename": "CAT-04__geography__direction-a__v01.png",
+      "status": "Exploration / Review",
+      "approvedBy": null
+    },
+    {
+      "assetId": "CAT-01",
+      "direction": "b",
+      "shortName": "mathematics",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-882192a4-14e3-4f4f-a48b-f67bf3314002.png",
+      "filename": "CAT-01__mathematics__direction-b__v01.png",
+      "status": "Exploration / Review",
+      "approvedBy": null
+    },
+    {
+      "assetId": "CAT-03",
+      "direction": "b",
+      "shortName": "history",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-274744f7-15a3-461f-a838-fd7bf416bd47.png",
+      "filename": "CAT-03__history__direction-b__v01.png",
+      "status": "Exploration / Review",
+      "approvedBy": null
+    },
+    {
+      "assetId": "CAT-04",
+      "direction": "b",
+      "shortName": "geography",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-fa6c8e0d-5a80-494a-b9ac-9f5b77b65816.png",
+      "filename": "CAT-04__geography__direction-b__v01.png",
+      "status": "Exploration / Review",
+      "approvedBy": null
+    },
+    {
+      "assetId": "CAT-01",
+      "direction": "c",
+      "shortName": "mathematics",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-14dd1b73-4373-4acd-af3c-2be44e325d63.png",
+      "filename": "CAT-01__mathematics__direction-c__v01.png",
+      "status": "Exploration / Review",
+      "approvedBy": null
+    },
+    {
+      "assetId": "CAT-03",
+      "direction": "c",
+      "shortName": "history",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-5eadac69-91c8-49e4-a9c8-8be812627d02.png",
+      "filename": "CAT-03__history__direction-c__v01.png",
+      "status": "Exploration / Review",
+      "approvedBy": null
+    },
+    {
+      "assetId": "CAT-04",
+      "direction": "c",
+      "shortName": "geography",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-a9acacdf-15b6-4b68-a264-d45153c02d9b.png",
+      "filename": "CAT-04__geography__direction-c__v01.png",
+      "status": "Exploration / Review",
+      "approvedBy": null
+    }
+  ],
+  "rejected": [
+    {
+      "assetId": "CAT-01",
+      "direction": "b",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-96a1ed42-f268-410f-8887-670013052264.png",
+      "filename": "CAT-01__mathematics__direction-b-depth-rejected__v01.png",
+      "reason": "Volume exceeded Isometric Lite brief"
+    },
+    {
+      "assetId": "CAT-01",
+      "direction": "c",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-9142bc22-932e-4983-ace0-aa86e8ffbddf.png",
+      "filename": "CAT-01__mathematics__direction-c-depth-rejected__v01.png",
+      "reason": "Volumetric geometry competed with knowledge-flow brief"
+    },
+    {
+      "assetId": "CAT-03",
+      "direction": "a",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-dc9e7e4b-7b27-4c57-be32-c1115e8c566c.png",
+      "filename": "CAT-03__history__direction-a-symbol-rejected__v01.png",
+      "reason": "Building motifs distracted from archive/chronology"
+    },
+    {
+      "assetId": "CAT-03",
+      "direction": "b",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-ec00a110-492a-47d1-8b24-357eb8354cac.png",
+      "filename": "CAT-03__history__direction-b-semantics-rejected__v01.png",
+      "reason": "Upright panels and landscape/mathematics motifs"
+    }
+  ],
+  "otherCategoryIdsGenerated": [],
+  "ownerDirectionSelection": "Pending"
+}
