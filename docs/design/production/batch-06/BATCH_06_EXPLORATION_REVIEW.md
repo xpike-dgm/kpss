@@ -1,7 +1,7 @@
 # Batch 06 — Illustration Grammar Exploration · Review v01
 
 Tarih: 2026-10-07 (Europe/Istanbul)
-Owner illustration-direction selection: **Pending**
+Historical exploration snapshot. Current Owner decision: **A — Geometric Editorial canonical**; see Owner Decision below and BATCH_06_FAMILY_REVIEW.md. Earlier Pending notes describe the pre-decision review.
 
 ## Önceki kapı / bu çalışmanın kapsamı
 

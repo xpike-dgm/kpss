@@ -1,4 +1,5 @@
 const fs=require('fs'),path=require('path');const root=path.resolve(__dirname,'../../../..');
+if(fs.existsSync(path.join(__dirname,'owner-decisions.json'))){console.log('Owner decision present: exploration snapshot updater is retired; use finalize-family.cjs. No approval state changed.');process.exit(0);}
 const ids=['CAT-01','CAT-03','CAT-04'];const cpath=path.join(root,'docs/design/KAVRIVA_KPSS_ASSET_CHECKLIST.md');let text=fs.readFileSync(cpath,'utf8');
 for(const id of ids)text=text.replace(new RegExp(`^\\| ${id} \\|[^\\r\\n]+`,'m'),line=>{const c=line.split('|');c[4]=' 🟦 Review ';c[7]=' Owner A/B/C selection Pending ';c[8]=' Raster exploration QA; final theme/vector not claimed ';c[9]=' Pending ';c[10]=' Pending direction selection ';c[11]=' Batch 06 Exploration / Review: A/B/C for CAT-01/03/04 only; other categories not produced. See production/batch-06/BATCH_06_EXPLORATION_REVIEW.md. ';return c.join('|');});
 fs.writeFileSync(cpath,text);

@@ -1,0 +1,424 @@
+{
+  "scope": 41,
+  "duplicateAssetIds": 0,
+  "exactDuplicatePreviewHashes": [],
+  "brandSourceHash": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
+  "canonicalDirection": "A",
+  "figma": "Pending",
+  "finalProductionExport": "Pending",
+  "ownerTrackApproval": "Pending",
+  "stopBeforeBatch": 15,
+  "visualAudit": "See collective report and per-track boards; metadata is not a substitute for visual QA",
+  "evidence": [
+    {
+      "assetId": "EMPTY-01",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-01__fresh-start__canonical-a__v01.png",
+      "preview": "assets/empty-states/track-a/review/EMPTY-01__fresh-start__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "39a88b50709347b2302bfc94ab918f26d59a4922bac9035d6f0873956681aa5e",
+      "nativeVector": false
+    },
+    {
+      "assetId": "EMPTY-02",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-02__no-mock-exams__canonical-a__v01.png",
+      "preview": "assets/empty-states/track-a/review/EMPTY-02__no-mock-exams__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "a95eff6a8572d00c5737ce82589b4eab24b3375e7715ab81bb144bc41cbbf9cb",
+      "nativeVector": false
+    },
+    {
+      "assetId": "EMPTY-03",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+      "preview": "assets/empty-states/track-a/review/EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f0b28bc8461cf73fff64793a49f30bfcf36c6293fa4d00bec9b6bcd36f9c105d",
+      "nativeVector": false
+    },
+    {
+      "assetId": "EMPTY-04",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-04__no-bookmarks__canonical-a__v01.png",
+      "preview": "assets/empty-states/track-a/review/EMPTY-04__no-bookmarks__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9879ffe04418a633745c8f7af521d45ddfd167dc8a32fdbbbbc9d1036aafb74d",
+      "nativeVector": false
+    },
+    {
+      "assetId": "EMPTY-05",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-05__no-team__canonical-a__v02.png",
+      "preview": "assets/empty-states/track-a/review/EMPTY-05__no-team__canonical-a__v02.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "df5f7986dc886d31b68c4e5332646195205111bc9276d5b3a770fb37b1af2751",
+      "nativeVector": false
+    },
+    {
+      "assetId": "EMPTY-06",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-06__no-ai-history__canonical-a__v01.png",
+      "preview": "assets/empty-states/track-a/review/EMPTY-06__no-ai-history__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "33d52c3596ddd07077818f036f0d67b1136697b4a076d33602d235463877a104",
+      "nativeVector": false
+    },
+    {
+      "assetId": "EMPTY-07",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-07__no-search-results__canonical-a__v02.png",
+      "preview": "assets/empty-states/track-a/review/EMPTY-07__no-search-results__canonical-a__v02.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "547bea71f010eb54dcf6a02e87bde656a6c69622518f0940dc195872a3c157ca",
+      "nativeVector": false
+    },
+    {
+      "assetId": "EMPTY-08",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-08__offline__canonical-a__v01.png",
+      "preview": "assets/empty-states/track-a/review/EMPTY-08__offline__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "da9f9ec1245ee041cf9235dc1e294c66426d77ad2ec96281760dd0d0213fb668",
+      "nativeVector": false
+    },
+    {
+      "assetId": "EMPTY-09",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-09__quality-review__canonical-a__v01.png",
+      "preview": "assets/empty-states/track-a/review/EMPTY-09__quality-review__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b58a2ac4b8203e65c9c0dd4d68ba84e329c6597725177b4a3c7e5f1efd833ea9",
+      "nativeVector": false
+    },
+    {
+      "assetId": "EMPTY-10",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-10__limited-question-pool__canonical-a__v01.png",
+      "preview": "assets/empty-states/track-a/review/EMPTY-10__limited-question-pool__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6fa5e36421dea1f98d89ee1ea82d8279547de6880ac514476135b66b9ce699d7",
+      "nativeVector": false
+    },
+    {
+      "assetId": "ONBOARD-01",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-01__guided-learning__canonical-a__v01.png",
+      "preview": "assets/onboarding/track-b/review/ONBOARD-01__guided-learning__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ec785d0ec38e8e728bb105c5eb4f63078b79e49e1f90ca2f6e8a22d6c360f27e",
+      "nativeVector": false
+    },
+    {
+      "assetId": "ONBOARD-02",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-02__level-calibration__canonical-a__v01.png",
+      "preview": "assets/onboarding/track-b/review/ONBOARD-02__level-calibration__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "750610d1aefbb6bef5f7083ad5d5d5cc1aa88e6592a9753ba5a135e4b9b12364",
+      "nativeVector": false
+    },
+    {
+      "assetId": "ONBOARD-03",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-03__next-step__canonical-a__v01.png",
+      "preview": "assets/onboarding/track-b/review/ONBOARD-03__next-step__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9f3ffaa677c1fe18158a5b985ed53845701e413ce402a300b61748ccb6be5467",
+      "nativeVector": false
+    },
+    {
+      "assetId": "ONBOARD-04",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-04__spaced-revision__canonical-a__v01.png",
+      "preview": "assets/onboarding/track-b/review/ONBOARD-04__spaced-revision__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "247c1fa8e33229b57ebfe99363af280cd521776b82bcdc10b41c659a6e5eae8e",
+      "nativeVector": false
+    },
+    {
+      "assetId": "ONBOARD-05",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-05__constructive-review__canonical-a__v01.png",
+      "preview": "assets/onboarding/track-b/review/ONBOARD-05__constructive-review__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6381cd3578c14bcfbe18576e57a73daf54d4f7fb4716618248e1663e920356e8",
+      "nativeVector": false
+    },
+    {
+      "assetId": "ONBOARD-06",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-06__exam-analysis__canonical-a__v01.png",
+      "preview": "assets/onboarding/track-b/review/ONBOARD-06__exam-analysis__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ad1ed20b9a9d9f8a9dad98164df1bfa9dcf0e48da22781b3013db4ec4b5930dc",
+      "nativeVector": false
+    },
+    {
+      "assetId": "ONBOARD-07",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-07__explanation-support__canonical-a__v01.png",
+      "preview": "assets/onboarding/track-b/review/ONBOARD-07__explanation-support__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "fb6552d5a15d1330c95e849e81c0d2dce9548da5e7f78dc84391edb3f3e522ac",
+      "nativeVector": false
+    },
+    {
+      "assetId": "ONBOARD-08",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-08__collaborative-study__canonical-a__v01.png",
+      "preview": "assets/onboarding/track-b/review/ONBOARD-08__collaborative-study__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6c8c6e3049a632fddb578e5ea5b496b8e8ea37a5eaf02f6ec868cdde107c804e",
+      "nativeVector": false
+    },
+    {
+      "assetId": "ONBOARD-09",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-09__timely-reminders__canonical-a__v01.png",
+      "preview": "assets/onboarding/track-b/review/ONBOARD-09__timely-reminders__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c7a44809e15d460b18f0d7fac17728b690beac4e7fb7e18e851c4c8aaea69ef5",
+      "nativeVector": false
+    },
+    {
+      "assetId": "ONBOARD-10",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-10__offline-continuity__canonical-a__v01.png",
+      "preview": "assets/onboarding/track-b/review/ONBOARD-10__offline-continuity__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "de45821c376cc671a7ab52ef2c76085b7cd7e4ece71e4acd3a22165863e8271a",
+      "nativeVector": false
+    },
+    {
+      "assetId": "GAME-01",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-01__xp-symbol__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-01__xp-symbol__light__v01.png",
+      "width": 640,
+      "height": 360,
+      "sha256": "98e83c953adaabe9c0ee6963b0c0fd8a54e12ca9b30cb4d174410c3deb341379",
+      "nativeVector": true
+    },
+    {
+      "assetId": "GAME-02",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-02__level-badge-system__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-02__level-badge-system__light__v01.png",
+      "width": 1100,
+      "height": 440,
+      "sha256": "21dbd95007e3a4e88029f2d16637025c7fa9bf06ea2cc402420d9df231d49bc9",
+      "nativeVector": true
+    },
+    {
+      "assetId": "GAME-03",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-03__streak__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-03__streak__light__v01.png",
+      "width": 800,
+      "height": 370,
+      "sha256": "bad16858edf377a52fb6c189baef808aab9d2fe41e1b3eab2f72ad9a9278a5a1",
+      "nativeVector": true
+    },
+    {
+      "assetId": "GAME-04",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-04__daily-mission-system__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-04__daily-mission-system__light__v01.png",
+      "width": 1120,
+      "height": 540,
+      "sha256": "5b333f08008aa71071c2e0c4ca91c6bfc1a2344198787a62dd6a0e3a0f1505d9",
+      "nativeVector": true
+    },
+    {
+      "assetId": "GAME-05",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-05__weekly-mission-system__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-05__weekly-mission-system__light__v01.png",
+      "width": 1120,
+      "height": 540,
+      "sha256": "95c3d003b965d4644456f46772815c099b85ff074be88f498d8c183691dbe449",
+      "nativeVector": true
+    },
+    {
+      "assetId": "GAME-06",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-06__achievement-framework__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-06__achievement-framework__light__v01.png",
+      "width": 1380,
+      "height": 560,
+      "sha256": "acfe3226a6a8fee6bfaf409822e4c90664e6d02bcad69cafe868d80d0166d773",
+      "nativeVector": true
+    },
+    {
+      "assetId": "GAME-07",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-07__league-rank-system__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-07__league-rank-system__light__v01.png",
+      "width": 1100,
+      "height": 470,
+      "sha256": "d2ba5582711ed0cb7b71e444608297fdd6a5b3f74ad6225a5983441e1a677833",
+      "nativeVector": true
+    },
+    {
+      "assetId": "GAME-08",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-08__season-end-card__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-08__season-end-card__light__v01.png",
+      "width": 760,
+      "height": 580,
+      "sha256": "d66a3237c58c1f38449544248fc3654511ade47ce0292416c00e9dd40f1810b6",
+      "nativeVector": true
+    },
+    {
+      "assetId": "GAME-09",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-09__level-up-card__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-09__level-up-card__light__v01.png",
+      "width": 760,
+      "height": 740,
+      "sha256": "18e589014c9fb57ab5b2e20d4c4621521078bfa58240f985eba06a87e77c4487",
+      "nativeVector": false
+    },
+    {
+      "assetId": "GAME-10",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-10__special-moment-card__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-10__special-moment-card__light__v01.png",
+      "width": 760,
+      "height": 580,
+      "sha256": "4b96f7c1890105ef570b881c657b1849eee7cda6243e06ddae659a21d1053f8d",
+      "nativeVector": true
+    },
+    {
+      "assetId": "AI-01",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-01__ai-teacher__canonical-a__v01.png",
+      "preview": "assets/ai/track-d/review/AI-01__ai-teacher__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "8e1d3550e2321e1d0c99d8f319cacca2645b62b7ea2d0ad13bee2b35e0e79947",
+      "nativeVector": false
+    },
+    {
+      "assetId": "AI-02",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-02__ai-coach__canonical-a__v01.png",
+      "preview": "assets/ai/track-d/review/AI-02__ai-coach__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d51ae5ff50f2796b318cf29a4c790c4bb520ca1649d135b48f40ca95c47f824b",
+      "nativeVector": false
+    },
+    {
+      "assetId": "AI-03",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-03__conversation-entry__canonical-a__v01.png",
+      "preview": "assets/ai/track-d/review/AI-03__conversation-entry__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "932d21905d35eab7d1db989cfd189674d71274ce57abeb18008514dde824b327",
+      "nativeVector": false
+    },
+    {
+      "assetId": "AI-04",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-04__thinking__canonical-a__v01.png",
+      "preview": "assets/ai/track-d/review/AI-04__thinking__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "8f8e3daf84fa5b0f6440ee0b2b32c103b8758236a099da97a147dcd92002d3c7",
+      "nativeVector": false
+    },
+    {
+      "assetId": "AI-05",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-05__unavailable__canonical-a__v01.png",
+      "preview": "assets/ai/track-d/review/AI-05__unavailable__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "b6e787274267a982c4e7bafd858c99217657029f5cab926920ddb5b040ad81ea",
+      "nativeVector": false
+    },
+    {
+      "assetId": "AI-06",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-06__verified-conflict__canonical-a__v01.png",
+      "preview": "assets/ai/track-d/review/AI-06__verified-conflict__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "8440c2428b3f8a8ebc0b98c19cc052f04972104723100c1a09895b47b0bf0ae0",
+      "nativeVector": false
+    },
+    {
+      "assetId": "SOCIAL-01",
+      "track": "E",
+      "file": "assets/social/track-e/review/SOCIAL-01__default-avatar-system__light__v01.svg",
+      "preview": "assets/social/track-e/review/SOCIAL-01__default-avatar-system__light__v01.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "8fdd5306e0e3f1ecc5f305ae374002f3c8ba0c2433f6e79a6f6efcbfc7188d9a",
+      "nativeVector": true
+    },
+    {
+      "assetId": "SOCIAL-02",
+      "track": "E",
+      "file": "assets/social/track-e/review/SOCIAL-02__team-emblem-library__light__v01.svg",
+      "preview": "assets/social/track-e/review/SOCIAL-02__team-emblem-library__light__v01.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "72b2a44f4b19b1d8b3ef4de7ef1345e84a363a69cc1215aae6e37338601133ac",
+      "nativeVector": true
+    },
+    {
+      "assetId": "SOCIAL-03",
+      "track": "E",
+      "file": "assets/social/track-e/review/SOCIAL-03__duel-matchup__light__v01.svg",
+      "preview": "assets/social/track-e/review/SOCIAL-03__duel-matchup__light__v01.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "29101d86673cce0492155a1fb6af9ab2c978326bf669b7843a3a87a4caec0e38",
+      "nativeVector": true
+    },
+    {
+      "assetId": "SOCIAL-04",
+      "track": "E",
+      "file": "assets/social/track-e/review/SOCIAL-04__study-room-cover__light__v01.svg",
+      "preview": "assets/social/track-e/review/SOCIAL-04__study-room-cover__light__v01.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "dbac195e4c05737341e08b2aa2093ec05e0f4720ecd2792c7c05edf73124c371",
+      "nativeVector": true
+    },
+    {
+      "assetId": "SOCIAL-05",
+      "track": "E",
+      "file": "assets/social/track-e/review/SOCIAL-05__invite-card__light__v01.svg",
+      "preview": "assets/social/track-e/review/SOCIAL-05__invite-card__light__v01.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1b4987dc0f48ce3ab1eb5bec14dda7e5319adbe6a1e9f3cab9c728af09ba48ab",
+      "nativeVector": true
+    }
+  ]
+}

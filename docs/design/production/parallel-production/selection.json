@@ -1,0 +1,349 @@
+{
+  "date": "2026-10-07",
+  "scope": "41AssetIDsReview",
+  "entries": [
+    {
+      "assetId": "EMPTY-01",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-01__fresh-start__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-a/TRACK_A_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "EMPTY-02",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-02__no-mock-exams__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-a/TRACK_A_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "EMPTY-03",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-03__no-wrong-answers__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-a/TRACK_A_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "EMPTY-04",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-04__no-bookmarks__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-a/TRACK_A_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "EMPTY-05",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-05__no-team__canonical-a__v02.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-a/TRACK_A_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "EMPTY-06",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-06__no-ai-history__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-a/TRACK_A_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "EMPTY-07",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-07__no-search-results__canonical-a__v02.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-a/TRACK_A_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "EMPTY-08",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-08__offline__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-a/TRACK_A_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "EMPTY-09",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-09__quality-review__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-a/TRACK_A_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "EMPTY-10",
+      "track": "A",
+      "file": "assets/empty-states/track-a/review/EMPTY-10__limited-question-pool__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-a/TRACK_A_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "ONBOARD-01",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-01__guided-learning__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-b/TRACK_B_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "ONBOARD-02",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-02__level-calibration__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-b/TRACK_B_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "ONBOARD-03",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-03__next-step__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-b/TRACK_B_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "ONBOARD-04",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-04__spaced-revision__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-b/TRACK_B_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "ONBOARD-05",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-05__constructive-review__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-b/TRACK_B_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "ONBOARD-06",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-06__exam-analysis__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-b/TRACK_B_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "ONBOARD-07",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-07__explanation-support__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-b/TRACK_B_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "ONBOARD-08",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-08__collaborative-study__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-b/TRACK_B_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "ONBOARD-09",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-09__timely-reminders__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-b/TRACK_B_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "ONBOARD-10",
+      "track": "B",
+      "file": "assets/onboarding/track-b/review/ONBOARD-10__offline-continuity__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-b/TRACK_B_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "GAME-01",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-01__xp-symbol__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-01__xp-symbol__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-c/TRACK_C_REVIEW.md",
+      "qa": "Native states + review imagery; Figma/final production Pending"
+    },
+    {
+      "assetId": "GAME-02",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-02__level-badge-system__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-02__level-badge-system__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-c/TRACK_C_REVIEW.md",
+      "qa": "Native states + review imagery; Figma/final production Pending"
+    },
+    {
+      "assetId": "GAME-03",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-03__streak__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-03__streak__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-c/TRACK_C_REVIEW.md",
+      "qa": "Native states + review imagery; Figma/final production Pending"
+    },
+    {
+      "assetId": "GAME-04",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-04__daily-mission-system__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-04__daily-mission-system__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-c/TRACK_C_REVIEW.md",
+      "qa": "Native states + review imagery; Figma/final production Pending"
+    },
+    {
+      "assetId": "GAME-05",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-05__weekly-mission-system__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-05__weekly-mission-system__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-c/TRACK_C_REVIEW.md",
+      "qa": "Native states + review imagery; Figma/final production Pending"
+    },
+    {
+      "assetId": "GAME-06",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-06__achievement-framework__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-06__achievement-framework__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-c/TRACK_C_REVIEW.md",
+      "qa": "Native states + review imagery; Figma/final production Pending"
+    },
+    {
+      "assetId": "GAME-07",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-07__league-rank-system__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-07__league-rank-system__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-c/TRACK_C_REVIEW.md",
+      "qa": "Native states + review imagery; Figma/final production Pending"
+    },
+    {
+      "assetId": "GAME-08",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-08__season-end-card__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-08__season-end-card__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-c/TRACK_C_REVIEW.md",
+      "qa": "Native states + review imagery; Figma/final production Pending"
+    },
+    {
+      "assetId": "GAME-09",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-09__level-up-card__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-09__level-up-card__light__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-c/TRACK_C_REVIEW.md",
+      "qa": "Native states + review imagery; Figma/final production Pending"
+    },
+    {
+      "assetId": "GAME-10",
+      "track": "C",
+      "file": "assets/gamification/track-c/review/GAME-10__special-moment-card__light__v01.svg",
+      "preview": "assets/gamification/track-c/review/GAME-10__special-moment-card__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-c/TRACK_C_REVIEW.md",
+      "qa": "Native states + review imagery; Figma/final production Pending"
+    },
+    {
+      "assetId": "AI-01",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-01__ai-teacher__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-d/TRACK_D_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "AI-02",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-02__ai-coach__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-d/TRACK_D_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "AI-03",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-03__conversation-entry__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-d/TRACK_D_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "AI-04",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-04__thinking__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-d/TRACK_D_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "AI-05",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-05__unavailable__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-d/TRACK_D_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "AI-06",
+      "track": "D",
+      "file": "assets/ai/track-d/review/AI-06__verified-conflict__canonical-a__v01.png",
+      "nativeVector": false,
+      "report": "docs/design/production/track-d/TRACK_D_REVIEW.md",
+      "qa": "Raster family QA;96px/dark diagnostic, final theme Pending"
+    },
+    {
+      "assetId": "SOCIAL-01",
+      "track": "E",
+      "file": "assets/social/track-e/review/SOCIAL-01__default-avatar-system__light__v01.svg",
+      "preview": "assets/social/track-e/review/SOCIAL-01__default-avatar-system__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-e/TRACK_E_REVIEW.md",
+      "qa": "Native light/dark templates; final responsive/Figma Pending"
+    },
+    {
+      "assetId": "SOCIAL-02",
+      "track": "E",
+      "file": "assets/social/track-e/review/SOCIAL-02__team-emblem-library__light__v01.svg",
+      "preview": "assets/social/track-e/review/SOCIAL-02__team-emblem-library__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-e/TRACK_E_REVIEW.md",
+      "qa": "Native light/dark templates; final responsive/Figma Pending"
+    },
+    {
+      "assetId": "SOCIAL-03",
+      "track": "E",
+      "file": "assets/social/track-e/review/SOCIAL-03__duel-matchup__light__v01.svg",
+      "preview": "assets/social/track-e/review/SOCIAL-03__duel-matchup__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-e/TRACK_E_REVIEW.md",
+      "qa": "Native light/dark templates; final responsive/Figma Pending"
+    },
+    {
+      "assetId": "SOCIAL-04",
+      "track": "E",
+      "file": "assets/social/track-e/review/SOCIAL-04__study-room-cover__light__v01.svg",
+      "preview": "assets/social/track-e/review/SOCIAL-04__study-room-cover__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-e/TRACK_E_REVIEW.md",
+      "qa": "Native light/dark templates; final responsive/Figma Pending"
+    },
+    {
+      "assetId": "SOCIAL-05",
+      "track": "E",
+      "file": "assets/social/track-e/review/SOCIAL-05__invite-card__light__v01.svg",
+      "preview": "assets/social/track-e/review/SOCIAL-05__invite-card__light__v01.png",
+      "nativeVector": true,
+      "report": "docs/design/production/track-e/TRACK_E_REVIEW.md",
+      "qa": "Native light/dark templates; final responsive/Figma Pending"
+    }
+  ]
+}

@@ -116,5 +116,7 @@
     }
   ],
   "otherCategoryIdsGenerated": [],
-  "ownerDirectionSelection": "Pending"
+  "ownerDirectionSelection": "Pending",
+  "snapshotRole": "Historical exploration sources; current canonical A family is category-family-manifest.json",
+  "currentOwnerDecision": "A canonical; A CAT01/03/04 Approved for Design Direction; B/C Archive / Rejected Exploration"
 }
