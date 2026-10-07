@@ -1,0 +1,3731 @@
+{
+  "fileKey": "uNreojzi7JNDunoVUoboaH",
+  "date": "2026-10-08",
+  "phase": "Phase 3 — Exam / Insight",
+  "status": "Review",
+  "ownerAcceptance": "Pending",
+  "preflight": "PASS — connection renewed; actual native writes successful",
+  "phase12Acceptance": "Approved for Design Direction",
+  "totals": {
+    "pages": 22,
+    "variableCollections": 11,
+    "variables": 123,
+    "textStyles": 16,
+    "componentSets": 78,
+    "components": 507,
+    "instances": 3729
+  },
+  "phase3": {
+    "screenCount": 138,
+    "standardLight": 62,
+    "standardDark": 62,
+    "mobileSmall": 10,
+    "textScale200": 4,
+    "componentSets": 10,
+    "variants": 41
+  },
+  "patterns": {
+    "Exam Summary": {
+      "id": "66:133",
+      "variants": [
+        {
+          "id": "66:108",
+          "name": "State=Unstarted",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:113",
+          "name": "State=InProgress",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:118",
+          "name": "State=Completed",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:123",
+          "name": "State=InsufficientContent",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:128",
+          "name": "State=OfflineStart",
+          "width": 342,
+          "height": 164
+        }
+      ],
+      "properties": {
+        "Title#66:20": {
+          "type": "TEXT",
+          "defaultValue": "Tam KPSS Denemesi"
+        },
+        "Context#66:21": {
+          "type": "TEXT",
+          "defaultValue": "KPSS Lisans · GY/GK · 2026 örnek profil"
+        },
+        "Status#66:22": {
+          "type": "TEXT",
+          "defaultValue": "Başlanmadı"
+        },
+        "Detail#66:23": {
+          "type": "TEXT",
+          "defaultValue": "120 soru · 130 dakika · örnek şablon"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Unstarted",
+          "variantOptions": [
+            "Unstarted",
+            "InProgress",
+            "Completed",
+            "InsufficientContent",
+            "OfflineStart"
+          ]
+        }
+      }
+    },
+    "Exam Context": {
+      "id": "66:149",
+      "variants": [
+        {
+          "id": "66:134",
+          "name": "State=Full",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:139",
+          "name": "State=Branch",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:144",
+          "name": "State=Study",
+          "width": 342,
+          "height": 164
+        }
+      ],
+      "properties": {
+        "Title#66:36": {
+          "type": "TEXT",
+          "defaultValue": "Gerçek Sınav Modu"
+        },
+        "Context#66:37": {
+          "type": "TEXT",
+          "defaultValue": "KPSS Lisans · 2026 · Genel Yetenek / Genel Kültür"
+        },
+        "Rules#66:38": {
+          "type": "TEXT",
+          "defaultValue": "Süre duraklatılmaz. Yardım ve cevap gösterimi sınav bitene kadar kapalıdır."
+        },
+        "Blueprint#66:39": {
+          "type": "TEXT",
+          "defaultValue": "Örnek sınav profili · resmi tarih henüz doğrulanmadı"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Full",
+          "variantOptions": [
+            "Full",
+            "Branch",
+            "Study"
+          ]
+        }
+      }
+    },
+    "Exam Session Status": {
+      "id": "66:180",
+      "variants": [
+        {
+          "id": "66:150",
+          "name": "State=Synced",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:155",
+          "name": "State=Offline",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:160",
+          "name": "State=Reconnecting",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:165",
+          "name": "State=SaveError",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:170",
+          "name": "State=Submitted",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:175",
+          "name": "State=Expired",
+          "width": 342,
+          "height": 164
+        }
+      ],
+      "properties": {
+        "Time#66:64": {
+          "type": "TEXT",
+          "defaultValue": "01:24:32"
+        },
+        "Label#66:65": {
+          "type": "TEXT",
+          "defaultValue": "Kalan süre · sınav saati"
+        },
+        "Connection#66:66": {
+          "type": "TEXT",
+          "defaultValue": "Bağlı · yanıtlar sunucuya kaydedildi"
+        },
+        "Autosave#66:67": {
+          "type": "TEXT",
+          "defaultValue": "Süre sunucudaki sınav bitiş zamanına göre doğrulanır."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Synced",
+          "variantOptions": [
+            "Synced",
+            "Offline",
+            "Reconnecting",
+            "SaveError",
+            "Submitted",
+            "Expired"
+          ]
+        }
+      }
+    },
+    "Mock Result Summary": {
+      "id": "66:197",
+      "variants": [
+        {
+          "id": "66:181",
+          "name": "State=Default",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:186",
+          "name": "State=Partial",
+          "width": 342,
+          "height": 200
+        },
+        {
+          "id": "66:192",
+          "name": "State=Limited",
+          "width": 342,
+          "height": 164
+        }
+      ],
+      "properties": {
+        "Value#66:81": {
+          "type": "TEXT",
+          "defaultValue": "74,5 net"
+        },
+        "Title#66:82": {
+          "type": "TEXT",
+          "defaultValue": "Net · ölçülen performans"
+        },
+        "Counts#66:83": {
+          "type": "TEXT",
+          "defaultValue": "82 doğru · 30 yanlış · 8 boş / 120 soru"
+        },
+        "Time#66:84": {
+          "type": "TEXT",
+          "defaultValue": "Gerçek Sınav Modu · 124 / 130 dk · örnek veri"
+        },
+        "Status#66:85": {
+          "type": "TEXT",
+          "defaultValue": "Toplam sonuç hazır; ders analizi işleniyor."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Partial",
+            "Limited"
+          ]
+        }
+      }
+    },
+    "Statistics Insight": {
+      "id": "66:210",
+      "variants": [
+        {
+          "id": "66:198",
+          "name": "State=Default",
+          "width": 342,
+          "height": 152
+        },
+        {
+          "id": "66:202",
+          "name": "State=Limited",
+          "width": 342,
+          "height": 128
+        },
+        {
+          "id": "66:206",
+          "name": "State=Stale",
+          "width": 342,
+          "height": 152
+        }
+      ],
+      "properties": {
+        "Title#66:97": {
+          "type": "TEXT",
+          "defaultValue": "Doğruluğun korunurken hızın artıyor"
+        },
+        "Body#66:98": {
+          "type": "TEXT",
+          "defaultValue": "Paragrafta ortalama süre 82 sn → 74 sn; doğruluk %80 → %82."
+        },
+        "Evidence#66:99": {
+          "type": "TEXT",
+          "defaultValue": "30 Gün · 48 bağımsız soru · orta güven · örnek"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Limited",
+            "Stale"
+          ]
+        }
+      }
+    },
+    "Readiness Dimension": {
+      "id": "66:226",
+      "variants": [
+        {
+          "id": "66:211",
+          "name": "State=Evidence",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:216",
+          "name": "State=Limited",
+          "width": 342,
+          "height": 164
+        },
+        {
+          "id": "66:221",
+          "name": "State=Stale",
+          "width": 342,
+          "height": 164
+        }
+      ],
+      "properties": {
+        "Title#66:112": {
+          "type": "TEXT",
+          "defaultValue": "Kapsam"
+        },
+        "Status#66:113": {
+          "type": "TEXT",
+          "defaultValue": "Kapsam genişliyor"
+        },
+        "Body#66:114": {
+          "type": "TEXT",
+          "defaultValue": "Bu boyut diğer hazır oluş sinyallerinden ayrı değerlendirilir."
+        },
+        "Evidence#66:115": {
+          "type": "TEXT",
+          "defaultValue": "Kanıt: bağımsız soru / dönem / son ölçüm"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Evidence",
+          "variantOptions": [
+            "Evidence",
+            "Limited",
+            "Stale"
+          ]
+        }
+      }
+    },
+    "Score Estimate": {
+      "id": "66:239",
+      "variants": [
+        {
+          "id": "66:227",
+          "name": "State=Range",
+          "width": 342,
+          "height": 128
+        },
+        {
+          "id": "66:231",
+          "name": "State=Insufficient",
+          "width": 342,
+          "height": 128
+        },
+        {
+          "id": "66:235",
+          "name": "State=Unavailable",
+          "width": 342,
+          "height": 128
+        }
+      ],
+      "properties": {
+        "Title#66:125": {
+          "type": "TEXT",
+          "defaultValue": "Tahmini KPSS puanı"
+        },
+        "Value#66:126": {
+          "type": "TEXT",
+          "defaultValue": "80–83"
+        },
+        "Evidence#66:127": {
+          "type": "TEXT",
+          "defaultValue": "Örnek band · orta güven · resmi puan değildir."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Range",
+          "variantOptions": [
+            "Range",
+            "Insufficient",
+            "Unavailable"
+          ]
+        }
+      }
+    },
+    "Goal Summary": {
+      "id": "66:252",
+      "variants": [
+        {
+          "id": "66:240",
+          "name": "State=Active",
+          "width": 342,
+          "height": 128
+        },
+        {
+          "id": "66:244",
+          "name": "State=None",
+          "width": 342,
+          "height": 128
+        },
+        {
+          "id": "66:248",
+          "name": "State=Saved",
+          "width": 342,
+          "height": 128
+        }
+      ],
+      "properties": {
+        "Title#66:137": {
+          "type": "TEXT",
+          "defaultValue": "Hedefin: 85 net"
+        },
+        "Context#66:138": {
+          "type": "TEXT",
+          "defaultValue": "KPSS Lisans · 2026 örnek dönem"
+        },
+        "Body#66:139": {
+          "type": "TEXT",
+          "defaultValue": "Opsiyonel puan hedefi: 85 · hedef, kesin sonuç veya hazır oluş garantisi değildir."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Active",
+          "variantOptions": [
+            "Active",
+            "None",
+            "Saved"
+          ]
+        }
+      }
+    },
+    "Period Filter": {
+      "id": "66:293",
+      "variants": [
+        {
+          "id": "66:253",
+          "name": "Layout=Row, State=7Days"
+        },
+        {
+          "id": "66:263",
+          "name": "Layout=Row, State=30Days"
+        },
+        {
+          "id": "66:273",
+          "name": "Layout=Row, State=3Months"
+        },
+        {
+          "id": "66:283",
+          "name": "Layout=Row, State=All"
+        },
+        {
+          "id": "76:460",
+          "name": "Layout=Compact, State=7Days"
+        },
+        {
+          "id": "76:480",
+          "name": "Layout=Compact, State=30Days"
+        },
+        {
+          "id": "76:500",
+          "name": "Layout=Compact, State=3Months"
+        },
+        {
+          "id": "76:520",
+          "name": "Layout=Compact, State=All"
+        }
+      ],
+      "properties": {
+        "Layout": {
+          "type": "VARIANT",
+          "defaultValue": "Row",
+          "variantOptions": [
+            "Row",
+            "Compact"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "7Days",
+          "variantOptions": [
+            "7Days",
+            "30Days",
+            "3Months",
+            "All"
+          ]
+        }
+      }
+    },
+    "Trend Chart": {
+      "id": "66:330",
+      "variants": [
+        {
+          "id": "66:294",
+          "name": "State=Net",
+          "width": 342,
+          "height": 272
+        },
+        {
+          "id": "66:303",
+          "name": "State=Accuracy",
+          "width": 342,
+          "height": 272
+        },
+        {
+          "id": "66:312",
+          "name": "State=Speed",
+          "width": 342,
+          "height": 272
+        },
+        {
+          "id": "66:321",
+          "name": "State=Activity",
+          "width": 342,
+          "height": 272
+        }
+      ],
+      "properties": {
+        "Title#66:152": {
+          "type": "TEXT",
+          "defaultValue": "Deneme net trendi"
+        },
+        "Data#66:153": {
+          "type": "TEXT",
+          "defaultValue": "68 → 71 → 73 → 74.5 net"
+        },
+        "Evidence#66:154": {
+          "type": "TEXT",
+          "defaultValue": "Örnek veri · grafikle aynı değerler editable metin olarak da sunulur."
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Net",
+          "variantOptions": [
+            "Net",
+            "Accuracy",
+            "Speed",
+            "Activity"
+          ]
+        }
+      }
+    }
+  },
+  "screens": {
+    "MOCK-01": {
+      "id": "67:3300",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3311",
+      "viewportId": "67:3310",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-02": {
+      "id": "67:3388",
+      "name": "Tam KPSS denemeleri",
+      "theme": "Light",
+      "state": "Unstarted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3399",
+      "viewportId": "67:3398",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-03": {
+      "id": "67:3445",
+      "name": "Branş denemeleri",
+      "theme": "Light",
+      "state": "Unstarted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3456",
+      "viewportId": "67:3455",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-04": {
+      "id": "67:3527",
+      "name": "Deneme geçmişi",
+      "theme": "Light",
+      "state": "Completed",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3538",
+      "viewportId": "67:3537",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-05": {
+      "id": "67:3590",
+      "name": "Devam eden deneme",
+      "theme": "Light",
+      "state": "InProgress",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3601",
+      "viewportId": "67:3600",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-06": {
+      "id": "67:3647",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3658",
+      "viewportId": "67:3657",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-07": {
+      "id": "67:3702",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "Empty",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3713",
+      "viewportId": "67:3712",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-08": {
+      "id": "67:3757",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3768",
+      "viewportId": "67:3767",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-09": {
+      "id": "67:3812",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "InsufficientContent",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3823",
+      "viewportId": "67:3822",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-10": {
+      "id": "67:3869",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "OfflineStart",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3880",
+      "viewportId": "67:3879",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-11": {
+      "id": "67:3926",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "PartialData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3937",
+      "viewportId": "67:3936",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-01": {
+      "id": "67:3981",
+      "name": "Deneme profili",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3992",
+      "viewportId": "67:3991",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-02": {
+      "id": "67:4019",
+      "name": "Sınavı başlat",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4030",
+      "viewportId": "67:4029",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-03": {
+      "id": "67:4048",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Unanswered",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4059",
+      "viewportId": "67:4058",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04": {
+      "id": "67:4095",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4106",
+      "viewportId": "67:4105",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-06": {
+      "id": "67:4143",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Offline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4154",
+      "viewportId": "67:4153",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-07": {
+      "id": "67:4191",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Reconnecting",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4202",
+      "viewportId": "67:4201",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-08": {
+      "id": "67:4239",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "SaveError",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4250",
+      "viewportId": "67:4249",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-05": {
+      "id": "67:4287",
+      "name": "Soru haritası",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4298",
+      "viewportId": "67:4297",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-09": {
+      "id": "67:4572",
+      "name": "Sınavı bitir?",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4583",
+      "viewportId": "67:4582",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-10": {
+      "id": "67:4597",
+      "name": "Sınav teslimi",
+      "theme": "Light",
+      "state": "Submitting",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4608",
+      "viewportId": "67:4607",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-11": {
+      "id": "67:4625",
+      "name": "Süre doldu",
+      "theme": "Light",
+      "state": "Expired",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4636",
+      "viewportId": "67:4635",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-12": {
+      "id": "67:4651",
+      "name": "Sınav teslim edildi",
+      "theme": "Light",
+      "state": "Success",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4662",
+      "viewportId": "67:4661",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-13": {
+      "id": "67:4674",
+      "name": "Çalışma Modu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4685",
+      "viewportId": "67:4684",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-01": {
+      "id": "68:4193",
+      "name": "Deneme sonucu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4204",
+      "viewportId": "68:4203",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-02": {
+      "id": "68:4270",
+      "name": "Deneme analizi",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4281",
+      "viewportId": "68:4280",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-03": {
+      "id": "68:4337",
+      "name": "Deneme soru inceleme",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4348",
+      "viewportId": "68:4347",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-04": {
+      "id": "68:4371",
+      "name": "Tahmini puan bandı",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4382",
+      "viewportId": "68:4381",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-05": {
+      "id": "68:4404",
+      "name": "Puan tahmini",
+      "theme": "Light",
+      "state": "InsufficientData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4415",
+      "viewportId": "68:4414",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-06": {
+      "id": "68:4426",
+      "name": "Sonuç analizi",
+      "theme": "Light",
+      "state": "PartialData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4437",
+      "viewportId": "68:4436",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-07": {
+      "id": "68:4454",
+      "name": "Deneme sonucu",
+      "theme": "Light",
+      "state": "ErrorOffline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4465",
+      "viewportId": "68:4464",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-08": {
+      "id": "68:4473",
+      "name": "Çalışma Modu sonucu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4484",
+      "viewportId": "68:4483",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-01": {
+      "id": "68:4536",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "30Days",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4547",
+      "viewportId": "68:4546",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-02": {
+      "id": "68:4643",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "7Days",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4654",
+      "viewportId": "68:4653",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-03": {
+      "id": "68:4731",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "3Months",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4742",
+      "viewportId": "68:4741",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-04": {
+      "id": "68:4819",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "All",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4830",
+      "viewportId": "68:4829",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-05": {
+      "id": "68:4907",
+      "name": "Ders ve konu performansı",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4918",
+      "viewportId": "68:4917",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-06": {
+      "id": "68:5005",
+      "name": "Hız ve çalışma",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5016",
+      "viewportId": "68:5015",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-07": {
+      "id": "68:5091",
+      "name": "Deneme trendi",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5102",
+      "viewportId": "68:5101",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-08": {
+      "id": "68:5169",
+      "name": "Yanlış ve tekrar",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5180",
+      "viewportId": "68:5179",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-09": {
+      "id": "68:5238",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5249",
+      "viewportId": "68:5248",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-10": {
+      "id": "68:5305",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "InsufficientData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5316",
+      "viewportId": "68:5315",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-11": {
+      "id": "68:5370",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5381",
+      "viewportId": "68:5380",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-12": {
+      "id": "68:5435",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "OfflinePartial",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5446",
+      "viewportId": "68:5445",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-01": {
+      "id": "68:5500",
+      "name": "Hedefin",
+      "theme": "Light",
+      "state": "NoTarget",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5511",
+      "viewportId": "68:5510",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-02": {
+      "id": "68:5558",
+      "name": "Hedef oluştur",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5569",
+      "viewportId": "68:5568",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-03": {
+      "id": "68:5592",
+      "name": "Hedef düzenle",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5603",
+      "viewportId": "68:5602",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-04": {
+      "id": "68:5626",
+      "name": "Hedef kaydedildi",
+      "theme": "Light",
+      "state": "Success",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5637",
+      "viewportId": "68:5636",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-05": {
+      "id": "68:5652",
+      "name": "Hedef kaydı",
+      "theme": "Light",
+      "state": "OfflinePending",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5663",
+      "viewportId": "68:5662",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-01": {
+      "id": "68:5673",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Evidence",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5684",
+      "viewportId": "68:5683",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-02": {
+      "id": "68:5750",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Limited",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5761",
+      "viewportId": "68:5760",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-03": {
+      "id": "68:5827",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Partial",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5838",
+      "viewportId": "68:5837",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-06": {
+      "id": "68:5904",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Stale",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5915",
+      "viewportId": "68:5914",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-04": {
+      "id": "68:5984",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5995",
+      "viewportId": "68:5994",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-05": {
+      "id": "68:6041",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:6052",
+      "viewportId": "68:6051",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-07": {
+      "id": "68:6096",
+      "name": "Sonraki öneri",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:6107",
+      "viewportId": "68:6106",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-14": {
+      "id": "68:6158",
+      "name": "Çalışma denemesini bitir?",
+      "theme": "Light",
+      "state": "StudyConfirmation",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:6169",
+      "viewportId": "68:6168",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-15": {
+      "id": "68:6183",
+      "name": "Çalışma denemesi teslim edildi",
+      "theme": "Light",
+      "state": "StudySubmitted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:6194",
+      "viewportId": "68:6193",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-A": {
+      "id": "70:5670",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected A",
+      "width": 390,
+      "status": "Review",
+      "contentId": "70:5677",
+      "viewportId": "70:5676",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-B": {
+      "id": "70:5723",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected B",
+      "width": 390,
+      "status": "Review",
+      "contentId": "70:5730",
+      "viewportId": "70:5729",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-D": {
+      "id": "70:5776",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected D",
+      "width": 390,
+      "status": "Review",
+      "contentId": "70:5783",
+      "viewportId": "70:5782",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-E": {
+      "id": "70:5829",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected E",
+      "width": 390,
+      "status": "Review",
+      "contentId": "70:5836",
+      "viewportId": "70:5835",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-01__dark": {
+      "id": "71:5788",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:5794",
+      "viewportId": "71:5793",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-02__dark": {
+      "id": "71:5857",
+      "name": "Tam KPSS denemeleri",
+      "theme": "Dark",
+      "state": "Unstarted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:5863",
+      "viewportId": "71:5862",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-03__dark": {
+      "id": "71:5914",
+      "name": "Branş denemeleri",
+      "theme": "Dark",
+      "state": "Unstarted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:5920",
+      "viewportId": "71:5919",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-04__dark": {
+      "id": "71:5996",
+      "name": "Deneme geçmişi",
+      "theme": "Dark",
+      "state": "Completed",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6002",
+      "viewportId": "71:6001",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-05__dark": {
+      "id": "71:6059",
+      "name": "Devam eden deneme",
+      "theme": "Dark",
+      "state": "InProgress",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6065",
+      "viewportId": "71:6064",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-06__dark": {
+      "id": "71:6116",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6122",
+      "viewportId": "71:6121",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-07__dark": {
+      "id": "71:6171",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "Empty",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6177",
+      "viewportId": "71:6176",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-08__dark": {
+      "id": "71:6226",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6232",
+      "viewportId": "71:6231",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-09__dark": {
+      "id": "71:6281",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "InsufficientContent",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6287",
+      "viewportId": "71:6286",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-10__dark": {
+      "id": "71:6338",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "OfflineStart",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6344",
+      "viewportId": "71:6343",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-11__dark": {
+      "id": "71:6395",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "PartialData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6401",
+      "viewportId": "71:6400",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-01__dark": {
+      "id": "71:6450",
+      "name": "Deneme profili",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6456",
+      "viewportId": "71:6455",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-02__dark": {
+      "id": "71:6488",
+      "name": "Sınavı başlat",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6494",
+      "viewportId": "71:6493",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-03__dark": {
+      "id": "71:6517",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Unanswered",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6524",
+      "viewportId": "71:6523",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04__dark": {
+      "id": "71:6564",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Selected",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6571",
+      "viewportId": "71:6570",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-06__dark": {
+      "id": "71:6612",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Offline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6619",
+      "viewportId": "71:6618",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-07__dark": {
+      "id": "71:6660",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Reconnecting",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6667",
+      "viewportId": "71:6666",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-08__dark": {
+      "id": "71:6708",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "SaveError",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6715",
+      "viewportId": "71:6714",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-05__dark": {
+      "id": "71:6756",
+      "name": "Soru haritası",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6762",
+      "viewportId": "71:6761",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-09__dark": {
+      "id": "71:7041",
+      "name": "Sınavı bitir?",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7047",
+      "viewportId": "71:7046",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-10__dark": {
+      "id": "71:7065",
+      "name": "Sınav teslimi",
+      "theme": "Dark",
+      "state": "Submitting",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7071",
+      "viewportId": "71:7070",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-11__dark": {
+      "id": "71:7093",
+      "name": "Süre doldu",
+      "theme": "Dark",
+      "state": "Expired",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7099",
+      "viewportId": "71:7098",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-12__dark": {
+      "id": "71:7119",
+      "name": "Sınav teslim edildi",
+      "theme": "Dark",
+      "state": "Success",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7125",
+      "viewportId": "71:7124",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-13__dark": {
+      "id": "71:7142",
+      "name": "Çalışma Modu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7148",
+      "viewportId": "71:7147",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-01__dark": {
+      "id": "71:7194",
+      "name": "Deneme sonucu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7200",
+      "viewportId": "71:7199",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-02__dark": {
+      "id": "71:7271",
+      "name": "Deneme analizi",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7277",
+      "viewportId": "71:7276",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-03__dark": {
+      "id": "71:7338",
+      "name": "Deneme soru inceleme",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7344",
+      "viewportId": "71:7343",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-04__dark": {
+      "id": "71:7372",
+      "name": "Tahmini puan bandı",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7378",
+      "viewportId": "71:7377",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-05__dark": {
+      "id": "71:7405",
+      "name": "Puan tahmini",
+      "theme": "Dark",
+      "state": "InsufficientData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7411",
+      "viewportId": "71:7410",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-06__dark": {
+      "id": "71:7427",
+      "name": "Sonuç analizi",
+      "theme": "Dark",
+      "state": "PartialData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7433",
+      "viewportId": "71:7432",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-07__dark": {
+      "id": "71:7455",
+      "name": "Deneme sonucu",
+      "theme": "Dark",
+      "state": "ErrorOffline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7461",
+      "viewportId": "71:7460",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-08__dark": {
+      "id": "71:7474",
+      "name": "Çalışma Modu sonucu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7480",
+      "viewportId": "71:7479",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-01__dark": {
+      "id": "71:7537",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "30Days",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7543",
+      "viewportId": "71:7542",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-02__dark": {
+      "id": "71:7625",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "7Days",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7631",
+      "viewportId": "71:7630",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-03__dark": {
+      "id": "71:7713",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "3Months",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7719",
+      "viewportId": "71:7718",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-04__dark": {
+      "id": "71:7801",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "All",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7807",
+      "viewportId": "71:7806",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-05__dark": {
+      "id": "71:7889",
+      "name": "Ders ve konu performansı",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7895",
+      "viewportId": "71:7894",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-06__dark": {
+      "id": "71:7987",
+      "name": "Hız ve çalışma",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7993",
+      "viewportId": "71:7992",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-07__dark": {
+      "id": "71:8073",
+      "name": "Deneme trendi",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8079",
+      "viewportId": "71:8078",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-08__dark": {
+      "id": "71:8151",
+      "name": "Yanlış ve tekrar",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8157",
+      "viewportId": "71:8156",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-09__dark": {
+      "id": "71:8220",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8226",
+      "viewportId": "71:8225",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-10__dark": {
+      "id": "71:8287",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "InsufficientData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8293",
+      "viewportId": "71:8292",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-11__dark": {
+      "id": "71:8352",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8358",
+      "viewportId": "71:8357",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-12__dark": {
+      "id": "71:8417",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "OfflinePartial",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8423",
+      "viewportId": "71:8422",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-01__dark": {
+      "id": "71:8482",
+      "name": "Hedefin",
+      "theme": "Dark",
+      "state": "NoTarget",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8488",
+      "viewportId": "71:8487",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-02__dark": {
+      "id": "71:8540",
+      "name": "Hedef oluştur",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8546",
+      "viewportId": "71:8545",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-03__dark": {
+      "id": "71:8574",
+      "name": "Hedef düzenle",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8580",
+      "viewportId": "71:8579",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-04__dark": {
+      "id": "71:8608",
+      "name": "Hedef kaydedildi",
+      "theme": "Dark",
+      "state": "Success",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8614",
+      "viewportId": "71:8613",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-05__dark": {
+      "id": "71:8634",
+      "name": "Hedef kaydı",
+      "theme": "Dark",
+      "state": "OfflinePending",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8640",
+      "viewportId": "71:8639",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-01__dark": {
+      "id": "71:8655",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Evidence",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8661",
+      "viewportId": "71:8660",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-02__dark": {
+      "id": "71:8732",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Limited",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8738",
+      "viewportId": "71:8737",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-03__dark": {
+      "id": "71:8809",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Partial",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8815",
+      "viewportId": "71:8814",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-06__dark": {
+      "id": "71:8886",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Stale",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8892",
+      "viewportId": "71:8891",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-04__dark": {
+      "id": "71:8966",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8972",
+      "viewportId": "71:8971",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-05__dark": {
+      "id": "71:9023",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9029",
+      "viewportId": "71:9028",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-07__dark": {
+      "id": "71:9078",
+      "name": "Sonraki öneri",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9084",
+      "viewportId": "71:9083",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-14__dark": {
+      "id": "71:9140",
+      "name": "Çalışma denemesini bitir?",
+      "theme": "Dark",
+      "state": "StudyConfirmation",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9146",
+      "viewportId": "71:9145",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-15__dark": {
+      "id": "71:9165",
+      "name": "Çalışma denemesi teslim edildi",
+      "theme": "Dark",
+      "state": "StudySubmitted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9171",
+      "viewportId": "71:9170",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-A__dark": {
+      "id": "71:9188",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Selected A",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9195",
+      "viewportId": "71:9194",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-B__dark": {
+      "id": "71:9236",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Selected B",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9243",
+      "viewportId": "71:9242",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-D__dark": {
+      "id": "71:9284",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Selected D",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9291",
+      "viewportId": "71:9290",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-E__dark": {
+      "id": "71:9332",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Selected E",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9339",
+      "viewportId": "71:9338",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-01__small": {
+      "id": "71:9380",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9386",
+      "viewportId": "71:9385",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-02__small": {
+      "id": "71:9403",
+      "name": "Sınavı başlat",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9409",
+      "viewportId": "71:9408",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04__small": {
+      "id": "71:9424",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9431",
+      "viewportId": "71:9430",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-05__small": {
+      "id": "71:9454",
+      "name": "Soru haritası",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9460",
+      "viewportId": "71:9459",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-06__small": {
+      "id": "71:9614",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Offline / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9621",
+      "viewportId": "71:9620",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-01__small": {
+      "id": "71:9644",
+      "name": "Deneme sonucu",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9650",
+      "viewportId": "71:9649",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-01__small": {
+      "id": "71:9669",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "30Days / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9675",
+      "viewportId": "71:9674",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-05__small": {
+      "id": "71:9695",
+      "name": "Ders ve konu performansı",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9701",
+      "viewportId": "71:9700",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-02__small": {
+      "id": "71:9721",
+      "name": "Hedef oluştur",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9727",
+      "viewportId": "71:9726",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-01__small": {
+      "id": "71:9743",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Evidence / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9749",
+      "viewportId": "71:9748",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04__scale200": {
+      "id": "71:9765",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9772",
+      "viewportId": "71:9771",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-01__scale200": {
+      "id": "71:9795",
+      "name": "Deneme sonucu",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9801",
+      "viewportId": "71:9800",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-01__scale200": {
+      "id": "71:9820",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9826",
+      "viewportId": "71:9825",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-01__scale200": {
+      "id": "71:9846",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9852",
+      "viewportId": "71:9851",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    }
+  },
+  "pageSnapshots": [
+    {
+      "page": {
+        "id": "0:1",
+        "name": "00 — Cover / Index"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:14",
+        "name": "01 — Brand"
+      },
+      "counts": {
+        "componentSets": 4,
+        "components": 19,
+        "instances": 14
+      }
+    },
+    {
+      "page": {
+        "id": "7:15",
+        "name": "02 — Foundations"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 3
+      }
+    },
+    {
+      "page": {
+        "id": "7:16",
+        "name": "03 — Icons"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 140,
+        "instances": 12
+      }
+    },
+    {
+      "page": {
+        "id": "7:17",
+        "name": "04 — Core Components"
+      },
+      "counts": {
+        "componentSets": 46,
+        "components": 222,
+        "instances": 304
+      }
+    },
+    {
+      "page": {
+        "id": "7:18",
+        "name": "05 — Academic Components"
+      },
+      "counts": {
+        "componentSets": 18,
+        "components": 58,
+        "instances": 82
+      }
+    },
+    {
+      "page": {
+        "id": "7:19",
+        "name": "06 — Category Visuals"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 7,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:20",
+        "name": "07 — Empty States"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 10,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:21",
+        "name": "08 — Onboarding"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 10,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:22",
+        "name": "09 — Gamification"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:23",
+        "name": "10 — AI"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:24",
+        "name": "11 — Social"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:25",
+        "name": "12 — Product Patterns"
+      },
+      "counts": {
+        "componentSets": 10,
+        "components": 41,
+        "instances": 136
+      }
+    },
+    {
+      "page": {
+        "id": "7:26",
+        "name": "13 — Mobile Screens"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 3178
+      }
+    },
+    {
+      "page": {
+        "id": "7:27",
+        "name": "14 — Desktop Screens"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:28",
+        "name": "15 — Admin / Operations"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:29",
+        "name": "16 — Marketing"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:30",
+        "name": "17 — Share / Social Export"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:31",
+        "name": "18 — Motion"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:32",
+        "name": "19 — Asset Registry"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:33",
+        "name": "90 — Playground"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    },
+    {
+      "page": {
+        "id": "7:34",
+        "name": "99 — Archive"
+      },
+      "counts": {
+        "componentSets": 0,
+        "components": 0,
+        "instances": 0
+      }
+    }
+  ],
+  "qa": {
+    "counts": {
+      "screens": 138,
+      "texts": 3222,
+      "instances": 1920,
+      "images": 0,
+      "prototypeSources": 1300
+    },
+    "issues": [],
+    "totalIssueCount": 0,
+    "screens": [
+      {
+        "key": "MOCK-01",
+        "id": "67:3300",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 15
+      },
+      {
+        "key": "MOCK-02",
+        "id": "67:3388",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 10
+      },
+      {
+        "key": "MOCK-03",
+        "id": "67:3445",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 15
+      },
+      {
+        "key": "MOCK-04",
+        "id": "67:3527",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 12
+      },
+      {
+        "key": "MOCK-05",
+        "id": "67:3590",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 10
+      },
+      {
+        "key": "MOCK-06",
+        "id": "67:3647",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 9
+      },
+      {
+        "key": "MOCK-07",
+        "id": "67:3702",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 10
+      },
+      {
+        "key": "MOCK-08",
+        "id": "67:3757",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 10
+      },
+      {
+        "key": "MOCK-09",
+        "id": "67:3812",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 11
+      },
+      {
+        "key": "MOCK-10",
+        "id": "67:3869",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 11
+      },
+      {
+        "key": "MOCK-11",
+        "id": "67:3926",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 10
+      },
+      {
+        "key": "EXAM-01",
+        "id": "67:3981",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 9
+      },
+      {
+        "key": "EXAM-02",
+        "id": "67:4019",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 7
+      },
+      {
+        "key": "EXAM-03",
+        "id": "67:4048",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-04",
+        "id": "67:4095",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-06",
+        "id": "67:4143",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-07",
+        "id": "67:4191",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-08",
+        "id": "67:4239",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-05",
+        "id": "67:4287",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 124
+      },
+      {
+        "key": "EXAM-09",
+        "id": "67:4572",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 5
+      },
+      {
+        "key": "EXAM-10",
+        "id": "67:4597",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 4
+      },
+      {
+        "key": "EXAM-11",
+        "id": "67:4625",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 5
+      },
+      {
+        "key": "EXAM-12",
+        "id": "67:4651",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 4
+      },
+      {
+        "key": "EXAM-13",
+        "id": "67:4674",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "MRESULT-01",
+        "id": "68:4193",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 17
+      },
+      {
+        "key": "MRESULT-02",
+        "id": "68:4270",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "MRESULT-03",
+        "id": "68:4337",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 8
+      },
+      {
+        "key": "MRESULT-04",
+        "id": "68:4371",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 7
+      },
+      {
+        "key": "MRESULT-05",
+        "id": "68:4404",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 4
+      },
+      {
+        "key": "MRESULT-06",
+        "id": "68:4426",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 6
+      },
+      {
+        "key": "MRESULT-07",
+        "id": "68:4454",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 4
+      },
+      {
+        "key": "MRESULT-08",
+        "id": "68:4473",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 12
+      },
+      {
+        "key": "STATS-01",
+        "id": "68:4536",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "STATS-02",
+        "id": "68:4643",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "STATS-03",
+        "id": "68:4731",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "STATS-04",
+        "id": "68:4819",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "STATS-05",
+        "id": "68:4907",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "STATS-06",
+        "id": "68:5005",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "STATS-07",
+        "id": "68:5091",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "STATS-08",
+        "id": "68:5169",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 13
+      },
+      {
+        "key": "STATS-09",
+        "id": "68:5238",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 11
+      },
+      {
+        "key": "STATS-10",
+        "id": "68:5305",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 11
+      },
+      {
+        "key": "STATS-11",
+        "id": "68:5370",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 11
+      },
+      {
+        "key": "STATS-12",
+        "id": "68:5435",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 11
+      },
+      {
+        "key": "TARGET-01",
+        "id": "68:5500",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 11
+      },
+      {
+        "key": "TARGET-02",
+        "id": "68:5558",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 8
+      },
+      {
+        "key": "TARGET-03",
+        "id": "68:5592",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 8
+      },
+      {
+        "key": "TARGET-04",
+        "id": "68:5626",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 6
+      },
+      {
+        "key": "TARGET-05",
+        "id": "68:5652",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 5
+      },
+      {
+        "key": "READY-01",
+        "id": "68:5673",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "READY-02",
+        "id": "68:5750",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "READY-03",
+        "id": "68:5827",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "READY-06",
+        "id": "68:5904",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 15
+      },
+      {
+        "key": "READY-04",
+        "id": "68:5984",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 10
+      },
+      {
+        "key": "READY-05",
+        "id": "68:6041",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 10
+      },
+      {
+        "key": "READY-07",
+        "id": "68:6096",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 12
+      },
+      {
+        "key": "EXAM-14",
+        "id": "68:6158",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 5
+      },
+      {
+        "key": "EXAM-15",
+        "id": "68:6183",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 4
+      },
+      {
+        "key": "EXAM-04-A",
+        "id": "70:5670",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-04-B",
+        "id": "70:5723",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-04-D",
+        "id": "70:5776",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-04-E",
+        "id": "70:5829",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "MOCK-01__dark",
+        "id": "71:5788",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 15
+      },
+      {
+        "key": "MOCK-02__dark",
+        "id": "71:5857",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 10
+      },
+      {
+        "key": "MOCK-03__dark",
+        "id": "71:5914",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 15
+      },
+      {
+        "key": "MOCK-04__dark",
+        "id": "71:5996",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 12
+      },
+      {
+        "key": "MOCK-05__dark",
+        "id": "71:6059",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 10
+      },
+      {
+        "key": "MOCK-06__dark",
+        "id": "71:6116",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 9
+      },
+      {
+        "key": "MOCK-07__dark",
+        "id": "71:6171",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 10
+      },
+      {
+        "key": "MOCK-08__dark",
+        "id": "71:6226",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 10
+      },
+      {
+        "key": "MOCK-09__dark",
+        "id": "71:6281",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 11
+      },
+      {
+        "key": "MOCK-10__dark",
+        "id": "71:6338",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 11
+      },
+      {
+        "key": "MOCK-11__dark",
+        "id": "71:6395",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 10
+      },
+      {
+        "key": "EXAM-01__dark",
+        "id": "71:6450",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 9
+      },
+      {
+        "key": "EXAM-02__dark",
+        "id": "71:6488",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 7
+      },
+      {
+        "key": "EXAM-03__dark",
+        "id": "71:6517",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-04__dark",
+        "id": "71:6564",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-06__dark",
+        "id": "71:6612",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-07__dark",
+        "id": "71:6660",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-08__dark",
+        "id": "71:6708",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-05__dark",
+        "id": "71:6756",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 124
+      },
+      {
+        "key": "EXAM-09__dark",
+        "id": "71:7041",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 5
+      },
+      {
+        "key": "EXAM-10__dark",
+        "id": "71:7065",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 4
+      },
+      {
+        "key": "EXAM-11__dark",
+        "id": "71:7093",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 5
+      },
+      {
+        "key": "EXAM-12__dark",
+        "id": "71:7119",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 4
+      },
+      {
+        "key": "EXAM-13__dark",
+        "id": "71:7142",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "MRESULT-01__dark",
+        "id": "71:7194",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 17
+      },
+      {
+        "key": "MRESULT-02__dark",
+        "id": "71:7271",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "MRESULT-03__dark",
+        "id": "71:7338",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 8
+      },
+      {
+        "key": "MRESULT-04__dark",
+        "id": "71:7372",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 7
+      },
+      {
+        "key": "MRESULT-05__dark",
+        "id": "71:7405",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 4
+      },
+      {
+        "key": "MRESULT-06__dark",
+        "id": "71:7427",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 6
+      },
+      {
+        "key": "MRESULT-07__dark",
+        "id": "71:7455",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 4
+      },
+      {
+        "key": "MRESULT-08__dark",
+        "id": "71:7474",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 12
+      },
+      {
+        "key": "STATS-01__dark",
+        "id": "71:7537",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 18
+      },
+      {
+        "key": "STATS-02__dark",
+        "id": "71:7625",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 18
+      },
+      {
+        "key": "STATS-03__dark",
+        "id": "71:7713",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 18
+      },
+      {
+        "key": "STATS-04__dark",
+        "id": "71:7801",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 18
+      },
+      {
+        "key": "STATS-05__dark",
+        "id": "71:7889",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 18
+      },
+      {
+        "key": "STATS-06__dark",
+        "id": "71:7987",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "STATS-07__dark",
+        "id": "71:8073",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "STATS-08__dark",
+        "id": "71:8151",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 13
+      },
+      {
+        "key": "STATS-09__dark",
+        "id": "71:8220",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 11
+      },
+      {
+        "key": "STATS-10__dark",
+        "id": "71:8287",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 11
+      },
+      {
+        "key": "STATS-11__dark",
+        "id": "71:8352",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 11
+      },
+      {
+        "key": "STATS-12__dark",
+        "id": "71:8417",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 11
+      },
+      {
+        "key": "TARGET-01__dark",
+        "id": "71:8482",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 11
+      },
+      {
+        "key": "TARGET-02__dark",
+        "id": "71:8540",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 8
+      },
+      {
+        "key": "TARGET-03__dark",
+        "id": "71:8574",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 8
+      },
+      {
+        "key": "TARGET-04__dark",
+        "id": "71:8608",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 6
+      },
+      {
+        "key": "TARGET-05__dark",
+        "id": "71:8634",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 5
+      },
+      {
+        "key": "READY-01__dark",
+        "id": "71:8655",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "READY-02__dark",
+        "id": "71:8732",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "READY-03__dark",
+        "id": "71:8809",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "READY-06__dark",
+        "id": "71:8886",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 15
+      },
+      {
+        "key": "READY-04__dark",
+        "id": "71:8966",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 10
+      },
+      {
+        "key": "READY-05__dark",
+        "id": "71:9023",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 10
+      },
+      {
+        "key": "READY-07__dark",
+        "id": "71:9078",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 12
+      },
+      {
+        "key": "EXAM-14__dark",
+        "id": "71:9140",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 5
+      },
+      {
+        "key": "EXAM-15__dark",
+        "id": "71:9165",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 4
+      },
+      {
+        "key": "EXAM-04-A__dark",
+        "id": "71:9188",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-04-B__dark",
+        "id": "71:9236",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-04-D__dark",
+        "id": "71:9284",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-04-E__dark",
+        "id": "71:9332",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "MOCK-01__small",
+        "id": "71:9380",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 15
+      },
+      {
+        "key": "EXAM-02__small",
+        "id": "71:9403",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 7
+      },
+      {
+        "key": "EXAM-04__small",
+        "id": "71:9424",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-05__small",
+        "id": "71:9454",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 124
+      },
+      {
+        "key": "EXAM-06__small",
+        "id": "71:9614",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "MRESULT-01__small",
+        "id": "71:9644",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 17
+      },
+      {
+        "key": "STATS-01__small",
+        "id": "71:9669",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "STATS-05__small",
+        "id": "71:9695",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "TARGET-02__small",
+        "id": "71:9721",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 8
+      },
+      {
+        "key": "READY-01__small",
+        "id": "71:9743",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "EXAM-04__scale200",
+        "id": "71:9765",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "MRESULT-01__scale200",
+        "id": "71:9795",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 17
+      },
+      {
+        "key": "STATS-01__scale200",
+        "id": "71:9820",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "READY-01__scale200",
+        "id": "71:9846",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      }
+    ],
+    "collections": [
+      {
+        "id": "VariableCollectionId:8:2",
+        "name": "Neutral",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 37
+      },
+      {
+        "id": "VariableCollectionId:8:40",
+        "name": "Brand",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 5
+      },
+      {
+        "id": "VariableCollectionId:8:46",
+        "name": "Surface",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 4
+      },
+      {
+        "id": "VariableCollectionId:8:51",
+        "name": "Text",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 5
+      },
+      {
+        "id": "VariableCollectionId:8:57",
+        "name": "Border",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 3
+      },
+      {
+        "id": "VariableCollectionId:8:61",
+        "name": "Semantic",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 13
+      },
+      {
+        "id": "VariableCollectionId:8:74",
+        "name": "DataViz",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 3
+      },
+      {
+        "id": "VariableCollectionId:8:78",
+        "name": "Spacing",
+        "modes": [
+          "Default"
+        ],
+        "variables": 12
+      },
+      {
+        "id": "VariableCollectionId:8:91",
+        "name": "Radius",
+        "modes": [
+          "Default"
+        ],
+        "variables": 5
+      },
+      {
+        "id": "VariableCollectionId:8:97",
+        "name": "Motion",
+        "modes": [
+          "Default"
+        ],
+        "variables": 4
+      },
+      {
+        "id": "VariableCollectionId:39:10",
+        "name": "Typography",
+        "modes": [
+          "Standard",
+          "Large Text 200%"
+        ],
+        "variables": 32
+      }
+    ],
+    "styleCount": 16,
+    "hasFullScreenRaster": false
+  },
+  "semanticQA": {
+    "scoreLimited": {
+      "id": "68:4404",
+      "text": "09:41\n•••  ▰\nPuan tahmini\nÖrnek içerik\nTahmini KPSS puanı\nHenüz yeterli veri yok\nGüvenilir bir band için güncel, karşılaştırılabilir gerçek sınav denemeleri gerekli.\nHenüz güvenilir puan tahmini için yeterli deneme verisi yok\nNet sonucu görünür kalır; belirsizlik sahte bir bandla doldurulmaz.\nDenemelere dön"
+    },
+    "readyLimited": {
+      "id": "68:5750",
+      "text": "09:41\n•••  ▰\nHazırlık sinyalleri\nÖrnek içerik\nHenüz yeterli veri yok\nKapsam, kanıt güveni, hatırlama, gerçek sınav kanıtı ve zaman yönetimi ayrı değerlendirilir.\nKapsam\nHenüz yeterli veri yok\nBu boyutta yeterli bağımsız ve güncel kanıt oluşmadı.\nKesin sonuç veya sahte yüzde üretilmez.\nKanıt güveni\nHenüz yeterli veri yok\nBu boyutta yeterli bağımsız ve güncel kanıt oluşmadı.\nKesin sonuç veya sahte yüzde üretilmez.\nHatırlama\nHenüz yeterli veri yok\nBu boyutta yeterli bağımsız ve güncel kanıt oluşmadı.\nKesin sonuç veya sahte yüzde üretilmez.\nGerçek sınav kanıtı\nHenüz yeterli veri yok\nBu boyutta yeterli bağımsız ve güncel kanıt oluşmadı.\nKesin sonuç veya sahte yüzde üretilmez.\nZaman yönetimi\nHenüz yeterli veri yok\nBu boyutta yeterli bağımsız ve güncel kanıt oluşmadı.\nKesin sonuç veya sahte yüzde üretilmez.\nEn değerli sonraki adım\nAna Sayfa\nÇalış\nDenemeler\nİstatistikler\nProfil"
+    },
+    "offlineExam": {
+      "id": "67:4143",
+      "text": "09:41\n•••  ▰\nGerçek Sınav Modu\n01:24:32\nKalan süre · sınav saati\nBağlantı yok · süre devam ediyor\nCihaza kaydedildi · sunucuyla eşitleme bekliyor.\nÖrnek içerik\nÖrnek · Matematik · Soru 7 / 120\nBir sayının 3 katının 12 fazlası 30 olduğuna göre bu sayı kaçtır?\nA\n4\nB\n5\nC\n6\nSeçili\nD\n7\nE\n8\nSoru haritası · 7 / 120\nİşaretle / sonra dön\nÖnceki soru\nSonraki soru\nSınavı Bitir"
+    },
+    "exam": {
+      "id": "67:4095",
+      "text": "09:41\n•••  ▰\nGerçek Sınav Modu\n01:24:32\nKalan süre · sınav saati\nBağlı · yanıtlar sunucuya kaydedildi\nSüre sunucudaki sınav bitiş zamanına göre doğrulanır.\nÖrnek içerik\nÖrnek · Matematik · Soru 7 / 120\nBir sayının 3 katının 12 fazlası 30 olduğuna göre bu sayı kaçtır?\nA\n4\nB\n5\nC\n6\nSeçili\nD\n7\nE\n8\nSoru haritası · 7 / 120\nİşaretle / sonra dön\nÖnceki soru\nSonraki soru\nSınavı Bitir"
+    },
+    "goalNone": {
+      "id": "68:5500",
+      "text": "09:41\n•••  ▰\nHedefin\nÖrnek içerik\nHedef belirlemek isteğe bağlı\nKPSS Lisans · 2026 örnek dönem\nHedef olmadan da çalışmaya devam edebilirsin.\nHedef oluşturmak zorunda değilsin\nSıradaki akademik önerin hedef belirtmesen de çalışır.\nİsteğe bağlı hedef oluştur\nHedefsiz devam et\nAna Sayfa\nÇalış\nDenemeler\nİstatistikler\nProfil"
+    },
+    "profile": {
+      "id": "67:3981",
+      "text": "09:41\n•••  ▰\nDeneme profili\nÖrnek içerik\nModunu seç\nAynı deneme, iki farklı kullanım; sonuçlar ayrı değerlendirilir.\nGerçek Sınav Modu\nKPSS Lisans · 2026 · Genel Yetenek / Genel Kültür\nSüre duraklatılmaz. Yardım ve cevap gösterimi sınav bitene kadar kapalıdır.\nÖrnek sınav profili · resmi tarih henüz doğrulanmadı\nSınav yapısı\nÖrnek profil: 60 Genel Yetenek + 60 Genel Kültür · 120 soru · 130 dk.\nDönem ve tarih\nKPSS Lisans · 2026 örnek bağlam. Resmi sınav tarihi bu paftada doğrulanmış değildir.\nGerçek Sınav Modu\nÇalışma Modu\nGerçek sınav kurallarını gör\nÇalışma Moduna geç"
+    }
+  },
+  "contrastEvidence": {
+    "ref": "CONSISTENCY_QA.json",
+    "scope": "Existing 68 token role pairings reused unchanged; no new contrast certification or raster palette approval"
+  },
+  "gates": {
+    "Phase4to7": "Not started",
+    "marketing": "HOLD / 6 Planned",
+    "batch21": "Not started",
+    "batch22": "Not started",
+    "productionPolish": "P-01–P-06 Open",
+    "vectorSource": "Source asset needed",
+    "finalProductionExport": "Pending",
+    "finalFigmaHandoff": "Pending"
+  },
+  "prototypeLimitations": [
+    "Native demo navigation and exclusive answer selection, not running server logic",
+    "120 numbered navigator targets share illustrative question content",
+    "Submit timeout is illustrative, not server acknowledgement implementation",
+    "200% QA scales reading content and titles; OS status and bottom navigation remain Standard"
+  ]
+}

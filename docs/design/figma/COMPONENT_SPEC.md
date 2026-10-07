@@ -1,10 +1,12 @@
 # Kavriva KPSS — Native Component Spec
 
-2026-10-08 · Review · Owner acceptance Pending.
+2026-10-08 · Approved for Design Direction — Owner Decision. Final implementation acceptance / export Pending.
 
-43 core family, 46 component set, 222 variant. Button family Primary/Secondary/Ghost/Danger olarak dört sete ayrılır; Size × State matrisi yönetilebilir tutulur. 18 academic component set, 58 variant. Üç brand lockup seti ve APP-04 setiyle toplam 68 native component set bulunur. 140 ayrı native icon component (70 glyph × outline/active) bu set sayısından ayrıdır.
+Yalnız **04 — Core Components** alt kümesi: 43 core family, 46 component set, 222 variant component. Button family Primary/Secondary/Ghost/Danger olarak dört sete ayrılır; Size × State matrisi yönetilebilir tutulur. **05 — Academic Components**: 18 set, 58 variant. File-wide: 22 page, 123 variable, 16 text style, **68 component set / 466 component node / 1,727 instance**. Üç brand lockup seti ve APP-04 setiyle toplam 68 set oluşur. 140 ayrı native icon component (70 glyph × outline/active) standalone component node olarak 466 toplamına dahildir; set sayısına dahil değildir. Galeri/pattern/ekran instance'ları file-wide 1,727 içinde sayılır; screen/test frame alt kümesi 1,258'dir.
 
 ## Ortak anatomy ve binding
+
+Yukarıdaki file-wide sayılar **Phase 1–2 Owner acceptance snapshot** kapsamıdır. Phase 3 yalnız Product Patterns'e 10 set / 41 variant ekledi; güncel file-wide **78 set / 507 component / 3,729 instance**. Core 46/222 ve Academic 18/58 değişmedi. [Phase 3 actual state](PHASE_3_NATIVE_STATE.json) güncel sayım kaydıdır.
 
 İlgili children Auto Layout container içinde tutulur. Dikey container children FILL width; editable text HEIGHT resize ve wrapping; content HUG height. Paint, spacing, radius ve text size/line-height role variable'a bağlıdır. Label/Text TEXT, icon INSTANCE_SWAP, göster/gizle BOOLEAN ve state/size VARIANT property'leri kullanılır. Ürün ekranları reusable instance'lardan kurulur.
 

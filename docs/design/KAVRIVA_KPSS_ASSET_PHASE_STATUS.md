@@ -31,3 +31,11 @@ Phase 1–2 **Review**, Owner UI acceptance **Pending**. 56 Light case + 56 Dark
 **87 total / 81 Approved for Design Direction / 6 Marketing Planned** değişmedi. P-01–P-06 Open; Brand/App source vector needed; Final Production Export ve final handoff Pending. Batch 18/19 product-screen dependency ve HOLD sürer; Batch 21/22 Not started. Phase 3'e geçilmedi.
 
 [Phase 1–2 Review](FIGMA_PHASE_1_2_REVIEW.md) · [Preflight](FIGMA_PREFLIGHT_REPORT.md) · [Native state / specs](figma/README.md).
+
+## Phase 1–2 Owner Decision / Phase 3 authorization
+
+Phase 1–2 **Approved for Design Direction**. Final implementation acceptance / Final Production Export Pending. File-wide snapshot: 22 pages, 123 variables, 16 text styles, 68 component sets, 466 components, 1,727 instances. Core subset: 46 sets / 222 variants.
+
+Bağlantı yenilendi; actual native read/write **PASS**. Canonical Cover'a Phase 1–2 Owner Decision işlendi. Yalnız Phase 3 — Exam / Insight üretildi: **138 native screen/QA frame, 10 pattern set / 41 variant, Review / Owner acceptance Pending**. Toplam native frame 265; güncel file-wide 78 set / 507 component / 3,729 instance. [Phase 3 Review](FIGMA_PHASE_3_REVIEW.md) · [Actual native state](figma/PHASE_3_NATIVE_STATE.json).
+
+Phase 4–7, marketing ve Batch 21/22 Not started; 87 / 81 / 6 asset dağılımı ve P-01–P-06 Open değişmedi. Brand/App vector source needed; final export/handoff Pending. Bu checkpoint'te duruldu.

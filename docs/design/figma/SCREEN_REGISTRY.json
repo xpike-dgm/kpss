@@ -1,12 +1,12 @@
 {
   "date": "2026-10-08",
-  "phase": "Phase 1 + Phase 2 / Review",
-  "ownerAcceptance": "Pending",
-  "screenCount": 127,
-  "standardLight": 56,
-  "standardDark": 56,
-  "mobileSmall": 10,
-  "textScale200": 5,
+  "phase": "Phase 1–2 Approved for Design Direction; Phase 3 Review",
+  "ownerAcceptance": "Phase 1–2 Approved for Design Direction; Phase 3 Pending",
+  "screenCount": 265,
+  "standardLight": 118,
+  "standardDark": 118,
+  "mobileSmall": 20,
+  "textScale200": 9,
   "screens": {
     "AUTH-01": {
       "id": "19:2",
@@ -14,9 +14,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:9",
-      "viewportId": "19:8"
+      "viewportId": "19:8",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-02": {
       "id": "19:26",
@@ -24,9 +26,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:40",
-      "viewportId": "19:39"
+      "viewportId": "19:39",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-03": {
       "id": "19:59",
@@ -34,9 +38,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:70",
-      "viewportId": "19:69"
+      "viewportId": "19:69",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-04": {
       "id": "19:94",
@@ -44,9 +50,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:105",
-      "viewportId": "19:104"
+      "viewportId": "19:104",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-05": {
       "id": "19:118",
@@ -54,9 +62,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:129",
-      "viewportId": "19:128"
+      "viewportId": "19:128",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-06": {
       "id": "19:140",
@@ -64,9 +74,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:151",
-      "viewportId": "19:150"
+      "viewportId": "19:150",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-07": {
       "id": "19:163",
@@ -74,9 +86,11 @@
       "theme": "Light",
       "state": "Error",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:174",
-      "viewportId": "19:173"
+      "viewportId": "19:173",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-08": {
       "id": "19:193",
@@ -84,9 +98,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:204",
-      "viewportId": "19:203"
+      "viewportId": "19:203",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-09": {
       "id": "19:215",
@@ -94,9 +110,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:226",
-      "viewportId": "19:225"
+      "viewportId": "19:225",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-01": {
       "id": "19:234",
@@ -104,9 +122,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:245",
-      "viewportId": "19:244"
+      "viewportId": "19:244",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-02": {
       "id": "19:254",
@@ -114,9 +134,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:265",
-      "viewportId": "19:264"
+      "viewportId": "19:264",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-03": {
       "id": "19:282",
@@ -124,9 +146,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:293",
-      "viewportId": "19:292"
+      "viewportId": "19:292",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-04": {
       "id": "19:311",
@@ -134,9 +158,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:322",
-      "viewportId": "19:321"
+      "viewportId": "19:321",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-05": {
       "id": "19:345",
@@ -144,9 +170,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:356",
-      "viewportId": "19:355"
+      "viewportId": "19:355",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-06": {
       "id": "19:365",
@@ -154,9 +182,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:376",
-      "viewportId": "19:375"
+      "viewportId": "19:375",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-07": {
       "id": "19:392",
@@ -164,9 +194,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "19:403",
-      "viewportId": "19:402"
+      "viewportId": "19:402",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "DASH-01": {
       "id": "20:183",
@@ -174,9 +206,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:194",
-      "viewportId": "20:193"
+      "viewportId": "20:193",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "DASH-02": {
       "id": "20:295",
@@ -184,9 +218,11 @@
       "theme": "Light",
       "state": "FreshStart",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:306",
-      "viewportId": "20:305"
+      "viewportId": "20:305",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "DASH-03": {
       "id": "20:359",
@@ -194,9 +230,11 @@
       "theme": "Light",
       "state": "Offline",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:370",
-      "viewportId": "20:369"
+      "viewportId": "20:369",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "DASH-04": {
       "id": "20:425",
@@ -204,9 +242,11 @@
       "theme": "Light",
       "state": "Loading",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:436",
-      "viewportId": "20:435"
+      "viewportId": "20:435",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "NEXT-01": {
       "id": "20:489",
@@ -214,9 +254,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:500",
-      "viewportId": "20:499"
+      "viewportId": "20:499",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "NEXT-02": {
       "id": "20:559",
@@ -224,9 +266,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:570",
-      "viewportId": "20:569"
+      "viewportId": "20:569",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "STUDY-01": {
       "id": "20:607",
@@ -234,9 +278,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:618",
-      "viewportId": "20:617"
+      "viewportId": "20:617",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "STUDY-02": {
       "id": "20:725",
@@ -244,9 +290,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:736",
-      "viewportId": "20:735"
+      "viewportId": "20:735",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "STUDY-03": {
       "id": "20:792",
@@ -254,9 +302,11 @@
       "theme": "Light",
       "state": "Empty",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:803",
-      "viewportId": "20:802"
+      "viewportId": "20:802",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "LEARN-01": {
       "id": "20:850",
@@ -264,9 +314,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:861",
-      "viewportId": "20:860"
+      "viewportId": "20:860",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "LEARN-02": {
       "id": "20:933",
@@ -274,9 +326,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:944",
-      "viewportId": "20:943"
+      "viewportId": "20:943",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "LEARN-03": {
       "id": "20:967",
@@ -284,9 +338,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:978",
-      "viewportId": "20:977"
+      "viewportId": "20:977",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "LEARN-04": {
       "id": "20:992",
@@ -294,9 +350,11 @@
       "theme": "Light",
       "state": "ProviderUnavailable",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "20:1003",
-      "viewportId": "20:1002"
+      "viewportId": "20:1002",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-01": {
       "id": "22:786",
@@ -304,9 +362,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:797",
-      "viewportId": "22:796"
+      "viewportId": "22:796",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02": {
       "id": "22:831",
@@ -314,9 +374,11 @@
       "theme": "Light",
       "state": "Selected",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:842",
-      "viewportId": "22:841"
+      "viewportId": "22:841",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-03": {
       "id": "22:876",
@@ -324,9 +386,11 @@
       "theme": "Light",
       "state": "Unanswered",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:887",
-      "viewportId": "22:886"
+      "viewportId": "22:886",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-04": {
       "id": "22:924",
@@ -334,9 +398,11 @@
       "theme": "Light",
       "state": "Offline",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:935",
-      "viewportId": "22:934"
+      "viewportId": "22:934",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-05": {
       "id": "22:972",
@@ -344,9 +410,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:983",
-      "viewportId": "22:982"
+      "viewportId": "22:982",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-06": {
       "id": "22:1016",
@@ -354,9 +422,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1027",
-      "viewportId": "22:1026"
+      "viewportId": "22:1026",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-07": {
       "id": "22:1047",
@@ -364,9 +434,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1058",
-      "viewportId": "22:1057"
+      "viewportId": "22:1057",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-08": {
       "id": "22:1069",
@@ -374,9 +446,11 @@
       "theme": "Light",
       "state": "Submitting",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1080",
-      "viewportId": "22:1079"
+      "viewportId": "22:1079",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-09": {
       "id": "22:1091",
@@ -384,9 +458,11 @@
       "theme": "Light",
       "state": "OfflinePending",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1102",
-      "viewportId": "22:1101"
+      "viewportId": "22:1101",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "RESULT-01": {
       "id": "22:1110",
@@ -394,9 +470,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1121",
-      "viewportId": "22:1120"
+      "viewportId": "22:1120",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "RESULT-02": {
       "id": "22:1188",
@@ -404,9 +482,11 @@
       "theme": "Light",
       "state": "LimitedData",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1199",
-      "viewportId": "22:1198"
+      "viewportId": "22:1198",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-01": {
       "id": "22:1212",
@@ -414,9 +494,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1223",
-      "viewportId": "22:1222"
+      "viewportId": "22:1222",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-02": {
       "id": "22:1279",
@@ -424,9 +506,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1290",
-      "viewportId": "22:1289"
+      "viewportId": "22:1289",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-03": {
       "id": "22:1332",
@@ -434,9 +518,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1343",
-      "viewportId": "22:1342"
+      "viewportId": "22:1342",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-04": {
       "id": "22:1355",
@@ -444,9 +530,11 @@
       "theme": "Light",
       "state": "LimitedPool",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1366",
-      "viewportId": "22:1365"
+      "viewportId": "22:1365",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-05": {
       "id": "22:1378",
@@ -454,9 +542,11 @@
       "theme": "Light",
       "state": "Empty",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1389",
-      "viewportId": "22:1388"
+      "viewportId": "22:1388",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-06": {
       "id": "22:1432",
@@ -464,9 +554,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1443",
-      "viewportId": "22:1442"
+      "viewportId": "22:1442",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-07": {
       "id": "22:1453",
@@ -474,9 +566,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "22:1464",
-      "viewportId": "22:1463"
+      "viewportId": "22:1463",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-00": {
       "id": "28:2876",
@@ -484,9 +578,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "28:2887",
-      "viewportId": "28:2886"
+      "viewportId": "28:2886",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-08": {
       "id": "28:2896",
@@ -494,9 +590,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "28:2907",
-      "viewportId": "28:2906"
+      "viewportId": "28:2906",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-09": {
       "id": "28:2931",
@@ -504,9 +602,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "28:2942",
-      "viewportId": "28:2941"
+      "viewportId": "28:2941",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "STUDY-04": {
       "id": "28:2951",
@@ -514,9 +614,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "28:2962",
-      "viewportId": "28:2961"
+      "viewportId": "28:2961",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-08": {
       "id": "28:3029",
@@ -524,9 +626,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "28:3040",
-      "viewportId": "28:3039"
+      "viewportId": "28:3039",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02-A": {
       "id": "34:3100",
@@ -534,9 +638,11 @@
       "theme": "Light",
       "state": "Selected A",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "34:3106",
-      "viewportId": "34:3105"
+      "viewportId": "34:3105",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02-B": {
       "id": "34:3197",
@@ -544,9 +650,11 @@
       "theme": "Light",
       "state": "Selected B",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "34:3203",
-      "viewportId": "34:3202"
+      "viewportId": "34:3202",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02-D": {
       "id": "34:3294",
@@ -554,9 +662,11 @@
       "theme": "Light",
       "state": "Selected D",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "34:3300",
-      "viewportId": "34:3299"
+      "viewportId": "34:3299",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02-E": {
       "id": "34:3391",
@@ -564,9 +674,11 @@
       "theme": "Light",
       "state": "Selected E",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "34:3397",
-      "viewportId": "34:3396"
+      "viewportId": "34:3396",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-01__dark": {
       "id": "25:1175",
@@ -574,9 +686,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1181",
-      "viewportId": "25:1180"
+      "viewportId": "25:1180",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-02__dark": {
       "id": "25:1202",
@@ -584,9 +698,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1208",
-      "viewportId": "25:1207"
+      "viewportId": "25:1207",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-03__dark": {
       "id": "25:1232",
@@ -594,9 +710,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1238",
-      "viewportId": "25:1237"
+      "viewportId": "25:1237",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-04__dark": {
       "id": "25:1267",
@@ -604,9 +722,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1273",
-      "viewportId": "25:1272"
+      "viewportId": "25:1272",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-05__dark": {
       "id": "25:1291",
@@ -614,9 +734,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1297",
-      "viewportId": "25:1296"
+      "viewportId": "25:1296",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-06__dark": {
       "id": "25:1313",
@@ -624,9 +746,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1319",
-      "viewportId": "25:1318"
+      "viewportId": "25:1318",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-07__dark": {
       "id": "25:1336",
@@ -634,9 +758,11 @@
       "theme": "Dark",
       "state": "Error",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1342",
-      "viewportId": "25:1341"
+      "viewportId": "25:1341",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-08__dark": {
       "id": "25:1366",
@@ -644,9 +770,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1372",
-      "viewportId": "25:1371"
+      "viewportId": "25:1371",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-09__dark": {
       "id": "25:1388",
@@ -654,9 +782,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1394",
-      "viewportId": "25:1393"
+      "viewportId": "25:1393",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-01__dark": {
       "id": "25:1407",
@@ -664,9 +794,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1413",
-      "viewportId": "25:1412"
+      "viewportId": "25:1412",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-02__dark": {
       "id": "25:1427",
@@ -674,9 +806,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1433",
-      "viewportId": "25:1432"
+      "viewportId": "25:1432",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-03__dark": {
       "id": "25:1455",
@@ -684,9 +818,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1461",
-      "viewportId": "25:1460"
+      "viewportId": "25:1460",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-04__dark": {
       "id": "25:1481",
@@ -694,9 +830,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1487",
-      "viewportId": "25:1486"
+      "viewportId": "25:1486",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-05__dark": {
       "id": "25:1515",
@@ -704,9 +842,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1521",
-      "viewportId": "25:1520"
+      "viewportId": "25:1520",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-06__dark": {
       "id": "25:1535",
@@ -714,9 +854,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1541",
-      "viewportId": "25:1540"
+      "viewportId": "25:1540",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-07__dark": {
       "id": "25:1562",
@@ -724,9 +866,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1568",
-      "viewportId": "25:1567"
+      "viewportId": "25:1567",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "DASH-01__dark": {
       "id": "25:1582",
@@ -734,9 +878,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1588",
-      "viewportId": "25:1587"
+      "viewportId": "25:1587",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "DASH-02__dark": {
       "id": "25:1673",
@@ -744,9 +890,11 @@
       "theme": "Dark",
       "state": "FreshStart",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1679",
-      "viewportId": "25:1678"
+      "viewportId": "25:1678",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "DASH-03__dark": {
       "id": "25:1736",
@@ -754,9 +902,11 @@
       "theme": "Dark",
       "state": "Offline",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1742",
-      "viewportId": "25:1741"
+      "viewportId": "25:1741",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "DASH-04__dark": {
       "id": "25:1801",
@@ -764,9 +914,11 @@
       "theme": "Dark",
       "state": "Loading",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1807",
-      "viewportId": "25:1806"
+      "viewportId": "25:1806",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "NEXT-01__dark": {
       "id": "25:1865",
@@ -774,9 +926,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1871",
-      "viewportId": "25:1870"
+      "viewportId": "25:1870",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "NEXT-02__dark": {
       "id": "25:1935",
@@ -784,9 +938,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1941",
-      "viewportId": "25:1940"
+      "viewportId": "25:1940",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "STUDY-01__dark": {
       "id": "25:1981",
@@ -794,9 +950,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:1987",
-      "viewportId": "25:1986"
+      "viewportId": "25:1986",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "STUDY-02__dark": {
       "id": "25:2080",
@@ -804,9 +962,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2086",
-      "viewportId": "25:2085"
+      "viewportId": "25:2085",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "STUDY-03__dark": {
       "id": "25:2147",
@@ -814,9 +974,11 @@
       "theme": "Dark",
       "state": "Empty",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2153",
-      "viewportId": "25:2152"
+      "viewportId": "25:2152",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "LEARN-01__dark": {
       "id": "25:2205",
@@ -824,9 +986,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2211",
-      "viewportId": "25:2210"
+      "viewportId": "25:2210",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "LEARN-02__dark": {
       "id": "25:2288",
@@ -834,9 +998,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2294",
-      "viewportId": "25:2293"
+      "viewportId": "25:2293",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "LEARN-03__dark": {
       "id": "25:2322",
@@ -844,9 +1010,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2328",
-      "viewportId": "25:2327"
+      "viewportId": "25:2327",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "LEARN-04__dark": {
       "id": "25:2347",
@@ -854,9 +1022,11 @@
       "theme": "Dark",
       "state": "ProviderUnavailable",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2353",
-      "viewportId": "25:2352"
+      "viewportId": "25:2352",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-01__dark": {
       "id": "25:2380",
@@ -864,9 +1034,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2386",
-      "viewportId": "25:2385"
+      "viewportId": "25:2385",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02__dark": {
       "id": "25:2425",
@@ -874,9 +1046,11 @@
       "theme": "Dark",
       "state": "Selected",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2431",
-      "viewportId": "25:2430"
+      "viewportId": "25:2430",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-03__dark": {
       "id": "25:2470",
@@ -884,9 +1058,11 @@
       "theme": "Dark",
       "state": "Unanswered",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2476",
-      "viewportId": "25:2475"
+      "viewportId": "25:2475",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-04__dark": {
       "id": "25:2518",
@@ -894,9 +1070,11 @@
       "theme": "Dark",
       "state": "Offline",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2524",
-      "viewportId": "25:2523"
+      "viewportId": "25:2523",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-05__dark": {
       "id": "25:2566",
@@ -904,9 +1082,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2572",
-      "viewportId": "25:2571"
+      "viewportId": "25:2571",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-06__dark": {
       "id": "25:2610",
@@ -914,9 +1094,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2616",
-      "viewportId": "25:2615"
+      "viewportId": "25:2615",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-07__dark": {
       "id": "25:2641",
@@ -924,9 +1106,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2647",
-      "viewportId": "25:2646"
+      "viewportId": "25:2646",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-08__dark": {
       "id": "25:2663",
@@ -934,9 +1118,11 @@
       "theme": "Dark",
       "state": "Submitting",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2669",
-      "viewportId": "25:2668"
+      "viewportId": "25:2668",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-09__dark": {
       "id": "25:2685",
@@ -944,9 +1130,11 @@
       "theme": "Dark",
       "state": "OfflinePending",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2691",
-      "viewportId": "25:2690"
+      "viewportId": "25:2690",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "RESULT-01__dark": {
       "id": "25:2704",
@@ -954,9 +1142,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2710",
-      "viewportId": "25:2709"
+      "viewportId": "25:2709",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "RESULT-02__dark": {
       "id": "25:2782",
@@ -964,9 +1154,11 @@
       "theme": "Dark",
       "state": "LimitedData",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2788",
-      "viewportId": "25:2787"
+      "viewportId": "25:2787",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-01__dark": {
       "id": "25:2806",
@@ -974,9 +1166,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2812",
-      "viewportId": "25:2811"
+      "viewportId": "25:2811",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-02__dark": {
       "id": "25:2873",
@@ -984,9 +1178,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2879",
-      "viewportId": "25:2878"
+      "viewportId": "25:2878",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-03__dark": {
       "id": "25:2923",
@@ -994,9 +1190,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2929",
-      "viewportId": "25:2928"
+      "viewportId": "25:2928",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-04__dark": {
       "id": "25:2946",
@@ -1004,9 +1202,11 @@
       "theme": "Dark",
       "state": "LimitedPool",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2952",
-      "viewportId": "25:2951"
+      "viewportId": "25:2951",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-05__dark": {
       "id": "25:2969",
@@ -1014,9 +1214,11 @@
       "theme": "Dark",
       "state": "Empty",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:2975",
-      "viewportId": "25:2974"
+      "viewportId": "25:2974",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-06__dark": {
       "id": "25:3023",
@@ -1024,9 +1226,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:3029",
-      "viewportId": "25:3028"
+      "viewportId": "25:3028",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-07__dark": {
       "id": "25:3044",
@@ -1034,9 +1238,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "25:3050",
-      "viewportId": "25:3049"
+      "viewportId": "25:3049",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-02__small": {
       "id": "26:2295",
@@ -1044,9 +1250,11 @@
       "theme": "Light",
       "state": "Default / Responsive",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2301",
-      "viewportId": "26:2300"
+      "viewportId": "26:2300",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-02__scale200": {
       "id": "26:2325",
@@ -1054,9 +1262,11 @@
       "theme": "Light",
       "state": "Text 200% QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2331",
-      "viewportId": "26:2330"
+      "viewportId": "26:2330",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-02__small": {
       "id": "26:2355",
@@ -1064,9 +1274,11 @@
       "theme": "Light",
       "state": "Default / Responsive",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2361",
-      "viewportId": "26:2360"
+      "viewportId": "26:2360",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-04__small": {
       "id": "26:2383",
@@ -1074,9 +1286,11 @@
       "theme": "Light",
       "state": "Default / Responsive",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2389",
-      "viewportId": "26:2388"
+      "viewportId": "26:2388",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "DASH-01__small": {
       "id": "26:2417",
@@ -1084,9 +1298,11 @@
       "theme": "Light",
       "state": "Default / Responsive",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2423",
-      "viewportId": "26:2422"
+      "viewportId": "26:2422",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "DASH-01__scale200": {
       "id": "26:2508",
@@ -1094,9 +1310,11 @@
       "theme": "Light",
       "state": "Text 200% QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2514",
-      "viewportId": "26:2513"
+      "viewportId": "26:2513",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "NEXT-01__small": {
       "id": "26:2599",
@@ -1104,9 +1322,11 @@
       "theme": "Light",
       "state": "Default / Responsive",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2605",
-      "viewportId": "26:2604"
+      "viewportId": "26:2604",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "STUDY-01__small": {
       "id": "26:2669",
@@ -1114,9 +1334,11 @@
       "theme": "Light",
       "state": "Default / Responsive",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2675",
-      "viewportId": "26:2674"
+      "viewportId": "26:2674",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "LEARN-01__small": {
       "id": "26:2768",
@@ -1124,9 +1346,11 @@
       "theme": "Light",
       "state": "Default / Responsive",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2774",
-      "viewportId": "26:2773"
+      "viewportId": "26:2773",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "LEARN-01__scale200": {
       "id": "26:2851",
@@ -1134,9 +1358,11 @@
       "theme": "Light",
       "state": "Text 200% QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2857",
-      "viewportId": "26:2856"
+      "viewportId": "26:2856",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02__small": {
       "id": "26:2934",
@@ -1144,9 +1370,11 @@
       "theme": "Light",
       "state": "Selected / Responsive",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2940",
-      "viewportId": "26:2939"
+      "viewportId": "26:2939",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02__scale200": {
       "id": "26:2979",
@@ -1154,9 +1382,11 @@
       "theme": "Light",
       "state": "Text 200% QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:2985",
-      "viewportId": "26:2984"
+      "viewportId": "26:2984",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "RESULT-01__small": {
       "id": "26:3024",
@@ -1164,9 +1394,11 @@
       "theme": "Light",
       "state": "Default / Responsive",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:3030",
-      "viewportId": "26:3029"
+      "viewportId": "26:3029",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-02__small": {
       "id": "26:3102",
@@ -1174,9 +1406,11 @@
       "theme": "Light",
       "state": "Default / Responsive",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:3108",
-      "viewportId": "26:3107"
+      "viewportId": "26:3107",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-02__scale200": {
       "id": "26:3152",
@@ -1184,9 +1418,11 @@
       "theme": "Light",
       "state": "Text 200% QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "26:3158",
-      "viewportId": "26:3157"
+      "viewportId": "26:3157",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "AUTH-00__dark": {
       "id": "28:3200",
@@ -1194,9 +1430,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "28:3205",
-      "viewportId": "28:3204"
+      "viewportId": "28:3204",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-08__dark": {
       "id": "28:3216",
@@ -1204,9 +1442,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "28:3222",
-      "viewportId": "28:3221"
+      "viewportId": "28:3221",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "ONB-09__dark": {
       "id": "28:3251",
@@ -1214,9 +1454,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "28:3257",
-      "viewportId": "28:3256"
+      "viewportId": "28:3256",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "STUDY-04__dark": {
       "id": "28:3271",
@@ -1224,9 +1466,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "28:3277",
-      "viewportId": "28:3276"
+      "viewportId": "28:3276",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "WRONG-08__dark": {
       "id": "28:3349",
@@ -1234,9 +1478,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "28:3355",
-      "viewportId": "28:3354"
+      "viewportId": "28:3354",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02-A__dark": {
       "id": "34:3151",
@@ -1244,9 +1490,11 @@
       "theme": "Dark",
       "state": "Selected A",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "34:3157",
-      "viewportId": "34:3156"
+      "viewportId": "34:3156",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02-B__dark": {
       "id": "34:3248",
@@ -1254,9 +1502,11 @@
       "theme": "Dark",
       "state": "Selected B",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "34:3254",
-      "viewportId": "34:3253"
+      "viewportId": "34:3253",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02-D__dark": {
       "id": "34:3345",
@@ -1264,9 +1514,11 @@
       "theme": "Dark",
       "state": "Selected D",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "34:3351",
-      "viewportId": "34:3350"
+      "viewportId": "34:3350",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
     },
     "TEST-02-E__dark": {
       "id": "34:3442",
@@ -1274,9 +1526,1677 @@
       "theme": "Dark",
       "state": "Selected E",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "34:3448",
-      "viewportId": "34:3447"
+      "viewportId": "34:3447",
+      "phase": "Phase 1–2",
+      "finalImplementationAcceptance": "Pending"
+    },
+    "MOCK-01": {
+      "id": "67:3300",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3311",
+      "viewportId": "67:3310",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-02": {
+      "id": "67:3388",
+      "name": "Tam KPSS denemeleri",
+      "theme": "Light",
+      "state": "Unstarted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3399",
+      "viewportId": "67:3398",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-03": {
+      "id": "67:3445",
+      "name": "Branş denemeleri",
+      "theme": "Light",
+      "state": "Unstarted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3456",
+      "viewportId": "67:3455",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-04": {
+      "id": "67:3527",
+      "name": "Deneme geçmişi",
+      "theme": "Light",
+      "state": "Completed",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3538",
+      "viewportId": "67:3537",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-05": {
+      "id": "67:3590",
+      "name": "Devam eden deneme",
+      "theme": "Light",
+      "state": "InProgress",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3601",
+      "viewportId": "67:3600",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-06": {
+      "id": "67:3647",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3658",
+      "viewportId": "67:3657",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-07": {
+      "id": "67:3702",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "Empty",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3713",
+      "viewportId": "67:3712",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-08": {
+      "id": "67:3757",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3768",
+      "viewportId": "67:3767",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-09": {
+      "id": "67:3812",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "InsufficientContent",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3823",
+      "viewportId": "67:3822",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-10": {
+      "id": "67:3869",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "OfflineStart",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3880",
+      "viewportId": "67:3879",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-11": {
+      "id": "67:3926",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "PartialData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3937",
+      "viewportId": "67:3936",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-01": {
+      "id": "67:3981",
+      "name": "Deneme profili",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:3992",
+      "viewportId": "67:3991",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-02": {
+      "id": "67:4019",
+      "name": "Sınavı başlat",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4030",
+      "viewportId": "67:4029",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-03": {
+      "id": "67:4048",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Unanswered",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4059",
+      "viewportId": "67:4058",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04": {
+      "id": "67:4095",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4106",
+      "viewportId": "67:4105",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-06": {
+      "id": "67:4143",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Offline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4154",
+      "viewportId": "67:4153",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-07": {
+      "id": "67:4191",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Reconnecting",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4202",
+      "viewportId": "67:4201",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-08": {
+      "id": "67:4239",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "SaveError",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4250",
+      "viewportId": "67:4249",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-05": {
+      "id": "67:4287",
+      "name": "Soru haritası",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4298",
+      "viewportId": "67:4297",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-09": {
+      "id": "67:4572",
+      "name": "Sınavı bitir?",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4583",
+      "viewportId": "67:4582",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-10": {
+      "id": "67:4597",
+      "name": "Sınav teslimi",
+      "theme": "Light",
+      "state": "Submitting",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4608",
+      "viewportId": "67:4607",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-11": {
+      "id": "67:4625",
+      "name": "Süre doldu",
+      "theme": "Light",
+      "state": "Expired",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4636",
+      "viewportId": "67:4635",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-12": {
+      "id": "67:4651",
+      "name": "Sınav teslim edildi",
+      "theme": "Light",
+      "state": "Success",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4662",
+      "viewportId": "67:4661",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-13": {
+      "id": "67:4674",
+      "name": "Çalışma Modu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "67:4685",
+      "viewportId": "67:4684",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-01": {
+      "id": "68:4193",
+      "name": "Deneme sonucu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4204",
+      "viewportId": "68:4203",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-02": {
+      "id": "68:4270",
+      "name": "Deneme analizi",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4281",
+      "viewportId": "68:4280",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-03": {
+      "id": "68:4337",
+      "name": "Deneme soru inceleme",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4348",
+      "viewportId": "68:4347",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-04": {
+      "id": "68:4371",
+      "name": "Tahmini puan bandı",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4382",
+      "viewportId": "68:4381",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-05": {
+      "id": "68:4404",
+      "name": "Puan tahmini",
+      "theme": "Light",
+      "state": "InsufficientData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4415",
+      "viewportId": "68:4414",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-06": {
+      "id": "68:4426",
+      "name": "Sonuç analizi",
+      "theme": "Light",
+      "state": "PartialData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4437",
+      "viewportId": "68:4436",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-07": {
+      "id": "68:4454",
+      "name": "Deneme sonucu",
+      "theme": "Light",
+      "state": "ErrorOffline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4465",
+      "viewportId": "68:4464",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-08": {
+      "id": "68:4473",
+      "name": "Çalışma Modu sonucu",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4484",
+      "viewportId": "68:4483",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-01": {
+      "id": "68:4536",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "30Days",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4547",
+      "viewportId": "68:4546",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-02": {
+      "id": "68:4643",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "7Days",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4654",
+      "viewportId": "68:4653",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-03": {
+      "id": "68:4731",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "3Months",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4742",
+      "viewportId": "68:4741",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-04": {
+      "id": "68:4819",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "All",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4830",
+      "viewportId": "68:4829",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-05": {
+      "id": "68:4907",
+      "name": "Ders ve konu performansı",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:4918",
+      "viewportId": "68:4917",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-06": {
+      "id": "68:5005",
+      "name": "Hız ve çalışma",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5016",
+      "viewportId": "68:5015",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-07": {
+      "id": "68:5091",
+      "name": "Deneme trendi",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5102",
+      "viewportId": "68:5101",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-08": {
+      "id": "68:5169",
+      "name": "Yanlış ve tekrar",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5180",
+      "viewportId": "68:5179",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-09": {
+      "id": "68:5238",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5249",
+      "viewportId": "68:5248",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-10": {
+      "id": "68:5305",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "InsufficientData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5316",
+      "viewportId": "68:5315",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-11": {
+      "id": "68:5370",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5381",
+      "viewportId": "68:5380",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-12": {
+      "id": "68:5435",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "OfflinePartial",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5446",
+      "viewportId": "68:5445",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-01": {
+      "id": "68:5500",
+      "name": "Hedefin",
+      "theme": "Light",
+      "state": "NoTarget",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5511",
+      "viewportId": "68:5510",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-02": {
+      "id": "68:5558",
+      "name": "Hedef oluştur",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5569",
+      "viewportId": "68:5568",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-03": {
+      "id": "68:5592",
+      "name": "Hedef düzenle",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5603",
+      "viewportId": "68:5602",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-04": {
+      "id": "68:5626",
+      "name": "Hedef kaydedildi",
+      "theme": "Light",
+      "state": "Success",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5637",
+      "viewportId": "68:5636",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-05": {
+      "id": "68:5652",
+      "name": "Hedef kaydı",
+      "theme": "Light",
+      "state": "OfflinePending",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5663",
+      "viewportId": "68:5662",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-01": {
+      "id": "68:5673",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Evidence",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5684",
+      "viewportId": "68:5683",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-02": {
+      "id": "68:5750",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Limited",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5761",
+      "viewportId": "68:5760",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-03": {
+      "id": "68:5827",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Partial",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5838",
+      "viewportId": "68:5837",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-06": {
+      "id": "68:5904",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Stale",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5915",
+      "viewportId": "68:5914",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-04": {
+      "id": "68:5984",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:5995",
+      "viewportId": "68:5994",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-05": {
+      "id": "68:6041",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:6052",
+      "viewportId": "68:6051",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-07": {
+      "id": "68:6096",
+      "name": "Sonraki öneri",
+      "theme": "Light",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:6107",
+      "viewportId": "68:6106",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-14": {
+      "id": "68:6158",
+      "name": "Çalışma denemesini bitir?",
+      "theme": "Light",
+      "state": "StudyConfirmation",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:6169",
+      "viewportId": "68:6168",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-15": {
+      "id": "68:6183",
+      "name": "Çalışma denemesi teslim edildi",
+      "theme": "Light",
+      "state": "StudySubmitted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "68:6194",
+      "viewportId": "68:6193",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-A": {
+      "id": "70:5670",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected A",
+      "width": 390,
+      "status": "Review",
+      "contentId": "70:5677",
+      "viewportId": "70:5676",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-B": {
+      "id": "70:5723",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected B",
+      "width": 390,
+      "status": "Review",
+      "contentId": "70:5730",
+      "viewportId": "70:5729",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-D": {
+      "id": "70:5776",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected D",
+      "width": 390,
+      "status": "Review",
+      "contentId": "70:5783",
+      "viewportId": "70:5782",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-E": {
+      "id": "70:5829",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected E",
+      "width": 390,
+      "status": "Review",
+      "contentId": "70:5836",
+      "viewportId": "70:5835",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-01__dark": {
+      "id": "71:5788",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:5794",
+      "viewportId": "71:5793",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-02__dark": {
+      "id": "71:5857",
+      "name": "Tam KPSS denemeleri",
+      "theme": "Dark",
+      "state": "Unstarted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:5863",
+      "viewportId": "71:5862",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-03__dark": {
+      "id": "71:5914",
+      "name": "Branş denemeleri",
+      "theme": "Dark",
+      "state": "Unstarted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:5920",
+      "viewportId": "71:5919",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-04__dark": {
+      "id": "71:5996",
+      "name": "Deneme geçmişi",
+      "theme": "Dark",
+      "state": "Completed",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6002",
+      "viewportId": "71:6001",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-05__dark": {
+      "id": "71:6059",
+      "name": "Devam eden deneme",
+      "theme": "Dark",
+      "state": "InProgress",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6065",
+      "viewportId": "71:6064",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-06__dark": {
+      "id": "71:6116",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6122",
+      "viewportId": "71:6121",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-07__dark": {
+      "id": "71:6171",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "Empty",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6177",
+      "viewportId": "71:6176",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-08__dark": {
+      "id": "71:6226",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6232",
+      "viewportId": "71:6231",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-09__dark": {
+      "id": "71:6281",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "InsufficientContent",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6287",
+      "viewportId": "71:6286",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-10__dark": {
+      "id": "71:6338",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "OfflineStart",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6344",
+      "viewportId": "71:6343",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-11__dark": {
+      "id": "71:6395",
+      "name": "Denemeler",
+      "theme": "Dark",
+      "state": "PartialData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6401",
+      "viewportId": "71:6400",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-01__dark": {
+      "id": "71:6450",
+      "name": "Deneme profili",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6456",
+      "viewportId": "71:6455",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-02__dark": {
+      "id": "71:6488",
+      "name": "Sınavı başlat",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6494",
+      "viewportId": "71:6493",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-03__dark": {
+      "id": "71:6517",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Unanswered",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6524",
+      "viewportId": "71:6523",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04__dark": {
+      "id": "71:6564",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Selected",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6571",
+      "viewportId": "71:6570",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-06__dark": {
+      "id": "71:6612",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Offline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6619",
+      "viewportId": "71:6618",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-07__dark": {
+      "id": "71:6660",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Reconnecting",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6667",
+      "viewportId": "71:6666",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-08__dark": {
+      "id": "71:6708",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "SaveError",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6715",
+      "viewportId": "71:6714",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-05__dark": {
+      "id": "71:6756",
+      "name": "Soru haritası",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:6762",
+      "viewportId": "71:6761",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-09__dark": {
+      "id": "71:7041",
+      "name": "Sınavı bitir?",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7047",
+      "viewportId": "71:7046",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-10__dark": {
+      "id": "71:7065",
+      "name": "Sınav teslimi",
+      "theme": "Dark",
+      "state": "Submitting",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7071",
+      "viewportId": "71:7070",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-11__dark": {
+      "id": "71:7093",
+      "name": "Süre doldu",
+      "theme": "Dark",
+      "state": "Expired",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7099",
+      "viewportId": "71:7098",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-12__dark": {
+      "id": "71:7119",
+      "name": "Sınav teslim edildi",
+      "theme": "Dark",
+      "state": "Success",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7125",
+      "viewportId": "71:7124",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-13__dark": {
+      "id": "71:7142",
+      "name": "Çalışma Modu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7148",
+      "viewportId": "71:7147",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-01__dark": {
+      "id": "71:7194",
+      "name": "Deneme sonucu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7200",
+      "viewportId": "71:7199",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-02__dark": {
+      "id": "71:7271",
+      "name": "Deneme analizi",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7277",
+      "viewportId": "71:7276",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-03__dark": {
+      "id": "71:7338",
+      "name": "Deneme soru inceleme",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7344",
+      "viewportId": "71:7343",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-04__dark": {
+      "id": "71:7372",
+      "name": "Tahmini puan bandı",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7378",
+      "viewportId": "71:7377",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-05__dark": {
+      "id": "71:7405",
+      "name": "Puan tahmini",
+      "theme": "Dark",
+      "state": "InsufficientData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7411",
+      "viewportId": "71:7410",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-06__dark": {
+      "id": "71:7427",
+      "name": "Sonuç analizi",
+      "theme": "Dark",
+      "state": "PartialData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7433",
+      "viewportId": "71:7432",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-07__dark": {
+      "id": "71:7455",
+      "name": "Deneme sonucu",
+      "theme": "Dark",
+      "state": "ErrorOffline",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7461",
+      "viewportId": "71:7460",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-08__dark": {
+      "id": "71:7474",
+      "name": "Çalışma Modu sonucu",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7480",
+      "viewportId": "71:7479",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-01__dark": {
+      "id": "71:7537",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "30Days",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7543",
+      "viewportId": "71:7542",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-02__dark": {
+      "id": "71:7625",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "7Days",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7631",
+      "viewportId": "71:7630",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-03__dark": {
+      "id": "71:7713",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "3Months",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7719",
+      "viewportId": "71:7718",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-04__dark": {
+      "id": "71:7801",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "All",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7807",
+      "viewportId": "71:7806",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-05__dark": {
+      "id": "71:7889",
+      "name": "Ders ve konu performansı",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7895",
+      "viewportId": "71:7894",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-06__dark": {
+      "id": "71:7987",
+      "name": "Hız ve çalışma",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:7993",
+      "viewportId": "71:7992",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-07__dark": {
+      "id": "71:8073",
+      "name": "Deneme trendi",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8079",
+      "viewportId": "71:8078",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-08__dark": {
+      "id": "71:8151",
+      "name": "Yanlış ve tekrar",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8157",
+      "viewportId": "71:8156",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-09__dark": {
+      "id": "71:8220",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8226",
+      "viewportId": "71:8225",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-10__dark": {
+      "id": "71:8287",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "InsufficientData",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8293",
+      "viewportId": "71:8292",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-11__dark": {
+      "id": "71:8352",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8358",
+      "viewportId": "71:8357",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-12__dark": {
+      "id": "71:8417",
+      "name": "İstatistikler",
+      "theme": "Dark",
+      "state": "OfflinePartial",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8423",
+      "viewportId": "71:8422",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-01__dark": {
+      "id": "71:8482",
+      "name": "Hedefin",
+      "theme": "Dark",
+      "state": "NoTarget",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8488",
+      "viewportId": "71:8487",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-02__dark": {
+      "id": "71:8540",
+      "name": "Hedef oluştur",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8546",
+      "viewportId": "71:8545",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-03__dark": {
+      "id": "71:8574",
+      "name": "Hedef düzenle",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8580",
+      "viewportId": "71:8579",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-04__dark": {
+      "id": "71:8608",
+      "name": "Hedef kaydedildi",
+      "theme": "Dark",
+      "state": "Success",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8614",
+      "viewportId": "71:8613",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-05__dark": {
+      "id": "71:8634",
+      "name": "Hedef kaydı",
+      "theme": "Dark",
+      "state": "OfflinePending",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8640",
+      "viewportId": "71:8639",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-01__dark": {
+      "id": "71:8655",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Evidence",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8661",
+      "viewportId": "71:8660",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-02__dark": {
+      "id": "71:8732",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Limited",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8738",
+      "viewportId": "71:8737",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-03__dark": {
+      "id": "71:8809",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Partial",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8815",
+      "viewportId": "71:8814",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-06__dark": {
+      "id": "71:8886",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Stale",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8892",
+      "viewportId": "71:8891",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-04__dark": {
+      "id": "71:8966",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Loading",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:8972",
+      "viewportId": "71:8971",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-05__dark": {
+      "id": "71:9023",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Dark",
+      "state": "Error",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9029",
+      "viewportId": "71:9028",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-07__dark": {
+      "id": "71:9078",
+      "name": "Sonraki öneri",
+      "theme": "Dark",
+      "state": "Default",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9084",
+      "viewportId": "71:9083",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-14__dark": {
+      "id": "71:9140",
+      "name": "Çalışma denemesini bitir?",
+      "theme": "Dark",
+      "state": "StudyConfirmation",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9146",
+      "viewportId": "71:9145",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-15__dark": {
+      "id": "71:9165",
+      "name": "Çalışma denemesi teslim edildi",
+      "theme": "Dark",
+      "state": "StudySubmitted",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9171",
+      "viewportId": "71:9170",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-A__dark": {
+      "id": "71:9188",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Selected A",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9195",
+      "viewportId": "71:9194",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-B__dark": {
+      "id": "71:9236",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Selected B",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9243",
+      "viewportId": "71:9242",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-D__dark": {
+      "id": "71:9284",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Selected D",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9291",
+      "viewportId": "71:9290",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04-E__dark": {
+      "id": "71:9332",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Dark",
+      "state": "Selected E",
+      "width": 390,
+      "status": "Review",
+      "contentId": "71:9339",
+      "viewportId": "71:9338",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MOCK-01__small": {
+      "id": "71:9380",
+      "name": "Denemeler",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9386",
+      "viewportId": "71:9385",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-02__small": {
+      "id": "71:9403",
+      "name": "Sınavı başlat",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9409",
+      "viewportId": "71:9408",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04__small": {
+      "id": "71:9424",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Selected / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9431",
+      "viewportId": "71:9430",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-05__small": {
+      "id": "71:9454",
+      "name": "Soru haritası",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9460",
+      "viewportId": "71:9459",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-06__small": {
+      "id": "71:9614",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Offline / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9621",
+      "viewportId": "71:9620",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-01__small": {
+      "id": "71:9644",
+      "name": "Deneme sonucu",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9650",
+      "viewportId": "71:9649",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-01__small": {
+      "id": "71:9669",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "30Days / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9675",
+      "viewportId": "71:9674",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-05__small": {
+      "id": "71:9695",
+      "name": "Ders ve konu performansı",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9701",
+      "viewportId": "71:9700",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "TARGET-02__small": {
+      "id": "71:9721",
+      "name": "Hedef oluştur",
+      "theme": "Light",
+      "state": "Default / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9727",
+      "viewportId": "71:9726",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-01__small": {
+      "id": "71:9743",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Evidence / Narrow QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9749",
+      "viewportId": "71:9748",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "EXAM-04__scale200": {
+      "id": "71:9765",
+      "name": "Gerçek Sınav Modu",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9772",
+      "viewportId": "71:9771",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "MRESULT-01__scale200": {
+      "id": "71:9795",
+      "name": "Deneme sonucu",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9801",
+      "viewportId": "71:9800",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "STATS-01__scale200": {
+      "id": "71:9820",
+      "name": "İstatistikler",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9826",
+      "viewportId": "71:9825",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    },
+    "READY-01__scale200": {
+      "id": "71:9846",
+      "name": "Hazırlık sinyalleri",
+      "theme": "Light",
+      "state": "Text 200% QA",
+      "width": 320,
+      "status": "Review",
+      "contentId": "71:9852",
+      "viewportId": "71:9851",
+      "phase": "Phase 3",
+      "ownerAcceptance": "Pending"
+    }
+  },
+  "phaseCounts": {
+    "Phase 1–2": {
+      "screens": 127,
+      "status": "Approved for Design Direction"
+    },
+    "Phase 3": {
+      "screens": 138,
+      "status": "Review"
     }
   }
 }

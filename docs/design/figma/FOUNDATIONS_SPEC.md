@@ -1,6 +1,6 @@
 # Kavriva KPSS — Native Foundations Spec
 
-2026-10-08 · Review · Owner UI acceptance Pending.
+2026-10-08 · Approved for Design Direction — Owner Decision. Final implementation acceptance / export Pending.
 
 [Foundations](https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=7-15) · [Native variables/modes/values](FIGMA_NATIVE_STATE.json) · [QA](CONSISTENCY_QA.json).
 

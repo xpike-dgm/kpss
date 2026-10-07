@@ -1,6 +1,6 @@
 # Kavriva KPSS — FIGMA PHASE 1–2 REVIEW
 
-2026-10-08 · **Phase 1 ve Phase 2 native build tamamlandı / Review**. Owner UI acceptance Pending. Canonical source: [Kavriva KPSS — Product Design System](https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=0-1).
+2026-10-08 · **Phase 1 ve Phase 2 Approved for Design Direction** — Owner Decision. Final implementation acceptance ve Final Production Export Pending. Canonical source: [Kavriva KPSS — Product Design System](https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=0-1).
 
 ## 1. Figma erişimi / preflight
 
@@ -49,7 +49,20 @@ Manrope display/headings, Inter UI/body/numeric; 16 native text style. Size ve l
 
 ## 6. Core component library
 
-43 core family, 46 native component set, 222 variant. Button kind'ları dört set içinde aynı grammar'a bağlıdır; diğer navigation/form/feedback/data/overlay families canonical kapsamdan gelir. Reusable editable components ve instances gerçek native node'lardır. [Component spec ve linkler](figma/COMPONENT_SPEC.md).
+**Yalnız 04 — Core Components alt kümesi:** 43 core family, 46 native component set, 222 variant component. Button kind'ları dört set içinde aynı grammar'a bağlıdır; diğer navigation/form/feedback/data/overlay families canonical kapsamdan gelir. Bu değerler file-wide toplam değildir. Reusable editable components ve instances gerçek native node'lardır. [Component spec ve linkler](figma/COMPONENT_SPEC.md).
+
+### Sayım kapsamları — Owner documentation clarification
+
+| Kapsam | Pages | Variables | Text styles | Component sets | Component nodes | Instance nodes |
+|---|---:|---:|---:|---:|---:|---:|
+| Figma file-wide / Phase 1–2 checkpoint | 22 | 123 | 16 | 68 | 466 | 1,727 |
+| 04 — Core Components | — | — | — | 46 | 222 variants | 304 |
+| 05 — Academic Components | — | — | — | 18 | 58 variants | 82 |
+| Phase 2 screen/test frame alt kümesi | — | — | — | — | — | 1,258 |
+
+68 set = 46 Core + 18 Academic + 3 Brand lockup + 1 APP-04. File-wide 466 component node hem set içindeki variant component'leri hem standalone icon/asset/reference component'lerini içerir. 1,727 instance, bütün page'lerdeki galeriler/patterns/foundation examples ve ekranları kapsar; 1,258 yalnız 127 screen/test frame subtree'sindedir.
+
+Bu toplamlar Owner'ın paylaştığı file-wide structural audit ile eşleşir; repo'daki Phase 1–2 native page snapshot sayımlarının toplamı da 68 / 466 / 1,727'dir. Bu documentation clarification sırasında sistem yeniden oluşturulmadı. Yeni live audit olarak sunulmaz: bağlantı kontrolü reauthentication hatası verdi.
 
 ## 7. Variants / properties
 
@@ -111,7 +124,7 @@ Görsel kontrol örnekleri: Welcome Light/Dark, Dashboard Dark, Selected Test 32
 
 | Konu | Durum |
 |---|---|
-| Phase 1–2 UI Owner acceptance | Pending / Review |
+| Phase 1–2 UI Owner acceptance | Approved for Design Direction — Owner Decision; final implementation acceptance Pending |
 | Brand/App gerçek vector source | Source asset needed |
 | Final Production Vector Export / Export | Pending |
 | Final Figma handoff / Batch 22 | Pending / Not started |
@@ -127,3 +140,15 @@ Görsel kontrol örnekleri: Welcome Light/Dark, Dashboard Dark, Selected Test 32
 Canonical çelişki veya yeni marka kararı gerektiren blocker bulunmadı. Teknik düzenlemeler: Button kind'ları dört set; accessible error solid ayrı rol; gerçek native 200% typography mode; immutable kaynak için clipped raster presentation. Bunlar yeni ürün/marka direction'ı değildir.
 
 Phase 1–2 native tasarım review'a hazırdır; kendi kendine Approved yapılmadı. Kod/React/Next.js/database üretimi yapılmadı. Phase 3'e geçilmedi; marketing üretilmedi; Batch 21/22 başlamadı; P-01–P-06 kapanmadı. Asset Design Direction onayları ve Final Production Pending ayrımı korunur. Bu checkpoint'te durulur.
+
+## Owner Decision — Phase 1–2
+
+Owner Phase 1 — Design System Foundation ve Phase 2 — Core Product Flow'u **Approved for Design Direction** olarak onayladı.
+
+Kabul kapsamı: Foundations, variables, typography, core component grammar, Light/Dark direction, mobile-first system, Auth/Onboarding, Dashboard, Sıradaki Adım, Study/Topic, Question flow, Result hierarchy ve Wrong Review lifecycle UI.
+
+Bu onay **Final Production Export veya final implementation acceptance değildir**. Figma native source of truth olarak kalır. Source vector ihtiyacı ve production/export sınırlamaları devam eder.
+
+Yalnız Phase 3 — Exam / Insight yetkilendirildi. Phase 4–7, MKT-01–06 ve Batch 21/22 başlatılmayacak; P-01–P-06 Open kalacak. Phase 3 sonunda Owner review beklenecek.
+
+Sonraki oturumda görülen UNAUTHORIZED / reauthentication required, bağlantı yenilenince çözüldü; write permission reddi değildi. Actual native read/write PASS. Canonical Cover'a Phase 1–2 Approved for Design Direction kararı işlendi; registry ve specs güncellendi. [Phase 3 Review](FIGMA_PHASE_3_REVIEW.md) tamamlandı; yalnız Phase 3 Review / Owner acceptance Pending. Bu belgenin önceki Review/stop anlatımı tarihsel Phase 1–2 üretim checkpoint'idir; güncel onay kaydı bu Owner Decision bölümüdür.

@@ -1,9 +1,9 @@
 {
   "date": "2026-10-08",
-  "scope": "Canonical asset phase checkpoint + native Figma Phase 1–2 Review",
+  "scope": "Canonical asset checkpoint + Phase 1–2 owner acceptance + Phase 3 native UI Review",
   "styleLockOwnerApproval": "Accepted for Design Direction",
   "illustrationOwnerDirectionSelection": "A — Geometric Editorial",
-  "figma": "Native Phase 1–2 Review; final handoff Pending",
+  "figma": "Phase 1–2 Approved for Design Direction; Phase 3 Review; final handoff Pending",
   "stopBeforeBatch": 18,
   "assets": [
     {
@@ -2526,10 +2526,21 @@
   "figmaNativeReview": {
     "date": "2026-10-08",
     "phase": "Phase 1–2",
-    "status": "Review",
-    "ownerAcceptance": "Pending",
+    "status": "Approved for Design Direction",
+    "ownerAcceptance": "Approved for Design Direction",
     "mappedAssets": 47,
     "pendingNativeMapping": 40,
+    "finalHandoff": "Pending",
+    "finalImplementationAcceptance": "Pending"
+  },
+  "figmaPhase3": {
+    "date": "2026-10-08",
+    "status": "Review",
+    "ownerAcceptance": "Pending",
+    "screens": 138,
+    "patterns": 10,
+    "variants": 41,
+    "reviewRef": "docs/design/FIGMA_PHASE_3_REVIEW.md",
     "finalHandoff": "Pending"
   }
 }
