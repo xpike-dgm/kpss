@@ -31,7 +31,7 @@ Bir batch içinde iyi görünen tek bir asset uğruna bütün marka dili değiş
 ## Asset'ler
 - BRAND-01 — Kavriva Ana Marka Logosu
 - BRAND-05 — Sadece K Sembolü
-- BRAND-06 — Logo Kullanım Sunum Kartı
+- BRAND-06 — Kavriva Master Brand Kalibrasyon / Kullanım Kartı
 
 ## Amaç
 Mevcut Kavriva kimliğini referans alarak **değiştirilecek değil, standardize edilecek** master brand dili oluşturmak.
@@ -121,7 +121,7 @@ Academic ve gamification ikonları karakter olarak farklılaşabilir ama stroke/
 - CAT-04 Coğrafya
 - CAT-05 Vatandaşlık
 - CAT-06 Güncel Bilgiler
-- CAT-07 Eğitim Bilimleri
+- CAT-07 Genel Yetenek / Genel Kültür Overview
 
 ## Amaç
 İllüstrasyon dilinin ilk gerçek testini yapmak.
