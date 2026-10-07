@@ -2069,5 +2069,222 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Böylece normal test, retention, deneme, Karma Test, tekrar soru, AI practice ve düello aynı veri gibi yanlış biçimde işlenmeyecektir.
 - **24. Akademik Evidence & Scoring Kuralları ürün mimarisi açısından tamamlanmıştır.**
 
+
+## 47. Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik — kararlaştırıldı
+
+### Ayarlar Merkezi
+- Ayarlar yalnız tercih ekranı değil, kullanıcının hesabı, güvenliği, verisi ve kişiselleştirmesi üzerindeki merkezi kontrol yüzeyi olacaktır.
+- Ana bölümler en az şu alanları kapsayacaktır:
+  - **Hesap ve Güvenlik**
+  - **KPSS ve Hedef**
+  - **Görünüm ve Erişilebilirlik**
+  - **Bildirimler**
+  - **Gizlilik ve Sosyal**
+  - **AI ve API Anahtarları**
+  - **Öğrenme Tercihleri**
+  - **Cihazlar ve Çevrimdışı Veriler**
+  - **Verilerim ve Hesabım**
+- Bir ayar ilgili özellik ekranında da değiştirilebilse bile Ayarlar Merkezi o tercihin merkezi görünümünü sunacaktır.
+- Ayarlar; akademik motorun gerçeklik kurallarını kullanıcı tercihine göre bozmayacaktır. Kullanıcı deneyimi kişiselleştirilebilir, akademik evidence kuralları değiştirilemez.
+
+### Hesap oluşturma ve e-posta doğrulama
+- E-posta/şifre hesaplarında e-posta doğrulaması kullanılacaktır.
+- Kullanıcı ilk anda tüm üründen tamamen kilitlenmek zorunda değildir; ancak kritik hesap işlemleri, uzun vadeli hesap güvenliği ve gerekli sosyal/güvenlik yüzeylerinde doğrulanmış e-posta aranabilir.
+- Google gibi güvenilir sağlayıcıdan doğrulanmış e-posta uygun biçimde kullanılabilir.
+- Passkey güçlü giriş yöntemi olarak desteklenecektir.
+- Normal kullanıcıda 2FA zorunlu değildir; TOTP/passkey gibi ek korumalar isteğe bağlı olabilir.
+- Admin hesaplarında daha önce kabul edildiği gibi güçlü MFA zorunludur.
+
+### Şifre, e-posta ve hesap kurtarma
+- **Şifremi unuttum**, şifre değiştirme, e-posta değiştirme, yeni e-posta doğrulama, passkey ekleme/silme, TOTP ekleme/silme ve uygun recovery akışları bulunacaktır.
+- E-posta, parola, passkey, 2FA ve hesap silme gibi kritik işlemlerde **step-up authentication** uygulanabilecektir.
+- Sistem kullanıcıya mevcut parolasını göstermez; adminler kullanıcı parolasına erişemez.
+- Hesap kurtarma akışı güvenlik nedeniyle kullanıcı kimliğini makul biçimde yeniden doğrular.
+
+### Cihazlar ve oturumlar
+- Kullanıcı aktif/son oturumlarını ve cihazlarını görebilecektir.
+- Cihaz görünümünde cihaz/tarayıcı, yaklaşık konum bilgisi varsa güvenli seviyede bağlam ve son kullanım zamanı gösterilebilir.
+- Kullanıcı belirli bir oturumu sonlandırabilecek ve **diğer tüm cihazlardan çıkış yap** eylemini kullanabilecektir.
+- Yeni veya şüpheli cihaz girişi güvenlik olayı olarak ele alınacaktır.
+- Parola değişikliği, e-posta değişikliği, passkey/2FA değişikliği ve hesap silme başlangıcı güvenlik olayı üretecektir.
+
+### Transactional e-posta
+- Hesap sistemi için ayrı transactional e-posta altyapısı bulunacaktır.
+- En az e-posta doğrulama, parola sıfırlama, e-posta değişikliği, yeni/şüpheli cihaz bildirimi, hesap silme/kurtarma gibi güvenlik-akış mesajlarını destekleyecektir.
+- Transactional mesajlar pazarlama/bülten iletişiminden ayrılacaktır.
+- Pazarlama/bülten sistemi ürünün zorunlu parçası değildir; varsayılan ürün davranışı kullanıcıyı pazarlama e-postasına otomatik yazmak olmayacaktır.
+
+### KPSS ve hedef ayarları
+- Kullanıcı aktif KPSS türünü, sınav dönemini ve hedef puanını Ayarlar'dan yönetebilecektir.
+- KPSS türü/dönemi değişikliği geçmiş akademik veriyi silmez; aktif Exam Blueprint ve program önerileri yeni bağlama göre yeniden hesaplanır.
+- Değişiklik öncesi kullanıcıya geçmişin korunacağı, aktif programın yeniden hesaplanacağı açıkça anlatılır.
+- Hedef puan istenildiğinde değiştirilebilir veya kaldırılabilir.
+
+### Öğrenme tercihleri
+- Ders bazlı varsayılan öğretmen, AI Öğretmen cevap uzunluğu ve benzeri deneyim tercihleri yönetilebilir.
+- Bu tercihler akademik motorun evidence, difficulty veya mastery kurallarını değiştirmez.
+- Kullanıcı bir tercih üzerinden adaptif sistemi manipüle edecek gizli akademik avantaj elde edemez.
+
+### Görünüm ve erişilebilirlik
+- Tema seçenekleri **Sistem / Açık / Koyu** olacaktır.
+- Font boyutu, reduce-motion, efekt/ses azaltma, yüksek kontrast ve benzeri erişilebilirlik tercihleri merkezi yönetilecektir.
+- Erişilebilirlik özellikleri kozmetik değildir; level, achievement veya ödül arkasına kilitlenmez.
+- Tam klavye navigasyonu temel erişilebilirlik davranışıdır ve kapatılabilir bir ödül/tercih değildir.
+
+### Bildirim mimarisi
+- Bildirim olayı ile teslimat kanalı birbirinden ayrılacaktır.
+- Desteklenen ana kanallar: **uygulama içi / push / e-posta**.
+- Bir event oluşması kullanıcıya zorunlu push gönderileceği anlamına gelmez.
+- Bildirim tercihleri kategori ve kanal bazında yönetilecektir.
+- Bildirim deep-link'i kullanıcıyı ilgili ekran/eyleme götürecektir.
+
+### Güvenlik bildirimleri
+- Kritik güvenlik bildirimleri normal pazarlama/çalışma bildirimi sayılmaz.
+- Parola/e-posta değişikliği, şüpheli/yeni giriş, passkey/2FA değişikliği, hesap silme ve kritik güvenlik olayları için gerekli güvenlik iletişimi kapatılamaz veya uygun güvenlik kanalında zorunlu kalabilir.
+- Güvenlik olayları normal proaktif bildirim kotasından ayrı değerlendirilir.
+
+### Akademik bildirimler
+- Retention, kamp, çalışma önerisi, sınav hatırlatması, uzun ara sonrası geri dönüş ve benzeri akademik kategoriler ayrı yönetilecektir.
+- Akademik push izni ilk açılışta zorlanmayacaktır.
+- Kullanıcı ürünü anlamlı biçimde kullandıktan sonra bağlamsal izin isteme yaklaşımı kullanılacaktır.
+- Akademik çalışma core'u push bildirimine bağımlı olmayacaktır.
+
+### Streak bildirimleri
+- Streak için suçluluk veya korku üreten varsayılan push yaklaşımı kullanılmayacaktır.
+- Kullanıcı isterse **Seri hatırlatmaları** kategorisini açabilecektir.
+- Dil cezalandırıcı olmayacak; çalışma fırsatını hatırlatan sakin bir ton kullanılacaktır.
+- Streak push'ı akademik zorunluluk üretmez.
+
+### Sosyal ve meta bildirimleri
+- Arkadaşlık isteği, çalışma odası/düello daveti, takım olayı, tebrik/reaksiyon gibi sosyal bildirimler ayrı kategori olacaktır.
+- Sezon, lig, community goal ve etkinlik gibi meta bildirimler de ayrı kategori olacaktır.
+- Sosyal/meta push kullanıcı tarafından kapatılabilir.
+- Aynı kullanıcı/olay üzerinden spam davet veya push üretimini sınırlayan rate-limit/anti-spam uygulanacaktır.
+- Gerçek Sınav Modunda sosyal/meta/normal çalışma bildirimleri ürün içinde susturulacaktır.
+
+### Sessiz saatler
+- Varsayılan sessiz saat önerisi **22:00–08:00 kullanıcı yerel saati** olacaktır.
+- Kullanıcı sessiz saatleri değiştirebilir veya kapatabilir.
+- Normal akademik/sosyal/meta push'lar sessiz saatte bekletilebilir.
+- Kritik güvenlik bildirimleri sessiz saat politikasından bağımsız davranabilir.
+- Kesin dağıtım davranışı Notification Orchestrator tarafından merkezi yönetilecektir.
+
+### Bildirim frekansı ve orkestrasyon
+- Her alt sistem bağımsız biçimde kullanıcıya sınırsız push gönderemeyecektir.
+- Merkezi **Notification Orchestrator** benzer/aynı günkü proaktif mesajları birleştirebilir.
+- Proaktif bildirimlerde merkezi günlük frekans sınırı olacaktır.
+- Başlangıç için yaklaşık **2 proaktif push/gün** muhafazakâr varsayılan adaydır; kesin sayı versioned config ile ayarlanabilir.
+- Kullanıcının açıkça tetiklediği sosyal davet, kritik güvenlik olayı veya transactional mesaj aynı proaktif kota mantığına zorunlu olarak bağlanmaz.
+
+### Bildirim Merkezi
+- Push teslimatı başarısız olsa bile uygun uygulama içi olay kaybolmamalıdır.
+- Bildirim Merkezi okundu/okunmadı, kategori, ilgili deep-link ve zaman bilgilerini taşıyacaktır.
+- Bildirim saklama süresi 28. Data Retention / Compliance başlığında kesinleştirilecektir.
+
+### Gizlilik ana ilkesi
+- **Akademik bilgiler varsayılan olarak özeldir.**
+- Kullanıcı açıkça paylaşmadıkça mastery, zayıf alanlar, yanlışlar, hedef puan, deneme netleri, ayrıntılı çalışma geçmişi, notlar ve AI sohbetleri sosyal profile açılmaz.
+- Sosyal profil görünürlüğü ile akademik veri görünürlüğü ayrı kontrol edilir.
+
+### Sosyal profil paylaşımı
+- Kullanıcı isterse level, avatar/çerçeve/banner, unvan, seçili rozetler, streak, Journey aşaması ve lig gibi sosyal unsurların görünürlüğünü ayrı ayrı yönetebilir.
+- Bir alanın sosyal profile açılması başka akademik alanların otomatik açılması anlamına gelmez.
+- Gizlilik varsayılanları muhafazakâr olacaktır.
+
+### Kullanıcı bulunabilirliği
+- Arkadaş bulma için telefon rehberi erişimi gerekmeyecektir.
+- Ana keşif mekanizmaları **kullanıcı adı / kod / paylaşılabilir link** olacaktır.
+- Gerçek isim üzerinden herkese açık global kişi araması zorunlu ürün davranışı değildir.
+- Kullanıcı arkadaşlık isteği, davet ve sosyal profil görünürlüğünü sınırlayabilir.
+
+### Presence
+- Çevrimiçi/presence bilgisi ayrı gizlilik tercihidir.
+- En az **Kimse / Arkadaşlar / Bulunduğum çalışma odası bağlamı** gibi görünürlük seçenekleri desteklenebilir.
+- Kullanıcının siteye her giriş/çıkışı herkese açık bir aktivite akışı oluşturmaz.
+
+### Engelleme
+- Engellenen kullanıcı doğrudan davet, arkadaşlık isteği, tebrik/reaksiyon gibi sosyal etkileşimleri gönderemeyecektir.
+- Gizli akademik/sosyal verilere erişemez.
+- Ortak takım/oda gibi sosyal edge-case ayrıntıları 27. başlıkta tamamlanacaktır.
+
+### AI gizlilik ve kontrol
+- Kullanıcı **AI özelliklerini tamamen kapatabilir**.
+- AI kapalıyken çekirdek akademik sistem çalışmaya devam eder.
+- AI Öğretmen/Koç'a yalnız görev için gerekli minimum bağlam gönderilecektir.
+- Parola, session token, API key ve gereksiz kişisel tanımlayıcılar AI sağlayıcısına gönderilmeyecektir.
+- AI kullanımında hangi tür verinin kullanılabileceği kullanıcıya teknik olmayan, açık dilde anlatılacaktır.
+
+### AI kişiselleştirme seviyesi
+- Kullanıcı-facing en az iki gizlilik seviyesi bulunacaktır:
+  - **Yalnız mevcut bağlam**
+  - **Çalışma geçmişimle kişiselleştir**
+- Varsayılan gizlilik yaklaşımı **yalnız mevcut bağlam** olacaktır.
+- Geniş çalışma geçmişi, geçmiş yanlışlar, zayıf alanlar, deneme trendi ve planner reason-code özetleri yalnız kullanıcı kişiselleştirmeyi açıkça etkinleştirirse kullanılacaktır.
+- AI kişiselleştirmesi akademik motorun deterministik karar yetkisini değiştirmez.
+
+### BYOK credential yönetimi
+- Kullanıcı bağlı AI sağlayıcısını, maskeli credential durumunu ve uygun son kullanım bilgisini görebilir.
+- API anahtarı plain biçimde gösterilmez, admin tarafından okunamaz ve loglanmaz.
+- Kullanıcı **Anahtarı Değiştir** ve **Bağlantıyı Kaldır** işlemlerini yapabilir.
+- Bağlantı kaldırıldığında ilgili credential güvenli silme/invalidasyon sürecine girer.
+
+### Telemetry ve analytics ayrımı
+- Uygulamanın çalışması/güvenliği için gerekli operasyonel telemetry ile isteğe bağlı ürün analitiği ayrı tutulacaktır.
+- Server error, failed sync, security event ve job failure gibi zorunlu operasyonel telemetry veri minimizasyonuyla çalışır.
+- İsteğe bağlı ürün kullanım analitiği bulunursa kullanıcı bunu kapatabilir.
+- Kullanıcıya iki telemetry türü arasındaki fark açıkça anlatılacaktır.
+
+### Cihazdaki çevrimdışı veri
+- Kullanıcı cihazda kullanılan depolama alanını ve uygun offline paket/cache verilerini yönetebilecektir.
+- İndirilen soru paketleri, offline özetler ve cache temizlenebilir.
+- **Cihazdaki çevrimdışı veriyi temizlemek buluttaki hesap verisini silmez** mesajı açık olacaktır.
+- Logout ve hassas yerel cache temizleme davranışının kesin retention ayrıntısı 28. başlıkta tamamlanacaktır.
+
+### Verilerimi İndir
+- Kullanıcı self-service **Verilerimin bir kopyasını hazırla** akışına sahip olacaktır.
+- Export; uygun olduğu ölçüde profil/ayarlar, akademik geçmiş, test/deneme sonuçları, notlar, yanlışlar, meta/achievement geçmişi, uygun sosyal kayıtlar ve saklanan AI sohbetlerini kapsayabilir.
+- Makine tarafından okunabilir format bulunacaktır.
+- Parola, session token, passkey private material ve API key export edilmez.
+- Hazırlanan export güvenli ve süreli erişim yöntemiyle teslim edilir.
+- Export işlemi güvenlik/audit olayı olarak kaydedilebilir.
+
+### Hesap silme
+- Hesap silme yalnız admin operasyonu değildir; kullanıcı Ayarlar içinden self-service başlatabilir.
+- Silme öncesi hesabın, akademik geçmişin, sosyal profilin, notların ve AI geçmişinin ne olacağı açıkça anlatılır.
+- Hesap silme step-up authentication gerektirir.
+- Kullanıcı silme başlattığında hesap **Deletion Pending** durumuna geçecektir.
+- **7 günlük geri alma penceresi** olacaktır.
+- Bu süre içinde kullanıcı güvenli biçimde hesabını geri getirebilir.
+- Süre sonunda silme/anonimleştirme pipeline'ı çalışır.
+- Hangi verinin hemen silineceği, yasal/güvenlik gerekçesiyle hangisinin ne kadar süre tutulacağı 28. Data Retention / Compliance başlığında kesinleştirilecektir.
+
+### Ortak geçmiş ve anonimleştirme
+- Bir kullanıcının hesabını silmesi başka kullanıcıların tamamlanmış takım/sezon/düello geçmişini veri bütünlüğünü bozacak şekilde yok etmeyecektir.
+- Ortak geçmişte gerekli olduğunda kullanıcı kimliği **Silinmiş Kullanıcı** benzeri anonim referansa dönüştürülebilir.
+- Kesin anonimleştirme ve saklama politikası 28. başlıkta tamamlanacaktır.
+
+### Kullanıcı adı ve profil
+- Benzersiz kullanıcı adı değiştirilebilir olacaktır.
+- Sürekli değişiklikle kötüye kullanımı önlemek için cooldown uygulanabilir; kesin süre config/27. sosyal edge-case planında netleşir.
+- Eski kullanıcı adının rezervasyon/yeniden kullanım davranışı 27. başlıkta ele alınacaktır.
+
+### Hesap silme ve AI credential
+- Hesap silme final aşamasında kullanıcıya ait BYOK credential'ları ayrıca güvenli silme sürecine girecektir.
+- Silinmiş hesapta credential vault içinde unutulmuş aktif API key kalmamalıdır.
+
+### Audit ve kritik ayarlar
+- E-posta/parola/2FA/passkey, hesap silme, veri export, AI credential ekleme-kaldırma ve önemli gizlilik değişiklikleri audit/security event üretebilir.
+- Dark mode gibi sıradan UI tercihi kritik güvenlik audit'i gibi ele alınmayacaktır.
+
+### Hesap ayarı vs cihaz ayarı
+- **Hesap düzeyi:** gizlilik, AI, bildirim kategorileri, KPSS/hedef, varsayılan öğretmen gibi tercihler cihazlar arasında senkronlanır.
+- **Cihaz düzeyi:** PWA cache, offline indirmeler ve cihaz izinleri gibi ayarlar yalnız ilgili cihazda kalabilir.
+- Görünüm tercihleri hesapla senkronlanabilir ancak cihazın Sistem temasını kullanma seçeneği korunacaktır.
+
+### Ana karar
+- Ayarlar Merkezi kullanıcıya hesap, güvenlik, bildirim, gizlilik, AI ve veri üzerinde gerçek kontrol verecektir.
+- Güvenli varsayılanlar korunurken çekirdek ürün; push, AI, sosyal paylaşım veya geniş telemetry onayına bağımlı olmayacaktır.
+- **25. Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik başlığı ürün mimarisi açısından tamamlanmıştır.**
+
 ---
 Durum: Ürün planlama aşaması devam ediyor. Henüz geliştirmeye başlanmadı.
