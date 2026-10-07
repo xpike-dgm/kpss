@@ -1,0 +1,292 @@
+{
+  "status": "Review",
+  "approvedBy": null,
+  "ownerDirectionSelection": null,
+  "sourceHash": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
+  "sourceImmutable": true,
+  "wordmarkCrop": {
+    "left": 574,
+    "top": 340,
+    "width": 722,
+    "height": 166
+  },
+  "wordmarkNativePixelEquality": true,
+  "labelText": "KPSS",
+  "labelFont": "Manrope",
+  "directions": [
+    {
+      "key": "a",
+      "title": "A · Açık alt etiket",
+      "labelRatio": 0.36,
+      "weight": 650,
+      "tracking": 0,
+      "tag": false
+    },
+    {
+      "key": "b",
+      "title": "B · Kompakt ürün etiketi",
+      "labelRatio": 0.32,
+      "weight": 650,
+      "tracking": 0.04,
+      "tag": true
+    },
+    {
+      "key": "c",
+      "title": "C · Merkezli / aralıklı etiket",
+      "labelRatio": 0.3,
+      "weight": 600,
+      "tracking": 0.18,
+      "tag": false
+    }
+  ],
+  "specs": [
+    {
+      "id": "BRAND-02",
+      "direction": "a",
+      "nativeWidth": 1132,
+      "nativeHeight": 361.475,
+      "labelFont": 57.599999999999994,
+      "labelToWordmarkHeight": 0.36,
+      "trackingEm": 0,
+      "weight": 650,
+      "externalClearSpace": 83.75,
+      "internalGap": 41.875
+    },
+    {
+      "id": "BRAND-03",
+      "direction": "a",
+      "nativeWidth": 1369.542,
+      "nativeHeight": 341,
+      "labelFont": 57.599999999999994,
+      "labelToWordmarkHeight": 0.36,
+      "trackingEm": 0,
+      "weight": 650,
+      "externalClearSpace": 83.75,
+      "internalGap": 41.875
+    },
+    {
+      "id": "BRAND-04",
+      "direction": "a",
+      "nativeWidth": 722,
+      "nativeHeight": 694.225,
+      "labelFont": 57.599999999999994,
+      "labelToWordmarkHeight": 0.36,
+      "trackingEm": 0,
+      "weight": 650,
+      "externalClearSpace": 83.75,
+      "internalGap": 41.875
+    },
+    {
+      "id": "BRAND-02",
+      "direction": "b",
+      "nativeWidth": 1414.4313333333334,
+      "nativeHeight": 341,
+      "labelFont": 51.2,
+      "labelToWordmarkHeight": 0.32,
+      "trackingEm": 0.04,
+      "weight": 650,
+      "externalClearSpace": 83.75,
+      "internalGap": 41.875
+    },
+    {
+      "id": "BRAND-03",
+      "direction": "b",
+      "nativeWidth": 1414.4313333333334,
+      "nativeHeight": 341,
+      "labelFont": 51.2,
+      "labelToWordmarkHeight": 0.32,
+      "trackingEm": 0.04,
+      "weight": 650,
+      "externalClearSpace": 83.75,
+      "internalGap": 41.875
+    },
+    {
+      "id": "BRAND-04",
+      "direction": "b",
+      "nativeWidth": 722,
+      "nativeHeight": 715.7416666666668,
+      "labelFont": 51.2,
+      "labelToWordmarkHeight": 0.32,
+      "trackingEm": 0.04,
+      "weight": 650,
+      "externalClearSpace": 83.75,
+      "internalGap": 41.875
+    },
+    {
+      "id": "BRAND-02",
+      "direction": "c",
+      "nativeWidth": 1132,
+      "nativeHeight": 434.875,
+      "labelFont": 48,
+      "labelToWordmarkHeight": 0.3,
+      "trackingEm": 0.18,
+      "weight": 600,
+      "externalClearSpace": 83.75,
+      "internalGap": 41.875
+    },
+    {
+      "id": "BRAND-03",
+      "direction": "c",
+      "nativeWidth": 1369.83,
+      "nativeHeight": 341,
+      "labelFont": 48,
+      "labelToWordmarkHeight": 0.3,
+      "trackingEm": 0.18,
+      "weight": 600,
+      "externalClearSpace": 83.75,
+      "internalGap": 41.875
+    },
+    {
+      "id": "BRAND-04",
+      "direction": "c",
+      "nativeWidth": 722,
+      "nativeHeight": 684.625,
+      "labelFont": 48,
+      "labelToWordmarkHeight": 0.3,
+      "trackingEm": 0.18,
+      "weight": 600,
+      "externalClearSpace": 83.75,
+      "internalGap": 41.875
+    }
+  ],
+  "textBounds": [
+    {
+      "file": "BRAND-02__kavriva-kpss-lockup__direction-a-light__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-02__kavriva-kpss-lockup__direction-a-dark__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-03__kavriva-kpss-lockup__direction-a-light__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-03__kavriva-kpss-lockup__direction-a-dark__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-04__kavriva-kpss-lockup__direction-a-light__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-04__kavriva-kpss-lockup__direction-a-dark__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-02__kavriva-kpss-lockup__direction-a-family-board__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-02__kavriva-kpss-lockup__direction-b-light__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-02__kavriva-kpss-lockup__direction-b-dark__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-03__kavriva-kpss-lockup__direction-b-light__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-03__kavriva-kpss-lockup__direction-b-dark__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-04__kavriva-kpss-lockup__direction-b-light__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-04__kavriva-kpss-lockup__direction-b-dark__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-02__kavriva-kpss-lockup__direction-b-family-board__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-02__kavriva-kpss-lockup__direction-c-light__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-02__kavriva-kpss-lockup__direction-c-dark__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-03__kavriva-kpss-lockup__direction-c-light__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-03__kavriva-kpss-lockup__direction-c-dark__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-04__kavriva-kpss-lockup__direction-c-light__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-04__kavriva-kpss-lockup__direction-c-dark__v01.svg",
+      "overflow": []
+    },
+    {
+      "file": "BRAND-02__kavriva-kpss-lockup__direction-c-family-board__v01.svg",
+      "overflow": []
+    }
+  ],
+  "geometry": {
+    "redraw": false,
+    "trace": false,
+    "simplify": false,
+    "nonUniformScale": false,
+    "wordmarkRetyped": false
+  },
+  "trueVectorLogo": false,
+  "finalProductionVectorExport": "Pending",
+  "figma": "Pending",
+  "files": [
+    "BRAND-02__kavriva-kpss-lockup__direction-a-light__v01.svg",
+    "BRAND-02__kavriva-kpss-lockup__direction-a-light__v01.png",
+    "BRAND-02__kavriva-kpss-lockup__direction-a-dark__v01.svg",
+    "BRAND-02__kavriva-kpss-lockup__direction-a-dark__v01.png",
+    "BRAND-03__kavriva-kpss-lockup__direction-a-light__v01.svg",
+    "BRAND-03__kavriva-kpss-lockup__direction-a-light__v01.png",
+    "BRAND-03__kavriva-kpss-lockup__direction-a-dark__v01.svg",
+    "BRAND-03__kavriva-kpss-lockup__direction-a-dark__v01.png",
+    "BRAND-04__kavriva-kpss-lockup__direction-a-light__v01.svg",
+    "BRAND-04__kavriva-kpss-lockup__direction-a-light__v01.png",
+    "BRAND-04__kavriva-kpss-lockup__direction-a-dark__v01.svg",
+    "BRAND-04__kavriva-kpss-lockup__direction-a-dark__v01.png",
+    "BRAND-02__kavriva-kpss-lockup__direction-a-family-board__v01.svg",
+    "BRAND-02__kavriva-kpss-lockup__direction-a-family-board__v01.png",
+    "BRAND-02__kavriva-kpss-lockup__direction-b-light__v01.svg",
+    "BRAND-02__kavriva-kpss-lockup__direction-b-light__v01.png",
+    "BRAND-02__kavriva-kpss-lockup__direction-b-dark__v01.svg",
+    "BRAND-02__kavriva-kpss-lockup__direction-b-dark__v01.png",
+    "BRAND-03__kavriva-kpss-lockup__direction-b-light__v01.svg",
+    "BRAND-03__kavriva-kpss-lockup__direction-b-light__v01.png",
+    "BRAND-03__kavriva-kpss-lockup__direction-b-dark__v01.svg",
+    "BRAND-03__kavriva-kpss-lockup__direction-b-dark__v01.png",
+    "BRAND-04__kavriva-kpss-lockup__direction-b-light__v01.svg",
+    "BRAND-04__kavriva-kpss-lockup__direction-b-light__v01.png",
+    "BRAND-04__kavriva-kpss-lockup__direction-b-dark__v01.svg",
+    "BRAND-04__kavriva-kpss-lockup__direction-b-dark__v01.png",
+    "BRAND-02__kavriva-kpss-lockup__direction-b-family-board__v01.svg",
+    "BRAND-02__kavriva-kpss-lockup__direction-b-family-board__v01.png",
+    "BRAND-02__kavriva-kpss-lockup__direction-c-light__v01.svg",
+    "BRAND-02__kavriva-kpss-lockup__direction-c-light__v01.png",
+    "BRAND-02__kavriva-kpss-lockup__direction-c-dark__v01.svg",
+    "BRAND-02__kavriva-kpss-lockup__direction-c-dark__v01.png",
+    "BRAND-03__kavriva-kpss-lockup__direction-c-light__v01.svg",
+    "BRAND-03__kavriva-kpss-lockup__direction-c-light__v01.png",
+    "BRAND-03__kavriva-kpss-lockup__direction-c-dark__v01.svg",
+    "BRAND-03__kavriva-kpss-lockup__direction-c-dark__v01.png",
+    "BRAND-04__kavriva-kpss-lockup__direction-c-light__v01.svg",
+    "BRAND-04__kavriva-kpss-lockup__direction-c-light__v01.png",
+    "BRAND-04__kavriva-kpss-lockup__direction-c-dark__v01.svg",
+    "BRAND-04__kavriva-kpss-lockup__direction-c-dark__v01.png",
+    "BRAND-02__kavriva-kpss-lockup__direction-c-family-board__v01.svg",
+    "BRAND-02__kavriva-kpss-lockup__direction-c-family-board__v01.png"
+  ]
+}

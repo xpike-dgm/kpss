@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-07",
+  "approvedBy": "Owner",
+  "assetIds": ["BRAND-01", "BRAND-05", "BRAND-06"],
+  "status": "Approved for Design Direction",
+  "finalProductionVectorExport": "Pending",
+  "clearSpace": "visible K height / 4",
+  "opticalOffsetPx": 0,
+  "master160Px": "safe raster review size only; not permanent brand minimum",
+  "standaloneRecommendedMinimumPx": 24,
+  "standalone16Px": "permitted for required favicon/browser surfaces; geometry immutable; padding/canvas/contrast/export optimization only",
+  "vectorSource": "source asset needed; not a design-direction blocker",
+  "figma": "Pending; not an asset-production blocker",
+  "nextAuthorizedBatch": "02 — direction exploration only"
+}
