@@ -708,13 +708,26 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ İçerik üretimi release sonrası da sürekli operasyon olarak devam edecek.
    - ✅ **İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri tamamlandı.**
 
-27. 🟨 **Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler**
-   - Sosyal lifecycle/edge-case politikaları
-   - AI sohbet/veri yaşam döngüsü ve Koç↔oyunlaştırma ilişkisi
-   - Yardım/Geri Bildirim Merkezi
-   - Kaydedilenler/favoriler ve level 100 sonrası açık karar
+27. ✅ **Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler**
+   - ✅ Arkadaşlık/block/mute yaşam döngüsü ve sosyal geçmişin korunması kesinleştirildi.
+   - ✅ Takım katkısı takım değiştirirken taşınmayacak; başlangıç takım değiştirme cooldown'ı 7 gün olacak.
+   - ✅ Lider ayrılması, takım dağılması ve ortak geçmiş davranışları tanımlandı.
+   - ✅ Çalışma odalarında host bağlantı kopması/ayrılması, block ve ownership edge-case'leri ele alındı.
+   - ✅ Düello server-authoritative lifecycle'ı, 60 sn reconnect window, forfeit/void, beraberlik ve invalid-question davranışı kesinleştirildi.
+   - ✅ Challenge ve moderasyon lifecycle'ları akademik state'ten ayrıldı.
+   - ✅ Username başlangıç politikası 30 günde bir değişiklik + eski ad için 30 gün rezervasyon olacak.
+   - ✅ AI thread'leri bağlamlı ve sınırlı olacak; evrensel sınırsız hafıza varsayılan olmayacak.
+   - ✅ AI sohbetleri kullanıcı tarafından silinebilecek/export edilebilecek; model/prompt/provider/version metadata'sı izlenebilir olacak.
+   - ✅ Verified Solution > AI Teacher otoritesi korunacak; AI quality reporting bulunacak.
+   - ✅ AI outage core ürünü durdurmayacak; AI Koç Academic Planner kararını gamification uğruna değiştiremeyecek.
+   - ✅ AI kritik akademik/sosyal/güvenlik state'lerine doğrudan write yapamayacak.
+   - ✅ Yardım & Geri Bildirim Merkezi ticket lifecycle, güvenli diagnostics, read-only Support View ve Sistem Durumu yüzeylerini içerecek.
+   - ✅ Kaydedilenler Merkezi soru/öğrenme/not/önemli yanlış/Güncel Bilgiler içeriklerini birleştirecek; kaydetmek mastery evidence olmayacak.
+   - ✅ Kaydedilenlerden test oluşturma normal evidence/eligibility kurallarına tabi olacak; offline kullanım ayrı aksiyon olacak.
+   - ✅ **Level 100 hard cap** olacak; prestige olmayacak. Level 100 sonrası uzun vadeli ilerlemeyi Season/Journey/Achievements/Records/Collections/Special Moments taşıyacak.
+   - ✅ **Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler tamamlandı.**
 
-28. ⬜ **Data Retention / Compliance / Release Acceptance Criteria**
+28. 🟨 **Data Retention / Compliance / Release Acceptance Criteria**
    - Veri saklama/silme süreleri
    - KVKK/compliance çıkış kapısı
    - Felaket kurtarma ve güvenlik release koşulları
@@ -726,4 +739,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **27. Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler 🟨**.
+İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **28. Data Retention / Compliance / Release Acceptance Criteria 🟨**.
