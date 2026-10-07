@@ -1,0 +1,81 @@
+{
+  "status": "Review",
+  "canonicalDirection": "A",
+  "familyDirectionGate": "PASS for canonical direction; final production/theme Pending",
+  "evidence": [
+    {
+      "assetId": "CAT-01",
+      "file": "CAT-01__mathematics__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7440401242340301,
+      "sha256": "b997b4dff4a14d203f1d74fa92733f45d969cd34d262de414e2eb9ecc9d4f4e0",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "CAT-02",
+      "file": "CAT-02__turkish__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6382745867132672,
+      "sha256": "f42dcaf4f7b29f48569f79bf476f6f73184a791f001ae96f364873574419452e",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "CAT-03",
+      "file": "CAT-03__history__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7166591627684551,
+      "sha256": "0d8db0aad85009bb0d143596a78fd4321bb4f13677203104784858c0b2de0b8f",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "CAT-04",
+      "file": "CAT-04__geography__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7281681076694927,
+      "sha256": "a5e4c17a59c5516e8ab02a7864d5b0b49deb78d69ef4ba967065db6dc1be11df",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "CAT-05",
+      "file": "CAT-05__citizenship__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7448318490877041,
+      "sha256": "f1a1c630a28456ab108245120346a26e3aa3ffaf7806dedcfd89a081740a9da1",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "CAT-06",
+      "file": "CAT-06__current-affairs__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7631871472213955,
+      "sha256": "c9390bd983a671e149115988e6863126a6f9ba01f8de6b44381b395c475697f6",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "CAT-07",
+      "file": "CAT-07__gy-gk-overview__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.71469606668549,
+      "sha256": "0dcb82c2e4f8447737f5f528feac88b9f810157f58273d21f3e5b031cad8796e",
+      "sourceCopyExact": true
+    }
+  ],
+  "brandSourceHash": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
+  "figma": "Pending",
+  "finalProductionExport": "Pending",
+  "darkStatus": "96px diagnostic only"
+}

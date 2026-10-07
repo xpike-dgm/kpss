@@ -1,0 +1,71 @@
+{
+  "tool": "Built-in image_gen",
+  "entries": [
+    {
+      "assetId": "CAT-01",
+      "label": "Matematik",
+      "filename": "CAT-01__mathematics__canonical-a__v01.png",
+      "sourcePath": "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/review/CAT-01__mathematics__direction-a__v01.png"
+    },
+    {
+      "assetId": "CAT-02",
+      "label": "Türkçe",
+      "filename": "CAT-02__turkish__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-7d51fc75-2897-42da-a4ca-be0adc4e9816.png"
+    },
+    {
+      "assetId": "CAT-03",
+      "label": "Tarih",
+      "filename": "CAT-03__history__canonical-a__v01.png",
+      "sourcePath": "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/review/CAT-03__history__direction-a__v01.png"
+    },
+    {
+      "assetId": "CAT-04",
+      "label": "Coğrafya",
+      "filename": "CAT-04__geography__canonical-a__v01.png",
+      "sourcePath": "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/review/CAT-04__geography__direction-a__v01.png"
+    },
+    {
+      "assetId": "CAT-05",
+      "label": "Vatandaşlık",
+      "filename": "CAT-05__citizenship__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-aaeb5967-cade-4b16-b0ba-3b90e24b6130.png"
+    },
+    {
+      "assetId": "CAT-06",
+      "label": "Güncel Bilgiler",
+      "filename": "CAT-06__current-affairs__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-68f01ba5-df51-4f29-b02b-3dfa1ed7558c.png"
+    },
+    {
+      "assetId": "CAT-07",
+      "label": "GY / GK Overview",
+      "filename": "CAT-07__gy-gk-overview__canonical-a__v01.png",
+      "sourcePath": "C:\\Users\\Xpike\\.codex\\generated_images\\01a1167f-389e-7922-89f8-fdbfa6038859\\exec-9172c6b0-f739-46f2-9cfb-4af3ba2cbd91.png"
+    }
+  ],
+  "ownerFinalFamilyApproval": "Pending",
+  "canonicalDirection": "A",
+  "prompts": [
+    {
+      "assetId": "CAT-02",
+      "prompt": "Use case: stylized-concept. Asset type: compact Kavriva KPSS academic category illustration. Canonical A — Geometric Editorial only. Reference images are approved A style anchors, not edit targets. Match their frontal large clean geometry, restrained rounded ink outlines, sparse detail, cool whites/pale neutral surfaces and #4F46E5 indigo direction. Flat+very soft-depth, gentle overlap, no slabs, no full isometric/3D, no glossy/clay/toy, no mascot/person, no neon or independent palette. One idea, strong silhouette distinguishable at 96px, sparse secondary detail, ample transparent negative space; centered roughly 65% canvas, square true transparent PNG. Do not generate logo, wordmark, UI text, letters, digits, labels or watermark. Rounded line character related to Kavriva icon system. All category siblings same depth/saturation band.\nAsset ID: CAT-02\nSubject: Reading comprehension and language structure: two upright frontal reading panels with organized abstract text bars, a single indigo bracket joining semantic segments. No literal letters, no book or pencil, no timeline.",
+      "referenceRoles": "CAT01/03/04 A immutable style references"
+    },
+    {
+      "assetId": "CAT-05",
+      "prompt": "Use case: stylized-concept. Asset type: compact Kavriva KPSS academic category illustration. Canonical A — Geometric Editorial only. Reference images are approved A style anchors, not edit targets. Match their frontal large clean geometry, restrained rounded ink outlines, sparse detail, cool whites/pale neutral surfaces and #4F46E5 indigo direction. Flat+very soft-depth, gentle overlap, no slabs, no full isometric/3D, no glossy/clay/toy, no mascot/person, no neon or independent palette. One idea, strong silhouette distinguishable at 96px, sparse secondary detail, ample transparent negative space; centered roughly 65% canvas, square true transparent PNG. Do not generate logo, wordmark, UI text, letters, digits, labels or watermark. Rounded line character related to Kavriva icon system. All category siblings same depth/saturation band.\nAsset ID: CAT-05\nSubject: Civic rights and institutional balance: three large rounded interlocking structural blocks under a clean balanced frame, one outlined circular rights/check cue. No courthouse, flags, scales-of-justice cliché or police shield.",
+      "referenceRoles": "CAT01/03/04 A immutable style references"
+    },
+    {
+      "assetId": "CAT-06",
+      "prompt": "Use case: stylized-concept. Asset type: compact Kavriva KPSS academic category illustration. Canonical A — Geometric Editorial only. Reference images are approved A style anchors, not edit targets. Match their frontal large clean geometry, restrained rounded ink outlines, sparse detail, cool whites/pale neutral surfaces and #4F46E5 indigo direction. Flat+very soft-depth, gentle overlap, no slabs, no full isometric/3D, no glossy/clay/toy, no mascot/person, no neon or independent palette. One idea, strong silhouette distinguishable at 96px, sparse secondary detail, ample transparent negative space; centered roughly 65% canvas, square true transparent PNG. Do not generate logo, wordmark, UI text, letters, digits, labels or watermark. Rounded line character related to Kavriva icon system. All category siblings same depth/saturation band.\nAsset ID: CAT-06\nSubject: Curated current information: one frontal update card with a large abstract signal arc and two small ordered tiles, one indigo latest-update dot. No actual news text, dates or numbers.",
+      "referenceRoles": "CAT01/03/04 A immutable style references"
+    },
+    {
+      "assetId": "CAT-07",
+      "prompt": "Use case: stylized-concept. Asset type: compact Kavriva KPSS academic category illustration. Canonical A — Geometric Editorial only. Reference images are approved A style anchors, not edit targets. Match their frontal large clean geometry, restrained rounded ink outlines, sparse detail, cool whites/pale neutral surfaces and #4F46E5 indigo direction. Flat+very soft-depth, gentle overlap, no slabs, no full isometric/3D, no glossy/clay/toy, no mascot/person, no neon or independent palette. One idea, strong silhouette distinguishable at 96px, sparse secondary detail, ample transparent negative space; centered roughly 65% canvas, square true transparent PNG. Do not generate logo, wordmark, UI text, letters, digits, labels or watermark. Rounded line character related to Kavriva icon system. All category siblings same depth/saturation band.\nAsset ID: CAT-07\nSubject: General Ability / General Culture overview: a balanced frontal composition linking one analytical triangle/pattern module with one structured archive/region knowledge module, short restrained connector. One unified silhouette, not a grid of six tiny illustrations. No Education Sciences.",
+      "referenceRoles": "CAT01/03/04 A immutable style references"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-07",
+  "canonicalIllustrationDirection": "A — Geometric Editorial",
+  "approvedExplorations": ["CAT-01", "CAT-03", "CAT-04"],
+  "approvalScope": "Approved for Design Direction only; final category family remains Review",
+  "rejectedDirections": ["B", "C"],
+  "secondaryMotifs": "C node/connector/layered knowledge/subtle flow allowed only inside A grammar",
+  "finalProductionExport": "Pending",
+  "figma": "Pending",
+  "parallelAuthorization": "Tracks A–E after category family QA PASS; stop before Batch 15"
+}

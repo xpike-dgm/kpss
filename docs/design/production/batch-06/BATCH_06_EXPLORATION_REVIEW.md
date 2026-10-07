@@ -81,3 +81,6 @@ Transparent alpha doğrulandı; ince cutout/edge halo ve shadows production temi
 - `asset-registry.json`: güncel local 87 Asset ID kaydı; Figma registry değildir.
 
 Durum: **13 Approved for Design Direction**, **3 Review (Exploration)**, **71 Planned**. CAT-02/05/06/07 Planned kalır. Owner direction seçimi bekleniyor; Batch 07 ve parallel tracks başlamadı.
+
+## Owner Decision — 2026-10-07
+Owner selected A — Geometric Editorial as canonical illustration grammar. CAT-01/03/04 Direction A explorations are Approved for Design Direction. B/C are retained as Archive / Rejected Exploration; only C node/connector/knowledge-flow motifs may support A. B isometric/slab/spatial/material language is excluded. Final category family is a separate Review deliverable; final production export and Figma Pending. Category family QA PASS authorizes Tracks A–E, with a collective review stop before Batch 15.

@@ -1,10 +1,10 @@
 {
   "date": "2026-10-07",
-  "scope": "Current local Asset Registry — Batch 06 Exploration",
+  "scope": "Batch 06 category family; final production Review",
   "styleLockOwnerApproval": "Accepted for Design Direction",
-  "illustrationOwnerDirectionSelection": "Pending",
+  "illustrationOwnerDirectionSelection": "A — Geometric Editorial",
   "figma": "Pending",
-  "stopBeforeBatch": 7,
+  "stopBeforeBatch": 15,
   "assets": [
     {
       "assetId": "BRAND-01",
@@ -636,27 +636,33 @@
       ],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-01",
       "reviewFiles": [
-        "CAT-01__mathematics__direction-a__v01.png",
-        "CAT-01__mathematics__direction-b__v01.png",
-        "CAT-01__mathematics__direction-c__v01.png"
+        "assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png"
       ],
       "finalExportRef": null,
-      "productionPhase": "Exploration",
-      "ownerDirectionSelection": "Pending",
-      "nativeVector": false
+      "productionPhase": "Category Family Review",
+      "ownerDirectionSelection": "A — Geometric Editorial",
+      "nativeVector": false,
+      "designDirectionApproval": "Approved for Design Direction — exploration only",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "CAT-02",
       "name": "Türkçe Görsel Kartı",
-      "status": "Planned",
+      "status": "Review",
       "source": null,
       "version": null,
       "approvedBy": null,
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-02",
-      "reviewFiles": [],
-      "finalExportRef": null
+      "reviewFiles": [
+        "assets/categories/batch-06/family-review/CAT-02__turkish__canonical-a__v01.png"
+      ],
+      "finalExportRef": null,
+      "productionPhase": "Category Family Review",
+      "ownerDirectionSelection": "A — Geometric Editorial",
+      "designDirectionApproval": "Canonical A applied; owner family review Pending",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "CAT-03",
@@ -672,14 +678,14 @@
       ],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-03",
       "reviewFiles": [
-        "CAT-03__history__direction-a__v01.png",
-        "CAT-03__history__direction-b__v01.png",
-        "CAT-03__history__direction-c__v01.png"
+        "assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png"
       ],
       "finalExportRef": null,
-      "productionPhase": "Exploration",
-      "ownerDirectionSelection": "Pending",
-      "nativeVector": false
+      "productionPhase": "Category Family Review",
+      "ownerDirectionSelection": "A — Geometric Editorial",
+      "nativeVector": false,
+      "designDirectionApproval": "Approved for Design Direction — exploration only",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "CAT-04",
@@ -695,53 +701,71 @@
       ],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-04",
       "reviewFiles": [
-        "CAT-04__geography__direction-a__v01.png",
-        "CAT-04__geography__direction-b__v01.png",
-        "CAT-04__geography__direction-c__v01.png"
+        "assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png"
       ],
       "finalExportRef": null,
-      "productionPhase": "Exploration",
-      "ownerDirectionSelection": "Pending",
-      "nativeVector": false
+      "productionPhase": "Category Family Review",
+      "ownerDirectionSelection": "A — Geometric Editorial",
+      "nativeVector": false,
+      "designDirectionApproval": "Approved for Design Direction — exploration only",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "CAT-05",
       "name": "Vatandaşlık Görsel Kartı",
-      "status": "Planned",
+      "status": "Review",
       "source": null,
       "version": null,
       "approvedBy": null,
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-05",
-      "reviewFiles": [],
-      "finalExportRef": null
+      "reviewFiles": [
+        "assets/categories/batch-06/family-review/CAT-05__citizenship__canonical-a__v01.png"
+      ],
+      "finalExportRef": null,
+      "productionPhase": "Category Family Review",
+      "ownerDirectionSelection": "A — Geometric Editorial",
+      "designDirectionApproval": "Canonical A applied; owner family review Pending",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "CAT-06",
       "name": "Güncel Bilgiler Görsel Kartı",
-      "status": "Planned",
+      "status": "Review",
       "source": null,
       "version": null,
       "approvedBy": null,
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-06",
-      "reviewFiles": [],
-      "finalExportRef": null
+      "reviewFiles": [
+        "assets/categories/batch-06/family-review/CAT-06__current-affairs__canonical-a__v01.png"
+      ],
+      "finalExportRef": null,
+      "productionPhase": "Category Family Review",
+      "ownerDirectionSelection": "A — Geometric Editorial",
+      "designDirectionApproval": "Canonical A applied; owner family review Pending",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "CAT-07",
       "name": "Genel Yetenek / Genel Kültür Overview Görsel Kartı",
-      "status": "Planned",
+      "status": "Review",
       "source": null,
       "version": null,
       "approvedBy": null,
       "figma": "Pending",
       "exportFormats": [],
       "promptRef": "docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md#CAT-07",
-      "reviewFiles": [],
-      "finalExportRef": null
+      "reviewFiles": [
+        "assets/categories/batch-06/family-review/CAT-07__gy-gk-overview__canonical-a__v01.png"
+      ],
+      "finalExportRef": null,
+      "productionPhase": "Category Family Review",
+      "ownerDirectionSelection": "A — Geometric Editorial",
+      "designDirectionApproval": "Canonical A applied; owner family review Pending",
+      "finalProductionExport": "Pending"
     },
     {
       "assetId": "EMPTY-01",
