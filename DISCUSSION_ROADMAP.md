@@ -770,10 +770,21 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Domain satın alma/seçme işi sonraya bırakıldı; alınacağı zaman müsaitlik ve marka/tescil riski yeniden doğrulanacak.
    - ✅ **Marka / Ürün Kimliği tamamlandı.**
 
+
+30. ✅ **Asset Sistemi / Görsel Varlık Planı**
+   - ✅ Brand, app/PWA, icon, category, empty state, onboarding, gamification, AI, social, academic, marketing, share, admin ve motion asset aileleri tanımlandı.
+   - ✅ Canonical üretim prompt paketi `docs/design/KAVRIVA_KPSS_ASSET_PROMPT_PACK.md` altında oluşturuldu.
+   - ✅ Prompt Pack ile birebir eşleşen 87 Asset ID'lik üretim checklist'i oluşturuldu.
+   - ✅ Figma page/section/component/variable/naming yapısı planlandı.
+   - ✅ AI üretim süreci bağımlılık bazlı 22 batch'e ayrıldı.
+   - ✅ Style Anchor Pack, cross-system consistency audit ve production export/handoff kuralları tanımlandı.
+   - ✅ Asset üretimi 29. marka kimliği kararlarına bağlı tek design-system ailesi olarak yürütülecek.
+   - ✅ **Asset Sistemi / Görsel Varlık Planı tamamlandı.**
+
 ---
 
 ## Çalışma Prensibi
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-İlk 21 ana başlık sonrasında açılan post-audit turu tamamlanmış, ardından **29. Marka / Ürün Kimliği** de kesinleştirilmiştir. **1–29 başlığın tamamı kararlaştırılmıştır.** Bundan sonraki aşama kabul edilmiş planın uygulama/inşa sırasına dönüştürülmesi ve geliştirmedir.
+İlk 21 ana başlık sonrasında açılan post-audit turu tamamlanmış; ardından **29. Marka / Ürün Kimliği** ve **30. Asset Sistemi / Görsel Varlık Planı** kesinleştirilmiştir. **1–30 başlığın tamamı kararlaştırılmıştır.** Bundan sonraki aşama kabul edilmiş planın uygulama/inşa sırasına dönüştürülmesi ve geliştirmedir.
