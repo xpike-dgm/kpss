@@ -3034,5 +3034,31 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - **28. Data Retention / Compliance / Release Acceptance Criteria başlığı ürün mimarisi açısından tamamlanmıştır.**
 - **Post-audit planlama turu tamamlanmıştır; 1–28 ana başlık ürün mimarisi düzeyinde kararlaştırılmıştır.**
 
+
+## 51. Marka / Ürün Adı — kısmen kararlaştırıldı
+
+### Kabul edilen ürün adı
+- Ürünün kullanıcı-facing adı **Kavriva KPSS** olacaktır.
+- Yazım standardı ürün metinlerinde **Kavriva KPSS** şeklinde kullanılacaktır.
+- **Kavriva** ana marka adı olarak korunacaktır; KPSS ürünü bu marka altında ayrı ürün adıyla sunulacaktır.
+- Kullanıcı araması, uygulama/PWA adı, site başlığı ve benzeri yüzeylerde yalnız “Kavriva” yerine mümkün olduğunca **Kavriva KPSS** kullanılarak MotoBakım ürünüyle karışıklık azaltılacaktır.
+
+### Domain
+- Domain satın alma/seçme işlemi şu aşamada ürün planının parçası değildir ve sonraya bırakılmıştır.
+- Domain alınacağı zaman müsaitlik ve marka/tescil riski yeniden doğrulanacaktır.
+
+### Açık marka kararları
+- Kavriva KPSS için logo varyantı / wordmark düzeni
+- ürünün accent renk sistemi
+- tipografi
+- slogan
+- PWA/app icon uygulaması
+- temel marka tonu ve landing/SEO metinleri
+henüz kesinleştirilmemiştir.
+
+### Durum
+- **Ürün adı kesinleşmiştir: Kavriva KPSS.**
+- Marka kimliği başlığı diğer görsel ve iletişim kararları tamamlanana kadar açık kalacaktır.
+
 ---
-Durum: Ürün planlama ve post-audit turu tamamlandı. Henüz geliştirmeye başlanmadı.
+Durum: Ürün mimarisi ve post-audit turu tamamlandı; marka kimliği planlaması devam ediyor. Henüz geliştirmeye başlanmadı.
