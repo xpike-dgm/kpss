@@ -3035,30 +3035,76 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - **Post-audit planlama turu tamamlanmıştır; 1–28 ana başlık ürün mimarisi düzeyinde kararlaştırılmıştır.**
 
 
-## 51. Marka / Ürün Adı — kısmen kararlaştırıldı
+## 51. Marka / Ürün Kimliği — kararlaştırıldı
 
-### Kabul edilen ürün adı
-- Ürünün kullanıcı-facing adı **Kavriva KPSS** olacaktır.
+### Marka mimarisi
+- Ana marka **Kavriva** olarak korunacaktır.
+- KPSS ürününün kullanıcı-facing adı **Kavriva KPSS** olacaktır.
 - Yazım standardı ürün metinlerinde **Kavriva KPSS** şeklinde kullanılacaktır.
-- **Kavriva** ana marka adı olarak korunacaktır; KPSS ürünü bu marka altında ayrı ürün adıyla sunulacaktır.
-- Kullanıcı araması, uygulama/PWA adı, site başlığı ve benzeri yüzeylerde yalnız “Kavriva” yerine mümkün olduğunca **Kavriva KPSS** kullanılarak MotoBakım ürünüyle karışıklık azaltılacaktır.
+- MotoBakım ve KPSS ürünlerinin yalnız “Kavriva” adıyla birbirine karışmaması için uygulama/PWA adı, site başlığı, arama sonucu başlığı ve benzeri kullanıcı-facing yüzeylerde mümkün olduğunca tam ürün adı kullanılacaktır.
+- Marka mimarisi **master brand + product** yaklaşımındadır: Kavriva ana marka, KPSS ürün adıdır.
+
+### Logo ve sembol
+- Mevcut Kavriva geometrik **K** sembolü ana marka sembolü olarak aynen korunacaktır.
+- KPSS için ayrı kitap, kalem, mezuniyet kepi veya benzeri jenerik eğitim sembolü eklenmeyecektir.
+- Tercih edilen Kavriva KPSS wordmark düzeni:
+  - ana satırda mevcut **K sembolü + Kavriva**
+  - ürün tanımlayıcısı olarak daha küçük **KPSS**
+- Kavriva wordmark ana marka ağırlığını koruyacak; KPSS ikincil ürün etiketi olarak konumlanacaktır.
+
+### Ürünler arası görsel ayrışma
+- Kavriva ürünleri aynı sembolü paylaşacak ancak ürün accent rengiyle birbirinden ayrışacaktır.
+- MotoBakım'ın mevcut kimliği zorunlu olarak değiştirilmez.
+- **Kavriva KPSS** için ana accent yönü **indigo / elektrik mavisi** olacaktır.
+- Ana UI çoğunlukla beyaz, koyu gri ve açık nötr yüzeylerden oluşacak; indigo ana aksiyon ve marka vurgularında kullanılacaktır.
+- Doğru/başarı, dikkat ve hata renkleri semantik olarak ayrı kullanılacaktır; marka accent'i bu anlam renklerinin yerine geçmeyecektir.
+- Kesin hex/token değerleri design-system uygulama aşamasında erişilebilirlik/kontrast testleriyle sabitlenecektir.
+
+### PWA / app icon
+- Kavriva KPSS uygulama ikonunda mevcut geometrik **K** sembolü korunacaktır.
+- KPSS ikonu, diğer Kavriva ürünlerinden ayırt edilebilmek için **indigo zemin + beyaz K sembolü** yönünü kullanacaktır.
+- Aynı sembol ailesi marka bütünlüğü, ürün rengi ise uygulama ayrışması sağlayacaktır.
+
+### Tipografi
+- Başlık/brand display tarafında **Manrope** kullanılacaktır.
+- UI ve uzun metin tarafında **Inter** kullanılacaktır.
+- Türkçe karakter kalitesi, okunabilirlik ve erişilebilirlik önceliklidir.
+
+### Slogan
+- Ana slogan:
+  **“Sıradaki doğru adım.”**
+- Landing kullanımında gerektiğinde daha açıklayıcı varyant:
+  **“KPSS hazırlığında sıradaki doğru adım.”**
+
+### İmza ürün özelliği
+- Academic Planner'ın ana kullanıcı-facing yüzeyi **Sıradaki Adım** olarak adlandırılacaktır.
+- Dashboard'un en önemli akademik CTA'sı kullanıcının o anda yapabileceği en yararlı çalışmayı bu adla sunacaktır.
+- “Sıradaki Adım”, Kavriva KPSS markasının ürün vaadiyle doğrudan bağlantılı imza özelliği olacaktır.
+
+### Marka tonu
+- Marka kişiliği: **modern, sakin, güvenilir, veri odaklı**.
+- Ürün çocukça, aşırı oyunlaştırılmış veya klasik dershane estetiğine kaymayacaktır.
+- Dil kullanıcıyı suçlamayacak, korkutmayacak veya gereksiz baskı yaratmayacaktır.
+- Marka “daha çok çalış” diye bağırmak yerine kullanıcının verisini açıklayıp yararlı sonraki adımı önerecektir.
+- Gamification akademik yönlendirmenin önüne geçmeyecektir.
+
+### Temel landing mesajı
+- Ana başlık: **Kavriva KPSS**
+- Ana slogan: **Sıradaki doğru adım.**
+- Başlangıç açıklama metni:
+  **“Seviyeni tanır, eksiklerini takip eder ve KPSS hazırlığında ne çalışman gerektiğini belirler.”**
+- “Garanti atama”, “AI ile kesin başarı” veya doğrulanamayacak başarı vaatleri marka iletişiminde kullanılmayacaktır.
 
 ### Domain
-- Domain satın alma/seçme işlemi şu aşamada ürün planının parçası değildir ve sonraya bırakılmıştır.
-- Domain alınacağı zaman müsaitlik ve marka/tescil riski yeniden doğrulanacaktır.
+- Domain satın alma/seçme işlemi şu aşamada ertelenmiştir.
+- Domain alınacağı zaman müsaitlik, mevcut kullanım ve marka/tescil riski yeniden doğrulanacaktır.
+- Domain kararının ertelenmesi marka kimliği başlığının tamamlanmasını engellemez.
 
-### Açık marka kararları
-- Kavriva KPSS için logo varyantı / wordmark düzeni
-- ürünün accent renk sistemi
-- tipografi
-- slogan
-- PWA/app icon uygulaması
-- temel marka tonu ve landing/SEO metinleri
-henüz kesinleştirilmemiştir.
-
-### Durum
-- **Ürün adı kesinleşmiştir: Kavriva KPSS.**
-- Marka kimliği başlığı diğer görsel ve iletişim kararları tamamlanana kadar açık kalacaktır.
+### Ana karar
+- **Kavriva** ana marka, **Kavriva KPSS** KPSS ürünüdür.
+- Mevcut Kavriva sembolü korunur; ürünler accent rengi ve ürün adıyla ayrışır.
+- Kavriva KPSS'nin görsel ve iletişim omurgası indigo accent, Manrope + Inter, “Sıradaki doğru adım.” sloganı ve “Sıradaki Adım” imza özelliği üzerine kurulacaktır.
+- **29. Marka / Ürün Kimliği başlığı tamamlanmıştır.**
 
 ---
-Durum: Ürün mimarisi ve post-audit turu tamamlandı; marka kimliği planlaması devam ediyor. Henüz geliştirmeye başlanmadı.
+Durum: Ürün mimarisi, post-audit ve marka kimliği planlaması tamamlandı. Henüz geliştirmeye başlanmadı.
