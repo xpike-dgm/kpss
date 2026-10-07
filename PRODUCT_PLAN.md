@@ -2569,5 +2569,185 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Rights/telif durumu izlenir ve uyarılır; ancak **Admin açık override ile her kaynak/içerik learner-facing Active yapılabilir**.
 - **26. İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri ürün mimarisi açısından tamamlanmıştır.**
 
+
+## 49. Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler — kararlaştırıldı
+
+### Sosyal ana ilke
+- Sosyal ilişki, takım, oda, düello ve moderasyon değişiklikleri akademik mastery/retention/evidence geçmişini bozmayacaktır.
+- Sosyal ceza ile akademik ceza ayrıdır; moderasyon işlemleri mastery, XP geçmişi veya çalışma kayıtlarını doğrudan değiştirmez.
+
+### Arkadaşlık / block / mute
+- Arkadaşlık yaşam döngüsü en az **Pending → Accepted → Removed** durumlarını ve ayrı **Blocked** durumunu destekleyecektir.
+- Arkadaşlıktan çıkarma geçmiş ortak çalışma/düello/takım kayıtlarını silmez.
+- İstek geri çekilebilir/reddedilebilir; tekrar istek spam'ine rate limit uygulanır.
+- **Block**, arkadaşlıktan daha güçlüdür: aktif ilişkiyi ve bekleyen doğrudan davetleri sonlandırır, yeni doğrudan etkileşimi keser.
+- **Mute**, Block değildir; ilişki devam edebilir.
+- Engellenen kullanıcı doğrudan arkadaşlık isteği, düello/oda daveti, tebrik ve reaksiyon gönderemez.
+- Ortak takım/oda geçmişi sırf block nedeniyle silinmez; doğrudan etkileşimler gizlenir/sınırlandırılır.
+
+### Takım yaşam döngüsü
+- Kullanıcı sezon ortasında takımdan ayrılabilir.
+- Önceki takımda kazanılmış takım katkısı yeni takıma **taşınmaz**; eski takım geçmişinde kalır.
+- Takım değiştirmede başlangıç politikası **7 günlük cooldown** olacaktır; versioned config ile ayarlanabilir.
+- Lider ayrılmadan önce liderliği devredebilir.
+- Beklenmeyen lider kaybında Officer varsa uygun aktif Officer, yoksa deterministik uygun aktif üye yeni lider olabilir.
+- Takım boşalırsa kapanabilir; eski sezon sonuçları ve geçmiş arşivlenir.
+- Takımın dağılması kişisel XP, achievement, mastery veya bireysel sezon geçmişini silmez.
+
+### Çalışma odaları
+- Oda sahibinin bağlantısının kopması odayı otomatik yok etmeyecektir.
+- Oda sahibi ayrılırsa uygun başka üyeye sahiplik/devam yetkisi aktarılabilir.
+- Oda tamamen boşaldığında geçici oturum sona erebilir.
+- Kalıcı takım odaları ile geçici çalışma odaları farklı lifecycle kullanabilir.
+- Engelli kullanıcılar aynı ortak odada bulunmak zorunda kalırsa doğrudan mesaj/reaksiyon/mention etkileşimleri gizlenir veya engellenir; moderasyon kayıtları korunabilir.
+- Mesaj saklama süresi 28. Data Retention başlığında kesinleşecektir.
+
+### Düello lifecycle
+- Düello durumu en az **Invitation → Accepted → Preparing → Active → Finished / Forfeit / Voided** akışını destekleyecektir.
+- Düello server-authoritative olacaktır; soru, cevap, süre ve skor server tarafından doğrulanacaktır.
+- Başlangıç reconnect window politikası **60 saniye** olacaktır; config ile ayarlanabilir.
+- Bağlantı geri gelirse güvenli resume yapılır; pencere aşılırsa Forfeit uygulanabilir.
+- Platform/genel servis arızasında kullanıcı mağlubiyet almak yerine maç **Voided** olabilir.
+- Kabul edip hiç gelmeme/no-show için kısa join süresi sonrası Forfeit ve tekrar eden kötüye kullanımda geçici cooldown uygulanabilir.
+- Eşitlik sırası **doğruluk → toplam geçerli cevap süresi** olacaktır; bunlar da eşitse beraberlik kabul edilir.
+- Hatalı/invalid soru iki taraftan da skor dışı bırakılır; yeterince çok invalid soru varsa tüm maç Voided olabilir.
+- Rematch yeni question snapshot oluşturur ve mümkün olduğunca önceki/near-duplicate soruları tekrar kullanmaz.
+- Düello 24. başlıktaki karara uygun olarak doğrudan mastery/readiness üretmez.
+
+### Challenge
+- Challenge yaşam döngüsü **Pending → Accepted → Active → Completed / Declined / Expired / Cancelled** olacaktır.
+- Kabul edilmemiş veya süresi dolmuş challenge akademik ceza üretmez.
+- Block sonrası aktif olmayan challenge iptal edilebilir.
+
+### Moderasyon
+- Kullanıcı mesaj, oda, takım içeriği veya sosyal profili raporlayabilir.
+- Moderasyon kademeleri uyarı, iletişim kısıtı, oda/düello kısıtı, geçici sosyal uzaklaştırma ve gerektiğinde hesap düzeyi işlem içerebilir.
+- Moderasyon işlemleri audit log'a yazılır.
+- Akademik geçmiş moderasyon nedeniyle değiştirilmez.
+
+### Kullanıcı adı
+- Başlangıç politikası: kullanıcı adı **30 günde bir** değiştirilebilir.
+- Eski kullanıcı adı **30 gün** yeniden kullanıma kapalı/rezerve kalır.
+- Süreler versioned config olabilir.
+- Arkadaşlık ve sosyal ilişkiler username değil stable internal user ID ile tutulur.
+
+### AI conversation türleri
+- AI thread'leri bağlamlı olacaktır; örneğin Question Teacher, Topic Teacher, Wrong Review ve Coach Session.
+- Thread ilgili question/content version, topic, verified solution veya planner state gibi bağlam referanslarını taşıyabilir.
+- AI conversation evrensel ve sınırsız kalıcı hafıza olarak kullanılmayacaktır.
+
+### AI memory ve kişiselleştirme
+- Varsayılan **Yalnız mevcut bağlam** politikası korunacaktır.
+- Yeni thread geçmişteki tüm konuşmaları otomatik okumaz.
+- Kullanıcı **Çalışma geçmişimle kişiselleştir** seçeneğini açarsa ilgili akademik özetler kontrollü biçimde bağlama eklenebilir.
+- AI'nın akademik karar yetkisi yoktur.
+
+### AI sohbet silme / export
+- Kullanıcı tek AI thread'ini silebilecektir.
+- Kullanıcı **Tüm AI sohbet geçmişimi sil** eylemine sahip olacaktır.
+- Silinen thread normal kullanıcı yüzeyinde görünmez; fiziksel retention/backup ayrıntısı 28'de kesinleşir.
+- Saklanan AI sohbetleri kullanıcı veri export'una dahil edilebilir.
+
+### AI cevabını nota dönüştürme
+- Kullanıcı AI açıklamasını **Nota Kaydet** yapabilir.
+- Kaydedilen öğe kullanıcı notudur; doğrulanmış akademik çözüm statüsü kazanmaz.
+- Gerekirse **AI tarafından oluşturuldu** provenance/metadata'sı korunur.
+
+### AI cevap izlenebilirliği
+- Kalite/debug için mümkün olduğunca provider, model, quality tier, prompt version, AI Gateway version, ilgili content/question version ve üretim zamanı kaydedilecektir.
+- Model/prompt değişince eski cevap sessizce yeniden üretilmez; geçmiş mesaj kendi üretim bağlamını korur.
+
+### Verified Solution otoritesi
+- **Verified Solution > AI Teacher** otorite sırası değişmez.
+- AI doğrulanmış çözümle çelişirse akademik state AI'a göre değişmez.
+- Uygun kullanıcı uyarısı ve otomatik **AI Quality Event** üretilebilir.
+
+### AI cevap raporlama
+- Kullanıcı AI yanıtını yanlış bilgi, anlaşılmaz, ilgisiz, verified solution ile çelişiyor vb. nedenlerle raporlayabilir.
+- Rapor AI Quality Queue'ya provider/model/prompt/version bağlamıyla gider.
+
+### AI kapatma ve outage
+- AI kapatılırsa yeni AI request gönderilmez; core akademik sistem çalışmaya devam eder.
+- Saklanan eski AI konuşmaları kullanıcı isterse görüntülenebilir/silinebilir.
+- Provider outage çekirdek ürünü durdurmaz; uygun fallback varsa AI Gateway kullanabilir, yoksa AI özelliği geçici unavailable olur.
+- Verified çözüm, planner, mastery, test, retention ve gamification AI kesintisinden bağımsızdır.
+
+### AI Koç ↔ gamification
+- AI Koç gamification durumunu okuyabilir ve motivasyon/bağlam olarak açıklayabilir.
+- **Academic Planner → AI explanation → Gamification framing** önceliği korunacaktır.
+- AI Koç görev/streak/sezon uğruna planner'ın akademik önerisini değiştiremez.
+
+### AI kritik write yasağı
+- AI doğrudan mastery, retention, readiness, XP, achievement, season score, question approval veya hesap güvenliği state'i yazamaz.
+- AI yalnız öneri/structured output üretir; deterministik backend izin verilen işlemleri doğrular.
+
+### Yardım & Geri Bildirim Merkezi
+- Ayrı bir **Yardım & Geri Bildirim Merkezi** bulunacaktır.
+- Ana kategoriler en az hesap/giriş, sync/offline, soru-içerik hatası, AI yanıtı, sosyal/moderasyon, teknik hata ve öneri/geri bildirim ihtiyaçlarını kapsar.
+- Destek talebi ticket ID, durum, oluşturma ve son güncelleme bilgisini taşıyacaktır.
+- Örnek ticket akışı: **Yeni → İnceleniyor → Kullanıcıdan Bilgi Bekleniyor → Çözüldü**.
+- Uygun durumda kullanıcı çözülen talebi yeniden açabilir.
+
+### Güvenli diagnostics
+- Teknik destek talebine app version, browser/device, correlation ID, sync state ve güvenli hata kodları gibi tanı verileri eklenebilir.
+- Uygun yerde kullanıcıya **Teknik tanı verilerini ekle** seçeneği gösterilir.
+- Password, API key ve session token ticket'a eklenmez.
+
+### Support View
+- Admin/support için read-only Support View varsayılan yaklaşım olacaktır.
+- İlk çözüm yöntemi impersonation değildir.
+- Support View gerekli hesap/sync/event/test/content-version durumlarını teşhis için gösterebilir.
+- Veri değişikliği gerekiyorsa ayrı yetkili ve audit edilen operasyon kullanılır.
+
+### Sistem Durumu
+- Yardım Merkezinde uygun bir **Sistem Durumu** görünümü bulunabilir.
+- AI provider, push, worker veya başka servis arızaları kullanıcıya genel sistem sorunu olarak gösterilebilir; gereksiz yerel troubleshooting azaltılır.
+
+### Kaydedilenler Merkezi
+- Kullanıcı için birleşik **Kaydedilenler** alanı olacaktır.
+- En az şu koleksiyon türlerini destekleyecektir:
+  - Sorular
+  - Öğrenme içerikleri
+  - Notlar
+  - Önemli Yanlışlar
+  - Güncel Bilgiler
+- Arama ve ders/konu/tarih/tür filtreleri bulunacaktır.
+- Kullanıcı basit özel koleksiyonlar/etiketler oluşturabilir; karmaşık Notion-benzeri yapı hedeflenmez.
+
+### Kaydetme ve akademik evidence
+- Bir içeriği **Kaydet** demek akademik evidence üretmez.
+- Kaydedileni açmak da mastery üretmez.
+- **Kaydedilenlerden Test Oluştur** normal question eligibility ve 24. evidence kurallarına tabidir; repeat exposure düşük ağırlık davranışı korunur.
+
+### Aktif testte bookmark
+- Normal testte kullanıcı soruyu kaydedebilir; bu işlem cevabı/çözümü açmaz.
+- Gerçek Sınav Modunda bookmark yapılabilirse sınav bitmeden çözüm veya dış içerik açılmaz.
+
+### Kaydedilen içerik değişikliği
+- Kaydedilmiş soru Quarantine olursa kullanıcıya kalite incelemesi durumu gösterilebilir ve yeni practice seçiminde kullanılmaz.
+- Stable content ID korunur; kullanıcı normalde en güncel geçerli version'ı açar.
+- Eski version'a bağlı not varsa “içerik güncellendi” uyarısı gösterilebilir.
+- Özellikle mevzuat/Güncel Bilgilerde version farkı açıkça izlenmelidir.
+
+### Offline Kaydedilenler
+- Kaydetmek otomatik offline indirme değildir.
+- Kullanıcı ayrıca **Çevrimdışı Kullan** diyerek uygun içeriği local pakete alabilir.
+
+### Level 100 sonrası — kesin karar
+- **Player Level 100 hard cap olacaktır.**
+- **Prestige sistemi olmayacaktır.**
+- Level 100 **Maksimum Seviye** olarak kalır; resetlenmez ve sezon sonunda geri alınmaz.
+- Level 100 anlamlı achievement, Special Moment, unvan veya kozmetik açabilir.
+- Level 100 sonrası XP event'leri ledger/istatistik/anti-farm amaçlı işlenmeye devam edebilir ancak görünür level artmaz.
+- Lifetime XP istenirse ikincil istatistik olabilir; ana sonsuz grind metriği olmayacaktır.
+- Uzun vadeli ilerleme Level 100 sonrasında **Season + Journey + Achievements + Personal Records + Collections + Special Moments** üzerinden devam eder.
+- Level 100 akademik veya rekabetçi avantaj sağlamaz.
+
+### Ana karar
+- Sosyal edge-case'ler geçmişi bozmak yerine ilişki/üyelik state'lerini değiştirir.
+- AI lifecycle kullanıcı kontrolü, izlenebilirlik ve verified content otoritesi üzerine kuruludur.
+- Yardım/Support ve Kaydedilenler kullanıcı deneyiminin kalıcı ürün yüzeyleridir.
+- **27. Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler başlığı ürün mimarisi açısından tamamlanmıştır.**
+
 ---
 Durum: Ürün planlama aşaması devam ediyor. Henüz geliştirmeye başlanmadı.
