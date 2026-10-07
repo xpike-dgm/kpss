@@ -150,4 +150,3 @@ PRODUCT_PLAN, accepted owner decisions ve canonical Figma structure korundu. Aca
 Canonical çelişki veya yeni Owner marka kararı gerektiren blocker bulunmadı. Approved foundation yeniden kurulmadı. Ek dört selected-answer case ve ayrı Study submit/result state'leri mevcut kabul edilmiş davranışı açıklamak için türetildi; yeni ürün özelliği değildir. Compact filter, uzun metin davranışı ve state override semantiği native düzeltmedir.
 
 Yalnız Phase 3 tamamlandı ve **Review**'a getirildi; kendi kendine Approved verilmedi. Kod/React/Next.js/database, marketing ve sonraki phase/batch üretimi yapılmadı. **Bu checkpoint'te duruldu.**
-
