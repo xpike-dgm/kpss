@@ -1,0 +1,99 @@
+{
+  "source": {
+    "sha256": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
+    "width": 1448,
+    "height": 1086
+  },
+  "crops": {
+    "master": {
+      "left": 164,
+      "top": 245,
+      "width": 1132,
+      "height": 341
+    },
+    "symbol": {
+      "left": 164,
+      "top": 245,
+      "width": 346,
+      "height": 341
+    }
+  },
+  "measuredBounds": {
+    "master": {
+      "left": 167,
+      "top": 248,
+      "width": 1126,
+      "height": 335
+    },
+    "symbol": {
+      "left": 167,
+      "top": 248,
+      "width": 340,
+      "height": 335
+    }
+  },
+  "nativeCropPixelEquality": {
+    "master": true,
+    "symbol": true
+  },
+  "pixelHashes": {
+    "master": "c94898adb4999e4caf875265a676b60ed6425a34ea49d94c0fdbdcb37a047d4a",
+    "symbol": "1fee0b3886fba4b965bf5061b09641176ac3d8c9b5420a8004273a1523973ff0"
+  },
+  "geometryOperations": {
+    "trace": false,
+    "redraw": false,
+    "simplify": false,
+    "nonUniformScale": false,
+    "aiRegeneration": false
+  },
+  "centroid": {
+    "x": 158.62421233226172,
+    "y": 163.8362922356132
+  },
+  "proposedClearSpace": {
+    "unit": "K height / 4",
+    "sourcePixels": 83.75,
+    "status": "Review proposal"
+  },
+  "proposedOpticalOffset": {
+    "x": 0,
+    "y": 0,
+    "status": "Review proposal; bbox centered"
+  },
+  "backgroundPresentation": {
+    "light": "original pixels",
+    "dark": "channel inversion; no spatial transform",
+    "indigo": "white luminance-mask presentation; no threshold, no spatial transform"
+  },
+  "fonts": [
+    "Manrope",
+    "Inter"
+  ],
+  "svgClassification": "Editable presentation container with embedded PNG; NOT vector logo",
+  "figma": "Pending",
+  "approvedBy": null,
+  "status": "Review",
+  "files": [
+    "BRAND-01__kavriva-master-logo__light-reference__v01.svg",
+    "BRAND-01__kavriva-master-logo__light-reference__v01.png",
+    "BRAND-01__kavriva-master-logo__dark-reference__v01.svg",
+    "BRAND-01__kavriva-master-logo__dark-reference__v01.png",
+    "BRAND-05__kavriva-k-symbol__light-reference__v01.svg",
+    "BRAND-05__kavriva-k-symbol__light-reference__v01.png",
+    "BRAND-05__kavriva-k-symbol__dark-reference__v01.svg",
+    "BRAND-05__kavriva-k-symbol__dark-reference__v01.png",
+    "BRAND-05__kavriva-k-symbol__indigo-reference__v01.svg",
+    "BRAND-05__kavriva-k-symbol__indigo-reference__v01.png",
+    "BRAND-01__kavriva-master-logo__review-board__v01.svg",
+    "BRAND-01__kavriva-master-logo__review-board__v01.png",
+    "BRAND-01__kavriva-master-logo__small-size-review__v01.svg",
+    "BRAND-01__kavriva-master-logo__small-size-review__v01.png",
+    "BRAND-05__kavriva-k-symbol__review-board__v01.svg",
+    "BRAND-05__kavriva-k-symbol__review-board__v01.png",
+    "BRAND-06__master-brand-calibration__usage-board__v01.svg",
+    "BRAND-06__master-brand-calibration__usage-board__v01.png",
+    "BRAND-01__kavriva-master-logo__reference-crop__v01.png",
+    "BRAND-05__kavriva-k-symbol__reference-crop__v01.png"
+  ]
+}

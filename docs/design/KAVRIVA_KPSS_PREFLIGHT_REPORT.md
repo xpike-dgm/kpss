@@ -43,3 +43,9 @@ Yalnız BRAND-01, BRAND-05, BRAND-06. Master logo/symbol presentation ve usage b
 Tekrarlanabilir denetim: `docs/design/production/batch-01/preflight.cjs`.
 Makine kanıtı: `docs/design/production/batch-01/preflight-evidence.json`.
 Önceki local rapor bu güncel raporla değiştirilmiştir.
+
+## Batch 01 inceleme teslimi
+
+BRAND-01 / BRAND-05 / BRAND-06 raster-reference sunumları hazırlandı ve consistency QA sonrasında Review'a taşındı. Diğer 84 asset Planned. Detaylı ayrı değerlendirmeler: `docs/design/production/batch-01/BATCH_01_REVIEW.md`.
+
+K geometrisi yeniden çizilmedi. Kaynak crop'lar piksel düzeyinde aynı; dark RGB terslemesinde maksimum kanal hatası 0. Editable SVG sunum dosyaları PNG içerir ve gerçek vektör logo source değildir. Vektör kaynak ve Figma native handoff Pending. Approved/Exported işaretlenmedi; Batch 02'ye geçilmedi.

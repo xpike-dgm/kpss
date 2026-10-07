@@ -33,12 +33,12 @@ Bir asset yalnız görsel olarak güzel olduğu için tamamlanmış sayılmaz. F
 
 | Asset ID | Asset | Grup | Durum | Zorunlu çıktı | Varyant / state | Marka review | Teknik review | Figma | Final export | Not |
 |---|---|---|---|---|---|---|---|---|---|---|
-| BRAND-01 | Kavriva Ana Marka Logosu | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
+| BRAND-01 | Kavriva Ana Marka Logosu | Brand Core | 🟦 Review | SVG + PNG/WebP | light / dark / mono where applicable | 🟦 Owner review pending | Raster QA passed; vector source needed | Pending | ⬜ | Batch 01 v01: native crop + light/dark + 160/240/320px review. SVG is raster-embedded presentation, not vector logo. See production/batch-01/BATCH_01_REVIEW.md. |
 | BRAND-02 | Kavriva KPSS Ana Ürün Logosu | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | BRAND-03 | Kavriva KPSS Yatay Logo Varyantı | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | BRAND-04 | Kavriva KPSS Dikey / Stacked Logo Varyantı | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
-| BRAND-05 | Sadece K Sembolü | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
-| BRAND-06 | Kavriva Master Brand Kalibrasyon / Kullanım Kartı | Brand Core | ⬜ Planned | SVG + PNG/WebP | light / dark / mono where applicable | ⬜ | ⬜ | ⬜ | ⬜ |  |
+| BRAND-05 | Sadece K Sembolü | Brand Core | 🟦 Review | SVG + PNG/WebP | light / dark / mono where applicable | 🟦 Owner review pending | Raster QA passed; vector source needed | Pending | ⬜ | Batch 01 v01: same K source; light/dark/indigo reference + 16/24/32/48/64px review. 16px marginal; 24px+ proposed. Not an app icon or favicon export. |
+| BRAND-06 | Kavriva Master Brand Kalibrasyon / Kullanım Kartı | Brand Core | 🟦 Review | SVG + PNG/WebP | light / dark / mono where applicable | 🟦 Owner review pending | Presentation QA passed; logo vector Pending | Pending | ⬜ | Batch 01 v01 master-only usage board; no KPSS lockup/title. Clear space H/4 and optical offset 0 are unapproved proposals. SVG text editable; native Figma transfer Pending. |
 | APP-01 | Kavriva KPSS App Icon | App / PWA | ⬜ Planned | SVG master + PNG exports | main / maskable / small-size | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | APP-02 | Maskable PWA Icon | App / PWA | ⬜ Planned | SVG master + PNG exports | main / maskable / small-size | ⬜ | ⬜ | ⬜ | ⬜ |  |
 | APP-03 | Favicon | App / PWA | ⬜ Planned | SVG master + PNG exports | main / maskable / small-size | ⬜ | ⬜ | ⬜ | ⬜ |  |

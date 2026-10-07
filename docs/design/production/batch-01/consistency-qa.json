@@ -1,0 +1,148 @@
+{
+  "sourceHashMatches": true,
+  "nativeCropEquality": {
+    "master": true,
+    "symbol": true
+  },
+  "exportFiles": [
+    {
+      "name": "BRAND-01__kavriva-master-logo__light-reference__v01.svg",
+      "sha256": "fa55f238749b532da2909e22270b4e2e0837a6f0acc3810e4ee32a624edd21c9",
+      "classification": "raster-embedded presentation SVG",
+      "nativeVectorLogo": false
+    },
+    {
+      "name": "BRAND-01__kavriva-master-logo__light-reference__v01.png",
+      "width": 1300,
+      "height": 509,
+      "sha256": "48d30ac074ae0d5cc6b4d8ed23df39ea833f7ea5a892e89323e32bca0aff4d82"
+    },
+    {
+      "name": "BRAND-01__kavriva-master-logo__dark-reference__v01.svg",
+      "sha256": "b4df9eb7bb0f1bbeb538ee76a8d57608651e86238cd1dbbe81aaa0531258f075",
+      "classification": "raster-embedded presentation SVG",
+      "nativeVectorLogo": false
+    },
+    {
+      "name": "BRAND-01__kavriva-master-logo__dark-reference__v01.png",
+      "width": 1300,
+      "height": 509,
+      "sha256": "e96dc9d916464c73d2d4d30044bdc3917c26cdda5ca68f16b204de9bc19ba0d7"
+    },
+    {
+      "name": "BRAND-05__kavriva-k-symbol__light-reference__v01.svg",
+      "sha256": "ae5ca7be8f2982239dd3c6e26268fd1a336800a3f3e64329ad05ff014a34ad70",
+      "classification": "raster-embedded presentation SVG",
+      "nativeVectorLogo": false
+    },
+    {
+      "name": "BRAND-05__kavriva-k-symbol__light-reference__v01.png",
+      "width": 514,
+      "height": 509,
+      "sha256": "6515f408011c6fb3f2d63a7ddb581b850223580d648a8efc15ba32b674f7447a"
+    },
+    {
+      "name": "BRAND-05__kavriva-k-symbol__dark-reference__v01.svg",
+      "sha256": "735adfd4672a65b13aa29ecce2e0410fd0cd17f4d33140f34e61bb992521a6da",
+      "classification": "raster-embedded presentation SVG",
+      "nativeVectorLogo": false
+    },
+    {
+      "name": "BRAND-05__kavriva-k-symbol__dark-reference__v01.png",
+      "width": 514,
+      "height": 509,
+      "sha256": "27ce68964d6c9bfcba1dc5b92a7b48965ae5d955505f8df108bd66286c98e3bd"
+    },
+    {
+      "name": "BRAND-05__kavriva-k-symbol__indigo-reference__v01.svg",
+      "sha256": "d76c7da177a37b94e2004130b3063d92fdbacdd44f8b9623c90a38a10aedff9c",
+      "classification": "raster-embedded presentation SVG",
+      "nativeVectorLogo": false
+    },
+    {
+      "name": "BRAND-05__kavriva-k-symbol__indigo-reference__v01.png",
+      "width": 514,
+      "height": 509,
+      "sha256": "c4831ab016a7079dd07698e555bdd3509f27e2dbc4594e723a2c0b220a20b26e"
+    },
+    {
+      "name": "BRAND-01__kavriva-master-logo__review-board__v01.svg",
+      "sha256": "efe1656353978bc840d713b42f87bf75c697ba21d4170efc7aed0af840396a82",
+      "classification": "raster-embedded presentation SVG",
+      "nativeVectorLogo": false
+    },
+    {
+      "name": "BRAND-01__kavriva-master-logo__review-board__v01.png",
+      "width": 1600,
+      "height": 1040,
+      "sha256": "ee4f056dd95d6c943bd30087afd1d7cc5cb7a19651d583d6b471e233ae38cae0"
+    },
+    {
+      "name": "BRAND-01__kavriva-master-logo__small-size-review__v01.svg",
+      "sha256": "1f30826c6a76ed4af61874716910a42554f8b36b3672274b8920aafef3954aca",
+      "classification": "raster-embedded presentation SVG",
+      "nativeVectorLogo": false
+    },
+    {
+      "name": "BRAND-01__kavriva-master-logo__small-size-review__v01.png",
+      "width": 1600,
+      "height": 1040,
+      "sha256": "e01a3052517e8420cd7661a578f229362f899ef6c4742a94f91e33491f8b284c"
+    },
+    {
+      "name": "BRAND-05__kavriva-k-symbol__review-board__v01.svg",
+      "sha256": "f24bc02b7140bfd2317b421065e2a86fcbf061eac563291dd5514547736f7863",
+      "classification": "raster-embedded presentation SVG",
+      "nativeVectorLogo": false
+    },
+    {
+      "name": "BRAND-05__kavriva-k-symbol__review-board__v01.png",
+      "width": 1600,
+      "height": 1040,
+      "sha256": "b9fad044ab4b3bff5da4e10b671c37297a7d162b4f5dae5be67f1d52827cbad9"
+    },
+    {
+      "name": "BRAND-06__master-brand-calibration__usage-board__v01.svg",
+      "sha256": "3dcd126e756b788cd4fefd4cf30f742cb522e4e1a6c327cf4761ef0e5519e4a7",
+      "classification": "raster-embedded presentation SVG",
+      "nativeVectorLogo": false
+    },
+    {
+      "name": "BRAND-06__master-brand-calibration__usage-board__v01.png",
+      "width": 1600,
+      "height": 1400,
+      "sha256": "6eaa8b413dab1d694e2409d564c1147e7b54b01bd22dffca3fe231cb882ba473"
+    },
+    {
+      "name": "BRAND-01__kavriva-master-logo__reference-crop__v01.png",
+      "width": 1132,
+      "height": 341,
+      "sha256": "1528c81e409fa0e01c54981e48dc96a200813653c3847838f110aea2f9a74fb8"
+    },
+    {
+      "name": "BRAND-05__kavriva-k-symbol__reference-crop__v01.png",
+      "width": 346,
+      "height": 341,
+      "sha256": "0b864485757a4274b540d03677e1e0b2645b54ddf5f2549a4128871b4ca73bb7"
+    }
+  ],
+  "contrast": {
+    "whiteOnIndigo": 6.29,
+    "whiteOnElectric": 5.67,
+    "inkOnSurface": 16.72,
+    "textOnSurface": 9.86
+  },
+  "boundsProposals": "clear space H/4, optical offset 0; owner approval required",
+  "visualReview": "Passed after layout/filter fixes; three review boards and master-size sheet inspected",
+  "limitations": [
+    "Raster grain and antialiasing are retained",
+    "16px symbol is marginal; 24px+ proposal only",
+    "No true vector logo source",
+    "Figma native structure and registry Pending"
+  ],
+  "approvedBy": null,
+  "darkInversionPixelCheck": {
+    "maximumChannelError": 0,
+    "pass": true
+  }
+}

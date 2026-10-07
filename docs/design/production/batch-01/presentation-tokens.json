@@ -1,0 +1,18 @@
+{
+  "status": "Review; presentation values only, not locked production tokens",
+  "colors": {
+    "white": "#FFFFFF",
+    "ink": "#101828",
+    "text": "#344054",
+    "line": "#D0D5DD",
+    "surface": "#F7F8FC",
+    "indigo": "#4F46E5",
+    "electric": "#4355E8",
+    "dark": "#0C111D",
+    "mono": "#000000"
+  },
+  "typography": {
+    "heading": "Manrope",
+    "body": "Inter"
+  }
+}
