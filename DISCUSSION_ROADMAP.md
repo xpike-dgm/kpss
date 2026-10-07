@@ -114,7 +114,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Mümkün olduğu ölçüde soru bazlı etkileşim/çözüm süresi arka planda tutulabilecek; bu veri konu/soru türü bazlı hız analizi, kullanıcı istatistikleri, AI koç içgörüleri, soru kalite/zorluk analizi ve sistem geliştirmede kullanılacaktır.
    - Süre tek başına akademik seviye puanını değiştirmeyecek; doğruluk ve diğer performans verileriyle birlikte yardımcı sinyal olarak yorumlanacaktır.
    - Platformun genel çalışma kronometresi toplam çalışma süresini ayrıca takip etmeye devam edecektir; test süresi ile genel çalışma süresi farklı amaçlara hizmet edecektir.
-   - Klavye kısayolları öncelikli bir ihtiyaç değildir; özel klavye desteği planlanmayacaktır.
+   - Tam klavye navigasyonu erişilebilirlik gereği zorunlu olacak; özel power-user kısayolları opsiyonel kalacaktır.
    - Kullanıcı hatalı, belirsiz, cevabı sorunlu veya görseli bozuk soruları bildirebilecektir.
    - Mobil ve masaüstü arayüz sade olacak; asıl odak soru, şıklar, soru navigasyonu, not/karalama ve testi bitirme akışı olacaktır.
    - Kullanıcı 10 soruluk testi bitirdikten sonra isterse yeni bir teste geçerek çalışmaya devam edebilecektir.
@@ -126,7 +126,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Etiketleme mümkün olduğunca **Ders → Konu → Alt konu → Kazanım/Beceri** hiyerarşisinde yapılacaktır.
    - Kaynaklar resmî/geçmiş sınav soruları, insan tarafından hazırlanmış özgün sorular ve AI destekli özgün sorular şeklinde ayrıştırılabilir.
    - AI tarafından oluşturulan yeni sorular doğrudan canlı bankaya girmeyecek; taslak/kontrol/onay/aktif benzeri kalite aşamalarından geçecektir.
-   - Jev/AI; ders, konu, alt konu, kazanım, soru tipi, ilk zorluk tahmini ve KPSS uygunluğu gibi sınıflandırmalarda kullanılacaktır; tek başına nihai otorite olmayacaktır.
+   - Jev ölçülmeden ana sınıflandırıcı olmayacak; Türkçe golden dataset'te yeterli olduğu taxonomy alanlarında geçerli ID'lerle sınırlı kullanılacak, aksi durumda structured-output LLM ana/yedek olacaktır. İlk zorluk tahmini yalnız cold-start sinyalidir.
    - Başlangıç AI zorluk tahmini ile gerçek kullanıcı verisinden türetilen zorluk ayrı tutulabilecek; yeterli veri oluşunca gerçek kullanım verisi daha değerli olacaktır.
    - Ham doğru yüzdesi tek başına yeterli görülmeyecek; mümkün olduğunca soruyu çözen kullanıcıların seviyeleri de gerçek zorluk değerlendirmesinde hesaba katılacaktır.
    - Kullanıcı-soru geçmişi tutulacaktır: gördü mü, doğru/yanlış/boş, tekrar çözüm, işaretleme gibi bilgiler.
@@ -241,7 +241,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - Deneme sonucu program motoruna sinyal verecek ve **“Bu denemeye göre en değerli sonraki çalışmalar”** benzeri hedefli öneriler oluşturulabilecektir; zorunlu görev olmayacaktır.
    - Deneme sıklığı katı takvimle zorunlu tutulmayacak; program motoru ölçüm ihtiyacı ve sınava kalan süreye göre deneme önerebilecektir.
    - Kullanıcının özel soru/ders/zorluk karışımıyla oluşturduğu paketler gerçek denemeden ayrılarak **Karma Test** gibi ayrı kategori altında tutulabilecektir.
-   - Tahmini KPSS puanı ve hedef puan ilişkisi 11. **Hedef Puan Sistemi** başlığında ayrıca netleştirilecektir.
+   - Tahmini KPSS puanı ve hedef ilişkisi kabul edilmiş **Hedef Puan Sistemi** kurallarını kullanacaktır; ölçülen net ile tahmini puan ayrı tutulacaktır.
    - Mimari düzeyde açık soru kalmamıştır; kesin deneme şablonları, resmi süreler ve küçük UX ayrıntıları uygulama aşamasında güncel sınav kurallarına göre yapılandırılabilir.
 
 10. ✅ **Performans ve İstatistik Ekranı**
@@ -300,7 +300,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 12. ✅ **AI Öğretmen**
     - Genel chatbot değil; soru bankası, konu öğrenme, yanlışlar, notlar ve adaptif sistemle bağlamlı öğretim katmanı olacak.
     - Soru ekranında ders/konu/alt konu/soru/şıklar/doğrulanmış çözüm/kullanıcı cevabı bağlamını otomatik kullanacak.
-    - Video/öğrenme ekranında konu, video, bölüm, mümkünse transcript ve mevcut zaman damgasını kullanabilecek.
+    - Video/öğrenme ekranında konu, video, bölüm ve zaman damgasını kullanacak; transcript yalnız resmî/yetkili ise kullanılacak, normal bağlam admin onaylı bölüm/zaman aralığı/özetlerden kurulacak ve scraping'e bağımlılık olmayacak.
     - Açıklama derinliği kullanıcının gerçek öğrenme durumuna göre ayarlanacak.
     - Varsayılan cevap kısa ve doğrudan olacak; Daha basit / Detaylı / Adım adım / Örnek / Benzer soru gibi genişletmeler bulunabilecek.
     - İpucu → daha güçlü ipucu → tam çözüm akışı desteklenecek; tam çözüm isteyen kullanıcı gereksiz yere engellenmeyecek.
@@ -330,7 +330,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
     - Öneriler Çalışmaya Başla / Yanlışları Aç / Tekrarı Başlat gibi doğrudan eylemlere bağlanabilecek.
     - Proaktif öneriler rahatsız edici popup/chatbot davranışına dönüşmeyecek.
     - AI Öğretmenle geçiş yapabilecek ancak Öğretmen ve Koç görevleri ayrı kalacak.
-    - Oyunlaştırma entegrasyonu 14–15. başlıklardan sonra ayrıca ele alınacak.
+    - Oyunlaştırma/meta bağlamı Koç için ikincil olabilir ancak akademik planner'ın önüne geçmeyecek; ayrıntılı çapraz ilişki post-audit planlama turunda kapatılacak.
     - Mimari düzeyde ana kararlar tamamlandı.
 
 ### ✅ Genel AI altyapı prensibi — çapraz ürün kararı
@@ -353,7 +353,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Gerçek çalışma faaliyetleri XP verecek; pasif veya anlamsız işlemler XP üretmeyecek.
       - XP soru yeniliği, zorluk, gerçek çalışma değeri ve anti-farm sinyalleriyle dengelenecek.
       - Konu öğrenme, tekrar, yanlış güçlendirme, adaptif test ve denemeler XP sistemine bağlanacak.
-      - Başlangıç level'ları daha hızlı, yüksek level'lar daha yavaş ilerleyecek; ilk hedef 1–100 olabilir.
+      - Başlangıç level'ları daha hızlı, yüksek level'lar daha yavaş ilerleyecek; kabul edilmiş temel oyuncu level aralığı 1–100 olacak.
       - Level-up, XP özeti, sonraki ödül ve Seviye Merkezi ekranı olacak.
       - Profil çerçevesi, tema, banner, unvan ve benzeri kozmetik ödüller açılabilecek; akademik avantaj verilmeyecek.
       - Günlük gerçek çalışma için XP tavanı olmayacak; yalnızca farm davranışlarına azalan getiri uygulanacak.
@@ -367,7 +367,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
       - Belirli level kilometre taşlarında şeffaf kozmetik/unvan ödülleri açılacak; lootbox olmayacak.
       - Başarımlar sınırlı ek XP verebilecek.
       - Sürekli 2X XP temel ekonomi yapılmayacak.
-      - İlk sürümde coin/mağaza yok; ana ekonomi XP → Level → Ödül olacak.
+      - Ayrı coin/mağaza ekonomisi kullanılmayacak; ana ekonomi XP → Level → Ödül olacak.
       - Kesin XP sayıları ve katsayıları sonradan değiştirilebilir denge parametreleri olarak tutulacak.
       - ✅ **XP / Level alt sistemi ürün mimarisi açısından tamamlandı.**
       - Kesin sayısal denge, kozmetik kataloğu ve seviye 100 sonrası sistem uygulama/gerçek kullanım verisi aşamasına bırakıldı.
@@ -509,7 +509,7 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Küçük Çalışma Ekipleri, ortak görevler, takım sezon puanı, takım ligleri ve takım geçmişi desteklenecek.
    - ✅ Takım büyüklüğü sıralamalarda normalize edilecek; ayrı kalıcı takım XP ekonomisi kurulmayacak.
    - ✅ Topluluk hedefleri, tebrikler, isteğe bağlı Hatıra Kartı paylaşımı ve çalışma içeriği/soru paylaşımı desteklenecek.
-   - ✅ Sosyal mesajlaşma çalışma odaklı kalacak; tam DM varsa engelleme/sessize alma/şikâyet/mesaj izinleri eksiksiz olacak.
+   - ✅ Tam birebir DM olmayacak; sosyal iletişim çalışma odası, takım bağlamı ve kısa tepki/tebrik gibi çalışma odaklı yüzeylerle sınırlı olacak; güvenlik araçları korunacak.
    - ✅ Gerçek Sınav Modunda sosyal bildirim ve etkileşimler sessize alınacak.
    - ✅ Sosyal başarımlar arkadaş sayısına değil, birlikte yapılan anlamlı çalışmaya dayanacak ve anti-farm korunacak.
    - ✅ **Arkadaş Sistemi ürün mimarisi açısından tamamlandı.**
@@ -606,10 +606,55 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Golden dataset, regression, end-to-end ve gerekli load testleri teknik kalite kapısı olacak.
    - ✅ **Teknik Altyapı ürün mimarisi açısından tamamlandı.**
 
+
+22. ✅ **PRODUCT_PLAN Konsolidasyonu ve Çelişki Temizliği**
+   - ✅ `PRODUCT_PLAN.md` güncel kabul edilmiş kararların kanonik kaynağı olacak; eski/geçici çelişkiler Git geçmişine bırakılacak.
+   - ✅ Onboarding, Dashboard, Günlük Çalışma, soru zorluğu ve Jev kararları daha yeni kabul edilmiş kurallarla senkronlandı.
+   - ✅ “İlk sürüm” dili kapsam ilkesiyle uyumlu biçimde temizlendi.
+   - ✅ Tam DM yok kararı, yetkili transcript politikası ve bildirimlerde güncel genel prensip plana işlendi.
+   - ✅ Klavye çelişkisi çözüldü: erişilebilir tam klavye navigasyonu zorunlu, özel power-user kısayolları opsiyonel.
+   - ✅ **Plan konsolidasyonu tamamlandı.**
+
+23. 🟨 **KPSS Sınav Modeli / Müfredat / Güncel Bilgiler / Puan Türleri**
+   - KPSS türü ve sınav döneminin versiyonlu tanımı
+   - Resmî/tahmini sınav tarihi ve değişiklik davranışı
+   - Dersler, test yapısı, soru dağılımı ve süre şablonları
+   - Net/puan türleri ve hedef puanın hangi puanı ifade ettiği
+   - Güncel Bilgiler gibi zaman duyarlı içeriklerin öğrenci akışı
+
+24. ⬜ **Akademik Evidence & Scoring Kuralları**
+   - Doğru / yanlış / boş akademik etkisi
+   - Tekrar görülen soru ve farklı çalışma modlarının kanıt ağırlığı
+   - Karma Test, retention, deneme, AI pratik ve düello verisinin mastery/readiness etkisi
+
+25. ⬜ **Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik**
+   - Kullanıcı Ayarlar Merkezi
+   - Hesap kurtarma, cihazlar, export/silme
+   - Bildirim varsayılanları, sessiz saatler ve kanal/frekans politikası
+   - Kullanıcı-facing gizlilik ve AI veri tercihleri
+
+26. ⬜ **İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri**
+   - İçerik üretim/review operasyonu
+   - Coverage standartları ve havuz yeterliliği
+   - Kaynak kullanım hakkı / yayın hard-gate'i
+   - Çıkış için içerik yeterlilik kriterleri
+
+27. ⬜ **Sosyal Edge Cases / AI Lifecycle / Yardım / Kaydedilenler**
+   - Sosyal lifecycle/edge-case politikaları
+   - AI sohbet/veri yaşam döngüsü ve Koç↔oyunlaştırma ilişkisi
+   - Yardım/Geri Bildirim Merkezi
+   - Kaydedilenler/favoriler ve level 100 sonrası açık karar
+
+28. ⬜ **Data Retention / Compliance / Release Acceptance Criteria**
+   - Veri saklama/silme süreleri
+   - KVKK/compliance çıkış kapısı
+   - Felaket kurtarma ve güvenlik release koşulları
+   - “Ürün hazır” kabul kriterleri
+
 ---
 
 ## Çalışma Prensibi
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-Ana ürün planlama yol haritasındaki 21 ana başlığın tamamı ✅ durumundadır. Bundan sonraki çalışmalar UI/UX, denge, içerik operasyonu ve uygulama ayrıntılarını netleştirecektir.
+İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **23. KPSS Sınav Modeli / Müfredat / Güncel Bilgiler / Puan Türleri 🟨**.
