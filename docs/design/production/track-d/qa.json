@@ -1,0 +1,71 @@
+{
+  "status": "Review",
+  "evidence": [
+    {
+      "assetId": "AI-01",
+      "file": "AI-01__ai-teacher__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6718570749041664,
+      "sha256": "8e1d3550e2321e1d0c99d8f319cacca2645b62b7ea2d0ad13bee2b35e0e79947",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "AI-02",
+      "file": "AI-02__ai-coach__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7002758636478102,
+      "sha256": "d51ae5ff50f2796b318cf29a4c790c4bb520ca1649d135b48f40ca95c47f824b",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "AI-03",
+      "file": "AI-03__conversation-entry__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7624227670815432,
+      "sha256": "932d21905d35eab7d1db989cfd189674d71274ce57abeb18008514dde824b327",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "AI-04",
+      "file": "AI-04__thinking__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.8299495839787958,
+      "sha256": "8f8e3daf84fa5b0f6440ee0b2b32c103b8758236a099da97a147dcd92002d3c7",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "AI-05",
+      "file": "AI-05__unavailable__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7981425944155736,
+      "sha256": "b6e787274267a982c4e7bafd858c99217657029f5cab926920ddb5b040ad81ea",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "AI-06",
+      "file": "AI-06__verified-conflict__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.670121639461856,
+      "sha256": "8440c2428b3f8a8ebc0b98c19cc052f04972104723100c1a09895b47b0bf0ae0",
+      "sourceCopyExact": true
+    }
+  ],
+  "scopeCount": 6,
+  "nativeVector": false,
+  "brandSourceHash": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
+  "figma": "Pending",
+  "finalProductionExport": "Pending",
+  "darkStatus": "Diagnostic only; theme-specific lines/alpha Pending"
+}
