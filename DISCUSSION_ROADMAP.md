@@ -632,12 +632,29 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Sınav gerçeklerinde ÖSYM resmî kılavuz/takvim/dokümanları birincil kaynak olacak.
    - ✅ **KPSS Sınav Modeli / Müfredat / Güncel Bilgiler / Puan Türleri tamamlandı.**
 
-24. 🟨 **Akademik Evidence & Scoring Kuralları**
-   - Doğru / yanlış / boş akademik etkisi
-   - Tekrar görülen soru ve farklı çalışma modlarının kanıt ağırlığı
-   - Karma Test, retention, deneme, AI pratik ve düello verisinin mastery/readiness etkisi
+24. ✅ **Akademik Evidence & Scoring Kuralları**
+   - ✅ Ana model cevap → bağlamlı Evidence Event → Mastery / Confidence / Retention / Readiness / Difficulty projection zinciri olacak.
+   - ✅ Mastery, confidence, retention, readiness, difficulty ve wrong/blank risk ayrı boyutlar olacak.
+   - ✅ Mevcut +5/+3/+2/+1 benzersiz-soru mastery omurgası korunacak; evidence kaynağı/kalitesi versioned katsayı ve eligibility ile yorumlanacak.
+   - ✅ Doğru/yanlış geçerli bağımsız soruda güçlü evidence olacak; tek cevap geçmişi aşırı ezmeyecek.
+   - ✅ Boş cevap yanlıştan daha düşük mastery etkisi taşıyacak; Gerçek Sınav Modunda zaman yönetimi/readiness için ayrıca güçlü sinyal olabilecek.
+   - ✅ Test teslim edilmeden kalıcı akademik evidence oluşmayacak.
+   - ✅ Aynı soru, çözümü görülmüş soru ve near-duplicate/template tekrarları daha düşük evidence taşıyacak.
+   - ✅ Yeni Wrong Verification ve Retention soruları güçlü bağımsız evidence olacak.
+   - ✅ Gerçek Sınav Modu readiness için en güçlü kaynaklardan biri; Çalışma Modu daha düşük readiness ağırlığında olacak.
+   - ✅ Uygun yeni sorulu Karma Test mastery evidence üretecek ancak tek başına gerçek sınav readiness kanıtı olmayacak.
+   - ✅ Mini check, video/özet, AI sohbeti, not alma ve “konuyu biliyorum” beyanı mastery üretmeyecek.
+   - ✅ Quality Gate'ten geçmemiş AI pratik soruları kalıcı akademik modele girmeyecek.
+   - ✅ 1v1 düello doğrudan mastery/readiness üretmeyecek.
+   - ✅ Confidence evidence miktarı/çeşitliliği/güncelliğini ayrı izleyecek; mastery sırf zaman geçti diye düşmeyecek.
+   - ✅ Exam Readiness ayrı composite projection olacak.
+   - ✅ Difficulty kalibrasyonunda kullanıcı başına aynı question_version'ın ilk bağımsız geçerli attempt'i ana veri olacak.
+   - ✅ Primary Assessed Skill yaklaşımı çok becerili sorularda mastery'nin yapay şişmesini engelleyecek.
+   - ✅ Material question revision geçmiş evidence için Impact Analysis/Repair tetikleyebilecek.
+   - ✅ Evidence Event, policy/engine/version/oturum bağlamıyla tam izlenebilir olacak ve reason codes üretecek.
+   - ✅ **Akademik Evidence & Scoring Kuralları tamamlandı.**
 
-25. ⬜ **Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik**
+25. 🟨 **Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik**
    - Kullanıcı Ayarlar Merkezi
    - Hesap kurtarma, cihazlar, export/silme
    - Bildirim varsayılanları, sessiz saatler ve kanal/frekans politikası
@@ -667,4 +684,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **24. Akademik Evidence & Scoring Kuralları 🟨**.
+İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **25. Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik 🟨**.
