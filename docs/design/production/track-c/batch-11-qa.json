@@ -1,0 +1,30 @@
+{
+  "batch": 11,
+  "status": "PASS for internal direction gate; Review only",
+  "assets": [
+    "GAME-01",
+    "GAME-02",
+    "GAME-03",
+    "GAME-04",
+    "GAME-05"
+  ],
+  "native": true,
+  "iconGrammar": "reuses approved ICON-03 source SVG; grid24 stroke1.75",
+  "palette": {
+    "indigo": "#4F46E5",
+    "ink": "#101828",
+    "text": "#344054",
+    "border": "#D0D5DD",
+    "surface": "#F7F8FC",
+    "white": "#FFFFFF",
+    "dark": "#0C111D",
+    "darkText": "#FFFFFF"
+  },
+  "statesDelivered": true,
+  "levelHardCap": 100,
+  "prestige": false,
+  "emptyEconomicValues": true,
+  "uiTextEditable": true,
+  "semanticGreen": "completion only",
+  "figma": "Pending"
+}

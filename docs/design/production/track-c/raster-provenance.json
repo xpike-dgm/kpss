@@ -1,0 +1,14 @@
+{
+  "assetId": "GAME-09",
+  "mode": "built-in image_gen",
+  "sourcePath": "C:/Users/Xpike/.codex/generated_images/01a117b5-f3ef-7932-8c59-dbd3f43fe82c/exec-91ac7870-1b97-4d19-9908-076d1a450cc6.png",
+  "prompt": "Use case: stylized-concept. Asset ID GAME-09 — Level Up celebration visual for Kavriva KPSS. Produce only the text-free illustration layer, transparent background. Image1 Math, Image2 History, Image3 Geography are approved canonical A — Geometric Editorial style references only; image4 ICON-03 is the approved line/shape grammar reference. Match restrained frontal 2D geometry, flat + soft-depth, white and cool-neutral surfaces with indigo #4F46E5 direction, dark ink carefully limited. A calm, meaningful accomplishment: one frontal abstract stepped progress structure rising toward a refined four-point geometric spark, a few orderly milestone nodes, one short arc suggesting completion. Few objects, ample negative space, strong silhouette at96px. This is account progress, never a claim of academic mastery. No coin, reward chest, store, lootbox, random reward, medals with invented rank, no prestige, no infinite progress; player level has100hardcap. No people/mascot, no logo/K/wordmark, NO TEXT/NUMBERS/labels/UI/buttons anywhere. No neon, gold prestige palette, confetti party, esports, full3D/isometric slab/clay/toy/gloss, stock-vector feel, random gradients. Preserve A visual system; C connector motif secondary only. No background rectangle, true native alpha. Editable headline/level/reward handled separately in native SVG card.",
+  "sourcePixels": "immutable original copy; no editing",
+  "refs": [
+    "CAT-01 canonical A",
+    "CAT-03 canonical A",
+    "CAT-04 canonical A",
+    "ICON-03"
+  ],
+  "status": "Review"
+}

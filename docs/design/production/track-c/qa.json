@@ -1,0 +1,191 @@
+{
+  "track": "C",
+  "assets": [
+    {
+      "assetId": "GAME-01",
+      "selectedPreview": "assets/gamification/track-c/review/GAME-01__xp-symbol__light__v01.png",
+      "selectedSource": "assets/gamification/track-c/review/GAME-01__xp-symbol__light__v01.svg",
+      "status": "Review",
+      "states": [
+        "native24px XP symbol",
+        "light",
+        "dark"
+      ],
+      "figma": "Pending",
+      "format": "true SVG native geometry + editable text",
+      "smallSize": "24/20 native symbol primary;16 only simple legible use",
+      "productionPending": "real content/config and Figma assembly"
+    },
+    {
+      "assetId": "GAME-02",
+      "selectedPreview": "assets/gamification/track-c/review/GAME-02__level-badge-system__light__v01.png",
+      "selectedSource": "assets/gamification/track-c/review/GAME-02__level-badge-system__light__v01.svg",
+      "status": "Review",
+      "states": [
+        "4 modular frame samples",
+        "editable level1/27/80/100",
+        "light",
+        "dark"
+      ],
+      "figma": "Pending",
+      "format": "true SVG native geometry + editable text",
+      "smallSize": "96px badge silhouette; fine frame differentiation not guaranteed below48",
+      "productionPending": "level frame thresholds mapped by config; no inferred level economy"
+    },
+    {
+      "assetId": "GAME-03",
+      "selectedPreview": "assets/gamification/track-c/review/GAME-03__streak__light__v01.png",
+      "selectedSource": "assets/gamification/track-c/review/GAME-03__streak__light__v01.svg",
+      "status": "Review",
+      "states": [
+        "active",
+        "protected",
+        "inactive",
+        "light",
+        "dark"
+      ],
+      "figma": "Pending",
+      "format": "true SVG native geometry + editable text",
+      "smallSize": "24/20 native symbol primary;16 only simple legible use",
+      "productionPending": "real content/config and Figma assembly"
+    },
+    {
+      "assetId": "GAME-04",
+      "selectedPreview": "assets/gamification/track-c/review/GAME-04__daily-mission-system__light__v01.png",
+      "selectedSource": "assets/gamification/track-c/review/GAME-04__daily-mission-system__light__v01.svg",
+      "status": "Review",
+      "states": [
+        "active",
+        "progressing",
+        "completed",
+        "light",
+        "dark"
+      ],
+      "figma": "Pending",
+      "format": "true SVG native geometry + editable text",
+      "smallSize": "full card at96px only silhouette/layout diagnostic; actual UI text not intended at96",
+      "productionPending": "real mission/progress/reward config"
+    },
+    {
+      "assetId": "GAME-05",
+      "selectedPreview": "assets/gamification/track-c/review/GAME-05__weekly-mission-system__light__v01.png",
+      "selectedSource": "assets/gamification/track-c/review/GAME-05__weekly-mission-system__light__v01.svg",
+      "status": "Review",
+      "states": [
+        "active",
+        "progressing",
+        "completed",
+        "light",
+        "dark"
+      ],
+      "figma": "Pending",
+      "format": "true SVG native geometry + editable text",
+      "smallSize": "full card at96px only silhouette/layout diagnostic; actual UI text not intended at96",
+      "productionPending": "real mission/progress/reward config"
+    },
+    {
+      "assetId": "GAME-06",
+      "selectedPreview": "assets/gamification/track-c/review/GAME-06__achievement-framework__light__v01.png",
+      "selectedSource": "assets/gamification/track-c/review/GAME-06__achievement-framework__light__v01.svg",
+      "status": "Review",
+      "states": [
+        "locked",
+        "unlocked",
+        "highlighted",
+        "rare",
+        "4 category examples",
+        "light",
+        "dark"
+      ],
+      "figma": "Pending",
+      "format": "true SVG native geometry + editable text",
+      "smallSize": "96px badge silhouette; fine frame differentiation not guaranteed below48",
+      "productionPending": "remaining category mappings and production badge catalog"
+    },
+    {
+      "assetId": "GAME-07",
+      "selectedPreview": "assets/gamification/track-c/review/GAME-07__league-rank-system__light__v01.png",
+      "selectedSource": "assets/gamification/track-c/review/GAME-07__league-rank-system__light__v01.svg",
+      "status": "Review",
+      "states": [
+        "3 unnamed progression frames",
+        "light",
+        "dark"
+      ],
+      "figma": "Pending",
+      "format": "true SVG native geometry + editable text",
+      "smallSize": "96px badge silhouette; fine frame differentiation not guaranteed below48",
+      "productionPending": "league names/count/thresholds; semantic mapping"
+    },
+    {
+      "assetId": "GAME-08",
+      "selectedPreview": "assets/gamification/track-c/review/GAME-08__season-end-card__light__v01.png",
+      "selectedSource": "assets/gamification/track-c/review/GAME-08__season-end-card__light__v01.svg",
+      "status": "Review",
+      "states": [
+        "editable season / rank / progress / achievements card",
+        "light",
+        "dark"
+      ],
+      "figma": "Pending",
+      "format": "true SVG native geometry + editable text",
+      "smallSize": "full card at96px only silhouette/layout diagnostic; actual UI text not intended at96",
+      "productionPending": "real content/config and Figma assembly"
+    },
+    {
+      "assetId": "GAME-09",
+      "selectedPreview": "assets/gamification/track-c/review/GAME-09__level-up-card__light__v01.png",
+      "selectedSource": "assets/gamification/track-c/review/GAME-09__level-up-card__light__v01.svg",
+      "status": "Review",
+      "states": [
+        "text-free canonical A illustration",
+        "editable level-up card",
+        "light",
+        "diagnostic dark"
+      ],
+      "figma": "Pending",
+      "format": "SVG card with embedded raster illustration + native editable text",
+      "smallSize": "full card at96px only silhouette/layout diagnostic; actual UI text not intended at96",
+      "productionPending": "raster alpha-edge/halo cleanup and final dark treatment; actual level/event data"
+    },
+    {
+      "assetId": "GAME-10",
+      "selectedPreview": "assets/gamification/track-c/review/GAME-10__special-moment-card__light__v01.png",
+      "selectedSource": "assets/gamification/track-c/review/GAME-10__special-moment-card__light__v01.svg",
+      "status": "Review",
+      "states": [
+        "editable milestone / progress / earned rewards card",
+        "light",
+        "dark"
+      ],
+      "figma": "Pending",
+      "format": "true SVG native geometry + editable text",
+      "smallSize": "full card at96px only silhouette/layout diagnostic; actual UI text not intended at96",
+      "productionPending": "real content/config and Figma assembly"
+    }
+  ],
+  "uniqueAssetCount": 10,
+  "batch11Gate": "passed before Batch12",
+  "dependency": "Batch11 core -> Batch12",
+  "status": "Review only",
+  "kOrWordmarkGenerated": false,
+  "brandPixelsChanged": false,
+  "randomEconomy": false,
+  "levelHardCap": 100,
+  "prestige": false,
+  "iconGeometry": "approved ICON-03 source SVG reused without redraw; native new badge frame shared across GAME02/06/07",
+  "uiText": "SVG text layers, Manrope/Inter embedded; no raster UI text",
+  "dark": "native meaningful symbol/frame strokes use existing neutral border / white on ink; raster GAME09 dark only diagnostic",
+  "mobile": "primary glyph20/24; badge96;16 not universally endorsed; complete cards96 silhouette only",
+  "palette": "indigo+canonical cool neutrals; green completion semantic only",
+  "raster": {
+    "file": "GAME-09__level-up-illustration__canonical-a__v01.png",
+    "width": 1254,
+    "height": 1254,
+    "hasAlpha": true,
+    "sourceCopyExact": true,
+    "sha256": "cf2f0fa928647e6bdbdfef6df76bb4732ff07b3266422b2b90d7bd96b793c817"
+  },
+  "figma": "Pending",
+  "finalExport": "Pending owner + configuration + Figma/state handoff review"
+}

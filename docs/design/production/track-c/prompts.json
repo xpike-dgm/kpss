@@ -1,0 +1,75 @@
+{
+  "track": "C",
+  "nativeMethod": "build.cjs; exact ICON-03 SVG body embedded unchanged. Native SVG preferred for icon/badge/UI framework, built-in imagegen only narrative illustration.",
+  "references": [
+    "PRODUCT_PLAN latest hardcap/no prestige",
+    "Prompt Pack §0/§7",
+    "Batch Plan 11/12",
+    "Style Anchor Pack v1",
+    "Illustration Grammar v1",
+    "ICON-03 SVG"
+  ],
+  "assets": [
+    {
+      "assetId": "GAME-01",
+      "brief": "native24px XP symbol; light; dark",
+      "constraints": "Review only; immutable K/wordmark; canonical indigo/neutral; no coin/lootbox/neon/casino; no invented config; editable real UI text",
+      "method": "deterministic native SVG"
+    },
+    {
+      "assetId": "GAME-02",
+      "brief": "4 modular frame samples; editable level1/27/80/100; light; dark",
+      "constraints": "Review only; immutable K/wordmark; canonical indigo/neutral; no coin/lootbox/neon/casino; no invented config; editable real UI text",
+      "method": "deterministic native SVG"
+    },
+    {
+      "assetId": "GAME-03",
+      "brief": "active; protected; inactive; light; dark",
+      "constraints": "Review only; immutable K/wordmark; canonical indigo/neutral; no coin/lootbox/neon/casino; no invented config; editable real UI text",
+      "method": "deterministic native SVG"
+    },
+    {
+      "assetId": "GAME-04",
+      "brief": "active; progressing; completed; light; dark",
+      "constraints": "Review only; immutable K/wordmark; canonical indigo/neutral; no coin/lootbox/neon/casino; no invented config; editable real UI text",
+      "method": "deterministic native SVG"
+    },
+    {
+      "assetId": "GAME-05",
+      "brief": "active; progressing; completed; light; dark",
+      "constraints": "Review only; immutable K/wordmark; canonical indigo/neutral; no coin/lootbox/neon/casino; no invented config; editable real UI text",
+      "method": "deterministic native SVG"
+    },
+    {
+      "assetId": "GAME-06",
+      "brief": "locked; unlocked; highlighted; rare; 4 category examples; light; dark",
+      "constraints": "Review only; immutable K/wordmark; canonical indigo/neutral; no coin/lootbox/neon/casino; no invented config; editable real UI text",
+      "method": "deterministic native SVG"
+    },
+    {
+      "assetId": "GAME-07",
+      "brief": "3 unnamed progression frames; light; dark",
+      "constraints": "Review only; immutable K/wordmark; canonical indigo/neutral; no coin/lootbox/neon/casino; no invented config; editable real UI text",
+      "method": "deterministic native SVG"
+    },
+    {
+      "assetId": "GAME-08",
+      "brief": "editable season / rank / progress / achievements card; light; dark",
+      "constraints": "Review only; immutable K/wordmark; canonical indigo/neutral; no coin/lootbox/neon/casino; no invented config; editable real UI text",
+      "method": "deterministic native SVG"
+    },
+    {
+      "assetId": "GAME-09",
+      "brief": "text-free canonical A illustration; editable level-up card; light; diagnostic dark",
+      "constraints": "Review only; immutable K/wordmark; canonical indigo/neutral; no coin/lootbox/neon/casino; no invented config; editable real UI text",
+      "method": "built-in image_gen + native SVG card"
+    },
+    {
+      "assetId": "GAME-10",
+      "brief": "editable milestone / progress / earned rewards card; light; dark",
+      "constraints": "Review only; immutable K/wordmark; canonical indigo/neutral; no coin/lootbox/neon/casino; no invented config; editable real UI text",
+      "method": "deterministic native SVG"
+    }
+  ],
+  "rasterPrompt": "Use case: stylized-concept. Asset ID GAME-09 — Level Up celebration visual for Kavriva KPSS. Produce only the text-free illustration layer, transparent background. Image1 Math, Image2 History, Image3 Geography are approved canonical A — Geometric Editorial style references only; image4 ICON-03 is the approved line/shape grammar reference. Match restrained frontal 2D geometry, flat + soft-depth, white and cool-neutral surfaces with indigo #4F46E5 direction, dark ink carefully limited. A calm, meaningful accomplishment: one frontal abstract stepped progress structure rising toward a refined four-point geometric spark, a few orderly milestone nodes, one short arc suggesting completion. Few objects, ample negative space, strong silhouette at96px. This is account progress, never a claim of academic mastery. No coin, reward chest, store, lootbox, random reward, medals with invented rank, no prestige, no infinite progress; player level has100hardcap. No people/mascot, no logo/K/wordmark, NO TEXT/NUMBERS/labels/UI/buttons anywhere. No neon, gold prestige palette, confetti party, esports, full3D/isometric slab/clay/toy/gloss, stock-vector feel, random gradients. Preserve A visual system; C connector motif secondary only. No background rectangle, true native alpha. Editable headline/level/reward handled separately in native SVG card."
+}
