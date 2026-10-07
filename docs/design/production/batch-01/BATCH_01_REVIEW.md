@@ -66,3 +66,19 @@ Sunum token çiftleri için hesaplanan kontrast: beyaz/#4F46E5 **6.29:1**, beyaz
 - Edit yetkili hedef Figma dosya/link geldiğinde canonical page/section yapısı, variables ve native registry kurulacak.
 - Clear-space H/4, optical offset 0, master minimum 160 px ve symbol minimum 24 px **onay bekleyen inceleme önerileri**dir.
 - Batch 02 başlatılmadı. Approved işaretlenmedi. Kullanıcı onayı bekleniyor.
+
+## Owner Decision — 2026-10-07
+
+Owner Batch 01 yaklaşımını ve consistency QA sonucunu kabul etti.
+
+- BRAND-01, BRAND-05, BRAND-06: **Approved for Design Direction**.
+- **Final Production Vector Export = Pending**. Raster-embedded SVG sunumları gerçek vektör logo olarak kabul edilmedi.
+- Clear-space: `x = görünür K yüksekliği / 4` kabul edildi.
+- Optical offset: şimdilik `0 px` kabul edildi; gerçek vector source geldiğinde yeniden optical review yapılabilir.
+- Master logo `160 px`: yalnız mevcut raster referans için güvenli review boyutu. Kalıcı/final marka minimumu değildir; vector source geldiğinde tekrar test edilir.
+- Standalone K: `24 px+ recommended minimum` kabul edildi. Favicon/browser gibi zorunlu küçük yüzeylerde `16 px` kullanılabilir; simplify/redraw/geometri değişikliği yasaktır. Yalnız padding, canvas, contrast ve export optimizasyonu kullanılabilir.
+- Vector source: **source asset needed** açık kalır; sonraki design-direction batch'lerini bloklamaz.
+- Figma: **Pending**; write erişimi varsayılmaz ve asset üretimini bloklamaz.
+- Batch 02 design-direction exploration için yetkilendirildi. Bu onay Batch 02 veya Batch 03 asset onayı değildir.
+
+Yukarıdaki Owner Decision, belgenin önceki Review v01 değerlendirmesindeki “onay bekliyor / öneri” durumlarını belirtilen kapsamda günceller. Önceki görsel dosyalar inceleme tarihçesi olarak korunur; içlerindeki REVIEW/öneri ibareleri bu tarihsel sunuma aittir.

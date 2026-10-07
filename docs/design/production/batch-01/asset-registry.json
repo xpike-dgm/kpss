@@ -4,10 +4,10 @@
     {
       "assetId": "BRAND-01",
       "name": "Kavriva Ana Marka Logosu",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [
         "review PNG",
@@ -25,7 +25,9 @@
         "BRAND-01__kavriva-master-logo__small-size-review__v01.png",
         "BRAND-01__kavriva-master-logo__reference-crop__v01.png"
       ],
-      "finalExportRef": null
+      "finalExportRef": null,
+      "finalProductionVectorExport": "Pending",
+      "vectorSource": "source asset needed"
     },
     {
       "assetId": "BRAND-02",
@@ -69,10 +71,10 @@
     {
       "assetId": "BRAND-05",
       "name": "Sadece K Sembolü",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [
         "review PNG",
@@ -90,15 +92,17 @@
         "BRAND-05__kavriva-k-symbol__review-board__v01.png",
         "BRAND-05__kavriva-k-symbol__reference-crop__v01.png"
       ],
-      "finalExportRef": null
+      "finalExportRef": null,
+      "finalProductionVectorExport": "Pending",
+      "vectorSource": "source asset needed"
     },
     {
       "assetId": "BRAND-06",
       "name": "Kavriva Master Brand Kalibrasyon / Kullanım Kartı",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [
         "review PNG",
@@ -109,7 +113,9 @@
         "BRAND-06__master-brand-calibration__usage-board__v01.svg",
         "BRAND-06__master-brand-calibration__usage-board__v01.png"
       ],
-      "finalExportRef": null
+      "finalExportRef": null,
+      "finalProductionVectorExport": "Pending",
+      "vectorSource": "source asset needed"
     },
     {
       "assetId": "APP-01",
