@@ -1765,5 +1765,122 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - “İlk sürüm” dili kaldırılmıştır; kabul edilmiş sistemler tek kapsamlı ürün çıkışının parçalarıdır.
 - İlk 21 başlık tamamlanmış olsa da post-audit planlama turu devam etmektedir; 23–28 başlıkları tamamlanmadan “önemli ürün kararı kalmadı” sonucu çıkarılmayacaktır.
 
+
+## 45. KPSS Sınav Modeli / Müfredat / Güncel Bilgiler / Puan Türleri — kararlaştırıldı
+
+### Merkezi Exam Blueprint
+- KPSS sınav yapısı kod içine dağılmış sabit değerler olarak tutulmayacak; **versiyonlu bir Exam Blueprint / Sınav Profili** üzerinden yönetilecektir.
+- Her profil en az şu bağlamı birlikte taşıyacaktır: KPSS düzeyi/türü, sınav dönemi-yılı, blueprint sürümü, resmî kaynak/provenance, doğrulama tarihi, sınav tarihi durumu, test yapısı, süre, soru sayısı, resmî kapsam, yaklaşık ağırlıklar, net kuralı, puan türü ve puanlama metodolojisi.
+- Kullanıcının aktif akademik dönemi belirli bir blueprint sürümüne bağlanacaktır.
+- Yeni yıl veya ÖSYM kural değişikliği eski blueprint'in üzerine sessizce yazılmayacak; **yeni versiyon** yayımlanacaktır.
+- Geçmiş test/deneme ve analizler çözüldükleri dönemin blueprint sürümünü koruyacaktır.
+- Blueprint değişiklikleri Admin Panelinde taslak → karşılaştırma → etki analizi → yayın akışıyla yönetilecektir.
+
+### Kullanıcı-facing KPSS profili
+- Ürün kapsamı **KPSS Genel Yetenek / Genel Kültür** odağıdır.
+- Kullanıcı seçimleri sade kalacaktır: **KPSS Lisans, KPSS Ön Lisans, KPSS Ortaöğretim**.
+- Sistem arka planda seçimi ilgili GY/GK sınav profili, sınav dönemi ve puan türüyle ilişkilendirecektir.
+- Lisans kullanıcı deneyimi GY/GK / B Grubu odağını açıkça belirtecek; Alan Bilgisi oturumları mevcut ürün kapsamıyla karıştırılmayacaktır.
+- Güncel 2026 resmî model örneğinde B Grubu ana puan türleri Lisans için KPSSP3, Ön Lisans için KPSSP93 ve Ortaöğretim için KPSSP94'tür; bu eşlemeler yıllara göre blueprint verisi olarak resmî kaynaktan doğrulanacaktır.
+- Kullanıcıya puan türü kodunu ezberletmek ana UX hedefi olmayacaktır; gerektiğinde bilgi alanında gösterilecektir.
+
+### Sınav tarihi ve takvim durumu
+- Sınav tarihi tek bir değiştirilebilir tarih alanı gibi ele alınmayacaktır.
+- Tarih durumu en az **Tahmini / Resmî / Revize Edildi / Gerçekleşti** gibi semantik durumlarla tutulacaktır.
+- ÖSYM resmî takvimi henüz açıklanmamışsa ürün kesin gün uydurmayacak; yalnız güvenli bir dönem/yaklaşık zaman bilgisi gösterilebilecektir.
+- Resmî tarih açıklandığında gerçek geri sayım başlayacaktır.
+- ÖSYM tarihi sonradan değiştirirse yeni tarih provenance/audit ile güncellenecek ve program motoru kalan süre sinyalini otomatik yeniden hesaplayacaktır.
+- Tarih değişikliği kullanıcıya çalışma borcu, kaçırılmış görev veya ceza üretmeyecektir.
+- Resmî tarih ve sınav kuralları yalnız güvenilir/resmî kaynaklardan doğrulanacaktır.
+
+### ÖSYM kapsamı ve platform taxonomy ayrımı
+- **Official Scope** ile platformun ayrıntılı **Ders → Konu → Alt Konu → Kazanım/Beceri taxonomy'si** ayrı katmanlar olacaktır.
+- ÖSYM'nin resmî/yaklaşık kapsam başlıkları platform taxonomy öğelerine mapping ile bağlanacaktır.
+- Platform, ÖSYM'nin geniş kapsam başlıklarından daha ayrıntılı öğrenme ve soru etiketleri kullanabilir.
+- Bu ayrım sayesinde ÖSYM kapsamı değiştiğinde tüm soru bankasının iç taxonomy'sini bozmak gerekmeyecektir.
+- Official Scope mapping'leri versiyonlanacak ve hangi sınav dönemlerinde geçerli oldukları bilinecektir.
+- Prerequisite/öğrenme yolu platform taxonomy'sinde kalacak; resmî kapsam tek başına öğrenme sırasını belirlemeyecektir.
+
+### Müfredat/kapsam değişikliği davranışı
+- Bir konu veya kazanım sonraki sınav döneminde kapsam dışı kalırsa kullanıcının geçmiş çalışması, notları, soru geçmişi ve akademik tarihçesi silinmeyecektir.
+- Yeni dönem için yalnız aktif kapsam/öneri uygunluğu değişecektir.
+- Yeni eklenen kapsam alanları **yeni/henüz yeterli veri yok** durumuyla kullanıcı modeline kontrollü biçimde girecektir.
+- Eski çıkmış sorular yeni dönemde kullanılmadan önce mevcut kapsam ve güncellik açısından uygunluk kontrolünden geçecektir.
+- Özellikle Vatandaşlık ve zaman duyarlı içerikte **çıkmış soru olması güncel akademik geçerliliğin garantisi değildir**.
+
+### Resmî sınav yapısı ve yaklaşık dağılımlar
+- Tam KPSS Denemesi, kullanıcının aktif Exam Blueprint'ine göre oluşturulacaktır.
+- Soru sayısı, süre, test bölümleri ve resmî kapsam ağırlıkları blueprint verisidir; uygulama koduna sabit gömülmeyecektir.
+- 2026 GY/GK yapısındaki 60 Genel Yetenek + 60 Genel Kültür / 130 dakika gibi değerler ilgili 2026 blueprint'inde tutulur; sonraki yıllarda resmî veri değişirse yeni blueprint yayınlanır.
+- ÖSYM kapsam tablosunda **yaklaşık** verilen ağırlıklar platform tarafından kesin değişmez soru adetleri gibi yorumlanmayacaktır.
+- Deneme üretici resmî ağırlıklara mümkün olduğunca yakın, kalite ve coverage kurallarına uygun dağılım oluşturacaktır.
+- Resmî dağılımın yaklaşık olması durumunda platform ÖSYM'den daha katı sahte kesinlik üretmeyecektir.
+
+### Deneme snapshot davranışı
+- Tam/branş denemesi oluşturulduğunda ilgili Exam Blueprint sürümü snapshot olarak bağlanacaktır.
+- Gerçek Sınav Modunda süre, soru seti, question version'ları ve blueprint sürümü oturum başlangıcında sabitlenecektir.
+- Sonradan yayımlanan yeni blueprint veya taxonomy mapping aktif/bitmiş denemenin geçmişini değiştirmeyecektir.
+- Geçmiş denemeler hangi sınav kurallarıyla çözüldüklerini açıkça koruyacaktır.
+
+### Net ve puan modeli
+- **Net performansı** ile **KPSS puan tahmini** ayrı kavramlardır.
+- Net hesabı ilgili blueprint'in resmî kuralından gelir; puan tahmini ise o dönemin doğrulanmış puan metodolojisi ve eldeki kalibrasyon verisiyle yapılır.
+- ÖSYM'nin gerçek KPSS puanı aday dağılımı/standart puanlama gibi sınav sonrası verilere bağlı olabileceği için ürün sınav öncesinde sahte kesin **resmî puan** iddiasında bulunmayacaktır.
+- Kullanıcıya mümkün olduğunda **tahmini puan aralığı + veri güveni** gösterilecektir.
+- Veri yetersizse puan tahmini verilmemesi veya açıkça düşük güvenli gösterilmesi tercih edilecektir.
+- “X net = kesin Y KPSS puanı” biçiminde değişmez hesaplayıcı yaklaşımı kullanılmayacaktır.
+
+### Hedef puanın bağlamı
+- Hedef yalnız tek bir çıplak sayı olmayacaktır.
+- Hedef en az **sınav dönemi + KPSS profili + puan türü + hedef değer** bağlamıyla tutulacaktır.
+- Örnek mantık: 2026 / KPSS Lisans GY-GK / KPSSP3 / hedef 85.
+- Kullanıcı sınav türü veya dönemi değiştirdiğinde eski hedef tarihçesi anlamını kaybetmeyecek; yeni dönem için yeni/uyarlanmış hedef oluşturulabilecektir.
+- Hedef ekranı gerektiğinde net performansı, tahmini puan aralığını ve tahmin güvenini ayrı gösterecektir.
+
+### Güncel Bilgiler / time-sensitive academic content
+- Kullanıcı-facing ad olarak **Güncel Bilgiler** kullanılabilir; bu alan ÖSYM'nin Türkiye ve Dünya ile ilgili genel/kültürel/sosyoekonomik kapsamıyla mapping üzerinden ilişkilendirilecektir.
+- Güncel Bilgiler normal evergreen Tarih konusu gibi kalıcı tek mastery modeliyle ele alınmayacaktır.
+- Her zaman duyarlı içerik en az olay/tarih, kategori, kaynak/provenance, doğrulama durumu, ilgili sınav dönemi, geçerlilik/aktiflik durumu, son doğrulama ve soru üretimine uygunluk bilgilerini taşıyacaktır.
+- Her sınav dönemi için **Active Current Affairs Set / aktif güncel bilgi havuzu** bulunabilecektir.
+- “Son 12 ayda çıkan her haber” gibi sert ve doğrulanmamış bir kural kullanılmayacaktır.
+- Güncel içeriklerin sınav ilgisi; resmî kaynak güvenilirliği, kapsamla ilişkisi, kamusal/kültürel/sosyoekonomik önemi ve editoryal doğrulamayla değerlendirilecektir.
+- İnternette gündem olması tek başına soru bankasına giriş nedeni olmayacaktır.
+- AI yeni aday içerik bulma/özetleme/sınıflandırmada yardımcı olabilir; **kaynak doğrulama + Quality Gate + gerekli insan review** olmadan canlı akademik içerik olmayacaktır.
+- Süresi/geçerliliği geçen içerik yeni dönemin aktif havuzundan çıkarılabilir; geçmiş soru ve öğrenme kayıtları provenance ile korunur.
+
+### Güncel Bilgiler öğrenci akışı
+- Güncel Bilgiler için ayrı, sade bir öğrenci merkezi bulunabilecektir.
+- Akış **doğrulanmış kısa bilgi kartı → kısa kontrol/mini soru → uygun aralıkta hatırlama → sınava yaklaşırken karma güncel bilgiler tekrarı** biçiminde çalışabilir.
+- Kullanıcıya uzun ve kontrolsüz haber akışı sunulmayacaktır.
+- Retention sistemi güncel bilgi için kullanılabilir ancak tekrar önerisi içerik geçerliliğini ve ilgili sınav dönemini dikkate alacaktır.
+- Süresi geçmiş bir güncel bilgiyi sırf retention zamanı geldi diye ana çalışma önerisine taşımayacaktır.
+- Güncel Bilgilerde akademik görünüm kullanıcıya dönemsel coverage/readiness olarak sunulabilir; evergreen konu mastery’siyle sahte biçimde eşitlenmeyecektir.
+
+### Çıkmış sorular ve dönem geçerliliği
+- Çıkmış soru hangi KPSS dönemi/blueprint altında sorulduğunu taşıyacaktır.
+- Yeni dönem kullanıcısına gösterilmeden önce mevcut Official Scope mapping'i ve içerik güncelliği açısından uygunluğu kontrol edilecektir.
+- Evergreen sorular uygun olduğu sürece dönemler arası yeniden kullanılabilir.
+- Mevzuat, kurum bilgisi veya güncel olaya bağlı soru güncelliğini kaybederse review/quarantine/archive politikaları uygulanacaktır.
+- “Resmî çıkmış soru” provenance niteliği korunur; platformun açıklaması/çözümü ayrıca versiyonlanır.
+
+### Admin Sınav Modeli Merkezi
+- Admin Panelinde **KPSS Sınav Modeli / Exam Blueprint Merkezi** bulunacaktır.
+- Her profilde en az durum, sınav dönemi, blueprint sürümü, resmî kaynak, son doğrulama, tarih durumu, soru/süre yapısı, puan türü, kapsam sürümü ve mapping durumu görülebilecektir.
+- Yeni ÖSYM kılavuzu/takvimi geldiğinde eski kaydın üzerine sessizce yazmak yerine yeni taslak veya revision oluşturulacaktır.
+- Yayın öncesi eski/yeni karşılaştırması ve etki analizi gösterilecektir.
+- Etki analizi soru uygunluğu, taxonomy mapping, deneme şablonları, program motoru ve aktif kullanıcı dönemleri gibi bağımlılıkları gösterebilecektir.
+- Kritik blueprint değişiklikleri audit log'a yazılacaktır.
+
+### Kaynak ve doğrulama politikası
+- Sınav tarihi, soru/süre yapısı, kapsam, puan türü ve resmî puanlama kuralı gibi sınav gerçekleri için **ÖSYM'nin resmî kılavuz/takvim/dokümanları birincil kaynaktır**.
+- Üçüncü taraf siteler kolaylık/araştırma sinyali olabilir ancak blueprint yayınlamada resmî kaynak yerine geçmeyecektir.
+- Blueprint'in son doğrulama tarihi ve kaynak referansı olacaktır.
+- Yeni yılın resmî dokümanı çıkmadan önce kullanılan tahmini bilgiler kullanıcıya resmî gibi sunulmayacaktır.
+
+### Ana ilke
+- Merkezi zincir: **Exam Blueprint → Exam Period → Official Scope → Platform Taxonomy Mapping → Score Type → Calendar → Mock Snapshot → Program/Target Engine**.
+- Böylece 2026 → 2028 → sonraki dönemlerde sınav yapısı değişse bile eski kullanıcı geçmişi ve denemeler bozulmadan yeni sınav profili yayınlanabilecektir.
+- **23. KPSS Sınav Modeli / Müfredat / Güncel Bilgiler / Puan Türleri başlığı ürün mimarisi açısından tamamlanmıştır.**
+
 ---
 Durum: Ürün planlama aşaması devam ediyor. Henüz geliştirmeye başlanmadı.
