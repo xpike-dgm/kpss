@@ -139,11 +139,11 @@ Extract and prepare the standalone **existing approved Kavriva K symbol** from t
 
 ---
 
-## 1.6 Asset ID: BRAND-06 — Logo Kullanım Sunum Kartı
-**Amaç:** Marka sunumu veya brand guideline başlangıç sayfası için hero brand card.
+## 1.6 Asset ID: BRAND-06 — Kavriva Master Brand Kalibrasyon / Kullanım Kartı
+**Amaç:** Batch 01 içinde yalnız mevcut Kavriva master markasının geometri, boşluk, kontrast ve kullanım davranışını standardize eden brand-calibration board. **Kavriva KPSS ürün lockup'ını içermez; ürün lockup'ı Batch 02'de BRAND-02/03/04 ile üretilir.**
 
 **Prompt:**
-Create a polished brand presentation card for **Kavriva KPSS** showing the logo in a premium brand-guideline style layout. Present the Kavriva KPSS logo centered in a clean, elegant composition with lots of breathing room. Use white or very light surface background, subtle grid or guideline hints if needed, and a refined indigo accent. The overall feel should look like the opening page of a professional design system or brand guide. Include no explanatory paragraphs; if any text is used, keep it minimal and brand-centric. The composition should communicate clarity, confidence, and a mature product identity.
+Create a polished **master-brand calibration and usage board for the existing approved Kavriva logo only**. Do not create or show a Kavriva KPSS product lockup in this asset. Use the existing Kavriva geometric K symbol and existing Kavriva wordmark exactly as approved, without redesigning either. Present the master brand in a professional brand-guideline composition with clear white-space, optical alignment, safe-area/clear-space demonstration, small-size behavior, black-on-white, white-on-dark, and symbol-only examples. The board should establish the visual anchor that later Kavriva products will inherit. Keep the composition premium, minimal, and technical. If the approved Kavriva logo reference is unavailable, stop and request it rather than recreating the logo from memory.
 
 ---
 
@@ -169,7 +169,7 @@ Create a **maskable app icon** version for **Kavriva KPSS**. Use the same Kavriv
 **Amaç:** Çok küçük boyutta kullanılacak favicon.
 
 **Prompt:**
-Create a favicon-ready micro version of the **Kavriva K symbol** optimized for very small sizes. The design should prioritize extreme clarity and recognizability. Use a simplified geometric version if necessary, while keeping it consistent with the main Kavriva symbol. The favicon should work well on white, dark, and indigo contexts. No extra text. Keep it compact, crisp, and unmistakably Kavriva.
+Create a favicon-ready presentation of the **existing approved Kavriva K symbol** optimized through export sizing, optical centering, padding, and contrast only. **Do not simplify, redraw, reinterpret, or alter the K geometry**, even at very small sizes. If the exact symbol becomes unreadable at a target favicon size, preserve the geometry and solve the issue through canvas padding/background/size strategy rather than changing the mark. The favicon should work on white, dark, and indigo contexts. No extra text.
 
 ---
 
@@ -197,7 +197,7 @@ Create a cohesive icon set for **Kavriva KPSS** in a clean, modern outline style
 **Amaç:** KPSS derslerini temsil edecek özel ikonlar.
 
 **Prompt:**
-Create a cohesive icon set for the main **Kavriva KPSS** content categories, using the same icon style as the main UI system. The set must include icons for: Turkish, Mathematics, History, Geography, Citizenship, Current Affairs, Education Sciences, question solving, topic learning, revision, full mock exams, analysis, time management, accuracy, difficulty, concept mastery, and progress. The icons must look academic and modern without relying on cliché school symbols. If symbolic cues are used, keep them subtle and abstract. Show the set as a unified icon board with consistent visual language and clean spacing.
+Create a cohesive icon set for the main **Kavriva KPSS** content categories, using the same icon style as the main UI system. The set must include icons for: Turkish, Mathematics, History, Geography, Citizenship, Current Affairs, General Ability / General Culture overview, question solving, topic learning, revision, full mock exams, analysis, time management, accuracy, difficulty, concept mastery, and progress. **Do not include Education Sciences; the current accepted product scope is General Ability / General Culture.** The icons must look academic and modern without relying on cliché school symbols. If symbolic cues are used, keep them subtle and abstract. Show the set as a unified icon board with consistent visual language and clean spacing.
 
 ---
 
@@ -235,9 +235,9 @@ Create a refined category visual for **Citizenship** in the Kavriva KPSS system.
 **Prompt:**
 Create a refined category visual for **Current Affairs** in the Kavriva KPSS system. The image should suggest updates, ongoing relevance, and curated important information. Use clean card-like structures, signal/wave/news-flow inspired abstract motifs, and a modern educational product feel.
 
-## 4.7 Asset ID: CAT-07 — Eğitim Bilimleri Görsel Kartı
+## 4.7 Asset ID: CAT-07 — Genel Yetenek / Genel Kültür Overview Görsel Kartı
 **Prompt:**
-Create a refined category visual for **Education Sciences** in the Kavriva KPSS system. The visual should suggest pedagogy, development, learning systems, and structured educational thinking. Keep the design modern, clean, and consistent with the Kavriva visual language.
+Create a refined overview category visual for **General Ability / General Culture (Genel Yetenek / Genel Kültür)** in the Kavriva KPSS system. This asset represents the overall accepted academic scope rather than a separate subject. Visually combine analytical/problem-solving energy with structured general-knowledge signals in one balanced composition, while staying consistent with the individual Turkish, Mathematics, History, Geography, Citizenship, and Current Affairs category visuals. Do not introduce Education Sciences or field-exam imagery. Keep the design modern, clean, premium, and clearly part of the same category-visual family.
 
 ---
 
@@ -560,26 +560,22 @@ Use the previously established **Kavriva KPSS** master visual system consistentl
 
 ---
 
-# 16. ÜRETİM SIRASI ÖNERİSİ
+# 16. ÜRETİM SIRASI — TEK OTORİTE: AI BATCH PLAN
 
-Görsel üretimi daha verimli ve tutarlı yapmak için önerilen sıra:
+Bu Prompt Pack asset'in **ne ve nasıl üretileceğini** tanımlar; üretim sırasını ayrıca tekrar tanımlamaz.
 
-1. BRAND-01 → BRAND-05
-2. APP-01 → APP-04
-3. ICON-01 → ICON-03
-4. CAT-01 → CAT-07
-5. EMPTY-01 → EMPTY-10
-6. ONBOARD-01 → ONBOARD-10
-7. GAME-01 → GAME-10
-8. AI-01 → AI-06
-9. SOCIAL-01 → SOCIAL-05
-10. ACADEMIC-01 → ACADEMIC-07
-11. MKT-01 → MKT-06
-12. SHARE-01 → SHARE-05
-13. ADMIN-01 → ADMIN-04
-14. MOTION-01 → MOTION-04
+Canonical sıra ve bağımlılık kaynağı:
 
-Sebep: önce marka ve çekirdek sistem kurulursa sonraki tüm üretimler o dile daha kolay bağlanır.
+**`docs/design/KAVRIVA_KPSS_AI_BATCH_PLAN.md`**
+
+Kurallar:
+- Batch Plan içindeki **22 batch** sırası geçerlidir.
+- Bu dosyadaki Asset ID numara sırası üretim sırası değildir.
+- Batch Plan ile Prompt Pack arasında sıra çelişkisi görülürse **Batch Plan sıra açısından otoritedir**.
+- Prompt Pack ise ilgili Asset ID'nin içerik/görsel brief'i açısından otoritedir.
+- BRAND-06 Batch 01'de yalnız master-brand calibration board olarak kullanılır.
+- Kavriva KPSS product lockup BRAND-02/03/04 ile Batch 02'de üretilir.
+- Bir batch onaylanmadan ona bağımlı sonraki batch finale taşınmaz.
 
 ---
 
