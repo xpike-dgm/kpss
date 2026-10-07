@@ -1,0 +1,2 @@
+const {build,root,fs,path}=require('../family-board.cjs');
+async function main(){const manifest=JSON.parse(fs.readFileSync(path.join(__dirname,'manifest.json'),'utf8'));const evidence=await build({entries:manifest.entries,outDir:path.join(root,'assets/onboarding/track-b/review'),title:'Onboarding · Canonical A',prefix:'ONBOARD-01',columns:5});fs.writeFileSync(path.join(__dirname,'qa-evidence.json'),JSON.stringify({generated:true,sourcePixelsUnchanged:true,finalExport:'Pending',figma:'Pending',evidence},null,2));}main().catch(e=>{console.error(e);process.exit(1)});

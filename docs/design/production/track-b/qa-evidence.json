@@ -1,0 +1,108 @@
+{
+  "generated": true,
+  "sourcePixelsUnchanged": true,
+  "finalExport": "Pending",
+  "figma": "Pending",
+  "evidence": [
+    {
+      "assetId": "ONBOARD-01",
+      "file": "ONBOARD-01__guided-learning__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7033359279015285,
+      "sha256": "ec785d0ec38e8e728bb105c5eb4f63078b79e49e1f90ca2f6e8a22d6c360f27e",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "ONBOARD-02",
+      "file": "ONBOARD-02__level-calibration__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6566082634453322,
+      "sha256": "750610d1aefbb6bef5f7083ad5d5d5cc1aa88e6592a9753ba5a135e4b9b12364",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "ONBOARD-03",
+      "file": "ONBOARD-03__next-step__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6918072693695962,
+      "sha256": "9f3ffaa677c1fe18158a5b985ed53845701e413ce402a300b61748ccb6be5467",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "ONBOARD-04",
+      "file": "ONBOARD-04__spaced-revision__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.664384336947923,
+      "sha256": "247c1fa8e33229b57ebfe99363af280cd521776b82bcdc10b41c659a6e5eae8e",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "ONBOARD-05",
+      "file": "ONBOARD-05__constructive-review__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7398563830193142,
+      "sha256": "6381cd3578c14bcfbe18576e57a73daf54d4f7fb4716618248e1663e920356e8",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "ONBOARD-06",
+      "file": "ONBOARD-06__exam-analysis__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6591723073087968,
+      "sha256": "ad1ed20b9a9d9f8a9dad98164df1bfa9dcf0e48da22781b3013db4ec4b5930dc",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "ONBOARD-07",
+      "file": "ONBOARD-07__explanation-support__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6187911601535374,
+      "sha256": "fb6552d5a15d1330c95e849e81c0d2dce9548da5e7f78dc84391edb3f3e522ac",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "ONBOARD-08",
+      "file": "ONBOARD-08__collaborative-study__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.7263531817800264,
+      "sha256": "6c8c6e3049a632fddb578e5ea5b496b8e8ea37a5eaf02f6ec868cdde107c804e",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "ONBOARD-09",
+      "file": "ONBOARD-09__timely-reminders__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6609350874649288,
+      "sha256": "c7a44809e15d460b18f0d7fac17728b690beac4e7fb7e18e851c4c8aaea69ef5",
+      "sourceCopyExact": true
+    },
+    {
+      "assetId": "ONBOARD-10",
+      "file": "ONBOARD-10__offline-continuity__canonical-a__v01.png",
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "transparentFraction": 0.6621077305413745,
+      "sha256": "de45821c376cc671a7ab52ef2c76085b7cd7e4ece71e4acd3a22165863e8271a",
+      "sourceCopyExact": true
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "tool": "built-in image_gen",
+  "transparentBackground": true,
+  "categoryStyleReferences": [
+    "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+    "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+    "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png"
+  ],
+  "onboardHeroReference": "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-9863-7420-8197-f02f1694c86e\\exec-9e237f13-1286-4c45-b249-a37ddae7f8ed.png",
+  "prompts": [
+    {
+      "assetId": "ONBOARD-01",
+      "prompt": "Use case: stylized-concept. Asset type: Kavriva KPSS onboarding transparent illustration, canonical A Geometric Editorial. Input images are STYLE REFERENCES only, preserve their same frontal clean restrained digital geometry, indigo white pale-lavender and dark ink line language. Generate a new subject, never duplicate the references. One strong silhouette, 2–3 main motifs, generous negative space, square transparent canvas centered object occupies70%. Frontal or near-frontal flat + very restrained soft depth, shallow overlap short soft shadow, crisp smooth outlines, large simple shapes. Palette primary indigo #4F46E5 direction with white/cool neutral pale surfaces; approximate generated shading not final tokens. No isometric slabs, bevels, toy glossy plastic, volumetric lights, 3D emoji, gradients backgrounds, stock cartoon, humans, robot, mascot, logo, K, wordmark. No letters numbers labels button UI copy or watermarks anywhere. Rounded neutral line motifs allowed as symbolic detail, no actual interface screenshot.\nFourth input is ONBOARD-03 family hero STYLE reference only. Asset ID: ONBOARD-01. Subject: Introducing guided personalized preparation: one central pale open-ended structured learning tile with three large geometric modules (triangle, circle, quarter arc) held within one indigo guiding frame and a small outward direction cue. Calm personal progress and intelligent structure, no book, no graduation, no actual UI.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png",
+        "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-9863-7420-8197-f02f1694c86e\\exec-9e237f13-1286-4c45-b249-a37ddae7f8ed.png"
+      ]
+    },
+    {
+      "assetId": "ONBOARD-02",
+      "prompt": "Use case: stylized-concept. Asset type: Kavriva KPSS onboarding transparent illustration, canonical A Geometric Editorial. Input images are STYLE REFERENCES only, preserve their same frontal clean restrained digital geometry, indigo white pale-lavender and dark ink line language. Generate a new subject, never duplicate the references. One strong silhouette, 2–3 main motifs, generous negative space, square transparent canvas centered object occupies70%. Frontal or near-frontal flat + very restrained soft depth, shallow overlap short soft shadow, crisp smooth outlines, large simple shapes. Palette primary indigo #4F46E5 direction with white/cool neutral pale surfaces; approximate generated shading not final tokens. No isometric slabs, bevels, toy glossy plastic, volumetric lights, 3D emoji, gradients backgrounds, stock cartoon, humans, robot, mascot, logo, K, wordmark. No letters numbers labels button UI copy or watermarks anywhere. Rounded neutral line motifs allowed as symbolic detail, no actual interface screenshot.\nFourth input is ONBOARD-03 family hero STYLE reference only. Asset ID: ONBOARD-02. Subject: Measurement and personal level calibration: a frontal semicircular indigo/pale gauge with one precise dark pointer, three differently sized neutral indicator blocks below, one small indigo measurement target. Analytical understanding not speedometer race, no labels.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png",
+        "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-9863-7420-8197-f02f1694c86e\\exec-9e237f13-1286-4c45-b249-a37ddae7f8ed.png"
+      ]
+    },
+    {
+      "assetId": "ONBOARD-03",
+      "prompt": "Use case: stylized-concept. Asset type: Kavriva KPSS onboarding transparent illustration, canonical A Geometric Editorial. Input images are STYLE REFERENCES only, preserve their same frontal clean restrained digital geometry, indigo white pale-lavender and dark ink line language. Generate a new subject, never duplicate the references. One strong silhouette, 2–3 main motifs, generous negative space, square transparent canvas centered object occupies70%. Frontal or near-frontal flat + very restrained soft depth, shallow overlap short soft shadow, crisp smooth outlines, large simple shapes. Palette primary indigo #4F46E5 direction with white/cool neutral pale surfaces; approximate generated shading not final tokens. No isometric slabs, bevels, toy glossy plastic, volumetric lights, 3D emoji, gradients backgrounds, stock cartoon, humans, robot, mascot, logo, K, wordmark. No letters numbers labels button UI copy or watermarks anywhere. Rounded neutral line motifs allowed as symbolic detail, no actual interface screenshot.\nAsset ID: ONBOARD-03. Subject: Signature hero: useful next study action with clarity. A sparse frontal branching route of three large circular study nodes, one chosen next node prominent indigo ring connected by a clear forward arrow, a single pale abstract learning card behind. Unchosen branches quiet pale neutral. Clear purposeful path, not stairs, not generic growth chart. Strong legible 96px silhouette.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png"
+      ]
+    },
+    {
+      "assetId": "ONBOARD-04",
+      "prompt": "Use case: stylized-concept. Asset type: Kavriva KPSS onboarding transparent illustration, canonical A Geometric Editorial. Input images are STYLE REFERENCES only, preserve their same frontal clean restrained digital geometry, indigo white pale-lavender and dark ink line language. Generate a new subject, never duplicate the references. One strong silhouette, 2–3 main motifs, generous negative space, square transparent canvas centered object occupies70%. Frontal or near-frontal flat + very restrained soft depth, shallow overlap short soft shadow, crisp smooth outlines, large simple shapes. Palette primary indigo #4F46E5 direction with white/cool neutral pale surfaces; approximate generated shading not final tokens. No isometric slabs, bevels, toy glossy plastic, volumetric lights, 3D emoji, gradients backgrounds, stock cartoon, humans, robot, mascot, logo, K, wordmark. No letters numbers labels button UI copy or watermarks anywhere. Rounded neutral line motifs allowed as symbolic detail, no actual interface screenshot.\nFourth input is ONBOARD-03 family hero STYLE reference only. Asset ID: ONBOARD-04. Subject: Spaced repetition and reinforcement: one large circular returning arrow wraps two pale learning tiles with simple geometric pattern and progressively spaced three small nodes along returning arc. Calm systematic revisiting, no clockface digits, no infinity celebration.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png",
+        "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-9863-7420-8197-f02f1694c86e\\exec-9e237f13-1286-4c45-b249-a37ddae7f8ed.png"
+      ]
+    },
+    {
+      "assetId": "ONBOARD-05",
+      "prompt": "Use case: stylized-concept. Asset type: Kavriva KPSS onboarding transparent illustration, canonical A Geometric Editorial. Input images are STYLE REFERENCES only, preserve their same frontal clean restrained digital geometry, indigo white pale-lavender and dark ink line language. Generate a new subject, never duplicate the references. One strong silhouette, 2–3 main motifs, generous negative space, square transparent canvas centered object occupies70%. Frontal or near-frontal flat + very restrained soft depth, shallow overlap short soft shadow, crisp smooth outlines, large simple shapes. Palette primary indigo #4F46E5 direction with white/cool neutral pale surfaces; approximate generated shading not final tokens. No isometric slabs, bevels, toy glossy plastic, volumetric lights, 3D emoji, gradients backgrounds, stock cartoon, humans, robot, mascot, logo, K, wordmark. No letters numbers labels button UI copy or watermarks anywhere. Rounded neutral line motifs allowed as symbolic detail, no actual interface screenshot.\nFourth input is ONBOARD-03 family hero STYLE reference only. Asset ID: ONBOARD-05. Subject: Constructive mistake learning: two large near-frontal learning tiles, left has a misplaced indigo geometric piece beside empty matching notch, right piece aligns correctly within tile; a restrained short connecting arrow conveys correction and insight. No punitive red X, no exam text.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png",
+        "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-9863-7420-8197-f02f1694c86e\\exec-9e237f13-1286-4c45-b249-a37ddae7f8ed.png"
+      ]
+    },
+    {
+      "assetId": "ONBOARD-06",
+      "prompt": "Use case: stylized-concept. Asset type: Kavriva KPSS onboarding transparent illustration, canonical A Geometric Editorial. Input images are STYLE REFERENCES only, preserve their same frontal clean restrained digital geometry, indigo white pale-lavender and dark ink line language. Generate a new subject, never duplicate the references. One strong silhouette, 2–3 main motifs, generous negative space, square transparent canvas centered object occupies70%. Frontal or near-frontal flat + very restrained soft depth, shallow overlap short soft shadow, crisp smooth outlines, large simple shapes. Palette primary indigo #4F46E5 direction with white/cool neutral pale surfaces; approximate generated shading not final tokens. No isometric slabs, bevels, toy glossy plastic, volumetric lights, 3D emoji, gradients backgrounds, stock cartoon, humans, robot, mascot, logo, K, wordmark. No letters numbers labels button UI copy or watermarks anywhere. Rounded neutral line motifs allowed as symbolic detail, no actual interface screenshot.\nFourth input is ONBOARD-03 family hero STYLE reference only. Asset ID: ONBOARD-06. Subject: Full mock exam practice into insight: one frontal pale exam sheet with three blank selection circles and short abstract neutral rules, paired with one indigo/pale three-bar analytical panel and a small magnifying arc isolating one result. No scoring digits, no timer race, no actual UI text.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png",
+        "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-9863-7420-8197-f02f1694c86e\\exec-9e237f13-1286-4c45-b249-a37ddae7f8ed.png"
+      ]
+    },
+    {
+      "assetId": "ONBOARD-07",
+      "prompt": "Use case: stylized-concept. Asset type: Kavriva KPSS onboarding transparent illustration, canonical A Geometric Editorial. Input images are STYLE REFERENCES only, preserve their same frontal clean restrained digital geometry, indigo white pale-lavender and dark ink line language. Generate a new subject, never duplicate the references. One strong silhouette, 2–3 main motifs, generous negative space, square transparent canvas centered object occupies70%. Frontal or near-frontal flat + very restrained soft depth, shallow overlap short soft shadow, crisp smooth outlines, large simple shapes. Palette primary indigo #4F46E5 direction with white/cool neutral pale surfaces; approximate generated shading not final tokens. No isometric slabs, bevels, toy glossy plastic, volumetric lights, 3D emoji, gradients backgrounds, stock cartoon, humans, robot, mascot, logo, K, wordmark. No letters numbers labels button UI copy or watermarks anywhere. Rounded neutral line motifs allowed as symbolic detail, no actual interface screenshot.\nFourth input is ONBOARD-03 family hero STYLE reference only. Asset ID: ONBOARD-07. Subject: Helpful contextual explanation: a prominent pale verified academic solution card with a clear indigo check seal and a subordinate smaller indigo-outline explanation bubble containing two simple logical linked shapes. Verified solution visually authoritative; AI secondary supporting explanation, no robot, no magic stars, no fabricated answer text.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png",
+        "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-9863-7420-8197-f02f1694c86e\\exec-9e237f13-1286-4c45-b249-a37ddae7f8ed.png"
+      ]
+    },
+    {
+      "assetId": "ONBOARD-08",
+      "prompt": "Use case: stylized-concept. Asset type: Kavriva KPSS onboarding transparent illustration, canonical A Geometric Editorial. Input images are STYLE REFERENCES only, preserve their same frontal clean restrained digital geometry, indigo white pale-lavender and dark ink line language. Generate a new subject, never duplicate the references. One strong silhouette, 2–3 main motifs, generous negative space, square transparent canvas centered object occupies70%. Frontal or near-frontal flat + very restrained soft depth, shallow overlap short soft shadow, crisp smooth outlines, large simple shapes. Palette primary indigo #4F46E5 direction with white/cool neutral pale surfaces; approximate generated shading not final tokens. No isometric slabs, bevels, toy glossy plastic, volumetric lights, 3D emoji, gradients backgrounds, stock cartoon, humans, robot, mascot, logo, K, wordmark. No letters numbers labels button UI copy or watermarks anywhere. Rounded neutral line motifs allowed as symbolic detail, no actual interface screenshot.\nFourth input is ONBOARD-03 family hero STYLE reference only. Asset ID: ONBOARD-08. Subject: Structured collaborative study: three restrained abstract participant nodes, each simple circle within its pale personal learning tile, connect symmetrically toward one common indigo progress ring. No chat logos, social feeds, esports shields, winner pedestal or people characters.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png",
+        "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-9863-7420-8197-f02f1694c86e\\exec-9e237f13-1286-4c45-b249-a37ddae7f8ed.png"
+      ]
+    },
+    {
+      "assetId": "ONBOARD-09",
+      "prompt": "Use case: stylized-concept. Asset type: Kavriva KPSS onboarding transparent illustration, canonical A Geometric Editorial. Input images are STYLE REFERENCES only, preserve their same frontal clean restrained digital geometry, indigo white pale-lavender and dark ink line language. Generate a new subject, never duplicate the references. One strong silhouette, 2–3 main motifs, generous negative space, square transparent canvas centered object occupies70%. Frontal or near-frontal flat + very restrained soft depth, shallow overlap short soft shadow, crisp smooth outlines, large simple shapes. Palette primary indigo #4F46E5 direction with white/cool neutral pale surfaces; approximate generated shading not final tokens. No isometric slabs, bevels, toy glossy plastic, volumetric lights, 3D emoji, gradients backgrounds, stock cartoon, humans, robot, mascot, logo, K, wordmark. No letters numbers labels button UI copy or watermarks anywhere. Rounded neutral line motifs allowed as symbolic detail, no actual interface screenshot.\nFourth input is ONBOARD-03 family hero STYLE reference only. Asset ID: ONBOARD-09. Subject: Timely useful study reminder and continuity: one large pale rounded calendar tile with sparse blank day circles, a simple indigo bell offset front, one highlighted indigo scheduled circle connected to a short continuation path. No numbers, badges counts, attention-seeking notification explosion.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png",
+        "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-9863-7420-8197-f02f1694c86e\\exec-9e237f13-1286-4c45-b249-a37ddae7f8ed.png"
+      ]
+    },
+    {
+      "assetId": "ONBOARD-10",
+      "prompt": "Use case: stylized-concept. Asset type: Kavriva KPSS onboarding transparent illustration, canonical A Geometric Editorial. Input images are STYLE REFERENCES only, preserve their same frontal clean restrained digital geometry, indigo white pale-lavender and dark ink line language. Generate a new subject, never duplicate the references. One strong silhouette, 2–3 main motifs, generous negative space, square transparent canvas centered object occupies70%. Frontal or near-frontal flat + very restrained soft depth, shallow overlap short soft shadow, crisp smooth outlines, large simple shapes. Palette primary indigo #4F46E5 direction with white/cool neutral pale surfaces; approximate generated shading not final tokens. No isometric slabs, bevels, toy glossy plastic, volumetric lights, 3D emoji, gradients backgrounds, stock cartoon, humans, robot, mascot, logo, K, wordmark. No letters numbers labels button UI copy or watermarks anywhere. Rounded neutral line motifs allowed as symbolic detail, no actual interface screenshot.\nFourth input is ONBOARD-03 family hero STYLE reference only. Asset ID: ONBOARD-10. Subject: Practical offline study continuity across devices: a frontal pale phone frame and modest secondary tablet frame showing identical single indigo learning tile, one small download arrow into a local cache tray and a quiet broken-connection symbol secondary. No claims AI/social works offline, no wifi triumph, no UI copy.",
+      "references": [
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-01__mathematics__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-03__history__canonical-a__v01.png",
+        "C:/Users/Xpike/Desktop/AI Projetcs/kavriva-kpss/assets/categories/batch-06/family-review/CAT-04__geography__canonical-a__v01.png",
+        "C:\\Users\\Xpike\\.codex\\generated_images\\01a117b5-9863-7420-8197-f02f1694c86e\\exec-9e237f13-1286-4c45-b249-a37ddae7f8ed.png"
+      ]
+    }
+  ]
+}
