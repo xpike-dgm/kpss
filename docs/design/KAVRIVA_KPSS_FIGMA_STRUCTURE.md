@@ -213,7 +213,7 @@ Sections:
 - Geography
 - Citizenship
 - Current Affairs
-- Education Sciences
+- General Ability / General Culture Overview
 
 Asset bağlantıları:
 - CAT-01 → CAT-07
