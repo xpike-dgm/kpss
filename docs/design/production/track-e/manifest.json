@@ -1,0 +1,160 @@
+{
+  "tool": "Native SVG extension of approved icon grammar; no bitmap-generation call required for UI/card/emblem assets",
+  "entries": [
+    {
+      "assetId": "SOCIAL-01",
+      "name": "default-avatar-system",
+      "label": "Varsayılan avatar ailesi",
+      "mode": "light",
+      "filename": "SOCIAL-01__default-avatar-system__light__v01.svg",
+      "nativeVector": true,
+      "uiText": "editable SVG placeholder text; no real names/data",
+      "status": "Review"
+    },
+    {
+      "assetId": "SOCIAL-01",
+      "name": "default-avatar-system",
+      "label": "Varsayılan avatar ailesi",
+      "mode": "dark",
+      "filename": "SOCIAL-01__default-avatar-system__dark__v01.svg",
+      "nativeVector": true,
+      "uiText": "editable SVG placeholder text; no real names/data",
+      "status": "Review"
+    },
+    {
+      "assetId": "SOCIAL-02",
+      "name": "team-emblem-library",
+      "label": "Takım amblemleri",
+      "mode": "light",
+      "filename": "SOCIAL-02__team-emblem-library__light__v01.svg",
+      "nativeVector": true,
+      "uiText": "editable SVG placeholder text; no real names/data",
+      "status": "Review"
+    },
+    {
+      "assetId": "SOCIAL-02",
+      "name": "team-emblem-library",
+      "label": "Takım amblemleri",
+      "mode": "dark",
+      "filename": "SOCIAL-02__team-emblem-library__dark__v01.svg",
+      "nativeVector": true,
+      "uiText": "editable SVG placeholder text; no real names/data",
+      "status": "Review"
+    },
+    {
+      "assetId": "SOCIAL-03",
+      "name": "duel-matchup",
+      "label": "Düello eşleşmesi",
+      "mode": "light",
+      "filename": "SOCIAL-03__duel-matchup__light__v01.svg",
+      "nativeVector": true,
+      "uiText": "editable SVG placeholder text; no real names/data",
+      "status": "Review"
+    },
+    {
+      "assetId": "SOCIAL-03",
+      "name": "duel-matchup",
+      "label": "Düello eşleşmesi",
+      "mode": "dark",
+      "filename": "SOCIAL-03__duel-matchup__dark__v01.svg",
+      "nativeVector": true,
+      "uiText": "editable SVG placeholder text; no real names/data",
+      "status": "Review"
+    },
+    {
+      "assetId": "SOCIAL-04",
+      "name": "study-room-cover",
+      "label": "Çalışma odası kapağı",
+      "mode": "light",
+      "filename": "SOCIAL-04__study-room-cover__light__v01.svg",
+      "nativeVector": true,
+      "uiText": "editable SVG placeholder text; no real names/data",
+      "status": "Review"
+    },
+    {
+      "assetId": "SOCIAL-04",
+      "name": "study-room-cover",
+      "label": "Çalışma odası kapağı",
+      "mode": "dark",
+      "filename": "SOCIAL-04__study-room-cover__dark__v01.svg",
+      "nativeVector": true,
+      "uiText": "editable SVG placeholder text; no real names/data",
+      "status": "Review"
+    },
+    {
+      "assetId": "SOCIAL-05",
+      "name": "invite-card",
+      "label": "Davet kartı",
+      "mode": "light",
+      "filename": "SOCIAL-05__invite-card__light__v01.svg",
+      "nativeVector": true,
+      "uiText": "editable SVG placeholder text; no real names/data",
+      "status": "Review"
+    },
+    {
+      "assetId": "SOCIAL-05",
+      "name": "invite-card",
+      "label": "Davet kartı",
+      "mode": "dark",
+      "filename": "SOCIAL-05__invite-card__dark__v01.svg",
+      "nativeVector": true,
+      "uiText": "editable SVG placeholder text; no real names/data",
+      "status": "Review"
+    }
+  ],
+  "evidence": [
+    {
+      "assetId": "SOCIAL-01",
+      "file": "SOCIAL-01__default-avatar-system__light__v01.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": false,
+      "transparentFraction": 0,
+      "sha256": "8fdd5306e0e3f1ecc5f305ae374002f3c8ba0c2433f6e79a6f6efcbfc7188d9a",
+      "sourceCopyExact": null
+    },
+    {
+      "assetId": "SOCIAL-02",
+      "file": "SOCIAL-02__team-emblem-library__light__v01.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": false,
+      "transparentFraction": 0,
+      "sha256": "72b2a44f4b19b1d8b3ef4de7ef1345e84a363a69cc1215aae6e37338601133ac",
+      "sourceCopyExact": null
+    },
+    {
+      "assetId": "SOCIAL-03",
+      "file": "SOCIAL-03__duel-matchup__light__v01.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": false,
+      "transparentFraction": 0,
+      "sha256": "29101d86673cce0492155a1fb6af9ab2c978326bf669b7843a3a87a4caec0e38",
+      "sourceCopyExact": null
+    },
+    {
+      "assetId": "SOCIAL-04",
+      "file": "SOCIAL-04__study-room-cover__light__v01.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": false,
+      "transparentFraction": 0,
+      "sha256": "dbac195e4c05737341e08b2aa2093ec05e0f4720ecd2792c7c05edf73124c371",
+      "sourceCopyExact": null
+    },
+    {
+      "assetId": "SOCIAL-05",
+      "file": "SOCIAL-05__invite-card__light__v01.png",
+      "width": 512,
+      "height": 512,
+      "hasAlpha": false,
+      "transparentFraction": 0,
+      "sha256": "1b4987dc0f48ce3ab1eb5bec14dda7e5319adbe6a1e9f3cab9c728af09ba48ab",
+      "sourceCopyExact": null
+    }
+  ],
+  "status": "Review",
+  "figma": "Pending",
+  "finalProductionExport": "Pending"
+}
