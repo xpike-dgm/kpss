@@ -654,13 +654,33 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Evidence Event, policy/engine/version/oturum bağlamıyla tam izlenebilir olacak ve reason codes üretecek.
    - ✅ **Akademik Evidence & Scoring Kuralları tamamlandı.**
 
-25. 🟨 **Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik**
-   - Kullanıcı Ayarlar Merkezi
-   - Hesap kurtarma, cihazlar, export/silme
-   - Bildirim varsayılanları, sessiz saatler ve kanal/frekans politikası
-   - Kullanıcı-facing gizlilik ve AI veri tercihleri
+25. ✅ **Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik**
+   - ✅ Ayarlar Merkezi hesap, KPSS/hedef, görünüm/erişilebilirlik, bildirim, gizlilik/sosyal, AI/BYOK, öğrenme tercihleri, cihazlar/offline ve Verilerim alanlarını birleştirecek.
+   - ✅ E-posta doğrulama, şifre sıfırlama/değiştirme, e-posta değişikliği, passkey/TOTP ve recovery akışları bulunacak.
+   - ✅ Kritik hesap işlemlerinde step-up authentication kullanılabilecek; normal kullanıcı 2FA'sı opsiyonel, admin MFA'sı zorunlu kalacak.
+   - ✅ Kullanıcı aktif cihaz/oturumlarını görebilecek, tekil oturum veya diğer tüm cihazları kapatabilecek.
+   - ✅ Transactional e-posta güvenlik/hesap mesajlarını pazarlama iletişiminden ayrı yönetecek.
+   - ✅ KPSS türü/dönemi değişikliği geçmişi silmeyecek; aktif blueprint/program yeni bağlama göre yeniden hesaplanacak.
+   - ✅ Erişilebilirlik temel özellik olacak; tema Sistem/Açık/Koyu desteklenecek.
+   - ✅ Bildirim olayı ile uygulama içi/push/e-posta teslim kanalları ayrılacak.
+   - ✅ Güvenlik bildirimleri kritik kategori olacak; akademik/streak/sosyal/meta push kullanıcı kontrolünde kalacak.
+   - ✅ Push izni ilk açılışta değil bağlama göre istenecek.
+   - ✅ Varsayılan sessiz saat 22:00–08:00 kullanıcı yerel saati olacak; değiştirilebilir/kapatılabilir.
+   - ✅ Merkezi Notification Orchestrator anti-spam/frekans politikası uygulayacak; yaklaşık 2 proaktif push/gün başlangıç adayı, kesin değer config olacak.
+   - ✅ Akademik bilgiler varsayılan olarak özel olacak; sosyal görünürlük alan bazlı opt-in olacak.
+   - ✅ Arkadaş keşfi kullanıcı adı/kod/link üzerinden çalışacak; telefon rehberi zorunlu olmayacak.
+   - ✅ Presence ayrı gizlilik tercihi olacak; engelleme güçlü sosyal kısıtlar uygulayacak.
+   - ✅ AI tamamen kapatılabilir; varsayılan AI gizlilik modu yalnız mevcut bağlam olacak, geniş çalışma geçmişi kişiselleştirmesi opt-in olacak.
+   - ✅ BYOK anahtarları maskeli/encrypted olacak; kullanıcı değiştirebilecek/kaldırabilecek.
+   - ✅ Zorunlu operasyonel telemetry ile isteğe bağlı ürün analitiği ayrılacak.
+   - ✅ Kullanıcı offline cihaz verisini yönetebilecek; local cache temizliği bulut verisini silmeyecek.
+   - ✅ Self-service veri export'u ve self-service hesap silme bulunacak.
+   - ✅ Hesap silme Deletion Pending + 7 günlük geri alma penceresiyle çalışacak; final retention/anonimleştirme ayrıntıları 28'de kapanacak.
+   - ✅ Hesap silme finalinde BYOK credential'ları da güvenli silme sürecine girecek.
+   - ✅ Kritik güvenlik/gizlilik değişiklikleri audit event üretecek; hesap düzeyi ve cihaz düzeyi ayarlar ayrılacak.
+   - ✅ **Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik tamamlandı.**
 
-26. ⬜ **İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri**
+26. 🟨 **İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri**
    - İçerik üretim/review operasyonu
    - Coverage standartları ve havuz yeterliliği
    - Kaynak kullanım hakkı / yayın hard-gate'i
@@ -684,4 +704,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **25. Ayarlar / Hesap Yaşam Döngüsü / Bildirimler / Gizlilik 🟨**.
+İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **26. İçerik Üretim Operasyonu / Coverage / Telif / Release İçerik Kriterleri 🟨**.
