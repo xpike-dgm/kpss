@@ -615,14 +615,24 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
    - ✅ Klavye çelişkisi çözüldü: erişilebilir tam klavye navigasyonu zorunlu, özel power-user kısayolları opsiyonel.
    - ✅ **Plan konsolidasyonu tamamlandı.**
 
-23. 🟨 **KPSS Sınav Modeli / Müfredat / Güncel Bilgiler / Puan Türleri**
-   - KPSS türü ve sınav döneminin versiyonlu tanımı
-   - Resmî/tahmini sınav tarihi ve değişiklik davranışı
-   - Dersler, test yapısı, soru dağılımı ve süre şablonları
-   - Net/puan türleri ve hedef puanın hangi puanı ifade ettiği
-   - Güncel Bilgiler gibi zaman duyarlı içeriklerin öğrenci akışı
+23. ✅ **KPSS Sınav Modeli / Müfredat / Güncel Bilgiler / Puan Türleri**
+   - ✅ Versiyonlu Exam Blueprint / Sınav Profili merkezi sınav modeli olacak.
+   - ✅ KPSS Lisans / Ön Lisans / Ortaöğretim GY-GK profilleri sınav dönemi ve ilgili puan türüyle bağlanacak.
+   - ✅ Resmî tarih durumu Tahmini / Resmî / Revize Edildi / Gerçekleşti olarak yönetilecek; tarih değişikliği programı yeniden hesaplatacak, borç/ceza üretmeyecek.
+   - ✅ Official Scope ile platformun ayrıntılı Ders → Konu → Alt Konu → Kazanım taxonomy'si ayrı ve versiyonlu mapping ile bağlanacak.
+   - ✅ Müfredat değişikliğinde geçmiş veri silinmeyecek; yalnız yeni dönem aktif kapsam/uygunluk değişecek.
+   - ✅ Soru sayısı, süre ve yaklaşık resmî dağılımlar koda sabit gömülmeyecek; blueprint verisi olacak.
+   - ✅ Denemeler blueprint ve question-version snapshot'ı koruyacak.
+   - ✅ Net performansı ile KPSS puan tahmini ayrılacak; sahte kesin “X net = Y puan” yaklaşımı kullanılmayacak.
+   - ✅ Hedef puan sınav dönemi + profil + puan türü + hedef değer bağlamıyla saklanacak.
+   - ✅ Güncel Bilgiler time-sensitive akademik içerik olarak ayrı aktif dönem havuzuyla yönetilecek; sert “son 12 ay” kuralı olmayacak.
+   - ✅ Güncel Bilgiler akışı doğrulanmış kısa bilgi → mini kontrol → retention → sınava yakın karma tekrar mantığında çalışabilecek.
+   - ✅ Çıkmış sorular kendi dönem/blueprint provenance'ını koruyacak ve yeni dönemde kapsam/güncellik kontrolünden geçecek.
+   - ✅ Admin Sınav Modeli Merkezi eski/yeni blueprint karşılaştırması, etki analizi ve audit ile çalışacak.
+   - ✅ Sınav gerçeklerinde ÖSYM resmî kılavuz/takvim/dokümanları birincil kaynak olacak.
+   - ✅ **KPSS Sınav Modeli / Müfredat / Güncel Bilgiler / Puan Türleri tamamlandı.**
 
-24. ⬜ **Akademik Evidence & Scoring Kuralları**
+24. 🟨 **Akademik Evidence & Scoring Kuralları**
    - Doğru / yanlış / boş akademik etkisi
    - Tekrar görülen soru ve farklı çalışma modlarının kanıt ağırlığı
    - Karma Test, retention, deneme, AI pratik ve düello verisinin mastery/readiness etkisi
@@ -657,4 +667,4 @@ Amaç: Her başlığı sırayla tartışmak, kararları netleştirmek ve kesinle
 
 Bu listedeki başlıklar mümkün olduğunca sırayla ele alınacaktır. Bir başlık yeterince netleştiğinde durumu ✅ olarak değiştirilecek ve kesinleşmiş ürün kararları `PRODUCT_PLAN.md` içerisine işlenecektir.
 
-İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **23. KPSS Sınav Modeli / Müfredat / Güncel Bilgiler / Puan Türleri 🟨**.
+İlk 21 ana başlık tamamlandıktan sonra yapılan gap analysis ile post-audit planlama turu açılmıştır. Şu anda aktif tartışma konusu: **24. Akademik Evidence & Scoring Kuralları 🟨**.
