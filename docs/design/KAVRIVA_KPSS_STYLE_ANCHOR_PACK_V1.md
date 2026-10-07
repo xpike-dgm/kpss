@@ -32,3 +32,7 @@ Görsel üretimde CAT A referansları **style reference**, logo ve app icon **im
 - E: SOCIAL-01–05, sakin akademik sosyal; esports yok.
 
 Her track asset promptlarını okur, yalnız kendi kapsamını üretir, provenance/prompt seti ve karşılaştırma paftasını kaydeder; family QA, 96px ve dark diagnostic yapar; en fazla Review. Gerçek UI text editable SVG/Figma layer olarak korunur. Tema/state/native-vector eksikleri production Pending olarak açık yazılır. Kendi raporu scoped commit ile main'e kaydedilir; ortak checklist/registry koordinatör tarafından birleştirilir.
+
+## Owner addendum — Core System wave, 2026-10-07
+
+Owner category7 + parallel41 asset'in Design Direction'ını kabul etti. Önceki “Batch15 öncesi dur” gate'i o tamamlanan fazın tarihsel sınırıdır. Yeni açık izin: Track F / Batch15 ACADEMIC01–07, G / Batch16 ADMIN01–04, H / Batch17 MOTION01–04 ve J / Batch20 SHARE01–05 paralel, en fazla Review. Anchor direction ve grammar değişmez. Final Production Export/Figma Pending. P-01–P-06 polish yeni wave'i bloklamaz; final export öncesi zorunludur. Batch18/19 marketing MKT01–06 Planned; gerçek product screens/stabil native library olmadan üretim yok. Batch21'e geçilmez. Core System toplu review sonrası Owner sonraki adımı belirler.

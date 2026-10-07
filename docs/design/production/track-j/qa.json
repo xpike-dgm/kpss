@@ -1,0 +1,305 @@
+{
+  "actualTemplates": 30,
+  "longCopyFixtures": 6,
+  "tests": [
+    {
+      "assetId": "SHARE-01",
+      "format": "og",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-01",
+      "format": "og",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-01",
+      "format": "square",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-01",
+      "format": "square",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-01",
+      "format": "story-safe",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-01",
+      "format": "story-safe",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-02",
+      "format": "og",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-02",
+      "format": "og",
+      "mode": "light",
+      "fixture": "long-copy",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-02",
+      "format": "og",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-02",
+      "format": "square",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-02",
+      "format": "square",
+      "mode": "light",
+      "fixture": "long-copy",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-02",
+      "format": "square",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-02",
+      "format": "story-safe",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-02",
+      "format": "story-safe",
+      "mode": "light",
+      "fixture": "long-copy",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-02",
+      "format": "story-safe",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-03",
+      "format": "og",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-03",
+      "format": "og",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-03",
+      "format": "square",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-03",
+      "format": "square",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-03",
+      "format": "story-safe",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-03",
+      "format": "story-safe",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-04",
+      "format": "og",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-04",
+      "format": "og",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-04",
+      "format": "square",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-04",
+      "format": "square",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-04",
+      "format": "story-safe",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-04",
+      "format": "story-safe",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-05",
+      "format": "og",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-05",
+      "format": "og",
+      "mode": "light",
+      "fixture": "long-copy",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-05",
+      "format": "og",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-05",
+      "format": "square",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-05",
+      "format": "square",
+      "mode": "light",
+      "fixture": "long-copy",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-05",
+      "format": "square",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-05",
+      "format": "story-safe",
+      "mode": "light",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-05",
+      "format": "story-safe",
+      "mode": "light",
+      "fixture": "long-copy",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    },
+    {
+      "assetId": "SHARE-05",
+      "format": "story-safe",
+      "mode": "dark",
+      "fixture": "template",
+      "copySlotOverflow": 0,
+      "storySafe": true
+    }
+  ],
+  "copySlotOverflow": 0,
+  "contrast": {
+    "lightInk": 17.74659431591738,
+    "indigoOnWhite": 6.287528596095884,
+    "darkWhite": 21
+  },
+  "darkSurface": "Existing approved black master presentation; no black tile against a different background",
+  "brand": "Immutable canonical Direction A SVG nested without edits",
+  "personalData": "No real user data; name omitted; synthetic fixtures only",
+  "figma": "Pending",
+  "finalProductionExport": "Pending"
+}

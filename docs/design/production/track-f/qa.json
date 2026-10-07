@@ -1,0 +1,53 @@
+{
+  "status": "Review",
+  "assets": 7,
+  "variantCount": 79,
+  "textCardOverflow": 0,
+  "tests": 79,
+  "textEditable": true,
+  "mathEditable": true,
+  "sequentialSolutionEditable": true,
+  "contrast": [
+    {
+      "name": "light ink",
+      "ratio": 17.75,
+      "normalTextPass": true
+    },
+    {
+      "name": "light muted",
+      "ratio": 10.46,
+      "normalTextPass": true
+    },
+    {
+      "name": "light indigo",
+      "ratio": 6.29,
+      "normalTextPass": true
+    },
+    {
+      "name": "dark text",
+      "ratio": 17.75,
+      "normalTextPass": true
+    },
+    {
+      "name": "dark muted",
+      "ratio": 12.04,
+      "normalTextPass": true
+    },
+    {
+      "name": "step white",
+      "ratio": 6.29,
+      "normalTextPass": true
+    }
+  ],
+  "semanticNote": "Color supports textual label and named state. Amber/red are separators rather than small body text. Dark theme uses white accent text, existing indigo step filled background.",
+  "figma": "Pending",
+  "finalProductionExport": "Pending",
+  "limitations": [
+    "SVG has named anatomy groups but no Figma auto layout, bindings or components created.",
+    "Formula simple editable Unicode/text; complex fraction/typesetting adaptation requires future native component review.",
+    "Sample academic text/metrics are layout evidence, not published verified academic content."
+  ],
+  "brandReferenceSha256": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
+  "nativeSourceImageElements": 0,
+  "visualReview": "PASS: family and solution/semantic/analysis detail boards inspected; no clipping, unchanged icon grammar and paired light/dark hierarchy."
+}

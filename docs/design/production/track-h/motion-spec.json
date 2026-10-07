@@ -1,0 +1,128 @@
+{
+  "status": "Review",
+  "frameCanvas": 96,
+  "backgroundMapping": {
+    "light": "#FFFFFF",
+    "dark": "#0C111D"
+  },
+  "iconGrammar": "grid24; stroke1.75; round cap/join; original ICON-03 paths",
+  "keyframeIntentOnly": true,
+  "reducedMotion": {
+    "allFourAssets": true,
+    "frame": "static-reduced-motion",
+    "behavior": "Show confirmed settled state directly and persist with the owning message. No scale, burst, pulse, opacity animation, timed removal or cycling. Essential status must also use editable text in future UI assembly."
+  },
+  "noAnimationImplementation": true,
+  "assets": [
+    {
+      "assetId": "MOTION-01",
+      "name": "xp-gain",
+      "icon": "xp",
+      "source": "GAME-01",
+      "duration": 420,
+      "peakAt": 140,
+      "trigger": "A confirmed XP ledger award from an eligible completed action; not video watching or a speculative award.",
+      "intent": "Small scale rise 0.94 → 1.06 → 1; one bounded emphasis ring; no reward amount.",
+      "easing": "cubic-bezier(0.2,0,0,1) rise, cubic-bezier(0.4,0,0.2,1) settle"
+    },
+    {
+      "assetId": "MOTION-02",
+      "name": "achievement-unlock",
+      "icon": "achievement",
+      "source": "GAME-06",
+      "duration": 560,
+      "peakAt": 220,
+      "trigger": "An existing achievement changes to unlocked after its configured condition is confirmed.",
+      "intent": "Approved GAME-06 badge frame; outline start → filled achievement reveal; corner emphasis only at peak.",
+      "easing": "cubic-bezier(0.2,0,0,1); no overshoot or bounce"
+    },
+    {
+      "assetId": "MOTION-03",
+      "name": "success-pulse",
+      "icon": "progress-ring",
+      "source": "ICON-03",
+      "duration": 320,
+      "peakAt": 120,
+      "trigger": "A confirmed successful action requiring local acknowledgment; no academic answer correctness inferred.",
+      "intent": "Existing check/progress-ring remains legible; one outward semantic green ring with no flash.",
+      "easing": "cubic-bezier(0.2,0,0,1) expansion and gentle fade"
+    },
+    {
+      "assetId": "MOTION-04",
+      "name": "light-celebration",
+      "icon": "special-moment",
+      "source": "GAME-10",
+      "duration": 600,
+      "peakAt": 200,
+      "trigger": "A confirmed existing special moment or milestone; no random prize or new reward mechanic.",
+      "intent": "Existing special-moment glyph; exactly four short radial strokes at peak, no confetti particle field.",
+      "easing": "cubic-bezier(0.2,0,0,1) reveal; cubic-bezier(0.4,0,0.2,1) exit"
+    }
+  ],
+  "sourceProvenance": [
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__xp__outline__v01.svg",
+      "sha256": "91c28054295cc52d2ca6358702faa680ca4d16cdb859d9eb6852222623b9ed31"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__xp__active__v01.svg",
+      "sha256": "fdb683777e88ae63d4b664186c858bfb0636038f2305492e734dc279161cf079"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__xp__outline-dark__v01.svg",
+      "sha256": "8df2f4f66df6555c0bead967dfbc2bee8f81f671656318bd0cf666eb1f7f3941"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__xp__active-dark__v01.svg",
+      "sha256": "afbb89ce984a0cc1c6c41e1d2e98c128c2c67ed1431c30371a02bc56a55e6c5c"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__achievement__outline__v01.svg",
+      "sha256": "6e7d1e7eb32ed15eafd34971658cb1f000f1a81274744b6fa6257403fd1e864f"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__achievement__active__v01.svg",
+      "sha256": "8951add2b66855e86b28c7686f377893cb36a97575a9ec09740682c6078a1e98"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__achievement__outline-dark__v01.svg",
+      "sha256": "61067399a645696590a4c32f923e1d3e78ac2a5418b7d66a17dea97be4bcb5cd"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__achievement__active-dark__v01.svg",
+      "sha256": "21e102db81c8ad984f32b15c96a0708dd9168daacb3a5e8eee63d11966047f04"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__progress-ring__outline__v01.svg",
+      "sha256": "f7a4bfb065d9be2123ef44f3ccc5cc3fb62d965ba264819c563d28e05df915c7"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__progress-ring__active__v01.svg",
+      "sha256": "4d5c9c6161bce423f051eb4e20cec75c08611f099f8f976ffc31737a94f0f729"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__progress-ring__outline-dark__v01.svg",
+      "sha256": "c1b7ff1be2d2da58534bfa75ae8ce10ff5a9d9fcad2db7394cefbac283198051"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__progress-ring__active-dark__v01.svg",
+      "sha256": "3c0419391caa4dc446c577bde66f2694a61256a636f70bcba3db0f1a4b91d51c"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__special-moment__outline__v01.svg",
+      "sha256": "ec1582e2d5c5fddff587a00cac4ab48ca5f3cb6e6d6b39964ff2143173927dc7"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__special-moment__active__v01.svg",
+      "sha256": "ea2f7baa36cce54a7405a77973ec75c66536e902c52d065307a6e108fb47364a"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__special-moment__outline-dark__v01.svg",
+      "sha256": "d0eb6f31b30f7d42ee6c5437b72229105e1ea513cfe5ab6bbcfc870abbd32a72"
+    },
+    {
+      "file": "assets/icons/batch-05/review/ICON-03__special-moment__active-dark__v01.svg",
+      "sha256": "cf3130c07fead5934781a4cca12fbe9af0155b954c7d4e137fb6cde314824c75"
+    }
+  ]
+}

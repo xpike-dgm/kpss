@@ -1,0 +1,244 @@
+{
+  "transitions": [
+    {
+      "assetId": "ACADEMIC-01",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-02",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-03",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-04",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-05",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-06",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-07",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "SHARE-01",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "SHARE-02",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "SHARE-03",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "SHARE-04",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "SHARE-05",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ADMIN-01",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ADMIN-02",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ADMIN-03",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ADMIN-04",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "MOTION-01",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "MOTION-02",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "MOTION-03",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "MOTION-04",
+      "from": "Planned",
+      "to": "In Production",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-01",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-02",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-03",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-04",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-05",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-06",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ACADEMIC-07",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ADMIN-01",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ADMIN-02",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ADMIN-03",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "ADMIN-04",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "MOTION-01",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "MOTION-02",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "MOTION-03",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "MOTION-04",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "SHARE-01",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "SHARE-02",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "SHARE-03",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "SHARE-04",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    },
+    {
+      "assetId": "SHARE-05",
+      "from": "In Production",
+      "to": "Review",
+      "date": "2026-10-07"
+    }
+  ]
+}

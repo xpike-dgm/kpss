@@ -1,0 +1,43 @@
+{
+  "scope": [
+    "MOTION-01",
+    "MOTION-02",
+    "MOTION-03",
+    "MOTION-04"
+  ],
+  "count": 4,
+  "status": "PASS for design review; native-frame intent only",
+  "frameCount": 32,
+  "storyboardCount": 4,
+  "staticFallbackCount": 8,
+  "lightDarkGeometryIdentical": true,
+  "nativeVector": true,
+  "noRasterImages": true,
+  "noAnimateElements": true,
+  "textOverflow": 0,
+  "sourceGlyphGeometry": "Original SVG body embedded without path edits; source hashes recorded",
+  "newKGeometry": false,
+  "kUsed": false,
+  "sourceGamification": "GAME-01 XP, GAME-06 achievement outer frame, GAME-10 special-moment; ICON-03 progress-ring",
+  "smallSize": {
+    "24": "Core glyph readable; badge detail not a primary24px pattern",
+    "48": "Glyph/badge readable; bounded peak accents visible",
+    "96": "All frames readable"
+  },
+  "contrast": {
+    "indigoOnWhite": 6.29,
+    "indigoOnDark": 3,
+    "whiteOnDark": 18.86,
+    "inkOnWhite": 17.75,
+    "greenRingOnWhite": 2.62,
+    "greenRingOnDark": 7.19
+  },
+  "semanticCaveat": "Success ring green on light is decorative; essential unchanged check glyph ink supplies meaning. No color-alone status.",
+  "pending": [
+    "Owner direction review",
+    "Actual UI text/status assembly",
+    "Animation implementation and reduced-motion device testing",
+    "Final Production Export",
+    "Figma"
+  ]
+}

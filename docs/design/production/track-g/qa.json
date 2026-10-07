@@ -1,0 +1,390 @@
+{
+  "statesReadFromProductPlan": true,
+  "nativeVector": true,
+  "rasterElements": 0,
+  "fontFamilies": [
+    "Manrope",
+    "Inter"
+  ],
+  "iconGrammar": {
+    "grid": 24,
+    "opticalBounds": [
+      2,
+      2,
+      22,
+      22
+    ],
+    "keyline": [
+      3,
+      3,
+      21,
+      21
+    ],
+    "curveOvershoot": 1,
+    "stroke": 1.75,
+    "cap": "round",
+    "join": "round",
+    "cornerRadius": 2,
+    "default": "outline",
+    "active": "filled primary silhouette where appropriate; otherwise indigo outline",
+    "smallSizes": [
+      16,
+      20,
+      24,
+      32
+    ],
+    "color": "currentColor",
+    "status": "Review"
+  },
+  "contrast": [
+    {
+      "mode": "light",
+      "semantic": "success",
+      "foreground": "#067647",
+      "background": "#ECFDF3",
+      "ratio": 5.396,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "success",
+      "foreground": "#067647",
+      "background": "#FFFFFF",
+      "ratio": 5.691,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "success",
+      "foreground": "#067647",
+      "background": "#F7F8FC",
+      "ratio": 5.362,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "warning",
+      "foreground": "#92400E",
+      "background": "#FFFAEB",
+      "ratio": 6.795,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "warning",
+      "foreground": "#92400E",
+      "background": "#FFFFFF",
+      "ratio": 7.09,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "warning",
+      "foreground": "#92400E",
+      "background": "#F7F8FC",
+      "ratio": 6.681,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "error",
+      "foreground": "#B42318",
+      "background": "#FEF3F2",
+      "ratio": 6.047,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "error",
+      "foreground": "#B42318",
+      "background": "#FFFFFF",
+      "ratio": 6.574,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "error",
+      "foreground": "#B42318",
+      "background": "#F7F8FC",
+      "ratio": 6.195,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "info",
+      "foreground": "#175CD3",
+      "background": "#EFF8FF",
+      "ratio": 5.571,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "info",
+      "foreground": "#175CD3",
+      "background": "#FFFFFF",
+      "ratio": 5.986,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "info",
+      "foreground": "#175CD3",
+      "background": "#F7F8FC",
+      "ratio": 5.641,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "neutral",
+      "foreground": "#344054",
+      "background": "#F2F4F7",
+      "ratio": 9.494,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "neutral",
+      "foreground": "#344054",
+      "background": "#FFFFFF",
+      "ratio": 10.461,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "neutral",
+      "foreground": "#344054",
+      "background": "#F7F8FC",
+      "ratio": 9.857,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "indigo",
+      "foreground": "#4F46E5",
+      "background": "#EEF2FF",
+      "ratio": 5.623,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "indigo",
+      "foreground": "#4F46E5",
+      "background": "#FFFFFF",
+      "ratio": 6.288,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "indigo",
+      "foreground": "#4F46E5",
+      "background": "#F7F8FC",
+      "ratio": 5.924,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "body",
+      "foreground": "#101828",
+      "background": "#FFFFFF",
+      "ratio": 17.747,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "body",
+      "foreground": "#101828",
+      "background": "#F7F8FC",
+      "ratio": 16.722,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "body",
+      "foreground": "#344054",
+      "background": "#FFFFFF",
+      "ratio": 10.461,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "light",
+      "semantic": "body",
+      "foreground": "#344054",
+      "background": "#F7F8FC",
+      "ratio": 9.857,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "success",
+      "foreground": "#12B76A",
+      "background": "#101828",
+      "ratio": 6.767,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "success",
+      "foreground": "#12B76A",
+      "background": "#0C111D",
+      "ratio": 7.191,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "warning",
+      "foreground": "#F59E0B",
+      "background": "#101828",
+      "ratio": 8.263,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "warning",
+      "foreground": "#F59E0B",
+      "background": "#0C111D",
+      "ratio": 8.781,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "error",
+      "foreground": "#EF4444",
+      "background": "#101828",
+      "ratio": 4.716,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "error",
+      "foreground": "#EF4444",
+      "background": "#0C111D",
+      "ratio": 5.011,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "info",
+      "foreground": "#2E90FA",
+      "background": "#101828",
+      "ratio": 5.481,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "info",
+      "foreground": "#2E90FA",
+      "background": "#0C111D",
+      "ratio": 5.825,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "neutral",
+      "foreground": "#D0D5DD",
+      "background": "#101828",
+      "ratio": 12.037,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "neutral",
+      "foreground": "#D0D5DD",
+      "background": "#0C111D",
+      "ratio": 12.791,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "indigo",
+      "foreground": "#A5B4FC",
+      "background": "#101828",
+      "ratio": 8.902,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "indigo",
+      "foreground": "#A5B4FC",
+      "background": "#0C111D",
+      "ratio": 9.46,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "body",
+      "foreground": "#FFFFFF",
+      "background": "#101828",
+      "ratio": 17.747,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "body",
+      "foreground": "#FFFFFF",
+      "background": "#0C111D",
+      "ratio": 18.859,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "body",
+      "foreground": "#D0D5DD",
+      "background": "#101828",
+      "ratio": 12.037,
+      "textAA": true,
+      "nonTextAA": true
+    },
+    {
+      "mode": "dark",
+      "semantic": "body",
+      "foreground": "#D0D5DD",
+      "background": "#0C111D",
+      "ratio": 12.791,
+      "textAA": true,
+      "nonTextAA": true
+    }
+  ],
+  "minimumContrast": 4.716,
+  "textOverflow": 0,
+  "mobileCardWidth": 320,
+  "rightsOverrideSeparate": true,
+  "rightsAcademicGateUnaffected": true,
+  "releaseNoOverrideBlockersPreserved": true,
+  "status": "Review"
+}

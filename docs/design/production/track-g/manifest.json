@@ -1,0 +1,106 @@
+{
+  "track": "G",
+  "batch": 16,
+  "selected": [
+    {
+      "assetId": "ADMIN-01",
+      "status": "Review",
+      "nativeVector": true,
+      "editableText": true,
+      "states": [
+        "Approved",
+        "Review Required",
+        "Quarantine",
+        "Archived",
+        "Conflict Detected"
+      ],
+      "extraIndicators": [],
+      "sourcePath": "assets/admin/track-g/review/ADMIN-01__content-quality__review__v01.svg",
+      "previewPath": "assets/admin/track-g/review/ADMIN-01__content-quality__review__v01.png",
+      "mobilePath": "assets/admin/track-g/review/ADMIN-01__content-quality__mobile-light-dark__v01.png",
+      "modes": [
+        "Light",
+        "Dark"
+      ],
+      "finalProductionExport": "Pending",
+      "figma": "Pending",
+      "compactPath": "assets/admin/track-g/review/ADMIN-01__compact-states__mobile-light-dark__v01.svg"
+    },
+    {
+      "assetId": "ADMIN-02",
+      "status": "Review",
+      "nativeVector": true,
+      "editableText": true,
+      "states": [
+        "OWNED_ORIGINAL",
+        "LICENSED",
+        "PERMISSION_CONFIRMED",
+        "OPEN_LICENSE / PUBLIC_USE_VERIFIED",
+        "PRIVATE_REFERENCE_ONLY",
+        "RIGHTS_UNKNOWN",
+        "RESTRICTED"
+      ],
+      "extraIndicators": [
+        "Admin Onayıyla Yayınla / Rights Override (separate audit indicator, not rights lifecycle state)"
+      ],
+      "sourcePath": "assets/admin/track-g/review/ADMIN-02__rights-status__review__v01.svg",
+      "previewPath": "assets/admin/track-g/review/ADMIN-02__rights-status__review__v01.png",
+      "mobilePath": "assets/admin/track-g/review/ADMIN-02__rights-status__mobile-light-dark__v01.png",
+      "modes": [
+        "Light",
+        "Dark"
+      ],
+      "finalProductionExport": "Pending",
+      "figma": "Pending",
+      "compactPath": "assets/admin/track-g/review/ADMIN-02__compact-states__mobile-light-dark__v01.svg"
+    },
+    {
+      "assetId": "ADMIN-03",
+      "status": "Review",
+      "nativeVector": true,
+      "editableText": true,
+      "states": [
+        "P0 Critical",
+        "P1 High",
+        "P2 Normal",
+        "P3 Enrichment"
+      ],
+      "extraIndicators": [],
+      "sourcePath": "assets/admin/track-g/review/ADMIN-03__queue-severity__review__v01.svg",
+      "previewPath": "assets/admin/track-g/review/ADMIN-03__queue-severity__review__v01.png",
+      "mobilePath": "assets/admin/track-g/review/ADMIN-03__queue-severity__mobile-light-dark__v01.png",
+      "modes": [
+        "Light",
+        "Dark"
+      ],
+      "finalProductionExport": "Pending",
+      "figma": "Pending",
+      "compactPath": "assets/admin/track-g/review/ADMIN-03__compact-states__mobile-light-dark__v01.svg"
+    },
+    {
+      "assetId": "ADMIN-04",
+      "status": "Review",
+      "nativeVector": true,
+      "editableText": true,
+      "states": [
+        "Healthy",
+        "Warning",
+        "Degraded",
+        "Blocked",
+        "RELEASE READY",
+        "NO-GO"
+      ],
+      "extraIndicators": [],
+      "sourcePath": "assets/admin/track-g/review/ADMIN-04__system-health__review__v01.svg",
+      "previewPath": "assets/admin/track-g/review/ADMIN-04__system-health__review__v01.png",
+      "mobilePath": "assets/admin/track-g/review/ADMIN-04__system-health__mobile-light-dark__v01.png",
+      "modes": [
+        "Light",
+        "Dark"
+      ],
+      "finalProductionExport": "Pending",
+      "figma": "Pending",
+      "compactPath": "assets/admin/track-g/review/ADMIN-04__compact-states__mobile-light-dark__v01.svg"
+    }
+  ]
+}

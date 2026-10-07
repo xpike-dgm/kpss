@@ -1,0 +1,1050 @@
+{
+  "assets": [
+    {
+      "assetId": "ACADEMIC-01",
+      "title": "Konu özeti",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-320-default__v01.svg",
+      "previewPath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-320-default__v01.png",
+      "variants": [
+        {
+          "name": "ACADEMIC-01__academic-component__light-480-default__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-480-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-480-default__v01.png",
+          "height": 322
+        },
+        {
+          "name": "ACADEMIC-01__academic-component__light-320-default__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-320-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-320-default__v01.png",
+          "height": 399
+        },
+        {
+          "name": "ACADEMIC-01__academic-component__dark-480-default__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__dark-480-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__dark-480-default__v01.png",
+          "height": 322
+        },
+        {
+          "name": "ACADEMIC-01__academic-component__dark-320-default__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__dark-320-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__dark-320-default__v01.png",
+          "height": 399
+        },
+        {
+          "name": "ACADEMIC-01__academic-component__light-480-short__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "short-title",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-480-short__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-01__academic-component__light-480-short__v01.png",
+          "height": 291
+        }
+      ],
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "ACADEMIC-02",
+      "title": "Formül / kural",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-320-default__v01.svg",
+      "previewPath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-320-default__v01.png",
+      "variants": [
+        {
+          "name": "ACADEMIC-02__academic-component__light-480-default__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-480-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-480-default__v01.png",
+          "height": 337
+        },
+        {
+          "name": "ACADEMIC-02__academic-component__light-320-default__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-320-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-320-default__v01.png",
+          "height": 436
+        },
+        {
+          "name": "ACADEMIC-02__academic-component__dark-480-default__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__dark-480-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__dark-480-default__v01.png",
+          "height": 337
+        },
+        {
+          "name": "ACADEMIC-02__academic-component__dark-320-default__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__dark-320-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__dark-320-default__v01.png",
+          "height": 436
+        },
+        {
+          "name": "ACADEMIC-02__academic-component__light-480-short__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "short-title",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-480-short__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-02__academic-component__light-480-short__v01.png",
+          "height": 305
+        }
+      ],
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "ACADEMIC-03",
+      "title": "Mini check",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-default__v01.svg",
+      "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-default__v01.png",
+      "variants": [
+        {
+          "name": "ACADEMIC-03__academic-component__light-480-default__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-480-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-480-default__v01.png",
+          "height": 407
+        },
+        {
+          "name": "ACADEMIC-03__academic-component__light-480-error__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "error",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-480-error__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-480-error__v01.png",
+          "height": 489
+        },
+        {
+          "name": "ACADEMIC-03__academic-component__light-320-default__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-default__v01.png",
+          "height": 470
+        },
+        {
+          "name": "ACADEMIC-03__academic-component__light-320-error__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "error",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-error__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-320-error__v01.png",
+          "height": 575
+        },
+        {
+          "name": "ACADEMIC-03__academic-component__dark-480-default__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__dark-480-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__dark-480-default__v01.png",
+          "height": 407
+        },
+        {
+          "name": "ACADEMIC-03__academic-component__dark-480-error__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "error",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__dark-480-error__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__dark-480-error__v01.png",
+          "height": 489
+        },
+        {
+          "name": "ACADEMIC-03__academic-component__dark-320-default__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__dark-320-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__dark-320-default__v01.png",
+          "height": 470
+        },
+        {
+          "name": "ACADEMIC-03__academic-component__dark-320-error__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "error",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__dark-320-error__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__dark-320-error__v01.png",
+          "height": 575
+        },
+        {
+          "name": "ACADEMIC-03__academic-component__light-480-short__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "short-title",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-480-short__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-03__academic-component__light-480-short__v01.png",
+          "height": 375
+        }
+      ],
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "ACADEMIC-04",
+      "title": "Çözüm adımı",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-320-default__v01.svg",
+      "previewPath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-320-default__v01.png",
+      "variants": [
+        {
+          "name": "ACADEMIC-04__academic-component__light-480-default__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-480-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-480-default__v01.png",
+          "height": 462
+        },
+        {
+          "name": "ACADEMIC-04__academic-component__light-320-default__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-320-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-320-default__v01.png",
+          "height": 615
+        },
+        {
+          "name": "ACADEMIC-04__academic-component__dark-480-default__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__dark-480-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__dark-480-default__v01.png",
+          "height": 462
+        },
+        {
+          "name": "ACADEMIC-04__academic-component__dark-320-default__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__dark-320-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__dark-320-default__v01.png",
+          "height": 615
+        },
+        {
+          "name": "ACADEMIC-04__academic-component__light-480-short__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "short-title",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-480-short__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-04__academic-component__light-480-short__v01.png",
+          "height": 431
+        }
+      ],
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "ACADEMIC-05",
+      "title": "İpucu / dikkat",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-tip__v01.svg",
+      "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-tip__v01.png",
+      "variants": [
+        {
+          "name": "ACADEMIC-05__academic-component__light-480-tip__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "tip",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-tip__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-tip__v01.png",
+          "height": 293
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__light-480-note__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "note",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-note__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-note__v01.png",
+          "height": 293
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__light-480-attention__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "attention",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-attention__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-attention__v01.png",
+          "height": 353
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__light-480-remember__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "remember",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-remember__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-remember__v01.png",
+          "height": 293
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__light-480-error__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "error",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-error__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-error__v01.png",
+          "height": 353
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__light-320-tip__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "tip",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-tip__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-tip__v01.png",
+          "height": 347
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__light-320-note__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "note",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-note__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-note__v01.png",
+          "height": 347
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__light-320-attention__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "attention",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-attention__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-attention__v01.png",
+          "height": 428
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__light-320-remember__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "remember",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-remember__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-remember__v01.png",
+          "height": 347
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__light-320-error__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "error",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-error__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-320-error__v01.png",
+          "height": 407
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__dark-480-tip__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "tip",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-480-tip__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-480-tip__v01.png",
+          "height": 293
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__dark-480-note__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "note",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-480-note__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-480-note__v01.png",
+          "height": 293
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__dark-480-attention__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "attention",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-480-attention__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-480-attention__v01.png",
+          "height": 353
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__dark-480-remember__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "remember",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-480-remember__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-480-remember__v01.png",
+          "height": 293
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__dark-480-error__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "error",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-480-error__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-480-error__v01.png",
+          "height": 353
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__dark-320-tip__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "tip",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-320-tip__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-320-tip__v01.png",
+          "height": 347
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__dark-320-note__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "note",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-320-note__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-320-note__v01.png",
+          "height": 347
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__dark-320-attention__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "attention",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-320-attention__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-320-attention__v01.png",
+          "height": 428
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__dark-320-remember__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "remember",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-320-remember__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-320-remember__v01.png",
+          "height": 347
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__dark-320-error__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "error",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-320-error__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__dark-320-error__v01.png",
+          "height": 407
+        },
+        {
+          "name": "ACADEMIC-05__academic-component__light-480-short__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "short-title",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-short__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-05__academic-component__light-480-short__v01.png",
+          "height": 230
+        }
+      ],
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "ACADEMIC-06",
+      "title": "Güncel Bilgiler",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-default__v01.svg",
+      "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-default__v01.png",
+      "variants": [
+        {
+          "name": "ACADEMIC-06__academic-component__light-480-default__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-480-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-480-default__v01.png",
+          "height": 377
+        },
+        {
+          "name": "ACADEMIC-06__academic-component__light-480-attention__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "attention",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-480-attention__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-480-attention__v01.png",
+          "height": 437
+        },
+        {
+          "name": "ACADEMIC-06__academic-component__light-320-default__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-default__v01.png",
+          "height": 422
+        },
+        {
+          "name": "ACADEMIC-06__academic-component__light-320-attention__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "attention",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-attention__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-320-attention__v01.png",
+          "height": 503
+        },
+        {
+          "name": "ACADEMIC-06__academic-component__dark-480-default__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__dark-480-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__dark-480-default__v01.png",
+          "height": 377
+        },
+        {
+          "name": "ACADEMIC-06__academic-component__dark-480-attention__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "attention",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__dark-480-attention__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__dark-480-attention__v01.png",
+          "height": 437
+        },
+        {
+          "name": "ACADEMIC-06__academic-component__dark-320-default__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__dark-320-default__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__dark-320-default__v01.png",
+          "height": 422
+        },
+        {
+          "name": "ACADEMIC-06__academic-component__dark-320-attention__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "attention",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__dark-320-attention__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__dark-320-attention__v01.png",
+          "height": 503
+        },
+        {
+          "name": "ACADEMIC-06__academic-component__light-480-short__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "short-title",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-480-short__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-06__academic-component__light-480-short__v01.png",
+          "height": 314
+        }
+      ],
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "ACADEMIC-07",
+      "title": "Analiz mini kartları",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-0__v01.svg",
+      "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-0__v01.png",
+      "variants": [
+        {
+          "name": "ACADEMIC-07__academic-component__light-480-default-0__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "metric": "Doğruluk",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-0__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-0__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-480-default-1__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "metric": "Ortalama süre",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-1__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-1__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-480-default-2__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "metric": "Net trendi",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-2__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-2__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-480-default-3__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "metric": "Güçlü konu",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-3__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-3__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-480-default-4__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "metric": "Güçlendirilecek konu",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-4__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-4__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-480-default-5__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "default",
+          "metric": "Hazır oluş",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-5__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-default-5__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-320-default-0__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "metric": "Doğruluk",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-0__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-0__v01.png",
+          "height": 233
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-320-default-1__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "metric": "Ortalama süre",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-1__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-1__v01.png",
+          "height": 233
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-320-default-2__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "metric": "Net trendi",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-2__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-2__v01.png",
+          "height": 233
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-320-default-3__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "metric": "Güçlü konu",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-3__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-3__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-320-default-4__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "metric": "Güçlendirilecek konu",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-4__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-4__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-320-default-5__v01",
+          "width": 320,
+          "theme": "light",
+          "state": "default",
+          "metric": "Hazır oluş",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-5__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-320-default-5__v01.png",
+          "height": 233
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-480-default-0__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Doğruluk",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-0__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-0__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-480-default-1__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Ortalama süre",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-1__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-1__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-480-default-2__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Net trendi",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-2__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-2__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-480-default-3__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Güçlü konu",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-3__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-3__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-480-default-4__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Güçlendirilecek konu",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-4__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-4__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-480-default-5__v01",
+          "width": 480,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Hazır oluş",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-5__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-480-default-5__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-320-default-0__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Doğruluk",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-0__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-0__v01.png",
+          "height": 233
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-320-default-1__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Ortalama süre",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-1__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-1__v01.png",
+          "height": 233
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-320-default-2__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Net trendi",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-2__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-2__v01.png",
+          "height": 233
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-320-default-3__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Güçlü konu",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-3__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-3__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-320-default-4__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Güçlendirilecek konu",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-4__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-4__v01.png",
+          "height": 210
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__dark-320-default-5__v01",
+          "width": 320,
+          "theme": "dark",
+          "state": "default",
+          "metric": "Hazır oluş",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-5__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__dark-320-default-5__v01.png",
+          "height": 233
+        },
+        {
+          "name": "ACADEMIC-07__academic-component__light-480-short__v01",
+          "width": 480,
+          "theme": "light",
+          "state": "short-title",
+          "sourcePath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-short__v01.svg",
+          "previewPath": "assets/academic/track-f/review/ACADEMIC-07__academic-component__light-480-short__v01.png",
+          "height": 210
+        }
+      ],
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "ADMIN-01",
+      "status": "Review",
+      "nativeVector": true,
+      "editableText": true,
+      "states": [
+        "Approved",
+        "Review Required",
+        "Quarantine",
+        "Archived",
+        "Conflict Detected"
+      ],
+      "extraIndicators": [],
+      "sourcePath": "assets/admin/track-g/review/ADMIN-01__content-quality__review__v01.svg",
+      "previewPath": "assets/admin/track-g/review/ADMIN-01__content-quality__review__v01.png",
+      "mobilePath": "assets/admin/track-g/review/ADMIN-01__content-quality__mobile-light-dark__v01.png",
+      "modes": [
+        "Light",
+        "Dark"
+      ],
+      "finalProductionExport": "Pending",
+      "figma": "Pending",
+      "compactPath": "assets/admin/track-g/review/ADMIN-01__compact-states__mobile-light-dark__v01.svg"
+    },
+    {
+      "assetId": "ADMIN-02",
+      "status": "Review",
+      "nativeVector": true,
+      "editableText": true,
+      "states": [
+        "OWNED_ORIGINAL",
+        "LICENSED",
+        "PERMISSION_CONFIRMED",
+        "OPEN_LICENSE / PUBLIC_USE_VERIFIED",
+        "PRIVATE_REFERENCE_ONLY",
+        "RIGHTS_UNKNOWN",
+        "RESTRICTED"
+      ],
+      "extraIndicators": [
+        "Admin Onayıyla Yayınla / Rights Override (separate audit indicator, not rights lifecycle state)"
+      ],
+      "sourcePath": "assets/admin/track-g/review/ADMIN-02__rights-status__review__v01.svg",
+      "previewPath": "assets/admin/track-g/review/ADMIN-02__rights-status__review__v01.png",
+      "mobilePath": "assets/admin/track-g/review/ADMIN-02__rights-status__mobile-light-dark__v01.png",
+      "modes": [
+        "Light",
+        "Dark"
+      ],
+      "finalProductionExport": "Pending",
+      "figma": "Pending",
+      "compactPath": "assets/admin/track-g/review/ADMIN-02__compact-states__mobile-light-dark__v01.svg"
+    },
+    {
+      "assetId": "ADMIN-03",
+      "status": "Review",
+      "nativeVector": true,
+      "editableText": true,
+      "states": [
+        "P0 Critical",
+        "P1 High",
+        "P2 Normal",
+        "P3 Enrichment"
+      ],
+      "extraIndicators": [],
+      "sourcePath": "assets/admin/track-g/review/ADMIN-03__queue-severity__review__v01.svg",
+      "previewPath": "assets/admin/track-g/review/ADMIN-03__queue-severity__review__v01.png",
+      "mobilePath": "assets/admin/track-g/review/ADMIN-03__queue-severity__mobile-light-dark__v01.png",
+      "modes": [
+        "Light",
+        "Dark"
+      ],
+      "finalProductionExport": "Pending",
+      "figma": "Pending",
+      "compactPath": "assets/admin/track-g/review/ADMIN-03__compact-states__mobile-light-dark__v01.svg"
+    },
+    {
+      "assetId": "ADMIN-04",
+      "status": "Review",
+      "nativeVector": true,
+      "editableText": true,
+      "states": [
+        "Healthy",
+        "Warning",
+        "Degraded",
+        "Blocked",
+        "RELEASE READY",
+        "NO-GO"
+      ],
+      "extraIndicators": [],
+      "sourcePath": "assets/admin/track-g/review/ADMIN-04__system-health__review__v01.svg",
+      "previewPath": "assets/admin/track-g/review/ADMIN-04__system-health__review__v01.png",
+      "mobilePath": "assets/admin/track-g/review/ADMIN-04__system-health__mobile-light-dark__v01.png",
+      "modes": [
+        "Light",
+        "Dark"
+      ],
+      "finalProductionExport": "Pending",
+      "figma": "Pending",
+      "compactPath": "assets/admin/track-g/review/ADMIN-04__compact-states__mobile-light-dark__v01.svg"
+    },
+    {
+      "assetId": "MOTION-01",
+      "source": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.svg",
+      "preview": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.png",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.svg",
+      "previewPath": "assets/motion/track-h/review/MOTION-01__storyboard__review__v01.png"
+    },
+    {
+      "assetId": "MOTION-02",
+      "source": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.svg",
+      "preview": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.png",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.svg",
+      "previewPath": "assets/motion/track-h/review/MOTION-02__storyboard__review__v01.png"
+    },
+    {
+      "assetId": "MOTION-03",
+      "source": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.svg",
+      "preview": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.png",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.svg",
+      "previewPath": "assets/motion/track-h/review/MOTION-03__storyboard__review__v01.png"
+    },
+    {
+      "assetId": "MOTION-04",
+      "source": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.svg",
+      "preview": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.png",
+      "nativeVector": true,
+      "status": "Review",
+      "sourcePath": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.svg",
+      "previewPath": "assets/motion/track-h/review/MOTION-04__storyboard__review__v01.png"
+    },
+    {
+      "assetId": "SHARE-01",
+      "format": "og",
+      "mode": "light",
+      "fixture": "template",
+      "width": 1200,
+      "height": 630,
+      "sourcePath": "assets/share/track-j/review/SHARE-01__open-graph__og-light__v01.svg",
+      "previewPath": "assets/share/track-j/review/SHARE-01__open-graph__og-light__v01.png",
+      "editableText": true,
+      "nativeVector": false,
+      "immutableRasterBrand": true,
+      "status": "Review",
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "SHARE-02",
+      "format": "og",
+      "mode": "light",
+      "fixture": "template",
+      "width": 1200,
+      "height": 630,
+      "sourcePath": "assets/share/track-j/review/SHARE-02__mock-result__og-light__v01.svg",
+      "previewPath": "assets/share/track-j/review/SHARE-02__mock-result__og-light__v01.png",
+      "editableText": true,
+      "nativeVector": false,
+      "immutableRasterBrand": true,
+      "status": "Review",
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "SHARE-03",
+      "format": "og",
+      "mode": "light",
+      "fixture": "template",
+      "width": 1200,
+      "height": 630,
+      "sourcePath": "assets/share/track-j/review/SHARE-03__level-up__og-light__v01.svg",
+      "previewPath": "assets/share/track-j/review/SHARE-03__level-up__og-light__v01.png",
+      "editableText": true,
+      "nativeVector": false,
+      "immutableRasterBrand": true,
+      "status": "Review",
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "SHARE-04",
+      "format": "og",
+      "mode": "light",
+      "fixture": "template",
+      "width": 1200,
+      "height": 630,
+      "sourcePath": "assets/share/track-j/review/SHARE-04__streak__og-light__v01.svg",
+      "previewPath": "assets/share/track-j/review/SHARE-04__streak__og-light__v01.png",
+      "editableText": true,
+      "nativeVector": false,
+      "immutableRasterBrand": true,
+      "status": "Review",
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    },
+    {
+      "assetId": "SHARE-05",
+      "format": "og",
+      "mode": "light",
+      "fixture": "template",
+      "width": 1200,
+      "height": 630,
+      "sourcePath": "assets/share/track-j/review/SHARE-05__achievement__og-light__v01.svg",
+      "previewPath": "assets/share/track-j/review/SHARE-05__achievement__og-light__v01.png",
+      "editableText": true,
+      "nativeVector": false,
+      "immutableRasterBrand": true,
+      "status": "Review",
+      "figma": "Pending",
+      "finalProductionExport": "Pending"
+    }
+  ],
+  "status": "Review",
+  "finalProductionExport": "Pending",
+  "figma": "Pending",
+  "brandHash": "0dcbcd704014a0cec8a6f40a9fe6917ffe954ca4123e3b1a723aed8c222ea98d",
+  "registryCounts": {
+    "Approved for Design Direction": 61,
+    "Review": 20,
+    "Planned": 6
+  },
+  "marketing": "MKT01–06 Planned",
+  "polish": "P01–P06 Open"
+}
