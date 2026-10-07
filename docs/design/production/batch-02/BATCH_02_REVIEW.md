@@ -63,3 +63,15 @@ Dosyalar `{ASSET_ID}__kavriva-kpss-lockup__direction-{a|b|c}-{light|dark|family-
 `build-directions.cjs` teknik kompozisyon script'i; `direction-qa.json` ölçü ve kaynak kanıtı; `asset-registry.json` local durum takibidir. Canonical brief'ler Prompt Pack BRAND-02/03/04; kaynak sırası AI Batch Plan Batch 02; üst katman Master Creative Direction ve PRODUCT_PLAN marka kararlarıdır. Generative image model kullanılmadı; native artwork yalnız yerleşim ve editable product text ile sunuldu.
 
 Owner'ın A/B/C seçimi bekleniyor. Seçimden önce final direction, Approved asset veya Batch 03 yok.
+
+## Owner Decision — 2026-10-07
+
+Owner **Direction A — Açık alt etiket** yönünü canonical Kavriva KPSS lockup direction olarak seçti.
+
+- BRAND-02 / BRAND-03 / BRAND-04, yalnız **Direction A** için **Approved for Design Direction**.
+- **Final Production Vector Export = Pending** ve **Figma = Pending**.
+- B ve C: **Archive / Rejected Exploration**. Dosyalar silinmeden archive klasörüne taşındı; yeniden üretim script'i seçim/arsiv ayrımına uyacak.
+- Batch 03–05, tek **STYLE LOCK REVIEW PACK** fazı olarak yetkilendirildi. İç bağımlılıklar ve QA korunur; batch aralarında Owner onayı beklenmez. Üretimler en fazla Review'a gelir.
+- Batch 06 yetkilendirilmedi. Toplu pack sonunda Owner review beklenir.
+
+Bu karar önceki exploration bölümündeki Owner selection Pending ifadelerini belirtilen kapsamda günceller. A'nın eski REVIEW paftası tarihsel seçim referansı olarak korunur; canonical durum bu Owner Decision ve registry'dedir.

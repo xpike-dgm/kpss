@@ -43,7 +43,7 @@ function lockup(id,d,mode='light'){
 function place(id,d,x,y,w,mode='light'){const l=lockup(id,d,mode);return `<g transform="translate(${x} ${y}) scale(${w/l.w})">${l.body}</g>`;}
 function svg(w,h,body,title){return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><title>${esc(title)}</title>${defs}${body}</svg>`;}
 const files=[],specs=[];
-function save(id,variant,w,h,body){const name=`${id}__kavriva-kpss-lockup__${variant}__v01.svg`;fs.writeFileSync(path.join(out,name),svg(w,h,body,`${id} / ${variant} / Review`));files.push({id,name,w,h});}
+function save(id,variant,w,h,body){const name=`${id}__kavriva-kpss-lockup__${variant}__v01.svg`;const decisions=path.join(__dirname,'owner-decisions.json');const rejected=fs.existsSync(decisions)&&/direction-[bc]-/.test(variant);const directory=rejected?path.join(root,'assets/brand/batch-02/archive/rejected-exploration'):out;fs.mkdirSync(directory,{recursive:true});fs.writeFileSync(path.join(directory,name),svg(w,h,body,`${id} / ${variant} / ${rejected?'Rejected Exploration':'Review snapshot'}`));files.push({id,name,w,h,directory});}
 for(const d of dirs){
  for(const id of ['BRAND-02','BRAND-03','BRAND-04']){
   const l=lockup(id,d),pad=Math.ceil(X);
@@ -67,7 +67,7 @@ for(const d of dirs){
 }
 const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});const page=await browser.newPage({deviceScaleFactor:1});
 const textBounds=[];
-for(const f of files){await page.setViewportSize({width:f.w,height:f.h});await page.setContent(`<html><head><style>html,body{margin:0;padding:0}svg{display:block}</style></head><body>${fs.readFileSync(path.join(out,f.name),'utf8')}</body></html>`);await page.evaluate(()=>document.fonts.ready);const overflow=await page.evaluate(()=>[...document.querySelectorAll('svg text')].map(n=>({text:n.textContent,bounds:n.getBoundingClientRect().toJSON()})).filter(n=>n.bounds.x<0||n.bounds.y<0||n.bounds.right>innerWidth||n.bounds.bottom>innerHeight));textBounds.push({file:f.name,overflow});if(overflow.length)throw Error('Text overflow '+f.name);await page.screenshot({path:path.join(out,f.name.replace('.svg','.png'))});}
+for(const f of files){await page.setViewportSize({width:f.w,height:f.h});await page.setContent(`<html><head><style>html,body{margin:0;padding:0}svg{display:block}</style></head><body>${fs.readFileSync(path.join(f.directory,f.name),'utf8')}</body></html>`);await page.evaluate(()=>document.fonts.ready);const overflow=await page.evaluate(()=>[...document.querySelectorAll('svg text')].map(n=>({text:n.textContent,bounds:n.getBoundingClientRect().toJSON()})).filter(n=>n.bounds.x<0||n.bounds.y<0||n.bounds.right>innerWidth||n.bounds.bottom>innerHeight));textBounds.push({file:f.name,overflow});if(overflow.length)throw Error('Text overflow '+f.name);await page.screenshot({path:path.join(f.directory,f.name.replace('.svg','.png'))});}
 await browser.close();
 const result={status:'Review',approvedBy:null,ownerDirectionSelection:null,sourceHash:sha(source),sourceImmutable:true,wordmarkCrop:wordBox,wordmarkNativePixelEquality:expected.equals(actual),labelText:'KPSS',labelFont:'Manrope',directions:dirs,specs,textBounds,geometry:{redraw:false,trace:false,simplify:false,nonUniformScale:false,wordmarkRetyped:false},trueVectorLogo:false,finalProductionVectorExport:'Pending',figma:'Pending',files:files.flatMap(f=>[f.name,f.name.replace('.svg','.png')])};
 fs.writeFileSync(path.join(__dirname,'direction-qa.json'),JSON.stringify(result,null,2)+'\n');

@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-07",
+  "approvedBy": "Owner",
+  "assetIds": ["BRAND-02", "BRAND-03", "BRAND-04"],
+  "canonicalDirection": "A — Açık alt etiket",
+  "status": "Approved for Design Direction",
+  "finalProductionVectorExport": "Pending",
+  "figma": "Pending",
+  "rejectedDirections": ["B", "C"],
+  "archive": "assets/brand/batch-02/archive/rejected-exploration",
+  "styleLockPhase": {"batches": [3, 4, 5], "intermediateOwnerApprovalRequired": false, "maximumAssetStatus": "Review", "stopBeforeBatch": 6}
+}

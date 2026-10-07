@@ -32,10 +32,10 @@
     {
       "assetId": "BRAND-02",
       "name": "Kavriva KPSS Ana Ürün Logosu",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [
         "review PNG",
@@ -48,31 +48,21 @@
         "BRAND-02__kavriva-kpss-lockup__direction-a-dark__v01.svg",
         "BRAND-02__kavriva-kpss-lockup__direction-a-dark__v01.png",
         "BRAND-02__kavriva-kpss-lockup__direction-a-family-board__v01.svg",
-        "BRAND-02__kavriva-kpss-lockup__direction-a-family-board__v01.png",
-        "BRAND-02__kavriva-kpss-lockup__direction-b-light__v01.svg",
-        "BRAND-02__kavriva-kpss-lockup__direction-b-light__v01.png",
-        "BRAND-02__kavriva-kpss-lockup__direction-b-dark__v01.svg",
-        "BRAND-02__kavriva-kpss-lockup__direction-b-dark__v01.png",
-        "BRAND-02__kavriva-kpss-lockup__direction-b-family-board__v01.svg",
-        "BRAND-02__kavriva-kpss-lockup__direction-b-family-board__v01.png",
-        "BRAND-02__kavriva-kpss-lockup__direction-c-light__v01.svg",
-        "BRAND-02__kavriva-kpss-lockup__direction-c-light__v01.png",
-        "BRAND-02__kavriva-kpss-lockup__direction-c-dark__v01.svg",
-        "BRAND-02__kavriva-kpss-lockup__direction-c-dark__v01.png",
-        "BRAND-02__kavriva-kpss-lockup__direction-c-family-board__v01.svg",
-        "BRAND-02__kavriva-kpss-lockup__direction-c-family-board__v01.png"
+        "BRAND-02__kavriva-kpss-lockup__direction-a-family-board__v01.png"
       ],
       "finalExportRef": null,
-      "ownerDirectionSelection": "Pending",
-      "finalProductionVectorExport": "Pending"
+      "ownerDirectionSelection": "A — Açık alt etiket",
+      "finalProductionVectorExport": "Pending",
+      "archiveStatus": "B/C: Archive / Rejected Exploration",
+      "archiveRef": "assets/brand/batch-02/archive/rejected-exploration"
     },
     {
       "assetId": "BRAND-03",
       "name": "Kavriva KPSS Yatay Logo Varyantı",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [
         "review PNG",
@@ -83,27 +73,21 @@
         "BRAND-03__kavriva-kpss-lockup__direction-a-light__v01.svg",
         "BRAND-03__kavriva-kpss-lockup__direction-a-light__v01.png",
         "BRAND-03__kavriva-kpss-lockup__direction-a-dark__v01.svg",
-        "BRAND-03__kavriva-kpss-lockup__direction-a-dark__v01.png",
-        "BRAND-03__kavriva-kpss-lockup__direction-b-light__v01.svg",
-        "BRAND-03__kavriva-kpss-lockup__direction-b-light__v01.png",
-        "BRAND-03__kavriva-kpss-lockup__direction-b-dark__v01.svg",
-        "BRAND-03__kavriva-kpss-lockup__direction-b-dark__v01.png",
-        "BRAND-03__kavriva-kpss-lockup__direction-c-light__v01.svg",
-        "BRAND-03__kavriva-kpss-lockup__direction-c-light__v01.png",
-        "BRAND-03__kavriva-kpss-lockup__direction-c-dark__v01.svg",
-        "BRAND-03__kavriva-kpss-lockup__direction-c-dark__v01.png"
+        "BRAND-03__kavriva-kpss-lockup__direction-a-dark__v01.png"
       ],
       "finalExportRef": null,
-      "ownerDirectionSelection": "Pending",
-      "finalProductionVectorExport": "Pending"
+      "ownerDirectionSelection": "A — Açık alt etiket",
+      "finalProductionVectorExport": "Pending",
+      "archiveStatus": "B/C: Archive / Rejected Exploration",
+      "archiveRef": "assets/brand/batch-02/archive/rejected-exploration"
     },
     {
       "assetId": "BRAND-04",
       "name": "Kavriva KPSS Dikey / Stacked Logo Varyantı",
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "source": "assets/brand/batch-01/source/Kavriva_L05A.png",
       "version": "v01",
-      "approvedBy": null,
+      "approvedBy": "Owner — 2026-10-07",
       "figma": "Pending",
       "exportFormats": [
         "review PNG",
@@ -114,19 +98,13 @@
         "BRAND-04__kavriva-kpss-lockup__direction-a-light__v01.svg",
         "BRAND-04__kavriva-kpss-lockup__direction-a-light__v01.png",
         "BRAND-04__kavriva-kpss-lockup__direction-a-dark__v01.svg",
-        "BRAND-04__kavriva-kpss-lockup__direction-a-dark__v01.png",
-        "BRAND-04__kavriva-kpss-lockup__direction-b-light__v01.svg",
-        "BRAND-04__kavriva-kpss-lockup__direction-b-light__v01.png",
-        "BRAND-04__kavriva-kpss-lockup__direction-b-dark__v01.svg",
-        "BRAND-04__kavriva-kpss-lockup__direction-b-dark__v01.png",
-        "BRAND-04__kavriva-kpss-lockup__direction-c-light__v01.svg",
-        "BRAND-04__kavriva-kpss-lockup__direction-c-light__v01.png",
-        "BRAND-04__kavriva-kpss-lockup__direction-c-dark__v01.svg",
-        "BRAND-04__kavriva-kpss-lockup__direction-c-dark__v01.png"
+        "BRAND-04__kavriva-kpss-lockup__direction-a-dark__v01.png"
       ],
       "finalExportRef": null,
-      "ownerDirectionSelection": "Pending",
-      "finalProductionVectorExport": "Pending"
+      "ownerDirectionSelection": "A — Açık alt etiket",
+      "finalProductionVectorExport": "Pending",
+      "archiveStatus": "B/C: Archive / Rejected Exploration",
+      "archiveRef": "assets/brand/batch-02/archive/rejected-exploration"
     },
     {
       "assetId": "BRAND-05",
