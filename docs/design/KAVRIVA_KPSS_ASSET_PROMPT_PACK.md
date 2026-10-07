@@ -103,7 +103,7 @@ Bu dosyadaki her promptta, eğer ayrıca belirtilmediyse şu ek kurallar geçerl
 **Amaç:** Kavriva ana marka logosu. Bu doğrudan Kavriva master brand içindir, KPSS alt ürününden bağımsızdır.
 
 **Prompt:**
-Create a premium master brand logo for **Kavriva**. The logo must feel like a modern technology brand rather than a generic education company. Use a strong, geometric, minimal symbol based on the letter **K**, with clean lines, balanced geometry, and a memorable silhouette that can work as both a wordmark companion and an app icon. The overall feel should be sleek, intelligent, stable, and modern. The symbol should be abstract enough to scale across multiple future products, not tied specifically to motorcycles or education. Pair the symbol with the word **Kavriva** in a clean, modern sans-serif style resembling Manrope or a geometric contemporary font. The logo should look premium, bold, and simple, suitable for SaaS, mobile apps, websites, and multi-product brand architecture. Use a monochrome black-on-white version for this main exploration. Avoid cliché symbols like books, caps, brains, gears, wrenches, or shields. Focus on strong geometry, brand memorability, and a timeless technology-brand presence.
+Use the **existing approved Kavriva master logo as an immutable visual reference**. Do **not redesign, reinterpret, regenerate, simplify into a different symbol, or replace** the existing geometric K mark. The task is to prepare and standardize the existing Kavriva master brand artwork for the Kavriva KPSS design system: preserve the exact recognizable K geometry and existing Kavriva identity, clean only technical/vector inconsistencies if necessary, establish precise spacing and alignment, and prepare professional monochrome black-on-white and white-on-dark master presentations. The result must remain visibly the same Kavriva brand the owner already uses. Do not add education, motorcycle, book, cap, brain, pencil, gear, shield, or other category symbols. If the approved Kavriva logo reference is not available in the current working context, **stop and request the source/reference logo instead of inventing a new K mark**.
 
 ---
 
@@ -135,7 +135,7 @@ Design a stacked vertical logo variation for **Kavriva KPSS**. The composition s
 **Amaç:** Favicon, app icon çekirdeği, küçük kimlik alanları.
 
 **Prompt:**
-Create the standalone **Kavriva K symbol** as a refined, memorable geometric mark. The symbol should represent the Kavriva master brand and be strong enough to function on its own without the wordmark. It must look balanced, recognizable, and premium at very small sizes. Use clean geometry, contemporary line logic, and a modern tech-brand feel. Avoid overcomplicated details. The design should work on white, black, or indigo backgrounds and feel equally at home in a mobile app icon, favicon, or small brand marker.
+Extract and prepare the standalone **existing approved Kavriva K symbol** from the master Kavriva logo. Do **not create a new K symbol and do not alter its recognizable geometry**. Preserve the exact brand mark while preparing technically clean vector-ready, small-size-safe presentations for white, dark, and indigo backgrounds. Optical centering and export padding may be adjusted without changing the symbol itself. The purpose is to create a reusable master symbol asset for favicon, app icon, small brand marker, and future Kavriva product identities. If the approved source logo is not available, stop and request it instead of reconstructing the mark from imagination.
 
 ---
 
