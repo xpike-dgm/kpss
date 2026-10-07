@@ -1882,5 +1882,192 @@ AI özellikle cold-start aşamasında yardımcı olur; sistem zamanla kendi veri
 - Böylece 2026 → 2028 → sonraki dönemlerde sınav yapısı değişse bile eski kullanıcı geçmişi ve denemeler bozulmadan yeni sınav profili yayınlanabilecektir.
 - **23. KPSS Sınav Modeli / Müfredat / Güncel Bilgiler / Puan Türleri başlığı ürün mimarisi açısından tamamlanmıştır.**
 
+
+## 46. Akademik Evidence & Scoring Kuralları — kararlaştırıldı
+
+### Ana ilke
+- Her cevap akademik kanıt üretebilir ancak **her cevap aynı kalitede kanıt değildir**.
+- Cevap doğrudan mastery puanını değiştiren tek adımlı işlem olmayacaktır.
+- Temel zincir: **Attempt/Answer → Evidence Event → Evidence Quality/Context → Mastery / Confidence / Retention / Readiness / Difficulty projections**.
+- Aynı kullanıcı davranışı farklı akademik boyutlarda farklı ağırlık taşıyabilir.
+
+### Ayrı akademik boyutlar
+- **Mastery:** Kullanıcının ilgili kazanım/konudaki akademik yeterliliği.
+- **Mastery Confidence:** Mevcut mastery tahmininin ne kadar güvenilir olduğu.
+- **Retention:** Önceden öğrenilmiş bilginin hâlâ bağımsız biçimde hatırlanıp hatırlanmadığı.
+- **Exam Readiness:** Bilginin gerçek sınav koşullarında uygulanabilmesi; zaman yönetimi ve sınav dayanıklılığı dahil.
+- **Item Difficulty Data:** Sorunun gerçek kullanıcı verisiyle kalibre edilen zorluk kanıtı.
+- **Wrong/Blank Risk:** Belirli kazanımda tekrarlayan yanlış/boş örüntüsü.
+- Bu boyutlar tek bir puana indirgenmeyecektir.
+
+### Mevcut mastery delta omurgası
+- Benzersiz ve geçerli mastery evidence için kabul edilmiş temel güncelleme korunacaktır:
+  - ilk 1–10 benzersiz soru: doğru +5 / yanlış -5
+  - 11–20: +3 / -3
+  - 21–30: +2 / -2
+  - 31+: +1 / -1
+- Bu temel delta yalnız evidence'in gerçekten mastery için uygun olduğu durumlarda uygulanacaktır.
+- Evidence kaynağı/modu, tekrar durumu ve kalite seviyesi temel delta üzerinde katsayı/uygunluk katmanı oluşturabilir.
+- Kesin katsayılar versioned config olacak; ürün davranışının ana yönü sabit kalacaktır.
+- Zor soru doğru yapıldı diye doğrudan büyük sabit mastery bonusu verilmeyecektir; zorluk ayrı sinyal olarak kullanılacaktır.
+
+### Doğru cevap
+- İlk kez görülen, Active ve Mastery Eligible bir sorudaki bağımsız doğru cevap güçlü mastery evidence'tır.
+- Doğru cevap confidence'ı güçlendirebilir.
+- Tek bir doğru cevap konuya “ustalaştı” durumu vermeyecektir; yeterli bağımsız soru, çeşitlilik ve confidence gerekir.
+- Sorunun kalite durumu, version'u ve kullanım eligibility'si evidence üretiminde dikkate alınacaktır.
+
+### Yanlış cevap
+- İlk kez görülen, geçerli sorudaki yanlış cevap kabul edilmiş negatif mastery delta'sını üretir.
+- Aynı zamanda Wrong Questions yaşam döngüsü, kazanım risk sinyali, retention ve program motoru için sinyal oluşturabilir.
+- Tek bir yanlış “kullanıcı konuyu bilmiyor” hükmüne dönüşmeyecektir.
+- Kullanıcı geçmişinde çok sayıda güçlü kanıt varsa yeni tek bir yanlış geçmişi aşırı ezmeyecektir.
+
+### Boş cevap
+- Boş cevap **yanlışla aynı akademik anlamda değildir**.
+- Normal/adaptif testte boş cevap mastery için negatif ama yanlıştan daha düşük ağırlıklı evidence olacaktır.
+- Başlangıç davranış ilkesi: boşun negatif mastery etkisi yanlışın etkisinden daha düşük olacaktır; kesin katsayı simülasyon/gerçek veriyle kalibre edilir.
+- Gerçek Sınav Modunda boş; bilgi eksikliği, kararsızlık veya zaman yetişmemesi anlamına gelebileceği için mastery açısından sınırlı negatif kanıt, readiness/zaman yönetimi açısından daha güçlü sinyal olacaktır.
+- Süre bitiminde cevaplanmamış sorular boş olarak final edilir ve ayrıca **timeout/unanswered** bağlamı taşır.
+- Kullanıcıya her boşta zorunlu “neden boş bıraktın?” sorusu sorulmayacaktır; sistem bildiği bağlamı kullanacaktır.
+
+### Test finalizasyonu
+- Test teslim edilmeden geçici cevap değişiklikleri kalıcı akademik evidence üretmeyecektir.
+- Yalnız **Testi Bitir / Sınavı Bitir / otomatik sınav finalizasyonu** anındaki nihai cevap snapshot'ı işlenecektir.
+- Yarım bırakılmış normal test resume için saklanabilir fakat mastery güncellenmez.
+- Gerçek Sınav Modunda süre bitmesi finalizasyon nedeni olabilir.
+
+### Evidence kaynaklarının göreli gücü
+- **İlk kez görülen normal/adaptif Active soru:** mastery ve confidence için çok güçlü evidence.
+- **Yeni Wrong Verification sorusu:** mastery/confidence için çok güçlü; yanlış yaşam döngüsü doğrulamasında güçlü.
+- **Yeni Retention sorusu:** mastery için güçlü, retention için çok güçlü evidence.
+- **Gerçek Sınav Modu sorusu:** mastery/confidence için güçlü; readiness ve zaman yönetimi için çok güçlü evidence.
+- **Çalışma Modu denemesi:** mastery için güçlü; readiness için Gerçek Sınav Modundan daha düşük ağırlıklı evidence.
+- **Yeni sorulardan oluşan uygun Karma Test:** mastery/confidence için geçerli güçlü evidence; tek başına gerçek sınav readiness kanıtı değildir.
+- **Daha önce görülmüş aynı soru:** düşük ağırlıklı evidence; yeni bağımsız soru yerine geçmez.
+- **Çözümü görülmüş aynı soruyu tekrar çözmek:** çok düşük mastery evidence; yalnız kısa süreli hatırlama/öğrenme takibi sinyali olabilir.
+- **Mini anlayış kontrolü:** mastery/confidence/readiness üretmez; yalnız öğrenme akışını yönlendirir.
+- **Quality Gate'ten geçmemiş AI pratik sorusu:** kalıcı akademik modele girmez.
+- **1v1 düello:** doğrudan mastery/readiness üretmez; kendi sosyal/duel istatistiklerinde kullanılır.
+- **Video izleme, özet okuma, AI sohbeti, not alma, “konuyu biliyorum” beyanı:** mastery evidence değildir.
+
+### Tekrar görülen soru politikası
+- İlk bağımsız karşılaşma en güçlü question-level evidence'tır.
+- Aynı question_version'ın sonraki karşılaşmaları kademeli olarak daha düşük akademik ağırlık taşır.
+- Kullanıcı doğru cevabı, çözümü veya AI açıklamasını gördükten sonra aynı sorudaki başarı güçlü mastery kanıtı kabul edilmeyecektir.
+- İlk 30 kalibrasyondaki benzersiz-soru prensibi genel evidence sisteminin de temelidir.
+- Aynı sorunun tekrarları difficulty kalibrasyonunda kullanıcı adına tekrar tekrar ana veri oluşturmayacaktır.
+
+### Similarity/template tekrarları
+- Yalnız question ID değil, near-duplicate/template similarity de evidence bağımsızlığında dikkate alınacaktır.
+- Aynı şablonun yalnız sayı/değer değiştirilmiş varyantları arka arkaya çözülerek confidence/mastery yapay biçimde şişirilemeyecektir.
+- Kalibrasyon ve yüksek güvenli mastery doğrulamasında farklı soru biçimleri ve farklı similarity cluster'ları tercih edilecektir.
+- Coverage ve anti-fake-diversity sinyalleri evidence sistemine bağlanacaktır.
+
+### Wrong Verification
+- Eski yanlışın çözümünü gördükten sonra aynı soruyu doğru yapmak yanlışın çözüldüğünü kanıtlamaz.
+- Aynı kazanımı ölçen **yeni ve bağımsız sorular** güçlü doğrulama evidence'ıdır.
+- Kabul edilmiş iki yeni doğrulama sorusu yaklaşımı korunur; exact zamanlama/threshold config ile kalibre edilebilir.
+- Bu evidence hem mastery'yi hem wrong lifecycle durumunu etkileyebilir.
+
+### Retention evidence
+- Retention doğrulaması mümkün olduğunca daha önce görülmemiş, aynı kazanımı ölçen sorularla yapılacaktır.
+- Başarılı retention sorusu mastery'yi yapay biçimde şişirmeden retention confidence'ını yükseltir ve sonraki tekrar aralığını uzatabilir.
+- Başarısız retention sorusu retention riskini artırır ve hedefli güçlendirme tetikler.
+- Başarısızlık gerçek bağımsız performans olduğu için normal evidence kurallarına göre mastery'yi de etkileyebilir.
+- Sırf zaman geçti diye mastery otomatik düşmeyecektir; yeni performans kanıtı gerekir.
+
+### Gerçek Sınav Modu ve readiness
+- Gerçek Sınav Modu; yardım/pause olmaması, gerçek süre ve final toplu değerlendirme nedeniyle readiness'in en güçlü kaynaklarından biridir.
+- Mastery için güçlü evidence üretir ancak tek bir deneme geçmişteki çok sayıda kanıtı aşırı ezmez.
+- Exam Readiness; net, boş, süre kullanımı, bölüm sonu performans düşüşü ve zaman yönetimi gibi sinyalleri kullanacaktır.
+- Çalışma Modu denemesi akademik evidence üretir ancak gerçek sınav readiness ağırlığı daha düşüktür.
+
+### Karma Test
+- Kullanıcı ders/konu/alt konu/soru sayısı/soru tipi/zorluk/yeni soru gibi filtrelerle Karma Test oluşturabilecektir.
+- Active ve uygun eligibility'ye sahip yeni sorularla oluşturulan Karma Test geçerli mastery evidence üretir.
+- Kullanıcının özellikle daha önce gördüğü/çok kolay içerikleri seçtiği testler düşük evidence ağırlığı alabilir.
+- Karma Test kendi başına güçlü Exam Readiness kanıtı sayılmayacaktır.
+
+### Mini check ve öğrenme davranışları
+- Konu anlatımı sonrası 3–4 soruluk mini check ana adaptif measurement değildir.
+- Mini check; özet/video bölümüne dönme, ek örnek gösterme veya ana teste geçiş önerisini etkileyebilir.
+- Video %100 izlemek, konu anlatımını tamamladım demek, not almak veya AI ile konuşmak mastery'yi yükseltmez.
+- **Bu konuyu biliyorum** yalnız öğrenme aşamasını atlatır; gerçek mastery kalibrasyon/test evidence'ıyla doğrulanır.
+
+### AI pratik soruları
+- AI Öğretmen tarafından anlık üretilen ve Quality Gate'ten geçmemiş pratik sorular mastery, confidence, readiness veya difficulty modelini etkilemez.
+- Bu sorular yalnız öğrenme/pratik deneyimi içindir.
+- AI üretimi bir soru daha sonra normal soru bankası pipeline'ından geçip Active + ilgili eligibility statülerini alırsa kaynak türü nedeniyle ayrı muamele görmez; normal onaylı soru gibi işlenebilir.
+
+### Düello
+- 1v1 düello cevapları doğrudan gizli akademik mastery/readiness modeline yazılmayacaktır.
+- Düello accuracy, speed, win/loss ve sosyal rekabet istatistikleri ayrı tutulacaktır.
+- Ana nedenler: hız/rakip baskısı, tekrar/farm ihtimali ve sosyal bağlam.
+- Gelecekte supplemental signal araştırılabilir ancak çekirdek akademik model buna bağımlı olmayacaktır.
+
+### Confidence modeli
+- Aynı mastery değerine sahip kullanıcıların kanıt miktarı ve çeşitliliği farklıysa confidence farklı olacaktır.
+- Confidence'ı güçlendiren sinyaller: yeni bağımsız sorular, farklı soru biçimleri, farklı günlerde tutarlı performans, farklı zorluklar, retention doğrulaması ve gerçek sınav evidence'ı.
+- Aynı soru tekrarı, aynı template cluster, çözümü görülmüş soru, AI-unreviewed practice ve düello confidence'ı çok az veya hiç güçlendirmez.
+- Confidence'ın **freshness/güncellik** boyutu zamanla azalabilir; mastery sırf zaman geçti diye düşmez.
+- Uzun süre yeni evidence yoksa kullanıcıya teknik sayı yerine “veri eski / yeniden doğrulamak iyi olabilir” türü ifade gösterilebilir.
+
+### Readiness ayrı projection
+- Exam Readiness ayrı bir bileşik projection olacaktır; mastery ile aynı şey değildir.
+- Readiness; konu coverage, verified mastery, confidence, retention, Gerçek Sınav Modu trendi, süre yönetimi, boş örüntüsü, deneme dayanıklılığı, Güncel Bilgiler coverage ve sınava kalan süre gibi sinyalleri birlikte değerlendirebilir.
+- Tek tek sorularda basit +X/-X readiness sistemi kullanılmayacaktır.
+- Kullanıcı akademik olarak güçlü ancak gerçek sınav koşullarında yeterince doğrulanmamış olabilir; sistem bunu açıkça ayıracaktır.
+
+### Difficulty calibration eligibility
+- Data-driven difficulty hesabında kullanıcı başına aynı question_version üzerindeki **ilk bağımsız ve geçerli attempt** ana veri olacaktır.
+- Çözümü görüldükten sonraki tekrarlar, quality problemi olan/iptal edilen attempt'ler, unreviewed AI practice ve düello difficulty modeline ana veri olarak girmez.
+- Rasch/IRT kalibrasyonu bu temizlenmiş attempt havuzu üzerinden çalışacaktır.
+- Difficulty modeli de evidence eligibility ve model sürümünü taşıyacaktır.
+
+### Çok becerili sorular
+- Bir sorunun birden fazla taxonomy etiketi olması her etikete tam mastery evidence yazılacağı anlamına gelmez.
+- Soruda mümkün olduğunca **Primary Assessed Skill** tanımlanacaktır.
+- Secondary/Supporting Skills bağlam/önkoşul etiketi olabilir.
+- Tam mastery evidence esas olarak primary skill'e yazılır.
+- Secondary skill yalnız soru gerçekten o beceriyi bağımsız ölçmek için doğrulanmışsa kontrollü evidence alabilir.
+- Tek doğru cevapla birden fazla mastery alanının yapay biçimde şişirilmesi engellenecektir.
+
+### Question Version ve düzeltme
+- Minor revision ölçülen beceri/doğru cevap/temel anlamı değiştirmiyorsa geçmiş evidence geçerliliğini koruyabilir.
+- Material revision doğru cevap, soru anlamı, kritik görsel/matematik veya ölçülen beceriyi değiştiriyorsa geçmiş attempt'ler Impact Analysis'e girer.
+- Gerekirse eski evidence invalidate edilir ve projection'lar yeniden hesaplanır.
+- Question correction → Impact Repair zinciri mastery, confidence, wrong history, retention ve deneme etkisini onarabilir.
+- Platform hatası nedeniyle kullanıcıdan XP/achievement geri alınmaması yönündeki mevcut karar korunur; akademik gerçek ise düzeltilir.
+
+### Evidence Event izlenebilirliği
+- Her kalıcı akademik evidence en az kullanıcı, question_version, primary skill/kazanım, test/oturum bağlamı, çalışma modu, correct/wrong/blank sonucu, exposure/novelty durumu, evidence policy sürümü ve academic engine sürümünü ilişkilendirebilmelidir.
+- Correlation/causation zinciriyle attempt → evidence → mastery/retention/readiness projection değişimi açıklanabilir olacaktır.
+- Admin Event Explorer bir akademik değişikliğin “neden olduğunu” izleyebilmelidir.
+
+### Reason codes ve AI Koç
+- Deterministik evidence motoru açıklanabilir reason code'lar üretecektir.
+- Örnek kategoriler: yeni bağımsız doğru, düşük ağırlıklı tekrar, retention başarısızlığı, gerçek sınav zaman baskısı, tekrarlanan boşlar, düşük evidence confidence.
+- AI Koç bu reason code'ları insan diline çevirebilir ancak evidence kararını kendisi uydurmayacaktır.
+- Kullanıcıya ham ağırlık/katsayı/teknik confidence değeri gösterilmek zorunda değildir.
+
+### Kullanıcı-facing anlatım
+- Arka plandaki karmaşık evidence sistemi kullanıcıya teknik formül olarak sunulmayacaktır.
+- Kullanıcıya **Gelişiyor / Güçlü / Veri henüz sınırlı / Tekrar doğrulamak iyi olabilir / Sınav temposunda zorlanıyorsun** gibi anlaşılır durumlar gösterilecektir.
+- Teknik değerler gerektiğinde Admin/analiz/simülasyon katmanında bulunacaktır.
+
+### Ana evidence matrisi
+- **Mastery:** bağımsız ve kalite kontrollü gerçek soru performansından gelir.
+- **Confidence:** evidence miktarı, çeşitliliği, bağımsızlığı ve güncelliğinden gelir.
+- **Retention:** zaman aralıklı bağımsız hatırlama evidence'ıyla güçlenir/zayıflar.
+- **Readiness:** gerçek sınav bağlamı ve bileşik performans sinyallerinden türetilir.
+- **Difficulty:** temizlenmiş ilk bağımsız attempt havuzundan kalibre edilir.
+- **Learning activity:** öğrenme akışını yönlendirir ama tek başına mastery değildir.
+
+### Ana karar
+- En önemli ürün ilkesi: **Cevap → doğrudan puan değil; cevap → bağlamlı akademik evidence → ilgili akademik projection**.
+- Böylece normal test, retention, deneme, Karma Test, tekrar soru, AI practice ve düello aynı veri gibi yanlış biçimde işlenmeyecektir.
+- **24. Akademik Evidence & Scoring Kuralları ürün mimarisi açısından tamamlanmıştır.**
+
 ---
 Durum: Ürün planlama aşaması devam ediyor. Henüz geliştirmeye başlanmadı.
