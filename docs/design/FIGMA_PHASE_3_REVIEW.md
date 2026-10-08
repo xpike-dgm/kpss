@@ -1,5 +1,5 @@
 # Kavriva KPSS — PHASE 3 REVIEW
-2026-10-08 · **Review — Owner acceptance Pending**. Phase 1–2 **Approved for Design Direction**; final implementation acceptance ve Final Production Export Pending.
+2026-10-08 · **Approved for Design Direction — Owner Decision**. Phase 1–3 onaylı; final implementation acceptance ve Final Production Export Pending. Aşağıdaki Review anlatımı üretim checkpoint'inin tarihsel kaydıdır.
 
 Native canonical source: [Kavriva KPSS — Product Design System](https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=67-3300).
 Main başlangıç commit: `6c4d62b`. Main güncellendi, canonical kaynaklar ve Owner kararları okundu. Oturum yenilenmesinden sonra actual read/write **PASS**; permission blocker yok.
@@ -150,3 +150,7 @@ PRODUCT_PLAN, accepted owner decisions ve canonical Figma structure korundu. Aca
 Canonical çelişki veya yeni Owner marka kararı gerektiren blocker bulunmadı. Approved foundation yeniden kurulmadı. Ek dört selected-answer case ve ayrı Study submit/result state'leri mevcut kabul edilmiş davranışı açıklamak için türetildi; yeni ürün özelliği değildir. Compact filter, uzun metin davranışı ve state override semantiği native düzeltmedir.
 
 Yalnız Phase 3 tamamlandı ve **Review**'a getirildi; kendi kendine Approved verilmedi. Kod/React/Next.js/database, marketing ve sonraki phase/batch üretimi yapılmadı. **Bu checkpoint'te duruldu.**
+
+## Owner Decision — Phase 3 / Phase 3.5 authorization
+
+Owner Phase 3.5 brief'inin başlangıç durumunda Phase 1–3 **Approved for Design Direction** olarak açıkça kabul edildi. Phase 3 registry ve Figma Cover bu onayla güncellendi. Bu onay final implementation/export veya production vector kabulü değildir. Mevcut UX/academic rules korunarak yalnız beş yüzeyde görsel polish yetkilendirildi. [Phase 3.5 Before/After Review](FIGMA_PHASE_3_5_VISUAL_POLISH_REVIEW.md) ayrı **Review / Owner Decision Pending**; Phase 4–7, marketing, Batch21/22 başlamaz; P-01–P-06 Open.

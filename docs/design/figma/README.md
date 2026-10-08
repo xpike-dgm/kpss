@@ -1,5 +1,7 @@
 # Kavriva KPSS — Native Figma Design Records
 
+Güncel checkpoint: Phase 1–3 **Approved for Design Direction**, Phase 3.5 yalnız Playground'da **Review**. [Polish Before/After review](../FIGMA_PHASE_3_5_VISUAL_POLISH_REVIEW.md) · [Native proposal ledger](PHASE_3_5_NATIVE_STATE.json). 265 approved canonical frame korunur; 34 karşılaştırma/QA frame proposal'dır. Aşağıdaki Phase 3 Review sayımı tarihsel üretim snapshot'ını anlatır.
+
 Canonical native design source: [Kavriva KPSS — Product Design System](https://www.figma.com/design/uNreojzi7JNDunoVUoboaH/Kavriva-KPSS?node-id=0-1). Git kayıtları spec, registry ve QA kanıtıdır; uygulama kodu değildir.
 
 - [Review](../FIGMA_PHASE_1_2_REVIEW.md), [Preflight](../FIGMA_PREFLIGHT_REPORT.md).

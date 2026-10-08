@@ -1,5 +1,7 @@
 # Kavriva KPSS — Asset Phase Status
 
+Güncel UI checkpoint 2026-10-08: Phase 1–3 **Approved for Design Direction**. Phase 3.5 Visual Polish beş yüzey için Playground'da **Review / Owner Pending**; canonical approved screens/masters korunur. [Before/After review](FIGMA_PHASE_3_5_VISUAL_POLISH_REVIEW.md) · [Native ledger](figma/PHASE_3_5_NATIVE_STATE.json). 87 / 81 / 6 asset durumu değişmedi; Marketing HOLD, P-01–P-06 Open, vector source needed, final export/handoff Pending, Phase 4–7 ve Batch21/22 Not started.
+
 Canonical checkpoint · Owner Decision 2026-10-07.
 
 | Alan | Güncel durum |

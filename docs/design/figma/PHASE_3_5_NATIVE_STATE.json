@@ -1,0 +1,1068 @@
+{
+  "date": "2026-10-08",
+  "scope": "Phase 3.5 Visual Polish",
+  "status": "Review",
+  "ownerAcceptance": "Pending",
+  "canonicalPhase123": "Approved for Design Direction",
+  "section": "82:2",
+  "library": {
+    "createdNodeIds": "82:2,82:3,82:4,82:5,82:6,82:7,82:8,82:9,82:10,82:11,82:12,82:13,82:14,82:15,82:16,82:17,82:18,82:19,82:20,82:21,82:22,82:23,82:24,82:25,82:26,82:27,82:28,82:29,82:30,82:31,82:32,82:33,82:34,82:35,82:36,82:37,82:38,82:39,82:40,82:41,82:42,82:43,82:44,82:45,82:46,82:47,82:48,82:49,82:50,82:51,82:52,82:53,82:54,82:55,82:56,82:57,82:58,82:59,82:60,82:61,82:62,82:63,82:64,82:65,82:66,82:67,82:68,82:69,82:70,82:71,82:72,82:73,82:74,82:75,82:76,82:77,82:78,82:79,82:80,82:81,82:82,82:83,82:84,82:85,82:86,82:87,82:88,82:89,82:90,82:91,82:92,82:93,82:94,82:95,82:96,82:97,82:98,82:99,82:100,82:101,82:102,82:103,82:104,82:105,82:106,82:107,82:108,82:109,82:110,82:111,82:112,82:113,82:114,82:115,82:116,82:117,82:118,82:119,82:120,82:121,82:122,82:123,82:124,82:125,82:126,82:127,82:128,82:129,82:130,82:131,82:132,82:133,82:134,82:135,82:136,82:137,82:138,I82:138;9:115,I82:138;9:116,I82:138;9:117,I82:138;9:118,82:139,82:140,82:141,I82:141;9:272,I82:141;9:273,I82:141;9:274,I82:141;9:275,82:142,82:143,82:144,I82:144;9:83,I82:144;9:84,I82:144;9:85,I82:144;9:86,I82:144;9:87,82:145,82:146,82:147,I82:147;9:15,I82:147;9:16,I82:147;9:17,82:148,82:149,82:150,I82:150;9:175,I82:150;9:176,I82:150;9:177,I82:150;9:178,82:151,82:152,82:153,82:154,I82:154;9:120,I82:154;9:121,I82:154;9:122,82:155,82:156,82:157,I82:157;9:267,I82:157;9:268,I82:157;9:269,I82:157;9:270,82:158,82:159,82:160,I82:160;9:83,I82:160;9:84,I82:160;9:85,I82:160;9:86,I82:160;9:87,82:161,82:162,82:163,I82:163;9:15,I82:163;9:16,I82:163;9:17,82:164,82:165,82:166,I82:166;9:175,I82:166;9:176,I82:166;9:177,I82:166;9:178,82:167,82:168,82:169,82:170,I82:170;9:120,I82:170;9:121,I82:170;9:122,82:171,82:172,82:173,I82:173;9:272,I82:173;9:273,I82:173;9:274,I82:173;9:275,82:174,82:175,82:176,I82:176;9:77,I82:176;9:78,I82:176;9:79,I82:176;9:80,I82:176;9:81,82:177,82:178,82:179,I82:179;9:15,I82:179;9:16,I82:179;9:17,82:180,82:181,82:182,I82:182;9:175,I82:182;9:176,I82:182;9:177,I82:182;9:178,82:183,82:184,82:185,82:186,I82:186;9:120,I82:186;9:121,I82:186;9:122,82:187,82:188,82:189,I82:189;9:272,I82:189;9:273,I82:189;9:274,I82:189;9:275,82:190,82:191,82:192,I82:192;9:83,I82:192;9:84,I82:192;9:85,I82:192;9:86,I82:192;9:87,82:193,82:194,82:195,I82:195;9:11,I82:195;9:12,I82:195;9:13,82:196,82:197,82:198,I82:198;9:175,I82:198;9:176,I82:198;9:177,I82:198;9:178,82:199,82:200,82:201,82:202,I82:202;9:120,I82:202;9:121,I82:202;9:122,82:203,82:204,82:205,I82:205;9:272,I82:205;9:273,I82:205;9:274,I82:205;9:275,82:206,82:207,82:208,I82:208;9:83,I82:208;9:84,I82:208;9:85,I82:208;9:86,I82:208;9:87,82:209,82:210,82:211,I82:211;9:15,I82:211;9:16,I82:211;9:17,82:212,82:213,82:214,I82:214;9:170,I82:214;9:171,I82:214;9:172,I82:214;9:173,82:215,82:312,82:313,82:314,82:315,82:316,I82:316;9:23,I82:316;9:24,I82:316;9:25,82:317,82:318,82:319,82:323,82:324,82:325,82:326,82:327,82:328,82:329,82:330,I82:330;11:15,82:331,82:332,82:333,82:334,82:335,82:336,82:337,I82:337;11:15,82:338,82:339,82:340,82:341,82:342,82:343,82:344,I82:344;11:15,82:345,82:346,82:347,82:348,82:349,82:350,82:351,I82:351;11:15,82:352,82:353,82:354,82:355,82:356,82:357,82:358,I82:358;11:15,82:359,82:360,82:361,82:362,82:363,82:364,82:365,I82:365;11:15,82:372,82:373,82:374,82:375,82:376,82:377,82:378,82:379,82:380,82:381,82:382,82:383,82:384,82:385,82:386,82:387,82:388,82:389,82:390,82:391,82:392,82:393,82:394,82:395,82:396,82:397,82:398,82:399,82:400,82:401,82:402,82:403,82:404,82:405,82:406,82:407,82:408,82:409,82:410,82:411,82:412,82:413,82:414,82:415,82:416,82:417,82:418,82:419,82:420,82:421,82:422,82:423,82:424,82:425,82:426,82:427,82:428,82:429,82:430,82:431,82:432,82:433,82:434,82:435,82:436,82:437,82:438,82:439,82:440,82:441,82:442,82:443,82:444,82:445,82:446,82:447,82:448,82:449,82:450,82:451,82:452,82:453,82:454,82:455,82:456,82:457,82:458,82:459,82:460,82:461,82:462,82:463,82:464,82:465,82:466,82:467,82:468,82:469,82:470,82:471,82:472,82:473,82:474,82:475,82:476,82:477,82:478,82:479,82:480,82:481,82:482,82:483,82:484,82:485,82:486,82:487,82:488,82:489,82:490,82:491,82:492,82:493,82:494,82:495,82:496,82:497,82:498,82:499,82:500,82:501,82:502,82:503,82:504,82:505,82:506,82:507,82:508,82:509,82:510,82:511,82:512,82:513,82:514,82:515,82:516,82:517,82:518,82:519,82:520,82:521,82:522,82:523,82:524,82:525,82:526,82:527,82:528,82:529,82:530,82:531,82:532,82:533,82:534,82:535,82:536,82:537,82:538,82:539,82:540,82:541,82:542,82:543,82:544,82:545,82:546,82:547,82:548,82:549,82:550,82:551,82:552,82:553,82:554,82:555,82:556,82:557,82:558,82:559,82:560,82:561,82:562,82:563,82:564,82:565,82:566,82:567,82:568,82:569,82:570,82:571,82:572,82:573,82:574,82:575,82:576,82:577,82:578,82:579,82:580,82:581,82:582,82:583,82:584,82:585,82:586,82:587,82:588,82:589,82:590,82:591,82:592,82:593,82:594,82:595,82:596,82:597,82:598,82:599,82:600,82:601,82:602,82:603,82:604,82:605,82:606,82:607,82:608,82:609,82:610,82:611",
+    "sectionId": "82:2",
+    "masterSectionId": "82:3",
+    "mapping": {
+      "13:300": "82:5",
+      "13:303": "82:8",
+      "13:306": "82:11",
+      "11:2": "82:16",
+      "11:4": "82:18",
+      "11:6": "82:20",
+      "11:8": "82:22",
+      "11:10": "82:25",
+      "11:12": "82:27",
+      "11:14": "82:29",
+      "11:16": "82:31",
+      "11:18": "82:33",
+      "11:20": "82:35",
+      "11:22": "82:38",
+      "11:24": "82:40",
+      "11:26": "82:42",
+      "11:28": "82:44",
+      "11:30": "82:46",
+      "11:32": "82:48",
+      "11:34": "82:51",
+      "11:36": "82:53",
+      "11:39": "82:56",
+      "11:41": "82:58",
+      "11:43": "82:60",
+      "11:45": "82:62",
+      "11:47": "82:65",
+      "11:49": "82:67",
+      "11:51": "82:69",
+      "11:53": "82:71",
+      "11:55": "82:73",
+      "11:57": "82:75",
+      "11:59": "82:78",
+      "11:61": "82:80",
+      "11:63": "82:82",
+      "11:65": "82:84",
+      "11:67": "82:86",
+      "11:69": "82:88",
+      "11:71": "82:91",
+      "11:73": "82:93",
+      "11:76": "82:96",
+      "11:78": "82:98",
+      "11:80": "82:100",
+      "11:82": "82:102",
+      "11:84": "82:105",
+      "11:86": "82:107",
+      "11:88": "82:109",
+      "11:90": "82:111",
+      "11:92": "82:113",
+      "11:94": "82:115",
+      "11:96": "82:118",
+      "11:98": "82:120",
+      "11:100": "82:122",
+      "11:102": "82:124",
+      "11:104": "82:126",
+      "11:106": "82:128",
+      "11:108": "82:131",
+      "11:110": "82:133",
+      "13:429": "82:136",
+      "13:465": "82:152",
+      "13:500": "82:168",
+      "13:535": "82:184",
+      "13:570": "82:200",
+      "13:621": "82:313",
+      "13:623": "82:315",
+      "13:629": "82:318",
+      "14:213": "82:324",
+      "14:220": "82:331",
+      "14:227": "82:338",
+      "14:234": "82:345",
+      "14:241": "82:352",
+      "14:248": "82:359",
+      "14:2": "82:373",
+      "14:5": "82:376",
+      "14:9": "82:380",
+      "14:13": "82:384",
+      "14:17": "82:388",
+      "14:20": "82:391",
+      "14:23": "82:395",
+      "14:26": "82:398",
+      "14:29": "82:401",
+      "14:32": "82:404",
+      "14:36": "82:408",
+      "14:40": "82:412",
+      "66:198": "82:417",
+      "66:202": "82:421",
+      "66:206": "82:425",
+      "66:181": "82:430",
+      "66:186": "82:435",
+      "66:192": "82:441",
+      "66:150": "82:447",
+      "66:155": "82:452",
+      "66:160": "82:457",
+      "66:165": "82:462",
+      "66:170": "82:467",
+      "66:175": "82:472",
+      "66:294": "82:478",
+      "66:303": "82:487",
+      "66:312": "82:496",
+      "66:321": "82:505",
+      "66:253": "82:515",
+      "66:263": "82:525",
+      "66:273": "82:535",
+      "66:283": "82:545",
+      "76:460": "82:555",
+      "76:480": "82:566",
+      "76:500": "82:577",
+      "76:520": "82:588",
+      "66:227": "82:600",
+      "66:231": "82:604",
+      "66:235": "82:608"
+    },
+    "sets": [
+      {
+        "label": "Card",
+        "id": "82:4",
+        "source": "13:310",
+        "variants": 3
+      },
+      {
+        "label": "Button/Primary",
+        "id": "82:15",
+        "source": "11:38",
+        "variants": 18
+      },
+      {
+        "label": "Button/Secondary",
+        "id": "82:55",
+        "source": "11:75",
+        "variants": 18
+      },
+      {
+        "label": "Button/Ghost",
+        "id": "82:95",
+        "source": "11:112",
+        "variants": 18
+      },
+      {
+        "label": "Mobile Bottom Navigation",
+        "id": "82:135",
+        "source": "13:605",
+        "variants": 5
+      },
+      {
+        "label": "Top Bar",
+        "id": "82:312",
+        "source": "13:631",
+        "variants": 3
+      },
+      {
+        "label": "Sıradaki Adım",
+        "id": "82:323",
+        "source": "14:255",
+        "variants": 6
+      },
+      {
+        "label": "Question Card",
+        "id": "82:372",
+        "source": "14:16",
+        "variants": 4
+      },
+      {
+        "label": "Answer Option",
+        "id": "82:387",
+        "source": "14:44",
+        "variants": 8
+      },
+      {
+        "label": "Statistics Insight",
+        "id": "82:416",
+        "source": "66:210",
+        "variants": 3
+      },
+      {
+        "label": "Mock Result Summary",
+        "id": "82:429",
+        "source": "66:197",
+        "variants": 3
+      },
+      {
+        "label": "Exam Session Status",
+        "id": "82:446",
+        "source": "66:180",
+        "variants": 6
+      },
+      {
+        "label": "Trend Chart",
+        "id": "82:477",
+        "source": "66:330",
+        "variants": 4
+      },
+      {
+        "label": "Period Filter",
+        "id": "82:514",
+        "source": "66:293",
+        "variants": 8
+      },
+      {
+        "label": "Score Estimate",
+        "id": "82:599",
+        "source": "66:239",
+        "variants": 3
+      }
+    ]
+  },
+  "signature": {
+    "createdNodeIds": "85:1249,85:1250,85:1251,85:1252,85:1260,85:1261,85:1272",
+    "mutatedNodeIds": "82:2,82:3,83:14074,83:14271",
+    "signatureId": "85:1260",
+    "updated": [
+      {
+        "id": "83:14068",
+        "signatureInstance": "85:1261"
+      },
+      {
+        "id": "83:14265",
+        "signatureInstance": "85:1272"
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "name": "Dashboard",
+      "theme": "light",
+      "kind": "Before",
+      "id": "83:13497",
+      "width": 390,
+      "contentId": "83:13503"
+    },
+    {
+      "name": "Dashboard",
+      "theme": "light",
+      "kind": "After",
+      "id": "83:13589",
+      "width": 390,
+      "contentId": "83:13595"
+    },
+    {
+      "name": "Dashboard",
+      "theme": "dark",
+      "kind": "Before",
+      "id": "83:13746",
+      "width": 390,
+      "contentId": "83:13752"
+    },
+    {
+      "name": "Dashboard",
+      "theme": "dark",
+      "kind": "After",
+      "id": "83:13838",
+      "width": 390,
+      "contentId": "83:13844"
+    },
+    {
+      "name": "Sıradaki Adım",
+      "theme": "light",
+      "kind": "Before",
+      "id": "83:13996",
+      "width": 390,
+      "contentId": "83:14002"
+    },
+    {
+      "name": "Sıradaki Adım",
+      "theme": "light",
+      "kind": "After",
+      "id": "83:14068",
+      "width": 390,
+      "contentId": "83:14074"
+    },
+    {
+      "name": "Sıradaki Adım",
+      "theme": "dark",
+      "kind": "Before",
+      "id": "83:14193",
+      "width": 390,
+      "contentId": "83:14199"
+    },
+    {
+      "name": "Sıradaki Adım",
+      "theme": "dark",
+      "kind": "After",
+      "id": "83:14265",
+      "width": 390,
+      "contentId": "83:14271"
+    },
+    {
+      "name": "Statistics",
+      "theme": "light",
+      "kind": "Before",
+      "id": "83:14391",
+      "width": 390,
+      "contentId": "83:14397"
+    },
+    {
+      "name": "Statistics",
+      "theme": "light",
+      "kind": "After",
+      "id": "83:14481",
+      "width": 390,
+      "contentId": "83:14487"
+    },
+    {
+      "name": "Statistics",
+      "theme": "dark",
+      "kind": "Before",
+      "id": "83:14638",
+      "width": 390,
+      "contentId": "83:14644"
+    },
+    {
+      "name": "Statistics",
+      "theme": "dark",
+      "kind": "After",
+      "id": "83:14728",
+      "width": 390,
+      "contentId": "83:14734"
+    },
+    {
+      "name": "Real Exam",
+      "theme": "light",
+      "kind": "Before",
+      "id": "83:14886",
+      "width": 390,
+      "contentId": "83:14893"
+    },
+    {
+      "name": "Real Exam",
+      "theme": "light",
+      "kind": "After",
+      "id": "83:14936",
+      "width": 390,
+      "contentId": "83:14943"
+    },
+    {
+      "name": "Real Exam",
+      "theme": "dark",
+      "kind": "Before",
+      "id": "83:15013",
+      "width": 390,
+      "contentId": "83:15020"
+    },
+    {
+      "name": "Real Exam",
+      "theme": "dark",
+      "kind": "After",
+      "id": "83:15063",
+      "width": 390,
+      "contentId": "83:15070"
+    },
+    {
+      "name": "Result",
+      "theme": "light",
+      "kind": "Before",
+      "id": "83:15141",
+      "width": 390,
+      "contentId": "83:15147"
+    },
+    {
+      "name": "Result",
+      "theme": "light",
+      "kind": "After",
+      "id": "83:15220",
+      "width": 390,
+      "contentId": "83:15226"
+    },
+    {
+      "name": "Result",
+      "theme": "dark",
+      "kind": "Before",
+      "id": "83:15356",
+      "width": 390,
+      "contentId": "83:15362"
+    },
+    {
+      "name": "Result",
+      "theme": "dark",
+      "kind": "After",
+      "id": "83:15435",
+      "width": 390,
+      "contentId": "83:15441"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "86:1264",
+      "name": "Dashboard",
+      "theme": "light",
+      "kind": "320",
+      "contentId": "86:1270",
+      "width": 320
+    },
+    {
+      "id": "86:1356",
+      "name": "Dashboard",
+      "theme": "dark",
+      "kind": "320",
+      "contentId": "86:1362",
+      "width": 320
+    },
+    {
+      "id": "86:1448",
+      "name": "Sıradaki Adım",
+      "theme": "light",
+      "kind": "320",
+      "contentId": "86:1454",
+      "width": 320
+    },
+    {
+      "id": "86:1521",
+      "name": "Sıradaki Adım",
+      "theme": "dark",
+      "kind": "320",
+      "contentId": "86:1527",
+      "width": 320
+    },
+    {
+      "id": "86:1594",
+      "name": "Statistics",
+      "theme": "light",
+      "kind": "320",
+      "contentId": "86:1600",
+      "width": 320
+    },
+    {
+      "id": "86:1684",
+      "name": "Statistics",
+      "theme": "dark",
+      "kind": "320",
+      "contentId": "86:1690",
+      "width": 320
+    },
+    {
+      "id": "86:1774",
+      "name": "Real Exam",
+      "theme": "light",
+      "kind": "320",
+      "contentId": "86:1781",
+      "width": 320
+    },
+    {
+      "id": "86:1824",
+      "name": "Real Exam",
+      "theme": "dark",
+      "kind": "320",
+      "contentId": "86:1831",
+      "width": 320
+    },
+    {
+      "id": "86:1874",
+      "name": "Result",
+      "theme": "light",
+      "kind": "320",
+      "contentId": "86:1880",
+      "width": 320
+    },
+    {
+      "id": "86:1953",
+      "name": "Result",
+      "theme": "dark",
+      "kind": "320",
+      "contentId": "86:1959",
+      "width": 320
+    },
+    {
+      "id": "86:2033",
+      "name": "Dashboard",
+      "theme": "light",
+      "kind": "200%",
+      "contentId": "86:2039",
+      "width": 320
+    },
+    {
+      "id": "86:2125",
+      "name": "Sıradaki Adım",
+      "theme": "light",
+      "kind": "200%",
+      "contentId": "86:2131",
+      "width": 320
+    },
+    {
+      "id": "86:2198",
+      "name": "Statistics",
+      "theme": "light",
+      "kind": "200%",
+      "contentId": "86:2204",
+      "width": 320
+    },
+    {
+      "id": "86:2298",
+      "name": "Real Exam",
+      "theme": "light",
+      "kind": "200%",
+      "contentId": "86:2305",
+      "width": 320
+    }
+  ],
+  "criticalSections": {
+    "createdNodeIds": "90:2034,90:2035,90:2036,90:2037,90:2037,90:2045,90:2046,90:2047,90:2047,90:2058,90:2059,90:2060,90:2060,90:2064,90:2065,90:2066,90:2066",
+    "criticalSections": [
+      {
+        "name": "Dashboard",
+        "id": "90:2037",
+        "height": 960,
+        "width": 280
+      },
+      {
+        "name": "Next Step",
+        "id": "90:2047",
+        "height": 1084,
+        "width": 280
+      },
+      {
+        "name": "Statistics",
+        "id": "90:2060",
+        "height": 580,
+        "width": 280
+      },
+      {
+        "name": "Real Exam",
+        "id": "90:2066",
+        "height": 400,
+        "width": 320
+      }
+    ],
+    "boardId": "90:2034"
+  },
+  "annotations": {
+    "createdNodeIds": "88:2020,88:2021,88:2022,88:2023,83:13494,83:13993,83:14388,83:14883,83:15138,88:2024,88:2025,88:2026,88:2027,88:2028,88:2029,88:2031,88:2032,88:2033,88:2035,88:2036,88:2037,88:2039,88:2040,88:2041,88:2044,88:2045,88:2046,88:2048,88:2049,88:2050,88:2052,88:2053,88:2054,88:2055,88:2057,88:2058,88:2059,88:2061,88:2062,88:2063,88:2065,88:2066,88:2067,88:2070,88:2071,88:2072,88:2074,88:2075,88:2076",
+    "mutatedNodeIds": "82:2",
+    "noteId": "88:2020",
+    "galleryId": "88:2024"
+  },
+  "qa": {
+    "mutatedNodeIds": "85:1260",
+    "semantics": [
+      {
+        "surface": "Dashboard",
+        "theme": "light",
+        "approvedSourceMatchesBefore": true,
+        "proposalRetainsText": true
+      },
+      {
+        "surface": "Dashboard",
+        "theme": "dark",
+        "approvedSourceMatchesBefore": true,
+        "proposalRetainsText": true
+      },
+      {
+        "surface": "Sıradaki Adım",
+        "theme": "light",
+        "approvedSourceMatchesBefore": true,
+        "proposalRetainsText": true
+      },
+      {
+        "surface": "Sıradaki Adım",
+        "theme": "dark",
+        "approvedSourceMatchesBefore": true,
+        "proposalRetainsText": true
+      },
+      {
+        "surface": "Statistics",
+        "theme": "light",
+        "approvedSourceMatchesBefore": true,
+        "proposalRetainsText": true
+      },
+      {
+        "surface": "Statistics",
+        "theme": "dark",
+        "approvedSourceMatchesBefore": true,
+        "proposalRetainsText": true
+      },
+      {
+        "surface": "Real Exam",
+        "theme": "light",
+        "approvedSourceMatchesBefore": true,
+        "proposalRetainsText": true
+      },
+      {
+        "surface": "Real Exam",
+        "theme": "dark",
+        "approvedSourceMatchesBefore": true,
+        "proposalRetainsText": true
+      },
+      {
+        "surface": "Result",
+        "theme": "light",
+        "approvedSourceMatchesBefore": true,
+        "proposalRetainsText": true
+      },
+      {
+        "surface": "Result",
+        "theme": "dark",
+        "approvedSourceMatchesBefore": true,
+        "proposalRetainsText": true
+      }
+    ],
+    "verticalIssues": [],
+    "playgroundCounts": {
+      "sets": 15,
+      "components": 111,
+      "instances": 638
+    },
+    "counts": {
+      "screens": 34,
+      "texts": 965,
+      "instances": 585,
+      "images": 7,
+      "prototypeSources": 129
+    },
+    "issues": [],
+    "totalIssueCount": 0,
+    "screens": [
+      {
+        "key": "0",
+        "id": "83:13497",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 21
+      },
+      {
+        "key": "1",
+        "id": "83:13589",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 21
+      },
+      {
+        "key": "2",
+        "id": "83:13746",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 21
+      },
+      {
+        "key": "3",
+        "id": "83:13838",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 21
+      },
+      {
+        "key": "4",
+        "id": "83:13996",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 16
+      },
+      {
+        "key": "5",
+        "id": "83:14068",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 16
+      },
+      {
+        "key": "6",
+        "id": "83:14193",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 16
+      },
+      {
+        "key": "7",
+        "id": "83:14265",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 16
+      },
+      {
+        "key": "8",
+        "id": "83:14391",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "9",
+        "id": "83:14481",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "10",
+        "id": "83:14638",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 18
+      },
+      {
+        "key": "11",
+        "id": "83:14728",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 18
+      },
+      {
+        "key": "12",
+        "id": "83:14886",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "13",
+        "id": "83:14936",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "14",
+        "id": "83:15013",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "15",
+        "id": "83:15063",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "16",
+        "id": "83:15141",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 17
+      },
+      {
+        "key": "17",
+        "id": "83:15220",
+        "width": 390,
+        "height": 844,
+        "theme": "Light",
+        "instances": 17
+      },
+      {
+        "key": "18",
+        "id": "83:15356",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 17
+      },
+      {
+        "key": "19",
+        "id": "83:15435",
+        "width": 390,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 17
+      },
+      {
+        "key": "20",
+        "id": "86:1264",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 21
+      },
+      {
+        "key": "21",
+        "id": "86:1356",
+        "width": 320,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 21
+      },
+      {
+        "key": "22",
+        "id": "86:1448",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 16
+      },
+      {
+        "key": "23",
+        "id": "86:1521",
+        "width": 320,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 16
+      },
+      {
+        "key": "24",
+        "id": "86:1594",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "25",
+        "id": "86:1684",
+        "width": 320,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 18
+      },
+      {
+        "key": "26",
+        "id": "86:1774",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      },
+      {
+        "key": "27",
+        "id": "86:1824",
+        "width": 320,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 14
+      },
+      {
+        "key": "28",
+        "id": "86:1874",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 17
+      },
+      {
+        "key": "29",
+        "id": "86:1953",
+        "width": 320,
+        "height": 844,
+        "theme": "Dark",
+        "instances": 17
+      },
+      {
+        "key": "30",
+        "id": "86:2033",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 21
+      },
+      {
+        "key": "31",
+        "id": "86:2125",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 16
+      },
+      {
+        "key": "32",
+        "id": "86:2198",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 18
+      },
+      {
+        "key": "33",
+        "id": "86:2298",
+        "width": 320,
+        "height": 844,
+        "theme": "Light",
+        "instances": 14
+      }
+    ],
+    "collections": [
+      {
+        "id": "VariableCollectionId:8:2",
+        "name": "Neutral",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 37
+      },
+      {
+        "id": "VariableCollectionId:8:40",
+        "name": "Brand",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 5
+      },
+      {
+        "id": "VariableCollectionId:8:46",
+        "name": "Surface",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 4
+      },
+      {
+        "id": "VariableCollectionId:8:51",
+        "name": "Text",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 5
+      },
+      {
+        "id": "VariableCollectionId:8:57",
+        "name": "Border",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 3
+      },
+      {
+        "id": "VariableCollectionId:8:61",
+        "name": "Semantic",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 13
+      },
+      {
+        "id": "VariableCollectionId:8:74",
+        "name": "DataViz",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "variables": 3
+      },
+      {
+        "id": "VariableCollectionId:8:78",
+        "name": "Spacing",
+        "modes": [
+          "Default"
+        ],
+        "variables": 12
+      },
+      {
+        "id": "VariableCollectionId:8:91",
+        "name": "Radius",
+        "modes": [
+          "Default"
+        ],
+        "variables": 5
+      },
+      {
+        "id": "VariableCollectionId:8:97",
+        "name": "Motion",
+        "modes": [
+          "Default"
+        ],
+        "variables": 4
+      },
+      {
+        "id": "VariableCollectionId:39:10",
+        "name": "Typography",
+        "modes": [
+          "Standard",
+          "Large Text 200%"
+        ],
+        "variables": 32
+      }
+    ],
+    "styleCount": 16,
+    "hasFullScreenRaster": false,
+    "semanticAuditContext": "13 — Mobile Screens; approved source page loaded before cross-page snapshot comparison",
+    "additionalContrast": [
+      {
+        "theme": "Light",
+        "foreground": "color/text/primary",
+        "background": "color/brand/soft",
+        "ratio": 15.87,
+        "pass": true
+      },
+      {
+        "theme": "Dark",
+        "foreground": "color/text/primary",
+        "background": "color/brand/soft",
+        "ratio": 14.75,
+        "pass": true
+      }
+    ],
+    "criticalFinalBounds": [
+      {
+        "id": "90:2037",
+        "width": 280,
+        "height": 960
+      },
+      {
+        "id": "90:2047",
+        "width": 280,
+        "height": 1084
+      },
+      {
+        "id": "90:2060",
+        "width": 280,
+        "height": 580
+      },
+      {
+        "id": "90:2066",
+        "width": 320,
+        "height": 400
+      }
+    ],
+    "criticalFinalIssues": [],
+    "textScaleResponsiveRules": {
+      "pageTitle": "Existing H2 for Dashboard and Statistics at 200%",
+      "insightTitle": "Existing H4 at 200%; standard proposal H3 retained",
+      "chrome": "OS status and bottom navigation Standard",
+      "specimenWidth": "Matches actual 320px screen content width, 280px; clock full-width320"
+    }
+  },
+  "gates": {
+    "Phase4to7": "Not started",
+    "marketing": "HOLD",
+    "batch21and22": "Not started",
+    "P01to06": "Open",
+    "finalExport": "Pending",
+    "brandVector": "Source asset needed"
+  },
+  "filewideIncludingProposals": {
+    "pages": 22,
+    "collections": 11,
+    "variables": 123,
+    "textStyles": 16,
+    "componentSets": 93,
+    "components": 618,
+    "instances": 4367
+  },
+  "motionIntent": {
+    "press": "motion/duration/fast / 120ms",
+    "selectedAnswerAndPeriod": "motion/duration/normal / 200ms",
+    "loadAndResult": "motion/duration/normal / 200ms",
+    "reducedMotion": "Instant state / static layout",
+    "implementation": "Not started"
+  }
+}

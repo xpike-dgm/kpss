@@ -1,7 +1,7 @@
 {
   "date": "2026-10-08",
-  "phase": "Phase 1–2 Approved for Design Direction; Phase 3 Review",
-  "ownerAcceptance": "Phase 1–2 Approved for Design Direction; Phase 3 Pending",
+  "phase": "Phase 1–3 Approved for Design Direction",
+  "ownerAcceptance": "Approved for Design Direction",
   "screenCount": 265,
   "standardLight": 118,
   "standardDark": 118,
@@ -1538,11 +1538,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3311",
       "viewportId": "67:3310",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-02": {
       "id": "67:3388",
@@ -1550,11 +1550,11 @@
       "theme": "Light",
       "state": "Unstarted",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3399",
       "viewportId": "67:3398",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-03": {
       "id": "67:3445",
@@ -1562,11 +1562,11 @@
       "theme": "Light",
       "state": "Unstarted",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3456",
       "viewportId": "67:3455",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-04": {
       "id": "67:3527",
@@ -1574,11 +1574,11 @@
       "theme": "Light",
       "state": "Completed",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3538",
       "viewportId": "67:3537",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-05": {
       "id": "67:3590",
@@ -1586,11 +1586,11 @@
       "theme": "Light",
       "state": "InProgress",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3601",
       "viewportId": "67:3600",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-06": {
       "id": "67:3647",
@@ -1598,11 +1598,11 @@
       "theme": "Light",
       "state": "Loading",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3658",
       "viewportId": "67:3657",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-07": {
       "id": "67:3702",
@@ -1610,11 +1610,11 @@
       "theme": "Light",
       "state": "Empty",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3713",
       "viewportId": "67:3712",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-08": {
       "id": "67:3757",
@@ -1622,11 +1622,11 @@
       "theme": "Light",
       "state": "Error",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3768",
       "viewportId": "67:3767",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-09": {
       "id": "67:3812",
@@ -1634,11 +1634,11 @@
       "theme": "Light",
       "state": "InsufficientContent",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3823",
       "viewportId": "67:3822",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-10": {
       "id": "67:3869",
@@ -1646,11 +1646,11 @@
       "theme": "Light",
       "state": "OfflineStart",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3880",
       "viewportId": "67:3879",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-11": {
       "id": "67:3926",
@@ -1658,11 +1658,11 @@
       "theme": "Light",
       "state": "PartialData",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3937",
       "viewportId": "67:3936",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-01": {
       "id": "67:3981",
@@ -1670,11 +1670,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:3992",
       "viewportId": "67:3991",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-02": {
       "id": "67:4019",
@@ -1682,11 +1682,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4030",
       "viewportId": "67:4029",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-03": {
       "id": "67:4048",
@@ -1694,11 +1694,11 @@
       "theme": "Light",
       "state": "Unanswered",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4059",
       "viewportId": "67:4058",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04": {
       "id": "67:4095",
@@ -1706,11 +1706,11 @@
       "theme": "Light",
       "state": "Selected",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4106",
       "viewportId": "67:4105",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-06": {
       "id": "67:4143",
@@ -1718,11 +1718,11 @@
       "theme": "Light",
       "state": "Offline",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4154",
       "viewportId": "67:4153",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-07": {
       "id": "67:4191",
@@ -1730,11 +1730,11 @@
       "theme": "Light",
       "state": "Reconnecting",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4202",
       "viewportId": "67:4201",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-08": {
       "id": "67:4239",
@@ -1742,11 +1742,11 @@
       "theme": "Light",
       "state": "SaveError",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4250",
       "viewportId": "67:4249",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-05": {
       "id": "67:4287",
@@ -1754,11 +1754,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4298",
       "viewportId": "67:4297",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-09": {
       "id": "67:4572",
@@ -1766,11 +1766,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4583",
       "viewportId": "67:4582",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-10": {
       "id": "67:4597",
@@ -1778,11 +1778,11 @@
       "theme": "Light",
       "state": "Submitting",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4608",
       "viewportId": "67:4607",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-11": {
       "id": "67:4625",
@@ -1790,11 +1790,11 @@
       "theme": "Light",
       "state": "Expired",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4636",
       "viewportId": "67:4635",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-12": {
       "id": "67:4651",
@@ -1802,11 +1802,11 @@
       "theme": "Light",
       "state": "Success",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4662",
       "viewportId": "67:4661",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-13": {
       "id": "67:4674",
@@ -1814,11 +1814,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "67:4685",
       "viewportId": "67:4684",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-01": {
       "id": "68:4193",
@@ -1826,11 +1826,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4204",
       "viewportId": "68:4203",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-02": {
       "id": "68:4270",
@@ -1838,11 +1838,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4281",
       "viewportId": "68:4280",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-03": {
       "id": "68:4337",
@@ -1850,11 +1850,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4348",
       "viewportId": "68:4347",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-04": {
       "id": "68:4371",
@@ -1862,11 +1862,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4382",
       "viewportId": "68:4381",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-05": {
       "id": "68:4404",
@@ -1874,11 +1874,11 @@
       "theme": "Light",
       "state": "InsufficientData",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4415",
       "viewportId": "68:4414",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-06": {
       "id": "68:4426",
@@ -1886,11 +1886,11 @@
       "theme": "Light",
       "state": "PartialData",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4437",
       "viewportId": "68:4436",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-07": {
       "id": "68:4454",
@@ -1898,11 +1898,11 @@
       "theme": "Light",
       "state": "ErrorOffline",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4465",
       "viewportId": "68:4464",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-08": {
       "id": "68:4473",
@@ -1910,11 +1910,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4484",
       "viewportId": "68:4483",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-01": {
       "id": "68:4536",
@@ -1922,11 +1922,11 @@
       "theme": "Light",
       "state": "30Days",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4547",
       "viewportId": "68:4546",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-02": {
       "id": "68:4643",
@@ -1934,11 +1934,11 @@
       "theme": "Light",
       "state": "7Days",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4654",
       "viewportId": "68:4653",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-03": {
       "id": "68:4731",
@@ -1946,11 +1946,11 @@
       "theme": "Light",
       "state": "3Months",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4742",
       "viewportId": "68:4741",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-04": {
       "id": "68:4819",
@@ -1958,11 +1958,11 @@
       "theme": "Light",
       "state": "All",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4830",
       "viewportId": "68:4829",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-05": {
       "id": "68:4907",
@@ -1970,11 +1970,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:4918",
       "viewportId": "68:4917",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-06": {
       "id": "68:5005",
@@ -1982,11 +1982,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5016",
       "viewportId": "68:5015",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-07": {
       "id": "68:5091",
@@ -1994,11 +1994,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5102",
       "viewportId": "68:5101",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-08": {
       "id": "68:5169",
@@ -2006,11 +2006,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5180",
       "viewportId": "68:5179",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-09": {
       "id": "68:5238",
@@ -2018,11 +2018,11 @@
       "theme": "Light",
       "state": "Loading",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5249",
       "viewportId": "68:5248",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-10": {
       "id": "68:5305",
@@ -2030,11 +2030,11 @@
       "theme": "Light",
       "state": "InsufficientData",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5316",
       "viewportId": "68:5315",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-11": {
       "id": "68:5370",
@@ -2042,11 +2042,11 @@
       "theme": "Light",
       "state": "Error",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5381",
       "viewportId": "68:5380",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-12": {
       "id": "68:5435",
@@ -2054,11 +2054,11 @@
       "theme": "Light",
       "state": "OfflinePartial",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5446",
       "viewportId": "68:5445",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-01": {
       "id": "68:5500",
@@ -2066,11 +2066,11 @@
       "theme": "Light",
       "state": "NoTarget",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5511",
       "viewportId": "68:5510",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-02": {
       "id": "68:5558",
@@ -2078,11 +2078,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5569",
       "viewportId": "68:5568",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-03": {
       "id": "68:5592",
@@ -2090,11 +2090,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5603",
       "viewportId": "68:5602",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-04": {
       "id": "68:5626",
@@ -2102,11 +2102,11 @@
       "theme": "Light",
       "state": "Success",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5637",
       "viewportId": "68:5636",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-05": {
       "id": "68:5652",
@@ -2114,11 +2114,11 @@
       "theme": "Light",
       "state": "OfflinePending",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5663",
       "viewportId": "68:5662",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-01": {
       "id": "68:5673",
@@ -2126,11 +2126,11 @@
       "theme": "Light",
       "state": "Evidence",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5684",
       "viewportId": "68:5683",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-02": {
       "id": "68:5750",
@@ -2138,11 +2138,11 @@
       "theme": "Light",
       "state": "Limited",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5761",
       "viewportId": "68:5760",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-03": {
       "id": "68:5827",
@@ -2150,11 +2150,11 @@
       "theme": "Light",
       "state": "Partial",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5838",
       "viewportId": "68:5837",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-06": {
       "id": "68:5904",
@@ -2162,11 +2162,11 @@
       "theme": "Light",
       "state": "Stale",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5915",
       "viewportId": "68:5914",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-04": {
       "id": "68:5984",
@@ -2174,11 +2174,11 @@
       "theme": "Light",
       "state": "Loading",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:5995",
       "viewportId": "68:5994",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-05": {
       "id": "68:6041",
@@ -2186,11 +2186,11 @@
       "theme": "Light",
       "state": "Error",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:6052",
       "viewportId": "68:6051",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-07": {
       "id": "68:6096",
@@ -2198,11 +2198,11 @@
       "theme": "Light",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:6107",
       "viewportId": "68:6106",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-14": {
       "id": "68:6158",
@@ -2210,11 +2210,11 @@
       "theme": "Light",
       "state": "StudyConfirmation",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:6169",
       "viewportId": "68:6168",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-15": {
       "id": "68:6183",
@@ -2222,11 +2222,11 @@
       "theme": "Light",
       "state": "StudySubmitted",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "68:6194",
       "viewportId": "68:6193",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04-A": {
       "id": "70:5670",
@@ -2234,11 +2234,11 @@
       "theme": "Light",
       "state": "Selected A",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "70:5677",
       "viewportId": "70:5676",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04-B": {
       "id": "70:5723",
@@ -2246,11 +2246,11 @@
       "theme": "Light",
       "state": "Selected B",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "70:5730",
       "viewportId": "70:5729",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04-D": {
       "id": "70:5776",
@@ -2258,11 +2258,11 @@
       "theme": "Light",
       "state": "Selected D",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "70:5783",
       "viewportId": "70:5782",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04-E": {
       "id": "70:5829",
@@ -2270,11 +2270,11 @@
       "theme": "Light",
       "state": "Selected E",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "70:5836",
       "viewportId": "70:5835",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-01__dark": {
       "id": "71:5788",
@@ -2282,11 +2282,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:5794",
       "viewportId": "71:5793",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-02__dark": {
       "id": "71:5857",
@@ -2294,11 +2294,11 @@
       "theme": "Dark",
       "state": "Unstarted",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:5863",
       "viewportId": "71:5862",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-03__dark": {
       "id": "71:5914",
@@ -2306,11 +2306,11 @@
       "theme": "Dark",
       "state": "Unstarted",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:5920",
       "viewportId": "71:5919",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-04__dark": {
       "id": "71:5996",
@@ -2318,11 +2318,11 @@
       "theme": "Dark",
       "state": "Completed",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6002",
       "viewportId": "71:6001",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-05__dark": {
       "id": "71:6059",
@@ -2330,11 +2330,11 @@
       "theme": "Dark",
       "state": "InProgress",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6065",
       "viewportId": "71:6064",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-06__dark": {
       "id": "71:6116",
@@ -2342,11 +2342,11 @@
       "theme": "Dark",
       "state": "Loading",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6122",
       "viewportId": "71:6121",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-07__dark": {
       "id": "71:6171",
@@ -2354,11 +2354,11 @@
       "theme": "Dark",
       "state": "Empty",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6177",
       "viewportId": "71:6176",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-08__dark": {
       "id": "71:6226",
@@ -2366,11 +2366,11 @@
       "theme": "Dark",
       "state": "Error",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6232",
       "viewportId": "71:6231",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-09__dark": {
       "id": "71:6281",
@@ -2378,11 +2378,11 @@
       "theme": "Dark",
       "state": "InsufficientContent",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6287",
       "viewportId": "71:6286",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-10__dark": {
       "id": "71:6338",
@@ -2390,11 +2390,11 @@
       "theme": "Dark",
       "state": "OfflineStart",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6344",
       "viewportId": "71:6343",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-11__dark": {
       "id": "71:6395",
@@ -2402,11 +2402,11 @@
       "theme": "Dark",
       "state": "PartialData",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6401",
       "viewportId": "71:6400",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-01__dark": {
       "id": "71:6450",
@@ -2414,11 +2414,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6456",
       "viewportId": "71:6455",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-02__dark": {
       "id": "71:6488",
@@ -2426,11 +2426,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6494",
       "viewportId": "71:6493",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-03__dark": {
       "id": "71:6517",
@@ -2438,11 +2438,11 @@
       "theme": "Dark",
       "state": "Unanswered",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6524",
       "viewportId": "71:6523",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04__dark": {
       "id": "71:6564",
@@ -2450,11 +2450,11 @@
       "theme": "Dark",
       "state": "Selected",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6571",
       "viewportId": "71:6570",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-06__dark": {
       "id": "71:6612",
@@ -2462,11 +2462,11 @@
       "theme": "Dark",
       "state": "Offline",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6619",
       "viewportId": "71:6618",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-07__dark": {
       "id": "71:6660",
@@ -2474,11 +2474,11 @@
       "theme": "Dark",
       "state": "Reconnecting",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6667",
       "viewportId": "71:6666",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-08__dark": {
       "id": "71:6708",
@@ -2486,11 +2486,11 @@
       "theme": "Dark",
       "state": "SaveError",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6715",
       "viewportId": "71:6714",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-05__dark": {
       "id": "71:6756",
@@ -2498,11 +2498,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:6762",
       "viewportId": "71:6761",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-09__dark": {
       "id": "71:7041",
@@ -2510,11 +2510,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7047",
       "viewportId": "71:7046",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-10__dark": {
       "id": "71:7065",
@@ -2522,11 +2522,11 @@
       "theme": "Dark",
       "state": "Submitting",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7071",
       "viewportId": "71:7070",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-11__dark": {
       "id": "71:7093",
@@ -2534,11 +2534,11 @@
       "theme": "Dark",
       "state": "Expired",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7099",
       "viewportId": "71:7098",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-12__dark": {
       "id": "71:7119",
@@ -2546,11 +2546,11 @@
       "theme": "Dark",
       "state": "Success",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7125",
       "viewportId": "71:7124",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-13__dark": {
       "id": "71:7142",
@@ -2558,11 +2558,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7148",
       "viewportId": "71:7147",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-01__dark": {
       "id": "71:7194",
@@ -2570,11 +2570,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7200",
       "viewportId": "71:7199",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-02__dark": {
       "id": "71:7271",
@@ -2582,11 +2582,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7277",
       "viewportId": "71:7276",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-03__dark": {
       "id": "71:7338",
@@ -2594,11 +2594,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7344",
       "viewportId": "71:7343",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-04__dark": {
       "id": "71:7372",
@@ -2606,11 +2606,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7378",
       "viewportId": "71:7377",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-05__dark": {
       "id": "71:7405",
@@ -2618,11 +2618,11 @@
       "theme": "Dark",
       "state": "InsufficientData",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7411",
       "viewportId": "71:7410",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-06__dark": {
       "id": "71:7427",
@@ -2630,11 +2630,11 @@
       "theme": "Dark",
       "state": "PartialData",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7433",
       "viewportId": "71:7432",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-07__dark": {
       "id": "71:7455",
@@ -2642,11 +2642,11 @@
       "theme": "Dark",
       "state": "ErrorOffline",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7461",
       "viewportId": "71:7460",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-08__dark": {
       "id": "71:7474",
@@ -2654,11 +2654,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7480",
       "viewportId": "71:7479",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-01__dark": {
       "id": "71:7537",
@@ -2666,11 +2666,11 @@
       "theme": "Dark",
       "state": "30Days",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7543",
       "viewportId": "71:7542",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-02__dark": {
       "id": "71:7625",
@@ -2678,11 +2678,11 @@
       "theme": "Dark",
       "state": "7Days",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7631",
       "viewportId": "71:7630",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-03__dark": {
       "id": "71:7713",
@@ -2690,11 +2690,11 @@
       "theme": "Dark",
       "state": "3Months",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7719",
       "viewportId": "71:7718",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-04__dark": {
       "id": "71:7801",
@@ -2702,11 +2702,11 @@
       "theme": "Dark",
       "state": "All",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7807",
       "viewportId": "71:7806",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-05__dark": {
       "id": "71:7889",
@@ -2714,11 +2714,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7895",
       "viewportId": "71:7894",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-06__dark": {
       "id": "71:7987",
@@ -2726,11 +2726,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:7993",
       "viewportId": "71:7992",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-07__dark": {
       "id": "71:8073",
@@ -2738,11 +2738,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8079",
       "viewportId": "71:8078",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-08__dark": {
       "id": "71:8151",
@@ -2750,11 +2750,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8157",
       "viewportId": "71:8156",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-09__dark": {
       "id": "71:8220",
@@ -2762,11 +2762,11 @@
       "theme": "Dark",
       "state": "Loading",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8226",
       "viewportId": "71:8225",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-10__dark": {
       "id": "71:8287",
@@ -2774,11 +2774,11 @@
       "theme": "Dark",
       "state": "InsufficientData",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8293",
       "viewportId": "71:8292",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-11__dark": {
       "id": "71:8352",
@@ -2786,11 +2786,11 @@
       "theme": "Dark",
       "state": "Error",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8358",
       "viewportId": "71:8357",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-12__dark": {
       "id": "71:8417",
@@ -2798,11 +2798,11 @@
       "theme": "Dark",
       "state": "OfflinePartial",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8423",
       "viewportId": "71:8422",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-01__dark": {
       "id": "71:8482",
@@ -2810,11 +2810,11 @@
       "theme": "Dark",
       "state": "NoTarget",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8488",
       "viewportId": "71:8487",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-02__dark": {
       "id": "71:8540",
@@ -2822,11 +2822,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8546",
       "viewportId": "71:8545",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-03__dark": {
       "id": "71:8574",
@@ -2834,11 +2834,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8580",
       "viewportId": "71:8579",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-04__dark": {
       "id": "71:8608",
@@ -2846,11 +2846,11 @@
       "theme": "Dark",
       "state": "Success",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8614",
       "viewportId": "71:8613",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-05__dark": {
       "id": "71:8634",
@@ -2858,11 +2858,11 @@
       "theme": "Dark",
       "state": "OfflinePending",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8640",
       "viewportId": "71:8639",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-01__dark": {
       "id": "71:8655",
@@ -2870,11 +2870,11 @@
       "theme": "Dark",
       "state": "Evidence",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8661",
       "viewportId": "71:8660",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-02__dark": {
       "id": "71:8732",
@@ -2882,11 +2882,11 @@
       "theme": "Dark",
       "state": "Limited",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8738",
       "viewportId": "71:8737",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-03__dark": {
       "id": "71:8809",
@@ -2894,11 +2894,11 @@
       "theme": "Dark",
       "state": "Partial",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8815",
       "viewportId": "71:8814",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-06__dark": {
       "id": "71:8886",
@@ -2906,11 +2906,11 @@
       "theme": "Dark",
       "state": "Stale",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8892",
       "viewportId": "71:8891",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-04__dark": {
       "id": "71:8966",
@@ -2918,11 +2918,11 @@
       "theme": "Dark",
       "state": "Loading",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:8972",
       "viewportId": "71:8971",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-05__dark": {
       "id": "71:9023",
@@ -2930,11 +2930,11 @@
       "theme": "Dark",
       "state": "Error",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9029",
       "viewportId": "71:9028",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-07__dark": {
       "id": "71:9078",
@@ -2942,11 +2942,11 @@
       "theme": "Dark",
       "state": "Default",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9084",
       "viewportId": "71:9083",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-14__dark": {
       "id": "71:9140",
@@ -2954,11 +2954,11 @@
       "theme": "Dark",
       "state": "StudyConfirmation",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9146",
       "viewportId": "71:9145",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-15__dark": {
       "id": "71:9165",
@@ -2966,11 +2966,11 @@
       "theme": "Dark",
       "state": "StudySubmitted",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9171",
       "viewportId": "71:9170",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04-A__dark": {
       "id": "71:9188",
@@ -2978,11 +2978,11 @@
       "theme": "Dark",
       "state": "Selected A",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9195",
       "viewportId": "71:9194",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04-B__dark": {
       "id": "71:9236",
@@ -2990,11 +2990,11 @@
       "theme": "Dark",
       "state": "Selected B",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9243",
       "viewportId": "71:9242",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04-D__dark": {
       "id": "71:9284",
@@ -3002,11 +3002,11 @@
       "theme": "Dark",
       "state": "Selected D",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9291",
       "viewportId": "71:9290",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04-E__dark": {
       "id": "71:9332",
@@ -3014,11 +3014,11 @@
       "theme": "Dark",
       "state": "Selected E",
       "width": 390,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9339",
       "viewportId": "71:9338",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MOCK-01__small": {
       "id": "71:9380",
@@ -3026,11 +3026,11 @@
       "theme": "Light",
       "state": "Default / Narrow QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9386",
       "viewportId": "71:9385",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-02__small": {
       "id": "71:9403",
@@ -3038,11 +3038,11 @@
       "theme": "Light",
       "state": "Default / Narrow QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9409",
       "viewportId": "71:9408",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04__small": {
       "id": "71:9424",
@@ -3050,11 +3050,11 @@
       "theme": "Light",
       "state": "Selected / Narrow QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9431",
       "viewportId": "71:9430",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-05__small": {
       "id": "71:9454",
@@ -3062,11 +3062,11 @@
       "theme": "Light",
       "state": "Default / Narrow QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9460",
       "viewportId": "71:9459",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-06__small": {
       "id": "71:9614",
@@ -3074,11 +3074,11 @@
       "theme": "Light",
       "state": "Offline / Narrow QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9621",
       "viewportId": "71:9620",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-01__small": {
       "id": "71:9644",
@@ -3086,11 +3086,11 @@
       "theme": "Light",
       "state": "Default / Narrow QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9650",
       "viewportId": "71:9649",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-01__small": {
       "id": "71:9669",
@@ -3098,11 +3098,11 @@
       "theme": "Light",
       "state": "30Days / Narrow QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9675",
       "viewportId": "71:9674",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-05__small": {
       "id": "71:9695",
@@ -3110,11 +3110,11 @@
       "theme": "Light",
       "state": "Default / Narrow QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9701",
       "viewportId": "71:9700",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "TARGET-02__small": {
       "id": "71:9721",
@@ -3122,11 +3122,11 @@
       "theme": "Light",
       "state": "Default / Narrow QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9727",
       "viewportId": "71:9726",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-01__small": {
       "id": "71:9743",
@@ -3134,11 +3134,11 @@
       "theme": "Light",
       "state": "Evidence / Narrow QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9749",
       "viewportId": "71:9748",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "EXAM-04__scale200": {
       "id": "71:9765",
@@ -3146,11 +3146,11 @@
       "theme": "Light",
       "state": "Text 200% QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9772",
       "viewportId": "71:9771",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "MRESULT-01__scale200": {
       "id": "71:9795",
@@ -3158,11 +3158,11 @@
       "theme": "Light",
       "state": "Text 200% QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9801",
       "viewportId": "71:9800",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "STATS-01__scale200": {
       "id": "71:9820",
@@ -3170,11 +3170,11 @@
       "theme": "Light",
       "state": "Text 200% QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9826",
       "viewportId": "71:9825",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     },
     "READY-01__scale200": {
       "id": "71:9846",
@@ -3182,11 +3182,11 @@
       "theme": "Light",
       "state": "Text 200% QA",
       "width": 320,
-      "status": "Review",
+      "status": "Approved for Design Direction",
       "contentId": "71:9852",
       "viewportId": "71:9851",
       "phase": "Phase 3",
-      "ownerAcceptance": "Pending"
+      "ownerAcceptance": "Approved for Design Direction"
     }
   },
   "phaseCounts": {
@@ -3196,7 +3196,8 @@
     },
     "Phase 3": {
       "screens": 138,
-      "status": "Review"
+      "status": "Approved for Design Direction"
     }
-  }
+  },
+  "polishProposalRef": "PHASE_3_5_NATIVE_STATE.json"
 }
